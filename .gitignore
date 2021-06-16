@@ -3,6 +3,7 @@ node_modules
 
 # Hugo
 /resources/_gen/
+public
 
 # Hexo
 db.json
