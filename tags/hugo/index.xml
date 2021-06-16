@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Hugo on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/hugo/</link>
+    <description>Recent content in Hugo on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 21 May 2021 09:19:12 +0800</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>2021-05-21-hugo学习札记</title>
+        <link>https://www.xunhs.cyou/posts/n/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</link>
+        <pubDate>Fri, 21 May 2021 09:19:12 +0800</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Fri, 21 May 2021 09:19:12 +0800</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://hugo.aiaide.com/&#34;&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Hugo</category>
+            
+          
+            
+              <category>札记</category>
+            
+          
+            
+              <category>博客</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>graph on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/graph/</link>
+    <description>Recent content in graph on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 27 May 2020 09:25:17 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Python库-osmnx&amp;networkx</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-05-27-python%E5%BA%93-osmnxnetworkx/</link>
+        <pubDate>Wed, 27 May 2020 09:25:17 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Wed, 27 May 2020 09:25:17 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-05-27-python%E5%BA%93-osmnxnetworkx/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;osmnx是下载、处理等osm路网很好用的一个包。networkx是图论学习中很好用的包，两者结合为基于图论的方法研究osm road network提供便利。以下内容为整理两个包常用的功能函数方法。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Python库</category>
+            
+          
+            
+              <category>osm</category>
+            
+          
+            
+              <category>osmnx</category>
+            
+          
+            
+              <category>graph</category>
+            
+          
+            
+              <category>networkx</category>
+            
+          
+            
+              <category>road network</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>学习笔记-Graph Learning(图论) Tutorial</title>
+        <link>https://www.xunhs.cyou/posts/n/124/</link>
+        <pubDate>Mon, 22 Oct 2018 08:53:13 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Mon, 22 Oct 2018 08:53:13 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/124/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;参考了&lt;a href=&#34;https://www.jiqizhixin.com/articles/2019-08-03-3&#34;&gt;这里&lt;/a&gt;，&lt;a href=&#34;https://networkx.github.io/documentation/stable/index.html&#34;&gt;这里&lt;/a&gt;，主要是整理复制的&lt;a href=&#34;https://maelfabien.github.io/machinelearning/graph_3/#&#34;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>学习笔记</category>
+            
+          
+            
+              <category>图论</category>
+            
+          
+            
+              <category>graph</category>
+            
+          
+            
+              <category>complex network</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

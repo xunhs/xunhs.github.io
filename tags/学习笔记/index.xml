@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>学习笔记 on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 学习笔记 on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 30 Dec 2020 12:46:21 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>识别城市地域-札记</title>
+        <link>https://www.xunhs.cyou/2020/12/30/243/</link>
+        <pubDate>Wed, 30 Dec 2020 12:46:21 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Wed, 30 Dec 2020 12:46:21 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/2020/12/30/243/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;阅读深圳大学乐阳老师公众号（乐知半点）-专题“城市分析-概念辨析”札记。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>城市功能区</category>
+            
+          
+            
+              <category>学习笔记</category>
+            
+          
+            
+              <category>阅读笔记</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Python库-seaborn &#43; matplotlib</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</link>
+        <pubDate>Tue, 03 Mar 2020 09:18:18 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Tue, 03 Mar 2020 09:18:18 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;seaborn是python里面做数据分析和机器学习常用的可视化库。它对matplotlib进行了深度封装，从而可以用非常简单的api接口绘制相对复杂的图形，提供对数据的深入认识。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>seaborn</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>可视化</category>
+            
+          
+            
+              <category>学习笔记</category>
+            
+          
+            
+              <category>matplotlib</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>学习笔记-QGIS</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</link>
+        <pubDate>Sat, 29 Feb 2020 09:17:34 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sat, 29 Feb 2020 09:17:34 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;关于QGIS若干记录&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>QGIS</category>
+            
+          
+            
+              <category>PyQGIS</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>GIS开发</category>
+            
+          
+            
+              <category>学习笔记</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>学习笔记-Graph Learning(图论) Tutorial</title>
+        <link>https://www.xunhs.cyou/posts/n/124/</link>
+        <pubDate>Mon, 22 Oct 2018 08:53:13 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Mon, 22 Oct 2018 08:53:13 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/124/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;参考了&lt;a href=&#34;https://www.jiqizhixin.com/articles/2019-08-03-3&#34;&gt;这里&lt;/a&gt;，&lt;a href=&#34;https://networkx.github.io/documentation/stable/index.html&#34;&gt;这里&lt;/a&gt;，主要是整理复制的&lt;a href=&#34;https://maelfabien.github.io/machinelearning/graph_3/#&#34;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>学习笔记</category>
+            
+          
+            
+              <category>图论</category>
+            
+          
+            
+              <category>graph</category>
+            
+          
+            
+              <category>complex network</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

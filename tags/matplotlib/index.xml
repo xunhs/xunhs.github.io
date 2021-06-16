@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>matplotlib on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/matplotlib/</link>
+    <description>Recent content in matplotlib on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 03 Mar 2020 09:18:18 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Python库-seaborn &#43; matplotlib</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</link>
+        <pubDate>Tue, 03 Mar 2020 09:18:18 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Tue, 03 Mar 2020 09:18:18 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;seaborn是python里面做数据分析和机器学习常用的可视化库。它对matplotlib进行了深度封装，从而可以用非常简单的api接口绘制相对复杂的图形，提供对数据的深入认识。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>seaborn</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>可视化</category>
+            
+          
+            
+              <category>学习笔记</category>
+            
+          
+            
+              <category>matplotlib</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

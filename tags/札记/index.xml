@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>札记 on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/%E6%9C%AD%E8%AE%B0/</link>
+    <description>Recent content in 札记 on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 15 Jun 2021 11:06:51 +0800</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/%E6%9C%AD%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>2021-06-15-SakuraFrp配置札记</title>
+        <link>https://www.xunhs.cyou/posts/n/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</link>
+        <pubDate>Tue, 15 Jun 2021 11:06:51 +0800</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Tue, 15 Jun 2021 11:06:51 +0800</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.natfrp.com/&#34;&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>札记</category>
+            
+          
+            
+              <category>内网穿透</category>
+            
+          
+            
+              <category>frp</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>2021-06-11-论文整理：一些发表在“好期刊但很有意思”的论文</title>
+        <link>https://www.xunhs.cyou/posts/n/2021-06-11-%E8%AE%BA%E6%96%87%E6%95%B4%E7%90%86-%E4%B8%80%E4%BA%9B%E5%8F%91%E8%A1%A8%E5%9C%A8%E5%A5%BD%E6%9C%9F%E5%88%8A%E4%BD%86%E5%BE%88%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E8%AE%BA%E6%96%87/</link>
+        <pubDate>Fri, 11 Jun 2021 22:04:34 +0800</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Fri, 11 Jun 2021 22:04:34 +0800</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2021-06-11-%E8%AE%BA%E6%96%87%E6%95%B4%E7%90%86-%E4%B8%80%E4%BA%9B%E5%8F%91%E8%A1%A8%E5%9C%A8%E5%A5%BD%E6%9C%9F%E5%88%8A%E4%BD%86%E5%BE%88%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E8%AE%BA%E6%96%87/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;一些发表在“好期刊但很有意思”的论文&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>札记</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>2021-06-08-出租车数据处理札记</title>
+        <link>https://www.xunhs.cyou/posts/n/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</link>
+        <pubDate>Tue, 08 Jun 2021 17:08:48 +0800</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Tue, 08 Jun 2021 17:08:48 +0800</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;记录出租车数据处理基本流程及部分可视化分析。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>札记</category>
+            
+          
+            
+              <category>出租车</category>
+            
+          
+            
+              <category>数据处理</category>
+            
+          
+            
+              <category>pandas</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>2021-05-21-hugo学习札记</title>
+        <link>https://www.xunhs.cyou/posts/n/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</link>
+        <pubDate>Fri, 21 May 2021 09:19:12 +0800</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Fri, 21 May 2021 09:19:12 +0800</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://hugo.aiaide.com/&#34;&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Hugo</category>
+            
+          
+            
+              <category>札记</category>
+            
+          
+            
+              <category>博客</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>2021-05-09: Urban Functional Regionalization</title>
+        <link>https://www.xunhs.cyou/posts/n/2021-05-09-urban-functional-regionalization/</link>
+        <pubDate>Sun, 09 May 2021 19:45:40 +0800</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sun, 09 May 2021 19:45:40 +0800</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2021-05-09-urban-functional-regionalization/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Paper writing notes about urban functional regionalization.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>札记</category>
+            
+          
+            
+              <category>Regionalization</category>
+            
+          
+            
+              <category>Urban functions</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>POI-type Embedding构建流程札记</title>
+        <link>https://www.xunhs.cyou/posts/n/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
+        <pubDate>Wed, 24 Feb 2021 01:44:11 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Wed, 24 Feb 2021 01:44:11 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;本文对POI-type Embedding的构建流程进行整理。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Embedding</category>
+            
+          
+            
+              <category>Gensim</category>
+            
+          
+            
+              <category>POIs</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>城市功能区</category>
+            
+          
+            
+              <category>札记</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>地理大数据挖掘专项实施方案-札记</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-07-31-%E5%9C%B0%E7%90%86%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E4%B8%93%E9%A1%B9%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88-%E6%9C%AD%E8%AE%B0/</link>
+        <pubDate>Fri, 31 Jul 2020 09:29:16 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Fri, 31 Jul 2020 09:29:16 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-07-31-%E5%9C%B0%E7%90%86%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E4%B8%93%E9%A1%B9%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88-%E6%9C%AD%E8%AE%B0/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;再次研读地理大数据的实施方案，以期启发开题、大论文灵感，并做简要笔记、记录。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>地理大数据</category>
+            
+          
+            
+              <category>札记</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

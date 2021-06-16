@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>语法 on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/%E8%AF%AD%E6%B3%95/</link>
+    <description>Recent content in 语法 on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 15 Nov 2019 08:55:26 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Grammar Learning</title>
+        <link>https://www.xunhs.cyou/posts/n/80/</link>
+        <pubDate>Fri, 15 Nov 2019 08:55:26 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Fri, 15 Nov 2019 08:55:26 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/80/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;网上（知乎）摘录基础语法。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>语法</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

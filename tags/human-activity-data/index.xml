@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Human activity data on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/human-activity-data/</link>
+    <description>Recent content in Human activity data on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 24 Feb 2020 09:14:16 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/human-activity-data/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Papers Reading-Taxi Trajectory/GPS Records</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-02-24-papers_reading-taxi_trajectory_gps_records/</link>
+        <pubDate>Mon, 24 Feb 2020 09:14:16 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Mon, 24 Feb 2020 09:14:16 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-02-24-papers_reading-taxi_trajectory_gps_records/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;论文阅读，感兴趣点、关键词整理&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>出租车轨迹</category>
+            
+          
+            
+              <category>轨迹</category>
+            
+          
+            
+              <category>Trajectory</category>
+            
+          
+            
+              <category>论文</category>
+            
+          
+            
+              <category>论文阅读</category>
+            
+          
+            
+              <category>Human activity data</category>
+            
+          
+            
+              <category>NLP</category>
+            
+          
+            
+              <category>semantic</category>
+            
+          
+            
+              <category>geo-semantic mining</category>
+            
+          
+            
+              <category>geo-semantic</category>
+            
+          
+            
+              <category>spatial context</category>
+            
+          
+            
+              <category>interactions</category>
+            
+          
+            
+              <category>vehicle moving paths</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

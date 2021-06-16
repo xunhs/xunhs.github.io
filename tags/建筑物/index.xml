@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>建筑物 on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/%E5%BB%BA%E7%AD%91%E7%89%A9/</link>
+    <description>Recent content in 建筑物 on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 03 Jul 2020 09:27:56 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/%E5%BB%BA%E7%AD%91%E7%89%A9/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>博士论文阅读札记(2)</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-07-16-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-2/</link>
+        <pubDate>Fri, 03 Jul 2020 09:27:56 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Fri, 03 Jul 2020 09:27:56 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-07-16-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-2/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;续&lt;a href=&#34;https://www.xunhs.cyou/2020/06/461b3b66/&#34;&gt;博士论文阅读札记-1&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>论文阅读</category>
+            
+          
+            
+              <category>博士论文</category>
+            
+          
+            
+              <category>自组织临界性</category>
+            
+          
+            
+              <category>元胞自动机</category>
+            
+          
+            
+              <category>图卷积神经网络</category>
+            
+          
+            
+              <category>建筑物模式</category>
+            
+          
+            
+              <category>建筑物</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>文件/文件夹 on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/%E6%96%87%E4%BB%B6/%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+    <description>Recent content in 文件/文件夹 on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/%E6%96%87%E4%BB%B6/%E6%96%87%E4%BB%B6%E5%A4%B9/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Python库：pathlib</title>
+        <link>https://www.xunhs.cyou/posts/n/72/</link>
+        <pubDate>Sat, 18 Jan 2020 09:04:38 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sat, 18 Jan 2020 09:04:38 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/72/</guid>
+        <description>&lt;hr /&gt;
+&lt;!-- Abstract --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;pathlib 是 python3 非常好用的文件/文件夹操作的库，总结常用用法，参考自&lt;a href=&#34;https://www.jianshu.com/p/a820038e65c3&#34;&gt;jianshu&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- Abstract --&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>pathlib</category>
+            
+          
+            
+              <category>文件/文件夹</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

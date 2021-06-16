@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Pandas on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/pandas/</link>
+    <description>Recent content in Pandas on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 08 Jun 2021 17:08:48 +0800</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>2021-06-08-出租车数据处理札记</title>
+        <link>https://www.xunhs.cyou/posts/n/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</link>
+        <pubDate>Tue, 08 Jun 2021 17:08:48 +0800</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Tue, 08 Jun 2021 17:08:48 +0800</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;记录出租车数据处理基本流程及部分可视化分析。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>札记</category>
+            
+          
+            
+              <category>出租车</category>
+            
+          
+            
+              <category>数据处理</category>
+            
+          
+            
+              <category>pandas</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Python多线程/进程技巧</title>
+        <link>https://www.xunhs.cyou/posts/n/74/</link>
+        <pubDate>Fri, 17 Jan 2020 09:02:53 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Fri, 17 Jan 2020 09:02:53 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/74/</guid>
+        <description>&lt;!-- Abstract --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;整理Python并行化常用技巧&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- Abstract --&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>multiprocessing</category>
+            
+          
+            
+              <category>joblib</category>
+            
+          
+            
+              <category>并行</category>
+            
+          
+            
+              <category>Pandas</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Pandas/Geopandas Tricks</title>
+        <link>https://www.xunhs.cyou/posts/n/76/</link>
+        <pubDate>Mon, 13 Jan 2020 09:01:39 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Mon, 13 Jan 2020 09:01:39 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/76/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;总结个人使用中常用Pandas及扩展插件使用技巧&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>Pandas</category>
+            
+          
+            
+              <category>GeoPandas</category>
+            
+          
+            
+              <category>优化</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

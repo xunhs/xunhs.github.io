@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Points of Interest on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/points-of-interest/</link>
+    <description>Recent content in Points of Interest on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 05 May 2020 06:40:39 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/points-of-interest/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Papers_Reading-Urban Functional Regions</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-05-05-papers-reading-urban-functional-regions/</link>
+        <pubDate>Tue, 05 May 2020 06:40:39 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Tue, 05 May 2020 06:40:39 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-05-05-papers-reading-urban-functional-regions/</guid>
+        <description>&lt;blockquote&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Points of Interest</category>
+            
+          
+            
+              <category>Urban functional zones</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

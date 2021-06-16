@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>conda on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/conda/</link>
+    <description>Recent content in conda on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Mar 2020 09:19:33 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/conda/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>常用加速镜像&amp;Python虚拟环境/包管理&amp;Jupyter Notebook</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</link>
+        <pubDate>Sun, 08 Mar 2020 09:19:33 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sun, 08 Mar 2020 09:19:33 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;常用加速镜像；python常用虚拟环境管理;Jupyter Notebook常用配置&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>加速镜像</category>
+            
+          
+            
+              <category>pyenv</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>虚拟环境</category>
+            
+          
+            
+              <category>包管理</category>
+            
+          
+            
+              <category>virtualenvwrapper</category>
+            
+          
+            
+              <category>conda</category>
+            
+          
+            
+              <category>Jupyter notebook</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>思路 on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/%E6%80%9D%E8%B7%AF/</link>
+    <description>Recent content in 思路 on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 17 Dec 2019 08:59:22 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/%E6%80%9D%E8%B7%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>论文写作摘抄-句型句式</title>
+        <link>https://www.xunhs.cyou/posts/n/91/</link>
+        <pubDate>Tue, 17 Dec 2019 08:59:22 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Tue, 17 Dec 2019 08:59:22 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/91/</guid>
+        <description>通过论文阅读，总结常用写作过程中的词语组合、句型句式等 单词/短语 据我所知 to the best of our knowledge 另外，另一方面 additionally 具体而言，更确切的说（讲） Specifically to be more precise 简言</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>论文阅读</category>
+            
+          
+            
+              <category>单词</category>
+            
+          
+            
+              <category>短语</category>
+            
+          
+            
+              <category>写作</category>
+            
+          
+            
+              <category>思路</category>
+            
+          
+            
+              <category>模板</category>
+            
+          
+            
+              <category>总结</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏·</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

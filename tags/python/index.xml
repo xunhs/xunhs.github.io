@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Python on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/python/</link>
+    <description>Recent content in Python on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 24 Feb 2021 01:44:11 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>POI-type Embedding构建流程札记</title>
+        <link>https://www.xunhs.cyou/posts/n/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
+        <pubDate>Wed, 24 Feb 2021 01:44:11 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Wed, 24 Feb 2021 01:44:11 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;本文对POI-type Embedding的构建流程进行整理。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Embedding</category>
+            
+          
+            
+              <category>Gensim</category>
+            
+          
+            
+              <category>POIs</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>城市功能区</category>
+            
+          
+            
+              <category>札记</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>POI数据Elasticsearch存储及查询操作札记</title>
+        <link>https://www.xunhs.cyou/2021/02/23/368/</link>
+        <pubDate>Tue, 23 Feb 2021 06:37:47 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Tue, 23 Feb 2021 06:37:47 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/2021/02/23/368/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;使用ArcGIS Pro栅格切割工具做分块裁剪，并使用切割好的分块做Image Embeddings。记录操作过程及注意事项。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Elasticsearch</category>
+            
+          
+            
+              <category>POIs</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>兴趣点</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>PyTroch学习笔记</title>
+        <link>https://www.xunhs.cyou/posts/n/328/</link>
+        <pubDate>Sat, 25 Apr 2020 09:22:21 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sat, 25 Apr 2020 09:22:21 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/328/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Refer: &lt;a href=&#34;https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html&#34;&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>深度学习</category>
+            
+          
+            
+              <category>PyTorch</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>神经网络</category>
+            
+          
+            
+              <category>预训练模型</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Scikit Learn Tips</title>
+        <link>https://www.xunhs.cyou/posts/n/209/</link>
+        <pubDate>Sat, 11 Apr 2020 09:21:12 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sat, 11 Apr 2020 09:21:12 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/209/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Refer to &lt;a href=&#34;https://github.com/justmarkham/scikit-learn-tips&#34;&gt;scikit-learn-tips&lt;/a&gt;, &lt;a href=&#34;https://cloud.tencent.com/developer/article/1555141&#34;&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
+整理一些自己感兴趣，经常用到的&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>sklearn</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>常用加速镜像&amp;Python虚拟环境/包管理&amp;Jupyter Notebook</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</link>
+        <pubDate>Sun, 08 Mar 2020 09:19:33 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sun, 08 Mar 2020 09:19:33 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;常用加速镜像；python常用虚拟环境管理;Jupyter Notebook常用配置&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>加速镜像</category>
+            
+          
+            
+              <category>pyenv</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>虚拟环境</category>
+            
+          
+            
+              <category>包管理</category>
+            
+          
+            
+              <category>virtualenvwrapper</category>
+            
+          
+            
+              <category>conda</category>
+            
+          
+            
+              <category>Jupyter notebook</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Python库-seaborn &#43; matplotlib</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</link>
+        <pubDate>Tue, 03 Mar 2020 09:18:18 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Tue, 03 Mar 2020 09:18:18 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;seaborn是python里面做数据分析和机器学习常用的可视化库。它对matplotlib进行了深度封装，从而可以用非常简单的api接口绘制相对复杂的图形，提供对数据的深入认识。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>seaborn</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>可视化</category>
+            
+          
+            
+              <category>学习笔记</category>
+            
+          
+            
+              <category>matplotlib</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>学习笔记-QGIS</title>
+        <link>https://www.xunhs.cyou/posts/n/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</link>
+        <pubDate>Sat, 29 Feb 2020 09:17:34 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sat, 29 Feb 2020 09:17:34 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;关于QGIS若干记录&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>QGIS</category>
+            
+          
+            
+              <category>PyQGIS</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>GIS开发</category>
+            
+          
+            
+              <category>学习笔记</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Python-坐标系转换</title>
+        <link>https://www.xunhs.cyou/posts/n/75/</link>
+        <pubDate>Thu, 30 Jan 2020 09:06:19 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Thu, 30 Jan 2020 09:06:19 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/75/</guid>
+        <description>&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;用Python实现WGS84、火星坐标系、百度坐标系、web墨卡托四种坐标相互转换&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>坐标转换</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Python库：pathlib</title>
+        <link>https://www.xunhs.cyou/posts/n/72/</link>
+        <pubDate>Sat, 18 Jan 2020 09:04:38 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sat, 18 Jan 2020 09:04:38 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/72/</guid>
+        <description>&lt;hr /&gt;
+&lt;!-- Abstract --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;pathlib 是 python3 非常好用的文件/文件夹操作的库，总结常用用法，参考自&lt;a href=&#34;https://www.jianshu.com/p/a820038e65c3&#34;&gt;jianshu&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- Abstract --&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>pathlib</category>
+            
+          
+            
+              <category>文件/文件夹</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Python多线程/进程技巧</title>
+        <link>https://www.xunhs.cyou/posts/n/74/</link>
+        <pubDate>Fri, 17 Jan 2020 09:02:53 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Fri, 17 Jan 2020 09:02:53 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/74/</guid>
+        <description>&lt;!-- Abstract --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;整理Python并行化常用技巧&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- Abstract --&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>multiprocessing</category>
+            
+          
+            
+              <category>joblib</category>
+            
+          
+            
+              <category>并行</category>
+            
+          
+            
+              <category>Pandas</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Python库-tqdm-进度条</title>
+        <link>https://www.xunhs.cyou/posts/n/73/</link>
+        <pubDate>Wed, 15 Jan 2020 09:03:58 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Wed, 15 Jan 2020 09:03:58 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/73/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;总结tqdm库，进度条显示。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>progressbar</category>
+            
+          
+            
+              <category>进度条</category>
+            
+          
+            
+              <category>tqdm</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Pandas/Geopandas Tricks</title>
+        <link>https://www.xunhs.cyou/posts/n/76/</link>
+        <pubDate>Mon, 13 Jan 2020 09:01:39 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Mon, 13 Jan 2020 09:01:39 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/76/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;总结个人使用中常用Pandas及扩展插件使用技巧&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>Pandas</category>
+            
+          
+            
+              <category>GeoPandas</category>
+            
+          
+            
+              <category>优化</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

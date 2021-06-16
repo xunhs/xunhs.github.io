@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>神经网络 on Ethan</title>
+    <link>https://www.xunhs.cyou/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content in 神经网络 on Ethan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
+    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 25 Apr 2020 09:22:21 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.xunhs.cyou/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>PyTroch学习笔记</title>
+        <link>https://www.xunhs.cyou/posts/n/328/</link>
+        <pubDate>Sat, 25 Apr 2020 09:22:21 +0000</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sat, 25 Apr 2020 09:22:21 +0000</atom:modified>
+        <guid>https://www.xunhs.cyou/posts/n/328/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Refer: &lt;a href=&#34;https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html&#34;&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>深度学习</category>
+            
+          
+            
+              <category>PyTorch</category>
+            
+          
+            
+              <category>Python</category>
+            
+          
+            
+              <category>神经网络</category>
+            
+          
+            
+              <category>预训练模型</category>
+            
+          
+        
+        
+          
+            
+              <category>收藏</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
