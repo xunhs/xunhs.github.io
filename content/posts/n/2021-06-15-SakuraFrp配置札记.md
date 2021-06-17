@@ -34,22 +34,10 @@ tags:
 #### 树莓派端运行frpc
 - 赋权：`chmod 777 frpc_linux_arm64`
 - 运行： `./frpc_linux_arm64 -f 3ebb876549ee0ca6:1407145`
-  ```bash
-  $ ./frpc_linux_arm64 -f 3ebb876549ee0ca6:1407145
-  2021/06/15 11:04:57 [I] [root.go:229] Checking update...
-  2021/06/15 11:04:57 [I] Service running, frpc version: 0.37.0-sakura-1 (built: 2021-06-05 22:57)
-  2021/06/15 11:04:57 [I] [3eb**ca6-5bf6e41e] login to server success, get run id [3eb**ca6-5bf6e41e], server udp port [7001]
-  2021/06/15 11:04:57 [I] [3eb**ca6-5bf6e41e] proxy added: [3eb**ca6.openwrt]
-  2021/06/15 11:04:57 [I] [3eb**ca6-5bf6e41e] Speed Limit has been updated: 10 Mibit/s
-  Your TCP proxy is available now.
-  Use [cn-zz-bgp-1.natfrp.cloud:13694] to connect.
-  Or connect by IP (not recommended): [43.249.193.233:13694]
-  2021/06/15 11:04:58 [I] [3eb**ca6-5bf6e41e] [3eb**ca6.openwrt] start proxy success
-  ```
 
 #### 客户端连接
 - 验证：前往隧道列表查看隧道是否在线
-- 运行：`ssh -p 13694 root@cn-zz-bgp-1.natfrp.cloud`
+- 运行：`ssh -p 13694 root@cn-zz-bgp-1.natfrp.cloud`![](https://cdn.jsdelivr.net/gh/xunhs-hosts/pic@master/20210617091512.png)
 
 
 
