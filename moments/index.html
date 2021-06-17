@@ -1332,9 +1332,9 @@
 <meta name="description" content="曾经沧海难为水." />
 
 
-<meta name="created" content="2021-06-16T16:07:42&#43;0800">
-<meta name="modified" content="2021-06-16T16:07:42&#43;0800">
-<meta property="article:published_time" content="2021-06-16T16:07:42&#43;0800">
+<meta name="created" content="2021-06-17T22:49:00&#43;0800">
+<meta name="modified" content="2021-06-17T22:49:00&#43;0800">
+<meta property="article:published_time" content="2021-06-17T22:49:00&#43;0800">
 
 <meta name="author" content="Ethan">
 
@@ -1717,7 +1717,79 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://www.xunhs.cyou/moments/2021.6.16-15%E5%88%86%E9%92%9F%E7%A4%BE%E5%8C%BA%E7%94%9F%E6%B4%BB%E5%9C%88/'>2021.6</a> </h5>
+        <h5 class="title h5"><a href='https://www.xunhs.cyou/moments/2021.6.17-telegram-bot/'>Telegram Bot</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="Written At" dir="ltr">📅&nbsp;Jun 17, 2021 </time>
+          
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;1&nbsp;min read </span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            <!-- content -->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="k">def</span> <span class="nf">tg_push</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">parse_mode</span><span class="o">=</span><span class="s1">&#39;HTML&#39;</span><span class="p">):</span>
+    <span class="c1"># https://blog.jialezi.net/?post=168</span>
+    <span class="c1"># https://core.telegram.org/bots/api#sendmessage</span>
+    <span class="n">proxy_pre_str</span> <span class="o">=</span> <span class="s1">&#39;https://thingproxy.freeboard.io/fetch/&#39;</span>
+    <span class="c1">#  sendMessage（直接文本，支持MarkdownV2/HTML）</span>
+    <span class="n">req_body_str</span> <span class="o">=</span> <span class="s1">&#39;https://api.telegram.org/bot1790677966:AAH_jczd4hiHl159Yi5RkuRdhfju12hwA64/sendMessage&#39;</span>
+    <span class="n">chat_id</span> <span class="o">=</span> <span class="mi">1753106187</span>
+
+    <span class="n">req_data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;chat_id&#39;</span><span class="p">:</span> <span class="n">chat_id</span><span class="p">,</span>
+        <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">message</span><span class="p">),</span>
+        <span class="s1">&#39;parse_mode&#39;</span><span class="p">:</span> <span class="n">parse_mode</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">proxy_pre_str</span><span class="o">+</span><span class="n">req_body_str</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">req_data</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+
+            
+                
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://www.xunhs.cyou/moments/2021.6.16-15%E5%88%86%E9%92%9F%E7%A4%BE%E5%8C%BA%E7%94%9F%E6%B4%BB%E5%9C%88/'>15分钟社区生活圈</a> </h5>
         <h6 class="subtitle caption">
           <time title="Written At" dir="ltr">📅&nbsp;Jun 16, 2021 </time>
           
@@ -2123,39 +2195,6 @@ url="https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C-%E5
 
 
             
-                
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='https://www.xunhs.cyou/moments/2021.3.6-%E6%89%98%E9%A9%AC%E6%96%AF%E5%B8%83%E7%BD%97%E8%BF%AA-%E6%A1%91%E6%96%AF%E7%89%B9/'>2021.3.6-托马斯·布罗迪-桑斯特</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Mar 6, 2021 </time>
-          
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;0&nbsp;min read </span>
-          
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            <p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210306211646.jpg" alt="" /></p>
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-
-            
             
 
 
@@ -2211,7 +2250,11 @@ url="https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C-%E5
     
         
         <li class="sidebar-recent">
-            <a href="/moments/2021.6.16-15%E5%88%86%E9%92%9F%E7%A4%BE%E5%8C%BA%E7%94%9F%E6%B4%BB%E5%9C%88/" class="sidebar-recent__title p1">2021.6</a>
+            <a href="/moments/2021.6.17-telegram-bot/" class="sidebar-recent__title p1">Telegram Bot</a>
+        </li>
+        
+        <li class="sidebar-recent">
+            <a href="/moments/2021.6.16-15%E5%88%86%E9%92%9F%E7%A4%BE%E5%8C%BA%E7%94%9F%E6%B4%BB%E5%9C%88/" class="sidebar-recent__title p1">15分钟社区生活圈</a>
         </li>
         
         <li class="sidebar-recent">
@@ -2224,10 +2267,6 @@ url="https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C-%E5
         
         <li class="sidebar-recent">
             <a href="/moments/2021.5.21-%E6%B5%B7%E5%BA%95%E6%8D%9E/" class="sidebar-recent__title p1">2021.5.21-海底捞</a>
-        </li>
-        
-        <li class="sidebar-recent">
-            <a href="/moments/2021.5.20-10km/" class="sidebar-recent__title p1">2021.5-10km</a>
         </li>
         
         <hr class="hr-fade sidebar-hr" />
