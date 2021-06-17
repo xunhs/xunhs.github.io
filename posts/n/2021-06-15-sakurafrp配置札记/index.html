@@ -1763,39 +1763,12 @@
 <h4 id="树莓派端运行frpc">树莓派端运行frpc</h4>
 <ul>
 <li>赋权：<code>chmod 777 frpc_linux_arm64</code></li>
-<li>运行： <code>./frpc_linux_arm64 -f 3ebb876549ee0ca6:1407145</code>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ ./frpc_linux_arm64 -f 3ebb876549ee0ca6:1407145
-2021/06/15 11:04:57 <span class="o">[</span>I<span class="o">]</span> <span class="o">[</span>root.go:229<span class="o">]</span> Checking update...
-2021/06/15 11:04:57 <span class="o">[</span>I<span class="o">]</span> Service running, frpc version: 0.37.0-sakura-1 <span class="o">(</span>built: 2021-06-05 22:57<span class="o">)</span>
-2021/06/15 11:04:57 <span class="o">[</span>I<span class="o">]</span> <span class="o">[</span>3eb**ca6-5bf6e41e<span class="o">]</span> login to server success, get run id <span class="o">[</span>3eb**ca6-5bf6e41e<span class="o">]</span>, server udp port <span class="o">[</span>7001<span class="o">]</span>
-2021/06/15 11:04:57 <span class="o">[</span>I<span class="o">]</span> <span class="o">[</span>3eb**ca6-5bf6e41e<span class="o">]</span> proxy added: <span class="o">[</span>3eb**ca6.openwrt<span class="o">]</span>
-2021/06/15 11:04:57 <span class="o">[</span>I<span class="o">]</span> <span class="o">[</span>3eb**ca6-5bf6e41e<span class="o">]</span> Speed Limit has been updated: <span class="m">10</span> Mibit/s
-Your TCP proxy is available now.
-Use <span class="o">[</span>cn-zz-bgp-1.natfrp.cloud:13694<span class="o">]</span> to connect.
-Or connect by IP <span class="o">(</span>not recommended<span class="o">)</span>: <span class="o">[</span>43.249.193.233:13694<span class="o">]</span>
-2021/06/15 11:04:58 <span class="o">[</span>I<span class="o">]</span> <span class="o">[</span>3eb**ca6-5bf6e41e<span class="o">]</span> <span class="o">[</span>3eb**ca6.openwrt<span class="o">]</span> start proxy success
-</code></pre></td></tr></table>
-</div>
-</div></li>
+<li>运行： <code>./frpc_linux_arm64 -f 3ebb876549ee0ca6:1407145</code></li>
 </ul>
 <h4 id="客户端连接">客户端连接</h4>
 <ul>
 <li>验证：前往隧道列表查看隧道是否在线</li>
-<li>运行：<code>ssh -p 13694 root@cn-zz-bgp-1.natfrp.cloud</code></li>
+<li>运行：<code>ssh -p 13694 root@cn-zz-bgp-1.natfrp.cloud</code><img src="https://cdn.jsdelivr.net/gh/xunhs-hosts/pic@master/20210617091512.png" alt="" /></li>
 </ul>
 <h3 id="实例二内网穿透jupyter-notebookwin10">实例二：内网穿透jupyter notebook（win10）</h3>
 <p>此处仅配置内网穿透，假设系统已经配置好jupyter环境(192.168.123.87:10086)</p>
