@@ -1344,7 +1344,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.84.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1799,12 +1799,12 @@
 <pre class="chroma"><code class="language-python" data-lang="python">
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data/ind.cora.x&#34;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">pkl</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin1&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>   <span class="c1">#&amp;lt;class &#39;scipy.sparse.csr.csr_matrix&#39;&amp;gt;</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>   <span class="c1">#(140, 1433)-ind.cora.x是140行，1433列的</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>   <span class="c1">#&amp;lt;class &#39;scipy.sparse.csr.csr_matrix&#39;&amp;gt;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>   <span class="c1">#(140, 1433)-ind.cora.x是140行，1433列的</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
     <span class="n">nonzero</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">nonzero</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">nonzero</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nonzero</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
 
 <span class="o">-------</span>
 <span class="c1"># print(data[1])</span>
@@ -1852,9 +1852,9 @@
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data/ind.cora.y&#34;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">pkl</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin1&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>   <span class="c1"># &amp;lt;class &#39;numpy.ndarray&#39;&amp;gt;</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>   <span class="c1"># (140, 7)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>      <span class="c1"># [0 0 0 0 1 0 0]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>   <span class="c1"># &amp;lt;class &#39;numpy.ndarray&#39;&amp;gt;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>   <span class="c1"># (140, 7)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>      <span class="c1"># [0 0 0 0 1 0 0]</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -1882,8 +1882,8 @@
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data/ind.cora.graph&#34;</span><span class="p">,</span> <span class="s2">&#34;rb&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">pkl</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;latin1&#34;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>  <span class="c1"># &amp;lt;class &#39;collections.defaultdict&#39;&amp;gt;</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>  <span class="c1"># &amp;lt;class &#39;collections.defaultdict&#39;&amp;gt;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
 <span class="o">------</span>
 <span class="c1"># {</span>
@@ -2003,7 +2003,7 @@
 </span><span class="s2">            The number of classes for prediction
 </span><span class="s2">        &#34;&#34;&#34;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">MLP</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="bp">True</span>  <span class="c1"># default is linear model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># default is linear model</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">num_layers</span> <span class="o">=</span> <span class="n">num_layers</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">output_dim</span> <span class="o">=</span> <span class="n">output_dim</span>
 
@@ -2014,7 +2014,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="n">output_dim</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="c1"># Multi-layer model</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="kc">False</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">linears</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">ModuleList</span><span class="p">()</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">batch_norms</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">ModuleList</span><span class="p">()</span>
 
@@ -2094,8 +2094,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">torch</span>
-<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="kn">as</span> <span class="nn">nn</span>
-<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="kn">as</span> <span class="nn">F</span>
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
 <span class="kn">from</span> <span class="nn">dgl.nn.pytorch.conv</span> <span class="kn">import</span> <span class="n">SAGEConv</span>
 
 
@@ -2367,7 +2367,7 @@
 </span><span class="s2">            The number of classes for prediction
 </span><span class="s2">        &#34;&#34;&#34;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">MLP</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="bp">True</span>  <span class="c1"># default is linear model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># default is linear model</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">num_layers</span> <span class="o">=</span> <span class="n">num_layers</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">output_dim</span> <span class="o">=</span> <span class="n">output_dim</span>
 
@@ -2378,7 +2378,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="n">output_dim</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="c1"># Multi-layer model</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="kc">False</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">linears</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">ModuleList</span><span class="p">()</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">batch_norms</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">ModuleList</span><span class="p">()</span>
 
@@ -2725,11 +2725,11 @@
 <span class="kn">import</span> <span class="nn">time</span>
 
 <span class="kn">import</span> <span class="nn">dgl</span>
-<span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">torch</span>
-<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="kn">as</span> <span class="nn">nn</span>
-<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="kn">as</span> <span class="nn">F</span>
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
 <span class="kn">from</span> <span class="nn">dgl</span> <span class="kn">import</span> <span class="n">DGLGraph</span>
 <span class="kn">from</span> <span class="nn">dgl.data</span> <span class="kn">import</span> <span class="n">load_data</span><span class="p">,</span> <span class="n">register_data_args</span>
 <span class="kn">from</span> <span class="nn">dgl.nn.pytorch.conv</span> <span class="kn">import</span> <span class="n">SAGEConv</span>
@@ -2792,7 +2792,7 @@
     <span class="n">in_feats</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">n_classes</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">num_classes</span>
     <span class="n">n_edges</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span>
+    <span class="nb">print</span><span class="p">(</span>
         <span class="s2">&#34;&#34;&#34;----Data statistics------&#39;
 </span><span class="s2">      #Edges </span><span class="si">%d</span><span class="s2">
 </span><span class="s2">      #Classes </span><span class="si">%d</span><span class="s2">
@@ -2809,16 +2809,16 @@
     <span class="p">)</span>
 
     <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">gpu</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">cuda</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="n">cuda</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">cuda</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="n">cuda</span> <span class="o">=</span> <span class="kc">True</span>
         <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">set_device</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gpu</span><span class="p">)</span>
         <span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
         <span class="n">labels</span> <span class="o">=</span> <span class="n">labels</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
         <span class="n">train_mask</span> <span class="o">=</span> <span class="n">train_mask</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
         <span class="n">val_mask</span> <span class="o">=</span> <span class="n">val_mask</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
         <span class="n">test_mask</span> <span class="o">=</span> <span class="n">test_mask</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&#34;use cuda:&#34;</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">gpu</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;use cuda:&#34;</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">gpu</span><span class="p">)</span>
 
     <span class="n">train_nid</span> <span class="o">=</span> <span class="n">train_mask</span><span class="o">.</span><span class="n">nonzero</span><span class="p">()</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
     <span class="n">val_nid</span> <span class="o">=</span> <span class="n">val_mask</span><span class="o">.</span><span class="n">nonzero</span><span class="p">()</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
@@ -2867,16 +2867,16 @@
             <span class="n">dur</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span>
 
         <span class="n">acc</span> <span class="o">=</span> <span class="n">evaluate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">val_nid</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span>
-            <span class="s2">&#34;Epoch {:05d} | Time(s) {:.4f} | Loss {:.4f} | Accuracy {:.4f} | &#34;</span>
-            <span class="s2">&#34;ETputs(KTEPS) {:.2f}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="s2">&#34;Epoch </span><span class="si">{:05d}</span><span class="s2"> | Time(s) </span><span class="si">{:.4f}</span><span class="s2"> | Loss </span><span class="si">{:.4f}</span><span class="s2"> | Accuracy </span><span class="si">{:.4f}</span><span class="s2"> | &#34;</span>
+            <span class="s2">&#34;ETputs(KTEPS) </span><span class="si">{:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
                 <span class="n">epoch</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dur</span><span class="p">),</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span> <span class="n">acc</span><span class="p">,</span> <span class="n">n_edges</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dur</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1000</span>
             <span class="p">)</span>
         <span class="p">)</span>
 
-    <span class="k">print</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">()</span>
     <span class="n">acc</span> <span class="o">=</span> <span class="n">evaluate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">test_nid</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Test Accuracy {:.4f}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">acc</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Test Accuracy </span><span class="si">{:.4f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">acc</span><span class="p">))</span>
 
 
 <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&#34;GraphSAGE&#34;</span><span class="p">)</span>
@@ -2904,17 +2904,17 @@
 <span class="p">)</span>
 <span class="c1"># 设置参数</span>
 <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;--dataset&#34;</span><span class="p">,</span> <span class="s2">&#34;cora&#34;</span><span class="p">,</span> <span class="s2">&#34;--gpu&#34;</span><span class="p">,</span> <span class="s2">&#34;0&#34;</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
 
 <span class="n">main</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
 
 <span class="o">------</span>
 <span class="c1"># output</span>
-<span class="n">Epoch</span> <span class="mo">00000</span> <span class="o">|</span> <span class="n">Time</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">nan</span> <span class="o">|</span> <span class="n">Loss</span> <span class="mf">1.9592</span> <span class="o">|</span> <span class="n">Accuracy</span> <span class="mf">0.0580</span> <span class="o">|</span> <span class="n">ETputs</span><span class="p">(</span><span class="n">KTEPS</span><span class="p">)</span> <span class="n">nan</span>
-<span class="n">Epoch</span> <span class="mo">00001</span> <span class="o">|</span> <span class="n">Time</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">nan</span> <span class="o">|</span> <span class="n">Loss</span> <span class="mf">1.9487</span> <span class="o">|</span> <span class="n">Accuracy</span> <span class="mf">0.0580</span> <span class="o">|</span> <span class="n">ETputs</span><span class="p">(</span><span class="n">KTEPS</span><span class="p">)</span> <span class="n">nan</span>
+<span class="n">Epoch</span> <span class="mi">00000</span> <span class="o">|</span> <span class="n">Time</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">nan</span> <span class="o">|</span> <span class="n">Loss</span> <span class="mf">1.9592</span> <span class="o">|</span> <span class="n">Accuracy</span> <span class="mf">0.0580</span> <span class="o">|</span> <span class="n">ETputs</span><span class="p">(</span><span class="n">KTEPS</span><span class="p">)</span> <span class="n">nan</span>
+<span class="n">Epoch</span> <span class="mi">00001</span> <span class="o">|</span> <span class="n">Time</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">nan</span> <span class="o">|</span> <span class="n">Loss</span> <span class="mf">1.9487</span> <span class="o">|</span> <span class="n">Accuracy</span> <span class="mf">0.0580</span> <span class="o">|</span> <span class="n">ETputs</span><span class="p">(</span><span class="n">KTEPS</span><span class="p">)</span> <span class="n">nan</span>
 <span class="o">...</span>
-<span class="n">Epoch</span> <span class="mo">001</span><span class="mi">98</span> <span class="o">|</span> <span class="n">Time</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="mf">0.0105</span> <span class="o">|</span> <span class="n">Loss</span> <span class="mf">0.3375</span> <span class="o">|</span> <span class="n">Accuracy</span> <span class="mf">0.7980</span> <span class="o">|</span> <span class="n">ETputs</span><span class="p">(</span><span class="n">KTEPS</span><span class="p">)</span> <span class="mf">1006.57</span>
-<span class="n">Epoch</span> <span class="mo">001</span><span class="mi">99</span> <span class="o">|</span> <span class="n">Time</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="mf">0.0105</span> <span class="o">|</span> <span class="n">Loss</span> <span class="mf">0.3457</span> <span class="o">|</span> <span class="n">Accuracy</span> <span class="mf">0.7960</span> <span class="o">|</span> <span class="n">ETputs</span><span class="p">(</span><span class="n">KTEPS</span><span class="p">)</span> <span class="mf">1006.80</span>
+<span class="n">Epoch</span> <span class="mi">00198</span> <span class="o">|</span> <span class="n">Time</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="mf">0.0105</span> <span class="o">|</span> <span class="n">Loss</span> <span class="mf">0.3375</span> <span class="o">|</span> <span class="n">Accuracy</span> <span class="mf">0.7980</span> <span class="o">|</span> <span class="n">ETputs</span><span class="p">(</span><span class="n">KTEPS</span><span class="p">)</span> <span class="mf">1006.57</span>
+<span class="n">Epoch</span> <span class="mi">00199</span> <span class="o">|</span> <span class="n">Time</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="mf">0.0105</span> <span class="o">|</span> <span class="n">Loss</span> <span class="mf">0.3457</span> <span class="o">|</span> <span class="n">Accuracy</span> <span class="mf">0.7960</span> <span class="o">|</span> <span class="n">ETputs</span><span class="p">(</span><span class="n">KTEPS</span><span class="p">)</span> <span class="mf">1006.80</span>
 
 <span class="n">Test</span> <span class="n">Accuracy</span> <span class="mf">0.8220</span>
 </code></pre></td></tr></table>
@@ -2935,7 +2935,7 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">dgl.function</span> <span class="kn">as</span> <span class="nn">fn</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">dgl.function</span> <span class="k">as</span> <span class="nn">fn</span>
 <span class="k">class</span> <span class="nc">DotProductPredictor</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">graph</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
         <span class="c1"># h是从5.1节的GNN模型中计算出的节点表示</span>
@@ -3259,11 +3259,11 @@
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">itertools</span>
 
 <span class="kn">import</span> <span class="nn">dgl</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">scipy.sparse</span> <span class="kn">as</span> <span class="nn">sp</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">scipy.sparse</span> <span class="k">as</span> <span class="nn">sp</span>
 <span class="kn">import</span> <span class="nn">torch</span>
-<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="kn">as</span> <span class="nn">nn</span>
-<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="kn">as</span> <span class="nn">F</span>
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
 <span class="kn">from</span> <span class="nn">dgl.nn.pytorch.conv</span> <span class="kn">import</span> <span class="n">SAGEConv</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">roc_auc_score</span>
 
@@ -3437,7 +3437,7 @@
 </span><span class="s2">    &#34;&#34;&#34;</span>
 
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_pred_neg</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="n">K</span><span class="p">:</span>
-        <span class="k">return</span> <span class="p">{</span><span class="s2">&#34;hits@{}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K</span><span class="p">):</span> <span class="mf">1.0</span><span class="p">}</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s2">&#34;hits@</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K</span><span class="p">):</span> <span class="mf">1.0</span><span class="p">}</span>
 
     <span class="k">if</span> <span class="n">type_info</span> <span class="o">==</span> <span class="s2">&#34;torch&#34;</span><span class="p">:</span>
         <span class="n">kth_score_in_negative_edges</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">topk</span><span class="p">(</span><span class="n">y_pred_neg</span><span class="p">,</span> <span class="n">K</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -3481,8 +3481,8 @@
         <span class="n">test_hits</span> <span class="o">=</span> <span class="n">eval_hits</span><span class="p">(</span><span class="n">pos_score</span><span class="p">,</span> <span class="n">neg_score</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">e</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span>
-            <span class="s2">&#34;In epoch {}, train loss: {}, test auc: {}, hits@100: {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="s2">&#34;In epoch </span><span class="si">{}</span><span class="s2">, train loss: </span><span class="si">{}</span><span class="s2">, test auc: </span><span class="si">{}</span><span class="s2">, hits@100: </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
                 <span class="n">e</span><span class="p">,</span>
                 <span class="n">loss</span><span class="p">,</span>
                 <span class="n">auc</span><span class="p">,</span>
@@ -3967,13 +3967,13 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
 
 <span class="kn">import</span> <span class="nn">torch</span>
-<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="kn">as</span> <span class="nn">nn</span>
-<span class="kn">import</span> <span class="nn">torch.optim</span> <span class="kn">as</span> <span class="nn">optim</span>
-<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="kn">as</span> <span class="nn">F</span>
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
+<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
 <span class="kn">import</span> <span class="nn">argparse</span>
 <span class="kn">from</span> <span class="nn">dgl.data</span> <span class="kn">import</span> <span class="n">GINDataset</span>
 
@@ -3983,7 +3983,7 @@
 </span><span class="s2">        arguments parser
 </span><span class="s2">        &#34;&#34;&#34;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_parse</span><span class="p">(</span><span class="n">args_list</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args_list</span><span class="p">):</span>
@@ -4078,7 +4078,7 @@
 
 
 <span class="n">args</span> <span class="o">=</span> <span class="n">Parser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&#34;GIN&#34;</span><span class="p">,</span> <span class="n">args_list</span><span class="o">=</span><span class="p">[])</span><span class="o">.</span><span class="n">args</span>
-<span class="k">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
 <span class="c1"># set up seeds, args.seed supported</span>
 <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">seed</span><span class="p">)</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">seed</span><span class="p">)</span>
@@ -4103,16 +4103,16 @@
                  <span class="n">dataset</span><span class="p">,</span>
                  <span class="n">batch_size</span><span class="p">,</span>
                  <span class="n">device</span><span class="p">,</span>
-                 <span class="n">collate_fn</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+                 <span class="n">collate_fn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                  <span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-                 <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                 <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                  <span class="n">split_name</span><span class="o">=</span><span class="s1">&#39;fold10&#39;</span><span class="p">,</span>
                  <span class="n">fold_idx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
                  <span class="n">split_ratio</span><span class="o">=</span><span class="mf">0.7</span><span class="p">):</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">shuffle</span> <span class="o">=</span> <span class="n">shuffle</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">seed</span> <span class="o">=</span> <span class="n">seed</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pin_memory&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">}</span> <span class="k">if</span> <span class="s1">&#39;cuda&#39;</span> <span class="ow">in</span> <span class="n">device</span><span class="o">.</span><span class="n">type</span> <span class="k">else</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pin_memory&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span> <span class="k">if</span> <span class="s1">&#39;cuda&#39;</span> <span class="ow">in</span> <span class="n">device</span><span class="o">.</span><span class="n">type</span> <span class="k">else</span> <span class="p">{}</span>
 
         <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">l</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">]</span>
 
@@ -4138,9 +4138,9 @@
     <span class="k">def</span> <span class="nf">train_valid_loader</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">train_loader</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">valid_loader</span>
 
-    <span class="k">def</span> <span class="nf">_split_fold10</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">fold_idx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_split_fold10</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">fold_idx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
         <span class="s1">&#39;&#39;&#39; 10 flod &#39;&#39;&#39;</span>
-        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">=</span> <span class="n">fold_idx</span> <span class="ow">and</span> <span class="n">fold_idx</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">10</span><span class="p">,</span> <span class="k">print</span><span class="p">(</span>
+        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">=</span> <span class="n">fold_idx</span> <span class="ow">and</span> <span class="n">fold_idx</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">10</span><span class="p">,</span> <span class="nb">print</span><span class="p">(</span>
             <span class="s2">&#34;fold_idx must be from 0 to 9.&#34;</span><span class="p">)</span>
 
         <span class="n">skf</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="n">shuffle</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="n">seed</span><span class="p">)</span>
@@ -4149,13 +4149,13 @@
             <span class="n">idx_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
         <span class="n">train_idx</span><span class="p">,</span> <span class="n">valid_idx</span> <span class="o">=</span> <span class="n">idx_list</span><span class="p">[</span><span class="n">fold_idx</span><span class="p">]</span>
 
-        <span class="k">print</span><span class="p">(</span>
+        <span class="nb">print</span><span class="p">(</span>
             <span class="s2">&#34;train_set : test_set = </span><span class="si">%d</span><span class="s2"> : </span><span class="si">%d</span><span class="s2">&#34;</span><span class="p">,</span>
             <span class="nb">len</span><span class="p">(</span><span class="n">train_idx</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">valid_idx</span><span class="p">))</span>
 
         <span class="k">return</span> <span class="n">train_idx</span><span class="p">,</span> <span class="n">valid_idx</span>
 
-    <span class="k">def</span> <span class="nf">_split_rand</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">split_ratio</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_split_rand</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">split_ratio</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
         <span class="n">num_entries</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
         <span class="n">indices</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">num_entries</span><span class="p">))</span>
         <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
@@ -4163,7 +4163,7 @@
         <span class="n">split</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">split_ratio</span> <span class="o">*</span> <span class="n">num_entries</span><span class="p">))</span>
         <span class="n">train_idx</span><span class="p">,</span> <span class="n">valid_idx</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[:</span><span class="n">split</span><span class="p">],</span> <span class="n">indices</span><span class="p">[</span><span class="n">split</span><span class="p">:]</span>
 
-        <span class="k">print</span><span class="p">(</span>
+        <span class="nb">print</span><span class="p">(</span>
             <span class="s2">&#34;train_set : test_set = </span><span class="si">%d</span><span class="s2"> : </span><span class="si">%d</span><span class="s2">&#34;</span><span class="p">,</span>
             <span class="nb">len</span><span class="p">(</span><span class="n">train_idx</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">valid_idx</span><span class="p">))</span>
 
@@ -4211,7 +4211,7 @@
 </span><span class="s2">            The number of classes for prediction
 </span><span class="s2">        &#34;&#34;&#34;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">MLP</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="bp">True</span>  <span class="c1"># default is linear model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># default is linear model</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">num_layers</span> <span class="o">=</span> <span class="n">num_layers</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">output_dim</span> <span class="o">=</span> <span class="n">output_dim</span>
 
@@ -4222,7 +4222,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="n">output_dim</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="c1"># Multi-layer model</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">linear_or_not</span> <span class="o">=</span> <span class="kc">False</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">linears</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">ModuleList</span><span class="p">()</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">batch_norms</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">ModuleList</span><span class="p">()</span>
 
@@ -4341,7 +4341,7 @@
     <span class="n">batch_size</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">batch_size</span><span class="p">,</span>
     <span class="n">device</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">device</span><span class="p">,</span>
     <span class="n">seed</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">seed</span><span class="p">,</span>
-    <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
     <span class="n">split_name</span><span class="o">=</span><span class="s2">&#34;fold10&#34;</span><span class="p">,</span>
     <span class="n">fold_idx</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">fold_idx</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">train_valid_loader</span><span class="p">()</span>
@@ -4428,8 +4428,8 @@
     <span class="n">train_loss</span><span class="p">,</span> <span class="n">train_acc</span> <span class="o">=</span> <span class="n">eval_net</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">trainloader</span><span class="p">,</span> <span class="n">criterion</span><span class="p">)</span>
     <span class="n">valid_loss</span><span class="p">,</span> <span class="n">valid_acc</span> <span class="o">=</span> <span class="n">eval_net</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">validloader</span><span class="p">,</span> <span class="n">criterion</span><span class="p">)</span>
 
-    <span class="k">print</span><span class="p">(</span>
-        <span class="s2">&#34;Epoch: {}, train set - average loss: {:.4f}, accuracy: {:.0f}%, valid set - average loss: {:.4f}, accuracy: {:.0f}%&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="s2">&#34;Epoch: </span><span class="si">{}</span><span class="s2">, train set - average loss: </span><span class="si">{:.4f}</span><span class="s2">, accuracy: </span><span class="si">{:.0f}</span><span class="s2">%, valid set - average loss: </span><span class="si">{:.4f}</span><span class="s2">, accuracy: </span><span class="si">{:.0f}</span><span class="s2">%&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
             <span class="n">epoch</span><span class="p">,</span> <span class="n">train_loss</span><span class="p">,</span> <span class="mf">100.0</span> <span class="o">*</span> <span class="n">train_acc</span><span class="p">,</span> <span class="n">valid_loss</span><span class="p">,</span> <span class="mf">100.0</span> <span class="o">*</span> <span class="n">valid_acc</span>
         <span class="p">)</span>
     <span class="p">)</span>

@@ -1346,7 +1346,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.84.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2009,7 +2009,7 @@ python2 fmm_test.py
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">osmnx</span> <span class="kn">as</span> <span class="nn">ox</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">osmnx</span> <span class="k">as</span> <span class="nn">ox</span>
 <span class="n">place</span> <span class="o">=</span><span class="s2">&#34;Stockholm, Sweden&#34;</span>
 <span class="n">G</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">graph_from_place</span><span class="p">(</span><span class="n">place</span><span class="p">,</span> <span class="n">network_type</span><span class="o">=</span><span class="s1">&#39;drive&#39;</span><span class="p">,</span><span class="n">which_result</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">ox</span><span class="o">.</span><span class="n">save_graph_shapefile</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;stockholm&#39;</span><span class="p">)</span>
@@ -2028,7 +2028,7 @@ python2 fmm_test.py
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">osmnx</span> <span class="kn">as</span> <span class="nn">ox</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">osmnx</span> <span class="k">as</span> <span class="nn">ox</span>
 <span class="kn">from</span> <span class="nn">shapely.geometry</span> <span class="kn">import</span> <span class="n">shape</span>
 <span class="n">json_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;stockholm_boundary.geojson&#34;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">json</span>
@@ -2103,7 +2103,7 @@ Duplicate bidirectional edges, i.e., add a reverse edge</li>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="n">table_name</span> <span class="o">=</span> <span class="s1">&#39;bjrdv2pro&#39;</span>
 <span class="n">geom_col</span> <span class="o">=</span> <span class="s1">&#39;geom&#39;</span>
-<span class="n">sql_str</span> <span class="o">=</span> <span class="s2">&#34;select * from {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">table_name</span><span class="p">)</span>
+<span class="n">sql_str</span> <span class="o">=</span> <span class="s2">&#34;select * from </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">table_name</span><span class="p">)</span>
 <span class="n">bjrd_gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_postgis</span><span class="p">(</span><span class="n">sql</span><span class="o">=</span><span class="n">sql_str</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span> <span class="n">geom_col</span><span class="o">=</span><span class="n">geom_col</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">reverse_coords</span><span class="p">(</span><span class="n">line_string</span><span class="p">):</span>
@@ -2116,7 +2116,7 @@ Duplicate bidirectional edges, i.e., add a reverse edge</li>
 <span class="n">_bjrd_gdf</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bjrd_gdf</span><span class="o">.</span><span class="n">target</span>
 <span class="n">_bjrd_gdf</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bjrd_gdf</span><span class="o">.</span><span class="n">source</span>
 
-<span class="n">concat_gdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">bjrd_gdf</span><span class="p">,</span> <span class="n">_bjrd_gdf</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">set_geometry</span><span class="p">(</span><span class="s1">&#39;geom&#39;</span><span class="p">)</span>
+<span class="n">concat_gdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">bjrd_gdf</span><span class="p">,</span> <span class="n">_bjrd_gdf</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">set_geometry</span><span class="p">(</span><span class="s1">&#39;geom&#39;</span><span class="p">)</span>
 <span class="n">concat_gdf</span><span class="p">[</span><span class="s1">&#39;gid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">concat_gdf</span><span class="o">.</span><span class="n">index</span>
 <span class="n">concat_gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;bjrdv2probidrt.shp&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -2220,8 +2220,8 @@ Duplicate bidirectional edges, i.e., add a reverse edge</li>
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">import</span> <span class="nn">geopandas</span> <span class="kn">as</span> <span class="nn">gpd</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">shapely.wkt</span> <span class="kn">import</span> <span class="n">dumps</span><span class="p">,</span> <span class="n">loads</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;/home/only/Projects/fmm-master/python/build&#39;</span><span class="p">)</span>
@@ -2273,11 +2273,11 @@ Duplicate bidirectional edges, i.e., add a reverse edge</li>
         <span class="n">mrst</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">match_wkt</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">g</span><span class="p">))</span><span class="o">.</span><span class="n">mgeom</span>
         <span class="k">return</span> <span class="n">loads</span><span class="p">(</span><span class="n">mrst</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
-        <span class="k">return</span> <span class="bp">None</span>
+        <span class="k">return</span> <span class="kc">None</span>
 
 <span class="n">traj_mm_df</span><span class="p">[</span><span class="s1">&#39;geometry&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">traj_mm_df</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">g</span><span class="p">:</span> <span class="n">_mm</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
 <span class="c1"># (可选操作)丢掉匹配度非常差的路径</span>
-<span class="n">traj_mm_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">traj_mm_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">traj_mm_df</span><span class="o">.</span><span class="n">set_geometry</span><span class="p">(</span><span class="s1">&#39;geometry&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">traj_tst_result_fp</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s1">&#39;GeoJSON&#39;</span><span class="p">)</span>
 
 </code></pre></td></tr></table>

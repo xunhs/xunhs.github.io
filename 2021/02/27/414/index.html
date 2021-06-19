@@ -1346,7 +1346,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.84.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1826,8 +1826,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python">	<span class="kn">from</span> <span class="nn">osgeo</span> <span class="kn">import</span> <span class="n">gdal</span>
-	<span class="kn">import</span> <span class="nn">geopandas</span> <span class="kn">as</span> <span class="nn">gpd</span> 
-	<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span> 
+	<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span> 
+	<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
 	<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 	<span class="kn">import</span> <span class="nn">os</span> 
 	<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
@@ -1839,13 +1839,13 @@
 		<span class="n">ds</span> <span class="o">=</span> <span class="n">gdal</span><span class="o">.</span><span class="n">Open</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">tif_path</span><span class="p">))</span>
 		<span class="n">width</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">RasterXSize</span>
 		<span class="n">height</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">RasterYSize</span>
-		<span class="n">ds</span> <span class="o">=</span> <span class="bp">None</span> 
+		<span class="n">ds</span> <span class="o">=</span> <span class="kc">None</span> 
 		<span class="k">if</span> <span class="n">width</span> <span class="o">!=</span> <span class="n">patch_size</span> <span class="ow">or</span> <span class="n">height</span> <span class="o">!=</span> <span class="n">patch_size</span><span class="p">:</span> <span class="c1"># delete</span>
 			<span class="n">path_stem</span> <span class="o">=</span> <span class="n">tif_path</span><span class="o">.</span><span class="n">stem</span>
 			<span class="n">path_parent</span> <span class="o">=</span> <span class="n">tif_path</span><span class="o">.</span><span class="n">parent</span>
 			<span class="n">_l</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.tfw&#39;</span><span class="p">,</span> <span class="s1">&#39;.TIF&#39;</span><span class="p">,</span> <span class="s1">&#39;.TIF.aux.xml&#39;</span><span class="p">,</span> <span class="s1">&#39;.TIF.ovr&#39;</span><span class="p">]</span>
 			<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">_l</span><span class="p">:</span>
-				<span class="n">d_fp</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">path_parent</span><span class="p">,</span> <span class="n">f</span><span class="s1">&#39;{path_stem}{_}&#39;</span><span class="p">)</span>
+				<span class="n">d_fp</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">path_parent</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">path_stem</span><span class="si">}{</span><span class="n">_</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 				<span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">d_fp</span><span class="p">)</span>
 		
 	<span class="n">_dict</span> <span class="o">=</span> <span class="p">{</span>
@@ -1873,7 +1873,7 @@
 	<span class="n">bj_rs_split_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 
 	<span class="n">bj_arial_image_split_fp</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">split_raster_dir</span><span class="o">.</span><span class="n">parent</span><span class="p">,</span> <span class="s1">&#39;BJR5_256_patch_location.txt&#39;</span><span class="p">)</span>
-	<span class="n">bj_rs_split_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">bj_arial_image_split_fp</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+	<span class="n">bj_rs_split_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">bj_arial_image_split_fp</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>导入ArcGIS：<br />
@@ -1945,7 +1945,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python">	<span class="c1"># -*- coding: UTF-8 -*-</span>
-	<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+	<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 	<span class="kn">import</span> <span class="nn">os</span>
 	<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 	<span class="kn">from</span> <span class="nn">osgeo</span> <span class="kn">import</span> <span class="n">gdal</span>
@@ -1999,7 +1999,7 @@
 		<span class="n">all_tif</span> <span class="o">=</span> <span class="p">[</span><span class="n">_</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">split_raster_dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*.TIF&#39;</span><span class="p">)]</span>
 		<span class="k">for</span> <span class="n">tif</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">all_tif</span><span class="p">):</span>
 			<span class="n">stretchImg</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">tif</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">tif</span><span class="o">.</span><span class="n">with_suffix</span><span class="p">(</span><span class="s1">&#39;.jpg&#39;</span><span class="p">)))</span>
-		<span class="k">print</span><span class="p">(</span><span class="s2">&#34;完成所有图片转换!&#34;</span><span class="p">)</span>
+		<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;完成所有图片转换!&#34;</span><span class="p">)</span>
 
 	<span class="n">Batch_Convert_tif_to_jpg</span><span class="p">(</span><span class="n">split_raster_dir</span><span class="p">,</span> <span class="n">split_raster_dir</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -2083,7 +2083,7 @@
     <span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&#34;/content/drive/MyDrive/DataUploads/ImageEmbeddings/RasterSplitJPG&#34;</span><span class="p">)</span>
     <span class="n">p</span> <span class="ow">in</span> <span class="n">root_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&#34;*.JPG&#34;</span><span class="p">):</span>
       <span class="n">stem</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">stem</span>
-      <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="n">root_path</span><span class="p">,</span> <span class="n">f</span><span class="s2">&#34;{stem}.jpeg&#34;</span><span class="p">))</span>
+      <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="n">root_path</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">stem</span><span class="si">}</span><span class="s2">.jpeg&#34;</span><span class="p">))</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code>
@@ -2108,7 +2108,7 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="err">出现内存溢出错误，可适当降低</span><span class="n">batch</span> <span class="n">size</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">出现内存溢出错误</span><span class="err">，</span><span class="n">可适当降低batch</span> <span class="n">size</span>
     <span class="n">_embeddings</span><span class="o">.</span><span class="n">inference</span><span class="o">.</span><span class="n">run_inference</span><span class="p">(</span><span class="n">tfrecords_folder</span><span class="o">=</span><span class="n">path_tfrecords</span><span class="p">,</span> <span class="n">output_folder</span><span class="o">=</span><span class="n">path_embeddings</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -2296,7 +2296,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span> <span class="kn">import</span> <span class="nn">embeddings_to_numpy</span>
-    <span class="n">embeddings_numpy</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&#34;{home}/{dataset}/embeddings_numpy&#34;</span>
+    <span class="n">embeddings_numpy</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">home</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">dataset</span><span class="si">}</span><span class="s2">/embeddings_numpy&#34;</span>
     <span class="n">dings_to_numpy</span><span class="p">(</span><span class="n">path_embeddings</span><span class="p">,</span> <span class="n">path_embeddings_numpy</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>

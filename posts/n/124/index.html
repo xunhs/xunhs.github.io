@@ -1346,7 +1346,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.84.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1789,18 +1789,18 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
 
 
 <span class="n">G_karate</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">karate_club_graph</span><span class="p">()</span>
 <span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G_karate</span><span class="p">);</span>
-<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G_karate</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow&#39;</span><span class="p">),</span> <span class="n">with_labels</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="n">pos</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G_karate</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow&#39;</span><span class="p">),</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="n">pos</span><span class="p">)</span>
 
 </code></pre></td></tr></table>
 </div>
@@ -1841,14 +1841,14 @@
 <span class="n">max_degree</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">degree_sequence</span><span class="p">)[:,</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">min_degree</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">degree_sequence</span><span class="p">)[:,</span><span class="mi">1</span><span class="p">])</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of nodes : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_nodes</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of edges : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_arr</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of nodes : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_nodes</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of edges : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_arr</span><span class="p">))</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Maximum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_degree</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Minimum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">min_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Maximum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Minimum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">min_degree</span><span class="p">))</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Average degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">avg_degree</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Median degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">med_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Average degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">avg_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Median degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">med_degree</span><span class="p">))</span>
 
 </code></pre></td></tr></table>
 </div>
@@ -2012,15 +2012,15 @@ G(n, p)模型的两个主要假设（连边独立，每条连边可能性相同�
 
 <span class="n">esp_degree</span> <span class="o">=</span> <span class="p">(</span><span class="n">nb_nodes</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">p</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of nodes : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_nodes</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of edges : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_arr</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of nodes : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_nodes</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of edges : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_arr</span><span class="p">))</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Maximum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_degree</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Minimum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">min_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Maximum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Minimum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">min_degree</span><span class="p">))</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Average degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">avg_degree</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Expected degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">esp_degree</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Median degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">med_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Average degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">avg_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Expected degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">esp_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Median degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">med_degree</span><span class="p">))</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -2198,15 +2198,15 @@ Median degree : 15.0</li>
 
 <span class="n">esp_degree</span> <span class="o">=</span> <span class="p">(</span><span class="n">nb_nodes</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">p</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of nodes : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_nodes</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of edges : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_arr</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of nodes : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_nodes</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of edges : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nb_arr</span><span class="p">))</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Maximum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_degree</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Minimum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">min_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Maximum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Minimum degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">min_degree</span><span class="p">))</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Average degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">avg_degree</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Expected degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">esp_degree</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Median degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">med_degree</span><span class="p">))</span><span class="sb">``</span><span class="err">`</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Average degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">avg_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Expected degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">esp_degree</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Median degree : &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">med_degree</span><span class="p">))</span><span class="err">```</span>
 
 <span class="o">-</span> <span class="n">out</span><span class="p">:</span>
 	<span class="n">Number</span> <span class="n">of</span> <span class="n">nodes</span> <span class="p">:</span> <span class="mi">150</span>
@@ -2245,12 +2245,12 @@ Median degree : 15.0</li>
 <span class="o">-</span> <span class="n">Breadth</span><span class="o">-</span><span class="n">First</span> <span class="n">Search</span> <span class="p">(</span><span class="n">BFS</span><span class="p">)</span> <span class="n">that</span> <span class="n">explore</span> <span class="n">each</span> <span class="n">node</span><span class="err">’</span><span class="n">s</span> <span class="n">neighbor</span> <span class="n">first</span><span class="p">,</span> <span class="n">then</span> <span class="n">neighbors</span> <span class="ow">or</span> <span class="n">the</span> <span class="n">neighbors</span><span class="err">…</span>
 <span class="o">-</span> <span class="n">Depth</span><span class="o">-</span><span class="n">First</span> <span class="n">Search</span> <span class="p">(</span><span class="n">DFS</span><span class="p">)</span> <span class="n">which</span> <span class="k">try</span> <span class="n">to</span> <span class="n">go</span> <span class="n">down</span> <span class="n">a</span> <span class="n">path</span> <span class="k">as</span> <span class="n">much</span> <span class="k">as</span> <span class="n">possible</span><span class="p">,</span> <span class="ow">and</span> <span class="n">visit</span> <span class="n">new</span> <span class="n">neighbors</span> <span class="k">if</span> <span class="n">possible</span>
 
-<span class="err">根据可用性和质量等条件确定最优路径。我们也将搜索算法包含在这一类别中。这可用于确定最快路由或流量路由。</span>
-<span class="o">-</span> <span class="err">寻路算法是通过最小化跳（</span><span class="n">hop</span><span class="err">）的数量来</span><span class="o">**</span><span class="err">寻找两个节点之间的最短路径</span><span class="o">**</span><span class="err">。</span>
-	<span class="o">-</span> <span class="err">最短路径：</span> <span class="err">最短路径计算的是一对节点之间的最短的加权（如果图有加权的话）路径。这可用于确定最优的驾驶方向或社交网络上两个人之间的分离程度。</span>
-<span class="o">-</span> <span class="err">搜索算法不是给出最短路径，而是根据图的相邻情况或深度来探索图。这可用于信息检索。</span>
-	<span class="o">-</span> <span class="err">宽度优先搜索（</span><span class="n">BFS</span><span class="err">）：首先探索每个节点的相邻节点，然后探索相邻节点的相邻节点</span>
-	<span class="o">-</span> <span class="err">深度优先搜索（</span><span class="n">DFS</span><span class="err">）：会尝试尽可能地深入一条路径，如有可能便访问新的相邻节点</span>
+<span class="n">根据可用性和质量等条件确定最优路径</span><span class="err">。</span><span class="n">我们也将搜索算法包含在这一类别中</span><span class="err">。</span><span class="n">这可用于确定最快路由或流量路由</span><span class="err">。</span>
+<span class="o">-</span> <span class="n">寻路算法是通过最小化跳</span><span class="err">（</span><span class="n">hop</span><span class="err">）</span><span class="n">的数量来</span><span class="o">**</span><span class="n">寻找两个节点之间的最短路径</span><span class="o">**</span><span class="err">。</span>
+	<span class="o">-</span> <span class="n">最短路径</span><span class="err">：</span> <span class="n">最短路径计算的是一对节点之间的最短的加权</span><span class="err">（</span><span class="n">如果图有加权的话</span><span class="err">）</span><span class="n">路径</span><span class="err">。</span><span class="n">这可用于确定最优的驾驶方向或社交网络上两个人之间的分离程度</span><span class="err">。</span>
+<span class="o">-</span> <span class="n">搜索算法不是给出最短路径</span><span class="err">，</span><span class="n">而是根据图的相邻情况或深度来探索图</span><span class="err">。</span><span class="n">这可用于信息检索</span><span class="err">。</span>
+	<span class="o">-</span> <span class="n">宽度优先搜索</span><span class="err">（</span><span class="n">BFS</span><span class="err">）：</span><span class="n">首先探索每个节点的相邻节点</span><span class="err">，</span><span class="n">然后探索相邻节点的相邻节点</span>
+	<span class="o">-</span> <span class="n">深度优先搜索</span><span class="err">（</span><span class="n">DFS</span><span class="err">）：</span><span class="n">会尝试尽可能地深入一条路径</span><span class="err">，</span><span class="n">如有可能便访问新的相邻节点</span>
 	
 <span class="err">!</span><span class="p">[](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">gitee</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">xunhs</span><span class="o">/</span><span class="n">xunhs</span><span class="o">/</span><span class="n">raw</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">pics</span><span class="o">/</span><span class="mi">2020</span><span class="o">/</span><span class="n">spring</span><span class="o">/</span><span class="mf">20200309084645.</span><span class="n">png</span><span class="p">)</span>
 
@@ -2259,12 +2259,12 @@ Median degree : 15.0</li>
 <span class="o">-</span> <span class="n">Shortest</span> <span class="n">Path</span>
 <span class="n">calculates</span> <span class="n">the</span> <span class="n">shortest</span> <span class="n">weighted</span> <span class="p">(</span><span class="k">if</span> <span class="n">the</span> <span class="n">graph</span> <span class="ow">is</span> <span class="n">weighted</span><span class="p">)</span> <span class="n">path</span> <span class="n">between</span> <span class="n">a</span> <span class="n">pair</span> <span class="n">of</span> <span class="n">nodes</span><span class="o">.</span> <span class="n">It</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">identify</span> <span class="n">optimal</span> <span class="n">driving</span> <span class="n">directions</span> <span class="ow">or</span> <span class="n">degree</span> <span class="n">of</span> <span class="n">separation</span> <span class="n">between</span> <span class="n">two</span> <span class="n">people</span> <span class="n">on</span> <span class="n">a</span> <span class="n">social</span> <span class="n">network</span> <span class="k">for</span> <span class="n">example</span><span class="o">.</span>
 <span class="o">-</span> <span class="n">Single</span><span class="o">-</span><span class="n">Source</span> <span class="n">Shortest</span> <span class="n">Path</span>  
-<span class="n">The</span> <span class="n">Single</span> <span class="n">Source</span> <span class="n">Shortest</span> <span class="n">Path</span> <span class="p">(</span><span class="n">SSSP</span><span class="p">)</span> <span class="n">computes</span> <span class="n">the</span> <span class="n">shortest</span> <span class="n">path</span> <span class="kn">from</span> <span class="nn">a</span> <span class="nn">given</span> <span class="nn">node</span> <span class="nn">to</span> <span class="nn">all</span> <span class="nn">other</span> <span class="nn">nodes</span> <span class="nn">in</span> <span class="nn">the</span> <span class="nn">graph.</span> <span class="nn">It</span> <span class="nn">is</span> <span class="nn">often</span> <span class="nn">used</span> <span class="nn">for</span> <span class="nn">routing</span> <span class="nn">protocol</span> <span class="nn">for</span> <span class="nn">IP</span> <span class="nn">networks</span> <span class="nn">for</span> <span class="nn">example.</span>
+<span class="n">The</span> <span class="n">Single</span> <span class="n">Source</span> <span class="n">Shortest</span> <span class="n">Path</span> <span class="p">(</span><span class="n">SSSP</span><span class="p">)</span> <span class="n">computes</span> <span class="n">the</span> <span class="n">shortest</span> <span class="n">path</span> <span class="kn">from</span> <span class="nn">a</span> <span class="n">given</span> <span class="n">node</span> <span class="n">to</span> <span class="nb">all</span> <span class="n">other</span> <span class="n">nodes</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">graph</span><span class="o">.</span> <span class="n">It</span> <span class="ow">is</span> <span class="n">often</span> <span class="n">used</span> <span class="k">for</span> <span class="n">routing</span> <span class="n">protocol</span> <span class="k">for</span> <span class="n">IP</span> <span class="n">networks</span> <span class="k">for</span> <span class="n">example</span><span class="o">.</span>
 <span class="o">-</span> <span class="n">All</span> <span class="n">Pairs</span> <span class="n">Shortest</span> <span class="n">Path</span>  
 <span class="n">The</span> <span class="n">All</span> <span class="n">Pairs</span> <span class="n">Shortest</span> <span class="n">Path</span> <span class="p">(</span><span class="n">APSP</span><span class="p">)</span> <span class="n">algorithm</span> <span class="n">computes</span> <span class="n">the</span> <span class="n">shortest</span> <span class="n">path</span> <span class="n">length</span> <span class="n">between</span> <span class="nb">all</span> <span class="n">pairs</span> <span class="n">of</span> <span class="n">nodes</span><span class="o">.</span> <span class="n">It</span> <span class="ow">is</span> <span class="n">quicker</span> <span class="n">than</span> <span class="n">calling</span> <span class="n">the</span> <span class="n">Single</span> <span class="n">Source</span> <span class="n">Shortest</span> <span class="n">Path</span> <span class="k">for</span> <span class="n">every</span> <span class="n">pair</span> <span class="n">of</span> <span class="n">nodes</span><span class="o">.</span>
 
 
-<span class="sb">``</span><span class="err">`</span><span class="n">python</span>
+<span class="err">```</span><span class="n">python</span>
 <span class="c1"># Returns the shortest path between each node</span>
 <span class="n">nx</span><span class="o">.</span><span class="n">shortest_path</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
 <span class="c1"># Returns shortest path length between each node</span>
@@ -2305,7 +2305,7 @@ Median degree : 15.0</li>
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">networkx.algorithms</span> <span class="kn">import</span> <span class="n">tree</span>
-<span class="n">mst</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">minimum_spanning_edges</span><span class="p">(</span><span class="n">G_karate</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;prim&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">mst</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">minimum_spanning_edges</span><span class="p">(</span><span class="n">G_karate</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;prim&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">edgelist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">mst</span><span class="p">);</span><span class="n">edgelist</span>
 </code></pre></td></tr></table>
 </div>
@@ -2591,7 +2591,7 @@ PageRank is** usually computed on directed graphs**. However, it will also execu
         <span class="n">node_color</span><span class="o">=</span><span class="n">pr</span><span class="p">,</span>
         <span class="n">node_size</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
         <span class="n">pos</span><span class="o">=</span><span class="n">pos</span><span class="p">,</span>
-        <span class="n">with_labels</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309175156.png" alt="" /></p>
@@ -2671,15 +2671,15 @@ common elements with very large neighborhoods are less significant when predicti
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">roc_curve</span><span class="p">,</span> <span class="n">roc_auc_score</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 
 <span class="n">n</span> <span class="o">=</span> <span class="n">G_karate</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">()</span>
 <span class="n">m</span> <span class="o">=</span> <span class="n">G_karate</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of nodes : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of edges : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">m</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of nodes : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of edges : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">m</span><span class="p">)</span>
 <span class="c1"># 连通分量 ???</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of connected components : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">nx</span><span class="o">.</span><span class="n">number_connected_components</span><span class="p">(</span><span class="n">G_karate</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of connected components : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">nx</span><span class="o">.</span><span class="n">number_connected_components</span><span class="p">(</span><span class="n">G_karate</span><span class="p">))</span>
 
 </code></pre></td></tr></table>
 </div>
@@ -2719,8 +2719,8 @@ Number of connected components : 1</li>
 <span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G_karate_train</span><span class="p">)</span>
 
 <span class="n">edge_subset_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">edge_subset</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of edges deleted : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">edge_subset_size</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Number of edges remaining : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="n">edge_subset_size</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of edges deleted : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">edge_subset_size</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of edges remaining : </span><span class="si">%d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="n">edge_subset_size</span><span class="p">))</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -2834,9 +2834,9 @@ Number of edges remaining : 63</li>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;k--&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fpr_jaccard</span><span class="p">,</span> <span class="n">tpr_jaccard</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;jaccard(auc: {:.3})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">auc_jaccard</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fpr_adamic</span><span class="p">,</span> <span class="n">tpr_adamic</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;adamic(auc: {:.3})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">auc_adamic</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fpr_pref</span><span class="p">,</span> <span class="n">tpr_pref</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;pref(auc: {:.3})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">auc_pref</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fpr_jaccard</span><span class="p">,</span> <span class="n">tpr_jaccard</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;jaccard(auc: </span><span class="si">{:.3}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">auc_jaccard</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fpr_adamic</span><span class="p">,</span> <span class="n">tpr_adamic</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;adamic(auc: </span><span class="si">{:.3}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">auc_adamic</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fpr_pref</span><span class="p">,</span> <span class="n">tpr_pref</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;pref(auc: </span><span class="si">{:.3}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">auc_pref</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;False positive rate&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;True positive rate&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;ROC curve&#39;</span><span class="p">)</span>

@@ -1345,7 +1345,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.84.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1765,10 +1765,10 @@
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">ensemble</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">linear_model</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_val_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span><span class="p">,</span> <span class="n">mean_squared_error</span>
@@ -2005,20 +2005,20 @@
 <td class="lntd">
 <pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Prints R2 and RMSE scores</span>
 <span class="k">def</span> <span class="nf">get_score</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">lables</span><span class="p">):</span>    
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;R2: {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r2_score</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">lables</span><span class="p">)))</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;RMSE: {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">lables</span><span class="p">))))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;R2: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r2_score</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">lables</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;RMSE: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">lables</span><span class="p">))))</span>
 
 <span class="c1"># Shows scores for train and validation sets    </span>
 <span class="k">def</span> <span class="nf">train_test</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">x_trn</span><span class="p">,</span> <span class="n">x_tst</span><span class="p">,</span> <span class="n">y_trn</span><span class="p">,</span> <span class="n">y_tst</span><span class="p">):</span>
     <span class="n">prediction_train</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_trn</span><span class="p">)</span>
     <span class="n">prediction_test</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_tst</span><span class="p">)</span>
     <span class="c1"># Printing estimator</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">estimator</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">estimator</span><span class="p">)</span>
     <span class="c1"># Printing train scores</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Train&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Train&#34;</span><span class="p">)</span>
     <span class="n">get_score</span><span class="p">(</span><span class="n">prediction_train</span><span class="p">,</span> <span class="n">y_trn</span><span class="p">)</span>
     <span class="c1"># Printing test scores</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Test&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Test&#34;</span><span class="p">)</span>
     <span class="n">get_score</span><span class="p">(</span><span class="n">prediction_test</span><span class="p">,</span> <span class="n">y_tst</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -2047,7 +2047,7 @@
 <span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Utilities&#39;</span><span class="p">,</span> <span class="s1">&#39;RoofMatl&#39;</span><span class="p">,</span> <span class="s1">&#39;MasVnrArea&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtFinSF1&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtFinSF2&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtUnfSF&#39;</span><span class="p">,</span> <span class="s1">&#39;Heating&#39;</span><span class="p">,</span> <span class="s1">&#39;LowQualFinSF&#39;</span><span class="p">,</span>
                <span class="s1">&#39;BsmtFullBath&#39;</span><span class="p">,</span> <span class="s1">&#39;BsmtHalfBath&#39;</span><span class="p">,</span> <span class="s1">&#39;Functional&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageYrBlt&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageArea&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageCond&#39;</span><span class="p">,</span> <span class="s1">&#39;WoodDeckSF&#39;</span><span class="p">,</span>
                <span class="s1">&#39;OpenPorchSF&#39;</span><span class="p">,</span> <span class="s1">&#39;EnclosedPorch&#39;</span><span class="p">,</span> <span class="s1">&#39;3SsnPorch&#39;</span><span class="p">,</span> <span class="s1">&#39;ScreenPorch&#39;</span><span class="p">,</span> <span class="s1">&#39;PoolArea&#39;</span><span class="p">,</span> <span class="s1">&#39;PoolQC&#39;</span><span class="p">,</span> <span class="s1">&#39;Fence&#39;</span><span class="p">,</span> <span class="s1">&#39;MiscFeature&#39;</span><span class="p">,</span> <span class="s1">&#39;MiscVal&#39;</span><span class="p">],</span>
-              <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+              <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 </code></pre></td></tr></table>
 </div>
@@ -2232,7 +2232,7 @@
 
 <span class="c1"># Adding total sqfootage feature and removing Basement, 1st and 2nd floor features</span>
 <span class="n">features</span><span class="p">[</span><span class="s1">&#39;TotalSF&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;TotalBsmtSF&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;1stFlrSF&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;2ndFlrSF&#39;</span><span class="p">]</span>
-<span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;TotalBsmtSF&#39;</span><span class="p">,</span> <span class="s1">&#39;1stFlrSF&#39;</span><span class="p">,</span> <span class="s1">&#39;2ndFlrSF&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;TotalBsmtSF&#39;</span><span class="p">,</span> <span class="s1">&#39;1stFlrSF&#39;</span><span class="p">,</span> <span class="s1">&#39;2ndFlrSF&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 </code></pre></td></tr></table>
 </div>
@@ -2334,7 +2334,7 @@ After transform:<br />
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">cond</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="s1">&#39;Condition1&#39;</span><span class="p">],</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;Condition2&#39;</span><span class="p">])):</span>
     <span class="n">dummies</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">cond</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">features</span><span class="p">,</span> <span class="n">dummies</span><span class="o">.</span><span class="n">add_prefix</span><span class="p">(</span><span class="s1">&#39;Condition_&#39;</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Condition1&#39;</span><span class="p">,</span> <span class="s1">&#39;Condition2&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Condition1&#39;</span><span class="p">,</span> <span class="s1">&#39;Condition2&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># Getting Dummies from Exterior1st and Exterior2nd</span>
 <span class="n">exteriors</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;Exterior1st&#39;</span><span class="p">]]</span> <span class="o">+</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;Exterior2nd&#39;</span><span class="p">]])</span>
@@ -2343,7 +2343,7 @@ After transform:<br />
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ext</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="s1">&#39;Exterior1st&#39;</span><span class="p">],</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;Exterior2nd&#39;</span><span class="p">])):</span>
     <span class="n">dummies</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">ext</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">features</span><span class="p">,</span> <span class="n">dummies</span><span class="o">.</span><span class="n">add_prefix</span><span class="p">(</span><span class="s1">&#39;Exterior_&#39;</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Exterior1st&#39;</span><span class="p">,</span> <span class="s1">&#39;Exterior2nd&#39;</span><span class="p">,</span> <span class="s1">&#39;Exterior_nan&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Exterior1st&#39;</span><span class="p">,</span> <span class="s1">&#39;Exterior2nd&#39;</span><span class="p">,</span> <span class="s1">&#39;Exterior_nan&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># Getting Dummies from all other categorical vars</span>
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">features</span><span class="o">.</span><span class="n">dtypes</span><span class="p">[</span><span class="n">features</span><span class="o">.</span><span class="n">dtypes</span> <span class="o">==</span> <span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
@@ -2440,7 +2440,7 @@ After transform:<br />
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">ENSTest</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">ElasticNetCV</span><span class="p">(</span><span class="n">alphas</span><span class="o">=</span><span class="p">[</span><span class="mf">0.0001</span><span class="p">,</span> <span class="mf">0.0005</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> 
-                                    <span class="n">l1_ratio</span><span class="o">=</span><span class="p">[</span><span class="o">.</span><span class="mo">01</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="o">.</span><span class="mi">9</span><span class="p">,</span> <span class="o">.</span><span class="mi">99</span><span class="p">],</span> 
+                                    <span class="n">l1_ratio</span><span class="o">=</span><span class="p">[</span><span class="mf">.01</span><span class="p">,</span> <span class="mf">.1</span><span class="p">,</span> <span class="mf">.5</span><span class="p">,</span> <span class="mf">.9</span><span class="p">,</span> <span class="mf">.99</span><span class="p">],</span> 
                                     <span class="n">max_iter</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train_st</span><span class="p">,</span> <span class="n">y_train_st</span><span class="p">)</span>
 <span class="n">train_test</span><span class="p">(</span><span class="n">ENSTest</span><span class="p">,</span> <span class="n">x_train_st</span><span class="p">,</span> <span class="n">x_test_st</span><span class="p">,</span> <span class="n">y_train_st</span><span class="p">,</span> <span class="n">y_test_st</span><span class="p">)</span>
 
@@ -2478,7 +2478,7 @@ After transform:<br />
 <pre class="chroma"><code class="language-Python" data-lang="Python">
 <span class="c1"># Average R2 score and standart deviation of 5-fold cross-validation</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">ENSTest</span><span class="p">,</span> <span class="n">train_features_st</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Accuracy: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Accuracy: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -2539,7 +2539,7 @@ After transform:<br />
 <td class="lntd">
 <pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Average R2 score and standart deviation of 5-fold cross-validation</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">GBest</span><span class="p">,</span> <span class="n">train_features_st</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Accuracy: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Accuracy: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
 
 </code></pre></td></tr></table>
 </div>
@@ -2576,7 +2576,7 @@ After transform:<br />
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Id&#39;</span><span class="p">:</span> <span class="n">test</span><span class="o">.</span><span class="n">Id</span><span class="p">,</span> <span class="s1">&#39;SalePrice&#39;</span><span class="p">:</span> <span class="n">Final_labels</span><span class="p">})</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;2020-02-25.csv&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span><span class="bp">False</span><span class="p">)</span>   
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Id&#39;</span><span class="p">:</span> <span class="n">test</span><span class="o">.</span><span class="n">Id</span><span class="p">,</span> <span class="s1">&#39;SalePrice&#39;</span><span class="p">:</span> <span class="n">Final_labels</span><span class="p">})</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;2020-02-25.csv&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span><span class="kc">False</span><span class="p">)</span>   
 
 </code></pre></td></tr></table>
 </div>
