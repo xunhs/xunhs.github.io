@@ -5,4 +5,4 @@ hugo new --kind note "posts/n/2021-06-08-出租车数据处理札记.md"
 hugo new --kind journal "posts/j/2021-6.md" 
 
 - moment 
-hugo new --kind moment "moments/2021.6.14-可不可以.md" 
+hugo new --kind moment "moments/2021-06-14-可不可以.md" 
