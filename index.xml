@@ -14,7 +14,7 @@
     <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
     <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 20 Jun 2021 18:17:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jun 2021 17:10:09 +0800</lastBuildDate>
     
         <atom:link href="https://www.xunhs.cyou/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,39 @@
         
       
 
+      
+      <item>
+        <title>远程</title>
+        <link>https://www.xunhs.cyou/moments/2021-06-21-%E8%BF%9C%E7%A8%8B/</link>
+        <pubDate>Mon, 21 Jun 2021 17:10:09 +0800</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Mon, 21 Jun 2021 17:10:09 +0800</atom:modified>
+        <guid>https://www.xunhs.cyou/moments/2021-06-21-%E8%BF%9C%E7%A8%8B/</guid>
+        <description>&lt;!-- content --&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# jupyter &lt;/span&gt;
+jupyter.xunhs.cyou
+&lt;span class=&#34;c1&#34;&gt;# ssh&lt;/span&gt;
+ssh -p &lt;span class=&#34;m&#34;&gt;21039&lt;/span&gt; summer@43.249.192.204
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>毕业快乐</title>
@@ -3989,42 +4022,6 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
           
             
               <category>雅思</category>
-            
-          
-        
-        
-          
-            
-              <category>收藏</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>民国结婚证书</title>
-        <link>https://www.xunhs.cyou/posts/n/90/</link>
-        <pubDate>Tue, 13 Aug 2019 08:50:51 +0000</pubDate>
-        <author>gishusheng@outlook.com (Ethan)</author>
-        <atom:modified>Tue, 13 Aug 2019 08:50:51 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/90/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;民国时期婚书上的题字。十分喜欢。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>婚书</category>
-            
-          
-            
-              <category>文言文</category>
             
           
         
