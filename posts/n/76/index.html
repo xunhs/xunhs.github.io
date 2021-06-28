@@ -1878,6 +1878,29 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <span class="n">kmeans_result_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">kmeans_result_df</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
+</div><h4 id="list-of-dict-and-dataframe">List of dict and DataFrame</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># List of dict to DataFrame</span>
+<span class="n">data_list</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;points&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;5:00&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">2010</span><span class="p">},</span> 
+             <span class="p">{</span><span class="s1">&#39;points&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;6:00&#39;</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="s2">&#34;february&#34;</span><span class="p">},</span> 
+             <span class="p">{</span><span class="s1">&#39;points&#39;</span><span class="p">:</span><span class="mi">90</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;9:00&#39;</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="s1">&#39;january&#39;</span><span class="p">},</span> 
+             <span class="p">{</span><span class="s1">&#39;points_h1&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="s1">&#39;june&#39;</span><span class="p">}]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_list</span><span class="p">)</span>
+<span class="c1"># DataFrame to List of dict</span>
+<span class="n">data_list</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
 </div><h4 id="dict2nametuple">dict2nametuple</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -4409,6 +4432,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <li><a href="#读取csv">读取csv</a></li>
                 <li><a href="#保存为json">保存为json</a></li>
                 <li><a href="#dataframe-and-dict">DataFrame and Dict:</a></li>
+                <li><a href="#list-of-dict-and-dataframe">List of dict and DataFrame</a></li>
                 <li><a href="#dict2nametuple">dict2nametuple</a></li>
                 <li><a href="#dataframe导出markdown">DataFrame导出Markdown</a></li>
                 <li><a href="#joblib">joblib</a></li>
