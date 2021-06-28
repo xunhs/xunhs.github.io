@@ -98,6 +98,19 @@ kmeans_result_df = pd.DataFrame.from_dict(kmeans_result_dict)
 kmeans_result_dict = pd.DataFrame.to_dict(kmeans_result_df)
 ```
 
+#### List of dict and DataFrame
+```Python
+# List of dict to DataFrame
+data_list = [{'points': 50, 'time': '5:00', 'year': 2010}, 
+             {'points': 25, 'time': '6:00', 'month': "february"}, 
+             {'points':90, 'time': '9:00', 'month': 'january'}, 
+             {'points_h1':20, 'month': 'june'}]
+df = pd.DataFrame(data_list)
+# DataFrame to List of dict
+data_list = df.T.to_dict().values()
+```
+
+
 #### dict2nametuple
 ```python
 from collections import namedtuple
