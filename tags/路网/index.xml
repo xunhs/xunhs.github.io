@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>路网 on Ethan</title>
-    <link>https://www.xunhs.cyou/tags/%E8%B7%AF%E7%BD%91/</link>
+    <link>https://xunhs.github.io/tags/%E8%B7%AF%E7%BD%91/</link>
     <description>Recent content in 路网 on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 07 Apr 2021 13:49:53 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/%E8%B7%AF%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/tags/%E8%B7%AF%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>GIS操作——OSM路网化简，提取中心线</title>
-        <link>https://www.xunhs.cyou/2021/04/07/567/</link>
+        <link>https://xunhs.github.io/2021/04/07/567/</link>
         <pubDate>Wed, 07 Apr 2021 13:49:53 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Wed, 07 Apr 2021 13:49:53 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/2021/04/07/567/</guid>
+        <guid>https://xunhs.github.io/2021/04/07/567/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;GIS操作——OSM路网化简，提取中心线。基本思路就是道路膨胀，然后提取中心线。&lt;/p&gt;
 &lt;/blockquote&gt;</description>

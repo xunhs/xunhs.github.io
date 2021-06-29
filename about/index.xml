@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>About Me on Ethan</title>
-    <link>https://www.xunhs.cyou/about/</link>
+    <link>https://xunhs.github.io/about/</link>
     <description>Recent content in About Me on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 28 Apr 2021 10:33:12 +0800</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/about/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
 
       

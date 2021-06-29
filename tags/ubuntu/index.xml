@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Ubuntu on Ethan</title>
-    <link>https://www.xunhs.cyou/tags/ubuntu/</link>
+    <link>https://xunhs.github.io/tags/ubuntu/</link>
     <description>Recent content in Ubuntu on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 14 Feb 2020 09:09:11 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Linux-基础及常用命令</title>
-        <link>https://www.xunhs.cyou/posts/n/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+        <link>https://xunhs.github.io/posts/n/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Fri, 14 Feb 2020 09:09:11 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Fri, 14 Feb 2020 09:09:11 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+        <guid>https://xunhs.github.io/posts/n/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
         <description>&lt;hr /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Linux基础及部分常用命令&lt;/p&gt;

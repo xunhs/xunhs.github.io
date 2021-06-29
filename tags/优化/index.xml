@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>优化 on Ethan</title>
-    <link>https://www.xunhs.cyou/tags/%E4%BC%98%E5%8C%96/</link>
+    <link>https://xunhs.github.io/tags/%E4%BC%98%E5%8C%96/</link>
     <description>Recent content in 优化 on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 13 Jan 2020 09:01:39 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/tags/%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Pandas/Geopandas Tricks</title>
-        <link>https://www.xunhs.cyou/posts/n/76/</link>
+        <link>https://xunhs.github.io/posts/n/76/</link>
         <pubDate>Mon, 13 Jan 2020 09:01:39 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Mon, 13 Jan 2020 09:01:39 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/76/</guid>
+        <guid>https://xunhs.github.io/posts/n/76/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;总结个人使用中常用Pandas及扩展插件使用技巧&lt;/p&gt;
 &lt;/blockquote&gt;</description>

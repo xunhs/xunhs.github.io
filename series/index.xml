@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Series on Ethan</title>
-    <link>https://www.xunhs.cyou/series/</link>
+    <link>https://xunhs.github.io/series/</link>
     <description>Recent content in Series on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
     
-        <atom:link href="https://www.xunhs.cyou/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     
 
       

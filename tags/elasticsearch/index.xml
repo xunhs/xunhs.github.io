@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Elasticsearch on Ethan</title>
-    <link>https://www.xunhs.cyou/tags/elasticsearch/</link>
+    <link>https://xunhs.github.io/tags/elasticsearch/</link>
     <description>Recent content in Elasticsearch on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 23 Feb 2021 06:37:47 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>POI数据Elasticsearch存储及查询操作札记</title>
-        <link>https://www.xunhs.cyou/2021/02/23/368/</link>
+        <link>https://xunhs.github.io/2021/02/23/368/</link>
         <pubDate>Tue, 23 Feb 2021 06:37:47 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Tue, 23 Feb 2021 06:37:47 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/2021/02/23/368/</guid>
+        <guid>https://xunhs.github.io/2021/02/23/368/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;使用ArcGIS Pro栅格切割工具做分块裁剪，并使用切割好的分块做Image Embeddings。记录操作过程及注意事项。&lt;/p&gt;
 &lt;/blockquote&gt;</description>

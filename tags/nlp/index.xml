@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>NLP on Ethan</title>
-    <link>https://www.xunhs.cyou/tags/nlp/</link>
+    <link>https://xunhs.github.io/tags/nlp/</link>
     <description>Recent content in NLP on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 10 Aug 2020 09:29:56 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>转载-Chinese NLP</title>
-        <link>https://www.xunhs.cyou/posts/n/2020-08-10-%E8%BD%AC%E8%BD%BD-chinese-nlp/</link>
+        <link>https://xunhs.github.io/posts/n/2020-08-10-%E8%BD%AC%E8%BD%BD-chinese-nlp/</link>
         <pubDate>Mon, 10 Aug 2020 09:29:56 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Mon, 10 Aug 2020 09:29:56 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/2020-08-10-%E8%BD%AC%E8%BD%BD-chinese-nlp/</guid>
+        <guid>https://xunhs.github.io/posts/n/2020-08-10-%E8%BD%AC%E8%BD%BD-chinese-nlp/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;转载自&lt;a href=&#34;https://chinesenlp.xyz&#34;&gt;Chinese NLP&lt;/a&gt;，根据个人理解做适当札记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -62,11 +62,11 @@
       
       <item>
         <title>Papers Reading-Taxi Trajectory/GPS Records</title>
-        <link>https://www.xunhs.cyou/posts/n/2020-02-24-papers_reading-taxi_trajectory_gps_records/</link>
+        <link>https://xunhs.github.io/posts/n/2020-02-24-papers_reading-taxi_trajectory_gps_records/</link>
         <pubDate>Mon, 24 Feb 2020 09:14:16 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Mon, 24 Feb 2020 09:14:16 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/2020-02-24-papers_reading-taxi_trajectory_gps_records/</guid>
+        <guid>https://xunhs.github.io/posts/n/2020-02-24-papers_reading-taxi_trajectory_gps_records/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;论文阅读，感兴趣点、关键词整理&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -142,11 +142,11 @@
       
       <item>
         <title>刘建平博客NLP-阅读笔记</title>
-        <link>https://www.xunhs.cyou/posts/n/93/</link>
+        <link>https://xunhs.github.io/posts/n/93/</link>
         <pubDate>Sat, 26 Jan 2019 08:49:28 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Sat, 26 Jan 2019 08:49:28 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/93/</guid>
+        <guid>https://xunhs.github.io/posts/n/93/</guid>
         <description>&lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;整理博客学习过程中一些笔记。&lt;/p&gt;

@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>networkx on Ethan</title>
-    <link>https://www.xunhs.cyou/tags/networkx/</link>
+    <link>https://xunhs.github.io/tags/networkx/</link>
     <description>Recent content in networkx on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 27 May 2020 09:25:17 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/networkx/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/tags/networkx/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Python库-osmnx&amp;networkx</title>
-        <link>https://www.xunhs.cyou/posts/n/2020-05-27-python%E5%BA%93-osmnxnetworkx/</link>
+        <link>https://xunhs.github.io/posts/n/2020-05-27-python%E5%BA%93-osmnxnetworkx/</link>
         <pubDate>Wed, 27 May 2020 09:25:17 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Wed, 27 May 2020 09:25:17 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/2020-05-27-python%E5%BA%93-osmnxnetworkx/</guid>
+        <guid>https://xunhs.github.io/posts/n/2020-05-27-python%E5%BA%93-osmnxnetworkx/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;osmnx是下载、处理等osm路网很好用的一个包。networkx是图论学习中很好用的包，两者结合为基于图论的方法研究osm road network提供便利。以下内容为整理两个包常用的功能函数方法。&lt;/p&gt;
 &lt;/blockquote&gt;</description>

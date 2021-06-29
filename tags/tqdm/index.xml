@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>tqdm on Ethan</title>
-    <link>https://www.xunhs.cyou/tags/tqdm/</link>
+    <link>https://xunhs.github.io/tags/tqdm/</link>
     <description>Recent content in tqdm on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 15 Jan 2020 09:03:58 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/tqdm/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/tags/tqdm/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Python库-tqdm-进度条</title>
-        <link>https://www.xunhs.cyou/posts/n/73/</link>
+        <link>https://xunhs.github.io/posts/n/73/</link>
         <pubDate>Wed, 15 Jan 2020 09:03:58 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Wed, 15 Jan 2020 09:03:58 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/73/</guid>
+        <guid>https://xunhs.github.io/posts/n/73/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;总结tqdm库，进度条显示。&lt;/p&gt;
 &lt;/blockquote&gt;</description>

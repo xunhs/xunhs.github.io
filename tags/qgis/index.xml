@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>QGIS on Ethan</title>
-    <link>https://www.xunhs.cyou/tags/qgis/</link>
+    <link>https://xunhs.github.io/tags/qgis/</link>
     <description>Recent content in QGIS on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 29 Feb 2020 09:17:34 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/qgis/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/tags/qgis/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>学习笔记-QGIS</title>
-        <link>https://www.xunhs.cyou/posts/n/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</link>
+        <link>https://xunhs.github.io/posts/n/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</link>
         <pubDate>Sat, 29 Feb 2020 09:17:34 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Sat, 29 Feb 2020 09:17:34 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</guid>
+        <guid>https://xunhs.github.io/posts/n/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;关于QGIS若干记录&lt;/p&gt;
 &lt;/blockquote&gt;</description>

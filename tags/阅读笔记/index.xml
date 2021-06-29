@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>阅读笔记 on Ethan</title>
-    <link>https://www.xunhs.cyou/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
+    <link>https://xunhs.github.io/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
     <description>Recent content in 阅读笔记 on Ethan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 30 Dec 2020 12:46:21 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.github.io/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>识别城市地域-札记</title>
-        <link>https://www.xunhs.cyou/2020/12/30/243/</link>
+        <link>https://xunhs.github.io/2020/12/30/243/</link>
         <pubDate>Wed, 30 Dec 2020 12:46:21 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Wed, 30 Dec 2020 12:46:21 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/2020/12/30/243/</guid>
+        <guid>https://xunhs.github.io/2020/12/30/243/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;阅读深圳大学乐阳老师公众号（乐知半点）-专题“城市分析-概念辨析”札记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -62,11 +62,11 @@
       
       <item>
         <title>Papers Reading: Urban Mixed Land Use</title>
-        <link>https://www.xunhs.cyou/2020/12/18/128/</link>
+        <link>https://xunhs.github.io/2020/12/18/128/</link>
         <pubDate>Fri, 18 Dec 2020 01:30:51 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Fri, 18 Dec 2020 01:30:51 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/2020/12/18/128/</guid>
+        <guid>https://xunhs.github.io/2020/12/18/128/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;城市混合土地利用文献阅读。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -106,11 +106,11 @@
       
       <item>
         <title>博士论文阅读札记-3</title>
-        <link>https://www.xunhs.cyou/2020/11/17/106/</link>
+        <link>https://xunhs.github.io/2020/11/17/106/</link>
         <pubDate>Tue, 17 Nov 2020 09:32:16 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Tue, 17 Nov 2020 09:32:16 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/2020/11/17/106/</guid>
+        <guid>https://xunhs.github.io/2020/11/17/106/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;续 博士论文阅读札记-2&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -142,11 +142,11 @@
       
       <item>
         <title>刘建平博客NLP-阅读笔记</title>
-        <link>https://www.xunhs.cyou/posts/n/93/</link>
+        <link>https://xunhs.github.io/posts/n/93/</link>
         <pubDate>Sat, 26 Jan 2019 08:49:28 +0000</pubDate>
         <author>gishusheng@outlook.com (Ethan)</author>
         <atom:modified>Sat, 26 Jan 2019 08:49:28 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/n/93/</guid>
+        <guid>https://xunhs.github.io/posts/n/93/</guid>
         <description>&lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;整理博客学习过程中一些笔记。&lt;/p&gt;
