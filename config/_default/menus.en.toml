@@ -16,27 +16,6 @@
   name = "moments"
   url = "moments"
   weight = 3
-    
-[[main]]
-  identifier = "cloud"
-  name = "cloud"
-  weight = 4
-
-[[main]]
-  parent = "cloud"
-  name = "olaindex"
-  url = "https://one.xunhs.cyou"
-
-
-[[main]]
-  parent = "cloud"
-  name = "tianyi"
-  url = "https://tianyi.xunhs.cyou"
-
-[[main]]
-  parent = "cloud"
-  name = "cloudreve"
-  url = "https://cloudreve.xunhs.cyou"
 
 [[main]]
   identifier = "about"

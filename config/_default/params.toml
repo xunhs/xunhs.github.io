@@ -73,7 +73,7 @@ bioImageUrl = "avatar.jpg" # image url like "http//..." or "images/anyfoldername
 useGravatar = false # we use this option highest priority
 location = "Wuhan, China"
 organization = "CUG"
-link = "https://www.xunhs.cyou"
+link = "https://xunhs.github.io"
 
 # sidebar
 enableBio = true # in home page sidebar
