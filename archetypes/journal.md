@@ -10,11 +10,6 @@ music: true
 
 
 <!-- music -->
-<!-- <meting-js
-	server="netease"
-	type="song"
-	id="">
-</meting-js> -->
 
 <!-- <meting-js
 	name=""
