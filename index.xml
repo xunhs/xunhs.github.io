@@ -14,7 +14,7 @@
     <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
     <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 01 Jul 2021 11:54:11 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jul 2021 09:54:20 +0800</lastBuildDate>
     
         <atom:link href="https://xunhs.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,45 @@
         
       
 
+      
+      <item>
+        <title>Python设置全局代理</title>
+        <link>https://xunhs.github.io/moments/2021-07-03-python%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</link>
+        <pubDate>Sat, 03 Jul 2021 09:54:20 +0800</pubDate>
+        <author>gishusheng@outlook.com (Ethan)</author>
+        <atom:modified>Sat, 03 Jul 2021 09:54:20 +0800</atom:modified>
+        <guid>https://xunhs.github.io/moments/2021-07-03-python%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</guid>
+        <description>&lt;!-- content --&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# https://zhuanlan.zhihu.com/p/30670193&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;# pip install PySocks&lt;/span&gt;
+&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;socks&lt;/span&gt;
+&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;socket&lt;/span&gt;
+
+&lt;span class=&#34;n&#34;&gt;socks&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_default_proxy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;socks&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SOCKS5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;192.168.123.155&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;7891&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;socket&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;socket&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;socks&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;socksocket&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        
+        <dc:creator>Ethan</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>2021-7</title>
@@ -3951,42 +3990,6 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
           
             
               <category>随笔</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>English Writing 常用表达整理</title>
-        <link>https://xunhs.github.io/posts/n/81/</link>
-        <pubDate>Mon, 11 Nov 2019 08:54:47 +0000</pubDate>
-        <author>gishusheng@outlook.com (Ethan)</author>
-        <atom:modified>Mon, 11 Nov 2019 08:54:47 +0000</atom:modified>
-        <guid>https://xunhs.github.io/posts/n/81/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;参考顾家北雅思作文写作，对大作文中常用表达进行整理。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>作文</category>
-            
-          
-            
-              <category>雅思</category>
-            
-          
-        
-        
-          
-            
-              <category>收藏</category>
             
           
         
