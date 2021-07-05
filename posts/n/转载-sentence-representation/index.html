@@ -653,7 +653,7 @@
     
     var baseurl = JSON.parse("\"https://xunhs.github.io/\"");
     
-    var permalink = JSON.parse("\"https://xunhs.github.io/posts/n/82/\"");
+    var permalink = JSON.parse("\"https://xunhs.github.io/posts/n/%E8%BD%AC%E8%BD%BD-sentence-representation/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1336,16 +1336,15 @@
 <meta name="keywords" content="Sentence Embedding,句子向量,Sentence Representation">
 
 <meta name="created" content="2020-02-19T09:10:51&#43;0000">
-<meta name="modified" content="2020-02-19T09:10:51&#43;0000">
+<meta name="modified" content="2021-07-05T09:54:41&#43;0000">
 <meta property="article:published_time" content="2020-02-19T09:10:51&#43;0000">
 
-<meta name="author" content="Ethan">
-<meta property="article:author" content="https://xunhs.github.io/posts/n/82/@Ethan">
+<meta name="author" content="热">
 
 
 <meta property="og:site_name" content="热">
 <meta property="og:title" content="转载-Sentence Representation">
-<meta property="og:url" content="https://xunhs.github.io/posts/n/82/">
+<meta property="og:url" content="https://xunhs.github.io/posts/n/%E8%BD%AC%E8%BD%BD-sentence-representation/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
@@ -1358,7 +1357,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://xunhs.github.io/posts/n/82/">
+<link rel="canonical" href="https://xunhs.github.io/posts/n/%E8%BD%AC%E8%BD%BD-sentence-representation/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1374,14 +1373,10 @@
     "@type": "WebPage",
     "headline": "转载-Sentence Representation",
     "datePublished": "2020-02-19T09:10:51Z",
-    "dateModified": "2020-02-19T09:10:51Z",
-    "url" : "https://xunhs.github.io/posts/n/82/",
+    "dateModified": "2021-07-05T09:54:41Z",
+    "url" : "https://xunhs.github.io/posts/n/%E8%BD%AC%E8%BD%BD-sentence-representation/",
     "description": "\u003chr /\u003e \u003cblockquote\u003e \u003cp\u003eCopy from:\u003cbr /\u003e \u003ca href=\"https://github.com/llhthinker/NLP-Papers\"\u003eNLP papers\u003c/a\u003e\u003c/p\u003e \u003c/blockquote\u003e",
     "keywords": ["Sentence Embedding","句子向量","Sentence Representation"],
-    "author": {
-      "@type": "Person",
-      "name": "Ethan"
-    },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://xunhs.github.io/"
@@ -1699,9 +1694,9 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Feb 19, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;17&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <time class="single__info" title="Modified At"> 📝&nbsp;Jul 5, 2021 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;Ethan</span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;17&nbsp;min read </span>
   
   <span class="single__info">
     
@@ -1779,7 +1774,7 @@ $![](<a href="https://latex.codecogs.com/svg.latex?">https://latex.codecogs.com/
 <p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/785166587.png" alt="quick-thought" /></p>
 <p>模型有如下两个细节需要注意：</p>
 <ol>
-<li>模型使用的分类器（得分函数）$c$非常简单，是两个向量内积，即$c(u, v)=u^Tv$，计算$s$的embedding与所有$S_{cand}$中的句子向量内积得分后，输入到softmax层进行分类。使用简单分类器是为了引导模型着重训练句子编码器，因为我们的目的是为了得到好的句子向量表示而不是好的分类器。</li>
+<li>模型使用的分类器（得分函数）$ c $非常简单，是两个向量内积，即$c(u, v)=u^Tv$，计算$s$的embedding与所有$S_{cand}$中的句子向量内积得分后，输入到softmax层进行分类。使用简单分类器是为了引导模型着重训练句子编码器，因为我们的目的是为了得到好的句子向量表示而不是好的分类器。</li>
 <li>虽然某些监督任务模型如文本蕴含模型是参数共享的，$s$的编码器参数和候选句子编码器参数是不同的（不共享），因为句子表示学习往往是在大规模语料上进行训练，不必担心参数学习不充分的问题。测试时，给定待编码句子$s$，通过该模型得到的句子表示是两种编码器的连结)[ f ( s ) ;g ( s ) ]$。</li>
 </ol>
 <p>论文将上述模型命名为<strong>quick thoughts</strong>（<strong>QT</strong>），意味着该模型能够迅速有效地学习句子表示向量。模型使用GRU作为Encoder，为了和Skip-Tought模型进行比较，模型包含三种变体，使用单向GRU称为uni-QT，双向GRU称为bi-QT，将uni-QT和bi-QT生成的sentence embedding进行concat称为combine-QT。此外，论文将同时使用预训练词向量和随机初始化词向量的模型称为MultiChannel-QT（MC-QT）,这种设置是参照<a href="https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-10/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/note.md#%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0convolutional-neural-networks-for-sentence-classification">multi-channel CNN模型</a>。</p>
@@ -2079,7 +2074,7 @@ u = \sum _ { t } \alpha _ { i } h _ { i }<br />
     </div>
     <div class="whoami__title">
       
-        Ethan
+        热
       
     </div>
     <div class="whoami__desc">
@@ -2577,6 +2572,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha256-F/Xda58SPdcUCr&#43;xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha256-90d2pnfw0r4K8CZAWPko4rpFXQsZvJhTBGYNkipDprI=" crossorigin="anonymous"></script>
+
 
 
 
@@ -2840,7 +2839,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     
-    var lib = JSON.parse("null");
+    var lib = JSON.parse("[\"katex\"]");
 
     if (lib && lib.includes('mermaid')) {
       
