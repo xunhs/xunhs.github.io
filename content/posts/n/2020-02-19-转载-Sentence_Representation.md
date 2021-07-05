@@ -1,20 +1,16 @@
 ---
-layout: post
-cid: 82
 title: 转载-Sentence Representation
-slug: 82
-date: 2020-02-19T09:10:51+00:00
-updated: '2020/04/13 16:59:05'
-status: publish
-author: Ethan
-mathjax: true
+date: 2020-02-19T09:10:51.000Z
 categories:
   - 收藏
 tags:
   - Sentence Embedding
   - 句子向量
   - Sentence Representation
-abbrlink: 51605fdc
+slug: 转载-sentence-representation
+lastmod: '2021-07-05T09:54:41.042Z'
+libraries:
+  - katex
 ---
 
 
@@ -96,7 +92,7 @@ pdf: [下载](https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2
 
 模型有如下两个细节需要注意：
 
-1. 模型使用的分类器（得分函数）$c$非常简单，是两个向量内积，即$c(u, v)=u^Tv$，计算$s$的embedding与所有$S_{cand}$中的句子向量内积得分后，输入到softmax层进行分类。使用简单分类器是为了引导模型着重训练句子编码器，因为我们的目的是为了得到好的句子向量表示而不是好的分类器。
+1. 模型使用的分类器（得分函数）$ c $非常简单，是两个向量内积，即$c(u, v)=u^Tv$，计算$s$的embedding与所有$S_{cand}$中的句子向量内积得分后，输入到softmax层进行分类。使用简单分类器是为了引导模型着重训练句子编码器，因为我们的目的是为了得到好的句子向量表示而不是好的分类器。
 2. 虽然某些监督任务模型如文本蕴含模型是参数共享的，$s$的编码器参数和候选句子编码器参数是不同的（不共享），因为句子表示学习往往是在大规模语料上进行训练，不必担心参数学习不充分的问题。测试时，给定待编码句子$s$，通过该模型得到的句子表示是两种编码器的连结)[ f ( s ) ;g ( s ) ]$。
 
 论文将上述模型命名为**quick thoughts**（**QT**），意味着该模型能够迅速有效地学习句子表示向量。模型使用GRU作为Encoder，为了和Skip-Tought模型进行比较，模型包含三种变体，使用单向GRU称为uni-QT，双向GRU称为bi-QT，将uni-QT和bi-QT生成的sentence embedding进行concat称为combine-QT。此外，论文将同时使用预训练词向量和随机初始化词向量的模型称为MultiChannel-QT（MC-QT）,这种设置是参照[multi-channel CNN模型](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-10/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/note.md#%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0convolutional-neural-networks-for-sentence-classification)。
