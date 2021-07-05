@@ -1,11 +1,5 @@
 {{ define "main" }}
 
-
-{{ if eq .Params.music true -}}
-  {{ partial "script/aplayer" . }}
-{{ end -}}
-
-
 <main class="main inner" data-sidebar-position="{{ $.Param "sidebarPosition" }}">
     <div class="list__main {{ if $.Param "enableSidebar" }}{{ if eq ($.Param "sidebarPosition") "left" }}mr{{ else }}lm{{ end }}{{ else }}lmr{{ end }}">
         {{ partial "body/breadcrumb" . }}

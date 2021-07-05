@@ -1,8 +1,4 @@
 {{ define "main" }}
-{{ if eq .Params.music true -}}
-  {{ partial "script/aplayer" . }}
-{{ end -}}
-
 
 <main class="single__main {{ if or ($.Param "enableToc") ($.Param "toc") }}{{ if $.Param "hideToc" }}main{{ else if eq ($.Param "tocPosition") "outer" }}main{{ else }}main-main{{ end }}{{ else }}main{{ end }}">
   {{ if $.Param "enableBreadcrumb" }}

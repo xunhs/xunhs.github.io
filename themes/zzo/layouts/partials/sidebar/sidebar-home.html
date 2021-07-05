@@ -16,7 +16,9 @@
             <a href="{{ .RelPermalink }}" class="sidebar-recent__title p2">{{ .Title }}</a>
             <ul class="sidebar-recent__ul">
                 {{ range first ($.Param "itemsPerCategory") .Pages }}
-                <!-- 显示top文章而不是最近文章 -->
+                    <li>
+                        <a href="{{ .RelPermalink }}" class="sidebar-recent__a p2">{{ .Title }}</a>
+                    </li>
                 {{ end }}
             </ul>
         </section>

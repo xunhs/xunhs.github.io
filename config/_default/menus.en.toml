@@ -6,12 +6,6 @@
 
 
 [[main]]
-  identifier = "posts"
-  name = "posts"
-  url = "posts"
-  weight = 2
-
-[[main]]
   identifier = "moments"
   name = "moments"
   url = "moments"
