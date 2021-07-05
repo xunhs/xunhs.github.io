@@ -22,11 +22,11 @@
       
       <item>
         <title>Python多线程/进程技巧</title>
-        <link>https://xunhs.github.io/posts/n/74/</link>
+        <link>https://xunhs.github.io/posts/notes/74/</link>
         <pubDate>Fri, 17 Jan 2020 09:02:53 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 17 Jan 2020 09:02:53 +0000</atom:modified>
-        <guid>https://xunhs.github.io/posts/n/74/</guid>
+        <guid>https://xunhs.github.io/posts/notes/74/</guid>
         <description>&lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;整理Python并行化常用技巧&lt;/p&gt;

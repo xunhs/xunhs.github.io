@@ -1,0 +1,4222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>博士论文阅读札记-1 – 热</title>
+    
+
+
+  
+  <script defer src="/js/fuse.min.e358b40ee430e192a8bd20052d17c0dedf3b1e401e068ac7af00e58b6d4a10ac.js"></script>
+
+
+
+<script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
+
+<script defer src="/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js"></script>
+
+<script defer src="/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js"></script>
+
+<script defer src="/js/helper/fadeinout.min.1d13d3e810c3940e80cbba6216a1c76fbf42b5431fc83537ea6997863802362b.js"></script>
+
+<script defer src="/js/helper/closest.min.js"></script>
+  
+<script>
+  "use strict";
+
+  
+  
+  if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+  }
+
+  
+  if (!String.prototype.includes) {
+    String.prototype.includes = function (search, start) {
+      'use strict';
+
+      if (search instanceof RegExp) {
+        throw TypeError('first argument must not be a RegExp');
+      }
+      if (start === undefined) { start = 0; }
+      return this.indexOf(search, start) !== -1;
+    };
+  }
+
+  
+  Document.prototype.append = Element.prototype.append = function append() {
+    this.appendChild(_mutation(arguments));
+  };
+  function _mutation(nodes) {
+    if (!nodes.length) {
+      throw new Error('DOM Exception 8');
+    } else if (nodes.length === 1) {
+      return typeof nodes[0] === 'string' ? document.createTextNode(nodes[0]) : nodes[0];
+    } else {
+      var
+      fragment = document.createDocumentFragment(),
+      length = nodes.length,
+      index = -1,
+      node;
+
+      while (++index < length) {
+        node = nodes[index];
+
+        fragment.appendChild(typeof node === 'string' ? document.createTextNode(node) : node);
+      }
+
+      return fragment;
+    }
+  }
+
+  
+  if (!String.prototype.startsWith) {
+    String.prototype.startsWith = function (searchString, position) {
+      position = position || 0;
+      return this.indexOf(searchString, position) === position;
+    };
+  }
+  
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    var navCollapseBtn = document.querySelector('.navbar__burger');
+    navCollapseBtn ? navCollapseBtn.addEventListener('click', function (e) {
+      var navCollapse = document.querySelector('.navbarm__collapse');
+
+      if (navCollapse) {
+        var dataOpen = navCollapse.getAttribute('data-open');
+
+        if (dataOpen === 'true') {
+          navCollapse.setAttribute('data-open', 'false');
+          navCollapse.style.maxHeight = 0;
+          navCollapseBtn.classList.remove('is-active');
+        } else {
+          navCollapse.setAttribute('data-open', 'true');
+          navCollapse.style.maxHeight = navCollapse.scrollHeight + "px";
+          navCollapseBtn.classList.add('is-active');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var tables = document.querySelectorAll('.single__contents > table');
+    for (let i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentElement.replaceChild(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    
+
+
+    
+    var footNoteRefs = document.querySelectorAll('.footnote-ref');
+    var footNoteBackRefs = document.querySelectorAll('.footnote-backref');
+
+    footNoteRefs ? 
+    footNoteRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function () {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+
+    footNoteBackRefs ? 
+    footNoteBackRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function() {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var summaryContainer = document.querySelector('.summary__container');
+    var searchResult = document.querySelector('.search-result');
+    var searchResultCloseBtn = document.querySelector('.search-result__close');
+    searchResultCloseBtn ? searchResultCloseBtn.addEventListener('click', function (e) {
+      searchResult.setAttribute('data-display', 'none');
+      summaryContainer.setAttribute('data-display', 'block');
+    }) : null;
+    
+
+
+    
+    document.querySelectorAll('.tab') ? 
+    document.querySelectorAll('.tab').forEach(function(elem, idx) {
+      var containerId = elem.getAttribute('id');
+      var containerElem = elem;
+      var tabLinks = elem.querySelectorAll('.tab__link');
+      var tabContents = elem.querySelectorAll('.tab__content');
+      var ids = [];
+
+      tabLinks && tabLinks.length > 0 ?
+      tabLinks.forEach(function(link, index, self) {
+        link.onclick = function(e) {
+          for (var i = 0; i < self.length; i++) {
+            if (index === parseInt(i, 10)) {
+              if (!self[i].classList.contains('active')) {
+                self[i].classList.add('active');
+                tabContents[i].style.display = 'block';
+              }
+            } else {
+              self[i].classList.remove('active');
+              tabContents[i].style.display = 'none';
+            }
+          }
+        }
+      }) : null;
+    }) : null;
+    
+
+
+    
+    document.querySelectorAll('.codetab') ? 
+    document.querySelectorAll('.codetab').forEach(function(elem, idx) {
+      var containerId = elem.getAttribute('id');
+      var containerElem = elem;
+      var codetabLinks = elem.querySelectorAll('.codetab__link');
+      var codetabContents = elem.querySelectorAll('.codetab__content');
+      var ids = [];
+
+      codetabLinks && codetabLinks.length > 0 ?
+      codetabLinks.forEach(function(link, index, self) {
+        link.onclick = function(e) {
+          for (var i = 0; i < self.length; i++) {
+            if (index === parseInt(i, 10)) {
+              if (!self[i].classList.contains('active')) {
+                self[i].classList.add('active');
+                codetabContents[i].style.display = 'block';
+              }
+            } else {
+              self[i].classList.remove('active');
+              codetabContents[i].style.display = 'none';
+            }
+          }
+        }
+      }) : null;
+    }) : null;
+    
+
+
+    
+    var gttBtn = document.getElementById("gtt");
+    gttBtn.style.display = "none";
+    gttBtn.addEventListener('click', function () {
+      if (window.document.documentMode) {
+        document.documentElement.scrollTop = 0;
+      } else {
+        scrollToTop(250);
+      }
+    });
+
+    function scrollToTop(scrollDuration) {
+      var scrollStep = -window.scrollY / (scrollDuration / 15);
+      var scrollInterval = setInterval(function () {
+        if (window.scrollY != 0) {
+          window.scrollBy(0, scrollStep);
+        }
+        else clearInterval(scrollInterval);
+      }, 15);
+    }
+
+    var scrollFunction = function () {
+      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        gttBtn.style.display = "block";
+      } else {
+        gttBtn.style.display = "none";
+      }
+    }
+    
+
+
+    
+    var expandBtn = document.querySelectorAll('.expand__button');
+
+    for (let i = 0; i < expandBtn.length; i++) {
+      expandBtn[i].addEventListener("click", function () {
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          this.querySelector('svg').classList.add('expand-icon__right');
+          this.querySelector('svg').classList.remove('expand-icon__down');
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          this.querySelector('svg').classList.remove('expand-icon__right');
+          this.querySelector('svg').classList.add('expand-icon__down');
+        }
+      });
+    }
+    
+
+
+    
+    var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var tocElem = document.querySelector('.toc');
+    var tableOfContentsElem = tocElem ? tocElem.querySelector('#TableOfContents') : null;
+    var toggleTocElem = document.getElementById('toggle-toc');
+    var singleContentsElem = document.querySelector('.single__contents');
+    var navbar = document.querySelector('.navbar');
+    var tocFlexbox = document.querySelector('.toc__flexbox');
+    var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
+    var expandContents = document.querySelectorAll('.expand__content');
+    var boxContents = document.querySelectorAll('.box');
+    var notAllowedTitleIds = null;
+
+    
+    var tocFolding = JSON.parse("true");
+    
+    var tocLevels = JSON.parse("[\"h1\",\"h2\",\"h3\",\"h4\",\"h5\",\"h6\"]");
+    
+    if (tocLevels) {
+      tocLevels = tocLevels.toString();
+    } else {
+      tocLevels = "h1, h2, h3, h4, h5, h6";
+    }
+
+    
+    singleContentsElem && singleContentsElem.querySelectorAll(".tab") ?
+    singleContentsElem.querySelectorAll(".tab").forEach(function (elem) {
+      elem.querySelectorAll(tocLevels).forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    expandContents ? expandContents.forEach(function(elem) {
+      elem.querySelectorAll(tocLevels).forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    boxContents ? boxContents.forEach(function(elem) {
+      elem.querySelectorAll(tocLevels).forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    window.onscroll = function () {
+      scrollFunction();
+      
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > lastScrollTop) { 
+        if (st < 250) {
+          gttBtn.style.display = "none";
+        } else {
+          gttBtn.style.display = "block";
+        }
+
+        if (st < 45) {
+          return null;
+        }
+
+        if (navbar.classList.contains('scrolling')) {
+          if (!navbar.classList.contains('navbar--hide')) {
+            navbar.classList.add('navbar--hide');
+          } else if (navbar.classList.contains('navbar--show')) {
+            navbar.classList.remove('navbar--show');
+          }
+        }
+
+        if (singleContentsElem) {
+          if (singleContentsElem.querySelectorAll(tocLevels).length > 0) {
+            singleContentsElem.querySelectorAll(tocLevels).forEach(function (elem) {
+              if (toggleTocElem && !toggleTocElem.checked) {
+                return null;
+              }
+
+              if (notAllowedTitleIds && notAllowedTitleIds.includes(elem.getAttribute('id'))) {
+                return null;
+              }
+              
+              if (document.documentElement.scrollTop >= elem.offsetTop) {
+                if (tableOfContentsElem) {
+                  var id = elem.getAttribute('id');
+                  tocElem.querySelectorAll('a').forEach(function (elem) {
+                    elem.classList.remove('active');
+                  });
+                  tocElem.querySelector('a[href="#' + id + '"]') ?
+                    tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
+
+                  var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
+                  if (curElem && curElem.nextElementSibling) {
+                    curElem.nextElementSibling.style.display = 'block';
+                  }
+                  getParents(curElem, 'ul') ?
+                    getParents(curElem, 'ul').forEach(function (elem) {
+                      elem.style.display = 'block';
+                    }) : null;
+                }
+              }
+            });
+          } else {
+            if (tocFlexbox) {
+              tocFlexbox.setAttribute('data-position', '');
+              if (!tocFlexbox.classList.contains('hide')) {
+                tocFlexbox.classList.add('hide');
+              }
+            }
+            if (tocFlexboxOuter) {
+              tocFlexboxOuter.setAttribute('data-position', '');
+              if (!tocFlexboxOuter.classList.contains('hide')) {
+                tocFlexboxOuter.classList.add('hide');
+              }
+            }
+          }
+        }
+      } else { 
+        if (st < 250) {
+          gttBtn.style.display = "none";
+        }
+
+        if (navbar.classList.contains('scrolling')) {
+          if (navbar.classList.contains('navbar--hide')) {
+            navbar.classList.remove('navbar--hide');
+          } else if (!navbar.classList.contains('navbar--show')) {
+            navbar.classList.add('navbar--show');
+          }
+        }
+
+        if (singleContentsElem) {
+          if (singleContentsElem.querySelectorAll(tocLevels).length > 0) {
+            singleContentsElem.querySelectorAll(tocLevels).forEach(function (elem) {
+              if (toggleTocElem && !toggleTocElem.checked) {
+                return null;
+              }
+              
+              if (notAllowedTitleIds && notAllowedTitleIds.includes(elem.getAttribute('id'))) {
+                return null;
+              }
+
+              if (document.documentElement.scrollTop >= elem.offsetTop) {
+                if (tableOfContentsElem) {
+                  var id = elem.getAttribute('id');
+                  tocElem.querySelectorAll('a').forEach(function (elem) {
+                    elem.classList.remove('active');
+                  });
+                  tocElem.querySelector('a[href="#' + id + '"]') ?
+                    tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
+
+                  var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
+                  if (curElem && curElem.nextElementSibling) {
+                    curElem.nextElementSibling.style.display = 'block';
+                  }
+                  getParents(curElem, 'ul') ?
+                    getParents(curElem, 'ul').forEach(function (elem) {
+                      elem.style.display = 'block';
+                    }) : null;
+                }
+              }
+            });
+          } else {
+            if (tocFlexbox && !tocFlexbox.classList.contains('hide')) {
+              tocFlexbox.classList.add('hide');
+            }
+            if (tocFlexboxOuter && !tocFlexboxOuter.classList.contains('hide')) {
+              tocFlexboxOuter.classList.add('hide');
+            }
+          }
+          
+        }
+
+        if (tableOfContentsElem && document.documentElement.scrollTop < 250) {
+          if (false === tocFolding) {
+
+          } else {
+            tableOfContentsElem.querySelector('ul') ?
+              tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
+                liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                  ulElem.style.display = 'none';
+                });
+              }) : null;
+          }
+        }
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
+    };
+  
+
+
+  
+    var localTheme = localStorage.getItem('theme');
+    var rootEleme = document.getElementById('root');
+    var selectThemeElem = document.querySelectorAll('.select-theme');
+    var selectThemeItemElem = document.querySelectorAll('.select-theme__item');
+    
+    
+    var skinDarkCode = JSON.parse("\"dark\"");
+    
+    var skinLightCode = JSON.parse("\"light\"");
+    
+    var skinHackerCode = JSON.parse("\"hacker\"");
+    
+    var skinSolarizedCode = JSON.parse("\"solarized\"");
+    
+    var skinKimbieCode = JSON.parse("\"kimbie\"");
+
+    var setMetaColor = function(themeColor) {
+      var metaMsapplicationTileColor = document.getElementsByName('msapplication-TileColor')[0];
+      var metaThemeColor = document.getElementsByName('theme-color')[0];
+      var metaMsapplicationNavbuttonColor = document.getElementsByName('msapplication-navbutton-color')[0];
+      var metaAppleMobileWebAappStatusBarStyle = document.getElementsByName('apple-mobile-web-app-status-bar-style')[0];
+
+      if (themeColor.includes('dark')) {
+        metaMsapplicationTileColor.setAttribute('content', '#fcfcfa');
+        metaThemeColor.setAttribute('content', '#403E41');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#403E41');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#403E41');
+      } else if (themeColor.includes('light')) {
+        metaMsapplicationTileColor.setAttribute('content', '#555');
+        metaThemeColor.setAttribute('content', '#eee');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#eee');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee');
+      } else if (themeColor.includes('hacker')) {
+        metaMsapplicationTileColor.setAttribute('content', '#e3cd26');
+        metaThemeColor.setAttribute('content', '#252526');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#252526');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#252526');
+      } else if (themeColor.includes('solarized')) {
+        metaMsapplicationTileColor.setAttribute('content', '#d3af86');
+        metaThemeColor.setAttribute('content', '#51412c');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#51412c');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#51412c');
+      } else if (themeColor.includes('kimbie')) {
+        metaMsapplicationTileColor.setAttribute('content', '#586e75');
+        metaThemeColor.setAttribute('content', '#eee8d5');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#eee8d5');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee8d5');
+      }
+    }
+
+    var parseSkinCode = function(themeText) {
+      if (themeText === skinDarkCode) {
+        return 'dark';
+      } else if (themeText === skinLightCode) {
+        return 'light';
+      } else if (themeText === skinHackerCode) {
+        return 'hacker';
+      } else if (themeText === skinSolarizedCode) {
+        return 'solarized';
+      } else if (themeText === skinKimbieCode) {
+        return 'kimbie';
+      }
+    }
+    
+    if (localTheme) {
+      selectThemeItemElem ? 
+      selectThemeItemElem.forEach(function (elem) {
+        if (elem.text.trim() === localTheme) {
+          elem.classList.add('is-active');
+        } else {
+          elem.classList.remove('is-active');
+        }
+      }) : null;
+
+      setMetaColor(localTheme);
+    } else {
+      setMetaColor(rootEleme.className);
+    }
+
+    selectThemeItemElem ? 
+    selectThemeItemElem.forEach(function (v, i) {
+      v.addEventListener('click', function (e) {
+        var selectedThemeVariant = parseSkinCode(e.target.text.trim());
+        localStorage.setItem('theme', selectedThemeVariant);
+        setMetaColor(selectedThemeVariant);
+
+        rootEleme.removeAttribute('class');
+        rootEleme.classList.add('theme__' + selectedThemeVariant);
+        selectThemeElem.forEach(function(rootElem) {
+          rootElem.querySelectorAll('a').forEach(function (elem) {
+            if (elem.classList) {
+              if (elem.text.trim() === selectedThemeVariant) {
+                if (!elem.classList.contains('is-active')) {
+                  elem.classList.add('is-active');
+                }
+              } else {
+                if (elem.classList.contains('is-active')) {
+                  elem.classList.remove('is-active');
+                }
+              }
+            }
+          });
+        });
+
+        if (window.mermaid) {
+          if (selectedThemeVariant === "dark" || selectedThemeVariant === "hacker") {
+            mermaid.initialize({ theme: 'dark' });
+            location.reload();
+          } else {
+            mermaid.initialize({ theme: 'default' });
+            location.reload();
+          }
+        }
+
+        var utterances = document.getElementById('utterances');
+        if (utterances) {
+          utterances.querySelector('iframe').contentWindow.postMessage({
+            type: 'set-theme',
+            theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
+          }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
+        }
+      });
+    }) : null;
+  
+
+
+  
+    
+    var baseurl = JSON.parse("\"https://xunhs.github.io/\"");
+    
+    var permalink = JSON.parse("\"https://xunhs.github.io/posts/notes/2020-06-21-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-1/\"");
+    
+    var langprefix = JSON.parse("\"\"");
+    var searchResults = null;
+    var searchMenu = null;
+    var searchText = null;
+    
+    
+    var enableSearch = JSON.parse("true");
+    
+    var searchDistance = JSON.parse("30000");
+    
+    var searchThreshold = JSON.parse("0.2");
+    
+    var searchContent = JSON.parse("true");
+    
+    var enableSearchHighlight = JSON.parse("true");
+    
+    var searchResultPosition = JSON.parse("\"main\"");
+    
+    var sectionType = JSON.parse("\"posts\"");
+    
+    var kind = JSON.parse("\"page\"");
+    
+    var fuse = null;
+
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        if (sectionType === "publication" && kind !== "page") {
+          xhr.open('GET', permalink + "index.json");
+        } else {
+          xhr.open('GET', baseurl + langprefix + "/index.json");
+        }
+        
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content', 'tags'] : ['title', 'description'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true, 
+              threshold: searchThreshold ? searchThreshold : 0.6, 
+              location: 0, 
+              distance: searchDistance ? searchDistance : 100, 
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+              isCaseSensitive: false, 
+              findAllMatches: false, 
+              useExtendedSearch: false, 
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
+
+    function makeLi(ulElem, obj) {
+      var li = document.createElement('li');
+      li.className = 'search-result__item';
+      
+      var a = document.createElement('a');
+      a.innerHTML = obj.item.title;
+      a.setAttribute('class', 'search-result__item--title');
+      a.setAttribute('href', obj.item.permalink);
+
+      var descDiv = document.createElement('div');
+      descDiv.setAttribute('class', 'search-result__item--desc');
+      if (obj.item.description) {
+        descDiv.innerHTML = obj.item.description;
+      } else if (obj.item.content) {
+        descDiv.innerHTML = obj.item.content.substring(0, 225);
+      }
+      
+      li.appendChild(a);
+      li.appendChild(descDiv);
+      ulElem.appendChild(li);
+    }
+
+    function makeHighlightLi(ulElem, obj) {
+      var li = document.createElement('li');
+      li.className = 'search-result__item';
+      var descDiv = null;
+
+      var a = document.createElement('a');
+      a.innerHTML = obj.item.title;
+      a.setAttribute('class', 'search-result__item--title');
+      a.setAttribute('href', obj.item.uri);
+
+      if (obj.matches && obj.matches.length) {
+        for (var i = 0; i < obj.matches.length; i++) {
+          if ('title' === obj.matches[i].key) {
+            a = document.createElement('a');
+            a.innerHTML = generateHighlightedText(obj.matches[i].value, obj.matches[i].indices);
+            a.setAttribute('class', 'search-result__item--title');
+            a.setAttribute('href', obj.item.uri);
+          }
+          
+          if ('description' === obj.matches[i].key) {
+            descDiv = document.createElement('div');
+            descDiv.setAttribute('class', 'search-result__item--desc');
+            descDiv.innerHTML = generateHighlightedText(obj.item.description, obj.matches[i].indices);
+          } else if ('content' === obj.matches[i].key) {
+            if (!descDiv) {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = generateHighlightedText(obj.item.content.substring(0, 150), obj.matches[i].indices);
+            }
+          } else {
+            if (obj.item.description) {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = obj.item.description;
+            } else {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = obj.item.title.substring(0, 150);
+            }
+          }
+        }
+
+        li.appendChild(a);
+        if (descDiv) {
+          li.appendChild(descDiv);
+        }
+        if (li) {
+          ulElem.appendChild(li);
+        }
+      }
+    }
+
+    function renderSearchResultsSide(searchText, results) {
+      searchResults = document.getElementById('search-results');
+      searchMenu = document.getElementById('search-menu');
+      searchResults.setAttribute('class', 'dropdown is-active');
+      
+      var ul = document.createElement('ul');
+      ul.setAttribute('class', 'dropdown-content search-content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.setAttribute('href', result.uri);
+          a.setAttribute('class', 'dropdown-item');
+          a.appendChild(li);
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.title;
+          titleDiv.setAttribute('class', 'menu-item__title');
+
+          var descDiv = document.createElement('div');
+          descDiv.setAttribute('class', 'menu-item__desc');
+          if (result.description) {
+            descDiv.innerHTML = result.description;
+          } else if (result.content) {
+            descDiv.innerHTML = result.content.substring(0, 150);
+          }
+
+          li.appendChild(titleDiv);
+          li.appendChild(descDiv);
+          ul.appendChild(a);
+        });
+      } else {
+        var li = document.createElement('li');
+        li.setAttribute('class', 'dropdown-item');
+        li.innerText = 'No results found';
+        ul.appendChild(li);
+      }
+
+      while (searchMenu.hasChildNodes()) {
+        searchMenu.removeChild(
+          searchMenu.lastChild
+        );
+      }
+      
+      searchMenu.appendChild(ul);
+    }
+
+    function renderSearchHighlightResultsSide(searchText, results) {
+      searchResults = document.getElementById('search-results');
+      searchMenu = document.getElementById('search-menu');
+      searchResults.setAttribute('class', 'dropdown is-active');
+
+      var ul = document.createElement('ul');
+      ul.setAttribute('class', 'dropdown-content search-content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          var descDiv = null;
+
+          a.setAttribute('href', result.item.uri);
+          a.setAttribute('class', 'dropdown-item');
+          a.appendChild(li);
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.item.title;
+          titleDiv.setAttribute('class', 'menu-item__title');
+          
+          if (result.matches && result.matches.length) {
+            for (var i = 0; i < result.matches.length; i++) {
+              if ('title' === result.matches[i].key) {
+                titleDiv.innerHTML = generateHighlightedText(result.matches[i].value, result.matches[i].indices);
+              }
+
+              if ('description' === result.matches[i].key) {
+                descDiv = document.createElement('div');
+                descDiv.setAttribute('class', 'menu-item__desc');
+                descDiv.innerHTML = generateHighlightedText(result.item.description, result.matches[i].indices);
+              } else if ('content' === result.matches[i].key) {
+                if (!descDiv) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'menu-item__desc');
+                  descDiv.innerHTML = generateHighlightedText(result.item.content.substring(0, 150), result.matches[i].indices);
+                }
+              } else {
+                if (result.item.description) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'menu-item__desc');
+                  descDiv.innerHTML = result.item.description;
+                } else {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'menu-item__desc');
+                  descDiv.innerHTML = result.item.content.substring(0, 150);
+                }
+              }
+            }
+            
+            li.appendChild(titleDiv);
+            if (descDiv) {
+              li.appendChild(descDiv);
+            }
+            ul.appendChild(a);
+          }
+        });
+      } else {
+        var li = document.createElement('li');
+        li.setAttribute('class', 'dropdown-item');
+        li.innerText = 'No results found';
+        ul.appendChild(li);
+      }
+
+      while (searchMenu.hasChildNodes()) {
+        searchMenu.removeChild(
+          searchMenu.lastChild
+        );
+      }
+      searchMenu.appendChild(ul);
+    }
+
+    function renderSearchResultsMobile(searchText, results) {
+      searchResults = document.getElementById('search-mobile-results');
+
+      var content = document.createElement('div');
+      content.setAttribute('class', 'mobile-search__content');
+
+      if (results.length > 0) {
+        results.forEach(function (result) {
+          var item = document.createElement('a');
+          item.setAttribute('href', result.uri);
+          item.innerHTML = '<div class="mobile-search__item"><div class="mobile-search__item--title">📄 ' + result.title + '</div><div class="mobile-search__item--desc">' + (result.description ? result.description : result.content) + '</div></div>';
+          content.appendChild(item);
+        });
+      } else {
+        var item = document.createElement('span');
+        content.appendChild(item);
+      }
+
+      let wrap = document.getElementById('search-mobile-results');
+      while (wrap.firstChild) {
+        wrap.removeChild(wrap.firstChild)
+      }
+      searchResults.appendChild(content);      
+    }
+
+    function renderSearchHighlightResultsMobile(searchText, results) {
+      searchResults = document.getElementById('search-mobile-results');
+
+      var ul = document.createElement('div');
+      ul.setAttribute('class', 'mobile-search__content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          var descDiv = null;
+
+          a.setAttribute('href', result.item.uri);
+          a.appendChild(li);
+          li.setAttribute('class', 'mobile-search__item');
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.item.title;
+          titleDiv.setAttribute('class', 'mobile-search__item--title');
+          
+          if (result.matches && result.matches.length) {
+            for (var i = 0; i < result.matches.length; i++) {
+              if ('title' === result.matches[i].key) {
+                titleDiv.innerHTML = generateHighlightedText(result.matches[i].value, result.matches[i].indices);
+              }
+
+              if ('description' === result.matches[i].key) {
+                descDiv = document.createElement('div');
+                descDiv.setAttribute('class', 'mobile-search__item--desc');
+                descDiv.innerHTML = generateHighlightedText(result.item.description, result.matches[i].indices);
+              } else if ('content' === result.matches[i].key) {
+                if (!descDiv) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = generateHighlightedText(result.item.content.substring(0, 150), result.matches[i].indices);
+                }
+              } else {
+                if (result.item.description) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = result.item.description;
+                } else {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = result.item.content.substring(0, 150);
+                }
+              }
+            }
+            
+            li.appendChild(titleDiv);
+            if (descDiv) {
+              li.appendChild(descDiv);
+            }
+            ul.appendChild(a);
+          }
+        });
+      } else {
+        var item = document.createElement('span');
+        ul.appendChild(item);
+      }
+
+      let wrap = document.getElementById('search-mobile-results');
+      while (wrap.firstChild) {
+        wrap.removeChild(wrap.firstChild)
+      }
+      searchResults.appendChild(ul);
+    }
+
+    function generateHighlightedText(text, regions) {
+      if (!regions) {
+        return text;
+      }
+
+      var content = '', nextUnhighlightedRegionStartingIndex = 0;
+
+      regions.forEach(function(region) {
+        if (region[0] === region[1]) {
+          return null;
+        }
+        
+        content += '' +
+          text.substring(nextUnhighlightedRegionStartingIndex, region[0]) +
+          '<span class="search__highlight">' +
+            text.substring(region[0], region[1] + 1) +
+          '</span>' +
+        '';
+        nextUnhighlightedRegionStartingIndex = region[1] + 1;
+      });
+
+      content += text.substring(nextUnhighlightedRegionStartingIndex);
+
+      return content;
+    };
+
+    var searchElem = document.getElementById('search');
+    var searchMobile = document.getElementById('search-mobile');
+    var searchResultsContainer = document.getElementById('search-results');
+
+    searchElem ?
+    searchElem.addEventListener('input', function(e) {
+      if (!e.target.value | window.innerWidth < 770) {
+        searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dropdown') : null;
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+      
+      if (searchResultPosition === "main") {
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsMain(searchText, results);
+        } else {
+          renderSearchResultsMain(searchText, results);
+        }
+      } else {
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsSide(searchText, results);
+        } else {
+          renderSearchResultsSide(searchText, results);
+        }
+        
+        var dropdownItems = searchResultsContainer.querySelectorAll('.dropdown-item');
+        dropdownItems ? dropdownItems.forEach(function(item) {
+          item.addEventListener('mousedown', function(e) {
+            e.target.click();
+          });
+        }) : null;
+      }
+    }) : null;
+
+    searchElem ? 
+    searchElem.addEventListener('blur', function() {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+      searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dropdown') : null;
+    }) : null;
+
+    searchElem ? 
+    searchElem.addEventListener('click', function(e) {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+      if (!e.target.value) {
+        searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dropdown') : null;
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+
+      if (searchResultPosition === "main") {
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsMain(searchText, results);
+        } else {
+          renderSearchResultsMain(searchText, results);
+        }
+      } else{
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsSide(searchText, results);
+        } else {
+          renderSearchResultsSide(searchText, results);
+        }
+
+        var dropdownItems = searchResultsContainer.querySelectorAll('.dropdown-item');
+        dropdownItems ? dropdownItems.forEach(function (item) {
+          item.addEventListener('mousedown', function (e) {
+            e.target.click();
+          });
+        }) : null;
+      }
+    }) : null;
+
+    var searchMenuElem = document.getElementById("search-menu");
+    var activeItem = document.querySelector('#search-menu .dropdown-item.is-active');
+    var activeIndex = null;
+    var items = null;
+    var searchContainerMaxHeight = 350;
+
+    searchElem ? 
+    searchElem.addEventListener('keydown', function(e) {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+
+      if (e.key === 'Escape') {
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+      }
+
+      var items = document.querySelectorAll('#search-menu .dropdown-item');
+      var keyCode = e.which || e.keyCode;
+
+      if (!items || !items.length) {
+        return null;
+      }
+      
+      if (e.key === 'ArrowDown' || keyCode === 40) {
+        if (activeIndex === null) {
+          activeIndex = 0;
+          items[activeIndex].classList.remove('is-active');
+        } else {
+          items[activeIndex].classList.remove('is-active');
+          activeIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+        }
+        items[activeIndex].classList.add('is-active');
+
+        let overflowedPixel = items[activeIndex].offsetTop + items[activeIndex].clientHeight - searchContainerMaxHeight;
+        if (overflowedPixel > 0) {
+          document.querySelector(".search-content").scrollTop += items[activeIndex].getBoundingClientRect().height;
+        } else if (activeIndex === 0) {
+          document.querySelector(".search-content").scrollTop = 0;
+        }
+      } else if (e.key === 'ArrowUp' || keyCode === 38) {
+        if (activeIndex === null) {
+          activeIndex = items.length - 1;
+          items[activeIndex].classList.remove('is-active');
+        } else {
+          items[activeIndex].classList.remove('is-active');
+          activeIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+        }
+        items[activeIndex].classList.add('is-active');
+        
+        let overflowedPixel = items[activeIndex].offsetTop + items[activeIndex].clientHeight - searchContainerMaxHeight;
+        if (overflowedPixel < 0) {
+          document.querySelector(".search-content").scrollTop -= items[activeIndex].getBoundingClientRect().height;
+        } else {
+          document.querySelector(".search-content").scrollTop = overflowedPixel + items[activeIndex].getBoundingClientRect().height;
+        }
+      } else if (e.key === 'Enter' || keyCode === 13) {
+        if (items[activeIndex] && items[activeIndex].getAttribute('href')) {
+          location.href = items[activeIndex].getAttribute('href');
+        }
+      } else if (e.key === 'Escape' || keyCode === 27) {
+        e.target.value = null;
+        if (searchResults) {
+          searchResults.classList.remove('is-active');
+        }
+      }
+    }) : null;
+
+    searchMobile ? 
+    searchMobile.addEventListener('input', function(e) {
+      if (!e.target.value) {
+        let wrap = document.getElementById('search-mobile-results');
+        while (wrap.firstChild) {
+          wrap.removeChild(wrap.firstChild);
+        }
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+      renderSearchResultsMobile(searchText, results);
+      if (enableSearchHighlight) {
+        renderSearchHighlightResultsMobile(searchText, results);
+      } else {
+        renderSearchResultsMobile(searchText, results);
+      }
+    }) : null;
+  
+
+
+  
+    var mobileSearchInputElem = document.querySelector('#search-mobile');
+    var mobileSearchClassElem = document.querySelector('.mobile-search');
+    var mobileSearchBtnElems = document.querySelectorAll('.navbar-search');
+    var mobileSearchCloseBtnElem = document.querySelector('#search-mobile-close');
+    var mobileSearchContainer = document.querySelector('#search-mobile-container');
+    var mobileSearchResultsElem = document.querySelector('#search-mobile-results');
+    var htmlElem = document.querySelector('html');
+
+    if (mobileSearchClassElem) {
+      mobileSearchClassElem.style.display = 'none';
+    }
+
+    mobileSearchBtnElems ? 
+    mobileSearchBtnElems.forEach(function (elem, idx) {
+      elem.addEventListener('click', function () {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'block';
+        }
+
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.focus();
+        }
+
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'hidden';
+        }
+      });
+    }) : null;
+
+    mobileSearchCloseBtnElem ? 
+    mobileSearchCloseBtnElem.addEventListener('click', function() {
+      if (mobileSearchContainer) {
+        mobileSearchContainer.style.display = 'none';
+      }
+
+      if (mobileSearchInputElem) {
+        mobileSearchInputElem.value = '';
+      }
+      
+      if (mobileSearchResultsElem) {
+        while (mobileSearchResultsElem.firstChild) {
+          mobileSearchResultsElem.removeChild(mobileSearchResultsElem.firstChild);
+        }
+      }
+
+      if (htmlElem) {
+        htmlElem.style.overflowY = 'visible';
+      }
+    }) : null;
+
+    mobileSearchInputElem ?
+    mobileSearchInputElem.addEventListener('keydown', function(e) {
+      var keyCode = e.which || e.keyCode;
+      if (e.key === 'Escape' || keyCode === 27) {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'none';
+        }
+        
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.value = '';
+        }
+
+        if (mobileSearchResultsElem) {
+          while (mobileSearchResultsElem.firstChild) {
+            mobileSearchResultsElem.removeChild(mobileSearchResultsElem.firstChild);
+          }
+        }
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'visible';
+        }
+      }
+    }) : null;
+  
+
+
+  
+    function renderSearchResultsMain(searchText, results) {
+      var searchBody = document.querySelector('.search-result__body');
+      var originUl = searchBody.querySelector('ul');
+      var ul = document.createElement('ul');
+      
+      if (!searchText) {
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+      } else if (results) {
+        if (results && results.length) {
+          results.forEach(function (result) {
+            makeLi(ul, result);
+          });
+
+          searchResult ? searchResult.setAttribute('data-display', 'block') : null;
+          summaryContainer ? summaryContainer.setAttribute('data-display', 'none') : null;
+        }
+      }
+
+      originUl.parentNode.replaceChild(ul, originUl);
+    }
+
+    function renderSearchHighlightResultsMain(searchText, results) {
+      var searchBody = document.querySelector('.search-result__body');
+      var originUl = searchBody.querySelector('ul');
+      var ul = document.createElement('ul');
+
+      if (!searchText) {
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+      } else if (results) {
+        if (results && results.length) {
+          results.forEach(function (result) {
+            makeHighlightLi(ul, result);
+          });
+
+          searchResult ? searchResult.setAttribute('data-display', 'block') : null;
+          summaryContainer ? summaryContainer.setAttribute('data-display', 'none') : null;
+        }
+      }
+
+      originUl.parentNode.replaceChild(ul, originUl);
+    }
+  
+  });
+</script>    
+    
+
+
+<link rel="stylesheet" href="/css/main.min.css">
+
+
+    
+<meta name="description" content="曾经沧海难为水." />
+
+
+<meta name="keywords" content="论文阅读,博士论文">
+
+<meta name="created" content="2020-06-21T09:26:50&#43;0000">
+<meta name="modified" content="2020-06-21T09:26:50&#43;0000">
+<meta property="article:published_time" content="2020-06-21T09:26:50&#43;0000">
+
+<meta name="author" content="热">
+
+
+<meta property="og:site_name" content="热">
+<meta property="og:title" content="博士论文阅读札记-1">
+<meta property="og:url" content="https://xunhs.github.io/posts/notes/2020-06-21-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-1/">
+<meta property="og:type" content="article">
+<meta property="og:description" content="曾经沧海难为水.">
+
+<meta name="generator" content="Hugo 0.84.4" />
+<meta name="msapplication-TileColor" content="#fff">
+
+<meta name="theme-color" content="#fff">
+
+<meta name="msapplication-navbutton-color" content="#fff">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
+<link rel="canonical" href="https://xunhs.github.io/posts/notes/2020-06-21-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-1/">
+
+<link rel="manifest" href="/manifest.json">
+
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.png" sizes="any" type="image/png" />
+  
+
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "博士论文阅读札记-1",
+    "datePublished": "2020-06-21T09:26:50Z",
+    "dateModified": "2020-06-21T09:26:50Z",
+    "url" : "https://xunhs.github.io/posts/notes/2020-06-21-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-1/",
+    "description": "\u003cblockquote\u003e \u003cp\u003e思考开题和研究大论文的主线是长期让我头疼的问题。通过阅读相关的博士论文，从作者的角度出发，挖掘他们的论文主线和思考他们的行文思路，从而为开题和大论文提供参考。\u003c/p\u003e \u003c/blockquote\u003e",
+    "keywords": ["论文阅读","博士论文"],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://xunhs.github.io/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "热",
+      "url": "https://xunhs.github.io/"
+    }
+  }
+</script>
+
+    
+  
+  
+
+
+
+
+
+
+
+    
+</head>
+
+<body id="root" class="theme__dark">
+    <script>
+        var localTheme = localStorage.getItem('theme');
+        if (localTheme) {
+            document.getElementById('root').className = 'theme__' + localTheme;
+        }
+    </script>
+    <div id="container">
+        
+
+
+
+
+
+        <div class="wrapper" data-type="posts" data-kind="page">
+            <nav class="navbar scrolling" role="navigation" aria-label="main navigation" data-dir="ltr">
+  <div class="navbar__brand">
+    
+    <a href="/" title="Home" rel="home" class="navbar__logo-link">
+      <img src="/logo.png" alt="Home" class="navbar__logo">
+    </a>
+    
+    
+      <a href="/" title="Home" rel="home" class="navbar__title-link">
+        <h6 class="navbar__title">热</h6>
+      </a>
+    
+  </div>
+
+  
+<div class="theme theme-mobile" data-ani="true">
+  <div class="dropdown">
+    <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" style="" data-ani="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentColor" d="M6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41 0L6.34 7.93zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>      
+    </button>
+    <div class="dropdown-content select-theme">
+      
+        
+        <a href="#" class="dropdown-item select-theme__item is-active">
+          dark
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          light
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          hacker
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          solarized
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          kimbie
+        </a>
+        
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="mobile-search__btn navbar-search" data-ani="true">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+</div>
+
+<div id="search-mobile-container" class="mobile-search hide" data-dir="ltr">
+  <div class="mobile-search__top">
+    <input id="search-mobile" type="text" aria-label="Mobile Search" placeholder="Search" class="mobile-search__top--input"/>
+    <div id="search-mobile-close" class="mobile-search__top--icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>
+    </div>
+  </div>
+  <div id="search-mobile-results" class="mobile-search__body">
+    
+  </div>
+</div>
+
+
+<a role="button" class="navbar__burger" aria-label="menu" aria-expanded="false"
+  data-ani="true">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</a>
+<div class="navbarm__collapse" data-open="false">
+  <ul dir="ltr">
+    
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/archive">archive</a>
+        </li>
+      
+      
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/moments">moments</a>
+        </li>
+      
+      
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/about">about</a>
+        </li>
+      
+      
+    
+
+    
+      <li class="navbarm__menu--item ">
+        <a href="/categories" class="navbarm__menu--term" data-index="0">
+          Categories
+        </a>
+      </li>
+    
+      <li class="navbarm__menu--item ">
+        <a href="/series" class="navbarm__menu--term" data-index="1">
+          Series
+        </a>
+      </li>
+    
+  </ul>
+</div>
+  <div class="navbar__menu">
+  
+    <div class="theme">
+  <div class="dropdown">
+    <button class="dropdown-trigger navbar__slide-down navbar-search" aria-label="Search Button" data-ani="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+</div>
+  
+  
+  
+<div class="theme" data-ani="true">
+  <div class="dropdown">
+    <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" data-ani="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentColor" d="M6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41 0L6.34 7.93zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>      
+    </button>
+    <div class="dropdown-content select-theme">
+      
+        
+        <a href="#" class="dropdown-item select-theme__item is-active">
+          dark
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          light
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          hacker
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          solarized
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          kimbie
+        </a>
+        
+      
+    </div>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+  
+  
+  <a href="/archive" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">archive</a>
+  
+  
+  
+  
+  
+  
+  
+  <a href="/moments" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">moments</a>
+  
+  
+  
+  
+  
+  
+  
+  <a href="/about" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">about</a>
+  
+  
+</div>
+</nav>
+            
+            
+
+<main class="single__main main">
+  
+    <nav class="breadcrumb hide" aria-label="breadcrumbs">
+  <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
+  <ol>
+    
+  
+  
+  
+  
+  
+  <li >
+    
+      <a href="https://xunhs.github.io/" class="capitalize">热</a>
+    
+  </li>
+  
+  
+  <li >
+    
+      <a href="https://xunhs.github.io/posts/" class="capitalize">Posts</a>
+    
+  </li>
+  
+  
+  <li  class="is-active" >
+    
+      <span>博士论文阅读札记-1</span>
+    
+  </li>
+  
+  </ol>
+  
+</nav>
+  
+  
+  <noscript>
+    <div class="single__nojs">
+      This page looks best with JavaScript enabled
+    </div>
+  </noscript>
+  
+  <div class="single hide">
+    <div class="single__nojs">This page looks best with JavaScript enabled</div>
+    <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
+    <h2 class="single__title" data-ani="true">博士论文阅读札记-1</h2>
+    <h3 class="single__subtitle"></h3>
+    <div class="single__meta">
+      
+<div class="single__infos">
+  <time class="single__info" title="Written At">📅&nbsp;Jun 21, 2020 </time>
+  
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;36&nbsp;min read </span>
+  
+  <span class="single__info">
+    
+  </span>
+</div>
+
+      
+<ul class="single__tags caption">
+  
+  🏷️
+  
+
+  <li><a href="https://xunhs.github.io/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="single__tag" title="论文阅读">#论文阅读</a></li>
+
+  <li><a href="https://xunhs.github.io/tags/%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87/" class="single__tag" title="博士论文">#博士论文</a></li>
+
+</ul>
+
+    </div>
+    <article class="single__contents" data-dir="ltr" data-ani="true">
+      
+      <blockquote>
+<p>思考开题和研究大论文的主线是长期让我头疼的问题。通过阅读相关的博士论文，从作者的角度出发，挖掘他们的论文主线和思考他们的行文思路，从而为开题和大论文提供参考。</p>
+</blockquote>
+<h1 id="openstreetmap城市建筑物数据质量评价方法研究">OpenStreetMap城市建筑物数据质量评价方法研究</h1>
+<p>徐永洋-2019-中国地质大学（武汉）</p>
+<h2 id="绪论部分">绪论部分</h2>
+<h3 id="研究背景与意义">研究背景与意义</h3>
+<ul>
+<li>第一段：地理信息-志愿者地理信息（VGI）-在线开放街区地图（OSM）</li>
+<li>第二段：OSM的质量与价值问题-OSM数据中建筑物数据的质量问题</li>
+<li>第三段：
+<ul>
+<li>总述：OSM研究价值；城市建筑物数据有很大帮助；深度学习的成功</li>
+<li>因此，本文：
+<ul>
+<li>研究对象：OSM数据中城市建筑物数据</li>
+<li>研究内容：OSM建筑物数据质量评价</li>
+<li>具体地：建筑物形状相似性、数据完备性等评价指标+深度学习方法+基于矢量参考数据、遥感参考数据</li>
+<li>本文奠基于具有更加坚实的理论和更加先进的人工智能技术，在数据规模和深刻性上都达到了较高的水平。（这句话蛮有深意）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>第四段：应用价值+学术价值</li>
+</ul>
+<h3 id="研究现状与分析">研究现状与分析</h3>
+<p>总的思路是在<strong>定量和定性</strong>两个方面展开讲</p>
+<ol>
+<li>
+<p>VGI数据质量评价研究现状</p>
+<ul>
+<li>基于官方数据的定量评价方法：数据完备性、逻辑一致性、位置精度、时间精度、主题精度和可靠性</li>
+<li>基于VGI本身特征的定性评价方法：数据指标、人口统计指标、社会经济指标以及贡献者指标</li>
+</ul>
+</li>
+<li>
+<p>OSM 建筑物数据质量评价研究现状</p>
+<ul>
+<li>OSM 建筑物与参考建筑物数据比较</li>
+<li>研究 OSM 建筑物数据特点对其数据质量进行评价</li>
+</ul>
+</li>
+<li>
+<p>研究现状总结与存在问题</p>
+<ol>
+<li>目前仍<strong>无统一</strong>的空间数据质量评价模型
+<ul>
+<li>一方面定量和绝对的分析需要参考数据</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>另一方面，定性的分析虽然不需要权威参考数据，但又不能给出针对 OSM 建筑物数据给出绝对的评价结果。</li>
+</ul>
+<ol start="2">
+<li>
+<p>遥感技术（如卫星和航空摄影）的发展 - 高质量的非矢量参考数据比权威矢量数据的容易获取得多</p>
+</li>
+<li>
+<p>基于深度学习通过高分辨率遥感图像目标提取已经取得了不错的成果，这为研究 OSM 数据质量评价问题提供了新的思路</p>
+</li>
+<li>
+<p>综上分析，本研究将评价过程分为两种情况：</p>
+<ul>
+<li>
+<p>研究区有可利用矢量参考数据</p>
+<ul>
+<li>
+<p>如何客观地、综合地对OSM 建筑物数据质量进行评价是基于参考数据定量评价过程中存在的主要问题</p>
+</li>
+<li>
+<p>如何精确地对其<strong>形状精度</strong>进行计算也是目前基于参考数据定量评价OSM 建筑物数据质量过程中存在的问题</p>
+</li>
+</ul>
+</li>
+<li>
+<p>研究区不能获得矢量参考数据</p>
+<ol>
+<li>如何从高分辨率遥感影像中提取高精度建筑物数据轮廓信息，并基于提取信息对 OSM 建筑物数据质量进行评价是目前基于高分辨率遥感影像数据对其数据质量评价过程中存在的主要问题</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="研究目标与内容">研究目标与内容</h3>
+<ol>
+<li>研究的目的
+<ol>
+<li>对空间实体<strong>形状描述</strong>合理表示 + 针对不同描述形式的多边形相似性度量方法</li>
+<li>针对矢量参考数据，定义包括形状精度（形状相似度）在内的一系列<strong>评价指标</strong> + 深度自编码网络方法 =&gt; 解决 OSM 建筑物数据质量综合、客观评价问题</li>
+<li>针对一些地区矢量参考数据难以获得，<strong>高分辨遥感影像</strong>着手 =&gt; 实现 OSM 建筑物数据质量定量评价</li>
+</ol>
+</li>
+<li>关键科学问题
+<ol>
+<li>研究多边形形状相似性度量问题</li>
+<li>研究 OSM 建筑物数据综合评价问题</li>
+<li>研究基于高分辨率遥感影像数据进行 OSM 建筑物数据质量评价问题</li>
+</ol>
+</li>
+</ol>
+<h3 id="论文创新点">论文创新点</h3>
+<p>本文应用深度学习技术、地理信息科学、遥感图像处理<strong>等多个学科理论和方法</strong>，<strong>立足</strong>于志愿者地理信息数据<strong>应用需求</strong>，通过<strong>对跨学科的研究</strong>为志愿者地理信息数据质量评价<strong>提供了新思路。</strong></p>
+<ol>
+<li>构建顾及空间分布和几何变换的多边形相似性度量模型。</li>
+<li>基于标准矢量参考数据，提出利用深度自编码神经网络 OSM 建筑物数据综合评价方法。</li>
+<li>基于高分辨率遥感影像数据，提出利用多任务特征学习提取参考数据进而实现 OSM 建筑物数据完整性与位置精度评价方法。</li>
+</ol>
+<h2 id="osm-数据质量评价相关理论">OSM 数据质量评价相关理论</h2>
+<h3 id="空间数据质量概述">空间数据质量概述</h3>
+<p>数据-空间数据-数据质量-空间数据质量-空间数据质量问题</p>
+<h3 id="osm-数据质量问题描述">OSM 数据质量问题描述</h3>
+<p>影响 OSM 数据质量的原因主要有三个：空间实体对象客观存在问题、人类认识主观性以及数据采集仪器的局限性等引起的质量问题。</p>
+<h3 id="空间相似性与-osm-数据质量">空间相似性与 OSM 数据质量</h3>
+<p>相似性研究-空间相似性=&gt;OSM 与参考数据之间的空间相似度越高，说明 OSM 数据质量越好。=&gt; 。建筑物数据质量可以被表示为：被评价数据与标准数据的接近程度，反应数据与真实值之间的相似度。=&gt; 在本研究中将 OSM 建筑物与标准数据中建筑物之间的几何形态相似性作为评价 OSM 建筑物数据质量中的几何形态精度。</p>
+<h2 id="顾及空间分布和几何变换的多边形相似性度量模型">顾及空间分布和几何变换的多边形相似性度量模型</h2>
+<p>总述：空间相似性-几何形态-几何形态的相似性；各种形式建筑物可以表示为简单多边形，带洞多边形和复合多边形。</p>
+<h3 id="引言">引言</h3>
+<ul>
+<li>
+<p>第一段：引入概念：相似性-几何形态；空间相似性评价可以表示为与等价性偏离的程度，通过已知形状和未知形状的形态差异计算得到；<strong>多边形形状相似度</strong>被视为 OSM 建筑物数据评价过程中重要的一方面</p>
+</li>
+<li>
+<p>第二段：空间实体几何相似性的相关应用/研究。几何相似度，其相似性一般通过<strong>描述子</strong>之间的距离来反应。</p>
+</li>
+<li>
+<p>第三段：（1）现有研究不足：形状上下文描述符可以利用随机参考点在大尺度上描述局部信息，但是它缺乏描述全局信息的能力；目前的形状相似性测量方法和模型是针对简单的几何对象，而不能直接用于复杂几何结构（带洞多边形、复合多边形）的，因为它们缺少子图之间位置描述以及不对称匹配时细节表达。（2）解决方案：凹凸性；快速傅立叶变换结合+最远点距离构建形状描述子</p>
+</li>
+</ul>
+<h3 id="基于最远点描述的简单多边形相似性度量模型">基于最远点描述的简单多边形相似性度量模型</h3>
+<ul>
+<li>
+<p>简单多边形：结构较为简单，不存在嵌套、组合等现象</p>
+</li>
+<li>
+<p>本文主要从构造多边形描述周期函数，以及基于傅里叶变换函数转换来构建多边形几何不变性描述子，将简单图形的相似度计算转换为度量两个描述子向量距离</p>
+</li>
+<li>
+<p>周期函数-形状签名函数-最远距离点（FPD）的形状签名：没有相似轮廓的形状具有明显不同的 FPD 特征，FPD 具有足够<strong>描述形状</strong>的能力</p>
+</li>
+<li>
+<p>直接通过签名度量形状之间的相似性通常是非常复杂的-离散傅立叶变换-归一化的傅里叶描述子:由于<strong>归一化的傅立叶描述符在旋转、缩放和移动等操作中都保持不变</strong>，因此在度量相似性时，FPD 的傅立叶描述符可以用来表示形状。</p>
+</li>
+<li>
+<p>几何多边形经过傅里叶变换之后可以利用<strong>傅里叶变换系数组成向量表示</strong>。系数从低阶到高阶分别用了描述多边形的<strong>轮廓信息和局部细节信息</strong>。不同多边形的之间的相似度可以通过距离来度量</p>
+</li>
+<li>
+<p><strong>余弦相似度</strong>：余弦值越大说明向量夹角越小，多边形之间的相似度也越高</p>
+</li>
+</ul>
+<h3 id="基于方位图的带洞多边形相似性度量模型">基于方位图的带洞多边形相似性度量模型</h3>
+<ul>
+<li>
+<p>带洞多边形：形式复杂，而且相互嵌套，是一个整体，属性结构完全相同，如“回”字结构或者其他中间镂空形式</p>
+</li>
+<li>
+<p>关键问题：解决内洞与内洞之间、内洞与整个复杂集合形状之间的关系</p>
+</li>
+<li>
+<p>利用方位图内洞空间分布描述</p>
+<ul>
+<li>带洞多边形之间的相似性度量可以分为两部分：内洞之间的相似性和多边形轮廓之间的相似性。提出方法是获得带洞多边形的<strong>质心</strong>与其内洞之间的关系，用于描述带洞多边形的特征。</li>
+<li>描述带洞多边形特征： 多边形质心与内洞质心、切点、内洞边界的最远点与最近点之间的距离</li>
+<li>多边形的内洞分布：中心点方位图、最远点方位图、最近点方位图、最近切点方位图。</li>
+</ul>
+</li>
+<li>
+<p>相关几何变换描述子定义与相似度计算方法（专业性较强，有点难理解，就不做详细记录了）</p>
+<ul>
+<li>方位图描述与相似性度量：平衡力？</li>
+<li>内洞几何变换描述与度量 ：自旋和公旋？</li>
+<li>内洞与轮廓形状相似性度量</li>
+<li>带洞区整体相似性度量 ：所有相似性的加权求和</li>
+</ul>
+</li>
+</ul>
+<h3 id="基于匹配控制子图的复合多边形相似性度量模型">基于匹配控制子图的复合多边形相似性度量模型</h3>
+<ul>
+<li>复合多边形：一些连栋建筑物常常会被表示成多个多边形，但这些多边形又是一个整体，组成完整的建筑物，这些多边形之间<strong>彼相邻或者相离</strong>，属性结构完全相同。</li>
+<li>四个步骤（专业性较强，有点难理解，就不做详细记录了）
+<ul>
+<li>首先通过计算寻找复合多边形中的匹配控制子图</li>
+<li>然后根据“控制多边形”匹配相应的子多边形，构建匹配位置图</li>
+<li>再应用傅立叶变换和基于凸包的局部矩变量计算每个匹配对的相似性</li>
+<li>最后，对位置图之间的相似度和对应的复合多边形子图对之间的相似度进行加权求和，实现计算复合多边形之间的相似度</li>
+</ul>
+</li>
+</ul>
+<h2 id="基于矢量参考数据-osm-建筑物数据综合评价">基于矢量参考数据 OSM 建筑物数据综合评价</h2>
+<h3 id="引言-1">引言</h3>
+<ul>
+<li>OSM-数据贡献者可能未经培训或不具备相关知识引起的数据质量问题-数据质量评估是必要的-一般使用 OSM 数据和官方数据<br />
+之间的特征关系来进行数据质量评估-缺乏对 OSM 全面且客观的数据评估</li>
+<li>自我学习-深度自编码网络
+<ul>
+<li>分析<strong>数据的深层次规律</strong>来学习数据特征</li>
+<li>不需要样本标签数据集</li>
+<li>利用<strong>重构误差</strong>来进行评价</li>
+<li>训练模型在<strong>小概率样本</strong>的编码和重构中表现不佳，且会有较大的重构误差</li>
+</ul>
+</li>
+<li>质量评估指标-异常 OSM 数据将表现出与 OSM 数据质量相对应的<strong>较大的重构误差</strong></li>
+</ul>
+<h3 id="基于数据匹配的训练样本集构建">基于数据匹配的训练样本集构建</h3>
+<p>学习样本集构建： 一是将 OSM 中的建筑物和参考数据集中的对应的建筑物进行<strong>匹配</strong>；二是将匹配的数据用<strong>规则格网划分</strong>，生成面积相同的单元网格，<strong>将每个单元网格作为一个深度学习样本去训练网络结构模型</strong>。</p>
+<ul>
+<li>建筑物数据的匹配
+<ul>
+<li>问题所在：OSM 中建筑物表示的精度与 Bing 地图的<strong>分辨率</strong>有关，几个相邻的建筑物可能在 OSM 中被数字化成 1 个建筑物。1:m，n:1，和 n:m； 较高的建筑物在 OSM 和参考数据集之间可能有较大的<strong>偏移</strong>；由于光线斜射原因，在图像上<strong>重叠</strong>的地方可能占有很大的面积比例 =&gt; <strong>过滤和细化</strong>两个处理步骤</li>
+<li>过滤：重叠方法</li>
+<li>细化：相加多边形面积</li>
+</ul>
+</li>
+<li>划分成规则的网格
+<ul>
+<li>优势：提高了样本的数据量，避免深度学习的过度拟合问题；划分研究区域会大大减少计算量；以一个网格单元进行评估比整个数据作为一个整体更为有效</li>
+<li>划分尺度
+<ul>
+<li>网格单元尺寸越小会产生越细节的评估结果，同时也会产生更大的样本量，这样可以训练一个更稳定的模型</li>
+<li>六边形网格单元：比方形和三角形提供了更完整的覆盖范围；与相邻的网格单元共享更多的边缘，将会产生更平滑的评估结果</li>
+<li>选择正方形和蜂窝六边形将数据格网划分，并比较了不同划分方式对评价结果的影响</li>
+</ul>
+</li>
+<li>建筑物被分割成多个部分归属问题：<strong>建立缓冲区包含相邻单元</strong>去识别匹配目标</li>
+</ul>
+</li>
+</ul>
+<h3 id="基于深度自编码网络综合评价模型">基于深度自编码网络综合评价模型</h3>
+<p>深度自编码网络的综合评估方法<strong>首先</strong>需要根据构建的每个样本分别<u>计算评价指标</u>；<strong>然后</strong>利用每个样本中的评价因子作为模型输入去训练设计的深度自编码网络结构，直到网络的<u>重构误差达到最小且稳定</u>；<strong>最后</strong>根据深度网络输入与输出数据的差异进行 OSM 建筑物数据质量评估。</p>
+<ul>
+<li>OSM 建筑物评价因子
+<ul>
+<li>输入数据的每个维度单元在深度自编码网络中必须是相互独立的</li>
+<li>OSM与参考数据对比计算相似度=&gt;数据完整性、位置精度 、形状精度 、方向一致性 、语义精度</li>
+</ul>
+</li>
+<li>深度自编码网络
+<ul>
+<li>输出数据是对输入数据的评估，这两者数据之间的差异被定义为重构误差，用于检测异常</li>
+<li>重构误差越大说明具有越多的异常输入数据</li>
+</ul>
+</li>
+<li>OSM 建筑物数据质量综合评价
+<ul>
+<li>
+<p>首先，将 OSM 数据与官方矢量参考数据通过<strong>网格划分成等大的数据单元</strong></p>
+</li>
+<li>
+<p>然后在每个数据单元中通过 <strong>OSM 建筑物数据与参考数据中建筑物比较</strong>，计算几何形态精度（相似度）、位置精度、方向精度、据完整性以及语义精度</p>
+</li>
+<li>
+<p>最后，以每个数据单元作为一个样本，每个样本中的计算得到的评价因子作为<strong>样本特征</strong>去训练构建的深度自编码网络，当<strong>重构误差达到最小且稳定</strong>后网络训练成熟。<strong>成熟网络针对每个数据单元的重构误差</strong>被用来表示该数据单元中的 OSM 建筑物综合评价。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="实验验证与分析">实验验证与分析</h3>
+<p>介绍了一些参数设定和实验分析过程，比较丰富。早就知道师兄的这篇文章，今天终于是弄懂了。</p>
+<h2 id="基于遥感影像数据-osm-建筑物数据质量评价">基于遥感影像数据 OSM 建筑物数据质量评价</h2>
+<h3 id="引言-2">引言</h3>
+<ul>
+<li>定性评价方法的指标不能对 OSM 数据质量做出绝对描述；定量评价方法在一些缺乏高质量权威矢量数据地区具有一定的局限性。 + 高分辨率遥感影像 + 深度卷积网络在影像建筑物提取中的良好性能</li>
+<li>高分影像应用 + 语义分割简介 + 已有基于高分影像语义分割的研究</li>
+<li>提及方法直接用于遥感图像建筑物目标提取并不能取得很好的效果
+<ul>
+<li>建筑物、街道、阴影和车辆等目标的<strong>类内方差</strong>的增加和<strong>类间方差</strong>的减少</li>
+<li>不同对象可能在遥感图像中呈现出相同的光谱值（<strong>同谱异物</strong>），光谱相似类别的分离变得更加困难</li>
+<li>在遥感影像中，一些物体的<strong>边界</strong>仍然被阴影影响从而变得<strong>模糊</strong></li>
+</ul>
+</li>
+<li>全卷积神经网络（FCNs） 不仅可以学习如何对像素进行分类并确定它是什么，而且还可以预测空间对象的结构。该模型能够检测出地面上不同类别的物，并预测其形状，如建筑物，道路，树木等等。</li>
+<li>本文工作总述：多任务 Res-U-Net + 后处理 + 局部和全局数据完整性评价 + 不同位置精度评价</li>
+</ul>
+<h3 id="遥感影像建筑物提取训练集构建">遥感影像建筑物提取训练集构建</h3>
+<ul>
+<li>数据预处理
+<ul>
+<li>解决 OSM 建筑物数据中的一些拓扑错误问题</li>
+<li>原始遥感图像-椒盐噪声-应用高斯滤波器来模糊图像</li>
+</ul>
+</li>
+<li>构建建筑物提取训练数据集
+<ul>
+<li>将每个具有 650×650像素的单元作为一个训练样本</li>
+<li>不同图像尺度上训练
+<ul>
+<li>一个数据集是通过将原始图像缩放到一半的尺度获得</li>
+<li>另一个数据集是通过对原始图像进行裁剪得到</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="基于多任务特征学习参考建筑物数据提取">基于多任务特征学习参考建筑物数据提取</h3>
+<ul>
+<li>
+<p>多任务特征学习的深度卷积神经网络构建</p>
+<ul>
+<li>将两个不同尺度的深层卷积神经网络的像素级预测结果进行组合，得到新的预测结果。</li>
+<li>然后，需要对结果进行后处理：将预测的像素级结果转换为具有地理坐标的多边形，并将其视为建筑物轮廓。小于阈值的多边形的面积将被移除</li>
+</ul>
+<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/summer/20200624075107.png" alt="" /></p>
+<ul>
+<li>神经网络模型
+<ul>
+<li>左部是 ResNet，用于提取输入数据的特征</li>
+<li>右边是扩展部分，目标是使用特征图提取建筑物</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>基于指导滤波优化建筑物像素级提取结果</p>
+<ul>
+<li>由于输入图像（引导图像）的引导，滤波结果更加结构化且平滑较少</li>
+<li>引导滤波器认为引导图像和滤波结果之间存在<strong>局部线性模型</strong>，从而有利于优化建筑物目标分类。</li>
+<li>为了去除椒盐类噪声，原始图像被当作优化边界的引导器。</li>
+</ul>
+</li>
+<li>
+<p>参考矢量建筑物数据生成</p>
+<ul>
+<li>将栅格数据的结果转换为矢量多边形</li>
+<li>转换坐标系： 像素坐标 =&gt; 地理坐标</li>
+</ul>
+</li>
+<li>
+<p>OSM 建筑物数据完整性与位置精度评估</p>
+<ul>
+<li>全局数据完整性</li>
+<li>局部数据完整性</li>
+<li>基于质心距离的位置精度</li>
+</ul>
+</li>
+</ul>
+<h3 id="实验验证与分析-1">实验验证与分析</h3>
+<h2 id="总结与展望">总结与展望</h2>
+<h3 id="研究总结">研究总结</h3>
+<ol>
+<li>空间数据质量评价=&gt; OSM 建筑物数据质量评价过程中的若干关键技术问题=&gt;具体成果总结如下：
+<ul>
+<li>探讨了 OSM 数据质量评价的研究背景和实际意义。总结了、阐述了、分析了、由点及面&hellip;</li>
+<li>系统阐述了地理空间数据质量评价模型的理论基础。</li>
+<li>多边形的几何形状相似性</li>
+<li>客观地、综合地对 OSM 建筑物数据质量进行评价: 官方标准矢量参考数据+深度自编码网络</li>
+<li>消除矢量参考数据的约束，充分利用高分辨率遥感影像</li>
+</ul>
+</li>
+<li>主要创新点总结如下
+<ul>
+<li>建立了顾及空间分布和几何变换的多边形相似性度量模型</li>
+<li>提出了综合、客观的 OSM 建筑物数据质量评价模型</li>
+<li>提出了基于遥感影像数据的 OSM 建筑物数据质量定量评价模型</li>
+</ul>
+</li>
+</ol>
+<h3 id="研究展望">研究展望</h3>
+<ul>
+<li>数据质量模糊问题，难点：评价方法不能够保证客观全面；参考数据的依赖性。</li>
+<li>简述本文贡献（针对上述难点）</li>
+<li>取得了一些成果，但也存在一下几个方面需要进一步展开：
+<ul>
+<li>一些被树覆盖的建筑物的形状不能精确的检测，且一些模糊和不规则的辩解还是很难被分类=&gt;考虑场景语义</li>
+<li>受遥感图像特征的限制，图像中有些建筑物为斜入射，有些建筑物边缘被树木覆盖。因此，所提出的方法无法提取一些建筑物的实际边缘（实际边界为直线，但基于高分辨率遥感影像提取结果往往是折线）和一些面积非常小的建筑物。</li>
+<li>道路、湖泊等其他要素类型的提取及评价</li>
+</ul>
+</li>
+</ul>
+<h1 id="基于手机位置大数据的城市人群聚散时空特性研究以深圳市为例">基于手机位置大数据的城市人群聚散时空特性研究：以深圳市为例</h1>
+<p>杨喜平-2017-武汉大学</p>
+<p>错别字有点多，内容理解难度不大，作者“概念化”做得很好</p>
+<h2 id="绪论">绪论</h2>
+<h3 id="研究背景与意义-1">研究背景与意义</h3>
+<ol>
+<li>
+<p>研究背景</p>
+<ul>
+<li>第一段：城市发展-城市问题</li>
+<li>第二段：城市问题的产生与人群在城市中活动密切相关-理解城市人群的移动模式</li>
+<li>第三段：信息与通讯技术-个体移动轨迹数据-数据基础</li>
+<li>第四段：手机-感知人群在城市中的位置随时间的变化-手机位置数据-研究城市人群移动模式的重要数据源</li>
+<li>第五段：研究现状简述：手机位置数据已经使得我们可从<strong>不同的视角</strong>来观察城市人群的时空移动模式，以及挖掘人群移动与城市空间结构之间的相互作用规律。</li>
+<li>第六段：综上所述/背景：诸多城市问趣的涌现使得我们<strong>迫切需要</strong>理解城市人群移动时空模式及其与城市空间结构的之间的关系；手机位置大数据为研究城市人群移动时空模式和理解城市空间结构提供了丰富的<strong>数据基础</strong>；多种学科交叉理论的发展（人文和城市地理学、计算机科学、地理信息科学等）为我们研究城市人群移动模式提供强大的<strong>理论基础</strong>。</li>
+</ul>
+</li>
+<li>
+<p>问题提出与研究意义</p>
+<ul>
+<li>第一段：提出<strong>人群聚散模式</strong></li>
+<li>第二段：本论文主要的科学研究问题-如何利用轨迹大数据来深入理解城市人群聚散的时空特性，加深对人群移动与城市空间交互的理解
+<ul>
+<li>人群聚散时空模式</li>
+<li><strong>人群聚散的稳定性</strong></li>
+<li>人群聚散稳定性与城市空间结构的关系</li>
+</ul>
+</li>
+<li>第三段：鉴于&hellip;的重要意义，以&hellip;为研究对象，以&hellip;为主题，重点研究&hellip;，构建&hellip;的定量模型，探索&hellip;的关系。本文旨在&hellip;，具体地，&hellip;具有以下方面的意义。</li>
+</ul>
+<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/summer/20200624184423.png" alt="" /></p>
+</li>
+</ol>
+<h3 id="研究内容与技术路线">研究内容与技术路线</h3>
+<ol>
+<li>研究内容
+<ul>
+<li>研究目的：分析城市人群聚散的时空特性以及与城市空间结构的关系，从时空的角度加深理解人群在城市中的时空间行为。</li>
+<li>手机位置数据-人群移动OD矩阵-人群移动时空模式-人群聚散稳定性评价模型-分析人群聚散动态稳定性和城市空间结构的关系</li>
+<li>研究内容划分：
+<ol>
+<li>城市人群聚散时空模式提取分析：
+<ul>
+<li>提出一种从手机位置数据中识别人群聚散时空模式的方法</li>
+<li>具体流程：（1）基于人群移动OD矩阵，定义<strong>描述人群聚集和消散强度的指标</strong>；（2）根据人群聚散强度统计分布，对人群聚散强度进行<strong>等级分类</strong>并添加标签；（3）构建基于聚散等级标签的<strong>人群动态变化时间序列矩阵</strong>；（4）利用聚类算法对该时间序列矩阵进行<strong>聚类</strong>，找出具体相似人群聚散变化的<strong>时空模式</strong>；（5）将聚散时空模式与城市空间结构功能区进行<strong>关联</strong>，分析每种功能区上主要的人群聚散模式。</li>
+</ul>
+</li>
+<li>构建人群聚散稳定性的定量模型
+<ul>
+<li>反映一个地方<strong>人群动态变化的程度</strong>，从而潜在的反映该地方对交通需求的变化程度</li>
+<li>评价<strong>城市公交系统</strong>覆盖人群的动态稳定性</li>
+</ul>
+</li>
+<li>定量分析城市空间结构要素与人群聚散稳定性的关系
+<ul>
+<li>社会经济属性、土地利用和路网三个维度解释变量</li>
+<li>相对重要性</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>研究方法与技术路线
+<ul>
+<li>数据预处理</li>
+<li>聚散时空模式识别</li>
+<li>结合城市功能区分析两者之间的关系</li>
+</ul>
+</li>
+</ol>
+<h2 id="人群移动模式研究综述">人群移动模式研究综述</h2>
+<h3 id="引言-3">引言</h3>
+<ul>
+<li>城市问题：空间污染、交通拥堵、规划落后=&gt;城市计算（郑宇）、城市信息学（李清泉）</li>
+<li>研究城市人群的时空移动模式对于解决城市问题具有<strong>重要的意义</strong>-人群感知（位置）数据-社会感知（刘喻）-多学科交叉的课题=&gt;四个方面论述：城市时空动态分析、人群移动时空模式、城市空间结构研究、城市交通地理研究</li>
+</ul>
+<h3 id="城市时空动态分析">城市时空动态分析</h3>
+<p>人群在城市中的分布是随时间不断变化=&gt;城市时空动态</p>
+<p>传感器普及=&gt;实时监测、分析城市人群韵律、精细估计人口分布</p>
+<ol>
+<li>城市时空动态监测
+<ul>
+<li><a href="http://senseable.mit.edu/">麻省理工大学城市感知实验室</a></li>
+<li>实时分析城市人群的移动动态，从空间和时间上定量可视化人群移动模式（Urban mobility landscape: Real time monitoring of urban mobility patterns）</li>
+<li>Flickr数据-分析旅游者在城市的热点分布区域，监测旅游活动随季节的变化（From social sensor data to collective human behaviour patterns: Analysing and visualising spatio-temporal dynamics in urban environments）</li>
+</ul>
+</li>
+<li>人群移动动态韵律分析
+<ul>
+<li>周期性、空间差异性</li>
+<li>时间节奏</li>
+<li>地域文化差异-时空地理差异</li>
+<li>不同时间尺度时间规律性的稳定性</li>
+</ul>
+</li>
+<li>人口分布估计
+<ul>
+<li>美国橡树岭国家实验室</li>
+<li>手机通话数据可以监测城市的时空动态，为估计人口密度分布提供一种新的思路。</li>
+</ul>
+</li>
+</ol>
+<h3 id="人群移动时空模式研究">人群移动时空模式研究</h3>
+<p>人群移动语义信息</p>
+<p>提取人群移动的典型模式和统计规律=&gt;时空间行为规律</p>
+<ol>
+<li>人群移动时空统计规律
+<ul>
+<li>人群移动的统计特性-三个方面：人群移动可预测性、城市居民交通出行距离分布、人群移动交互预测模型</li>
+<li>人群移动可预测性
+<ul>
+<li>非随机</li>
+<li>人更愿意<strong>在一个有限的范围内活动</strong>，具有高度时间和空间规律性，并且具有很高的概率回到之前频繁活动的位置</li>
+<li>用户访问地点序列的信息熵=&gt;高度可预测性</li>
+</ul>
+</li>
+<li>交通出行距离分布
+<ul>
+<li>城市居民出行的分布是随着距离衰减，但衰减的具体过程仍不确定</li>
+<li>居民乘坐出租车和私家车出行距离<strong>服从指数分布，但指数系数是存在差异的</strong>，受特定城市结构环境影响。</li>
+</ul>
+</li>
+<li>人群移动交互预测模型
+<ul>
+<li>预测两个不同地方之间人群的流量，即两个地方的<strong>空间交互强度</strong></li>
+<li>经典模型：重力模型、介入机会模型、辐射模型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>群体时空移动模式
+<ul>
+<li>动态节奏性（Spatio-temporal analytics for exploring human mobility patterns and urban dynamics in the mobile age）</li>
+<li>构建描述人群动态变化指标的时间序列</li>
+</ul>
+</li>
+<li>锚点提取与活动识别
+<ul>
+<li>锚点：人在移动过程中重要的<strong>停留驻点</strong>，表示人为了从事某种活动在这些地方停留</li>
+<li>城市人群的停留模式</li>
+<li>大多数研究工作主要关注的是人群移动的部分，忽略了人移动过程中停留行为的分析（？？？）</li>
+<li>两方面研究：<strong>锚点的提取方法+锚点的活动类型识别</strong></li>
+<li>锚点的提取方法
+<ul>
+<li>从轨迹的角度出发，讲人的移动轨迹分为移动和停留两个交替的部分=&gt;识别停留和移动的SMoT（Stop and Move of Trajectory）模型</li>
+<li>两个重要的阈值参数：空间范围+停留时间长度</li>
+<li>锚点既可以是轨迹中实际的记录的位置点，也可以是一个由空间范围内的轨迹点计算出来的虚拟位置</li>
+</ul>
+</li>
+<li>锚点的活动类型识别
+<ul>
+<li>丰富轨迹的语义信息（<a href="https://www.tandfonline.com/doi/abs/10.1080/13658816.2015.1033421">Predicting human mobility with activity changes</a>）</li>
+<li>POI时空吸引力</li>
+<li>POI排序+距离衰减</li>
+<li>仍十分困难，只能<strong>从概率上推测</strong>人群的活动类型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>人群活动空间分析
+<ul>
+<li>人一天中所访问的位置所构成的空间活动范围=&gt;衡量居民对城市空间的利用状况</li>
+<li>标准误差椭圆、置信椭圆、最小凸多边形、潜在活动区域、回旋半径</li>
+<li>人群的活动空间差异（<a href="https://www.tandfonline.com/doi/abs/10.1080/00045608.2015.1120147"><strong>Another tale</strong> of <strong>two cities</strong>: Understanding human activity space using actively tracked cellphone location data</a>）：三个指标（每天的活动范围、活动锚点的数量和移动频率）</li>
+</ul>
+</li>
+</ol>
+<h3 id="城市空间结构研究">城市空间结构研究</h3>
+<ol>
+<li>热点区域探测和语义识别
+<ul>
+<li>人群移动热点区：人群的活动显著高于其临近区域的地方=&gt;城市中吸引力较高、人群出行需求较高、交通设施中较为关键的区域</li>
+<li>热点区域对时间具有依赖性（吸引力随时间不断变化）</li>
+<li>核密度表面（KDE）等方法（<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/tgis.12076">Detecting and analyzing mobility hotspots using surface networks</a>）</li>
+<li>从网络文本中发现有意义的地理知识</li>
+</ul>
+</li>
+<li>土地利用探测分析
+<ul>
+<li>利用人群动态移动模式推测城市土地利用分布</li>
+<li>总体思路：（1）讲城市分割成不同的空间分析单元；（2）构建每个单元内的人群活动的时间序列；（3）采用机器学习中分类方法和聚类方法对时间序列进行分类；（4）根据每一类人群的变化模式分析土地利用类型。</li>
+<li>EM算法（<a href="https://www.beijingcitylab.com/app/download/11889403099/%E9%9F%A9%E6%98%8A%E8%8B%B1%E7%AD%89+2016+%E5%9F%8E%E5%B8%82%E8%A7%84%E5%88%92_%E5%85%AC%E4%BA%A4%E5%8D%A1%E5%8A%9F%E8%83%BD%E5%8C%BA.pdf">基于北京公交刷卡数据和兴趣点的功能区识别</a>）</li>
+</ul>
+</li>
+<li>空间交互结构分析
+<ul>
+<li>人群在城市中不同区域间移动可以反映<strong>区域之间的交互关系</strong>，潜在的反映城市不同区域的<strong>联系紧密程度</strong>以及<strong>城市多中心结构</strong></li>
+<li>识别城市中心及多中心结构（<a href="http://www.cnki.com.cn/Article/CJFDTotal-CXGH201406011.htm">基于手机数据识别上海中心城的城市空间结构</a>，<a href="https://journals.sagepub.com/doi/abs/10.1177/0265813515617642">Identifying the city center using human travel flows generated from location-based social networking data</a>）</li>
+<li>OD流+社区发现：（1）从轨迹数据中提取人群移动OD位置，构建基于人群移动流量的网络；（2）利用复杂网络中的社区探索算法进行社区发现，发现网络中交互强度较大的人群移动局部紧密社区，发现城市中潜在的人群移动社区结构（<a href="https://www.sciencedirect.com/science/article/pii/S0966692315002410">Detecting urban road network accessibility problems using taxi GPS data</a>）</li>
+</ul>
+</li>
+</ol>
+<h3 id="职住分布与可达性研究">职住分布与可达性研究</h3>
+<p>交通地理-揭示人群移动、交通设施、城市空间三者之间的关系</p>
+<ol>
+<li>职住分布与OD估计
+<ul>
+<li>职住分布主要研究内容：职住地识别方法研究、职住关系的平衡、就业中心体系测度、职住通道平衡性与轨道交通拥挤程度的关系</li>
+<li>（动态）OD矩阵</li>
+</ul>
+</li>
+<li>通勤行为
+<ul>
+<li>在通勤时间段，城市中会出现大规模的人群同时移动行为，导致城市交通拥堵瘫痪。</li>
+<li>我觉得他这里没有说明、引用很好的文献</li>
+</ul>
+</li>
+<li>城市空间可达性
+<ul>
+<li>衡量城市空间中某一地方到其他地方便捷性的一种指标，用来反映城市空间区位的公平性和优先级</li>
+<li>出租车轨迹数据
+<ul>
+<li>能反映城市不同区域人群的出行起点和终点</li>
+<li>反映城市道路王的动态路况等信息</li>
+<li>广泛应用与可达性研究</li>
+</ul>
+</li>
+<li>POI可达性、城市特定位置可达性、探测城市中可达性较低的居住区域、公共健康设施可达性等</li>
+<li>可达性的研究很广泛，个人认为作者可达性部分概述比较简单，有很大扩展</li>
+</ul>
+</li>
+</ol>
+<h2 id="人群聚散时空模式">人群聚散时空模式</h2>
+<p>个人理解：实验整体不难，方法部分理解不难，理论、分析部分比较充足</p>
+<h3 id="引言-4">引言</h3>
+<ul>
+<li>人群移动、城市空间结构、城市交通-三者<strong>相互作用、密切相关</strong>-研究城市人群移动时空模式对城市空间结构的规划、城市交通的管理具有<strong>重要意义</strong></li>
+<li>目前研究：构建人群变化描述指标-基于指标的时间变化序列分析-显著差异的人群移动时空模式</li>
+<li>人群聚散是城市人群移动时空模式的一个重要特征</li>
+<li>传统研究=&gt;大规模人群移动轨迹数据=&gt;提取城市人群聚散模式</li>
+<li>灵魂发问：城市中存在什么样的人群聚散时空模式？每种模式人群聚散的强度以及持续时间如何差异？如何提取城市人群聚散时空模式？不同功能区人群聚散模式是否差异？=&gt;探索这些问题的意义：加深理解</li>
+<li>本章主要目的：从海量的手机位置数据中提取出城市人群聚散的时空模式+本章内容</li>
+</ul>
+<h3 id="人群聚散时空模式提取方法">人群聚散时空模式提取方法</h3>
+<ul>
+<li>
+<p>人群聚散指标</p>
+<ul>
+<li>人群聚集表示大量的人群在一定的时间内从其他地方汇聚到此地；人群消散表示在一定的时间内有大量的人群从该地方去往城市中其他地方，人群的这种聚散是随着空间和时间不断变化的</li>
+<li>净流量（netflow）作为衡量指标
+<ul>
+<li>流入量和流出量的差值表示人群变化量</li>
+<li>净流量绝对值反映人群聚散的强度</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>强度等级分类</p>
+<ul>
+<li>十分位数法划分=&gt;十个强度等级</li>
+</ul>
+</li>
+<li>
+<p>时空聚类</p>
+<ul>
+<li>构建矩阵+X-means聚类（WEKA中实现）+欧氏距离函数（通过等级分类后构建的是离散值的矩阵，Kmean也能对离散值进行聚类么？那它这个距离函数就错了啊）</li>
+<li>个人认为很简单的方法，但是作者概念性的东西讲述地很丰富，值得参考</li>
+</ul>
+</li>
+</ul>
+<h3 id="实验结果与分析">实验结果与分析</h3>
+<p>整体难度不大。前文提及在WEKA中运行聚类，但缺少对聚类参数评价部分，仅分析聚类结果。分析部分内容比较多，“能说会道”，看图说话的本事自己还是比较欠缺啊（但是看文章的时候自己又总是跳过。。恶性循环）</p>
+<h2 id="人群聚散稳定性定量模型与评价">人群聚散稳定性定量模型与评价</h2>
+<h3 id="引言-5">引言</h3>
+<ul>
+<li>群移动的稳定性：该地方人群突变的程度，潜在地反映了该地方交通需求的稳定性</li>
+<li>分析人群聚散的时间序列变化=&gt;人群聚散稳定性评价模型</li>
+<li>真心觉得他写的很多内容都比较赘述（重复）</li>
+</ul>
+<h3 id="人群聚散稳定性评价模型">人群聚散稳定性评价模型</h3>
+<ul>
+<li>人群聚散过程及序列定义
+<ul>
+<li>具有生命周期的过程：</li>
+<li>时间序列、聚集过程、消散过程、聚散过程（交替过程）</li>
+</ul>
+</li>
+<li>人群聚散过程稳定性
+<ul>
+<li>影响因素：
+<ul>
+<li>持续时间</li>
+<li>净流量累计值变化量：趋势线的斜率来表示</li>
+<li>波动幅度：真值和趋势值的差来定量聚集过程；波动幅度的标准差来衡量<strong>整个</strong>聚集过程的波动情况</li>
+</ul>
+</li>
+<li>整个聚集过程的稳定性
+<ul>
+<li>净流量累计值变化量的稳定性f</li>
+<li>波动幅度的稳定性g</li>
+<li>整个聚集过程的稳定性s=f*g</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>人群聚散序列稳定性
+<ul>
+<li>聚散序列多边形的面积A来表示聚散序列的稳定性程度</li>
+<li>聚集过程和消散过程交替的波动幅度：上边界的长度P来衡量其波动幅度</li>
+<li>面积越大越稳定，而上边界越长越不稳定。采用两者的比率来定义整个聚散序列的稳定性Q=A/P</li>
+</ul>
+</li>
+</ul>
+<h3 id="实验结果与分析-1">实验结果与分析</h3>
+<ul>
+<li>针对每一个基站分析</li>
+<li>划分三个时间段分析</li>
+<li>基于交通分析区（TAZ）分析</li>
+<li>基于公交系统分析</li>
+<li>与信息熵指标对比</li>
+</ul>
+<h2 id="城市空间结构要素与人群聚散稳定性的关联性分析">城市空间结构要素与人群聚散稳定性的关联性分析</h2>
+<h3 id="引言-6">引言</h3>
+<ul>
+<li>城市人群移动模式与城市空间结构密切相关，研究人群移动模式和城市空间结构的关系</li>
+<li>探索城市基础设施、土地利用、路网特性、社会经济特性等对人群移动距离、通勤模式、活动空间范围、时空动态等影响</li>
+<li>在城市空间结构中哪些因素对人群聚散稳定性具有显著的影响？</li>
+<li>将其人群移动稳定性作为因变量，从<strong>社会经济属性、土地利用结构和路网中心性结构</strong>三个方面来构建解释变量，然后构建因变量（稳定性）和解释变量（城市空间结构）之间的多元线性回归模型来定量分析城市空间结构中这些因素对人群聚散稳定性的影响</li>
+</ul>
+<h3 id="城市空间结构指标">城市空间结构指标</h3>
+<ul>
+<li>社会经济属性
+<ul>
+<li>指城市人群的社会经济活动所赋予的特性。</li>
+<li>每个TAZ的人口、面积、人口密度、房价</li>
+<li>人口：从手机定位数据中识别每个交通小区的居住人口数据：如果用户在凌晨00点-06点时间段在某一基站停留时长大于4小时，将该基站作为该用户的居住地，根据该方法可以识别出每个基站位置的居住人数。该居住人数并非绝对的居住人数，而只是从数据定位数据识别出的居住人数。</li>
+<li>人口密度分布与人口分布存在显著差异</li>
+<li>采用房价来反映交通小区的经济发展和个人收入水平</li>
+</ul>
+</li>
+<li>土地利用结构
+<ul>
+<li>指一个区域内各种功能用地类型的比例及其相互影响、作用所形成的空间结构关系</li>
+<li>土地功能结构的内涵
+<ul>
+<li>该区域由哪些土地利用类型组成及其比例关系</li>
+<li>该区域内各种土地利用类型之间的相互作用关系及其随时间的演变</li>
+</ul>
+</li>
+<li>土地利用类型：商业用地（C）、工业用地（I）、居住用地（R）、公共用地（P）、交通用地（T）和其他用地（O）</li>
+<li>土地利用比例</li>
+<li>区位熵
+<ul>
+<li>指某区域某种土地利用类型面积占整个研究区域该土地利用类型的比重与该区域土地总面积占整个研究区域土地面积比重之比</li>
+<li>表示的是交通小区内某种类型的土地利用所占的比例与全局相比是否存在区位优势。区位熵越大表示该土地类型的优势越大</li>
+</ul>
+</li>
+<li>信息熵
+<ul>
+<li>反映一个区域的土地利用结构的混合度和多样性</li>
+<li>信息熵是指一个区域内各种类型的土地组织安排的有序度，信息熵越大，该区域土地利用的有序度越低，表示该区域土地利用混合度越高</li>
+<li>用来衡量区域内不同土地利用类型比例之间的关系</li>
+</ul>
+</li>
+<li>均衡度
+<ul>
+<li>信息熵与最大熵的比值</li>
+<li>信息熵仅仅反映的是单个小区内不同类型土地的混合度，无法反映小区内各土地利用类型的均衡程度，这使得小区之间缺乏可比性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>道路网结构
+<ul>
+<li>分类<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/summer/20200627173001.png" alt="" /></li>
+<li>路网密度
+<ul>
+<li>该区域路网的密集程度</li>
+<li>一个区域内所有道路的总长度与区域的总面积之比</li>
+</ul>
+</li>
+<li>路网中心性
+<ul>
+<li>无向网络</li>
+<li>将位于TAZ内部路段节点中心性的平均值作为该TAZ的中心性</li>
+<li>接近中心性
+<ul>
+<li>衡量一个节点与路网中其他所有节点的临近程度</li>
+<li>城市空间中心位置，接近中心性最高；处于城市边缘，接近中心性越低</li>
+</ul>
+</li>
+<li>介数中心性
+<ul>
+<li>衡量某一节点在路网中起中介作用的程度</li>
+<li>介数中心性常用来衡量城市道路中节点和路段的交通流量</li>
+<li>高等级道路的介数中心性较高，如快速路和主干路，这些路段在城市中起到重要的连通作用</li>
+</ul>
+</li>
+<li>直达中心性
+<ul>
+<li>衡量网络中节点的直达效率</li>
+</ul>
+</li>
+<li>全局中心性：通过计算该节点到路网中其他所有的节点的最短路径距离，是从全局的角度来搜索路网中其他所有的节点</li>
+<li>局部中心性：在计算中心性时，只搜索该节点一定范围内的节点，超出该距离范围无需计算（5km. 10km, 15km, 20km, 25km, 30km）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="多元线性回归模型">多元线性回归模型</h3>
+<h3 id="实验结果与分析-2">实验结果与分析</h3>
+<p>拟合优度太太太小了。作者竟然完全不提拟合优度优劣的问题。这么低的拟合优度，后续的分析真的有用么？</p>
+<h2 id="总结与展望-1">总结与展望</h2>
+<h3 id="论文总结">论文总结</h3>
+<p>城市矛盾/城市问题、人群移动模式研究、群体移动轨迹大数据</p>
+<p>研究内容：</p>
+<ul>
+<li>人群聚散时空模式识别方法研究</li>
+<li>人群聚散动态稳定性评价模型研究</li>
+<li>人群聚散动态稳定性与城市空间结构关联性研究</li>
+</ul>
+<h3 id="主要创新点">主要创新点</h3>
+<p>更多的是说明解决了什么问题</p>
+<p>本文基于海量的手机位置数据，以人群聚散为主题，以时间地理学为理论指导，从居民时空间移动行为角度入手研究城市人群聚散的时空特性，包括人群聚散的时空模式、聚散时空动态稳定性以及与城市空间结构的关系。创新点如下：</p>
+<ul>
+<li>提出一种从海量手机位置数据中识别人群聚散时空模式的方法</li>
+<li>提出了一种评价人群聚散动态稳定性的定量模型</li>
+<li>探索了城市空间结构要素与人群聚散稳定性的关系</li>
+</ul>
+<h3 id="研究展望-1">研究展望</h3>
+<p>说的有点虚。围绕上述几点“进一步”。。。</p>
+<h1 id="面向高分辨率遥感影像场景语义理解的概率主题模型研究">面向高分辨率遥感影像场景语义理解的概率主题模型研究</h1>
+<p><a href="http://grzy.cug.edu.cn/zhuqiqi">朱祺琪</a>-2018-武汉大学</p>
+<ul>
+<li>
+<p>对场景分类研究不熟悉，有些步骤比较跳跃，部分句子较难理解，感觉重复的话好多；不过她的图都蛮好看的</p>
+</li>
+<li>
+<p>内容真的很丰富！别人每一章都对应了一篇论文，她一章对应了两篇论文吧~而且逻辑思路很通顺，虽然部分章节看不懂，但是内容这么多整理成这种程度很厉害了。最后总结成果，提出一个原型系统，也是蛮有创意的。</p>
+</li>
+<li>
+<p>希望你的<strong>移动硬盘</strong>没事。不要再五雷轰顶了、</p>
+</li>
+</ul>
+<h2 id="绪论-1">绪论</h2>
+<h3 id="研究背景与意义-2">研究背景与意义</h3>
+<ul>
+<li>
+<p>第一段：高分辨率遥感影像数据-影像信息提取与分类-可持续发展重大战略意义-尤其中国</p>
+</li>
+<li>
+<p>第二段：类内方差增大以及类间方差减小现象-面向对象的地物分类方法-多目标、不同空间分布方式、场景多变-底层特征与高层语义信息之间的语义鸿沟-高层场景语义理解新阶段</p>
+</li>
+<li>
+<p>第三段：</p>
+<ul>
+<li>对高分影像进行自动标注、获取不同区域语义信息=&gt;场景分类=&gt;建立影像底层特征到高层场景语义之间的映射关系</li>
+<li>基于目标识别的场景分类方法（传统研究）
+<ul>
+<li>根据地物解译结果得到不同目标的类别信息</li>
+<li>构建不同地物目标之间的空间关系</li>
+<li>限制：需要目标的先验信息；受地物分类精度影响</li>
+</ul>
+</li>
+<li>无需目标先验的场景分类方法
+<ul>
+<li>基于底层特征的场景分类方法：基于颜色、纹理、结构等底层特征直接描述场景，利用分类器进行分类=&gt;很难描述场景中地物目标空间分布复杂的特性</li>
+<li>基于中层特征的场景分类方法：挖掘局部特征，将底层特征映射到字典空间或参数空间，基于影像的词袋模型表达获得描述能力更高的中层语义特征</li>
+<li>基于高层特征的场景分类方法：基于信息的层次化抽取，自动学习高分影像的本质特征，避免手工选取特征的影像。（应用深度学习构建端对端模型，自动学习特征时的套话，可以学习一下）<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200630083446.png" alt="" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="概率主题模型">概率主题模型</h2>
+<ul>
+<li>将影像<strong>降维</strong>地表达为<strong>若干潜在主题</strong>的混合分布，而每个主题又是关于一组<strong>影像块</strong>的概率分布。</li>
+<li>常用概率主题模型，以及模型的学习与推理优化方法</li>
+<li>基于概率主题模型的场景理解流程，including高分遥感影像常用的区域采样方法以及底层特征提取方法</li>
+</ul>
+<h3 id="经典概率主题模型">经典概率主题模型</h3>
+<p>视觉词袋模型（Bag-of-visual-word, BoVW），利用概率理论将词袋模型的统计变量转化为概率分布变量，代表为概率潜在语义分析模型和潜在狄利克雷分布模型</p>
+<ol>
+<li>视觉单词袋模型（BoVW）
+<ul>
+<li>一道鸿沟：在NLP领域，文档集、文档、词语三个基本元素都是真实存在并且具有实际意义，而在影像处理领域并没有对应的<strong>显式元素</strong></li>
+<li>视觉单词袋模型：提取影像块中的<strong>局部特征</strong>（颜色、纹理、光谱等），将其类比为文本中的单词（即<strong>视觉单词</strong>），然后对影像块进行<strong>向量量化</strong>，依据一定的准则把<strong>影像表示</strong>为由多个视觉单词组成的文档</li>
+<li><strong>基于视觉单词袋模型的场景理解方法</strong>：分块采样、特征提取、视觉单词构造、视觉单词直方图生成及分类<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200703210905.png" alt="" />参考：<a href="https://www.cnblogs.com/wxl845235800/p/10564121.html">视觉单词模型、词袋模型BoW</a>、<a href="https://juejin.im/post/5bcf2094e51d457a765bd05a">视觉词袋模型+极端随机森林建立图像分类器（Python实践）</a>、<a href="https://www.cnblogs.com/skyfsm/p/8097397.html">Bag of Features(BoF)图像分类实践（理论部分和图解不错）</a></li>
+</ul>
+</li>
+<li>概率潜在语义分析（PLSA）
+<ul>
+<li>使用<strong>概率图模型</strong>来表示影像、主题和视觉单词之间的关系，将影像和视觉单词映射到<strong>同一主题空间</strong></li>
+<li>参考：<a href="https://jozeelin.github.io/2019/09/01/plsa/">概率潜在语义分析</a></li>
+<li>缺陷
+<ul>
+<li>每幅影像仅仅是主题离散概率的混合数字表达式，容易导致过拟合</li>
+<li>不能将概率分配给训练样本之外的影像</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>潜在狄利克雷分布（LDA）
+<ul>
+<li>层次化贝叶斯模型，每幅影像的概率视为潜在主题中随机出现词语概率的混合比例，克服PLSA的缺陷</li>
+<li>参考：<a href="https://www.cnblogs.com/pinard/p/6831308.html">文本主题模型之LDA</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="基于概率主题模型的场景分类方法">基于概率主题模型的场景分类方法</h3>
+<ol>
+<li>区域采样
+<ul>
+<li>均匀网格采样法对于高分遥感影像分类效果最佳</li>
+</ul>
+</li>
+<li>底层特征提取
+<ol>
+<li>光谱特征提取方法
+<ul>
+<li>光谱特征：地物组成成分属性的反映</li>
+<li>灰度值向量法、直方图统计法、<strong>均值标准差统计法</strong></li>
+</ul>
+</li>
+<li>纹理特征提取方法
+<ul>
+<li>纹理：某种局部的“样式”再一个序列更大区域内的不断重复</li>
+<li>统计法、模型法、频谱法</li>
+<li>常用灰度共生矩阵（GLCM）纹理提取方法</li>
+<li>常用纹理特征测度：同质性、能量、对比度、相关性和熵</li>
+</ul>
+</li>
+<li>结构特征提取方法
+<ul>
+<li>光谱和纹理特征仅能反映高分影像上地物的物质属性以及宏观结构特性，但不能完全描述地物语义的所有特性，如形状结构等<strong>局部特性</strong>。</li>
+<li>尺度不变特征变换算法（<strong>SIFT</strong>）、HOG算子</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>视觉词袋构造
+<ol>
+<li>相同的视觉单词在不同的影像中可能会呈现不同的特征值</li>
+<li>kmeans聚类</li>
+</ol>
+</li>
+<li>主题特征挖掘与分类<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200703215235.png" alt="" /></li>
+</ol>
+<h2 id="多元特征语义融合的主题模型场景分类方法">多元特征语义融合的主题模型场景分类方法</h2>
+<p>传统基于主题模型的场景分类方法通常提取<strong>单个特征</strong>，无法对包含多种地物和复杂空间分布的高分遥感影像场景进行准确描述</p>
+<h3 id="概述">概述</h3>
+<ul>
+<li>基于词袋模型的场景分类方法=&gt;概率主题模型=&gt;多种特征（如基于纹理，颜色和结构信息的特征）有效融合</li>
+<li>目前缺陷：
+<ul>
+<li>不同特征的特征向量值通常差别很大；不同特征相互干扰；混合像元影像；归一化操作对保留和利用有用信息的贡献很小</li>
+<li>光谱或SIFT特征只能描述高分影像中连续的局部光谱或结构信息，不包含从全局角度提取的特征</li>
+</ul>
+</li>
+<li>本章研究点：
+<ul>
+<li>融合局部全局特征的词袋模型高分遥感场景分类方法（LGFBOVW）</li>
+<li>多元特征语义融合的概率主题模型高分遥感场景分类方法（SAL-PTM：SAL-PLSA + SAL-LDA）</li>
+</ul>
+</li>
+</ul>
+<h3 id="融合局部全局特征的词袋模型高分遥感场景分类方法lgfbovw">融合局部全局特征的词袋模型高分遥感场景分类方法（LGFBOVW）</h3>
+<p>总述：（1）设计全局纹理特征：形状不变纹理指数（SITI）；（2）多特征融合策略：在直方图层次上进行融合，直方图交叉核的SVM</p>
+<ul>
+<li>局部光谱结构特征提取
+<ul>
+<li>光谱特征和SIFT特征是局部连续特征</li>
+<li>全局特征基于整个影像提取，描述高分遥感影像的紧凑性和区分性，是全局离散特征</li>
+</ul>
+</li>
+<li>全局纹理特征提取
+<ul>
+<li>SITI更多关注场景的全局形状特征，如形状的伸长和紧凑性</li>
+<li>SITI是光谱和SIFT特征的补充特征，包含伸长直方图、紧致直方图、尺度比直方图和对比直方图等特征描述</li>
+</ul>
+</li>
+<li>场景的特征融合与分类
+<ul>
+<li>全局连续特征通过拉伸形成一定尺度的一维直方图</li>
+<li>所谓多特征融合是直接拼接的一维直方图么？</li>
+<li><strong>框架图</strong>作图蛮好看的<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/autumn/20200704120704.png" alt="" /></li>
+</ul>
+</li>
+</ul>
+<h3 id="多元特征语义融合的概率主题模型高分遥感场景分类方法sal-ptm">多元特征语义融合的概率主题模型高分遥感场景分类方法（SAL-PTM）</h3>
+<p>总述：（1）场景分类过程中k均值聚类及融合能力不足，以及不同特征之间的相互干扰问题；（2）特征表达策略（传统的多特征融合方法，在k均值聚类之前连接光谱、纹理和SIFT特征；SAL策略：在<strong>语义层上</strong>融合三个特征）；（3）潜在语义分配挖掘</p>
+<ul>
+<li>场景多特征的多个1维直方图表达<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/autumn/20200704161802.png" alt="" /></li>
+<li>PLSA及LDA模型的多特征语义层融合<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/autumn/20200704162054.png" alt="" /></li>
+<li>多特征分类<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/autumn/20200704162225.png" alt="" /></li>
+</ul>
+<h2 id="同异质主题联合的稀疏主题模型场景分类方法">同异质主题联合的稀疏主题模型场景分类方法</h2>
+<p>本来上一章有些地方看的模糊不懂，这一章就更不懂了Orz&hellip;</p>
+<p>传统：主题特征稠密且重叠度高 + 包含关键性地物目标语义的场景描述能力不足 =&gt; 利用稀疏推理方法代替狄利克雷分布 + 超像素分割实现同异质特征联合表达</p>
+<h3 id="概述-1">概述</h3>
+<ul>
+<li>传统模型缺陷：针对不同场景类别建立多个模型，未考虑不同场景类别的潜在主题空间之间的相关性 + 密集的语义表示通常包含大量不具代表性的场景信息</li>
+<li>训练样本标注困难，利用好有限的训练样本获取好的分类表现</li>
+<li>全稀疏主题模型（FSTM）：FSTM挖掘的稀疏主题<strong>可能会丢失具有代表性的语义信息</strong>，直接应用于高分遥感影像场景分类想过不佳</li>
+<li>均匀网格采样：影像块通常是异构的（没读懂），代表性视觉单词的比例非常小，降低了场景识别精度</li>
+<li>单纯基于遥感数据的场景标注结果只能反映土地覆盖地物的自然属性；叠加道路网数据分割得到的某些影像块面积通常较大，存在语义混淆</li>
+<li>本章研究内容：
+<ul>
+<li>提出异质特征表达的稀疏主题模型场景分类方法（FSSTM）</li>
+<li>提出同异质主题联合稀疏建模的场景分类方法（SHHTFM）</li>
+</ul>
+</li>
+</ul>
+<h3 id="异质特征表达的稀疏主题模型场景分类方法fsstm">异质特征表达的稀疏主题模型场景分类方法（FSSTM）</h3>
+<p>王婆卖瓜，先说贡献：（1）能够挖掘出影像本质的底层信息，并用稀疏主题来表示复杂的高分遥感影像；（2）适合主题模型的场景分类流程；（3）稳健性，适应训练样本数量的变化</p>
+<ul>
+<li>异质特征描述：这个“异质”的表述是什么意思？？？</li>
+<li>稀疏语义特征挖掘：将稀疏主题模型，看不懂</li>
+<li>稀疏语义融合及分类：<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/autumn/20200704221024.png" alt="" /></li>
+</ul>
+<h3 id="同异质主题联合稀疏建模的场景分类方法shhtfm">同异质主题联合稀疏建模的场景分类方法（SHHTFM）</h3>
+<p>具有代表性地物目标或同质性区域的场景类别中代表性视觉单词语的比例变得非常小，降低场景识别精度=&gt;简单线性迭代聚类（SLIC）超像素分割方法=&gt;生成同质性区域； 水、植被边界、道路网络集成=&gt;土地利用/土地覆盖场景标注</p>
+<ul>
+<li>同异质底层特征提取（搞不懂同异质的意思）
+<ul>
+<li>均匀网格区域采样=&gt;异质性信息</li>
+<li>SLIC采样策略=&gt;同质性信息</li>
+</ul>
+</li>
+<li>稀疏主题表达<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/autumn/20200704223222.png" alt="" /></li>
+<li>结合多源地理数据的场景理解</li>
+</ul>
+<h2 id="基于多层次语义表达的高分辨率遥感影像场景分类方法">基于多层次语义表达的高分辨率遥感影像场景分类方法</h2>
+<p>基于主题模型的场景分类方法=&gt;提取局部特征，难以提取全局语义信息，忽略影像块的空间位置信息</p>
+<p>基于深度特征的场景分类方法=&gt;提取全局特征，对于显著性局部特征不能很好的把握</p>
+<p>自适应深度稀疏语义建模的场景分类方法：将主题特征与深度特征进行自适应融合</p>
+<h3 id="概述-2">概述</h3>
+<ul>
+<li>（1）传统方法很大程度上取决于手动底层特征的选择和中层特征的设计=&gt;先验信息；（2）迁移性有限；（3）仅计算局部特征的出现次数，不能对影像中的空间关系建模.=&gt;影像被表示为<strong>无序的局部特征集合</strong>，视觉单词的<strong>空间布局信息</strong>被忽略</li>
+<li>概率主题模型获取的主题特征是密集的=&gt;特征冗余，高时间消耗；全稀疏主题模型=&gt;可能丢失影像的细节信息，难以从全局角度获取特征</li>
+<li>深度学习的成功=&gt;CNN多层次表达中挖掘特征；CNN可迁移性=&gt;基于迁移学习的高分遥感场景分类方法=&gt;与基于主题模型的方法相比，从CNN中提取的高层特征通常更多包含高分遥感影像的全局信息，并可以发现目标的细节信息<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/autumn/20200705074832.png" alt="" /></li>
+<li>本章研究：
+<ul>
+<li>融合多层次语义模型信息的场景分类方法（DLGFF）</li>
+<li>自适应深度稀疏语义建模的场景分类方法（ADSSM）</li>
+</ul>
+</li>
+</ul>
+<h3 id="融合多层次语义模型信息的场景分类方法">融合多层次语义模型信息的场景分类方法</h3>
+<p>提出基于深度局部全局特征融合的场景理解框架（DLGFF），主要贡献：（1）从高分辨率遥感影像中捕捉场景的代表性语义和空间结构；（2）在DLGFF框架中提出了两种方法，即融合了全连接特征（LGFF）和融合拉伸卷积特征（LGCF）的局部和全局特征。</p>
+<ul>
+<li>局部及全局底层特征提取
+<ul>
+<li>代表性手工视觉描述子：全局纹理特征，局部光谱特征和局部结构特征（同第三章的特征构建方法）</li>
+</ul>
+</li>
+<li>卷积及全连接层特征生成
+<ul>
+<li>采用预训练的CNN-CaffeNet</li>
+<li>允许对网络的任何层进行特征提取</li>
+<li>最后一个Conv层的四维Conv5特征被选取以充分利用Conv层中的密集信息</li>
+<li>第一层FC层（FC6）被提取作为FC特征描述空间分布信息</li>
+<li>每个遥感影像具有D5维度的特征</li>
+</ul>
+</li>
+<li>基于LGCG和LGFF的特征融合及分类<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200705082027.png" alt="" /></li>
+</ul>
+<h3 id="自适应深度稀疏语义建模的场景分类方法">自适应深度稀疏语义建模的场景分类方法</h3>
+<p>提出将稀疏主题和深层特征相结合的自适应深度稀疏语义建模（ADSSM）框架，主要创新：（1）基于FSTM和CNN特征的ADSSM框架；（2）不同特征的自适应标准化策略</p>
+<ul>
+<li>高层深度特征学习
+<ul>
+<li>预处理：输入影像除以最大像素值，获得归一化影像</li>
+<li>特征提取
+<ul>
+<li>卷积层上滑动卷积滤波器进行卷积计算，获得特征映射</li>
+<li>对于每个通道，应用pooling操作获取区域像素的ju&rsquo;bu最大值或平均值，获得对噪声和杂波更加鲁棒且对影像变换保持不变的特征</li>
+<li>特征分类：FC+softmax</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>中层稀疏主题建模（同第四章）</li>
+<li>自适应特征标准化及融合分类
+<ul>
+<li>所谓<strong>自适应</strong>的概念：两类特征，针对不同的特征，归一化处理方式不同
+<ul>
+<li>主题特征非常稀疏且具有代表性，特征值范围从0-1</li>
+<li>深层特征更密集且更全面，特征值大得多</li>
+<li>直接链接深层特征和主题特征不能充分利用代表性主题特征</li>
+<li>深层特征：0-1归一化；主题特征：适应性拉伸</li>
+</ul>
+</li>
+<li><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200705084006.png" alt="" /></li>
+</ul>
+</li>
+</ul>
+<h2 id="基于主题模型的高分辨率遥感影像场景理解原型系统">基于主题模型的高分辨率遥感影像场景理解原型系统</h2>
+<h3 id="系统设计">系统设计</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200705135607.png" alt="" /></p>
+<h3 id="系统的使用">系统的使用</h3>
+<p>可独自使用，也可根据需求进行方法组合</p>
+<ul>
+<li>在不限制描述场景特征所占用的存储资源的情况下</li>
+<li>在限制描述场景特征维度，且限制GPU并行计算资源的情况下</li>
+<li>在限制描述场景特征的存储资源，不限制GPU并行计算资源的情况下</li>
+<li>引入多源地理数据为场景块边界提供地学信息约束</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200705140022.png" alt="" /></p>
+<h3 id="概率主题模型场景理解方法综合对比与应用场合">概率主题模型场景理解方法综合对比与应用场合</h3>
+<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/autumn/20200705140150.png" alt="" /></p>
+<ul>
+<li>适用于对<strong>分类精度</strong>有较髙要求的应用场合-自适应深度稀疏建模场景理解方法</li>
+<li>适用于要求<strong>计算效率</strong>的应用场合-同异质主题联合稀疏建模的场景理解方法</li>
+<li>可以接受的计算效率获得<strong>稳定</strong>满意的分类精度-基于密集多特征语义融合的场景理解方法</li>
+</ul>
+<h2 id="总结与展望-2">总结与展望</h2>
+<ul>
+<li>
+<p>背景：遥感影像的空间分辨率提升=&gt;同物异谱等现象影像解译新挑战=&gt;面向像素分类到面向对象分类的转变=&gt;无法提取场景高层语义信息=&gt;基于语义目标的场景分类=&gt;需要目标的先验信息并且会受到地物分类精度的影响</p>
+</li>
+<li>
+<p>本文：地物目标的多样性、可变性、分布复杂等特点；三方面研究：底层特征描述、中层主题建模和高层语义理解</p>
+</li>
+</ul>
+<h3 id="总结">总结</h3>
+<p>主要工作以及创新概括：</p>
+<ol>
+<li>归纳总结研究现状，详细介绍高分遥感影像场景理解方法</li>
+<li>针对底层特征学习能力不足的问题，在未考虑主题稀疏性的条件下，提出（1）融合局部全局特征的词袋模型场景分类方法和（2）多元特征语义融合概率主题模型（PTM）的高分辨率遥感场景分类方法</li>
+<li>针对中层主题建模未考虑主题稀疏性及同质性的问题，在基于稀疏主题建模的条件下，提出（1）异质特征表达的稀疏主题模型场景分类方法和（2）同异质主题联合稀疏建模的场景分类方法</li>
+<li>针对高层语义理解层面忽略空间位置信息及全局性的问题，在基于稀疏主题建模的条件下，提出（1）融合多层次语义模型信息的场景分类方法和（2）自适应深度稀疏语义建模的场景分类方法</li>
+<li>在上述研宄基础上，开发了高分辨率遥感影像场景理解的原型系统，并针对不同的应用情况，对系统的使用进行了说明。</li>
+</ol>
+<h3 id="展望">展望</h3>
+<p>集中在以下几个方面：</p>
+<ol>
+<li>多传感器多分辨率迁移的场景理解</li>
+<li>结合多源社交媒体数据的场景类别定义与场景理解：现有基于遥感影像的解译方法往往<u>只能从光谱和空间角度描述城市特性</u>，<u>缺少行政规划边界等地学数据约束与社会经济语义信息的分析</u>，难以全面理解城市形态</li>
+<li>多尺度多时相高分辨率遥感影像场景变化分析</li>
+</ol>
+<hr />
+<!-- 插入图片 -->
+<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/ethan.imfast.io/imgs/2020/06/handwritten-text-on-paper-4668360.jpg" alt="" /></p>
+    </article>
+    
+    
+<script defer src="/js/clipboard.min.1626706afc88d95ebe1173b553ec732c6dc82a576989315fdf5e7779af738a44.js"></script>
+
+<script defer src="/js/helper/prev.min.js"></script>
+
+<script defer src="/js/helper/prop.min.js"></script>
+<script>
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    var clipInit = false;
+    var preChromaElem = document.querySelectorAll('pre.chroma');
+    var langCodeElem = document.querySelectorAll('.language-code');
+    var dollarCodeElem = document.querySelectorAll('div.language-\\$');
+    var gtCodeElem = document.querySelectorAll('div.language-\\>');
+
+    var makeClipboard = function(elem) {
+      var code = elem,
+          text = elem.textContent;
+        
+      if (text.length > 15) {
+        if (!clipInit) {
+          var text, clip = new ClipboardJS('.copy-to-clipboard', {
+            text: function (trigger) {
+              var codeElem = prev(trigger).querySelectorAll('code');
+              if (codeElem.length > 1) {
+                text = prev(trigger).querySelector('code[class^="language-"]').textContent;
+              } else {
+                text = prev(trigger).querySelector('code').textContent;
+              }
+
+              return text.replace(/^\$\s/gm, '');
+            }
+          });
+
+          var inPre;
+          clip.on('success', function (e) {
+            e.clearSelection();
+            inPre = prop(e.trigger.parentNode, 'tagName') == 'PRE';
+            e.trigger.setAttribute('aria-label', 'Copied to clipboard!');
+            e.trigger.classList.add('tooltipped');
+            e.trigger.classList.add('tooltipped-w');
+          });
+
+          clip.on('error', function (e) {
+            inPre = prop(e.trigger.parentNode, 'tagName') == 'PRE';
+            e.trigger.setAttribute('aria-label', e.action.toString());
+            e.trigger.classList.add('tooltipped');
+            e.trigger.classList.add('tooltipped-w');
+          });
+
+          clipInit = true;
+        }
+
+        var notAllowedClass = ['language-mermaid', 'language-viz', 'language-wave', 'language-chart', 'language-msc', 'language-flowchart'];
+        var isNotAllowedIncluded = false;
+        var curClassName = code.getAttribute('class');
+
+        for (var i = 0; i < notAllowedClass.length; i++) {
+          if (curClassName && curClassName.startsWith(notAllowedClass[i])) {
+            isNotAllowedIncluded = true;
+            break;
+          }
+        }
+
+        if (!isNotAllowedIncluded) {
+          if (curClassName) {
+            var newClipboardElem = document.createElement('span');
+            newClipboardElem.setAttribute('class', 'copy-to-clipboard');
+            newClipboardElem.setAttribute('title', 'Copy to clipboard');
+            elem.parentNode.parentNode.insertBefore(newClipboardElem, elem.parentNode.nextElementSibling);
+          }
+        }
+      }
+    }
+
+    var makeSymbolClipboard = function(elem) {
+      var clipboardSpan = document.createElement('span');
+      clipboardSpan.setAttribute('class', 'copy-to-clipboard');
+      clipboardSpan.setAttribute('title', 'Copy to clipboard');
+      elem.parentNode.parentNode.insertBefore(clipboardSpan, elem.parentNode.nextElementSibling);
+    }
+
+    preChromaElem ? 
+    preChromaElem.forEach(function(elem) {
+      elem.querySelectorAll('code').forEach(function(codeElem) {
+        makeClipboard(codeElem);
+      });
+    }) : null;
+    
+    langCodeElem ? 
+    langCodeElem.forEach(function(elem) {
+      elem.querySelectorAll('code').forEach(function (codeElem) {
+        makeClipboard(codeElem);
+      });
+    }) : null;
+
+    dollarCodeElem ? 
+    dollarCodeElem.forEach(function(elem) {
+      elem.querySelectorAll('code').forEach(function (codeElem) {
+        makeSymbolClipboard(codeElem);
+      });
+    }) : null;
+
+    gtCodeElem ?
+    gtCodeElem.forEach(function(elem) {
+      elem.querySelectorAll('code').forEach(function (codeElem) {
+        makeSymbolClipboard(codeElem);
+      });
+    }) : null;
+    
+  });
+</script>
+    <script>
+  'use strict';
+  
+  function wrap(el, wrapper) {
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+  }
+
+  (function () {
+    var singleContentsElem = document.querySelector('.single__contents');
+    singleContentsElem ? 
+    singleContentsElem.querySelectorAll('pre > code').forEach(function(elem) {
+      var dataLang = elem.getAttribute('data-lang');
+      var dataLangWrapper = document.createElement('div');
+      var code = null;
+      var codeTitle = null;
+
+      if (dataLang && dataLang.includes(':')) {
+        code = dataLang.split(':')[0];
+        codeTitle = dataLang.split(':')[1];
+
+        dataLangWrapper.className = 'language-' + code;
+        dataLangWrapper.setAttribute('data-lang', codeTitle);
+
+        elem.className = 'language-' + code;
+        elem.setAttribute('data-lang', codeTitle);
+        elem.setAttribute('id', codeTitle);
+      } else if (!dataLang) {
+        dataLangWrapper.setAttribute('data-lang', 'Code');
+        dataLangWrapper.className = 'language-code';
+      }
+
+      if (!dataLang || codeTitle) {
+        wrap(elem.parentNode, dataLangWrapper);
+      }
+
+    }) : null;
+  })();
+
+  var langCodeElem = document.querySelectorAll('.language-code');
+  langCodeElem ? langCodeElem.forEach(function (elem) {
+    var newElem = document.createElement('span');
+    newElem.className = 'copy-to-clipboard';
+    newElem.setAttribute('title', 'Copy to clipboard');
+    elem.append(newElem);
+  }) : null;
+  
+
+  
+
+  
+  var dollarCodeElem = document.querySelectorAll('div.language-\\$');
+  var gtCodeElem = document.querySelectorAll('div.language-\\>');
+
+  dollarCodeElem ?
+  dollarCodeElem.forEach(function(elem) {
+    var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
+    lnts ? 
+    lnts.forEach(function(lnt) {
+      lnt.innerHTML = '$<br/>';
+    }) : null;
+  }) : null;
+
+  gtCodeElem ?
+  gtCodeElem.forEach(function(elem) {
+    var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
+    lnts ? 
+    lnts.forEach(function(lnt) {
+      lnt.innerHTML = '><br/>';
+    }) : null;
+  }) : null;
+  
+</script>
+    
+
+    
+    
+<div class="whoami__gutter"></div>
+<hr class="hr-slash whoami-hr"/>
+<section class="whoami">
+  <div class="whoami__image-wrapper">
+    
+    
+      
+        <img data-src="/images/whoami/avatar.jpg" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" alt="热" class="lazyload whoami__image"/>
+      
+    
+  </div>
+  <div class="whoami__contents">
+    <div class="whoami__written-by">
+      WRITTEN BY
+    </div>
+    <div class="whoami__title">
+      
+        热
+      
+    </div>
+    <div class="whoami__desc">
+      
+        Magician
+      
+    </div>
+    <div class="whoami__social">
+      
+      
+      <a href="mailto:gishusheng@outlook.com" title="email" aria-label="email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"/></svg>
+      </a>
+      
+      
+    </div>
+  </div>
+</section>
+<hr class="hr-slash whoami-hr" />
+
+
+    <section class="related">
+    
+    
+    <h1 class="related__title">
+      <hr class="hr-dots"/>
+      <div>
+        See Also
+      </div>
+      <hr class="hr-dots"/>
+    </h1>
+    <ul class="related-ul">
+        
+        <li>
+          <a href="/posts/notes/2020-02-24-papers_reading-taxi_trajectory_gps_records/" class="related__link">Papers Reading-Taxi Trajectory/GPS Records</a>
+        </li>
+        
+        <li>
+          <a href="/posts/notes/91/" class="related__link">论文写作摘抄-句型句式</a>
+        </li>
+        
+    </ul>
+    
+  </section>
+    <div class="grow"></div>
+<nav class="pagination-single">
+  
+    
+      <a href="https://xunhs.github.io/posts/notes/2020-06-07-rsurfc-%E7%BB%83%E4%B9%A0%E8%B5%9Bbaseline%E5%AE%9E%E7%8E%B0/" class="pagination-single__left">
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
+        </div>
+        <div class="pagination-single__left-title">RSURFC-练习赛Baseline实现</div>      
+      </a>
+    
+    <div class="grow"></div>
+    
+      <a href="https://xunhs.github.io/posts/journals/2020-07-01-2020-7/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">2020-7</div>
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        </div>
+      </a>
+    
+  
+</nav>
+    
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      
+      <div class="modal__content" id="modal-content">
+        <div id="mySwipe" class="swipe">
+          <div class="swipe-wrap">
+          </div>
+        </div>
+      </div>
+
+      <span class="modal__items">
+        
+        <span class="modal__header">
+          <div class="modal__paging" title="Page Info" aria-label="Current Page">
+          </div>
+          <div class="modal__icon modal__toolbar modal__toolbar--close" title="Close" aria-label="Close Button" data-micromodal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="25" height="25"><path fill="currentColor" d="M 21.734375 19.640625 L 19.636719 21.734375 C 19.253906 22.121094 18.628906 22.121094 18.242188 21.734375 L 13 16.496094 L 7.761719 21.734375 C 7.375 22.121094 6.746094 22.121094 6.363281 21.734375 L 4.265625 19.640625 C 3.878906 19.253906 3.878906 18.628906 4.265625 18.242188 L 9.503906 13 L 4.265625 7.761719 C 3.882813 7.371094 3.882813 6.742188 4.265625 6.363281 L 6.363281 4.265625 C 6.746094 3.878906 7.375 3.878906 7.761719 4.265625 L 13 9.507813 L 18.242188 4.265625 C 18.628906 3.878906 19.257813 3.878906 19.636719 4.265625 L 21.734375 6.359375 C 22.121094 6.746094 22.121094 7.375 21.738281 7.761719 L 16.496094 13 L 21.734375 18.242188 C 22.121094 18.628906 22.121094 19.253906 21.734375 19.640625 Z"/></svg>
+          </div>
+          <div class="modal__icon modal__toolbar modal__toolbar--full" title="Full Screen" aria-label="Full Screen Button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"><path fill="currentColor" d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 8 A 1.0001 1.0001 0 1 0 5 8 L 5 5 L 8 5 A 1.0001 1.0001 0 1 0 8 3 L 5 3 z M 16 3 A 1.0001 1.0001 0 1 0 16 5 L 19 5 L 19 8 A 1.0001 1.0001 0 1 0 21 8 L 21 5 C 21 3.9069372 20.093063 3 19 3 L 16 3 z M 3.984375 14.986328 A 1.0001 1.0001 0 0 0 3 16 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 8 21 A 1.0001 1.0001 0 1 0 8 19 L 5 19 L 5 16 A 1.0001 1.0001 0 0 0 3.984375 14.986328 z M 19.984375 14.986328 A 1.0001 1.0001 0 0 0 19 16 L 19 19 L 16 19 A 1.0001 1.0001 0 1 0 16 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 16 A 1.0001 1.0001 0 0 0 19.984375 14.986328 z"/></svg>
+          </div>
+          <div class="modal__icon modal__toolbar modal__toolbar--normal" title="Normal Screen" aria-label="Normal Screen Button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25" height="25"><path fill="currentColor" d="M 16.96875 4.972656 C 15.867188 4.988281 14.984375 5.894531 15 7 L 15 15 L 7 15 C 6.277344 14.988281 5.609375 15.367188 5.246094 15.992188 C 4.878906 16.613281 4.878906 17.386719 5.246094 18.007813 C 5.609375 18.632813 6.277344 19.011719 7 19 L 19 19 L 19 7 C 19.007813 6.460938 18.796875 5.941406 18.414063 5.558594 C 18.03125 5.175781 17.511719 4.964844 16.96875 4.972656 Z M 32.96875 4.972656 C 31.921875 4.988281 31.0625 5.8125 31.003906 6.859375 C 31 6.90625 31 6.953125 31 7 L 31 19 L 43 19 C 43.066406 19 43.132813 19 43.199219 18.992188 C 44.269531 18.894531 45.070313 17.972656 45.015625 16.902344 C 44.964844 15.828125 44.074219 14.988281 43 15 L 35 15 L 35 7 C 35.007813 6.460938 34.796875 5.941406 34.414063 5.558594 C 34.03125 5.175781 33.511719 4.964844 32.96875 4.972656 Z M 7 31 C 6.277344 30.988281 5.609375 31.367188 5.246094 31.992188 C 4.878906 32.613281 4.878906 33.386719 5.246094 34.007813 C 5.609375 34.632813 6.277344 35.011719 7 35 L 15 35 L 15 43 C 14.988281 43.722656 15.367188 44.390625 15.992188 44.753906 C 16.613281 45.121094 17.386719 45.121094 18.007813 44.753906 C 18.632813 44.390625 19.011719 43.722656 19 43 L 19 31 Z M 31 31 L 31 43 C 30.988281 43.722656 31.367188 44.390625 31.992188 44.753906 C 32.613281 45.121094 33.386719 45.121094 34.007813 44.753906 C 34.632813 44.390625 35.011719 43.722656 35 43 L 35 35 L 43 35 C 43.722656 35.011719 44.390625 34.632813 44.753906 34.007813 C 45.121094 33.386719 45.121094 32.613281 44.753906 31.992188 C 44.390625 31.367188 43.722656 30.988281 43 31 Z"/></svg>
+          </div>
+        </span>
+        
+        <div class="modal__icon modal__arrow modal__arrow--left" title="Arrow Left" aria-label="Arrow Left Button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="28" height="28"><path fill="currentColor" d="M 23.28125 11 L 10 10 L 10 6.851563 C 10 6.523438 9.839844 6.277344 9.519531 6.03125 C 9.199219 5.949219 8.878906 5.949219 8.640625 6.113281 C 5.359375 8.410156 2.238281 12.257813 2.160156 12.421875 C 2.082031 12.578125 2.007813 12.8125 2.003906 12.976563 C 2.003906 12.980469 2 12.988281 2 12.992188 C 2 13.15625 2.078125 13.402344 2.160156 13.484375 C 2.238281 13.648438 5.28125 17.507813 8.640625 19.804688 C 8.960938 19.96875 9.28125 20.050781 9.519531 19.886719 C 9.839844 19.722656 10 19.476563 10 19.148438 L 10 16 L 23.28125 15 C 23.679688 14.679688 24 13.875 24 12.992188 C 24 12.195313 23.761719 11.320313 23.28125 11 Z"/></svg>
+        </div>
+        
+        <div class="modal__icon modal__arrow modal__arrow--right" title="Arrow Right" aria-label="Arrow Right Button">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="28" height="28"><path fill="currentColor" d="M 2.71875 11.023438 L 16 10.023438 L 16 6.875 C 16 6.546875 16.160156 6.300781 16.480469 6.054688 C 16.800781 5.972656 17.121094 5.972656 17.359375 6.136719 C 20.640625 8.433594 23.761719 12.28125 23.839844 12.445313 C 23.917969 12.601563 23.992188 12.835938 23.996094 13 C 23.996094 13.003906 24 13.011719 24 13.015625 C 24 13.179688 23.921875 13.425781 23.839844 13.507813 C 23.761719 13.671875 20.71875 17.53125 17.359375 19.828125 C 17.039063 19.992188 16.71875 20.074219 16.480469 19.910156 C 16.160156 19.746094 16 19.5 16 19.171875 L 16 16.023438 L 2.71875 15.023438 C 2.320313 14.703125 2 13.898438 2 13.015625 C 2 12.21875 2.238281 11.34375 2.71875 11.023438 Z"/></svg>
+        </div>
+
+        <div class="modal__caption">
+          <div class="modal__caption--text">
+          </div>
+        </div>
+
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<script defer src="/js/swipe.min.989e074dfb92ce7f57a92c1df7027f88b53c50a54fd9ad450a673a64aa91bfa4.js"></script>
+
+<script defer src="/js/micromodal.min.de01b44b2f383056bbcaf6ee921fd385d79108ec1129afd0eb2f3f5a07e11f45.js"></script>
+
+<script defer src="/js/helper/fadeinout.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  
+   
+  var docElem = document.documentElement;
+
+   
+  function openFullscreen() {
+    if (docElem.requestFullscreen) {
+      docElem.requestFullscreen();
+    } else if (docElem.mozRequestFullScreen) {  
+      docElem.mozRequestFullScreen();
+    } else if (docElem.webkitRequestFullscreen) {  
+      docElem.webkitRequestFullscreen();
+    } else if (docElem.msRequestFullscreen) {  
+      docElem.msRequestFullscreen();
+    }
+  }
+
+   
+  function closeFullscreen() {
+    if (document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {  
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {  
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {  
+        document.msExitFullscreen();
+      }
+    }
+  }
+
+  var modal = document.getElementById('modal');
+  var galleryContainerElem = document.querySelector('.gallery__container');
+  var swipeWrapElem = document.querySelector('.swipe-wrap');
+  var mySwipeElem = document.getElementById('mySwipe');
+  var arrowLeftElem = document.querySelector('.modal__arrow--left');
+  var arrowRightElem = document.querySelector('.modal__arrow--right');
+  var closeElem = document.querySelector('.modal__toolbar--close');
+  var fullElem = document.querySelector('.modal__toolbar--full');
+  var normalElem = document.querySelector('.modal__toolbar--normal');
+  var captionElem = document.querySelector('.modal__caption');
+  var pagingElem = document.querySelector('.modal__paging');
+  var itemsElem = document.querySelector('.modal__items');
+  var imgTotalNum = null;
+  var myFadeTimeout = null;
+  var mySwipe = null;
+  var keydownFunction = function (e) {
+    if (e.key === 'ArrowRight') {
+      if (modal && modal.classList.contains('is-open')) {
+        mySwipe.next();
+      }
+    } else if (e.key === 'ArrowLeft') {
+      if (modal && modal.classList.contains('is-open')) {
+        mySwipe.prev();
+      }
+    }
+  }
+
+  if (galleryContainerElem) {
+    imgTotalNum = galleryContainerElem.querySelectorAll('img').length;
+  } else {
+    galleryContainerElem = document.querySelector('.single__contents');
+    imgTotalNum = galleryContainerElem.querySelectorAll('img').length;
+  }
+
+  MicroModal.init({
+    onClose: function () {
+      if (mySwipe) {
+        mySwipe.kill();
+        mySwipe = null;
+        closeFullscreen();
+      }
+      window.removeEventListener('keydown', keydownFunction);
+    },
+    disableScroll: true,
+    disableFocus: true,
+    awaitOpenAnimation: false,
+    awaitCloseAnimation: false,
+    debugMode: false,
+  });
+
+  var imageLoad = function(src) {
+    return new Promise(function(resolve, reject) {
+      var newImg = new Image;
+      newImg.onload = function() {
+        resolve(newImg);
+      }
+      newImg.onerror = reject;
+      newImg.src = src;
+    });
+  }
+
+  galleryContainerElem.querySelectorAll('img').forEach(function (elem, idx) {
+    elem.style.cursor = 'pointer';
+
+    var clonedElem = elem.cloneNode(true);
+    clonedElem.style.maxHeight = '100%';
+    clonedElem.style.maxWidth = '100%';
+    clonedElem.onclick = function (e) {
+      e.stopPropagation();
+    }
+
+    var wrapper = document.createElement('div');
+    wrapper.style.width = '100%';
+    wrapper.style.height = '100vh';
+    wrapper.setAttribute('data-micromodal-close', '');
+    wrapper.onclick = function () {
+      if (mySwipe) {
+        mySwipe.kill();
+        mySwipe = null;
+      }
+    }
+    wrapper.onmouseenter = function () {
+      clearTimeout(myFadeTimeout);
+      fadeIn(itemsElem, 200);
+    };
+    wrapper.onmouseleave = function () {
+      myFadeTimeout = setTimeout(function () {
+        fadeOut(itemsElem, 200);
+      }, 2500);
+    }
+    wrapper.ontouchstart = function() {
+      fadeIn(itemsElem, 200);
+    }
+    wrapper.append(clonedElem);
+    swipeWrapElem.append(wrapper);
+
+    elem.addEventListener('click', async function (e) {
+      MicroModal.show('modal');
+      if (mySwipe) {
+        mySwipe.kill();
+        mySwipe = null;
+      }
+
+      var imgSrc = e.target.getAttribute('data-src') || e.target.getAttribute('src');
+      var img = await imageLoad(imgSrc);
+      clonedElem.style.width = img.width + 'px';
+      clonedElem.style.height = img.height + 'px';
+      
+      
+      mySwipe = new Swipe(mySwipeElem, {
+        startSlide: idx,
+        draggable: true,
+        autoRestart: false,
+        continuous: false,
+        disableScroll: true,
+        stopPropagation: true,
+        callback: async function (index, element) {
+          
+          var imgElem = element.querySelector('img');
+          var imgSrc = imgElem.getAttribute('data-src') || imgElem.getAttribute('src');
+          var img = await imageLoad(imgSrc);
+          imgElem.style.width = img.width + 'px';
+          imgElem.style.height = img.height + 'px';
+
+          
+          if (captionElem && imgElem) {
+            var caption = null;
+            if (imgElem.getAttribute('data-caption')) {
+              caption = imgElem.getAttribute('data-caption');
+            } else if (imgElem.getAttribute('title')) {
+              caption = imgElem.getAttribute('title');
+            } else if (imgElem.getAttribute('alt')) {
+              caption = imgElem.getAttribute('alt');
+            } else {
+              caption = imgElem.getAttribute('src');
+            }
+
+            captionElem.querySelector('.modal__caption--text').innerText = caption;
+            pagingElem.innerText = (index + 1) + ' / ' + imgTotalNum;
+
+            clearTimeout(myFadeTimeout);
+            fadeIn(itemsElem, 200);
+          }
+        },
+      });
+
+      fadeIn(itemsElem);
+
+      
+      if (captionElem) {
+        var caption = null;
+        if (e.target.getAttribute('data-caption')) {
+          caption = e.target.getAttribute('data-caption');
+        } else if (e.target.getAttribute('title')) {
+          caption = e.target.getAttribute('title');
+        } else if (e.target.getAttribute('alt')) {
+          caption = e.target.getAttribute('alt');
+        } else {
+          caption = e.target.getAttribute('src');
+        }
+
+        captionElem.querySelector('.modal__caption--text').innerText = caption;
+        pagingElem.innerText = (idx + 1) + ' / ' + imgTotalNum;
+      }
+
+      if (normalElem && fullElem) {
+        normalElem.style.zIndex = -1;
+        normalElem.style.opacity = 0;
+        fullElem.style.zIndex = 25;
+        fullElem.style.opacity = 1;
+      }
+    });
+
+    window.addEventListener('keydown', keydownFunction);
+  });
+
+  arrowLeftElem ?
+    arrowLeftElem.addEventListener('click', function (e) {
+      if (mySwipe) {
+        mySwipe.prev();
+      }
+    }) : null;
+  arrowRightElem ?
+    arrowRightElem.addEventListener('click', function (e) {
+      if (mySwipe) {
+        mySwipe.next();
+      }
+    }) : null;
+
+  closeElem ?
+    closeElem.addEventListener('click', function () {
+      if (mySwipe) {
+        mySwipe.kill();
+        mySwipe = null;
+      }
+      closeFullscreen();
+      MicroModal.close('modal');
+    }) : null;
+
+  fullElem ?
+    fullElem.addEventListener('click', function (e) {
+      openFullscreen();
+      if (normalElem) {
+        normalElem.style.zIndex = 25;
+        normalElem.style.opacity = 1;
+        fullElem.style.zIndex = -1;
+        fullElem.style.opacity = 0;
+      }
+    }) : null;
+
+  normalElem ?
+    normalElem.addEventListener('click', function (e) {
+      closeFullscreen();
+      if (fullElem) {
+        fullElem.style.zIndex = 25;
+        fullElem.style.opacity = 1;
+        normalElem.style.zIndex = -1;
+        normalElem.style.opacity = 0;
+      }
+    }) : null;
+  
+});
+</script>
+
+    <div class="hide">
+      
+
+<div class="search">
+  <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+  </span>
+  <input id="search" aria-label="Site Search" class="input" type="text" placeholder="Search" autocomplete="off">
+  <div id="search-results" class="dropdown">
+    <div id="search-menu" class="dropdown-menu" role="menu">
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</main>
+
+
+<script>
+  
+  
+  
+
+  var enableToc = JSON.parse("true");
+  var toc = JSON.parse("true");
+  var tocPosition = JSON.parse("\"outer\"");
+  
+  var singleMainElem = document.querySelector('.single__main');
+  var singleSideElem = document.querySelector('.single__side');
+
+  enquire.register("screen and (max-width: 769px)", {
+    match: function () {
+      if ((enableToc || toc) && tocPosition !== "outer") {
+        if (singleMainElem && singleSideElem) {
+          singleMainElem.classList.remove('main-main');
+          singleMainElem.classList.add('main');
+          singleSideElem.classList.remove('main-side');
+          singleSideElem.classList.add('hide');
+        }
+      } else if (tocPosition === "outer") {
+        if (singleMainElem && !singleMainElem.classList.contains('main-main')) {
+          singleMainElem.classList.remove('main-main');
+          singleMainElem.classList.add('main');
+        }
+        if (singleSideElem && !singleSideElem.classList.contains('hide')) {
+          singleSideElem.classList.add('hide');
+        }
+      }
+    },
+    unmatch: function () {
+      if ((enableToc || toc) && tocPosition !== "outer") {
+        singleMainElem.classList.remove('main');
+        singleMainElem.classList.add('main-main');
+        singleSideElem.classList.remove('hide');
+        singleSideElem.classList.add('main-side');
+      } else if (tocPosition === "outer") {
+        if (singleMainElem && !singleMainElem.classList.contains('main-main')) {
+          singleMainElem.classList.remove('main-main');
+          singleMainElem.classList.add('main');
+        }
+        if (singleSideElem && !singleSideElem.classList.contains('hide')) {
+          singleSideElem.classList.add('hide');
+        }
+      }
+
+      var navCollapseBtn = document.querySelector('.navbar__burger');
+      var navCollapse = document.getElementsByClassName('navbarm__collapse')[0];
+      if (navCollapse) {
+        navCollapse.setAttribute('data-open', false);
+        navCollapse.style.maxHeight = 0;
+        navCollapseBtn.classList.remove('is-active');
+      }
+      document.getElementsByClassName('navbar__menu')[0].classList.remove('is-active');
+      document.getElementsByClassName('mobile-search')[0].classList.add('hide');
+    },
+    setup: function () { },
+    deferSetup: true,
+    destroy: function () { },
+  });
+</script>
+
+
+
+
+
+<script defer src="/js/helper/getParents.min.js"></script>
+
+<script defer src="/js/helper/closest.min.js"></script>
+
+<script defer src="/js/helper/prev.min.js"></script>
+
+<script defer src="/js/helper/prop.min.js"></script>
+
+<script defer src="/js/helper/fadeinout.min.js"></script>
+
+<script defer src="/js/helper/throttle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  'use strict';
+
+  window.onload = function() {
+    var navbar = document.querySelector('.navbar');
+    var singleContentsElem = document.querySelector('.single__contents');
+
+    
+    
+    
+    var enableBusuanzi = JSON.parse("null");
+    var busuanziPagePV = JSON.parse("null");
+    
+    if (enableBusuanzi && busuanziPagePV) {
+      var pagePvElem = document.querySelector('#busuanzi_value_page_pv');
+      pagePvElem.textContent = pagePvElem.textContent.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }    
+    
+
+
+
+    
+    
+    
+    
+    
+    
+    var enableToc = JSON.parse("true");
+    var toc = JSON.parse("true");
+    var hideToc = JSON.parse("false");
+    var tocFlexbox = document.querySelector('.toc__flexbox');
+    var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
+    var tocFolding = JSON.parse("true");
+    
+    if ((enableToc || toc) && document.querySelector('.toc')) {
+      var tableOfContentsElem = document.querySelector('.toc').querySelector('#TableOfContents');
+
+      tableOfContentsElem.onmouseenter = function() {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      tableOfContentsElem.onmouseleave = function() {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.add('scrolling');
+        }
+      }
+
+      if (false === tocFolding) {
+
+      } else {
+        tableOfContentsElem.querySelectorAll('ul') ?
+          tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+            rootUl.querySelectorAll('li').forEach(function (liElem) {
+              liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                ulElem.style.display = 'none';
+              });
+            });
+          }) : null;
+      }
+
+      if (tableOfContentsElem) {
+        if (tableOfContentsElem.querySelectorAll('a').length > 0) {
+          tableOfContentsElem.querySelectorAll('a').forEach(function (elem) {
+            elem.addEventListener('click', function () {
+              var id = elem.getAttribute('id');
+
+              if (!navbar.classList.contains('scrolling')) {
+                navbar.classList.remove('navbar--show');
+                navbar.classList.remove('navbar--hide');
+                navbar.classList.add('navbar--hide');
+              }
+              
+              document.querySelector('.toc').querySelectorAll('a').forEach(function (elem) {
+                elem.classList.remove('active');
+              });
+              elem.classList.add('active');
+
+              var curElem = tableOfContentsElem.querySelector('[href="#' + id + '"]');
+              if (curElem && curElem.nextElementSibling) {
+                curElem.nextElementSibling.style.display = 'block';
+              }
+              if (curElem) {
+                getParents(curElem, 'ul') ?
+                  getParents(curElem, 'ul').forEach(function (elem) {
+                    elem.style.display = 'block';
+                  }) : null;
+              }
+            });
+          });
+        } else {
+          if (tocFlexbox) {
+            tocFlexbox.setAttribute('data-position', '');
+            if (!tocFlexbox.classList.contains('hide')) {
+              tocFlexbox.classList.add('hide');
+            }
+          }
+          if (tocFlexboxOuter) {
+            tocFlexboxOuter.setAttribute('data-position', '');
+            if (!tocFlexboxOuter.classList.contains('hide')) {
+              tocFlexboxOuter.classList.add('hide');
+            }
+          }
+        }
+      }
+
+      
+      var toggleTocElem = document.getElementById("toggle-toc");
+      var visibleTocElem = document.getElementById('visible-toc');
+      var tocElem = document.querySelector('.toc');
+      var mainElem = document.querySelector('main');
+      var sideElem = document.querySelector('side');
+      var tocFlexboxElem = document.querySelector('.toc__flexbox');
+
+      toggleTocElem ? 
+      toggleTocElem.addEventListener('change', function(e) {
+        if (e.target.checked) {
+          if (tocElem) {
+            fadeIn(tocElem, 200);
+          }
+          if (tocFlexboxElem) {
+            tocFlexboxElem.setAttribute('data-position', 'fixed');
+          }
+
+          if (mainElem) {
+            mainElem.classList.remove('main-main');
+            mainElem.classList.remove('main');
+            mainElem.classList.add('main-main');
+          }
+          if (sideElem) {
+            sideElem.classList.remove('main-side');
+          }
+        } else {
+          if (tocElem) {
+            fadeOut(tocElem, 200);
+          }
+          if (tocFlexboxElem) {
+            tocFlexboxElem.setAttribute('data-position', 'absolute');
+          }
+
+          if (mainElem) {
+            mainElem.classList.remove('main-main');
+            mainElem.classList.remove('main');
+            mainElem.classList.add('main');
+          }
+          if (sideElem) {
+            sideElem.classList.remove('main-side');
+          }
+        }
+      }) : null;
+
+      visibleTocElem ?
+      visibleTocElem.addEventListener('change', function(e) {
+        if (e.target.checked) {
+          if (tocElem) {
+            fadeIn(tocElem, 200);
+          }
+        } else {
+          if (tocElem) {
+            fadeOut(tocElem, 200);
+          }
+        }
+      }) : null;
+    }
+    
+    
+    
+    
+    
+    var topOffset = 120;
+    var botOffset = 70;
+    var handleWindowResize = function () {
+      if (tocElem) {
+        tocElem.style.maxHeight = (window.innerHeight - topOffset - botOffset) + 'px';
+      }
+    }
+    var throttledWindowResize = throttle(handleWindowResize, 300);
+    throttledWindowResize()
+
+    
+    window.addEventListener('resize', throttledWindowResize);
+    
+
+
+
+    
+    var text, clip = new ClipboardJS('.anchor');
+    var headers = singleContentsElem.querySelectorAll("h1, h2, h3, h4");
+
+    
+    var languagedir = JSON.parse("\"ltr\"");
+
+    headers ? 
+    headers.forEach(function (elem) {
+      var size = parseInt(elem.tagName.substr(1), 10) * 2;
+      var url = encodeURI(document.location.origin + document.location.pathname);
+      var link = url + "#" + elem.getAttribute('id');
+      var newElemOuter = document.createElement('span');
+      newElemOuter.classList.add('anchor');
+      newElemOuter.classList.add('hide');
+      newElemOuter.setAttribute('data-clipboard-text', decodeURI(link));
+      newElemOuter.style.position = 'relative';
+
+      var newElemInner = document.createElement('span');
+      newElemInner.style.position = 'absolute';
+      newElemInner.style.top = '50%';
+      newElemInner.style.left = '0.75rem';
+      newElemInner.style.transform = 'translateY(-50%)';
+      newElemInner.innerHTML = `
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="${32 - size}px" height="${32 - size}px"><path d="M 5.5625 0 C 4.136719 0 2.707031 0.542969 1.625 1.625 C -0.539063 3.789063 -0.539063 7.335938 1.625 9.5 L 5.28125 13.15625 C 5.667969 13.554688 6.304688 13.558594 6.703125 13.171875 C 7.101563 12.785156 7.105469 12.148438 6.71875 11.75 L 3.03125 8.0625 C 1.632813 6.664063 1.632813 4.429688 3.03125 3.03125 C 4.429688 1.632813 6.664063 1.632813 8.0625 3.03125 L 12.96875 7.9375 C 14.367188 9.335938 14.367188 11.570313 12.96875 12.96875 C 12.804688 13.132813 12.621094 13.25 12.4375 13.375 C 11.980469 13.6875 11.859375 14.308594 12.171875 14.765625 C 12.484375 15.222656 13.105469 15.34375 13.5625 15.03125 C 13.847656 14.835938 14.125 14.625 14.375 14.375 C 16.539063 12.210938 16.539063 8.664063 14.375 6.5 L 9.5 1.625 C 8.417969 0.542969 6.988281 0 5.5625 0 Z M 10.78125 8.875 C 10.738281 8.882813 10.695313 8.894531 10.65625 8.90625 C 10.507813 8.9375 10.371094 9 10.25 9.09375 C 10.039063 9.253906 9.820313 9.429688 9.625 9.625 C 7.460938 11.789063 7.460938 15.335938 9.625 17.5 L 14.5 22.375 C 16.664063 24.539063 20.210938 24.539063 22.375 22.375 C 24.539063 20.210938 24.539063 16.664063 22.375 14.5 L 18.71875 10.875 C 18.476563 10.578125 18.089844 10.441406 17.714844 10.527344 C 17.34375 10.613281 17.050781 10.90625 16.964844 11.277344 C 16.878906 11.652344 17.015625 12.039063 17.3125 12.28125 L 20.96875 15.9375 C 22.367188 17.335938 22.367188 19.570313 20.96875 20.96875 C 19.570313 22.367188 17.335938 22.367188 15.9375 20.96875 L 11.03125 16.0625 C 9.632813 14.664063 9.632813 12.429688 11.03125 11.03125 C 11.152344 10.90625 11.300781 10.820313 11.4375 10.71875 C 11.839844 10.472656 12.015625 9.976563 11.855469 9.53125 C 11.699219 9.085938 11.25 8.8125 10.78125 8.875 Z"/></svg>`;
+
+      if (languagedir === "rtl") {
+        newElemInner.style.left = '-2rem';
+      } else {
+        newElemInner.style.right = '-2rem';
+      }
+
+      newElemOuter.append(newElemInner);
+      elem.append(newElemOuter);
+
+      elem.addEventListener('mouseenter', function() {
+        this.querySelector('.anchor').classList.remove('hide');
+      });
+      elem.addEventListener('mouseleave', function () {
+        this.querySelector('.anchor').classList.add('hide');
+      });
+    }) : null;
+
+    document.querySelectorAll('.anchor').forEach(function(elem) {
+      elem.addEventListener('mouseleave', function() {
+        elem.setAttribute('aria-label', null);
+        elem.classList.remove('tooltipped');
+        elem.classList.remove('tooltipped-s');
+        elem.classList.remove('tooltipped-w');
+      });
+    });
+
+    clip.on('success', function (e) {
+      e.clearSelection();
+      e.trigger.setAttribute('aria-label', 'Link copied to clipboard!');
+      e.trigger.classList.add('tooltipped');
+      e.trigger.classList.add('tooltipped-s');
+    });
+    // =================================================================
+
+
+
+    
+    
+    var lib = JSON.parse("null");
+
+    if (lib && lib.includes('mermaid')) {
+      
+      var themeVariant = localStorage.getItem('theme') || JSON.parse("\"dark\"");
+
+      if (themeVariant === "dark" || themeVariant === "hacker") {
+        mermaid.initialize({ theme: 'dark' });
+      } else {
+        mermaid.initialize({ theme: 'default' });
+      }
+      
+      var mermaids = [];
+      [].push.apply(mermaids, document.getElementsByClassName('language-mermaid'));
+      mermaids.forEach(function(elem) {
+        var elemParentNode = elem.parentNode;
+
+        if (elemParentNode !== document.body) {
+          elemParentNode.parentNode.insertBefore(elem, elemParentNode);
+          elemParentNode.parentNode.removeChild(elemParentNode);
+        }
+
+        var newElemWrapper = document.createElement('div');
+        newElemWrapper.classList.add('mermaid');
+        newElemWrapper.style.padding = '34px 4px 6px';
+        newElemWrapper.innerHTML = elem.innerHTML;
+        elem.replaceWith(newElemWrapper);
+      });
+    }
+    
+
+    
+
+    
+    if (lib && lib.includes('katex')) {
+      var mathElements = document.getElementsByClassName('math');
+      var options = {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false }
+        ],
+      };
+
+      renderMathInElement(document.querySelector('.single__contents'), options);
+    }
+    
+
+
+
+    
+    if (lib && lib.includes('flowchartjs')) {
+      
+      var options = JSON.parse("{\"arrow-end\":\"block\",\"element-color\":\"black\",\"fill\":\"white\",\"flowstate\":{\"approved\":{\"fill\":\"#58C4A3\",\"font-size\":12,\"no-text\":\"n/a\",\"yes-text\":\"APPROVED\"},\"current\":{\"fill\":\"yellow\",\"font-color\":\"red\",\"font-weight\":\"bold\"},\"future\":{\"fill\":\"#FFFF99\"},\"invalid\":{\"fill\":\"#444444\"},\"past\":{\"fill\":\"#CCCCCC\",\"font-size\":12},\"rejected\":{\"fill\":\"#C45879\",\"font-size\":12,\"no-text\":\"REJECTED\",\"yes-text\":\"n/a\"},\"request\":{\"fill\":\"blue\"}},\"font-color\":\"black\",\"font-size\":14,\"line-color\":\"black\",\"line-length\":50,\"line-width\":3,\"no-text\":\"no\",\"scale\":1,\"symbols\":{\"end\":{\"class\":\"end-element\"},\"start\":{\"element-color\":\"green\",\"fill\":\"yellow\",\"font-color\":\"red\"}},\"text-margin\":10,\"x\":0,\"y\":0,\"yes-text\":\"yes\"}");
+      var jsonContent = null;
+
+      var flowchartPrefix = "language-flowchart";
+      var index = 0;
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + flowchartPrefix + "]"), function(x){
+          x.style.display = 'none'
+          x.parentNode.style.backgroundColor = "transparent"
+          jsonContent = x.innerText;
+
+          var node0 = document.createElement('div');
+          node0.id = 'flowchart' + index;
+          x.parentNode.insertBefore(node0, x);
+
+          var diagram = flowchart.parse(jsonContent);
+          diagram.drawSVG("flowchart"+index, options);
+
+          index +=1;
+      });      
+    }
+    
+
+    
+
+    
+    document.querySelectorAll("mjx-container").forEach(function (x) {
+      x.parentElement.classList += 'has-jax'
+    });
+    
+
+
+
+    
+    if (lib && lib.includes('msc')) {
+      
+      var options = JSON.parse("{\"theme\":\"hand\"}");
+      var jsonContent = null;
+
+      var index = 0;
+      var chartPrefix = "language-msc";
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + chartPrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        jsonContent = x.innerText;
+        var node0 = document.createElement('div');
+        node0.id = 'msc' + index;
+        x.parentNode.insertBefore(node0, x);
+        var diagram = Diagram.parse(jsonContent);
+        diagram.drawSVG("msc" + index, options);
+        index += 1;
+      });
+    }
+    
+
+
+
+    
+    if (lib && lib.includes('chart')) {
+      var borderColor = "#666";
+      var bgColor = "#ddd";
+      var borderWidth = 2;
+
+      Chart.defaults.global.elements.rectangle.borderWidth = borderWidth;
+      Chart.defaults.global.elements.rectangle.borderColor = borderColor;
+      Chart.defaults.global.elements.rectangle.backgroundColor = bgColor;
+
+      Chart.defaults.global.elements.line.borderWidth = borderWidth;
+      Chart.defaults.global.elements.line.borderColor = borderColor;
+      Chart.defaults.global.elements.line.backgroundColor = bgColor;
+
+      Chart.defaults.global.elements.point.borderWidth = borderWidth;
+      Chart.defaults.global.elements.point.borderColor = borderColor;
+      Chart.defaults.global.elements.point.backgroundColor = bgColor;
+
+      var chartPrefix = "language-chart";
+      var index = 0;
+      var jsonContent = null;
+
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + chartPrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        jsonContent = x.innerText;
+        var node0 = document.createElement('canvas');
+        var source = null;
+        node0.height = 200;
+        node0.style.height = 200;
+        node0.id = 'myChart' + index;
+        source = JSON.parse(jsonContent);
+        x.parentNode.insertBefore(node0, x);
+        var ctx = document.getElementById('myChart' + index).getContext('2d');
+        var myChart = new Chart(ctx, source);
+        index += 1;
+      });            
+    }
+    
+
+
+
+    
+    if (lib && lib.includes('wavedrom')) {
+      var wavePrefix = "language-wave";
+      var index = 0;
+      var jsonContent = null;
+      
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + wavePrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        jsonContent = x.innerText;
+        var node0 = document.createElement('div');
+        var source = null;
+        node0.id = 'WaveDrom_Display_' + index;
+        source = JSON.parse(jsonContent);
+        x.parentNode.insertBefore(node0, x);
+        WaveDrom.RenderWaveForm(index, source, "WaveDrom_Display_");
+        index += 1;
+      });
+    }
+    
+
+
+
+    
+    if (lib && lib.includes('viz')) {
+      var vizPrefix = "language-viz-";
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + vizPrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        var engine;
+        x.getAttribute("class").split(" ").forEach(function (cls) {
+          if (cls.startsWith(vizPrefix)) {
+            engine = cls.substr(vizPrefix.length);
+          }
+        });
+        var viz = new Viz();
+        viz.renderSVGElement(x.innerText, { engine: engine })
+          .then(function (element) {
+            element.style.width = "100%";
+            x.parentNode.insertBefore(element, x);
+          })
+      });
+    }
+    
+    
+  }
+</script>
+
+
+            
+            <footer class="footer">
+    
+<div class="dropdown">
+  <button class="dropdown-trigger" aria-label="Select Language Button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M12.65 15.67c.14-.36.05-.77-.23-1.05l-2.09-2.06.03-.03c1.74-1.94 2.98-4.17 3.71-6.53h1.94c.54 0 .99-.45.99-.99v-.02c0-.54-.45-.99-.99-.99H10V3c0-.55-.45-1-1-1s-1 .45-1 1v1H1.99c-.54 0-.99.45-.99.99 0 .55.45.99.99.99h10.18C11.5 7.92 10.44 9.75 9 11.35c-.81-.89-1.49-1.86-2.06-2.88-.16-.29-.45-.47-.78-.47-.69 0-1.13.75-.79 1.35.63 1.13 1.4 2.21 2.3 3.21L3.3 16.87c-.4.39-.4 1.03 0 1.42.39.39 1.02.39 1.42 0L9 14l2.02 2.02c.51.51 1.38.32 1.63-.35zM17.5 10c-.6 0-1.14.37-1.35.94l-3.67 9.8c-.24.61.22 1.26.87 1.26.39 0 .74-.24.88-.61l.89-2.39h4.75l.9 2.39c.14.36.49.61.88.61.65 0 1.11-.65.88-1.26l-3.67-9.8c-.22-.57-.76-.94-1.36-.94zm-1.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+  </button>
+  <div class="dropdown-content">
+    
+    
+    
+  </div>
+</div>
+
+    
+    
+<div id="gtt">
+  <div class="gtt">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8.12 14.71L12 10.83l3.88 3.88c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L12.7 8.71c-.39-.39-1.02-.39-1.41 0L6.7 13.3c-.39.39-.39 1.02 0 1.41.39.38 1.03.39 1.42 0z"/></svg>
+  </div>
+</div>
+
+    <hr />
+
+    <div class="basicflex flexwrap">
+        
+    </div>
+
+    <div class="footer__poweredby">
+        
+                
+            <p class="caption">
+                
+                    ©2021, All Rights Reserved
+                
+            </p>
+        
+
+        
+            <p class="caption">Powered by <a href="https://gohugo.io/" target="_blank" rel="noreferrer">Hugo</a> and the <a href="https://github.com/zzossig/hugo-theme-zzo" target="_blank" rel="noreferrer">Zzo theme</a></p>
+        
+        
+    </div> 
+</footer>
+        </div>
+        
+
+
+
+
+
+<div class="wrapper__right hide" data-pad="true" dir="ltr">
+  <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
+  
+    
+      
+        <div class="toc__flexbox--outer" data-position="fixed" data-dir="ltr" data-ani="true">
+          <h6 class="toc__title toc__title--outer" data-ani="true">What&#39;s on this Page</h6>
+          
+          <label class="switch" data-ani="true">
+            <input id="visible-toc" aria-label="Visible TOC" type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        <div class="toc toc__outer " data-dir="ltr" data-folding="true" data-ani="true">
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#openstreetmap城市建筑物数据质量评价方法研究">OpenStreetMap城市建筑物数据质量评价方法研究</a>
+      <ul>
+        <li><a href="#绪论部分">绪论部分</a>
+          <ul>
+            <li><a href="#研究背景与意义">研究背景与意义</a></li>
+            <li><a href="#研究现状与分析">研究现状与分析</a></li>
+            <li><a href="#研究目标与内容">研究目标与内容</a></li>
+            <li><a href="#论文创新点">论文创新点</a></li>
+          </ul>
+        </li>
+        <li><a href="#osm-数据质量评价相关理论">OSM 数据质量评价相关理论</a>
+          <ul>
+            <li><a href="#空间数据质量概述">空间数据质量概述</a></li>
+            <li><a href="#osm-数据质量问题描述">OSM 数据质量问题描述</a></li>
+            <li><a href="#空间相似性与-osm-数据质量">空间相似性与 OSM 数据质量</a></li>
+          </ul>
+        </li>
+        <li><a href="#顾及空间分布和几何变换的多边形相似性度量模型">顾及空间分布和几何变换的多边形相似性度量模型</a>
+          <ul>
+            <li><a href="#引言">引言</a></li>
+            <li><a href="#基于最远点描述的简单多边形相似性度量模型">基于最远点描述的简单多边形相似性度量模型</a></li>
+            <li><a href="#基于方位图的带洞多边形相似性度量模型">基于方位图的带洞多边形相似性度量模型</a></li>
+            <li><a href="#基于匹配控制子图的复合多边形相似性度量模型">基于匹配控制子图的复合多边形相似性度量模型</a></li>
+          </ul>
+        </li>
+        <li><a href="#基于矢量参考数据-osm-建筑物数据综合评价">基于矢量参考数据 OSM 建筑物数据综合评价</a>
+          <ul>
+            <li><a href="#引言-1">引言</a></li>
+            <li><a href="#基于数据匹配的训练样本集构建">基于数据匹配的训练样本集构建</a></li>
+            <li><a href="#基于深度自编码网络综合评价模型">基于深度自编码网络综合评价模型</a></li>
+            <li><a href="#实验验证与分析">实验验证与分析</a></li>
+          </ul>
+        </li>
+        <li><a href="#基于遥感影像数据-osm-建筑物数据质量评价">基于遥感影像数据 OSM 建筑物数据质量评价</a>
+          <ul>
+            <li><a href="#引言-2">引言</a></li>
+            <li><a href="#遥感影像建筑物提取训练集构建">遥感影像建筑物提取训练集构建</a></li>
+            <li><a href="#基于多任务特征学习参考建筑物数据提取">基于多任务特征学习参考建筑物数据提取</a></li>
+            <li><a href="#实验验证与分析-1">实验验证与分析</a></li>
+          </ul>
+        </li>
+        <li><a href="#总结与展望">总结与展望</a>
+          <ul>
+            <li><a href="#研究总结">研究总结</a></li>
+            <li><a href="#研究展望">研究展望</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#基于手机位置大数据的城市人群聚散时空特性研究以深圳市为例">基于手机位置大数据的城市人群聚散时空特性研究：以深圳市为例</a>
+      <ul>
+        <li><a href="#绪论">绪论</a>
+          <ul>
+            <li><a href="#研究背景与意义-1">研究背景与意义</a></li>
+            <li><a href="#研究内容与技术路线">研究内容与技术路线</a></li>
+          </ul>
+        </li>
+        <li><a href="#人群移动模式研究综述">人群移动模式研究综述</a>
+          <ul>
+            <li><a href="#引言-3">引言</a></li>
+            <li><a href="#城市时空动态分析">城市时空动态分析</a></li>
+            <li><a href="#人群移动时空模式研究">人群移动时空模式研究</a></li>
+            <li><a href="#城市空间结构研究">城市空间结构研究</a></li>
+            <li><a href="#职住分布与可达性研究">职住分布与可达性研究</a></li>
+          </ul>
+        </li>
+        <li><a href="#人群聚散时空模式">人群聚散时空模式</a>
+          <ul>
+            <li><a href="#引言-4">引言</a></li>
+            <li><a href="#人群聚散时空模式提取方法">人群聚散时空模式提取方法</a></li>
+            <li><a href="#实验结果与分析">实验结果与分析</a></li>
+          </ul>
+        </li>
+        <li><a href="#人群聚散稳定性定量模型与评价">人群聚散稳定性定量模型与评价</a>
+          <ul>
+            <li><a href="#引言-5">引言</a></li>
+            <li><a href="#人群聚散稳定性评价模型">人群聚散稳定性评价模型</a></li>
+            <li><a href="#实验结果与分析-1">实验结果与分析</a></li>
+          </ul>
+        </li>
+        <li><a href="#城市空间结构要素与人群聚散稳定性的关联性分析">城市空间结构要素与人群聚散稳定性的关联性分析</a>
+          <ul>
+            <li><a href="#引言-6">引言</a></li>
+            <li><a href="#城市空间结构指标">城市空间结构指标</a></li>
+            <li><a href="#多元线性回归模型">多元线性回归模型</a></li>
+            <li><a href="#实验结果与分析-2">实验结果与分析</a></li>
+          </ul>
+        </li>
+        <li><a href="#总结与展望-1">总结与展望</a>
+          <ul>
+            <li><a href="#论文总结">论文总结</a></li>
+            <li><a href="#主要创新点">主要创新点</a></li>
+            <li><a href="#研究展望-1">研究展望</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#面向高分辨率遥感影像场景语义理解的概率主题模型研究">面向高分辨率遥感影像场景语义理解的概率主题模型研究</a>
+      <ul>
+        <li><a href="#绪论-1">绪论</a>
+          <ul>
+            <li><a href="#研究背景与意义-2">研究背景与意义</a></li>
+          </ul>
+        </li>
+        <li><a href="#概率主题模型">概率主题模型</a>
+          <ul>
+            <li><a href="#经典概率主题模型">经典概率主题模型</a></li>
+            <li><a href="#基于概率主题模型的场景分类方法">基于概率主题模型的场景分类方法</a></li>
+          </ul>
+        </li>
+        <li><a href="#多元特征语义融合的主题模型场景分类方法">多元特征语义融合的主题模型场景分类方法</a>
+          <ul>
+            <li><a href="#概述">概述</a></li>
+            <li><a href="#融合局部全局特征的词袋模型高分遥感场景分类方法lgfbovw">融合局部全局特征的词袋模型高分遥感场景分类方法（LGFBOVW）</a></li>
+            <li><a href="#多元特征语义融合的概率主题模型高分遥感场景分类方法sal-ptm">多元特征语义融合的概率主题模型高分遥感场景分类方法（SAL-PTM）</a></li>
+          </ul>
+        </li>
+        <li><a href="#同异质主题联合的稀疏主题模型场景分类方法">同异质主题联合的稀疏主题模型场景分类方法</a>
+          <ul>
+            <li><a href="#概述-1">概述</a></li>
+            <li><a href="#异质特征表达的稀疏主题模型场景分类方法fsstm">异质特征表达的稀疏主题模型场景分类方法（FSSTM）</a></li>
+            <li><a href="#同异质主题联合稀疏建模的场景分类方法shhtfm">同异质主题联合稀疏建模的场景分类方法（SHHTFM）</a></li>
+          </ul>
+        </li>
+        <li><a href="#基于多层次语义表达的高分辨率遥感影像场景分类方法">基于多层次语义表达的高分辨率遥感影像场景分类方法</a>
+          <ul>
+            <li><a href="#概述-2">概述</a></li>
+            <li><a href="#融合多层次语义模型信息的场景分类方法">融合多层次语义模型信息的场景分类方法</a></li>
+            <li><a href="#自适应深度稀疏语义建模的场景分类方法">自适应深度稀疏语义建模的场景分类方法</a></li>
+          </ul>
+        </li>
+        <li><a href="#基于主题模型的高分辨率遥感影像场景理解原型系统">基于主题模型的高分辨率遥感影像场景理解原型系统</a>
+          <ul>
+            <li><a href="#系统设计">系统设计</a></li>
+            <li><a href="#系统的使用">系统的使用</a></li>
+            <li><a href="#概率主题模型场景理解方法综合对比与应用场合">概率主题模型场景理解方法综合对比与应用场合</a></li>
+          </ul>
+        </li>
+        <li><a href="#总结与展望-2">总结与展望</a>
+          <ul>
+            <li><a href="#总结">总结</a></li>
+            <li><a href="#展望">展望</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+      
+    
+  
+</div>
+
+    </div>
+</body>
+
+</html>
