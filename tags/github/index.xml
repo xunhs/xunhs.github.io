@@ -6,13 +6,13 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>github on Ethan</title>
+    <title>github on 热</title>
     <link>https://xunhs.github.io/tags/github/</link>
-    <description>Recent content in github on Ethan</description>
+    <description>Recent content in github on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
-    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
+    <webMaster>gishusheng@outlook.com (热)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 26 Apr 2020 09:22:59 +0000</lastBuildDate>
     
@@ -24,14 +24,14 @@
         <title>git 初始化及常用操作</title>
         <link>https://xunhs.github.io/posts/n/2020-04-29-git-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
         <pubDate>Sun, 26 Apr 2020 09:22:59 +0000</pubDate>
-        <author>gishusheng@outlook.com (Ethan)</author>
+        <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 26 Apr 2020 09:22:59 +0000</atom:modified>
         <guid>https://xunhs.github.io/posts/n/2020-04-29-git-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;git 常用命令以及免密push设置。 参考: &lt;a href=&#34;https://my.oschina.net/u/3552749/blog/1678082&#34;&gt;oschina&lt;/a&gt;, &lt;a href=&#34;https://todebug.com/Tips/&#34;&gt;todebug&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
         
-        <dc:creator>Ethan</dc:creator>
+        <dc:creator>热</dc:creator>
         
         
         

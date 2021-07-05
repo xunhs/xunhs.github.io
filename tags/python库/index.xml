@@ -6,13 +6,13 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Python库 on Ethan</title>
+    <title>Python库 on 热</title>
     <link>https://xunhs.github.io/tags/python%E5%BA%93/</link>
-    <description>Recent content in Python库 on Ethan</description>
+    <description>Recent content in Python库 on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
-    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
+    <webMaster>gishusheng@outlook.com (热)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 27 May 2020 09:25:17 +0000</lastBuildDate>
     
@@ -24,14 +24,14 @@
         <title>Python库-osmnx&amp;networkx</title>
         <link>https://xunhs.github.io/posts/n/2020-05-27-python%E5%BA%93-osmnxnetworkx/</link>
         <pubDate>Wed, 27 May 2020 09:25:17 +0000</pubDate>
-        <author>gishusheng@outlook.com (Ethan)</author>
+        <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 27 May 2020 09:25:17 +0000</atom:modified>
         <guid>https://xunhs.github.io/posts/n/2020-05-27-python%E5%BA%93-osmnxnetworkx/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;osmnx是下载、处理等osm路网很好用的一个包。networkx是图论学习中很好用的包，两者结合为基于图论的方法研究osm road network提供便利。以下内容为整理两个包常用的功能函数方法。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
         
-        <dc:creator>Ethan</dc:creator>
+        <dc:creator>热</dc:creator>
         
         
         

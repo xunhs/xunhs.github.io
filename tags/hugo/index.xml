@@ -6,13 +6,13 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Hugo on Ethan</title>
+    <title>Hugo on 热</title>
     <link>https://xunhs.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on Ethan</description>
+    <description>Recent content in Hugo on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
-    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
+    <webMaster>gishusheng@outlook.com (热)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 21 May 2021 09:19:12 +0800</lastBuildDate>
     
@@ -24,14 +24,14 @@
         <title>2021-05-21-hugo学习札记</title>
         <link>https://xunhs.github.io/posts/n/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</link>
         <pubDate>Fri, 21 May 2021 09:19:12 +0800</pubDate>
-        <author>gishusheng@outlook.com (Ethan)</author>
+        <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 21 May 2021 09:19:12 +0800</atom:modified>
         <guid>https://xunhs.github.io/posts/n/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://hugo.aiaide.com/&#34;&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
         
-        <dc:creator>Ethan</dc:creator>
+        <dc:creator>热</dc:creator>
         
         
         

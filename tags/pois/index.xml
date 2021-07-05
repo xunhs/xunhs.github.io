@@ -6,13 +6,13 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>POIs on Ethan</title>
+    <title>POIs on 热</title>
     <link>https://xunhs.github.io/tags/pois/</link>
-    <description>Recent content in POIs on Ethan</description>
+    <description>Recent content in POIs on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>gishusheng@outlook.com (Ethan)</managingEditor>
-    <webMaster>gishusheng@outlook.com (Ethan)</webMaster>
+    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
+    <webMaster>gishusheng@outlook.com (热)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 24 Feb 2021 01:44:11 +0000</lastBuildDate>
     
@@ -24,14 +24,14 @@
         <title>POI-type Embedding构建流程札记</title>
         <link>https://xunhs.github.io/posts/n/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
         <pubDate>Wed, 24 Feb 2021 01:44:11 +0000</pubDate>
-        <author>gishusheng@outlook.com (Ethan)</author>
+        <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 24 Feb 2021 01:44:11 +0000</atom:modified>
         <guid>https://xunhs.github.io/posts/n/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;本文对POI-type Embedding的构建流程进行整理。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
         
-        <dc:creator>Ethan</dc:creator>
+        <dc:creator>热</dc:creator>
         
         
         
@@ -76,7 +76,7 @@
         <title>POI数据Elasticsearch存储及查询操作札记</title>
         <link>https://xunhs.github.io/2021/02/23/368/</link>
         <pubDate>Tue, 23 Feb 2021 06:37:47 +0000</pubDate>
-        <author>gishusheng@outlook.com (Ethan)</author>
+        <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 23 Feb 2021 06:37:47 +0000</atom:modified>
         <guid>https://xunhs.github.io/2021/02/23/368/</guid>
         <description>&lt;blockquote&gt;
@@ -120,7 +120,7 @@
         <title>Papers Reading-Cognitive Places&amp;Urban Perception</title>
         <link>https://xunhs.github.io/posts/n/107/</link>
         <pubDate>Fri, 21 Feb 2020 09:12:41 +0000</pubDate>
-        <author>gishusheng@outlook.com (Ethan)</author>
+        <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 21 Feb 2020 09:12:41 +0000</atom:modified>
         <guid>https://xunhs.github.io/posts/n/107/</guid>
         <description>&lt;blockquote&gt;

@@ -5,9 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Posts – Ethan</title>
+    <title>Posts – 热</title>
     
 
+
+  
+  <script defer src="/js/fuse.min.e358b40ee430e192a8bd20052d17c0dedf3b1e401e068ac7af00e58b6d4a10ac.js"></script>
 
 
 
@@ -658,11 +661,11 @@
     var searchText = null;
     
     
-    var enableSearch = JSON.parse("false");
+    var enableSearch = JSON.parse("true");
     
-    var searchDistance = JSON.parse("100");
+    var searchDistance = JSON.parse("30000");
     
-    var searchThreshold = JSON.parse("0.4");
+    var searchThreshold = JSON.parse("0.2");
     
     var searchContent = JSON.parse("true");
     
@@ -690,10 +693,10 @@
           if (xhr.status === 200) {
             fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
               keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
-                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
+                searchContent ? ['title', 'description', 'content', 'tags'] : ['title', 'description'],
               includeMatches: enableSearchHighlight,
               shouldSort: true, 
-              threshold: searchThreshold ? searchThreshold : 0.4, 
+              threshold: searchThreshold ? searchThreshold : 0.6, 
               location: 0, 
               distance: searchDistance ? searchDistance : 100, 
               maxPatternLength: 32,
@@ -1332,14 +1335,14 @@
 <meta name="description" content="曾经沧海难为水." />
 
 
-<meta name="created" content="2021-07-01T11:54:11&#43;0800">
-<meta name="modified" content="2021-07-01T11:54:11&#43;0800">
-<meta property="article:published_time" content="2021-07-01T11:54:11&#43;0800">
+<meta name="created" content="2021-07-01T03:54:11&#43;0000">
+<meta name="modified" content="2021-07-05T09:13:50&#43;0000">
+<meta property="article:published_time" content="2021-07-01T03:54:11&#43;0000">
 
-<meta name="author" content="Ethan">
+<meta name="author" content="热">
 
 
-<meta property="og:site_name" content="Ethan">
+<meta property="og:site_name" content="热">
 <meta property="og:title" content="Posts">
 <meta property="og:url" content="https://xunhs.github.io/posts/">
 <meta property="og:type" content="website">
@@ -1377,7 +1380,7 @@
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Ethan",
+      "name": "热",
       "url": "https://xunhs.github.io/"
     }
   }
@@ -1420,7 +1423,7 @@
     
     
       <a href="/" title="Home" rel="home" class="navbar__title-link">
-        <h6 class="navbar__title">Ethan</h6>
+        <h6 class="navbar__title">热</h6>
       </a>
     
   </div>
@@ -1428,7 +1431,7 @@
   
 <div class="theme theme-mobile" data-ani="true">
   <div class="dropdown">
-    <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" style="position: absolute; top: 0;" data-ani="true">
+    <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" style="" data-ani="true">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentColor" d="M6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41 0L6.34 7.93zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>      
     </button>
     <div class="dropdown-content select-theme">
@@ -1459,6 +1462,22 @@
   </div>
 </div>
 
+
+<div class="mobile-search__btn navbar-search" data-ani="true">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+</div>
+
+<div id="search-mobile-container" class="mobile-search hide" data-dir="ltr">
+  <div class="mobile-search__top">
+    <input id="search-mobile" type="text" aria-label="Mobile Search" placeholder="Search" class="mobile-search__top--input"/>
+    <div id="search-mobile-close" class="mobile-search__top--icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>
+    </div>
+  </div>
+  <div id="search-mobile-results" class="mobile-search__body">
+    
+  </div>
+</div>
 
 
 <a role="button" class="navbar__burger" aria-label="menu" aria-expanded="false"
@@ -1536,6 +1555,16 @@
   </ul>
 </div>
   <div class="navbar__menu">
+  
+    <div class="theme">
+  <div class="dropdown">
+    <button class="dropdown-trigger navbar__slide-down navbar-search" aria-label="Search Button" data-ani="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+</div>
   
   
   
@@ -1623,7 +1652,7 @@
   
   <li >
     
-      <a href="https://xunhs.github.io/" class="capitalize">Ethan</a>
+      <a href="https://xunhs.github.io/" class="capitalize">热</a>
     
   </li>
   
@@ -1656,11 +1685,11 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://xunhs.github.io/posts/n/93/'>刘建平博客NLP-阅读笔记</a> </h5>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/n/91/'>📌&nbsp;论文写作摘抄-句型句式</a> </h5>
         <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Jan 26, 2019 </time>
+          <time title="Written At" dir="ltr">📅&nbsp;Dec 17, 2019 </time>
           
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;5&nbsp;min read </span>
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;28&nbsp;min read </span>
           
           &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
           
@@ -1669,11 +1698,7 @@
       <div>
         <div class="summary-classic__text p2">
           
-            <!-- Abstract -->
-<blockquote>
-<p>整理博客学习过程中一些笔记。</p>
-</blockquote>
-<!-- Abstract -->
+            通过论文阅读，总结常用写作过程中的词语组合、句型句式等 单词/短语 据我所知 to the best of our knowledge 另外，另一方面 additionally 具体而言，更确切的说（讲） Specifically to be more precise 简言
           
         </div>
       </div>
@@ -1695,9 +1720,9 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/2019-01-02-%E5%86%99%E5%9C%A82019%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/'>写在2019年的第一天</a> </h5>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/n/92/'>论文审评论辩</a> </h5>
         <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Jan 2, 2019 </time>
+          <time title="Written At" dir="ltr">📅&nbsp;Dec 16, 2019 </time>
           
           <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;4&nbsp;min read </span>
           
@@ -1709,7 +1734,7 @@
         <div class="summary-classic__text p2">
           
             <blockquote>
-<p>这篇文章是应该是昨天开始写的。但是没有头绪（lan），拖到今天动笔。不知道写什么，不想回忆什么，这几天的心情也是糟糕透了。刚刚看过《写在2018年的第一天》，不自觉的就笑了。看着最后罗列的新年心愿简直可笑。第一，没有完成。第二，关于最后一项，遇到心爱之人。是的，只是遇到了，也怪我没有争取吧。</p>
+<p>论文审阅过程中，与reviewers答辩常用句型句式整理。</p>
 </blockquote>
           
         </div>
@@ -1732,46 +1757,11 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/2018-10-29-%E5%AE%9C%E6%98%8C%E5%A9%9A%E7%A4%BC%E4%B9%8B%E8%A1%8C/'>宜昌婚礼之行</a> </h5>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/100/'>2019-12</a> </h5>
         <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Oct 29, 2018 </time>
+          <time title="Written At" dir="ltr">📅&nbsp;Dec 1, 2019 </time>
           
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;4&nbsp;min read </span>
-          
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            <blockquote>
-<p>这是第二次来宜昌了。也是今年第二次来宜昌。目的是参加春的婚礼~</p>
-</blockquote>
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-
-            
-                
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='https://xunhs.github.io/posts/n/124/'>学习笔记-Graph Learning(图论) Tutorial</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Oct 22, 2018 </time>
-          
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;14&nbsp;min read </span>
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;2&nbsp;min read </span>
           
           &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
           
@@ -1781,7 +1771,7 @@
         <div class="summary-classic__text p2">
           
             <blockquote>
-<p>参考了<a href="https://www.jiqizhixin.com/articles/2019-08-03-3">这里</a>，<a href="https://networkx.github.io/documentation/stable/index.html">这里</a>，主要是整理复制的<a href="https://maelfabien.github.io/machinelearning/graph_3/#">这里</a></p>
+<p>雅思考试。</p>
 </blockquote>
           
         </div>
@@ -1804,19 +1794,133 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/2018-10-17-%E5%B9%BF%E5%B7%9E%E9%9D%A2%E7%AD%BE%E4%B9%8B%E8%A1%8C/'>广州面签之行</a> </h5>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/n/86/'>图表类作文：描述性语句总结</a> </h5>
         <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Oct 17, 2018 </time>
+          <time title="Written At" dir="ltr">📅&nbsp;Nov 29, 2019 </time>
+          
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;3&nbsp;min read </span>
+          
+          &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            <blockquote>
+<p>雅思小作文，常用表述总结</p>
+</blockquote>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+
+            
+                
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/n/80/'>Grammar Learning</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="Written At" dir="ltr">📅&nbsp;Nov 15, 2019 </time>
+          
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;8&nbsp;min read </span>
+          
+          &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            <blockquote>
+<p>网上（知乎）摘录基础语法。</p>
+</blockquote>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+
+            
+                
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/85/'>写给天空的情书</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="Written At" dir="ltr">📅&nbsp;Nov 12, 2019 </time>
+          
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;1&nbsp;min read </span>
+          
+          &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            <blockquote>
+<p>2019年，夏末秋初，写给天空<br />
+献给怀抱梦想的我们</p>
+</blockquote>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+
+            
+                
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/n/81/'>English Writing 常用表达整理</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="Written At" dir="ltr">📅&nbsp;Nov 11, 2019 </time>
           
           <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;6&nbsp;min read </span>
           
+          &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
+          
         </h6>
       </header>
       <div>
         <div class="summary-classic__text p2">
           
             <blockquote>
-<p>12月份要去美国华盛顿特区参加AGU Fall Meeting，十一收到邀请函，之后就开始紧张的准备美签材料。在准备一星期之后，申请了10.15的签证面试。想着没去过广州，然后毛毛在那边，就想趁着周末早两天过去浪一圈~</p>
+<p>参考顾家北雅思作文写作，对大作文中常用表达进行整理。</p>
 </blockquote>
           
         </div>
@@ -1839,44 +1943,13 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/2018-10-06-%E5%8D%81%E4%B8%80%E9%95%BF%E5%81%87%E6%80%BB%E7%BB%93/'>十一长假总结</a> </h5>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/101/'>2019-11</a> </h5>
         <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Oct 6, 2018 </time>
+          <time title="Written At" dir="ltr">📅&nbsp;Nov 1, 2019 </time>
           
           <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;3&nbsp;min read </span>
           
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            <p>过完十一长假，今天中午回学校。</p>
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-
-            
-                
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/2018-09-02-2018-8-20-2018-9-2___1st-half-month_report/'>2018.8.20 - 2018.9.2 / 1st-half-month Report</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Sep 2, 2018 </time>
-          
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;3&nbsp;min read </span>
+          &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
           
         </h6>
       </header>
@@ -1884,7 +1957,7 @@
         <div class="summary-classic__text p2">
           
             <blockquote>
-<p>记事。</p>
+<p>Better than nothing.</p>
 </blockquote>
           
         </div>
@@ -1907,19 +1980,22 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/2018-08-22-2018%E5%B9%B4%E4%B8%8B%E5%8D%8A%E5%B9%B4%E8%AE%A1%E5%88%92%E8%A1%A8-%E8%87%B3w%E8%80%81%E5%B8%88%E9%82%AE%E4%BB%B6/'>2018年下半年计划表----至W老师邮件</a> </h5>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/88/'>热带汽水</a> </h5>
         <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Aug 22, 2018 </time>
+          <time title="Written At" dir="ltr">📅&nbsp;Oct 22, 2019 </time>
           
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;3&nbsp;min read </span>
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;11&nbsp;min read </span>
+          
+          &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
           
         </h6>
       </header>
       <div>
         <div class="summary-classic__text p2">
           
-            <p>W老师，您好。<br />
-转眼2018年又过去了接近大半，而我目前却没有长远的目标，没有较明确的方向，说起来实属不应该。周五在您办公室，听您一席话之后，确实感触颇多，自己的状态、认知也认的更清一些。周末这两天去长江大桥转了转，在江边坐了好久，一直在思考人生的意义，虽然目前对我而言还是很抽象的概念，如果一时之间能够想明白也不至于迷茫这么久吧；周天也跟父亲、母亲聊了很久，关于以后的打算等等。想着以后的事情想不明白的话，就等有时间了在想，现在的话先把到年底的计划做一下。我是一个非常懒散的人，所以您提的定制计划表的这个方法可谓是非常适用的。我算了一下，现在是2018年8月19日，到2018年12月31日还有四个半月左右，准确来讲是135天，所以我为这135天做了一个计划及实现方法（过程）：</p>
+            <blockquote>
+<p>摘抄自-热带汽水·新浪微博</p>
+</blockquote>
           
         </div>
       </div>
@@ -1941,18 +2017,22 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/2018-01-01-%E5%86%99%E5%9C%A82018%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/'>写在2018年的第一天</a> </h5>
+        <h5 class="title h5"><a href='https://xunhs.github.io/posts/j/102/'>2019-10</a> </h5>
         <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Jan 1, 2018 </time>
+          <time title="Written At" dir="ltr">📅&nbsp;Oct 22, 2019 </time>
           
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;3&nbsp;min read </span>
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;1&nbsp;min read </span>
+          
+          &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
           
         </h6>
       </header>
       <div>
         <div class="summary-classic__text p2">
           
-            <p>去年（2017）的最后几天里，我选择逃离到其他地方。</p>
+            <blockquote>
+<p>本来无一物，何处惹尘埃。</p>
+</blockquote>
           
         </div>
       </div>
@@ -1973,6 +2053,10 @@
   
   
   
+    
+      
+    
+    
     
   
   <ul class="pagination">
@@ -1984,12 +2068,10 @@
     
       
       
-        <li ><a href="/posts/page/2/">2</a></li>
+        <li class="disabled"><a name="">&hellip;</a></li>
       
     
       
-      
-        <li ><a href="/posts/page/3/">3</a></li>
       
     
       
@@ -2005,6 +2087,16 @@
       
       
         <li class="active"><a href="/posts/page/6/">6</a></li>
+      
+    
+      
+      
+        <li ><a href="/posts/page/7/">7</a></li>
+      
+    
+      
+      
+        <li ><a href="/posts/page/8/">8</a></li>
       
     
   </ul>
@@ -2035,13 +2127,26 @@
 
 <ul class="sidebar">
     
+
+<div class="search">
+  <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+  </span>
+  <input id="search" aria-label="Site Search" class="input" type="text" placeholder="Search" autocomplete="off">
+  <div id="search-results" class="dropdown">
+    <div id="search-menu" class="dropdown-menu" role="menu">
+    </div>
+  </div>
+</div>
+
+
     
     
     
     
         
         <li class="sidebar-recent">
-            <a href="/posts/j/2021-07-01-2021-7/" class="sidebar-recent__title p1">2021-7</a>
+            <a href="/posts/j/2021-7/" class="sidebar-recent__title p1">2021-7</a>
         </li>
         
         <li class="sidebar-recent">
@@ -2215,10 +2320,6 @@
 
     <div class="basicflex flexwrap">
         
-            
-        
-            
-        
     </div>
 
     <div class="footer__poweredby">
@@ -2250,25 +2351,6 @@
 </div>
 
     </div>
-
-
-    <a id="search-btn" style="display: inline-block;" href="javascript:void(0);">
-        <span class="icon-search">捜</span>
-    </a>
-    
-    <div id="fastSearch">
-        <input id="searchInput" tabindex="0">
-        <ul id="searchResults">
-        </ul>
-    </div>
-
-    
-    <script defer src="/js/fuse.min.227dc237b65445027834bc62afbd220f4bdf89bc50cc452f2bf539114167854f.js"></script>
-
-    
-    <script defer src="/js/fastsearch.23edf7ca4eb81e21b62a5edf2e438f1f95d5974a2965d58284961957b60638b5.js"></script>
-
-    
 
 </body>
 
