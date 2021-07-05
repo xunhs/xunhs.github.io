@@ -7,7 +7,8 @@
   </h3>
 </header>
 <main class="main about">
-  <article class="single__contents single__contents--about" data-dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}" data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
+  <article class="single__contents single__contents--about" data-dir="{{ if ne ($.Param " languagedir") "rtl" }}ltr{{
+    else }}rtl{{ end }}" data-ani="{{ $.Site.Params.enableUiAnimation | default " true" }}">
     {{ .Content }}
   </article>
 </main>
@@ -15,4 +16,5 @@
   {{ partial "search/site-search" . }}
 </div>
 {{ partial "script/about-script" . }}
+{{ partial "script/aplayer" . }}
 {{ end }}

@@ -693,10 +693,10 @@
           if (xhr.status === 200) {
             fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
               keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
-                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
+                searchContent ? ['title', 'description', 'content', 'tags'] : ['title', 'description'],
               includeMatches: enableSearchHighlight,
               shouldSort: true, // default: true
-              threshold: searchThreshold ? searchThreshold : 0.4, // default: 0.6 (0.0 requires a perfect match)
+              threshold: searchThreshold ? searchThreshold : 0.6, // default: 0.6 (0.0 requires a perfect match)
               location: 0, // default: 0
               distance: searchDistance ? searchDistance : 100, // default: 100
               maxPatternLength: 32,

@@ -1,12 +1,14 @@
 ---
-title: "2021-06-15-SakuraFrp配置札记"
-date: 2021-06-15T11:06:51+08:00
+title: 2021-06-15-SakuraFrp配置札记
+date: 2021-06-15T03:06:51.000Z
 categories:
   - 收藏
 tags:
   - 札记
   - 内网穿透
   - frp
+slug: 2021-06-15-sakurafrp配置札记
+lastmod: '2021-07-05T09:13:50.547Z'
 ---
 > [SakuraFrp](https://www.natfrp.com/)是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。
 
@@ -19,10 +21,13 @@ tags:
 ### 实例一：内网穿透openwrt ssh （树莓派3B+）
 #### 创建隧道
 ![](https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210615111127.png)
+{{< notice info >}}
 - 穿透节点：普通高防即可
 - 隧道类型：TCP
 - 本地地址：注意需填写真实ip地址，`127.0.0.1`此处不适用
 - 本地端口：22
+{{< /notice >}}
+
 
 #### 下载软件
 - `uname -a`查看内核：
@@ -45,10 +50,12 @@ tags:
 此处仅配置内网穿透，假设系统已经配置好jupyter环境(192.168.123.87:10086)
 #### 创建隧道
 ![](https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210615112923.png)
+{{< notice info >}}
 - 穿透节点：国外，可建站
 - 隧道：HTTP
 - 本地端口：10086
 - 绑定域名：jupyter.xunhs.cyou
+{{< /notice >}}
 
 
 

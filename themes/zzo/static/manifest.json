@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "My Extension",
-  "short_name": "My Extension",
-  "version": "versionString",
-  "default_locale": "en",
-  "description": "A plain text description",
+  "name": "热",
+  "short_name": "热",
+  "version": "0.1",
+  "default_locale": "zh",
+  "description": "曾经沧海难为水",
   "icons": [
     {
       "src": "favicon.png",
@@ -27,7 +27,7 @@
   "background": {
     "persistent": false
   },
-  "start_url": "https://exampleSite.com/",
+  "start_url": "https://xunhs.github.io/",
   "theme_color": "#fff",
   "background_color": "#fff",
   "display": "standalone"

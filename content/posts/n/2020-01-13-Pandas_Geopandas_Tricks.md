@@ -6,7 +6,7 @@ slug: 76
 date: 2020-01-13T09:01:39+00:00
 status: publish
 author: Ethan
-top: true
+pinned: true
 categories:
   - 收藏
 tags:

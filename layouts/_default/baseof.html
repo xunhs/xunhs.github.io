@@ -33,25 +33,6 @@
         {{ partial "body/main-right" . }}
     </div>
 
-
-    <a id="search-btn" style="display: inline-block;" href="javascript:void(0);">
-        <span class="icon-search">捜</span>
-    </a>
-    
-    <div id="fastSearch">
-        <input id="searchInput" tabindex="0">
-        <ul id="searchResults">
-        </ul>
-    </div>
-
-    {{ $fuse := resources.Get "js/fuse.min.js" | resources.Fingerprint }}
-    <script defer src="{{ $fuse.RelPermalink }}"></script>
-
-    {{ $fastsearch := resources.Get "js/fastsearch.js" | resources.Fingerprint }}
-    <script defer src="{{ $fastsearch.RelPermalink }}"></script>
-
-    
-
 </body>
 
 </html>

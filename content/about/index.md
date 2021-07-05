@@ -1,8 +1,10 @@
 ---
 title: "About Me"
 date: 2021-04-28T10:33:12+08:00
+layout: "about"
 toc: false
 music: true
+type: about
 ---
 
 > Hi there, I'm Ethan (Sheng Hu, 胡胜).
