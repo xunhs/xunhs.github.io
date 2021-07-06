@@ -1388,6 +1388,13 @@
 
 
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/hls.js@0.13.2/dist/hls.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.js" crossorigin="anonymous"></script>
+
+
+
 
 
 
@@ -1653,7 +1660,7 @@
 
     
     
-    var lib = JSON.parse("null");
+    var lib = JSON.parse("[\"dplayer\"]");
 
     if (lib && lib.includes('mermaid')) {
       
@@ -2298,6 +2305,43 @@ preload="none"><br />
 <li>Nov.2020 High School GIS New Talent, awarded by National University GIS Forum</li>
 <li>Dec.2020 National Scholarship for Graduate Students</li>
 </ul>
+
+
+
+
+
+
+
+<div class="dplayer-container">
+    <div id="dplayer_a"></div>
+</div>
+<style>
+    .dplayer {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: 3% auto;
+  text-align: center;
+}
+</style>
+
+<script>
+function loadDPlayer(){
+    let dp = new DPlayer({
+        container: document.getElementById("dplayer_a"),
+        loop:  false ,
+        screenshot: true,
+        video: {
+            url: "/videos/Wakin.Chau.Any.song.reminds.you.or.me.mp4"
+        },
+        subtitle: {
+            url: "/videos/Wakin.Chau.Any.song.reminds.you.or.me.vtt"
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', loadDPlayer, !1);
+</script>
 <hr />
 <p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513152718.png" alt="collie" /></p>
 
