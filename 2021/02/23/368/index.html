@@ -1349,7 +1349,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.84.4" />
+<meta name="generator" content="Hugo 0.85.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1529,6 +1529,18 @@
 
       
         <li class="navbarm__menu--item ">
+          <a href="/publication">publications</a>
+        </li>
+      
+      
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
           <a href="/about">about</a>
         </li>
       
@@ -1613,6 +1625,14 @@
   
   
   <a href="/moments" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">moments</a>
+  
+  
+  
+  
+  
+  
+  
+  <a href="/publication" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">publications</a>
   
   
   
@@ -2006,8 +2026,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">google</span><span class="o">.</span><span class="n">colab</span> <span class="kn">import</span> <span class="nn">drive</span>
-    <span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+	<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code></code></pre></li>
@@ -2024,13 +2044,13 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="s1">&#39;s define some paths where to save images, tfrecords and embeddings</span>
-    <span class="n">pathlib</span> <span class="kn">import</span> <span class="nn">Path</span>
-    <span class="n">t</span> <span class="n">image_embeddings</span>
-    <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&#34;/content/drive/MyDrive/&#34;</span><span class="p">)</span>
-    <span class="n">images</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">home</span><span class="p">,</span> <span class="s2">&#34;DataUploads/ImageEmbeddings/RasterSplitJPG/&#34;</span><span class="p">))</span>
-    <span class="n">tfrecords</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">home</span><span class="p">,</span> <span class="s2">&#34;Colab Notebooks/ImageEmbeddings/tfrecords&#34;</span><span class="p">))</span>
-    <span class="n">embeddings</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">home</span><span class="p">,</span> <span class="s2">&#34;Colab Notebooks/ImageEmbeddings/embeddings&#34;</span><span class="p">))</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="c1"># Let&#39;s define some paths where to save images, tfrecords and embeddings</span>
+	<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+	<span class="kn">import</span> <span class="nn">image_embeddings</span>
+	<span class="n">home</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&#34;/content/drive/MyDrive/&#34;</span><span class="p">)</span>
+	<span class="n">path_images</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">home</span><span class="p">,</span> <span class="s2">&#34;DataUploads/ImageEmbeddings/RasterSplitJPG/&#34;</span><span class="p">))</span>
+	<span class="n">path_tfrecords</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">home</span><span class="p">,</span> <span class="s2">&#34;Colab Notebooks/ImageEmbeddings/tfrecords&#34;</span><span class="p">))</span>
+	<span class="n">path_embeddings</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">home</span><span class="p">,</span> <span class="s2">&#34;Colab Notebooks/ImageEmbeddings/embeddings&#34;</span><span class="p">))</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code></code></pre></li>
@@ -2045,10 +2065,10 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">ame</span> <span class="o">*.</span><span class="n">JPG</span> <span class="k">with</span> <span class="o">*</span><span class="p">,</span><span class="n">jpeg</span>
-    <span class="n">t</span> <span class="n">os</span>
-    <span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&#34;/content/drive/MyDrive/DataUploads/ImageEmbeddings/RasterSplitJPG&#34;</span><span class="p">)</span>
-    <span class="n">p</span> <span class="ow">in</span> <span class="n">root_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&#34;*.JPG&#34;</span><span class="p">):</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="c1"># rename *.JPG with *,jpeg</span>
+	<span class="kn">import</span> <span class="nn">os</span>
+	<span class="n">root_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&#34;/content/drive/MyDrive/DataUploads/ImageEmbeddings/RasterSplitJPG&#34;</span><span class="p">)</span>
+	<span class="k">for</span> <span class="n">fp</span> <span class="ow">in</span> <span class="n">root_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&#34;*.JPG&#34;</span><span class="p">):</span>
       <span class="n">stem</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">stem</span>
       <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="n">root_path</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">stem</span><span class="si">}</span><span class="s2">.jpeg&#34;</span><span class="p">))</span>
 </code></pre></td></tr></table>
@@ -2064,7 +2084,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">_embeddings</span><span class="o">.</span><span class="n">inference</span><span class="o">.</span><span class="n">write_tfrecord</span><span class="p">(</span><span class="n">image_folder</span><span class="o">=</span><span class="n">path_images</span><span class="p">,</span> <span class="n">output_folder</span><span class="o">=</span><span class="n">path_tfrecords</span><span class="p">,</span> <span class="n">num_shards</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">inference</span><span class="o">.</span><span class="n">write_tfrecord</span><span class="p">(</span><span class="n">image_folder</span><span class="o">=</span><span class="n">path_images</span><span class="p">,</span> <span class="n">output_folder</span><span class="o">=</span><span class="n">path_tfrecords</span><span class="p">,</span> <span class="n">num_shards</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code></code></pre></li>
@@ -2075,8 +2095,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">出现内存溢出错误</span><span class="err">，</span><span class="n">可适当降低batch</span> <span class="n">size</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">inference</span><span class="o">.</span><span class="n">run_inference</span><span class="p">(</span><span class="n">tfrecords_folder</span><span class="o">=</span><span class="n">path_tfrecords</span><span class="p">,</span> <span class="n">output_folder</span><span class="o">=</span><span class="n">path_embeddings</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="c1"># 如出现内存溢出错误，可适当降低batch size</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">inference</span><span class="o">.</span><span class="n">run_inference</span><span class="p">(</span><span class="n">tfrecords_folder</span><span class="o">=</span><span class="n">path_tfrecords</span><span class="p">,</span> <span class="n">output_folder</span><span class="o">=</span><span class="n">path_embeddings</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code>
@@ -2091,8 +2111,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">o_name</span><span class="p">,</span> <span class="n">name_to_id</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">]</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">read_embeddings</span><span class="p">(</span><span class="n">path_embeddings</span><span class="p">)</span>
-     <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">build_index</span><span class="p">(</span><span class="n">embeddings</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="p">[</span><span class="n">id_to_name</span><span class="p">,</span> <span class="n">name_to_id</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">]</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">read_embeddings</span><span class="p">(</span><span class="n">path_embeddings</span><span class="p">)</span>
+	<span class="n">index</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">build_index</span><span class="p">(</span><span class="n">embeddings</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code></code></pre></li>
@@ -2109,16 +2129,18 @@
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_189&#39;</span><span class="p">]</span> <span class="c1"># 工业区</span>
-    <span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
-        <span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
-    <span class="mi">0</span>
-    <span class="p">(</span><span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
-    <span class="n">ts</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">name_to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_189&#39;</span><span class="p">]</span> <span class="c1"># 工业区</span>
+	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
+	<span class="mi">7440</span>
+	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
+	<span class="n">p</span><span class="o">=</span><span class="mi">7440</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+	<span class="n">results</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code> ![](https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210228114254.png)
@@ -2134,16 +2156,18 @@
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_636&#39;</span><span class="p">]</span> <span class="c1"># 绿地</span>
-    <span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
-        <span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
-    <span class="mi">3</span>
-    <span class="p">(</span><span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
-    <span class="n">ts</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">name_to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_636&#39;</span><span class="p">]</span> <span class="c1"># 绿地</span>
+	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
+	<span class="mi">5553</span>
+	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
+	<span class="n">p</span><span class="o">=</span><span class="mi">5553</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+	<span class="n">results</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code> ![](https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210228114532.png)
@@ -2159,16 +2183,18 @@
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_1423&#39;</span><span class="p">]</span> <span class="c1"># 居住区</span>
-    <span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
-        <span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
-    <span class="mi">8</span>
-    <span class="p">(</span><span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
-    <span class="n">ts</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">name_to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_1423&#39;</span><span class="p">]</span> <span class="c1"># 居住区</span>
+	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
+	<span class="mi">3818</span>
+	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
+	<span class="n">p</span><span class="o">=</span><span class="mi">3818</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+	<span class="n">results</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code> ![](https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210228114703.png)
@@ -2189,14 +2215,14 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="mi">7440</span>
-    <span class="mi">5553</span>
-    <span class="mi">1</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span>
-    <span class="mi">2</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p2</span><span class="p">]</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">image1</span><span class="p">)</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">image2</span><span class="p">)</span>
-    <span class="n">ts</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="p">(</span><span class="n">embeddings</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span> <span class="o">+</span> <span class="n">embeddings</span><span class="p">[</span><span class="n">p2</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">p1</span> <span class="o">=</span> <span class="mi">7440</span>
+	<span class="n">p2</span> <span class="o">=</span> <span class="mi">5553</span>
+	<span class="n">image1</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span>
+	<span class="n">image2</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p2</span><span class="p">]</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">image1</span><span class="p">)</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">image2</span><span class="p">)</span>
+	<span class="n">results</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="p">(</span><span class="n">embeddings</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span> <span class="o">+</span> <span class="n">embeddings</span><span class="p">[</span><span class="n">p2</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code> ![](https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210228114940.png)
@@ -2216,13 +2242,13 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">t</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
-    <span class="n">ormalized</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
-    <span class="n">np</span><span class="o">.</span><span class="n">atleast_1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">order</span><span class="p">,</span> <span class="n">axis</span><span class="p">))</span>
-    <span class="o">==</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">n</span> <span class="n">a</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">l2</span><span class="p">,</span> <span class="n">axis</span><span class="p">)</span>
-    <span class="n">lized_embeddings</span> <span class="o">=</span> <span class="n">normalized</span><span class="p">(</span><span class="n">embeddings</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="n">_normalized</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">build_index</span><span class="p">(</span><span class="n">normalized_embeddings</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+	<span class="k">def</span> <span class="nf">normalized</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+	<span class="n">l2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">atleast_1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">order</span><span class="p">,</span> <span class="n">axis</span><span class="p">))</span>
+	<span class="n">l2</span><span class="p">[</span><span class="n">l2</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+	<span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">l2</span><span class="p">,</span> <span class="n">axis</span><span class="p">)</span>
+	<span class="n">normalized_embeddings</span> <span class="o">=</span> <span class="n">normalized</span><span class="p">(</span><span class="n">embeddings</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+	<span class="n">index_normalized</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">build_index</span><span class="p">(</span><span class="n">normalized_embeddings</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code></code></pre></li>
@@ -2239,14 +2265,14 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="mi">7440</span>
-    <span class="mi">5553</span>
-    <span class="mi">1</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span>
-    <span class="mi">2</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p2</span><span class="p">]</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">image1</span><span class="p">)</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">image2</span><span class="p">)</span>
-    <span class="n">ts</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index_normalized</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="p">(</span><span class="n">normalized_embeddings</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span> <span class="o">+</span> <span class="n">normalized_embeddings</span><span class="p">[</span><span class="n">p2</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
-    <span class="n">_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">p1</span> <span class="o">=</span> <span class="mi">7440</span>
+	<span class="n">p2</span> <span class="o">=</span> <span class="mi">5553</span>
+	<span class="n">image1</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span>
+	<span class="n">image2</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p2</span><span class="p">]</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">image1</span><span class="p">)</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_picture</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">image2</span><span class="p">)</span>
+	<span class="n">results</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">index_normalized</span><span class="p">,</span> <span class="n">id_to_name</span><span class="p">,</span> <span class="p">(</span><span class="n">normalized_embeddings</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span> <span class="o">+</span> <span class="n">normalized_embeddings</span><span class="p">[</span><span class="n">p2</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">display_results</span><span class="p">(</span><span class="n">path_images</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code> ![](https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210228115412.png)
@@ -2262,9 +2288,9 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">    <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span> <span class="kn">import</span> <span class="nn">embeddings_to_numpy</span>
-    <span class="n">embeddings_numpy</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">home</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">dataset</span><span class="si">}</span><span class="s2">/embeddings_numpy&#34;</span>
-    <span class="n">dings_to_numpy</span><span class="p">(</span><span class="n">path_embeddings</span><span class="p">,</span> <span class="n">path_embeddings_numpy</span><span class="p">)</span>
+<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="kn">from</span> <span class="nn">image_embeddings.knn</span> <span class="kn">import</span> <span class="n">embeddings_to_numpy</span>
+	<span class="n">path_embeddings_numpy</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">home</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">dataset</span><span class="si">}</span><span class="s2">/embeddings_numpy&#34;</span>
+	<span class="n">embeddings_to_numpy</span><span class="p">(</span><span class="n">path_embeddings</span><span class="p">,</span> <span class="n">path_embeddings_numpy</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code>

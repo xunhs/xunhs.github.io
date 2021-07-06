@@ -2,11 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xunhs.github.io/moments/</loc>
-    <lastmod>2021-07-05T13:18:22+00:00</lastmod>
+    <loc>https://xunhs.github.io/publication/article/</loc>
+    <lastmod>2021-07-06T08:45:29+00:00</lastmod>
+  </url><url>
+    <loc>https://xunhs.github.io/publication/</loc>
+    <lastmod>2021-07-06T08:45:29+00:00</lastmod>
   </url><url>
     <loc>https://xunhs.github.io/</loc>
-    <lastmod>2021-07-05T14:14:11+00:00</lastmod>
+    <lastmod>2021-07-06T08:45:29+00:00</lastmod>
+  </url><url>
+    <loc>https://xunhs.github.io/moments/</loc>
+    <lastmod>2021-07-05T13:18:22+00:00</lastmod>
   </url><url>
     <loc>https://xunhs.github.io/moments/2021-07-03-python%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</loc>
     <lastmod>2021-07-03T09:54:20+08:00</lastmod>
@@ -185,6 +191,9 @@
     <loc>https://xunhs.github.io/tags/%E9%97%B9%E8%82%9A%E5%AD%90/</loc>
     <lastmod>2021-05-02T15:39:20+08:00</lastmod>
   </url><url>
+    <loc>https://xunhs.github.io/publication/article/hu_urban_2021/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xunhs.github.io/about/</loc>
     <lastmod>2021-04-28T10:33:12+08:00</lastmod>
   </url><url>
@@ -301,6 +310,9 @@
   </url><url>
     <loc>https://xunhs.github.io/2021/02/02/322/</loc>
     <lastmod>2021-02-02T03:06:59+00:00</lastmod>
+  </url><url>
+    <loc>https://xunhs.github.io/publication/article/hu_framework_2021/</loc>
+    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xunhs.github.io/moments/2021.1.23-%E6%B7%B1%E9%82%83%E7%9A%84%E6%A0%91/</loc>
     <lastmod>2021-01-23T10:33:12+08:00</lastmod>
@@ -800,6 +812,9 @@
     <loc>https://xunhs.github.io/tags/%E9%B2%AB%E9%B1%BC%E6%B1%A4/</loc>
     <lastmod>2020-03-01T06:39:09+00:00</lastmod>
   </url><url>
+    <loc>https://xunhs.github.io/publication/article/hu_framework_2020/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xunhs.github.io/tags/gis%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2020-02-29T09:17:34+00:00</lastmod>
   </url><url>
@@ -1022,6 +1037,9 @@
     <loc>https://xunhs.github.io/tags/%E9%94%BB%E7%82%BC/</loc>
     <lastmod>2020-01-01T06:32:46+00:00</lastmod>
   </url><url>
+    <loc>https://xunhs.github.io/publication/article/cui_recognition_2020/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xunhs.github.io/posts/journals/104/</loc>
     <lastmod>2019-12-25T09:01:00+00:00</lastmod>
   </url><url>
@@ -1166,6 +1184,12 @@
     <loc>https://xunhs.github.io/tags/%E9%9A%8F%E8%AE%B0/</loc>
     <lastmod>2019-01-02T06:25:00+00:00</lastmod>
   </url><url>
+    <loc>https://xunhs.github.io/publication/article/cui_exploring_2019/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xunhs.github.io/publication/article/liu_public_2019/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xunhs.github.io/tags/%E5%AE%9C%E6%98%8C/</loc>
     <lastmod>2018-10-29T06:23:54+00:00</lastmod>
   </url><url>
@@ -1213,6 +1237,12 @@
   </url><url>
     <loc>https://xunhs.github.io/posts/journals/2018-01-01-%E5%86%99%E5%9C%A82018%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/</loc>
     <lastmod>2018-01-01T06:15:53+00:00</lastmod>
+  </url><url>
+    <loc>https://xunhs.github.io/publication/article/wu_optimizing_2017/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xunhs.github.io/publication/article/wu_spatial_2016/</loc>
+    <lastmod>2016-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xunhs.github.io/series/</loc>
   </url><url>
