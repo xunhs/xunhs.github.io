@@ -63,6 +63,10 @@
   url = "https://cdn.jsdelivr.net/npm/typewriter-effect@2.13.1/dist/core.js"
 
 
+[js.dplayer]
+  url1 = "https://cdn.jsdelivr.net/npm/hls.js@0.13.2/dist/hls.min.js"
+  url2 = "https://cdn.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js"
+  url3 = "https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.js"
 
 # css
 [css.katex]
@@ -73,7 +77,8 @@
   sri = "sha256-On01v36B8LRDuL2tqhqs7Gb3Cm/NIpsLFy4OarOodUA="
   url = "https://cdn.jsdelivr.net/npm/@rokt33r/js-sequence-diagrams@2.0.6-2/dist/sequence-diagram-min.css"
 
-
+[css.dplayer]
+  url = "https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css"
 
 
 
@@ -251,4 +256,5 @@
 [echarts.echarts_wordcloud]
   url = "https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.0.0/dist/echarts-wordcloud.min.js"
 
-  
+
+

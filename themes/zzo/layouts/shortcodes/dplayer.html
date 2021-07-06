@@ -1,0 +1,35 @@
+{{ $container := (.Get "container") }}
+{{ $url := (.Get "url") }}
+{{ $sub := (.Get "sub") }}
+
+<!-- https://blog.233so.com/2020/04/hugo-loveit-with-dplayer-supported/ -->
+<!-- https://dplayer.js.org/zh/guide.html#%E5%8F%82%E6%95%B0 -->
+
+<div class="dplayer-container">{{ .Inner }}</div>
+<style>
+    .dplayer {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: 3% auto;
+  text-align: center;
+}
+</style>
+
+<script>
+function loadDPlayer(){
+    let dp = new DPlayer({
+        container: document.getElementById({{ $container }}),
+        loop: {{ .Get "loop" | default false }},
+        screenshot: true,
+        video: {
+            url: {{ $url }}
+        },
+        subtitle: {
+            url: {{ $sub }}
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', loadDPlayer, !1);
+</script>
