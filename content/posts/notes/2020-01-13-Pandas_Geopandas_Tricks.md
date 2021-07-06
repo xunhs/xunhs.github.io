@@ -1,11 +1,7 @@
 ---
-layout: post
-cid: 76
 title: Pandas/Geopandas Tricks
-slug: 76
-date: 2020-01-13T09:01:39+00:00
-status: publish
-author: Ethan
+slug: pandas-geopandas-tricks
+date: 2020-01-13T09:01:39.000Z
 pinned: true
 categories:
   - 收藏
@@ -14,8 +10,7 @@ tags:
   - Pandas
   - GeoPandas
   - 优化
-img: 'https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200307175915.jpg'
-abbrlink: df5854f3
+lastmod: '2021-07-06T01:21:07.606Z'
 ---
 
 > 总结个人使用中常用Pandas及扩展插件使用技巧
@@ -283,6 +278,40 @@ if __name__ == "__main__":
 ```Python
 mongo.collection.insert(json.loads(df.T.to_json()).values())
 ```
+
+#### to_sqlite
+有时候大批量的df.query查询太耗时间了，没有**sql查询速度快**。因此想到的一个解决方案是把查询目标的DataFrame存储到sqlite数据库，然后使用sql进行查询
+```Python
+# pip install sqlalchemy
+from sqlalchemy import create_engine
+import os
+import geopandas as gpd
+import pandas
+from tqdm import tqdm
+
+
+data_root = "../data"
+nodes_fp = os.path.join(data_root, "wh/wh.shp/nodes.shp")
+edges_fp = os.path.join(data_root, "wh/wh.shp/edges.shp")
+edges_gdf = gpd.read_file(edges_fp)
+
+# Create an in-memory SQLite database.
+engine = create_engine('sqlite://', echo=False)
+edges_gdf[['fid', 'from', 'to']].to_sql('edges', con=engine, if_exists='replace')
+
+# 查询edges中fid为1，2的元素，并取值from和to
+engine.execute("SELECT e.'from', e.'to'  FROM edges as e where e.'fid'in (1,2,3, '')").fetchall()
+```
+{{< notice success >}} 
+- [df.to_sql](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_sql.html); 
+- create_engine:如果想保存到本地，`sqlite://`后填入地址即可，如`engine = create_engine('sqlite:///C:\\sqlitedbs\\school.db', echo=True)`
+- 此处转换DataFrame为一个SQLite数据库，放在内存中
+- if_exists : {'fail', 'replace', 'append'}, default 'fail'
+  * fail: Raise a ValueError.
+  * replace: Drop the table before inserting new values.
+  * append: Insert new values to the existing table.
+- to_sql还可以通过`dtype={"A": Integer()}`来定义数据类型，需先引入`from sqlalchemy.types import Integer`; sqlalchemy通用数据类型💨[sqlalchemy.types](https://docs.sqlalchemy.org/en/14/core/type_basics.html#generic-types)
+{{< /notice >}}
 
 
 ### 数据处理
