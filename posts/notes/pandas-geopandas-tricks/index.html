@@ -653,7 +653,7 @@
     
     var baseurl = JSON.parse("\"https://www.xunhs.cyou/\"");
     
-    var permalink = JSON.parse("\"https://www.xunhs.cyou/posts/notes/76/\"");
+    var permalink = JSON.parse("\"https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1336,16 +1336,15 @@
 <meta name="keywords" content="Python,Pandas,GeoPandas,优化">
 
 <meta name="created" content="2020-01-13T09:01:39&#43;0000">
-<meta name="modified" content="2020-01-13T09:01:39&#43;0000">
+<meta name="modified" content="2021-07-06T01:21:07&#43;0000">
 <meta property="article:published_time" content="2020-01-13T09:01:39&#43;0000">
 
-<meta name="author" content="Ethan">
-<meta property="article:author" content="https://www.xunhs.cyou/posts/notes/76/@Ethan">
+<meta name="author" content="热">
 
 
 <meta property="og:site_name" content="热">
 <meta property="og:title" content="Pandas/Geopandas Tricks">
-<meta property="og:url" content="https://www.xunhs.cyou/posts/notes/76/">
+<meta property="og:url" content="https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
@@ -1358,7 +1357,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://www.xunhs.cyou/posts/notes/76/">
+<link rel="canonical" href="https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1374,14 +1373,10 @@
     "@type": "WebPage",
     "headline": "Pandas/Geopandas Tricks",
     "datePublished": "2020-01-13T09:01:39Z",
-    "dateModified": "2020-01-13T09:01:39Z",
-    "url" : "https://www.xunhs.cyou/posts/notes/76/",
+    "dateModified": "2021-07-06T01:21:07Z",
+    "url" : "https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/",
     "description": "\u003cblockquote\u003e \u003cp\u003e总结个人使用中常用Pandas及扩展插件使用技巧\u003c/p\u003e \u003c/blockquote\u003e",
     "keywords": ["Python","Pandas","GeoPandas","优化"],
-    "author": {
-      "@type": "Person",
-      "name": "Ethan"
-    },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.xunhs.cyou/"
@@ -1700,9 +1695,9 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Jan 13, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;12&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <time class="single__info" title="Modified At"> 📝&nbsp;Jul 6, 2021 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;Ethan</span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;13&nbsp;min read </span>
   
   <span class="single__info">
     
@@ -2217,7 +2212,69 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">mongo</span><span class="o">.</span><span class="n">collection</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="数据处理">数据处理</h3>
+</div><h4 id="to_sqlite">to_sqlite</h4>
+<p>有时候大批量的df.query查询太耗时间了，没有<strong>sql查询速度快</strong>。因此想到的一个解决方案是把查询目标的DataFrame存储到sqlite数据库，然后使用sql进行查询</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># pip install sqlalchemy</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
+
+
+<span class="n">data_root</span> <span class="o">=</span> <span class="s2">&#34;../data&#34;</span>
+<span class="n">nodes_fp</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_root</span><span class="p">,</span> <span class="s2">&#34;wh/wh.shp/nodes.shp&#34;</span><span class="p">)</span>
+<span class="n">edges_fp</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_root</span><span class="p">,</span> <span class="s2">&#34;wh/wh.shp/edges.shp&#34;</span><span class="p">)</span>
+<span class="n">edges_gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">edges_fp</span><span class="p">)</span>
+
+<span class="c1"># Create an in-memory SQLite database.</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;sqlite://&#39;</span><span class="p">,</span> <span class="n">echo</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">edges_gdf</span><span class="p">[[</span><span class="s1">&#39;fid&#39;</span><span class="p">,</span> <span class="s1">&#39;from&#39;</span><span class="p">,</span> <span class="s1">&#39;to&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s1">&#39;edges&#39;</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">)</span>
+
+<span class="c1"># 查询edges中fid为1，2的元素，并取值from和to</span>
+<span class="n">engine</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&#34;SELECT e.&#39;from&#39;, e.&#39;to&#39;  FROM edges as e where e.&#39;fid&#39;in (1,2,3, &#39;&#39;)&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="notices success" data-title="Success">
+  <ul>
+<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_sql.html">df.to_sql</a>;</li>
+<li>create_engine:如果想保存到本地，<code>sqlite://</code>后填入地址即可，如<code>engine = create_engine('sqlite:///C:\\sqlitedbs\\school.db', echo=True)</code></li>
+<li>此处转换DataFrame为一个SQLite数据库，放在内存中</li>
+<li>if_exists : {&lsquo;fail&rsquo;, &lsquo;replace&rsquo;, &lsquo;append&rsquo;}, default &lsquo;fail&rsquo;
+<ul>
+<li>fail: Raise a ValueError.</li>
+<li>replace: Drop the table before inserting new values.</li>
+<li>append: Insert new values to the existing table.</li>
+</ul>
+</li>
+<li>to_sql还可以通过<code>dtype={&quot;A&quot;: Integer()}</code>来定义数据类型，需先引入<code>from sqlalchemy.types import Integer</code>; sqlalchemy通用数据类型💨<a href="https://docs.sqlalchemy.org/en/14/core/type_basics.html#generic-types">sqlalchemy.types</a></li>
+</ul>
+
+</div>
+<h3 id="数据处理">数据处理</h3>
 <h4 id="基础操作">基础操作</h4>
 <h5 id="数据筛选行操作">数据筛选（行操作）</h5>
 <p>在筛选数据的时候，我们一般用<code>df[条件]</code>的格式，其中的条件，是对data每一行数据的true和false布尔变量的Series</p>
@@ -3308,7 +3365,7 @@ shaply包的vectorized包含着一些对查询的优化，通过shaply和geopand
     </div>
     <div class="whoami__title">
       
-        Ethan
+        热
       
     </div>
     <div class="whoami__desc">
@@ -4359,6 +4416,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <ul>
                 <li><a href="#postgresql交互">postgresql交互</a></li>
                 <li><a href="#mongodb交互">mongodb交互</a></li>
+                <li><a href="#to_sqlite">to_sqlite</a></li>
               </ul>
             </li>
             <li><a href="#数据处理">数据处理</a>
