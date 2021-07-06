@@ -1,6 +1,8 @@
 {{ $js := .Site.Data.lib.js }}
 {{ $css := .Site.Data.lib.css }}
 {{ $d3 := .Site.Data.lib.d3 }}
+{{ $echarts := .Site.Data.lib.echarts }}
+
 
 {{ $getParents := resources.Get "js/helper/getParents.js" | resources.Minify }}
 <script defer src="{{ $getParents.RelPermalink }}"></script>
@@ -14,6 +16,16 @@
 <script defer src="{{ $fadeinout.RelPermalink }}"></script>
 {{ $throttle := resources.Get "js/helper/throttle.js" | resources.Minify }}
 <script defer src="{{ $throttle.RelPermalink }}"></script>
+
+
+{{ if in .Params.Libraries "echarts" }}
+  <script defer src="{{ $echarts.echarts.url }}" crossorigin="anonymous"></script>
+{{ end }}
+
+{{ if in .Params.Libraries "echarts_wordcloud" }}
+  <script defer src="{{ $echarts.echarts_wordcloud.url }}" crossorigin="anonymous"></script>
+{{ end }}
+
 
 {{ if in .Params.Libraries "d3" }}
   <script defer src="{{ $d3.d3.url }}" integrity="{{ $d3.d3.sri }}" crossorigin="anonymous"></script>

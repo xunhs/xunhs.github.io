@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<header class="header basicflex-column">
+  <h3 class="h3 terms__title">
+    {{ .Title }}
+  </h3>
+  <div class="single__contents">
+    {{ .Content }}
+  </div>
+</header>
+<main class="main">
+  <div class="summary__container" data-display="block">
+    {{ $paginator := .Paginate (where .Pages "Type" .Type).ByWeight }}
+    {{ range $paginator.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+    {{ partial "pagination/pagination" . }}
+
+</div>
+
+</main>
+{{ end }}

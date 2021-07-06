@@ -241,3 +241,14 @@
 [d3.d3_cloud]
   sri = "" # no sri
   url = "https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.min.js"
+
+
+
+# echarts
+[echarts.echarts]
+  url = "https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"
+
+[echarts.echarts_wordcloud]
+  url = "https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.0.0/dist/echarts-wordcloud.min.js"
+
+  

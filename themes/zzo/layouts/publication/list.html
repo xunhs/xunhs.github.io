@@ -1,4 +1,13 @@
 {{ define "main" }}
+
+<header class="header basicflex-column">
+  <h3 class="h3 terms__title">
+    {{ .Title }}
+  </h3>
+  <div class="px py p2 single__contents">
+    {{ .Content }}
+  </div>
+</header>
 <main class="main pub inner" data-sidebar-position="{{ $.Param "sidebarPosition" }}">
   {{ if eq .Permalink .FirstSection.Permalink }}
     <section class="pub__section lmr">
