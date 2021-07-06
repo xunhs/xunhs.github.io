@@ -44,7 +44,7 @@ searchContent = true # include content to search index
 searchDistance = 30000 # fuse option
 searchThreshold = 0.2 # 0.0: exact match, 1.0: any match
 
-
+pubPaginate = 20
 
 writtenTimeIcon = "📅"
 modifiedTimeIcon = "📝"

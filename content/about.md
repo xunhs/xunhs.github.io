@@ -59,14 +59,15 @@ type: about
 - My research interest includes the geospatial data mining and modeling in urban areas through the application of innovative geographic information system (GIS) and GeoAI methods.
 - I am an AI fan!
 - I’m currently learning everything🤔 
+- CV: [zh](https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%AE%80%E5%8E%86-%E4%B8%AD%E6%96%87-%E8%83%A1%E8%83%9C-912a7f-Ag.pdf); [en](https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/RESUME-Hu%20Sheng-cb5c36-Ag.pdf)
 
-
-### Connect with me:
+### Connect with me
 - EMAIL: gishusheng@outlook.com
 - QQ: 278738411
 
 
 ### Publications
+[An overview of my publications](/publication/):
 - Hu, Sheng, Song Gao, Liang Wu, Yongyang Xu, Ziwei Zhang, Haifu Cui, Xi Gong. “Urban function classification at road segment level using taxi trajectory data: A graph convolutional neural network approach”. Computers, Environment and Urban Systems 87 (2021): 101619.
 - Hu, Sheng, Yongyang Xu, Liang Wu, Xincai Wu, Run Wang, Ziwei Zhang, Rujuan Lu, and Wei Mao. "A framework to detect and understand thematic places of a city using geospatial data." Cities 109: 103012.
 -  Hu, Sheng, Zhanjun He, Liang Wu, Li Yin, Yongyang Xu, and Haifu Cui. "A framework for extracting urban functional regions based on multiprototype word embeddings using points-of-interest data." Computers, Environment and Urban Systems 80 (2020): 101442.
@@ -75,6 +76,12 @@ type: about
 -  Cui, Haifu, Liang Wu, Zhanjun He, Sheng Hu, Kai Ma, Li Yin, and Liufeng Tao. "Exploring Multidimensional Spatiotemporal Point Patterns Based on an Improved Affinity Propagation Algorithm." International journal of environmental research and public health 16, no. 11 (2019): 1988.
 -  Wu, Liang, Fei Deng, Zhong Xie, Sheng Hu, Shu Shen, Junming Shi, and Dan Liu. "Spatial analysis of severe fever with thrombocytopenia syndrome virus in China using a geographically weighted logistic regression model." International journal of environmental research and public health 13, no. 11 (2016): 1125.
 
+### Awards and Honors
+- Jun.2017 Outstanding Graduate Awards of China University of Geosciences, Wuhan
+- Apr.2020 Outstanding Doctoral Innovation Fund of China University of Geosciences, Wuhan
+- Jun.2020 Third prize in the final, Huawei Cloud Cup: Shenzhen Open Data Application Innovation Competition
+- Nov.2020 High School GIS New Talent, awarded by National University GIS Forum 
+- Dec.2020 National Scholarship for Graduate Students 
 
 ------------
 
