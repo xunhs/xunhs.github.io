@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Pandas on 热</title>
-    <link>https://www.xunhs.cyou/tags/pandas/</link>
+    <link>https://xunhs.cyou/tags/pandas/</link>
     <description>Recent content in Pandas on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 08 Jun 2021 17:08:48 +0800</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xunhs.cyou/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>2021-06-08-出租车数据处理札记</title>
-        <link>https://www.xunhs.cyou/posts/notes/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</link>
+        <link>https://xunhs.cyou/posts/notes/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</link>
         <pubDate>Tue, 08 Jun 2021 17:08:48 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 08 Jun 2021 17:08:48 +0800</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</guid>
+        <guid>https://xunhs.cyou/posts/notes/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;记录出租车数据处理基本流程及部分可视化分析。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -66,11 +66,11 @@
       
       <item>
         <title>Python多线程/进程技巧</title>
-        <link>https://www.xunhs.cyou/posts/notes/74/</link>
+        <link>https://xunhs.cyou/posts/notes/74/</link>
         <pubDate>Fri, 17 Jan 2020 09:02:53 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 17 Jan 2020 09:02:53 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/74/</guid>
+        <guid>https://xunhs.cyou/posts/notes/74/</guid>
         <description>&lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;整理Python并行化常用技巧&lt;/p&gt;
@@ -116,11 +116,11 @@
       
       <item>
         <title>Pandas/Geopandas Tricks</title>
-        <link>https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/</link>
+        <link>https://xunhs.cyou/posts/notes/pandas-geopandas-tricks/</link>
         <pubDate>Mon, 13 Jan 2020 09:01:39 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 06 Jul 2021 01:21:07 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/</guid>
+        <guid>https://xunhs.cyou/posts/notes/pandas-geopandas-tricks/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;总结个人使用中常用Pandas及扩展插件使用技巧&lt;/p&gt;
 &lt;/blockquote&gt;</description>
