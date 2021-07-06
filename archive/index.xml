@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Archive on 热</title>
-    <link>https://xunhs.github.io/archive/</link>
+    <link>https://www.xunhs.cyou/archive/</link>
     <description>Recent content in Archive on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 17 May 2021 12:50:46 +0900</lastBuildDate>
     
-        <atom:link href="https://xunhs.github.io/archive/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.xunhs.cyou/archive/index.xml" rel="self" type="application/rss+xml" />
     
 
       

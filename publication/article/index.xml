@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>article on 热</title>
-    <link>https://xunhs.github.io/publication/article/</link>
+    <link>https://www.xunhs.cyou/publication/article/</link>
     <description>Recent content in article on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 06 Jul 2021 08:45:29 +0000</lastBuildDate>
     
-        <atom:link href="https://xunhs.github.io/publication/article/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.xunhs.cyou/publication/article/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Urban function classification at road segment level using taxi trajectory data: A graph convolutional neural network approach</title>
-        <link>https://xunhs.github.io/publication/article/hu_urban_2021/</link>
+        <link>https://www.xunhs.cyou/publication/article/hu_urban_2021/</link>
         <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 01 May 2021 00:00:00 +0000</atom:modified>
-        <guid>https://xunhs.github.io/publication/article/hu_urban_2021/</guid>
+        <guid>https://www.xunhs.cyou/publication/article/hu_urban_2021/</guid>
         <description></description>
         
         <dc:creator>热</dc:creator>
@@ -40,11 +40,11 @@
       
       <item>
         <title>A framework to detect and understand thematic places of a city using geospatial data</title>
-        <link>https://xunhs.github.io/publication/article/hu_framework_2021/</link>
+        <link>https://www.xunhs.cyou/publication/article/hu_framework_2021/</link>
         <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 01 Feb 2021 00:00:00 +0000</atom:modified>
-        <guid>https://xunhs.github.io/publication/article/hu_framework_2021/</guid>
+        <guid>https://www.xunhs.cyou/publication/article/hu_framework_2021/</guid>
         <description></description>
         
         <dc:creator>热</dc:creator>
@@ -58,11 +58,11 @@
       
       <item>
         <title>A framework for extracting urban functional regions based on multiprototype word embeddings using points-of-interest data</title>
-        <link>https://xunhs.github.io/publication/article/hu_framework_2020/</link>
+        <link>https://www.xunhs.cyou/publication/article/hu_framework_2020/</link>
         <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 01 Mar 2020 00:00:00 +0000</atom:modified>
-        <guid>https://xunhs.github.io/publication/article/hu_framework_2020/</guid>
+        <guid>https://www.xunhs.cyou/publication/article/hu_framework_2020/</guid>
         <description></description>
         
         <dc:creator>热</dc:creator>
@@ -76,11 +76,11 @@
       
       <item>
         <title>Recognition of Urban Functions and Mixed Use Based on Residents’ Movement and Topic Generation Model: The Case of Wuhan, China</title>
-        <link>https://xunhs.github.io/publication/article/cui_recognition_2020/</link>
+        <link>https://www.xunhs.cyou/publication/article/cui_recognition_2020/</link>
         <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 01 Jan 2020 00:00:00 +0000</atom:modified>
-        <guid>https://xunhs.github.io/publication/article/cui_recognition_2020/</guid>
+        <guid>https://www.xunhs.cyou/publication/article/cui_recognition_2020/</guid>
         <description></description>
         
         <dc:creator>热</dc:creator>
@@ -94,11 +94,11 @@
       
       <item>
         <title>Exploring Multidimensional Spatiotemporal Point Patterns Based on an Improved Affinity Propagation Algorithm</title>
-        <link>https://xunhs.github.io/publication/article/cui_exploring_2019/</link>
+        <link>https://www.xunhs.cyou/publication/article/cui_exploring_2019/</link>
         <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 01 Jan 2019 00:00:00 +0000</atom:modified>
-        <guid>https://xunhs.github.io/publication/article/cui_exploring_2019/</guid>
+        <guid>https://www.xunhs.cyou/publication/article/cui_exploring_2019/</guid>
         <description></description>
         
         <dc:creator>热</dc:creator>
@@ -112,11 +112,11 @@
       
       <item>
         <title>Public Knowledge about Dementia in China: A National WeChat-Based Survey</title>
-        <link>https://xunhs.github.io/publication/article/liu_public_2019/</link>
+        <link>https://www.xunhs.cyou/publication/article/liu_public_2019/</link>
         <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 01 Jan 2019 00:00:00 +0000</atom:modified>
-        <guid>https://xunhs.github.io/publication/article/liu_public_2019/</guid>
+        <guid>https://www.xunhs.cyou/publication/article/liu_public_2019/</guid>
         <description></description>
         
         <dc:creator>热</dc:creator>
@@ -130,11 +130,11 @@
       
       <item>
         <title>Optimizing Cruising Routes for Taxi Drivers Using a Spatio-Temporal Trajectory Model</title>
-        <link>https://xunhs.github.io/publication/article/wu_optimizing_2017/</link>
+        <link>https://www.xunhs.cyou/publication/article/wu_optimizing_2017/</link>
         <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 01 Nov 2017 00:00:00 +0000</atom:modified>
-        <guid>https://xunhs.github.io/publication/article/wu_optimizing_2017/</guid>
+        <guid>https://www.xunhs.cyou/publication/article/wu_optimizing_2017/</guid>
         <description></description>
         
         <dc:creator>热</dc:creator>
@@ -148,11 +148,11 @@
       
       <item>
         <title>Spatial Analysis of Severe Fever with Thrombocytopenia Syndrome Virus in China Using a Geographically Weighted Logistic Regression Model</title>
-        <link>https://xunhs.github.io/publication/article/wu_spatial_2016/</link>
+        <link>https://www.xunhs.cyou/publication/article/wu_spatial_2016/</link>
         <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 01 Nov 2016 00:00:00 +0000</atom:modified>
-        <guid>https://xunhs.github.io/publication/article/wu_spatial_2016/</guid>
+        <guid>https://www.xunhs.cyou/publication/article/wu_spatial_2016/</guid>
         <description></description>
         
         <dc:creator>热</dc:creator>
