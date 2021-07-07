@@ -2331,20 +2331,49 @@ shifafl, Daniell<br />
 shquer, Danny<br />
 &hellip;</p>
 </blockquote>
-<p>实现方法:</p>
-<pre><code>reg: (\w+),\s(\w+)
+<p><div class="expand">
+  <button type="button" class="expand__button" aria-label="Expand Button">
+    <span class="expand-icon expand-icon__right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+    </span>
+    实现方法:
+  </button>
+  <div class="expand__content">
+    <pre><code>```
+reg: (\w+),\s(\w+)
 replace: $2 $1
-</code></pre><p>注意：$0 是所有匹配到的，所以第一个加括号的是$1</p>
+```
+</code></pre>
+
+  </div>
+</div><br />
+注意：$0 是所有匹配到的，所以第一个加括号的是$1</p>
 </li>
 <li>
 <p>匹配markdown中的link标签，并替换为html标签</p>
-<pre><code> [google](http://google.com), [test]
- [itp](http://itp.nyu.edu)
- [Coding Rainbow](http://codingrainbow.com)
-</code></pre><p>第一个想考虑匹配[google]这个东西，立马想到正则表达式<code>\[.*\]</code>。第一行的内容会全部匹配下来，而不能区分[google]和[test]。 之所以这样，是<strong>因为.是贪婪的，他表示所有，所有能匹配到的</strong>，所以当然也包括了]，一直到这一行的最后一个]，它才停止。所以为了让它能正确匹配，需要<strong>去掉这种贪婪的属性</strong>。这里用到？ 。 <strong>当?放在了quantifiers符号后，表示去掉贪婪属性，匹配到终止条件，即可停下</strong>。即<code>\[.*?\]</code></p>
-<pre><code>  reg: \[(.*?)\]\((http.*?)\)
+<blockquote>
+<p>[google](<a href="http://google.com">http://google.com</a>), [test]<br />
+[itp](<a href="http://itp.nyu.edu">http://itp.nyu.edu</a>)<br />
+[Coding Rainbow](<a href="http://codingrainbow.com">http://codingrainbow.com</a>)</p>
+</blockquote>
+<p>第一个想考虑匹配[google]这个东西，立马想到正则表达式<code>\[.*\]</code>。第一行的内容会全部匹配下来，而不能区分[google]和[test]。 之所以这样，是<strong>因为.是贪婪的，他表示所有，所有能匹配到的</strong>，所以当然也包括了]，一直到这一行的最后一个]，它才停止。所以为了让它能正确匹配，需要<strong>去掉这种贪婪的属性</strong>。这里用到？ 。 <strong>当?放在了quantifiers符号后，表示去掉贪婪属性，匹配到终止条件，即可停下</strong>。即<code>\[.*?\]</code><br />
+<div class="expand">
+  <button type="button" class="expand__button" aria-label="Expand Button">
+    <span class="expand-icon expand-icon__right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+    </span>
+    实现方法:
+  </button>
+  <div class="expand__content">
+    <pre><code>```
+  reg: \[(.*?)\]\((http.*?)\)
   replace: &lt;a href=&quot;$2&quot;&gt;$1&lt;/a&gt;
-</code></pre></li>
+```
+</code></pre>
+
+  </div>
+</div></p>
+</li>
 </ol>
 <h4 id="使用选择器">使用<code>\</code>选择器</h4>
 <blockquote>
@@ -2607,6 +2636,10 @@ a a good good dog. Don&rsquo;t you you thinks so so ?</p>
     <ul class="related-ul">
         
         <li>
+          <a href="/posts/journals/2021-7/" class="related__link">2021-7</a>
+        </li>
+        
+        <li>
           <a href="/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/" class="related__link">2021-06-15-SakuraFrp配置札记</a>
         </li>
         
@@ -2620,10 +2653,6 @@ a a good good dog. Don&rsquo;t you you thinks so so ?</p>
         
         <li>
           <a href="/posts/notes/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/" class="related__link">2021-05-21-hugo学习札记</a>
-        </li>
-        
-        <li>
-          <a href="/posts/notes/2021-05-09-urban-functional-regionalization/" class="related__link">2021-05-09: Urban Functional Regionalization</a>
         </li>
         
     </ul>
