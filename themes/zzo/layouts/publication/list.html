@@ -11,22 +11,22 @@
 <main class="main pub inner" data-sidebar-position="{{ $.Param "sidebarPosition" }}">
   {{ if eq .Permalink .FirstSection.Permalink }}
     <section class="pub__section lmr">
-      {{ partial "publication/pub-toolbar" . }}
-      {{ partial "publication/pub-overview" . }}
-      {{ partial "script/pub-overview-script" . }}
+      {{ partial "publication/pub-toolbar.html" . }}
+      {{ partial "publication/pub-overview.html" . }}
+      {{ partial "script/pub-overview-script.html" . }}
     </section>
   {{ else }}
     <section class="pub__section lmr">
-      {{ partial "publication/pub-toolbar" . }}
-      {{ partial "publication/pub-list" . }}
+      {{ partial "publication/pub-toolbar.html" . }}
+      {{ partial "publication/pub-list.html" . }}
       <div class="grow"></div>
-      {{ partial "pagination/pagination" . }}
+      {{ partial "pagination/pagination.html" . }}
     </section>
   {{ end }}
 
-  {{ partial "script/pub-list-script" . }}
+  {{ partial "script/pub-list-script.html" . }}
   <div class="hide">
-    {{ partial "search/site-search" . }}
+    {{ partial "search/site-search.html" . }}
   </div>
 </main>
 {{ end }}

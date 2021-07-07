@@ -1,23 +1,23 @@
 {{ if $.Param "enableComment" }}
   {{ if $.Param "disqus_shortname" }}
-    {{ partial "comments/disqus.html" . }}
+    {{ partial "comments/disqus.html.html" . }}
   {{ else if $.Param "commento" }}
-    {{ partial "comments/commento.html" . }}
+    {{ partial "comments/commento.html.html" . }}
   {{ else if $.Param "valine.enable" }}
-    {{ partial "comments/valine.html" . }}
+    {{ partial "comments/valine.html.html" . }}
   {{ else if $.Param "changyan.changyanAppid" }}
-    {{ partial "comments/changyan.html" . }}
+    {{ partial "comments/changyan.html.html" . }}
   {{ else if $.Param "livere.livereUID" }}
-    {{ partial "comments/livere.html" . }}
+    {{ partial "comments/livere.html.html" . }}
   {{ else if $.Param "gitment.owner" }}
-    {{ partial "comments/gitment.html" . }}
+    {{ partial "comments/gitment.html.html" . }}
   {{ else if $.Param "gitalk.owner" }}
-    {{ partial "comments/gitalk.html" . }}
+    {{ partial "comments/gitalk.html.html" . }}
   {{ else if $.Param "utterances.owner" }}
-    {{ partial "comments/utterances.html" . }}
+    {{ partial "comments/utterances.html.html" . }}
   {{ else if $.Param "isso.enable" }}
-    {{ partial "comments/isso.html" . }}
+    {{ partial "comments/isso.html.html" . }}
   {{ else if $.Param "telegram.enable" }}
-    {{ partial "comments/telegram.html" . }}
+    {{ partial "comments/telegram.html.html" . }}
   {{ end }}
 {{ end }}

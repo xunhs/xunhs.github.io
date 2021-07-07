@@ -1,7 +1,7 @@
 <footer class="footer">
-    {{ partial "footer/select-lang" . }}
-    {{ partial "footer/links-social.html" . }}
-    {{ partial "footer/go-to-top" . }}
+    {{ partial "footer/select-lang.html" . }}
+    {{ partial "footer/links-social.html.html" . }}
+    {{ partial "footer/go-to-top.html" . }}
     <hr />
 
     <div class="basicflex flexwrap">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="footer__poweredby">
-        {{ partial "footer/site-counter" . }}
+        {{ partial "footer/site-counter.html" . }}
         {{ if $.Site.Copyright }}        
             <p class="caption">
                 {{ if $.Site.Params.copyrightOptions.enableCopyrightLink }}

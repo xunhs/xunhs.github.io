@@ -3,29 +3,29 @@
   {{ if .Params.enableBio }}
     <aside class="{{ if eq ($.Param "sidebarPosition") "left" }}l{{ else }}r{{ end }}">
       <div class="showcase__bio">
-        {{ partial "search/site-search" . }}
-        {{ partial "sidebar/site-bio" . }}
+        {{ partial "search/site-search.html" . }}
+        {{ partial "sidebar/site-bio.html" . }}
       </div>
     </aside>
   {{ end }}
   <section class="showcase__section {{ if .Params.enableBio }}{{ if eq ($.Param "sidebarPosition") "left" }}mr{{ else }}lm{{ end }}{{ else }}lmr{{ end }}">
     {{ if .Params.enableBio }}
       <div class="showcase__bio--mobile hide">
-        {{ partial "body/whoami" . }}
+        {{ partial "body/whoami.html" . }}
       </div>
     {{ end }}
-    {{ partial "showcase/show-nav" . }}
+    {{ partial "showcase/show-nav.html" . }}
     {{ if eq .Permalink .FirstSection.Permalink }}
-      {{ partial "showcase/show-pinned" . }}
+      {{ partial "showcase/show-pinned.html" . }}
     {{ else }}
-      {{ partial "showcase/show-section" . }}
+      {{ partial "showcase/show-section.html" . }}
     {{ end }}
   </section>
   
-  {{ partial "script/showcase-script" . }}
+  {{ partial "script/showcase-script.html" . }}
   {{ if not .Params.enableBio }}
     <div class="hide">
-      {{ partial "search/site-search" . }}
+      {{ partial "search/site-search.html" . }}
     </div>
   {{ end }}
 </main>

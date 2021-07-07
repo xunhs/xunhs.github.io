@@ -18,17 +18,17 @@
             {{ range $paginator.Pages }}
                 {{ .Render "summary" }}
             {{ end }}
-            {{ partial "pagination/pagination" . }}
+            {{ partial "pagination/pagination.html" . }}
         </div>
-        {{ partial "search/search-result-desktop" . }}
+        {{ partial "search/search-result-desktop.html" . }}
     </div>
 
     {{ if $.Param "enableSidebar" }}
         <aside class="list__sidebar {{ if eq ($.Param "sidebarPosition") "left" }}l{{ else }}r{{ end }}" data-dir="{{ $.Param "languagedir" | default "ltr" }}">
-            {{ partial "sidebar/sidebar-home" . }}
+            {{ partial "sidebar/sidebar-home.html" . }}
         </aside>
     {{ end }}
 </main>
-{{ partial "script/sidebar-script" . }}
-{{ partial "script/home-script" . }}
+{{ partial "script/sidebar-script.html" . }}
+{{ partial "script/home-script.html" . }}
 {{ end }}

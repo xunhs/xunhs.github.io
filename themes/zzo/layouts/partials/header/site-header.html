@@ -1,15 +1,15 @@
 {{ if .IsHome }}
 <header class="header {{ if $.Param "hideHomeHeaderWhenMobile" }}hide-mobile{{ end }}">
     {{ if and ($.Param "homeHeaderType") (eq ($.Param "homeHeaderType") "slide") }}
-        {{ partial "header/header-slide" . }}
+        {{ partial "header/header-slide.html" . }}
     {{ else if and ($.Param "homeHeaderType") (eq ($.Param "homeHeaderType") "img") }}
-        {{ partial "header/header-img" . }}
+        {{ partial "header/header-img.html" . }}
     {{ else if and ($.Param "homeHeaderType") (eq ($.Param "homeHeaderType") "text") }}
-        {{ partial "header/header-text" . }}
+        {{ partial "header/header-text.html" . }}
     {{ else if and ($.Param "homeHeaderType") (eq ($.Param "homeHeaderType") "typewriter") }}
-        {{ partial "header/header-typewriter" . }}
+        {{ partial "header/header-typewriter.html" . }}
     {{ else }}
-        {{ partial "header/custom-header" . }}
+        {{ partial "header/custom-header.html" . }}
     {{ end }}
 
     <style>

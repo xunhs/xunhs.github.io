@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ block "title" . }}{{ .Title }} – {{ .Site.Title }}{{ end }}</title>
-    {{ partial "head/scripts" . }}    
-    {{ partial "script/single-script" . }}
-    {{ partial "head/styles" . }}
-    {{ partial "head/meta" . }}
-    {{ partial "head/meta_json_ld" . }}
-    {{ partial "head/services" . }}
-    {{ partial "head/custom-head" . }}
+    {{ partial "head/scripts.html" . }}    
+    {{ partial "script/single-script.html" . }}
+    {{ partial "head/styles.html" . }}
+    {{ partial "head/meta.html" . }}
+    {{ partial "head/meta_json_ld.html" . }}
+    {{ partial "head/services.html" . }}
+    {{ partial "head/custom-head.html" . }}
 </head>
 
 <body id="root" class="theme__{{ index .Site.Params.themeOptions 0 }}">
@@ -23,15 +23,15 @@
         }
     </script>
     <div id="container">
-        {{ partial "body/main-left" . }}
+        {{ partial "body/main-left.html" . }}
         <div class="wrapper" data-type="{{ .Type }}" data-kind="{{ .Kind }}">
-            {{ partial "navbar/site-nav" . }}
-            {{ partial "header/site-header" . }}
+            {{ partial "navbar/site-nav.html" . }}
+            {{ partial "header/site-header.html" . }}
             {{ block "main" . }}{{ end }}
-            {{ partial "body/custom-body" . }}
-            {{ partial "footer/site-footer" . }}
+            {{ partial "body/custom-body.html" . }}
+            {{ partial "footer/site-footer.html" . }}
         </div>
-        {{ partial "body/main-right" . }}
+        {{ partial "body/main-right.html" . }}
     </div>
 </body>
 

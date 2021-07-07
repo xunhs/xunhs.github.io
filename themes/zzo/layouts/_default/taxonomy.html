@@ -2,7 +2,7 @@
 
 <main class="main inner" data-sidebar-position="{{ $.Param "sidebarPosition" }}">
   <div class="list__main {{ if $.Param "enableSidebar" }}{{ if eq ($.Param "sidebarPosition") "left" }}mr{{ else }}lm{{ end }}{{ else }}lmr{{ end }}">
-    {{ partial "body/breadcrumb" . }}
+    {{ partial "body/breadcrumb.html" . }}
     <header class="list__header">
       <h5 class="list__header--title capitalize h5">{{ .Title }}</h5>
     </header>
@@ -15,18 +15,18 @@
       {{ range .Paginator.Pages.ByWeight }}
         {{ .Render "summary" }}
       {{ end }}
-      {{ partial "pagination/pagination" . }}
+      {{ partial "pagination/pagination.html" . }}
     </div>
-    {{ partial "search/search-result-desktop" . }}
+    {{ partial "search/search-result-desktop.html" . }}
   </div>
 
   {{ if $.Param "enableSidebar" }}
     <aside class="list__sidebar {{ if eq ($.Param "sidebarPosition") "left" }}l{{ else }}r{{ end }}" data-dir="{{ $.Param "languagedir" | default "ltr" }}">
-      {{ partial "sidebar/sidebar-list" . }}
+      {{ partial "sidebar/sidebar-list.html" . }}
     </aside>
   {{ end }}
 </main>
 
-{{ partial "script/sidebar-script" . }}
-{{ partial "script/taxo-script" . }}
+{{ partial "script/sidebar-script.html" . }}
+{{ partial "script/taxo-script.html" . }}
 {{ end }}

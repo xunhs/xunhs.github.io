@@ -28,7 +28,7 @@
 {{ else if and (eq ($.Param "languagedir") "ltr") ($.Param "enableSidebarMenu") }}
   <div class="wrapper__left" data-pad="{{ $isPad }}" dir="ltr">
     <div class="sidebar__menu">
-      {{ partial "sidebar/sidebar-menu" . }}
+      {{ partial "sidebar/sidebar-menu.html" . }}
     </div>
   </div>
 {{ end }}

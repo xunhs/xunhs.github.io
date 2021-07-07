@@ -1,9 +1,9 @@
 {{ if $.Param "enableSidebar" }}
 
 <ul class="sidebar">
-    {{ partial "search/site-search" . }}
-    {{ partial "sidebar/custom-list" . }}
-    {{ partial "sidebar/list/posts-by-order" . }}
+    {{ partial "search/site-search.html" . }}
+    {{ partial "sidebar/custom-list.html" . }}
+    {{ partial "sidebar/list/posts-by-order.html" . }}
     
     {{ if and ($.Param "itemsPerCategory") ($.Param "enableListSidebarTitles") }}
         {{ range first ($.Param "itemsPerCategory") .Pages }}
@@ -15,9 +15,9 @@
     {{ end }}
 </ul>
 <div class="taxo-root">
-{{ partial "taxonomy/taxonomy-tags" . }}
-{{ partial "taxonomy/taxonomy-categories" . }}
-{{ partial "taxonomy/taxonomy-series" . }}
+{{ partial "taxonomy/taxonomy-tags.html" . }}
+{{ partial "taxonomy/taxonomy-categories.html" . }}
+{{ partial "taxonomy/taxonomy-series.html" . }}
 </div>
 
 {{ end }}

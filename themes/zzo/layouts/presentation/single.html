@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ block "title" . }}{{ .Title }} – {{ .Site.Title }}{{ end }}</title>
-  {{ partial "head/meta" . }}
-  {{ partial "head/meta_json_ld" . }}
-  {{ partial "head/services" . }}
+  {{ partial "head/meta.html" . }}
+  {{ partial "head/meta_json_ld.html" . }}
+  {{ partial "head/services.html" . }}
 </head>
 
 <div class="reveal">
@@ -61,4 +61,4 @@
     </div>
 </div>
 </html>
-{{ partial "script/pt-script" . }}
+{{ partial "script/pt-script.html" . }}

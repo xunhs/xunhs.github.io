@@ -10,16 +10,16 @@
         {{ .Content }}
       </article>
       {{ if eq .Params.service "formspree" }}
-        {{ partial "contact/formspree" . }}
+        {{ partial "contact/formspree.html" . }}
       {{ else if eq .Params.service "getform" }}
-        {{ partial "contact/getform" . }}
+        {{ partial "contact/getform.html" . }}
       {{ else if eq .Params.service "netlifyform" }}
-        {{ partial "contact/netlifyform" . }}
+        {{ partial "contact/netlifyform.html" . }}
       {{ end }}
   </div>
 </main>
 <div class="hide">
-  {{ partial "search/site-search" . }}
+  {{ partial "search/site-search.html" . }}
 </div>
-{{ partial "script/contact-script" . }}
+{{ partial "script/contact-script.html" . }}
 {{ end }}

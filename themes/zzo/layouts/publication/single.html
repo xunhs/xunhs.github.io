@@ -2,7 +2,7 @@
 
 <main class="single__main {{ if or ($.Param "enableToc") ($.Param "toc") }}{{ if $.Param "hideToc" }}main{{ else if eq ($.Param "tocPosition") "outer" }}main{{ else }}main-main{{ end }}{{ else }}main{{ end }}">
   {{ if $.Param "enableBreadcrumb" }}
-    {{ partial "body/breadcrumb" . }}
+    {{ partial "body/breadcrumb.html" . }}
   {{ end }}
   <div class="single">
     <h2 class="single__title" data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">{{ .Title }}</h2>
@@ -13,32 +13,32 @@
       <h6 class="single__shorttitle">{{ . }}</h6>
     {{ end }}
     <div class="single__meta">
-      {{ partial "publication/pub-meta" . }}
-      {{ partial "publication/pub-tags" . }}
+      {{ partial "publication/pub-meta.html" . }}
+      {{ partial "publication/pub-tags.html" . }}
     </div>
     <div class="pub__links">
-      {{ partial "publication/pub-links" . }}
+      {{ partial "publication/pub-links.html" . }}
     </div>
     <article class="single__contents" data-dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}" data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
       {{ .Params.abstract }}
       {{ .Content }}
     </article>
-    {{ partial "body/share" . }}
-    {{ partial "body/donation" . }}
-    {{ partial "body/whoami" . }}
-    {{ partial "comments/comments.html" . }}
-    {{ partial "body/photoswipe" . }}
+    {{ partial "body/share.html" . }}
+    {{ partial "body/donation.html" . }}
+    {{ partial "body/whoami.html" . }}
+    {{ partial "comments/comments.html.html" . }}
+    {{ partial "body/photoswipe.html" . }}
 
     <div class="hide">
-      {{ partial "search/site-search" . }}
+      {{ partial "search/site-search.html" . }}
     </div>
   </div>
 </main>
 
 {{ if and (or ($.Param "enableToc") ($.Param "toc")) (ne ($.Param "tocPosition") "outer") }}
 <aside class="single__side {{ if or ($.Param "enableToc") ($.Param "toc") }}main-side{{ end }}">
-  {{ partial "sidebar/sidebar-single" . }}
+  {{ partial "sidebar/sidebar-single.html" . }}
 </aside>
 {{ end }}
-{{ partial "script/pub-single-script" . }}
+{{ partial "script/pub-single-script.html" . }}
 {{ end }}

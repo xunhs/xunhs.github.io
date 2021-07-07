@@ -18,8 +18,8 @@
       </a>
       {{ if not .IsNode }}
         <div class="pub__metas">
-          {{ partial "publication/pub-meta" . }}
-          {{ partial "publication/pub-tags" . }}
+          {{ partial "publication/pub-meta.html" . }}
+          {{ partial "publication/pub-tags.html" . }}
         </div>
         <div class="pub__summary">
           {{ .Params.abstract }}
@@ -32,5 +32,5 @@
     </li>
     {{ end }}
   </ul>
-  {{ partial "publication/pub-search-result" . }}
+  {{ partial "publication/pub-search-result.html" . }}
 </div>

@@ -1,9 +1,9 @@
 {{ if $.Param "enableSidebar" }}
 <div class="sidebar">
-    {{ partial "search/site-search" . }}
-    {{ partial "sidebar/site-bio" . }}
-    {{ partial "sidebar/custom-home" . }}
-    {{ partial "sidebar/list/posts-by-order" . }}
+    {{ partial "search/site-search.html" . }}
+    {{ partial "sidebar/site-bio.html" . }}
+    {{ partial "sidebar/custom-home.html" . }}
+    {{ partial "sidebar/list/posts-by-order.html" . }}
 
     {{ if and ($.Param "itemsPerCategory") ($.Param "enableHomeSidebarTitles") }}
         {{ $filteredSections := .Site.Sections }}
@@ -28,9 +28,9 @@
 </div>
 
 <div class="taxo-root">
-{{ partial "taxonomy/taxonomy-tags" . }}
-{{ partial "taxonomy/taxonomy-categories" . }}
-{{ partial "taxonomy/taxonomy-series" . }}
+{{ partial "taxonomy/taxonomy-tags.html" . }}
+{{ partial "taxonomy/taxonomy-categories.html" . }}
+{{ partial "taxonomy/taxonomy-series.html" . }}
 </div>
 <hr class="hr-fade sidebar-hr" />
 
