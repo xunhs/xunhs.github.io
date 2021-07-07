@@ -1862,9 +1862,9 @@
 <meta name="description" content="曾经沧海难为水." />
 
 
-<meta name="created" content="2021-02-24T01:44:11&#43;0000">
-<meta name="modified" content="2021-07-06T01:21:07&#43;0000">
-<meta property="article:published_time" content="2021-02-24T01:44:11&#43;0000">
+<meta name="created" content="2021-07-07T02:45:11&#43;0000">
+<meta name="modified" content="2021-07-07T02:45:11&#43;0000">
+<meta property="article:published_time" content="2021-07-07T02:45:11&#43;0000">
 
 <meta name="author" content="热">
 
@@ -2219,6 +2219,137 @@
 
     <div class="summary-classic__content">
       <header>
+        <h5 class="title h5"><a href='https://xunhs.cyou/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/'>Python路径操作:unipath常用方法</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="Written At" dir="ltr">📅&nbsp;Jul 7, 2021 </time>
+          
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;1&nbsp;min read </span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            <!-- content -->
+<a href="#ZgotmplZ" class="button" style="width: 72px; height: 30px;" data-color="default" target="_blank" rel="noreferrer">
+  <span class="button__text">
+    unipath
+  </span>
+</a>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&#34;../root&#34;</span><span class="p">)</span>
+<span class="n">new_path</span> <span class="o">=</span> <span class="n">path</span> <span class="o">/</span> <span class="s2">&#34;new_dir&#34;</span> <span class="o">/</span> <span class="s2">&#34;file&#34;</span> <span class="c1"># 路径拼接</span>
+
+<span class="c1"># 基本属性:</span>
+<span class="n">path</span><span class="o">.</span><span class="n">suffix</span>　　　　<span class="c1">#文件后缀</span>
+<span class="n">path</span><span class="o">.</span><span class="n">stem</span>　　　　　 <span class="c1">#文件名不带后缀</span>
+<span class="n">path</span><span class="o">.</span><span class="n">name</span>　　　　　　<span class="c1">#带后缀的完整文件名</span>
+<span class="n">path</span><span class="o">.</span><span class="n">parent</span>　　　　<span class="c1">#路径的上级目录</span>
+
+<span class="c1"># 基本函数:</span>
+<span class="n">path</span><span class="o">.</span><span class="n">iterdir</span><span class="p">()</span>　　<span class="c1">#遍历目录的子目录或者文件</span>
+<span class="n">path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>　　<span class="c1">#过滤目录(返回生成器)</span>
+<span class="c1"># -- example --</span>
+<span class="n">Path</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*.py&#39;</span><span class="p">)</span> <span class="c1"># 遍历py文件</span>
+<span class="c1"># &gt;&gt;&gt; [Path(&#39;pathlib.py&#39;), Path(&#39;setup.py&#39;), Path(&#39;test_pathlib.py&#39;)]</span>
+<span class="n">Path</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*/*.py&#39;</span><span class="p">)</span>
+<span class="c1"># &gt;&gt;&gt; [Path(&#39;docs/conf.py&#39;)]</span>
+<span class="n">Path</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;**/*.py&#39;</span><span class="p">)</span> <span class="c1"># 递归遍历py文件</span>
+<span class="c1"># &gt;&gt;&gt; [Path(&#39;build/lib/pathlib.py&#39;), Path(&#39;docs/conf.py&#39;), </span>
+<span class="c1"># Path(&#39;pathlib.py&#39;), Path(&#39;setup.py&#39;), Path(&#39;test_pathlib.py&#39;)]</span>
+<span class="c1"># ---</span>
+
+<span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>　　<span class="c1">#判断路径是否存在</span>
+<span class="n">path</span><span class="o">.</span><span class="n">is_dir</span><span class="p">()</span>　　<span class="c1">#判断是否是目录</span>
+<span class="n">path</span><span class="o">.</span><span class="n">is_file</span><span class="p">()</span>  <span class="c1">#判断是否是文件</span>
+
+<span class="n">path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>　　<span class="c1">#创建目录</span>
+<span class="c1"># If parents is true, any missing parents of this path are created as needed</span>
+<span class="c1"># If exist_ok is true, FileExistsError exceptions will be ignored</span>
+
+<span class="n">path</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>　　<span class="c1">#删除文件或目录(目录非空触发异常)</span>
+<span class="n">path</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>　　<span class="c1">#打开文件(支持with)</span>
+
+<span class="n">path</span><span class="o">.</span><span class="n">with_name</span><span class="p">()</span>　　<span class="c1">#更改完整文件名称</span>
+<span class="n">path</span><span class="o">.</span><span class="n">with_suffix</span><span class="p">()</span>　　<span class="c1">#更改后缀</span>
+<span class="n">path</span><span class="o">.</span><span class="n">with_stem</span><span class="p">()</span>    <span class="c1">#更改文件名不带后缀</span>
+<span class="c1"># -- example --</span>
+<span class="n">Path</span><span class="p">(</span><span class="s1">&#39;c:/Downloads/draft.txt&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">with_stem</span><span class="p">(</span><span class="s1">&#39;final&#39;</span><span class="p">)</span>
+<span class="c1"># &gt;&gt;&gt; Path(&#39;c:/Downloads/final.txt&#39;)</span>
+<span class="c1"># ---</span>
+
+</code></pre></td></tr></table>
+</div>
+</div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+
+    <div class="summary-classic__content">
+      <header>
         <h5 class="title h5"><a href='https://xunhs.cyou/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/'>POI-type Embedding构建流程札记</a> </h5>
         <h6 class="subtitle caption">
           <time title="Written At" dir="ltr">📅&nbsp;Feb 24, 2021 </time>
@@ -2545,45 +2676,6 @@
 
 
       
-        
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='https://xunhs.cyou/posts/notes/74/'>Python多线程/进程技巧</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Jan 17, 2020 </time>
-          
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;2&nbsp;min read </span>
-          
-          &middot; <span title="WRITTEN BY" dir="ltr">✍️&nbsp;Ethan</span>
-          
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            <!-- Abstract -->
-<blockquote>
-<p>整理Python并行化常用技巧</p>
-</blockquote>
-<!-- Abstract -->
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-
-      
       
 
 
@@ -2652,6 +2744,10 @@
     
         
         <li class="sidebar-recent">
+            <a href="/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" class="sidebar-recent__title p1">Python路径操作:unipath常用方法</a>
+        </li>
+        
+        <li class="sidebar-recent">
             <a href="/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/" class="sidebar-recent__title p1">POI-type Embedding构建流程札记</a>
         </li>
         
@@ -2665,10 +2761,6 @@
         
         <li class="sidebar-recent">
             <a href="/posts/notes/209/" class="sidebar-recent__title p1">Scikit Learn Tips</a>
-        </li>
-        
-        <li class="sidebar-recent">
-            <a href="/posts/notes/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/" class="sidebar-recent__title p1">常用加速镜像&amp;Python虚拟环境/包管理&amp;Jupyter Notebook</a>
         </li>
         
         <hr class="hr-fade sidebar-hr" />
