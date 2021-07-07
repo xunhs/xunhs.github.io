@@ -3,6 +3,11 @@ title: 'Python路径操作:unipath常用方法'
 date: 2021-07-07T02:45:11.000Z
 music: false
 slug: python路径操作-unipath常用方法
+tags:
+    - Python
+    - unipath
+    - 路径操作
+    - Path
 ---
 
 <!-- content -->
