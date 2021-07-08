@@ -3,7 +3,8 @@ title: "{{ .Name }}"
 date: {{ .Date }}
 categories:
   - 随笔
-music: true
+libraries:
+    - aplayer
 ---
 > 
 <!--more-->
@@ -11,14 +12,16 @@ music: true
 
 <!-- music -->
 
-<!-- <meting-js
-	name=""
-	artist=""
-	url="" >
-	<pre hidden>
-	lyrics_str
-	</pre>
-</meting-js> -->
+{{< aplayer 
+name=""
+artist=""
+url=""
+cover=""
+container="aplayer_a" 
+lrc=""
+loop=false 
+>}}<div id="aplayer_a"></div>{{< /aplayer >}}
+
 
 ------------
 

@@ -134,6 +134,18 @@
   <script defer src="{{ $js.dplayer.url3 }}" crossorigin="anonymous"></script>
 {{ end }}
 
+{{ if in .Params.Libraries "aplayer" }}
+  <link rel="stylesheet" href="{{ $css.aplayer.url }}" crossorigin="anonymous">
+  <script defer src="{{ $js.aplayer.url1 }}" crossorigin="anonymous"></script>
+  <script defer src="{{ $js.aplayer.url2 }}" crossorigin="anonymous"></script>
+{{ end }}
+
+{{ if in .Params.Libraries "meting" }}
+  <link rel="stylesheet" href="{{ $css.aplayer.url }}" crossorigin="anonymous">
+  <script defer src="{{ $js.aplayer.url1 }}" crossorigin="anonymous"></script>
+  <script defer src="{{ $js.meting.url }}" crossorigin="anonymous"></script>
+{{ end }}
+
 {{ if in .Params.Libraries "mermaid" }}
   <script defer src="{{ $js.mermaid.url }}" integrity="{{ $js.mermaid.sri }}" crossorigin="anonymous"></script>
 {{ end }}

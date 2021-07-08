@@ -1,15 +1,23 @@
 ---
 title: "Rolling Days"
 date: 2021-06-28T09:16:35+08:00
-music: true
+libraries:
+    - aplayer
 ---
 
 <!-- content -->
-<meting-js
-	name="Rolling Days"
-	artist="夜听·地大"
-	url="https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/Rolling%20days-%E5%A4%9C%E5%90%AC%E5%9C%B0%E5%A4%A7-2021-01-25-53d952-Ag.mp3" >
-</meting-js>
+
+{{< aplayer 
+name="Rolling Days"
+artist="夜听·地大"
+url="https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/Rolling%20days-%E5%A4%9C%E5%90%AC%E5%9C%B0%E5%A4%A7-2021-01-25-53d952-Ag.mp3"
+cover=""
+container="aplayer_a" 
+lrc=""
+loop=false 
+>}}<div id="aplayer_a"></div>{{< /aplayer >}}
+
+
 <!--more-->
 
 听了很多遍的伤感文学。来源：https://mp.weixin.qq.com/s/UoNeEWS8xX3pik8WiHjLIQ

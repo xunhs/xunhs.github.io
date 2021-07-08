@@ -1,7 +1,8 @@
 ---
 title: "About Me"
 date: 2021-04-28T10:33:12+08:00
-music: true
+libraries:
+    - aplayer
 type: about
 libraries:
   - dplayer
