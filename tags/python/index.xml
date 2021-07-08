@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Python on 热</title>
-    <link>https://www.xunhs.cyou/tags/python/</link>
+    <link>xunhs.cyou/tags/python/</link>
     <description>Recent content in Python on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 07 Jul 2021 02:45:11 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/python/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="xunhs.cyou/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Python路径操作:unipath常用方法</title>
-        <link>https://www.xunhs.cyou/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+        <link>xunhs.cyou/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link>
         <pubDate>Wed, 07 Jul 2021 02:45:11 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 07 Jul 2021 02:45:11 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+        <guid>xunhs.cyou/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
         <description>&lt;!-- content --&gt;
 &lt;a href=&#34;#ZgotmplZ&#34; class=&#34;button&#34; style=&#34;width: 72px; height: 30px;&#34; data-color=&#34;default&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;
   &lt;span class=&#34;button__text&#34;&gt;
@@ -156,11 +156,11 @@
       
       <item>
         <title>POI-type Embedding构建流程札记</title>
-        <link>https://www.xunhs.cyou/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
+        <link>xunhs.cyou/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
         <pubDate>Wed, 24 Feb 2021 01:44:11 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 24 Feb 2021 01:44:11 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
+        <guid>xunhs.cyou/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;本文对POI-type Embedding的构建流程进行整理。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -208,11 +208,11 @@
       
       <item>
         <title>POI数据Elasticsearch存储及查询操作札记</title>
-        <link>https://www.xunhs.cyou/2021/02/23/368/</link>
+        <link>xunhs.cyou/2021/02/23/368/</link>
         <pubDate>Tue, 23 Feb 2021 06:37:47 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 23 Feb 2021 06:37:47 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/2021/02/23/368/</guid>
+        <guid>xunhs.cyou/2021/02/23/368/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;使用ArcGIS Pro栅格切割工具做分块裁剪，并使用切割好的分块做Image Embeddings。记录操作过程及注意事项。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -252,11 +252,11 @@
       
       <item>
         <title>PyTroch学习笔记</title>
-        <link>https://www.xunhs.cyou/posts/notes/328/</link>
+        <link>xunhs.cyou/posts/notes/328/</link>
         <pubDate>Sat, 25 Apr 2020 09:22:21 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 25 Apr 2020 09:22:21 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/328/</guid>
+        <guid>xunhs.cyou/posts/notes/328/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Refer: &lt;a href=&#34;https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html&#34;&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -300,11 +300,11 @@
       
       <item>
         <title>Scikit Learn Tips</title>
-        <link>https://www.xunhs.cyou/posts/notes/209/</link>
+        <link>xunhs.cyou/posts/notes/209/</link>
         <pubDate>Sat, 11 Apr 2020 09:21:12 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 11 Apr 2020 09:21:12 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/209/</guid>
+        <guid>xunhs.cyou/posts/notes/209/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Refer to &lt;a href=&#34;https://github.com/justmarkham/scikit-learn-tips&#34;&gt;scikit-learn-tips&lt;/a&gt;, &lt;a href=&#34;https://cloud.tencent.com/developer/article/1555141&#34;&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
 整理一些自己感兴趣，经常用到的&lt;/p&gt;
@@ -337,11 +337,11 @@
       
       <item>
         <title>常用加速镜像&amp;Python虚拟环境/包管理&amp;Jupyter Notebook</title>
-        <link>https://www.xunhs.cyou/posts/notes/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</link>
+        <link>xunhs.cyou/posts/notes/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</link>
         <pubDate>Sun, 08 Mar 2020 09:19:33 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 08 Mar 2020 09:19:33 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</guid>
+        <guid>xunhs.cyou/posts/notes/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;常用加速镜像；python常用虚拟环境管理;Jupyter Notebook常用配置&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -397,11 +397,11 @@
       
       <item>
         <title>Python库-seaborn &#43; matplotlib</title>
-        <link>https://www.xunhs.cyou/posts/notes/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</link>
+        <link>xunhs.cyou/posts/notes/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</link>
         <pubDate>Tue, 03 Mar 2020 09:18:18 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 03 Mar 2020 09:18:18 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</guid>
+        <guid>xunhs.cyou/posts/notes/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;seaborn是python里面做数据分析和机器学习常用的可视化库。它对matplotlib进行了深度封装，从而可以用非常简单的api接口绘制相对复杂的图形，提供对数据的深入认识。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -445,11 +445,11 @@
       
       <item>
         <title>学习笔记-QGIS</title>
-        <link>https://www.xunhs.cyou/posts/notes/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</link>
+        <link>xunhs.cyou/posts/notes/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</link>
         <pubDate>Sat, 29 Feb 2020 09:17:34 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 29 Feb 2020 09:17:34 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</guid>
+        <guid>xunhs.cyou/posts/notes/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;关于QGIS若干记录&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -493,11 +493,11 @@
       
       <item>
         <title>Python-坐标系转换</title>
-        <link>https://www.xunhs.cyou/posts/notes/75/</link>
+        <link>xunhs.cyou/posts/notes/75/</link>
         <pubDate>Thu, 30 Jan 2020 09:06:19 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 30 Jan 2020 09:06:19 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/75/</guid>
+        <guid>xunhs.cyou/posts/notes/75/</guid>
         <description>&lt;hr /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;用Python实现WGS84、火星坐标系、百度坐标系、web墨卡托四种坐标相互转换&lt;/p&gt;
@@ -530,11 +530,11 @@
       
       <item>
         <title>Python库：pathlib</title>
-        <link>https://www.xunhs.cyou/posts/notes/72/</link>
+        <link>xunhs.cyou/posts/notes/72/</link>
         <pubDate>Sat, 18 Jan 2020 09:04:38 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 18 Jan 2020 09:04:38 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/72/</guid>
+        <guid>xunhs.cyou/posts/notes/72/</guid>
         <description>&lt;hr /&gt;
 &lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
@@ -573,11 +573,11 @@
       
       <item>
         <title>Python多线程/进程技巧</title>
-        <link>https://www.xunhs.cyou/posts/notes/74/</link>
+        <link>xunhs.cyou/posts/notes/74/</link>
         <pubDate>Fri, 17 Jan 2020 09:02:53 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 17 Jan 2020 09:02:53 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/74/</guid>
+        <guid>xunhs.cyou/posts/notes/74/</guid>
         <description>&lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;整理Python并行化常用技巧&lt;/p&gt;
@@ -623,11 +623,11 @@
       
       <item>
         <title>Python库-tqdm-进度条</title>
-        <link>https://www.xunhs.cyou/posts/notes/73/</link>
+        <link>xunhs.cyou/posts/notes/73/</link>
         <pubDate>Wed, 15 Jan 2020 09:03:58 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 15 Jan 2020 09:03:58 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/73/</guid>
+        <guid>xunhs.cyou/posts/notes/73/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;总结tqdm库，进度条显示。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -667,11 +667,11 @@
       
       <item>
         <title>Pandas/Geopandas Tricks</title>
-        <link>https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/</link>
+        <link>xunhs.cyou/posts/notes/pandas-geopandas-tricks/</link>
         <pubDate>Mon, 13 Jan 2020 09:01:39 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 06 Jul 2021 01:21:07 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/</guid>
+        <guid>xunhs.cyou/posts/notes/pandas-geopandas-tricks/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;总结个人使用中常用Pandas及扩展插件使用技巧&lt;/p&gt;
 &lt;/blockquote&gt;</description>

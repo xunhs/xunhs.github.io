@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>joblib on 热</title>
-    <link>https://www.xunhs.cyou/tags/joblib/</link>
+    <link>xunhs.cyou/tags/joblib/</link>
     <description>Recent content in joblib on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 17 Jan 2020 09:02:53 +0000</lastBuildDate>
     
-        <atom:link href="https://www.xunhs.cyou/tags/joblib/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="xunhs.cyou/tags/joblib/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Python多线程/进程技巧</title>
-        <link>https://www.xunhs.cyou/posts/notes/74/</link>
+        <link>xunhs.cyou/posts/notes/74/</link>
         <pubDate>Fri, 17 Jan 2020 09:02:53 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 17 Jan 2020 09:02:53 +0000</atom:modified>
-        <guid>https://www.xunhs.cyou/posts/notes/74/</guid>
+        <guid>xunhs.cyou/posts/notes/74/</guid>
         <description>&lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;整理Python并行化常用技巧&lt;/p&gt;
