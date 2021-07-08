@@ -1385,6 +1385,9 @@
 
 
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" crossorigin="anonymous"></script>
+
 
 
 
@@ -1654,7 +1657,7 @@
 
     
     
-    var lib = JSON.parse("null");
+    var lib = JSON.parse("[\"aplayer\"]");
 
     if (lib && lib.includes('mermaid')) {
       
@@ -2247,7 +2250,33 @@
       <blockquote>
 <p>摘抄自-热带汽水·新浪微博</p>
 </blockquote>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=167873&auto=1&height=66"></iframe>
+
+
+
+
+<div class="aplayer-container"><div id="aplayer_a"></div></div>
+
+
+<script>
+    function loadAPlayer() {
+        const ap = new APlayer({
+            container: document.getElementById("aplayer_a"),
+            loop:  false ,
+            mutex: true,
+            theme: '#e9e9e9',
+            lrcType: 3,
+            audio: [{
+                name: "多余的解释 - 许嵩",
+                artist: "许嵩",
+                url: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E5%A4%9A%E4%BD%99%E7%9A%84%E8%A7%A3%E9%87%8A%20-%20%E8%AE%B8%E5%B5%A9-aee706-Ag.mp3",
+                cover: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E5%A4%9A%E4%BD%99%E7%9A%84%E8%A7%A3%E9%87%8A%20-%20%E8%AE%B8%E5%B5%A9-aee706-Ag.mp3",
+                lrc: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E5%A4%9A%E4%BD%99%E7%9A%84%E8%A7%A3%E9%87%8A-%E8%AE%B8%E5%B5%A9-226314-Ag.lrc",
+            }]
+    });
+}
+
+    document.addEventListener('DOMContentLoaded', loadAPlayer, !1);
+</script>
 <ul>
 <li>天空不再落下雨水，眼泪通过空气传播，无论爱不爱惜羽毛，鸟儿都飞不出包围圈。我想你我想见你，但我力不能及。我可以为你攻占一个无线电台，我可以为你捏造明日的天晴，但我没法停止你的哭泣。天空不再落下雨水，地面只被泪水打湿。听说明天会更好，我听到有人哭着这么播报。 ​​​ ​​​​</li>
 <li>以为人类孜孜不倦钻研科技，延展手臂，是用来探索未知的星球。偶然又会惊醒，觉得这只不过是用来克服自己的不完美。 ​​​​</li>

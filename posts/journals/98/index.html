@@ -2269,6 +2269,33 @@
 <script>
     function loadAPlayer() {
         const ap = new APlayer({
+            container: document.getElementById("aplayer_a"),
+            loop:  false ,
+            mutex: true,
+            theme: '#e9e9e9',
+            lrcType: 3,
+            audio: [{
+                name: "这一生关于你的风景",
+                artist: "隔壁老樊",
+                url: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%BF%99%E4%B8%80%E7%94%9F%E5%85%B3%E4%BA%8E%E4%BD%A0%E7%9A%84%E9%A3%8E%E6%99%AF-61f1bc-Ag.mp3",
+                cover: "https://p1.music.126.net/72pkxsrTN_zUscdzMk5mMA==/109951164289743850.jpg?param=300x300",
+                lrc: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%BF%99%E4%B8%80%E7%94%9F%E5%85%B3%E4%BA%8E%E4%BD%A0%E7%9A%84%E9%A3%8E%E6%99%AF-%E9%9A%94%E5%A3%81%E8%80%81%E6%A8%8A-595287-Ag.lrc",
+            }]
+    });
+}
+
+    document.addEventListener('DOMContentLoaded', loadAPlayer, !1);
+</script>
+
+
+
+
+<div class="aplayer-container"><div id="aplayer_a"></div></div>
+
+
+<script>
+    function loadAPlayer() {
+        const ap = new APlayer({
             container: document.getElementById(""),
             loop:  false ,
             mutex: true,
