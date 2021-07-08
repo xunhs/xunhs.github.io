@@ -14,11 +14,6 @@
 
 
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
 <script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
 
 <script defer src="/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js"></script>
@@ -1390,6 +1385,14 @@
 
 
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/color-thief@2.2.5/js/color-thief.min.js" crossorigin="anonymous"></script>
+
+
+
+
+
 
 
 
@@ -1655,7 +1658,7 @@
 
     
     
-    var lib = JSON.parse("null");
+    var lib = JSON.parse("[\"aplayer\"]");
 
     if (lib && lib.includes('mermaid')) {
       
@@ -2229,7 +2232,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Oct 1, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;5&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;Ethan</span>
   
@@ -2250,14 +2253,58 @@
       <blockquote>
 <p>献给十月份：相遇。收获。积累。感动。</p>
 </blockquote>
-<p><meting-js
-name="理想三旬"
-artist="陈鸿宇"
-url="https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%90%86%E6%83%B3%E4%B8%89%E6%97%AC-0ffca5.mp3" ></p>
-  <pre hidden>
-  [00:00.000] 作词 : 唐映枫[00:00.113] 作曲 : 陈鸿宇[00:00.226] 编曲 : 陈鸿宇 马雨阳[00:00.340]混音：马雨阳[00:01.340]雨后有车驶来[00:03.510]驶过暮色苍白[00:06.090]旧铁皮往南开 恋人已不在[00:10.890]收听浓烟下的 诗歌电台[00:15.700]不动情的咳嗽 至少看起来[00:20.420]归途也还可爱[00:22.870]琴弦少了姿态[00:25.160]再不见那夜里 听歌的小孩[00:30.170]时光匆匆独白[00:32.380]将颠沛磨成卡带[00:34.810]已枯卷的情怀 踏碎成年代[00:39.970][00:49.170]就老去吧 孤独别醒来[00:54.650][00:55.310]你渴望的离开[00:59.540]只是无处停摆[01:03.700]就歌唱吧 眼睛眯起来[01:09.858]而热泪的崩坏[01:14.218]只是没抵达的存在[01:18.650][01:37.090]青春又醉倒在[01:39.840]籍籍无名的怀[01:42.200]靠嬉笑来虚度 聚散得慷慨[01:46.989]辗转却去不到 对的站台[01:51.890]如果漂泊是成长 必经的路牌[01:56.530]你迷醒岁月中[01:58.840]那贫瘠的未来[02:01.418]像遗憾季节里 未结果的爱[02:05.808]弄脏了每一页诗[02:08.310]吻最疼痛的告白[02:10.859]而风声吹到这 已不需要释怀[02:15.718]就老去吧 孤独别醒来[02:20.598][02:21.869]你渴望的离开[02:26.000]只是无处停摆[02:30.138]就歌唱吧 眼睛眯起来[02:36.000]而热泪的崩坏[02:40.220]只是没抵达的存在[02:47.239][03:06.019]就甜蜜地忍耐[03:08.459]繁星润湿窗台[03:10.878]光影跳动着像在 困倦里说爱[03:15.679]再无谓的感慨[03:18.348]以为明白[03:20.418]梦倒塌的地方 今已爬满青苔
-  </pre>
-</meting-js>
+
+
+
+
+<div class="aplayer-container"><div id="aplayer_a"></div></div>
+
+
+<script>
+    function loadAPlayer() {
+        const ap = new APlayer({
+            container: document.getElementById("aplayer_a"),
+            loop:  false ,
+            mutex: true,
+            theme: '#e9e9e9',
+            lrcType: 3,
+            audio: [{
+                name: "理想三旬",
+                artist: "陈鸿宇",
+                url: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%90%86%E6%83%B3%E4%B8%89%E6%97%AC-0ffca5.mp3",
+                cover: "",
+                lrc: "",
+            }]
+    });
+    const colorThief = new ColorThief();
+    const image = new Image();
+    const xhr = new XMLHttpRequest();
+    const setTheme = (index) => {
+        if (!ap.list.audios[index].theme) {
+            xhr.onload = function(){
+                let coverUrl = URL.createObjectURL(this.response);
+                image.onload = function(){
+                    let color = colorThief.getColor(image);
+                    ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+                    URL.revokeObjectURL(coverUrl)
+                };
+                image.src = coverUrl;
+            }
+            xhr.open('GET', ap.list.audios[index].cover, true);
+            xhr.responseType = 'blob';
+            xhr.send();
+        }
+    };
+    setTheme(ap.list.index);
+    ap.on('listswitch', (index) => {
+        setTheme(index);
+    });
+
+
+}
+
+    document.addEventListener('DOMContentLoaded', loadAPlayer, !1);
+</script>
 <hr />
 <ul>
 <li>2020.10.1 在崇阳，孙繁结婚，我和陈浩做伴郎；岳阳楼一日游，与你相遇。可怜希希jio又紫又肿；第五天。</li>

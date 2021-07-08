@@ -14,11 +14,6 @@
 
 
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
 <script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
 
 <script defer src="/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js"></script>
@@ -1390,6 +1385,14 @@
 
 
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/color-thief@2.2.5/js/color-thief.min.js" crossorigin="anonymous"></script>
+
+
+
+
+
 
 
 
@@ -1655,7 +1658,7 @@
 
     
     
-    var lib = JSON.parse("null");
+    var lib = JSON.parse("[\"aplayer\"]");
 
     if (lib && lib.includes('mermaid')) {
       
@@ -2227,7 +2230,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Sep 1, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;4&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
   
   <span class="single__info">
     
@@ -2268,14 +2271,58 @@
       <blockquote>
 <p>国奖</p>
 </blockquote>
-<p><meting-js
-name="Attention"
-artist="Charlie Puth"
-url="https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/attention-062438.mp3" ></p>
-  <pre hidden>
-  [00:09.180]You've been running round, running round, running round throwing that dirt all on my name[00:14.040]Cause you knew that I, knew that I, knew that I'd call you up[00:18.690]You've been going round, going round, going round every party in LA[00:23.580]Cause you knew that I, knew that I, knew that I be at one[00:27.070][00:29.020]I know that dress is karma, perfume regret[00:33.300]You got me thinking 'bout when you were mine[00:38.490]And now I'm all up on ya, what you expect[00:42.850]But you're not coming home with me tonight[00:45.970][00:46.670]You just want attention[00:49.080]You don't want my heart[00:51.470]Maybe you just hate the thought of me with someone new[00:56.020]Yeah, you just want attention[00:58.810]I knew from the start[01:01.090]You're just making sure I'm never getting over you[01:04.960][01:06.840]You've been running round, running round, running round throwing that dirt all on my name[01:11.550]'Cause you knew that I, knew that I, knew that I'd call you up[01:16.350]Baby, now that we're, now that we're, now that we're right here standing face to face[01:21.260]You already know, already know, already know that you won, oh[01:26.410][01:26.560]I know that dress is karma, perfume regret[01:30.920]You got me thinking 'bout when you were mine[01:33.430]You got me thinking 'bout when you were mine[01:36.220]And now I'm all up on ya, what you expect[01:40.580]But you're not coming home with me tonight[01:44.350][01:44.360]You just want attention[01:46.680]You don't want my heart[01:49.090]Maybe you just hate the thought of me with someone new[01:53.590]Yeah, you just want attention[01:56.310]I knew from the start[01:58.650]You're just making sure I'm never getting over you[02:02.740][02:05.300]What are you doing to me?[02:06.930]What are you doing, huh? (What are you doing)[02:09.980]What are you doing to me?[02:11.870]What are you doing, huh? (What are you doing)[02:14.790]What are you doing to me?[02:16.660]What are you doing huh? (What are you doing)[02:19.540]What are you doing to me?[02:21.480]What are you doing, huh?[02:23.360][02:24.240]I know that dress is karma, perfume regret[02:28.610]You got me thinking 'bout when you were mine[02:33.800]And now I'm all up on ya, what you expect[02:38.130]But you're not coming home with me tonight[02:41.340][02:44.300]You just want attention[02:46.760]You don't want my heart[02:48.990]Maybe you just hate the thought of me with someone new[02:53.570]Yeah, you just want attention[02:56.310]I knew from the start[02:58.620]You're just making sure I'm never getting over you (over you)[03:04.000][03:05.230]What are you doing to me? (hey)[03:07.030]What are you doing, huh? (What are you doing, what?)[03:10.150]What are you doing to me?[03:11.860]What are you doing, huh? (yeah you just want attention)[03:14.850]What are you doing to me? (I knew from the start)[03:16.760]What are you doing huh? (You're just making sure I'll never get in over you)[03:19.720]What are you doing to me?[03:21.420]What are you doing, huh?
-  </pre>
-</meting-js>
+
+
+
+
+<div class="aplayer-container"><div id="aplayer_a"></div></div>
+
+
+<script>
+    function loadAPlayer() {
+        const ap = new APlayer({
+            container: document.getElementById("aplayer_a"),
+            loop:  false ,
+            mutex: true,
+            theme: '#e9e9e9',
+            lrcType: 3,
+            audio: [{
+                name: "Attention",
+                artist: "Charlie Puth",
+                url: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/attention-062438.mp3",
+                cover: "",
+                lrc: "",
+            }]
+    });
+    const colorThief = new ColorThief();
+    const image = new Image();
+    const xhr = new XMLHttpRequest();
+    const setTheme = (index) => {
+        if (!ap.list.audios[index].theme) {
+            xhr.onload = function(){
+                let coverUrl = URL.createObjectURL(this.response);
+                image.onload = function(){
+                    let color = colorThief.getColor(image);
+                    ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+                    URL.revokeObjectURL(coverUrl)
+                };
+                image.src = coverUrl;
+            }
+            xhr.open('GET', ap.list.audios[index].cover, true);
+            xhr.responseType = 'blob';
+            xhr.send();
+        }
+    };
+    setTheme(ap.list.index);
+    ap.on('listswitch', (index) => {
+        setTheme(index);
+    });
+
+
+}
+
+    document.addEventListener('DOMContentLoaded', loadAPlayer, !1);
+</script>
 <hr />
 <ul>
 <li>2020.9.1 偏僻的未来城校区一下子来了这么多人，好不热闹、</li>

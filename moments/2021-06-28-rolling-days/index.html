@@ -14,11 +14,6 @@
 
 
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
 <script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
 
 <script defer src="/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js"></script>
@@ -1390,6 +1385,14 @@
 
 
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/color-thief@2.2.5/js/color-thief.min.js" crossorigin="anonymous"></script>
+
+
+
+
+
 
 
 
@@ -1655,7 +1658,7 @@
 
     
     
-    var lib = JSON.parse("null");
+    var lib = JSON.parse("[\"aplayer\"]");
 
     if (lib && lib.includes('mermaid')) {
       
@@ -1905,7 +1908,7 @@
     "datePublished": "2021-06-28T09:16:35+08:00",
     "dateModified": "2021-06-28T09:16:35+08:00",
     "url" : "/moments/2021-06-28-rolling-days/",
-    "description": "\u003c!-- content --\u003e \u003cp\u003e\u003cmeting-js name=\"Rolling Days\" artist=\"夜听·地大\" …\u003c/p\u003e\u003c/!--\u003e",
+    "description": "\u003c!-- content --\u003e \r \r \r \r \u003cdiv class=\"aplayer-container\"\u003e\u003cdiv id=\"aplayer_a\"\u003e\u003c/div\u003e\u003c/div\u003e\r \r \r \u003cscript\u003e\r     function loadAPlayer() {\r         const ap = new APlayer({\r             container: document.getElementById(\"aplayer_a\"),\r             loop:  false , …\u003c/script\u003e\u003c/div\u003e\u003c/div\u003e\u003c/!--\u003e",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": ""
@@ -2241,11 +2244,58 @@
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
       <!-- content -->
-<p><meting-js
-name="Rolling Days"
-artist="夜听·地大"
-url="https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/Rolling%20days-%E5%A4%9C%E5%90%AC%E5%9C%B0%E5%A4%A7-2021-01-25-53d952-Ag.mp3" ><br />
-</meting-js></p>
+
+
+
+
+<div class="aplayer-container"><div id="aplayer_a"></div></div>
+
+
+<script>
+    function loadAPlayer() {
+        const ap = new APlayer({
+            container: document.getElementById("aplayer_a"),
+            loop:  false ,
+            mutex: true,
+            theme: '#e9e9e9',
+            lrcType: 3,
+            audio: [{
+                name: "Rolling Days",
+                artist: "夜听·地大",
+                url: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/Rolling%20days-%E5%A4%9C%E5%90%AC%E5%9C%B0%E5%A4%A7-2021-01-25-53d952-Ag.mp3",
+                cover: "",
+                lrc: "",
+            }]
+    });
+    const colorThief = new ColorThief();
+    const image = new Image();
+    const xhr = new XMLHttpRequest();
+    const setTheme = (index) => {
+        if (!ap.list.audios[index].theme) {
+            xhr.onload = function(){
+                let coverUrl = URL.createObjectURL(this.response);
+                image.onload = function(){
+                    let color = colorThief.getColor(image);
+                    ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+                    URL.revokeObjectURL(coverUrl)
+                };
+                image.src = coverUrl;
+            }
+            xhr.open('GET', ap.list.audios[index].cover, true);
+            xhr.responseType = 'blob';
+            xhr.send();
+        }
+    };
+    setTheme(ap.list.index);
+    ap.on('listswitch', (index) => {
+        setTheme(index);
+    });
+
+
+}
+
+    document.addEventListener('DOMContentLoaded', loadAPlayer, !1);
+</script>
 <p>听了很多遍的伤感文学。来源：https://mp.weixin.qq.com/s/UoNeEWS8xX3pik8WiHjLIQ</p>
 <ul>
 <li>我知道我们的朋友不同，我们的城市不同，我们的处境不同人生的方向不同，但我努力开辟新的轨道以求走进你的世界，像是一棵树生拉硬扯改变生长的方向，想要去触碰围墙之外的飞鸟。</li>
