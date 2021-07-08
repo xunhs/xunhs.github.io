@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Series on 热</title>
-    <link>xunhs.cyou/series/</link>
+    <link>/series/</link>
     <description>Recent content in Series on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <webMaster>gishusheng@outlook.com (热)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
     
-        <atom:link href="xunhs.cyou/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
     
 
       

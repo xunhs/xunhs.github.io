@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>热</title>
-    <link>xunhs.cyou/</link>
+    <link>/</link>
     <description>Recent content on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 07 Jul 2021 03:17:08 +0000</lastBuildDate>
     
-        <atom:link href="xunhs.cyou/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
       
       
@@ -43,11 +43,11 @@
       
       <item>
         <title>札记：正则表达式</title>
-        <link>xunhs.cyou/posts/notes/%E6%9C%AD%E8%AE%B0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+        <link>/posts/notes/%E6%9C%AD%E8%AE%B0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
         <pubDate>Wed, 07 Jul 2021 03:17:08 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 07 Jul 2021 03:17:14 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/%E6%9C%AD%E8%AE%B0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+        <guid>/posts/notes/%E6%9C%AD%E8%AE%B0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;正则表达式札记&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -99,11 +99,11 @@
       
       <item>
         <title>Python路径操作:unipath常用方法</title>
-        <link>xunhs.cyou/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+        <link>/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link>
         <pubDate>Wed, 07 Jul 2021 02:45:11 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 07 Jul 2021 02:45:11 +0000</atom:modified>
-        <guid>xunhs.cyou/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+        <guid>/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
         <description>&lt;!-- content --&gt;
 &lt;a href=&#34;#ZgotmplZ&#34; class=&#34;button&#34; style=&#34;width: 72px; height: 30px;&#34; data-color=&#34;default&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;
   &lt;span class=&#34;button__text&#34;&gt;
@@ -233,11 +233,11 @@
       
       <item>
         <title>Python设置全局代理</title>
-        <link>xunhs.cyou/moments/2021-07-03-python%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</link>
+        <link>/moments/2021-07-03-python%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</link>
         <pubDate>Sat, 03 Jul 2021 09:54:20 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 03 Jul 2021 09:54:20 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021-07-03-python%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</guid>
+        <guid>/moments/2021-07-03-python%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</guid>
         <description>&lt;!-- content --&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -272,11 +272,11 @@
       
       <item>
         <title>2021-7</title>
-        <link>xunhs.cyou/posts/journals/2021-7/</link>
+        <link>/posts/journals/2021-7/</link>
         <pubDate>Thu, 01 Jul 2021 03:54:11 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 05 Jul 2021 14:14:11 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2021-7/</guid>
+        <guid>/posts/journals/2021-7/</guid>
         <description>&lt;blockquote&gt;
 &lt;/blockquote&gt;</description>
         
@@ -315,11 +315,11 @@
       
       <item>
         <title>晚风</title>
-        <link>xunhs.cyou/moments/2021-07-01-%E6%99%9A%E9%A3%8E/</link>
+        <link>/moments/2021-07-01-%E6%99%9A%E9%A3%8E/</link>
         <pubDate>Thu, 01 Jul 2021 08:55:59 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 01 Jul 2021 08:55:59 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021-07-01-%E6%99%9A%E9%A3%8E/</guid>
+        <guid>/moments/2021-07-01-%E6%99%9A%E9%A3%8E/</guid>
         <description>&lt;!-- content --&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/pic@master/20210701085453.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
@@ -334,11 +334,11 @@
       
       <item>
         <title>Rolling Days</title>
-        <link>xunhs.cyou/moments/2021-06-28-rolling-days/</link>
+        <link>/moments/2021-06-28-rolling-days/</link>
         <pubDate>Mon, 28 Jun 2021 09:16:35 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 28 Jun 2021 09:16:35 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021-06-28-rolling-days/</guid>
+        <guid>/moments/2021-06-28-rolling-days/</guid>
         <description>&lt;!-- content --&gt;
 &lt;p&gt;&lt;meting-js
 name=&#34;Rolling Days&#34;
@@ -357,11 +357,11 @@ url=&#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/Rolling%20days-%E5
       
       <item>
         <title>阿拉斯加海湾</title>
-        <link>xunhs.cyou/moments/2021-06-26-%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E6%B5%B7%E6%B9%BE/</link>
+        <link>/moments/2021-06-26-%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E6%B5%B7%E6%B9%BE/</link>
         <pubDate>Sat, 26 Jun 2021 16:33:47 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 26 Jun 2021 16:33:47 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021-06-26-%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E6%B5%B7%E6%B9%BE/</guid>
+        <guid>/moments/2021-06-26-%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E6%B5%B7%E6%B9%BE/</guid>
         <description>&lt;!-- content --&gt;
 &lt;p&gt;&lt;meting-js
 name=&#34;阿拉斯加海湾&#34;
@@ -380,11 +380,11 @@ url=&#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E9%98%BF%E6%8B%89
       
       <item>
         <title>远程</title>
-        <link>xunhs.cyou/moments/2021-06-21-%E8%BF%9C%E7%A8%8B/</link>
+        <link>/moments/2021-06-21-%E8%BF%9C%E7%A8%8B/</link>
         <pubDate>Mon, 21 Jun 2021 17:10:09 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 21 Jun 2021 17:10:09 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021-06-21-%E8%BF%9C%E7%A8%8B/</guid>
+        <guid>/moments/2021-06-21-%E8%BF%9C%E7%A8%8B/</guid>
         <description>&lt;!-- content --&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -413,11 +413,11 @@ ssh -p &lt;span class=&#34;m&#34;&gt;21039&lt;/span&gt; summer@43.249.192.204
       
       <item>
         <title>毕业快乐</title>
-        <link>xunhs.cyou/moments/2021.6.20-%E6%AF%95%E4%B8%9A%E5%BF%AB%E4%B9%90/</link>
+        <link>/moments/2021.6.20-%E6%AF%95%E4%B8%9A%E5%BF%AB%E4%B9%90/</link>
         <pubDate>Sun, 20 Jun 2021 18:17:52 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 20 Jun 2021 18:17:52 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.6.20-%E6%AF%95%E4%B8%9A%E5%BF%AB%E4%B9%90/</guid>
+        <guid>/moments/2021.6.20-%E6%AF%95%E4%B8%9A%E5%BF%AB%E4%B9%90/</guid>
         <description>&lt;!-- content --&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/pic@master/2021-06-265bdd-Ag.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
@@ -432,11 +432,11 @@ ssh -p &lt;span class=&#34;m&#34;&gt;21039&lt;/span&gt; summer@43.249.192.204
       
       <item>
         <title>2021.6.19-A.I.N.Y</title>
-        <link>xunhs.cyou/moments/2021.6.19-a.i.n.y-%E9%82%93%E7%B4%AB%E6%A3%8B/</link>
+        <link>/moments/2021.6.19-a.i.n.y-%E9%82%93%E7%B4%AB%E6%A3%8B/</link>
         <pubDate>Sat, 19 Jun 2021 20:06:16 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 19 Jun 2021 20:06:16 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.6.19-a.i.n.y-%E9%82%93%E7%B4%AB%E6%A3%8B/</guid>
+        <guid>/moments/2021.6.19-a.i.n.y-%E9%82%93%E7%B4%AB%E6%A3%8B/</guid>
         <description>&lt;!-- content --&gt;
 &lt;p&gt;&lt;meting-js
 name=&#34;A.I.N.Y&#34;
@@ -455,11 +455,11 @@ url=&#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/G.E.M.%20%E9%84%A7
       
       <item>
         <title>Telegram Bot</title>
-        <link>xunhs.cyou/moments/2021.6.17-telegram-bot/</link>
+        <link>/moments/2021.6.17-telegram-bot/</link>
         <pubDate>Thu, 17 Jun 2021 22:49:00 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 17 Jun 2021 22:49:00 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.6.17-telegram-bot/</guid>
+        <guid>/moments/2021.6.17-telegram-bot/</guid>
         <description>&lt;!-- content --&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -512,11 +512,11 @@ url=&#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/G.E.M.%20%E9%84%A7
       
       <item>
         <title>15分钟社区生活圈</title>
-        <link>xunhs.cyou/moments/2021.6.16-15%E5%88%86%E9%92%9F%E7%A4%BE%E5%8C%BA%E7%94%9F%E6%B4%BB%E5%9C%88/</link>
+        <link>/moments/2021.6.16-15%E5%88%86%E9%92%9F%E7%A4%BE%E5%8C%BA%E7%94%9F%E6%B4%BB%E5%9C%88/</link>
         <pubDate>Wed, 16 Jun 2021 16:07:42 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 16 Jun 2021 16:07:42 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.6.16-15%E5%88%86%E9%92%9F%E7%A4%BE%E5%8C%BA%E7%94%9F%E6%B4%BB%E5%9C%88/</guid>
+        <guid>/moments/2021.6.16-15%E5%88%86%E9%92%9F%E7%A4%BE%E5%8C%BA%E7%94%9F%E6%B4%BB%E5%9C%88/</guid>
         <description>&lt;!-- content --&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/pic@master/20210616160550.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
@@ -531,11 +531,11 @@ url=&#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/G.E.M.%20%E9%84%A7
       
       <item>
         <title>2021-06-15-SakuraFrp配置札记</title>
-        <link>xunhs.cyou/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</link>
+        <link>/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</link>
         <pubDate>Tue, 15 Jun 2021 03:06:51 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 05 Jul 2021 09:13:50 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</guid>
+        <guid>/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.natfrp.com/&#34;&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -571,11 +571,11 @@ url=&#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/G.E.M.%20%E9%84%A7
       
       <item>
         <title>2021.6.14-可不可以</title>
-        <link>xunhs.cyou/moments/2021.6.14-%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5/</link>
+        <link>/moments/2021.6.14-%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5/</link>
         <pubDate>Mon, 14 Jun 2021 08:44:23 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 14 Jun 2021 08:44:23 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.6.14-%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5/</guid>
+        <guid>/moments/2021.6.14-%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5/</guid>
         <description>&lt;!-- content --&gt;
 &lt;p&gt;&lt;meting-js
 name=&#34;可不可以&#34;
@@ -594,11 +594,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%8F%AF%E4%B8%8D
       
       <item>
         <title>2021-06-11-论文整理：一些发表在“好期刊但很有意思”的论文</title>
-        <link>xunhs.cyou/posts/notes/2021-06-11-%E8%AE%BA%E6%96%87%E6%95%B4%E7%90%86-%E4%B8%80%E4%BA%9B%E5%8F%91%E8%A1%A8%E5%9C%A8%E5%A5%BD%E6%9C%9F%E5%88%8A%E4%BD%86%E5%BE%88%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E8%AE%BA%E6%96%87/</link>
+        <link>/posts/notes/2021-06-11-%E8%AE%BA%E6%96%87%E6%95%B4%E7%90%86-%E4%B8%80%E4%BA%9B%E5%8F%91%E8%A1%A8%E5%9C%A8%E5%A5%BD%E6%9C%9F%E5%88%8A%E4%BD%86%E5%BE%88%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E8%AE%BA%E6%96%87/</link>
         <pubDate>Fri, 11 Jun 2021 22:04:34 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 11 Jun 2021 22:04:34 +0800</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2021-06-11-%E8%AE%BA%E6%96%87%E6%95%B4%E7%90%86-%E4%B8%80%E4%BA%9B%E5%8F%91%E8%A1%A8%E5%9C%A8%E5%A5%BD%E6%9C%9F%E5%88%8A%E4%BD%86%E5%BE%88%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E8%AE%BA%E6%96%87/</guid>
+        <guid>/posts/notes/2021-06-11-%E8%AE%BA%E6%96%87%E6%95%B4%E7%90%86-%E4%B8%80%E4%BA%9B%E5%8F%91%E8%A1%A8%E5%9C%A8%E5%A5%BD%E6%9C%9F%E5%88%8A%E4%BD%86%E5%BE%88%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E8%AE%BA%E6%96%87/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;一些发表在“好期刊但很有意思”的论文&amp;quot;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -626,11 +626,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%8F%AF%E4%B8%8D
       
       <item>
         <title>2021-06-08-出租车数据处理札记</title>
-        <link>xunhs.cyou/posts/notes/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</link>
+        <link>/posts/notes/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</link>
         <pubDate>Tue, 08 Jun 2021 17:08:48 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 08 Jun 2021 17:08:48 +0800</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</guid>
+        <guid>/posts/notes/2021-06-08-%E5%87%BA%E7%A7%9F%E8%BD%A6%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%9C%AD%E8%AE%B0/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;记录出租车数据处理基本流程及部分可视化分析。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -670,11 +670,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%8F%AF%E4%B8%8D
       
       <item>
         <title>2021.5.31-嘉宾</title>
-        <link>xunhs.cyou/moments/2021.5.31-%E5%98%89%E5%AE%BE/</link>
+        <link>/moments/2021.5.31-%E5%98%89%E5%AE%BE/</link>
         <pubDate>Mon, 31 May 2021 15:22:38 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 31 May 2021 15:22:38 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.5.31-%E5%98%89%E5%AE%BE/</guid>
+        <guid>/moments/2021.5.31-%E5%98%89%E5%AE%BE/</guid>
         <description>&lt;!-- content --&gt;
 &lt;!-- music --&gt;
 &lt;p&gt;&lt;meting-js
@@ -694,11 +694,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021-6</title>
-        <link>xunhs.cyou/posts/journals/2021-06-01-2021-6/</link>
+        <link>/posts/journals/2021-06-01-2021-6/</link>
         <pubDate>Thu, 27 May 2021 15:25:26 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 27 May 2021 15:25:26 +0800</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2021-06-01-2021-6/</guid>
+        <guid>/posts/journals/2021-06-01-2021-6/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;命硬。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -770,11 +770,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.5.21-海底捞</title>
-        <link>xunhs.cyou/moments/2021.5.21-%E6%B5%B7%E5%BA%95%E6%8D%9E/</link>
+        <link>/moments/2021.5.21-%E6%B5%B7%E5%BA%95%E6%8D%9E/</link>
         <pubDate>Sun, 23 May 2021 10:53:16 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 23 May 2021 10:53:16 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.5.21-%E6%B5%B7%E5%BA%95%E6%8D%9E/</guid>
+        <guid>/moments/2021.5.21-%E6%B5%B7%E5%BA%95%E6%8D%9E/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210528091955.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -788,11 +788,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021-05-21-hugo学习札记</title>
-        <link>xunhs.cyou/posts/notes/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</link>
+        <link>/posts/notes/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</link>
         <pubDate>Fri, 21 May 2021 01:19:12 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 05 Jul 2021 12:19:49 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</guid>
+        <guid>/posts/notes/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://hugo.aiaide.com/&#34;&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -828,11 +828,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.5-10km</title>
-        <link>xunhs.cyou/moments/2021.5.20-10km/</link>
+        <link>/moments/2021.5.20-10km/</link>
         <pubDate>Fri, 21 May 2021 08:56:42 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 21 May 2021 08:56:42 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.5.20-10km/</guid>
+        <guid>/moments/2021.5.20-10km/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://img.maocdn.cn/img/2021/05/21/IMG_4692.jpg&#34; alt=&#34;IMG_4692.jpg&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -846,11 +846,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021-05-09: Urban Functional Regionalization</title>
-        <link>xunhs.cyou/posts/notes/2021-05-09-urban-functional-regionalization/</link>
+        <link>/posts/notes/2021-05-09-urban-functional-regionalization/</link>
         <pubDate>Sun, 09 May 2021 19:45:40 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 09 May 2021 19:45:40 +0800</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2021-05-09-urban-functional-regionalization/</guid>
+        <guid>/posts/notes/2021-05-09-urban-functional-regionalization/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Paper writing notes about urban functional regionalization.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -886,11 +886,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.5.9-Running</title>
-        <link>xunhs.cyou/moments/2021.5.9-running/</link>
+        <link>/moments/2021.5.9-running/</link>
         <pubDate>Sun, 09 May 2021 19:38:39 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 09 May 2021 19:38:39 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.5.9-running/</guid>
+        <guid>/moments/2021.5.9-running/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://img.maocdn.cn/img/2021/05/09/IMG_4645.png&#34; alt=&#34;IMG_4645.png&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -904,11 +904,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021-5</title>
-        <link>xunhs.cyou/posts/journals/2021-05-02-2021-5/</link>
+        <link>/posts/journals/2021-05-02-2021-5/</link>
         <pubDate>Sun, 02 May 2021 15:39:20 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 02 May 2021 15:39:20 +0800</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2021-05-02-2021-5/</guid>
+        <guid>/posts/journals/2021-05-02-2021-5/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Wedding.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -956,11 +956,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.4.25-杭州</title>
-        <link>xunhs.cyou/moments/2021.4.25-%E6%9D%AD%E5%B7%9E/</link>
+        <link>/moments/2021.4.25-%E6%9D%AD%E5%B7%9E/</link>
         <pubDate>Sun, 25 Apr 2021 10:33:12 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 25 Apr 2021 10:33:12 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.4.25-%E6%9D%AD%E5%B7%9E/</guid>
+        <guid>/moments/2021.4.25-%E6%9D%AD%E5%B7%9E/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://img.maocdn.cn/img/2021/04/26/IMG_4579.jpg&#34; alt=&#34;IMG_4579.jpg&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -974,11 +974,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.4.9-答辩</title>
-        <link>xunhs.cyou/moments/2021.4.9-%E7%AD%94%E8%BE%A9/</link>
+        <link>/moments/2021.4.9-%E7%AD%94%E8%BE%A9/</link>
         <pubDate>Fri, 09 Apr 2021 10:33:12 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 09 Apr 2021 10:33:12 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.4.9-%E7%AD%94%E8%BE%A9/</guid>
+        <guid>/moments/2021.4.9-%E7%AD%94%E8%BE%A9/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://img.maocdn.cn/img/2021/04/10/IMG_4407.jpg&#34; alt=&#34;IMG_4407.jpg&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -992,11 +992,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>GIS操作——OSM路网化简，提取中心线</title>
-        <link>xunhs.cyou/2021/04/07/567/</link>
+        <link>/2021/04/07/567/</link>
         <pubDate>Wed, 07 Apr 2021 13:49:53 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 07 Apr 2021 13:49:53 +0000</atom:modified>
-        <guid>xunhs.cyou/2021/04/07/567/</guid>
+        <guid>/2021/04/07/567/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;GIS操作——OSM路网化简，提取中心线。基本思路就是道路膨胀，然后提取中心线。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1036,11 +1036,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.4.3-贝雷帽</title>
-        <link>xunhs.cyou/moments/2021.4.3-%E8%B4%9D%E9%9B%B7%E5%B8%BD/</link>
+        <link>/moments/2021.4.3-%E8%B4%9D%E9%9B%B7%E5%B8%BD/</link>
         <pubDate>Sat, 03 Apr 2021 18:41:42 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 03 Apr 2021 18:41:42 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.4.3-%E8%B4%9D%E9%9B%B7%E5%B8%BD/</guid>
+        <guid>/moments/2021.4.3-%E8%B4%9D%E9%9B%B7%E5%B8%BD/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://img.maocdn.cn/img/2021/04/03/IMG_4360.jpg&#34; alt=&#34;IMG_4360.jpg&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -1054,11 +1054,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Papers Reading-Understanding urban physical environment using street view images</title>
-        <link>xunhs.cyou/2021/04/02/551/</link>
+        <link>/2021/04/02/551/</link>
         <pubDate>Fri, 02 Apr 2021 14:19:56 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 02 Apr 2021 14:19:56 +0000</atom:modified>
-        <guid>xunhs.cyou/2021/04/02/551/</guid>
+        <guid>/2021/04/02/551/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;papers about understanding urban physical environment using street view images. From &lt;a href=&#34;https://www.researchgate.net/project/Understanding-urban-physical-environment-using-street-view-images&#34;&gt;Fan Zhang&amp;rsquo;s Researchgate project&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1090,11 +1090,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021-4</title>
-        <link>xunhs.cyou/posts/journals/2021-04-01-2021-4/</link>
+        <link>/posts/journals/2021-04-01-2021-4/</link>
         <pubDate>Thu, 01 Apr 2021 06:27:09 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 01 Apr 2021 06:27:09 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2021-04-01-2021-4/</guid>
+        <guid>/posts/journals/2021-04-01-2021-4/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Hope&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1134,11 +1134,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.3.31-烟雨琼楼</title>
-        <link>xunhs.cyou/moments/2021.3.31-%E7%83%9F%E9%9B%A8%E7%90%BC%E6%A5%BC/</link>
+        <link>/moments/2021.3.31-%E7%83%9F%E9%9B%A8%E7%90%BC%E6%A5%BC/</link>
         <pubDate>Wed, 31 Mar 2021 18:41:42 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 31 Mar 2021 18:41:42 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.3.31-%E7%83%9F%E9%9B%A8%E7%90%BC%E6%A5%BC/</guid>
+        <guid>/moments/2021.3.31-%E7%83%9F%E9%9B%A8%E7%90%BC%E6%A5%BC/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210401144924.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -1152,11 +1152,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>GNN-学习札记</title>
-        <link>xunhs.cyou/posts/notes/2021-03-24-gnn-%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</link>
+        <link>/posts/notes/2021-03-24-gnn-%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</link>
         <pubDate>Wed, 24 Mar 2021 00:46:59 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 24 Mar 2021 00:46:59 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2021-03-24-gnn-%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</guid>
+        <guid>/posts/notes/2021-03-24-gnn-%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;图卷积神经网络学习笔记。记录常用数据集、任务及网络架构。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1178,11 +1178,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.3.15-海山-深圳游记</title>
-        <link>xunhs.cyou/moments/2021.3.15-%E6%B5%B7%E5%B1%B1-%E6%B7%B1%E5%9C%B3%E6%B8%B8%E8%AE%B0/</link>
+        <link>/moments/2021.3.15-%E6%B5%B7%E5%B1%B1-%E6%B7%B1%E5%9C%B3%E6%B8%B8%E8%AE%B0/</link>
         <pubDate>Mon, 15 Mar 2021 18:41:42 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 15 Mar 2021 18:41:42 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.3.15-%E6%B5%B7%E5%B1%B1-%E6%B7%B1%E5%9C%B3%E6%B8%B8%E8%AE%B0/</guid>
+        <guid>/moments/2021.3.15-%E6%B5%B7%E5%B1%B1-%E6%B7%B1%E5%9C%B3%E6%B8%B8%E8%AE%B0/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210317182354.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -1196,11 +1196,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.3.8-深邃</title>
-        <link>xunhs.cyou/moments/2021.3.8-%E6%B7%B1%E9%82%83/</link>
+        <link>/moments/2021.3.8-%E6%B7%B1%E9%82%83/</link>
         <pubDate>Mon, 08 Mar 2021 10:33:12 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 08 Mar 2021 10:33:12 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.3.8-%E6%B7%B1%E9%82%83/</guid>
+        <guid>/moments/2021.3.8-%E6%B7%B1%E9%82%83/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210310093855.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -1214,11 +1214,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.3.6-托马斯·布罗迪-桑斯特</title>
-        <link>xunhs.cyou/moments/2021.3.6-%E6%89%98%E9%A9%AC%E6%96%AF%E5%B8%83%E7%BD%97%E8%BF%AA-%E6%A1%91%E6%96%AF%E7%89%B9/</link>
+        <link>/moments/2021.3.6-%E6%89%98%E9%A9%AC%E6%96%AF%E5%B8%83%E7%BD%97%E8%BF%AA-%E6%A1%91%E6%96%AF%E7%89%B9/</link>
         <pubDate>Sat, 06 Mar 2021 10:33:12 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 06 Mar 2021 10:33:12 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.3.6-%E6%89%98%E9%A9%AC%E6%96%AF%E5%B8%83%E7%BD%97%E8%BF%AA-%E6%A1%91%E6%96%AF%E7%89%B9/</guid>
+        <guid>/moments/2021.3.6-%E6%89%98%E9%A9%AC%E6%96%AF%E5%B8%83%E7%BD%97%E8%BF%AA-%E6%A1%91%E6%96%AF%E7%89%B9/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210306211646.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -1232,11 +1232,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021-3</title>
-        <link>xunhs.cyou/posts/journals/2021-03-01-2021-3/</link>
+        <link>/posts/journals/2021-03-01-2021-3/</link>
         <pubDate>Mon, 01 Mar 2021 00:20:57 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 01 Mar 2021 00:20:57 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2021-03-01-2021-3/</guid>
+        <guid>/posts/journals/2021-03-01-2021-3/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;深圳&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1276,11 +1276,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>ArcGIS Pro栅格切割及应用于Image Embeddings札记</title>
-        <link>xunhs.cyou/2021/02/27/414/</link>
+        <link>/2021/02/27/414/</link>
         <pubDate>Sat, 27 Feb 2021 13:22:36 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 27 Feb 2021 13:22:36 +0000</atom:modified>
-        <guid>xunhs.cyou/2021/02/27/414/</guid>
+        <guid>/2021/02/27/414/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;使用ArcGIS Pro栅格切割工具做分块裁剪，并使用切割好的分块做Image Embeddings。记录操作过程及注意事项。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1312,11 +1312,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>POI-type Embedding构建流程札记</title>
-        <link>xunhs.cyou/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
+        <link>/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
         <pubDate>Wed, 24 Feb 2021 01:44:11 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 24 Feb 2021 01:44:11 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
+        <guid>/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;本文对POI-type Embedding的构建流程进行整理。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1364,11 +1364,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>POI数据Elasticsearch存储及查询操作札记</title>
-        <link>xunhs.cyou/2021/02/23/368/</link>
+        <link>/2021/02/23/368/</link>
         <pubDate>Tue, 23 Feb 2021 06:37:47 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 23 Feb 2021 06:37:47 +0000</atom:modified>
-        <guid>xunhs.cyou/2021/02/23/368/</guid>
+        <guid>/2021/02/23/368/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;使用ArcGIS Pro栅格切割工具做分块裁剪，并使用切割好的分块做Image Embeddings。记录操作过程及注意事项。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1408,11 +1408,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.2.15-家</title>
-        <link>xunhs.cyou/moments/2021.2.15-%E5%AE%B6/</link>
+        <link>/moments/2021.2.15-%E5%AE%B6/</link>
         <pubDate>Mon, 15 Feb 2021 10:33:12 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 15 Feb 2021 10:33:12 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.2.15-%E5%AE%B6/</guid>
+        <guid>/moments/2021.2.15-%E5%AE%B6/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://images.pexels.com/photos/6951157/pexels-photo-6951157.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -1426,11 +1426,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021-2</title>
-        <link>xunhs.cyou/2021/02/02/322/</link>
+        <link>/2021/02/02/322/</link>
         <pubDate>Tue, 02 Feb 2021 03:06:59 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 02 Feb 2021 03:06:59 +0000</atom:modified>
-        <guid>xunhs.cyou/2021/02/02/322/</guid>
+        <guid>/2021/02/02/322/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Another month in home.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1452,11 +1452,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021.1.23-深邃的树</title>
-        <link>xunhs.cyou/moments/2021.1.23-%E6%B7%B1%E9%82%83%E7%9A%84%E6%A0%91/</link>
+        <link>/moments/2021.1.23-%E6%B7%B1%E9%82%83%E7%9A%84%E6%A0%91/</link>
         <pubDate>Sat, 23 Jan 2021 10:33:12 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 23 Jan 2021 10:33:12 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2021.1.23-%E6%B7%B1%E9%82%83%E7%9A%84%E6%A0%91/</guid>
+        <guid>/moments/2021.1.23-%E6%B7%B1%E9%82%83%E7%9A%84%E6%A0%91/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://images.pexels.com/photos/6959215/pexels-photo-6959215.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -1470,11 +1470,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>大禾象棋-札记</title>
-        <link>xunhs.cyou/2021/01/21/295/</link>
+        <link>/2021/01/21/295/</link>
         <pubDate>Thu, 21 Jan 2021 07:27:42 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 21 Jan 2021 07:27:42 +0000</atom:modified>
-        <guid>xunhs.cyou/2021/01/21/295/</guid>
+        <guid>/2021/01/21/295/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;大禾象棋视频整理&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1496,11 +1496,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2021-1</title>
-        <link>xunhs.cyou/posts/journals/2021-01-01-2021-1/</link>
+        <link>/posts/journals/2021-01-01-2021-1/</link>
         <pubDate>Fri, 01 Jan 2021 02:54:40 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 01 Jan 2021 02:54:40 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2021-01-01-2021-1/</guid>
+        <guid>/posts/journals/2021-01-01-2021-1/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;New year.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1522,11 +1522,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>识别城市地域-札记</title>
-        <link>xunhs.cyou/2020/12/30/243/</link>
+        <link>/2020/12/30/243/</link>
         <pubDate>Wed, 30 Dec 2020 12:46:21 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 30 Dec 2020 12:46:21 +0000</atom:modified>
-        <guid>xunhs.cyou/2020/12/30/243/</guid>
+        <guid>/2020/12/30/243/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;阅读深圳大学乐阳老师公众号（乐知半点）-专题“城市分析-概念辨析”札记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1562,11 +1562,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Papers Reading: Urban Mixed Land Use</title>
-        <link>xunhs.cyou/2020/12/18/128/</link>
+        <link>/2020/12/18/128/</link>
         <pubDate>Fri, 18 Dec 2020 01:30:51 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 18 Dec 2020 01:30:51 +0000</atom:modified>
-        <guid>xunhs.cyou/2020/12/18/128/</guid>
+        <guid>/2020/12/18/128/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;城市混合土地利用文献阅读。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1606,11 +1606,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020.12.15-玩具</title>
-        <link>xunhs.cyou/moments/2020.12.15-%E7%8E%A9%E5%85%B7/</link>
+        <link>/moments/2020.12.15-%E7%8E%A9%E5%85%B7/</link>
         <pubDate>Tue, 15 Dec 2020 10:33:12 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 15 Dec 2020 10:33:12 +0800</atom:modified>
-        <guid>xunhs.cyou/moments/2020.12.15-%E7%8E%A9%E5%85%B7/</guid>
+        <guid>/moments/2020.12.15-%E7%8E%A9%E5%85%B7/</guid>
         <description>&lt;p&gt;&lt;img src=&#34;https://img.maocdn.cn/img/2021/03/30/1609202294.png&#34; alt=&#34;1609202294.png&#34; /&gt;&lt;/p&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -1624,11 +1624,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-12</title>
-        <link>xunhs.cyou/posts/journals/2020-12-01-2020-12/</link>
+        <link>/posts/journals/2020-12-01-2020-12/</link>
         <pubDate>Tue, 01 Dec 2020 06:48:50 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 01 Dec 2020 06:48:50 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-12-01-2020-12/</guid>
+        <guid>/posts/journals/2020-12-01-2020-12/</guid>
         <description>&lt;blockquote&gt;
 &lt;/blockquote&gt;</description>
         
@@ -1649,11 +1649,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>相机操作入门指南-索尼</title>
-        <link>xunhs.cyou/2020/11/30/108/</link>
+        <link>/2020/11/30/108/</link>
         <pubDate>Mon, 30 Nov 2020 09:32:54 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 30 Nov 2020 09:32:54 +0000</atom:modified>
-        <guid>xunhs.cyou/2020/11/30/108/</guid>
+        <guid>/2020/11/30/108/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;原文来源：&lt;a href=&#34;https://zhuanlan.zhihu.com/p/30243263&#34;&gt;相机操作入门指南(索尼篇)&lt;/a&gt;。本文为阅读原文指南札记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1685,11 +1685,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>博士论文阅读札记-3</title>
-        <link>xunhs.cyou/2020/11/17/106/</link>
+        <link>/2020/11/17/106/</link>
         <pubDate>Tue, 17 Nov 2020 09:32:16 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 17 Nov 2020 09:32:16 +0000</atom:modified>
-        <guid>xunhs.cyou/2020/11/17/106/</guid>
+        <guid>/2020/11/17/106/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;续 博士论文阅读札记-2&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1721,11 +1721,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-11</title>
-        <link>xunhs.cyou/posts/journals/2020-11-01-2020-11/</link>
+        <link>/posts/journals/2020-11-01-2020-11/</link>
         <pubDate>Sun, 01 Nov 2020 06:48:02 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 01 Nov 2020 06:48:02 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-11-01-2020-11/</guid>
+        <guid>/posts/journals/2020-11-01-2020-11/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;出差，地理大数据开发，月末完完整整的是ppt汇报人&amp;hellip;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1747,11 +1747,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Papers Reading-文本挖掘</title>
-        <link>xunhs.cyou/2020/10/28/104/</link>
+        <link>/2020/10/28/104/</link>
         <pubDate>Wed, 28 Oct 2020 09:31:21 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 28 Oct 2020 09:31:21 +0000</atom:modified>
-        <guid>xunhs.cyou/2020/10/28/104/</guid>
+        <guid>/2020/10/28/104/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;与地理知识发现相关的文本挖掘论文阅读总结&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1783,11 +1783,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Papers Reading:Urban functions/Urban land use</title>
-        <link>xunhs.cyou/2020/10/21/102/</link>
+        <link>/2020/10/21/102/</link>
         <pubDate>Wed, 21 Oct 2020 09:30:38 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 21 Oct 2020 09:30:38 +0000</atom:modified>
-        <guid>xunhs.cyou/2020/10/21/102/</guid>
+        <guid>/2020/10/21/102/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;文献阅读：城市功能区划分与城市土地利用分类相关。主题为遥感数据与社交型大数据融合方法。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1823,11 +1823,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-10</title>
-        <link>xunhs.cyou/posts/journals/2020-10-01-2020-10/</link>
+        <link>/posts/journals/2020-10-01-2020-10/</link>
         <pubDate>Thu, 01 Oct 2020 06:46:14 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 01 Oct 2020 06:46:14 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-10-01-2020-10/</guid>
+        <guid>/posts/journals/2020-10-01-2020-10/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;献给十月份：相遇。收获。积累。感动。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1849,11 +1849,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-9</title>
-        <link>xunhs.cyou/posts/journals/2020-09-01-2020-9/</link>
+        <link>/posts/journals/2020-09-01-2020-9/</link>
         <pubDate>Tue, 01 Sep 2020 06:45:29 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 01 Sep 2020 06:45:29 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-09-01-2020-9/</guid>
+        <guid>/posts/journals/2020-09-01-2020-9/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;国奖&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1917,11 +1917,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>转载-Chinese NLP</title>
-        <link>xunhs.cyou/posts/notes/2020-08-10-%E8%BD%AC%E8%BD%BD-chinese-nlp/</link>
+        <link>/posts/notes/2020-08-10-%E8%BD%AC%E8%BD%BD-chinese-nlp/</link>
         <pubDate>Mon, 10 Aug 2020 09:29:56 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 10 Aug 2020 09:29:56 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-08-10-%E8%BD%AC%E8%BD%BD-chinese-nlp/</guid>
+        <guid>/posts/notes/2020-08-10-%E8%BD%AC%E8%BD%BD-chinese-nlp/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;转载自&lt;a href=&#34;https://chinesenlp.xyz&#34;&gt;Chinese NLP&lt;/a&gt;，根据个人理解做适当札记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -1957,11 +1957,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-8</title>
-        <link>xunhs.cyou/posts/journals/2020-08-01-2020-8/</link>
+        <link>/posts/journals/2020-08-01-2020-8/</link>
         <pubDate>Sat, 01 Aug 2020 06:44:45 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 01 Aug 2020 06:44:45 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-08-01-2020-8/</guid>
+        <guid>/posts/journals/2020-08-01-2020-8/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;开学前的一个月，在学校封闭度过、有收到贺信和生日的喜悦，有失眠、麻木、不知所措的彷徨。开始锻炼了，打羽毛球，拍篮球，隔一天的半小时慢跑。继续加油吧，还是很喜欢那句话，进一步有进一步的欢喜。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2037,11 +2037,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>地理大数据挖掘专项实施方案-札记</title>
-        <link>xunhs.cyou/posts/notes/2020-07-31-%E5%9C%B0%E7%90%86%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E4%B8%93%E9%A1%B9%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88-%E6%9C%AD%E8%AE%B0/</link>
+        <link>/posts/notes/2020-07-31-%E5%9C%B0%E7%90%86%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E4%B8%93%E9%A1%B9%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88-%E6%9C%AD%E8%AE%B0/</link>
         <pubDate>Fri, 31 Jul 2020 09:29:16 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 31 Jul 2020 09:29:16 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-07-31-%E5%9C%B0%E7%90%86%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E4%B8%93%E9%A1%B9%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88-%E6%9C%AD%E8%AE%B0/</guid>
+        <guid>/posts/notes/2020-07-31-%E5%9C%B0%E7%90%86%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E4%B8%93%E9%A1%B9%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88-%E6%9C%AD%E8%AE%B0/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;再次研读地理大数据的实施方案，以期启发开题、大论文灵感，并做简要笔记、记录。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2073,11 +2073,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-07-18-风格迁移三部曲</title>
-        <link>xunhs.cyou/posts/notes/2020-07-18-%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB%E4%B8%89%E9%83%A8%E6%9B%B2/</link>
+        <link>/posts/notes/2020-07-18-%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB%E4%B8%89%E9%83%A8%E6%9B%B2/</link>
         <pubDate>Fri, 17 Jul 2020 09:28:41 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 17 Jul 2020 09:28:41 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-07-18-%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB%E4%B8%89%E9%83%A8%E6%9B%B2/</guid>
+        <guid>/posts/notes/2020-07-18-%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB%E4%B8%89%E9%83%A8%E6%9B%B2/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;拷贝自&lt;a href=&#34;https://github.com/CortexFoundation/StyleTransferTrilogy&#34;&gt;Github-StyleTransferTrilogy&lt;/a&gt;。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2113,13 +2113,13 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>博士论文阅读札记(2)</title>
-        <link>xunhs.cyou/posts/notes/2020-07-16-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-2/</link>
+        <link>/posts/notes/2020-07-16-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-2/</link>
         <pubDate>Fri, 03 Jul 2020 09:27:56 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 03 Jul 2020 09:27:56 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-07-16-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-2/</guid>
+        <guid>/posts/notes/2020-07-16-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-2/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;续&lt;a href=&#34;xunhs.cyou/2020/06/461b3b66/&#34;&gt;博士论文阅读札记-1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;续&lt;a href=&#34;/2020/06/461b3b66/&#34;&gt;博士论文阅读札记-1&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
         
         <dc:creator>热</dc:creator>
@@ -2169,11 +2169,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-7</title>
-        <link>xunhs.cyou/posts/journals/2020-07-01-2020-7/</link>
+        <link>/posts/journals/2020-07-01-2020-7/</link>
         <pubDate>Wed, 01 Jul 2020 06:43:56 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 01 Jul 2020 06:43:56 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-07-01-2020-7/</guid>
+        <guid>/posts/journals/2020-07-01-2020-7/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;家👪到学校🏫，状态切换&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2249,11 +2249,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>博士论文阅读札记-1</title>
-        <link>xunhs.cyou/posts/notes/2020-06-21-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-1/</link>
+        <link>/posts/notes/2020-06-21-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-1/</link>
         <pubDate>Sun, 21 Jun 2020 09:26:50 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 21 Jun 2020 09:26:50 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-06-21-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-1/</guid>
+        <guid>/posts/notes/2020-06-21-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-1/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;思考开题和研究大论文的主线是长期让我头疼的问题。通过阅读相关的博士论文，从作者的角度出发，挖掘他们的论文主线和思考他们的行文思路，从而为开题和大论文提供参考。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2285,11 +2285,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>RSURFC-练习赛Baseline实现</title>
-        <link>xunhs.cyou/posts/notes/2020-06-07-rsurfc-%E7%BB%83%E4%B9%A0%E8%B5%9Bbaseline%E5%AE%9E%E7%8E%B0/</link>
+        <link>/posts/notes/2020-06-07-rsurfc-%E7%BB%83%E4%B9%A0%E8%B5%9Bbaseline%E5%AE%9E%E7%8E%B0/</link>
         <pubDate>Sun, 07 Jun 2020 09:26:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 07 Jun 2020 09:26:00 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-06-07-rsurfc-%E7%BB%83%E4%B9%A0%E8%B5%9Bbaseline%E5%AE%9E%E7%8E%B0/</guid>
+        <guid>/posts/notes/2020-06-07-rsurfc-%E7%BB%83%E4%B9%A0%E8%B5%9Bbaseline%E5%AE%9E%E7%8E%B0/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;最近两天趁着写完小论文不想做事情。尝试玩了一下2019年百度AI搞得城市功能区划分的比赛。比赛提供了遥感影像数据和区域居民活动数据(可惜没有具体的位置信息)，初赛样本量4W，复赛样本量40W，拿初赛的样本玩了玩，实现了Baseline（0.67）。其实也是照抄别人代码，主要是为了熟悉pytorch环境和多模学习。对了，这个练习赛最开始是在本机上实现，但后来模型增大，显存无法承载，显存不足，转到Google 的Colab实现。别说，配合谷歌自带的网盘，这个Colab真的挺好用(主要是免费GPU，前提你的VPN要稳定)。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2333,11 +2333,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-6</title>
-        <link>xunhs.cyou/posts/journals/2020-06-01-2020-6/</link>
+        <link>/posts/journals/2020-06-01-2020-6/</link>
         <pubDate>Mon, 01 Jun 2020 06:42:59 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 01 Jun 2020 06:42:59 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-06-01-2020-6/</guid>
+        <guid>/posts/journals/2020-06-01-2020-6/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;小猫咪造访。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2385,11 +2385,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Python库-osmnx&amp;networkx</title>
-        <link>xunhs.cyou/posts/notes/2020-05-27-python%E5%BA%93-osmnxnetworkx/</link>
+        <link>/posts/notes/2020-05-27-python%E5%BA%93-osmnxnetworkx/</link>
         <pubDate>Wed, 27 May 2020 09:25:17 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 27 May 2020 09:25:17 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-05-27-python%E5%BA%93-osmnxnetworkx/</guid>
+        <guid>/posts/notes/2020-05-27-python%E5%BA%93-osmnxnetworkx/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;osmnx是下载、处理等osm路网很好用的一个包。networkx是图论学习中很好用的包，两者结合为基于图论的方法研究osm road network提供便利。以下内容为整理两个包常用的功能函数方法。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2437,11 +2437,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Papers_Reading-Urban Functional Regions</title>
-        <link>xunhs.cyou/posts/notes/2020-05-05-papers-reading-urban-functional-regions/</link>
+        <link>/posts/notes/2020-05-05-papers-reading-urban-functional-regions/</link>
         <pubDate>Tue, 05 May 2020 06:40:39 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 05 May 2020 06:40:39 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-05-05-papers-reading-urban-functional-regions/</guid>
+        <guid>/posts/notes/2020-05-05-papers-reading-urban-functional-regions/</guid>
         <description>&lt;blockquote&gt;
 &lt;/blockquote&gt;</description>
         
@@ -2472,11 +2472,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-5-中期总结邮件</title>
-        <link>xunhs.cyou/posts/journals/2020-05-04-2020-5-%E4%B8%AD%E6%9C%9F%E6%80%BB%E7%BB%93%E9%82%AE%E4%BB%B6/</link>
+        <link>/posts/journals/2020-05-04-2020-5-%E4%B8%AD%E6%9C%9F%E6%80%BB%E7%BB%93%E9%82%AE%E4%BB%B6/</link>
         <pubDate>Mon, 04 May 2020 06:42:03 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 04 May 2020 06:42:03 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-05-04-2020-5-%E4%B8%AD%E6%9C%9F%E6%80%BB%E7%BB%93%E9%82%AE%E4%BB%B6/</guid>
+        <guid>/posts/journals/2020-05-04-2020-5-%E4%B8%AD%E6%9C%9F%E6%80%BB%E7%BB%93%E9%82%AE%E4%BB%B6/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;一转眼博士三年级已然还有几个月就结束了，从一月份到五月初在家度过的这段时间，虽然受疫情的影响无法回学校学习，但换种角度而言，也成为了这读博期间度过的一个”特别“的时期。所谓特别，主要在于两方面。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2516,11 +2516,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-5</title>
-        <link>xunhs.cyou/posts/journals/2020-05-01-2020-5/</link>
+        <link>/posts/journals/2020-05-01-2020-5/</link>
         <pubDate>Fri, 01 May 2020 06:40:39 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 01 May 2020 06:40:39 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-05-01-2020-5/</guid>
+        <guid>/posts/journals/2020-05-01-2020-5/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;寻羊冒险记&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2596,11 +2596,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>git 初始化及常用操作</title>
-        <link>xunhs.cyou/posts/notes/2020-04-29-git-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+        <link>/posts/notes/2020-04-29-git-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
         <pubDate>Sun, 26 Apr 2020 09:22:59 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 26 Apr 2020 09:22:59 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-04-29-git-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+        <guid>/posts/notes/2020-04-29-git-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;git 常用命令以及免密push设置。 参考: &lt;a href=&#34;https://my.oschina.net/u/3552749/blog/1678082&#34;&gt;oschina&lt;/a&gt;, &lt;a href=&#34;https://todebug.com/Tips/&#34;&gt;todebug&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2648,11 +2648,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>PyTroch学习笔记</title>
-        <link>xunhs.cyou/posts/notes/328/</link>
+        <link>/posts/notes/328/</link>
         <pubDate>Sat, 25 Apr 2020 09:22:21 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 25 Apr 2020 09:22:21 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/328/</guid>
+        <guid>/posts/notes/328/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Refer: &lt;a href=&#34;https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html&#34;&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2696,11 +2696,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>关于Docker的一些收藏</title>
-        <link>xunhs.cyou/2020/04/17/78/</link>
+        <link>/2020/04/17/78/</link>
         <pubDate>Fri, 17 Apr 2020 09:21:49 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 17 Apr 2020 09:21:49 +0000</atom:modified>
-        <guid>xunhs.cyou/2020/04/17/78/</guid>
+        <guid>/2020/04/17/78/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Collecting some interesting and frequently used containers on Docker&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2728,11 +2728,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Scikit Learn Tips</title>
-        <link>xunhs.cyou/posts/notes/209/</link>
+        <link>/posts/notes/209/</link>
         <pubDate>Sat, 11 Apr 2020 09:21:12 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 11 Apr 2020 09:21:12 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/209/</guid>
+        <guid>/posts/notes/209/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Refer to &lt;a href=&#34;https://github.com/justmarkham/scikit-learn-tips&#34;&gt;scikit-learn-tips&lt;/a&gt;, &lt;a href=&#34;https://cloud.tencent.com/developer/article/1555141&#34;&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
 整理一些自己感兴趣，经常用到的&lt;/p&gt;
@@ -2765,11 +2765,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-4</title>
-        <link>xunhs.cyou/posts/journals/377/</link>
+        <link>/posts/journals/377/</link>
         <pubDate>Wed, 01 Apr 2020 06:40:01 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 01 Apr 2020 06:40:01 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/377/</guid>
+        <guid>/posts/journals/377/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;拯救者Y9000p&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2853,11 +2853,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>fmm-Map Matching路网匹配工具环境搭建与使用</title>
-        <link>xunhs.cyou/posts/notes/148/</link>
+        <link>/posts/notes/148/</link>
         <pubDate>Tue, 17 Mar 2020 09:20:26 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 17 Mar 2020 09:20:26 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/148/</guid>
+        <guid>/posts/notes/148/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/cyang-kth/fmm&#34;&gt;fmm&lt;/a&gt; 是在github上找到的比较好用的Map Matching路网匹配工具。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2889,11 +2889,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>常用加速镜像&amp;Python虚拟环境/包管理&amp;Jupyter Notebook</title>
-        <link>xunhs.cyou/posts/notes/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</link>
+        <link>/posts/notes/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</link>
         <pubDate>Sun, 08 Mar 2020 09:19:33 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 08 Mar 2020 09:19:33 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</guid>
+        <guid>/posts/notes/2020-03-08-python%E5%BA%93-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83_%E5%8C%85%E7%AE%A1%E7%90%86/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;常用加速镜像；python常用虚拟环境管理;Jupyter Notebook常用配置&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2949,11 +2949,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Python库-seaborn &#43; matplotlib</title>
-        <link>xunhs.cyou/posts/notes/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</link>
+        <link>/posts/notes/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</link>
         <pubDate>Tue, 03 Mar 2020 09:18:18 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 03 Mar 2020 09:18:18 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</guid>
+        <guid>/posts/notes/2020-03-03-python%E5%BA%93-seaborn_&#43;_matplotlib/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;seaborn是python里面做数据分析和机器学习常用的可视化库。它对matplotlib进行了深度封装，从而可以用非常简单的api接口绘制相对复杂的图形，提供对数据的深入认识。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -2997,11 +2997,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-3</title>
-        <link>xunhs.cyou/posts/journals/138/</link>
+        <link>/posts/journals/138/</link>
         <pubDate>Sun, 01 Mar 2020 06:39:09 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 01 Mar 2020 06:39:09 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/138/</guid>
+        <guid>/posts/journals/138/</guid>
         <description>&lt;blockquote&gt;
 &lt;/blockquote&gt;</description>
         
@@ -3072,11 +3072,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>学习笔记-QGIS</title>
-        <link>xunhs.cyou/posts/notes/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</link>
+        <link>/posts/notes/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</link>
         <pubDate>Sat, 29 Feb 2020 09:17:34 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 29 Feb 2020 09:17:34 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</guid>
+        <guid>/posts/notes/2020-02-29-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-qgis/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;关于QGIS若干记录&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -3120,11 +3120,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Kaggle-Starter Simple Framework For Prediction Issues</title>
-        <link>xunhs.cyou/posts/notes/2020-02-25-kaggle-starter_simple_framework_for_prediction_issues/</link>
+        <link>/posts/notes/2020-02-25-kaggle-starter_simple_framework_for_prediction_issues/</link>
         <pubDate>Tue, 25 Feb 2020 09:16:50 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 25 Feb 2020 09:16:50 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-02-25-kaggle-starter_simple_framework_for_prediction_issues/</guid>
+        <guid>/posts/notes/2020-02-25-kaggle-starter_simple_framework_for_prediction_issues/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;kaggle中处理预测问题通用流程/基本框架，参考&lt;br /&gt;
 &lt;a href=&#34;https://www.kaggle.com/neviadomski/how-to-get-to-top-25-with-simple-model-sklearn&#34;&gt;How to get to TOP 25% with Simple Model (sklearn)&lt;/a&gt;&lt;/p&gt;
@@ -3162,11 +3162,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Papers Reading-Taxi Trajectory/GPS Records</title>
-        <link>xunhs.cyou/posts/notes/2020-02-24-papers_reading-taxi_trajectory_gps_records/</link>
+        <link>/posts/notes/2020-02-24-papers_reading-taxi_trajectory_gps_records/</link>
         <pubDate>Mon, 24 Feb 2020 09:14:16 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 24 Feb 2020 09:14:16 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-02-24-papers_reading-taxi_trajectory_gps_records/</guid>
+        <guid>/posts/notes/2020-02-24-papers_reading-taxi_trajectory_gps_records/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;论文阅读，感兴趣点、关键词整理&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -3242,11 +3242,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>论文写作摘抄-城市功能区域挖掘</title>
-        <link>xunhs.cyou/posts/notes/127/</link>
+        <link>/posts/notes/127/</link>
         <pubDate>Sat, 22 Feb 2020 08:45:35 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 22 Feb 2020 08:45:35 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/127/</guid>
+        <guid>/posts/notes/127/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;整理和总结了论文写作中关于城市主题模型、城市功能区域挖掘相关的短语词组或相关句型句式。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -3282,11 +3282,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>English Writing-Email</title>
-        <link>xunhs.cyou/posts/notes/108/</link>
+        <link>/posts/notes/108/</link>
         <pubDate>Fri, 21 Feb 2020 09:13:38 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 21 Feb 2020 09:13:38 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/108/</guid>
+        <guid>/posts/notes/108/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;英文邮件常用表达。同时很多内容可以用在论文审阅回复reviewer邮件中。&lt;br /&gt;
 参考自：&lt;a href=&#34;https://www.zhihu.com/question/34147404&#34; title=&#34;哪些句子拯救了你的英文邮件？&#34;&gt;哪些句子拯救了你的英文邮件？&lt;/a&gt;&lt;/p&gt;
@@ -3323,11 +3323,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Papers Reading-Cognitive Places&amp;Urban Perception</title>
-        <link>xunhs.cyou/posts/notes/107/</link>
+        <link>/posts/notes/107/</link>
         <pubDate>Fri, 21 Feb 2020 09:12:41 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 21 Feb 2020 09:12:41 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/107/</guid>
+        <guid>/posts/notes/107/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;papers about investigating cognitive places&amp;amp;urban perception&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -3367,11 +3367,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>阅读笔记-从Word Embedding到Bert模型</title>
-        <link>xunhs.cyou/posts/notes/84/</link>
+        <link>/posts/notes/84/</link>
         <pubDate>Thu, 20 Feb 2020 09:12:07 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 20 Feb 2020 09:12:07 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/84/</guid>
+        <guid>/posts/notes/84/</guid>
         <description>&lt;hr /&gt;
 &lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
@@ -3406,11 +3406,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>转载-Sentence Representation</title>
-        <link>xunhs.cyou/posts/notes/%E8%BD%AC%E8%BD%BD-sentence-representation/</link>
+        <link>/posts/notes/%E8%BD%AC%E8%BD%BD-sentence-representation/</link>
         <pubDate>Wed, 19 Feb 2020 09:10:51 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Mon, 05 Jul 2021 09:54:41 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/%E8%BD%AC%E8%BD%BD-sentence-representation/</guid>
+        <guid>/posts/notes/%E8%BD%AC%E8%BD%BD-sentence-representation/</guid>
         <description>&lt;hr /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Copy from:&lt;br /&gt;
@@ -3448,11 +3448,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Linux-基础及常用命令</title>
-        <link>xunhs.cyou/posts/notes/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+        <link>/posts/notes/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Fri, 14 Feb 2020 09:09:11 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 14 Feb 2020 09:09:11 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+        <guid>/posts/notes/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
         <description>&lt;hr /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Linux基础及部分常用命令&lt;/p&gt;
@@ -3493,11 +3493,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>转载-SCI论文写作常用经典词和常用句型</title>
-        <link>xunhs.cyou/posts/notes/83/</link>
+        <link>/posts/notes/83/</link>
         <pubDate>Sat, 08 Feb 2020 09:06:52 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 08 Feb 2020 09:06:52 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/83/</guid>
+        <guid>/posts/notes/83/</guid>
         <description>&lt;hr /&gt;
 &lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
@@ -3532,11 +3532,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-2</title>
-        <link>xunhs.cyou/posts/journals/98/</link>
+        <link>/posts/journals/98/</link>
         <pubDate>Sat, 01 Feb 2020 06:37:46 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 01 Feb 2020 06:37:46 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/98/</guid>
+        <guid>/posts/journals/98/</guid>
         <description>&lt;blockquote&gt;
 &lt;/blockquote&gt;</description>
         
@@ -3587,11 +3587,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Python-坐标系转换</title>
-        <link>xunhs.cyou/posts/notes/75/</link>
+        <link>/posts/notes/75/</link>
         <pubDate>Thu, 30 Jan 2020 09:06:19 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 30 Jan 2020 09:06:19 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/75/</guid>
+        <guid>/posts/notes/75/</guid>
         <description>&lt;hr /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;用Python实现WGS84、火星坐标系、百度坐标系、web墨卡托四种坐标相互转换&lt;/p&gt;
@@ -3624,11 +3624,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-1-总结与规划邮件</title>
-        <link>xunhs.cyou/posts/journals/2020-01-12-2020-1-%E6%80%BB%E7%BB%93%E4%B8%8E%E8%A7%84%E5%88%92%E9%82%AE%E4%BB%B6/</link>
+        <link>/posts/journals/2020-01-12-2020-1-%E6%80%BB%E7%BB%93%E4%B8%8E%E8%A7%84%E5%88%92%E9%82%AE%E4%BB%B6/</link>
         <pubDate>Wed, 22 Jan 2020 06:35:17 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 22 Jan 2020 06:35:17 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-01-12-2020-1-%E6%80%BB%E7%BB%93%E4%B8%8E%E8%A7%84%E5%88%92%E9%82%AE%E4%BB%B6/</guid>
+        <guid>/posts/journals/2020-01-12-2020-1-%E6%80%BB%E7%BB%93%E4%B8%8E%E8%A7%84%E5%88%92%E9%82%AE%E4%BB%B6/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;每一年的临近新年时期，总会感慨时间的匆匆。因为回想一年的工作和收获，总觉得少的可怜。2019年的年初给自己定下两个目标，在元旦到来之前也均有了结果。一次情感经历，一篇论文发表，一次雅思考试。总体上对今年的表现基本满意，会给自己制定计划，会依照计划行事，但是仍表现懒散，常有拖拉。然而，未来可期，对明年甚至接下来的几年，我都怀有期待，而且对自己充满自信。以下是我具体的总结以及相关规划。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -3664,11 +3664,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Python库：pathlib</title>
-        <link>xunhs.cyou/posts/notes/72/</link>
+        <link>/posts/notes/72/</link>
         <pubDate>Sat, 18 Jan 2020 09:04:38 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 18 Jan 2020 09:04:38 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/72/</guid>
+        <guid>/posts/notes/72/</guid>
         <description>&lt;hr /&gt;
 &lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
@@ -3707,11 +3707,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Python多线程/进程技巧</title>
-        <link>xunhs.cyou/posts/notes/74/</link>
+        <link>/posts/notes/74/</link>
         <pubDate>Fri, 17 Jan 2020 09:02:53 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 17 Jan 2020 09:02:53 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/74/</guid>
+        <guid>/posts/notes/74/</guid>
         <description>&lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;整理Python并行化常用技巧&lt;/p&gt;
@@ -3757,11 +3757,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Python库-tqdm-进度条</title>
-        <link>xunhs.cyou/posts/notes/73/</link>
+        <link>/posts/notes/73/</link>
         <pubDate>Wed, 15 Jan 2020 09:03:58 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 15 Jan 2020 09:03:58 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/73/</guid>
+        <guid>/posts/notes/73/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;总结tqdm库，进度条显示。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -3801,11 +3801,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>Pandas/Geopandas Tricks</title>
-        <link>xunhs.cyou/posts/notes/pandas-geopandas-tricks/</link>
+        <link>/posts/notes/pandas-geopandas-tricks/</link>
         <pubDate>Mon, 13 Jan 2020 09:01:39 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 06 Jul 2021 01:21:07 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/pandas-geopandas-tricks/</guid>
+        <guid>/posts/notes/pandas-geopandas-tricks/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;总结个人使用中常用Pandas及扩展插件使用技巧&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -3845,11 +3845,11 @@ url=&#34;https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C
       
       <item>
         <title>2020-1</title>
-        <link>xunhs.cyou/posts/journals/99/</link>
+        <link>/posts/journals/99/</link>
         <pubDate>Wed, 01 Jan 2020 06:32:46 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 01 Jan 2020 06:32:46 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/99/</guid>
+        <guid>/posts/journals/99/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;利维亚的杰洛特。&lt;/p&gt;
 &lt;/blockquote&gt;</description>

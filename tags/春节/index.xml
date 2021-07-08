@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>春节 on 热</title>
-    <link>xunhs.cyou/tags/%E6%98%A5%E8%8A%82/</link>
+    <link>/tags/%E6%98%A5%E8%8A%82/</link>
     <description>Recent content in 春节 on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 01 Jan 2020 06:32:46 +0000</lastBuildDate>
     
-        <atom:link href="xunhs.cyou/tags/%E6%98%A5%E8%8A%82/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/%E6%98%A5%E8%8A%82/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>2020-1</title>
-        <link>xunhs.cyou/posts/journals/99/</link>
+        <link>/posts/journals/99/</link>
         <pubDate>Wed, 01 Jan 2020 06:32:46 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 01 Jan 2020 06:32:46 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/99/</guid>
+        <guid>/posts/journals/99/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;利维亚的杰洛特。&lt;/p&gt;
 &lt;/blockquote&gt;</description>

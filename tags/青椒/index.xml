@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>青椒 on 热</title>
-    <link>xunhs.cyou/tags/%E9%9D%92%E6%A4%92/</link>
+    <link>/tags/%E9%9D%92%E6%A4%92/</link>
     <description>Recent content in 青椒 on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 27 May 2021 15:25:26 +0800</lastBuildDate>
     
-        <atom:link href="xunhs.cyou/tags/%E9%9D%92%E6%A4%92/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/%E9%9D%92%E6%A4%92/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>2021-6</title>
-        <link>xunhs.cyou/posts/journals/2021-06-01-2021-6/</link>
+        <link>/posts/journals/2021-06-01-2021-6/</link>
         <pubDate>Thu, 27 May 2021 15:25:26 +0800</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Thu, 27 May 2021 15:25:26 +0800</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2021-06-01-2021-6/</guid>
+        <guid>/posts/journals/2021-06-01-2021-6/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;命硬。&lt;/p&gt;
 &lt;/blockquote&gt;</description>

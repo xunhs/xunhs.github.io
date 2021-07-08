@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>OneDrive on 热</title>
-    <link>xunhs.cyou/tags/onedrive/</link>
+    <link>/tags/onedrive/</link>
     <description>Recent content in OneDrive on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 01 Jul 2020 06:43:56 +0000</lastBuildDate>
     
-        <atom:link href="xunhs.cyou/tags/onedrive/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/onedrive/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>2020-7</title>
-        <link>xunhs.cyou/posts/journals/2020-07-01-2020-7/</link>
+        <link>/posts/journals/2020-07-01-2020-7/</link>
         <pubDate>Wed, 01 Jul 2020 06:43:56 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 01 Jul 2020 06:43:56 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/2020-07-01-2020-7/</guid>
+        <guid>/posts/journals/2020-07-01-2020-7/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;家👪到学校🏫，状态切换&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -102,11 +102,11 @@
       
       <item>
         <title>2020-4</title>
-        <link>xunhs.cyou/posts/journals/377/</link>
+        <link>/posts/journals/377/</link>
         <pubDate>Wed, 01 Apr 2020 06:40:01 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 01 Apr 2020 06:40:01 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/377/</guid>
+        <guid>/posts/journals/377/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;拯救者Y9000p&lt;/p&gt;
 &lt;/blockquote&gt;</description>

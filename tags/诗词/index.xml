@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>诗词 on 热</title>
-    <link>xunhs.cyou/tags/%E8%AF%97%E8%AF%8D/</link>
+    <link>/tags/%E8%AF%97%E8%AF%8D/</link>
     <description>Recent content in 诗词 on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 25 Dec 2019 09:01:00 +0000</lastBuildDate>
     
-        <atom:link href="xunhs.cyou/tags/%E8%AF%97%E8%AF%8D/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/%E8%AF%97%E8%AF%8D/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>100句情诗</title>
-        <link>xunhs.cyou/posts/journals/104/</link>
+        <link>/posts/journals/104/</link>
         <pubDate>Wed, 25 Dec 2019 09:01:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 25 Dec 2019 09:01:00 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/journals/104/</guid>
+        <guid>/posts/journals/104/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;收集一百句诗词。&lt;/p&gt;
 &lt;/blockquote&gt;</description>

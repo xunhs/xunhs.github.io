@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>POIs on 热</title>
-    <link>xunhs.cyou/tags/pois/</link>
+    <link>/tags/pois/</link>
     <description>Recent content in POIs on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 24 Feb 2021 01:44:11 +0000</lastBuildDate>
     
-        <atom:link href="xunhs.cyou/tags/pois/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/pois/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>POI-type Embedding构建流程札记</title>
-        <link>xunhs.cyou/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
+        <link>/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</link>
         <pubDate>Wed, 24 Feb 2021 01:44:11 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 24 Feb 2021 01:44:11 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
+        <guid>/posts/notes/2021-02-24-gensim-embedding%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;本文对POI-type Embedding的构建流程进行整理。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -74,11 +74,11 @@
       
       <item>
         <title>POI数据Elasticsearch存储及查询操作札记</title>
-        <link>xunhs.cyou/2021/02/23/368/</link>
+        <link>/2021/02/23/368/</link>
         <pubDate>Tue, 23 Feb 2021 06:37:47 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 23 Feb 2021 06:37:47 +0000</atom:modified>
-        <guid>xunhs.cyou/2021/02/23/368/</guid>
+        <guid>/2021/02/23/368/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;使用ArcGIS Pro栅格切割工具做分块裁剪，并使用切割好的分块做Image Embeddings。记录操作过程及注意事项。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -118,11 +118,11 @@
       
       <item>
         <title>Papers Reading-Cognitive Places&amp;Urban Perception</title>
-        <link>xunhs.cyou/posts/notes/107/</link>
+        <link>/posts/notes/107/</link>
         <pubDate>Fri, 21 Feb 2020 09:12:41 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Fri, 21 Feb 2020 09:12:41 +0000</atom:modified>
-        <guid>xunhs.cyou/posts/notes/107/</guid>
+        <guid>/posts/notes/107/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;papers about investigating cognitive places&amp;amp;urban perception&lt;/p&gt;
 &lt;/blockquote&gt;</description>
