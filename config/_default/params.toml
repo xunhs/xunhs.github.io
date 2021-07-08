@@ -25,7 +25,6 @@ enableAppbarSearchIcon = true
 enableAppbarLangIcon = false
 
 # header
-homeHeaderType = "text" # text, img, slide, typewriter
 hideHomeHeaderWhenMobile = false
 
 # menu
@@ -75,6 +74,8 @@ useGravatar = false # we use this option highest priority
 location = "Wuhan, China"
 organization = "CUG"
 link = "https://xunhs.cyou"
+
+homeHeaderType = "typewriter" # text, img, slide, typewriter
 
 # sidebar
 enableBio = true # in home page sidebar

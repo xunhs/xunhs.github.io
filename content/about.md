@@ -1,11 +1,10 @@
 ---
 title: "About Me"
 date: 2021-04-28T10:33:12+08:00
-libraries:
-    - aplayer
 type: about
 libraries:
   - dplayer
+  - meting
 ---
 
 > Hi there, I'm Ethan (Sheng Hu, 胡胜).
@@ -86,6 +85,7 @@ libraries:
 - Nov.2020 High School GIS New Talent, awarded by National University GIS Forum 
 - Dec.2020 National Scholarship for Graduate Students 
 
+------------
 
 {{< dplayer 
 url="/videos/Wakin.Chau.Any.song.reminds.you.or.me.mp4" 

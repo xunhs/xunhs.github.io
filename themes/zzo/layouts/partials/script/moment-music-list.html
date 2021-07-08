@@ -1,0 +1,19 @@
+{{$music := .Site.Data.music}}
+
+
+<div class="aplayer-container"><div id="music-div"></div></div>
+<!-- https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0 -->
+<script>
+    function loadAPlayer() {
+        const ap = new APlayer({
+            container: document.getElementById('music-div'),
+            lrcType: 3,
+            fixed: true,
+            theme: '#e9e9e9',
+            order: 'random',
+            audio: {{ $music.audio }}
+        });
+    }
+    // console.log({{ $music.audio }})
+    document.addEventListener('DOMContentLoaded', loadAPlayer, !1);
+</script>
