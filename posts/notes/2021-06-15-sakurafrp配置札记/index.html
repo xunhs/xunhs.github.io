@@ -2258,7 +2258,27 @@
 </ul>
 
 </div></p>
-<h4 id="下载软件">下载软件</h4>
+<h4 id="运行安装">运行安装</h4>
+<h5 id="linux一键安装">Linux一键安装</h5>
+<ul>
+<li>Linux 自动安装脚本：<code>bash &lt;(curl -s https://getfrp.sh)</code></li>
+<li>完成后显示：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">使用 systemctl stop frpc <span class="o">&amp;&amp;</span> systemctl disable frpc 命令停止服务
+使用 systemctl status frpc 命令查看服务状态和 frpc 日志
+使用 rm -f /lib/systemd/system/frpc.service 命令删除服务配置
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h5 id="树莓派端">树莓派端</h5>
+<h6 id="下载软件">下载软件</h6>
 <ul>
 <li><code>uname -a</code>查看内核：
 <ul>
@@ -2266,9 +2286,9 @@
 <li>aarch64即arm64</li>
 </ul>
 </li>
-<li>前往https://www.natfrp.com/tunnel/download，选择Linux (arm64)，适用于树莓派3B+</li>
+<li>前往https://www.natfrp.com/tunnel/download/，选择Linux (arm64)，适用于树莓派3B+</li>
 </ul>
-<h4 id="树莓派端运行frpc">树莓派端运行frpc</h4>
+<h6 id="运行frpc">运行frpc</h6>
 <ul>
 <li>赋权：<code>chmod 777 frpc_linux_arm64</code></li>
 <li>运行： <code>./frpc_linux_arm64 -f 3ebb876549ee0ca6:1407145</code></li>
@@ -2293,7 +2313,7 @@
 </div></p>
 <h4 id="下载软件-1">下载软件</h4>
 <p>本次环境为win10，下载win10版本即可</p>
-<h4 id="运行frpc">运行frpc</h4>
+<h4 id="运行frpc-1">运行frpc</h4>
 <ul>
 <li>win10环境下该软件一键安装，配置较为简单</li>
 <li>根据日志提示，添加DNS记录，本例中使用的<a href="https://www.namesilo.com/account_domain_manage_dns.php">namesilo</a><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210615113519.png" alt="" /></li>
@@ -3066,8 +3086,17 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="#实例一内网穿透openwrt-ssh-树莓派3b">实例一：内网穿透openwrt ssh （树莓派3B+）</a>
               <ul>
                 <li><a href="#创建隧道">创建隧道</a></li>
-                <li><a href="#下载软件">下载软件</a></li>
-                <li><a href="#树莓派端运行frpc">树莓派端运行frpc</a></li>
+                <li><a href="#运行安装">运行安装</a>
+                  <ul>
+                    <li><a href="#linux一键安装">Linux一键安装</a></li>
+                    <li><a href="#树莓派端">树莓派端</a>
+                      <ul>
+                        <li><a href="#下载软件">下载软件</a></li>
+                        <li><a href="#运行frpc">运行frpc</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
                 <li><a href="#客户端连接">客户端连接</a></li>
               </ul>
             </li>
@@ -3075,7 +3104,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <ul>
                 <li><a href="#创建隧道-1">创建隧道</a></li>
                 <li><a href="#下载软件-1">下载软件</a></li>
-                <li><a href="#运行frpc">运行frpc</a></li>
+                <li><a href="#运行frpc-1">运行frpc</a></li>
                 <li><a href="#客户端连接-1">客户端连接</a></li>
               </ul>
             </li>
