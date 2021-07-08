@@ -9,11 +9,11 @@ header:
       - typeString:  <p>You’re not getting out, you’re just getting in. </p>
       - pauseFor: 1000
       - typeString:  I’ve every faith in you.
-      - pauseFor: 5000
+      - pauseFor: 5000000000
     options:
-      loop: true
-      autoStart: false
-    height: 190
+      loop: false
+      autoStart: true
+    height: 200
     paddingX: 50
     align: center
     fontSize: 20
