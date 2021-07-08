@@ -28,15 +28,26 @@ lastmod: '2021-07-05T09:13:50.547Z'
 - 本地端口：22
 {{< /notice >}}
 
+#### 运行安装
 
-#### 下载软件
+##### Linux一键安装
+- Linux 自动安装脚本：`bash <(curl -s https://getfrp.sh)`
+- 完成后显示：
+  ```bash
+  使用 systemctl stop frpc && systemctl disable frpc 命令停止服务
+  使用 systemctl status frpc 命令查看服务状态和 frpc 日志
+  使用 rm -f /lib/systemd/system/frpc.service 命令删除服务配置
+  ```
+
+
+##### 树莓派端
+###### 下载软件
 - `uname -a`查看内核：
   - 返回：Linux OpenWrt 5.4.124 #0 SMP Fri Jun 11 17:57:31 2021 aarch64 GNU/Linux
   - aarch64即arm64
-- 前往https://www.natfrp.com/tunnel/download，选择Linux (arm64)，适用于树莓派3B+
+- 前往https://www.natfrp.com/tunnel/download/，选择Linux (arm64)，适用于树莓派3B+
 
-
-#### 树莓派端运行frpc
+###### 运行frpc
 - 赋权：`chmod 777 frpc_linux_arm64`
 - 运行： `./frpc_linux_arm64 -f 3ebb876549ee0ca6:1407145`
 
