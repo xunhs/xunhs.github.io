@@ -1658,7 +1658,7 @@
 
     if (lib && lib.includes('mermaid')) {
       
-      var themeVariant = localStorage.getItem('theme') || JSON.parse("\"dark\"");
+      var themeVariant = localStorage.getItem('theme') || JSON.parse("\"light\"");
 
       if (themeVariant === "dark" || themeVariant === "hacker") {
         mermaid.initialize({ theme: 'dark' });
@@ -1932,7 +1932,7 @@
     
 </head>
 
-<body id="root" class="theme__dark">
+<body id="root" class="theme__light">
     <script>
         var localTheme = localStorage.getItem('theme');
         if (localTheme) {
@@ -1971,11 +1971,11 @@
       
         
         <a href="#" class="dropdown-item select-theme__item is-active">
-          dark
+          light
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
-          light
+          dark
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
@@ -2073,18 +2073,6 @@
     
 
     
-      <li class="navbarm__menu--item ">
-        <a href="/categories" class="navbarm__menu--term" data-index="0">
-          Categories
-        </a>
-      </li>
-    
-      <li class="navbarm__menu--item ">
-        <a href="/series" class="navbarm__menu--term" data-index="1">
-          Series
-        </a>
-      </li>
-    
   </ul>
 </div>
   <div class="navbar__menu">
@@ -2110,11 +2098,11 @@
       
         
         <a href="#" class="dropdown-item select-theme__item is-active">
-          dark
+          light
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
-          light
+          dark
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
@@ -2179,7 +2167,7 @@
 
   
     
-      <div class="site-header basicflex-column site-header__align-center" data-ani="true" style="width: 100%; height: 190px; padding: px 50px; font-size: 20px; color:black;">
+      <div class="site-header basicflex-column site-header__align-center" data-ani="true" style="width: 100%; height: 200px; padding: px 50px; font-size: 20px; color:black;">
         <div id="typewriter"></div>
       </div>
 
@@ -2187,8 +2175,8 @@
         
         
 
-        var methods = JSON.parse("[{\"typeString\":\"\\u003cp\\u003eYou’re a bright young man.\\u003c/p\\u003e\"},{\"pauseFor\":1000},{\"typeString\":\"\\u003cp\\u003eThis monkey business is in your blood, under your skin. \\u003c/p\\u003e\"},{\"pauseFor\":1000},{\"typeString\":\"\\u003cp\\u003eYou’re not getting out, you’re just getting in. \\u003c/p\\u003e\"},{\"pauseFor\":1000},{\"typeString\":\"I’ve every faith in you.\"},{\"pauseFor\":5000}]");
-        var options = JSON.parse("{\"autoStart\":false,\"loop\":true}");
+        var methods = JSON.parse("[{\"typeString\":\"\\u003cp\\u003eYou’re a bright young man.\\u003c/p\\u003e\"},{\"pauseFor\":1000},{\"typeString\":\"\\u003cp\\u003eThis monkey business is in your blood, under your skin. \\u003c/p\\u003e\"},{\"pauseFor\":1000},{\"typeString\":\"\\u003cp\\u003eYou’re not getting out, you’re just getting in. \\u003c/p\\u003e\"},{\"pauseFor\":1000},{\"typeString\":\"I’ve every faith in you.\"},{\"pauseFor\":5000000000}]");
+        var options = JSON.parse("{\"autoStart\":true,\"loop\":false}");
         var typeElem = document.getElementById("typewriter");
         var typewriter = new Typewriter(typeElem, options);
         typewriter.callFunction(function(state) {

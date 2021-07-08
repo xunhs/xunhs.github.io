@@ -1661,7 +1661,7 @@
 
     if (lib && lib.includes('mermaid')) {
       
-      var themeVariant = localStorage.getItem('theme') || JSON.parse("\"dark\"");
+      var themeVariant = localStorage.getItem('theme') || JSON.parse("\"light\"");
 
       if (themeVariant === "dark" || themeVariant === "hacker") {
         mermaid.initialize({ theme: 'dark' });
@@ -1941,7 +1941,7 @@
     
 </head>
 
-<body id="root" class="theme__dark">
+<body id="root" class="theme__light">
     <script>
         var localTheme = localStorage.getItem('theme');
         if (localTheme) {
@@ -1980,11 +1980,11 @@
       
         
         <a href="#" class="dropdown-item select-theme__item is-active">
-          dark
+          light
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
-          light
+          dark
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
@@ -2082,18 +2082,6 @@
     
 
     
-      <li class="navbarm__menu--item ">
-        <a href="/categories" class="navbarm__menu--term" data-index="0">
-          Categories
-        </a>
-      </li>
-    
-      <li class="navbarm__menu--item ">
-        <a href="/series" class="navbarm__menu--term" data-index="1">
-          Series
-        </a>
-      </li>
-    
   </ul>
 </div>
   <div class="navbar__menu">
@@ -2119,11 +2107,11 @@
       
         
         <a href="#" class="dropdown-item select-theme__item is-active">
-          dark
+          light
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
-          light
+          dark
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
