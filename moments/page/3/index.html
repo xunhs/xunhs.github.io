@@ -1387,7 +1387,6 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/color-thief@2.2.5/js/color-thief.min.js" crossorigin="anonymous"></script>
 
 
 
@@ -2171,6 +2170,7 @@
   
   
 </div>
+
 </nav>
             
             
@@ -2186,138 +2186,6 @@
 <main class="main">
   <div class="summary__container" data-display="block">
     
-    
-        
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='/moments/2021.3.8-%E6%B7%B1%E9%82%83/'>2021.3.8-深邃</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Mar 8, 2021 </time>
-          
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;0&nbsp;min read </span>
-          
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            <p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210310093855.jpg" alt="" /></p>
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-
-    
-        
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='/moments/2021.3.6-%E6%89%98%E9%A9%AC%E6%96%AF%E5%B8%83%E7%BD%97%E8%BF%AA-%E6%A1%91%E6%96%AF%E7%89%B9/'>2021.3.6-托马斯·布罗迪-桑斯特</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Mar 6, 2021 </time>
-          
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;0&nbsp;min read </span>
-          
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            <p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210306211646.jpg" alt="" /></p>
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-
-    
-        
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='/moments/2021.2.15-%E5%AE%B6/'>2021.2.15-家</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Feb 15, 2021 </time>
-          
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;0&nbsp;min read </span>
-          
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            <p><img src="https://images.pexels.com/photos/6951157/pexels-photo-6951157.jpeg" alt="" /></p>
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-
-    
-        
-  <article class="summary-classic" data-ani="true">
-  <div class="summary-classic__flex-box" >
-
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='/moments/2021.1.23-%E6%B7%B1%E9%82%83%E7%9A%84%E6%A0%91/'>2021.1.23-深邃的树</a> </h5>
-        <h6 class="subtitle caption">
-          <time title="Written At" dir="ltr">📅&nbsp;Jan 23, 2021 </time>
-          
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;0&nbsp;min read </span>
-          
-        </h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            <p><img src="https://images.pexels.com/photos/6959215/pexels-photo-6959215.jpeg" alt="" /></p>
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-
     
         
   <article class="summary-classic" data-ani="true">
@@ -2381,7 +2249,27 @@
   </ul>
 
 
+
 </div>
+
+
+
+<div class="aplayer-container"><div id="music-div"></div></div>
+
+<script>
+    function loadAPlayer() {
+        const ap = new APlayer({
+            container: document.getElementById('music-div'),
+            lrcType: 3,
+            fixed: true,
+            theme: '#e9e9e9',
+            order: 'random',
+            audio: [{"artist":"邓紫棋","cover":"https://p2.music.126.net/btmsQGuCwT6YNbbaOwGqxw==/109951165628217052.jpg?param=300x300","lrc":"https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/A.I.N.Y.-G.E.M.%E9%82%93%E7%B4%AB%E6%A3%8B-053302-Ag.lrc","name":"A.I.N.Y","url":"https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/G.E.M.%20%E9%84%A7%E7%B4%AB%E6%A3%8BA.I.N.Y.%E6%84%9B%E4%BD%A0-b49037.mp3"},{"artist":"张紫豪","cover":"https://p1.music.126.net/WafK2OQfEtqXitdDXJ772Q==/109951163252847249.jpg?param=300x300","lrc":"https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5-%E5%BC%A0%E7%B4%AB%E8%B1%AA-043759-Ag.lrc","name":"可不可以","url":"https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5-%E5%BC%A0%E7%B4%AB%E8%B1%AA.mp3?download=1"},{"artist":"张远","cover":"https://p1.music.126.net/LoVqPgkI7DwSNZk50gcODg==/109951165994863998.jpg?param=300x300","lrc":"https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E5%98%89%E5%AE%BE-%E8%B7%AF%E9%A3%9E%E6%96%87-f51bdf-Ag.lrc","name":"嘉宾","url":"https://one.xunhs.cyou/d/EY12kyaQ/%E9%9F%B3%E4%B9%90/%E5%BC%A0%E8%BF%9C-%E5%98%89%E5%AE%BE.mp3?download=1"},{"artist":"蓝心羽","cover":"https://p2.music.126.net/CbWwREaA22LmAv1oOtJt2w==/109951165518862422.jpg?param=300x300","lrc":"https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E6%B5%B7%E6%B9%BE-%E8%93%9D%E5%BF%83%E7%BE%BD-d1b97a-Ag.lrc","name":"阿拉斯加海湾","url":"https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E6%B5%B7%E6%B9%BE-%E8%93%9D%E5%BF%83%E7%BE%BD-bf2dc1.mp3"}]
+        });
+    }
+    
+    document.addEventListener('DOMContentLoaded', loadAPlayer, !1);
+</script>
 
 </main>
 

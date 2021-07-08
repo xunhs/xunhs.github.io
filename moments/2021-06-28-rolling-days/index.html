@@ -1387,7 +1387,6 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/color-thief@2.2.5/js/color-thief.min.js" crossorigin="anonymous"></script>
 
 
 
@@ -1908,7 +1907,7 @@
     "datePublished": "2021-06-28T09:16:35+08:00",
     "dateModified": "2021-06-28T09:16:35+08:00",
     "url" : "/moments/2021-06-28-rolling-days/",
-    "description": "\u003c!-- content --\u003e \r \r \r \r \u003cdiv class=\"aplayer-container\"\u003e\u003cdiv id=\"aplayer_a\"\u003e\u003c/div\u003e\u003c/div\u003e\r \r \r \u003cscript\u003e\r     function loadAPlayer() {\r         const ap = new APlayer({\r             container: document.getElementById(\"aplayer_a\"),\r             loop:  false , …\u003c/script\u003e\u003c/div\u003e\u003c/div\u003e\u003c/!--\u003e",
+    "description": "\u003c!-- content --\u003e \u003cblockquote\u003e \u003cp\u003e你若是喜欢花，就把它掐下来放在瓶子里养着；你要是喜欢树，也可以把它挖出来栽进自家院子去；但有的东西不行。不行就是不行。\u003c/p\u003e \u003c/blockquote\u003e",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": ""
@@ -2171,6 +2170,7 @@
   
   
 </div>
+
 </nav>
             
             
@@ -2244,6 +2244,9 @@
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
       <!-- content -->
+<blockquote>
+<p>你若是喜欢花，就把它掐下来放在瓶子里养着；你要是喜欢树，也可以把它挖出来栽进自家院子去；但有的东西不行。不行就是不行。</p>
+</blockquote>
 
 
 
@@ -2267,31 +2270,6 @@
                 lrc: "",
             }]
     });
-    const colorThief = new ColorThief();
-    const image = new Image();
-    const xhr = new XMLHttpRequest();
-    const setTheme = (index) => {
-        if (!ap.list.audios[index].theme) {
-            xhr.onload = function(){
-                let coverUrl = URL.createObjectURL(this.response);
-                image.onload = function(){
-                    let color = colorThief.getColor(image);
-                    ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
-                    URL.revokeObjectURL(coverUrl)
-                };
-                image.src = coverUrl;
-            }
-            xhr.open('GET', ap.list.audios[index].cover, true);
-            xhr.responseType = 'blob';
-            xhr.send();
-        }
-    };
-    setTheme(ap.list.index);
-    ap.on('listswitch', (index) => {
-        setTheme(index);
-    });
-
-
 }
 
     document.addEventListener('DOMContentLoaded', loadAPlayer, !1);
@@ -2540,11 +2518,11 @@
 <nav class="pagination-single">
   
     
-      <a href="/moments/2021-06-26-%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E6%B5%B7%E6%B9%BE/" class="pagination-single__left">
+      <a href="/moments/2021-06-21-%E8%BF%9C%E7%A8%8B/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">阿拉斯加海湾</div>      
+        <div class="pagination-single__left-title">远程</div>      
       </a>
     
     <div class="grow"></div>
