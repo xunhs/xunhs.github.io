@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>优化 on 热</title>
-    <link>https://xunhs.cyou/tags/%E4%BC%98%E5%8C%96/</link>
+    <link>https://www.xunhs.cyou/tags/%E4%BC%98%E5%8C%96/</link>
     <description>Recent content in 优化 on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 13 Jan 2020 09:01:39 +0000</lastBuildDate>
     
-        <atom:link href="https://xunhs.cyou/tags/%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.xunhs.cyou/tags/%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Pandas/Geopandas Tricks</title>
-        <link>https://xunhs.cyou/posts/notes/pandas-geopandas-tricks/</link>
+        <link>https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/</link>
         <pubDate>Mon, 13 Jan 2020 09:01:39 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Tue, 06 Jul 2021 01:21:07 +0000</atom:modified>
-        <guid>https://xunhs.cyou/posts/notes/pandas-geopandas-tricks/</guid>
+        <guid>https://www.xunhs.cyou/posts/notes/pandas-geopandas-tricks/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;总结个人使用中常用Pandas及扩展插件使用技巧&lt;/p&gt;
 &lt;/blockquote&gt;</description>

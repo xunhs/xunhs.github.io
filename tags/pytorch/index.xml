@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>PyTorch on 热</title>
-    <link>https://xunhs.cyou/tags/pytorch/</link>
+    <link>https://www.xunhs.cyou/tags/pytorch/</link>
     <description>Recent content in PyTorch on 热</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 07 Jun 2020 09:26:00 +0000</lastBuildDate>
     
-        <atom:link href="https://xunhs.cyou/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.xunhs.cyou/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>RSURFC-练习赛Baseline实现</title>
-        <link>https://xunhs.cyou/posts/notes/2020-06-07-rsurfc-%E7%BB%83%E4%B9%A0%E8%B5%9Bbaseline%E5%AE%9E%E7%8E%B0/</link>
+        <link>https://www.xunhs.cyou/posts/notes/2020-06-07-rsurfc-%E7%BB%83%E4%B9%A0%E8%B5%9Bbaseline%E5%AE%9E%E7%8E%B0/</link>
         <pubDate>Sun, 07 Jun 2020 09:26:00 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sun, 07 Jun 2020 09:26:00 +0000</atom:modified>
-        <guid>https://xunhs.cyou/posts/notes/2020-06-07-rsurfc-%E7%BB%83%E4%B9%A0%E8%B5%9Bbaseline%E5%AE%9E%E7%8E%B0/</guid>
+        <guid>https://www.xunhs.cyou/posts/notes/2020-06-07-rsurfc-%E7%BB%83%E4%B9%A0%E8%B5%9Bbaseline%E5%AE%9E%E7%8E%B0/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;最近两天趁着写完小论文不想做事情。尝试玩了一下2019年百度AI搞得城市功能区划分的比赛。比赛提供了遥感影像数据和区域居民活动数据(可惜没有具体的位置信息)，初赛样本量4W，复赛样本量40W，拿初赛的样本玩了玩，实现了Baseline（0.67）。其实也是照抄别人代码，主要是为了熟悉pytorch环境和多模学习。对了，这个练习赛最开始是在本机上实现，但后来模型增大，显存无法承载，显存不足，转到Google 的Colab实现。别说，配合谷歌自带的网盘，这个Colab真的挺好用(主要是免费GPU，前提你的VPN要稳定)。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -70,11 +70,11 @@
       
       <item>
         <title>PyTroch学习笔记</title>
-        <link>https://xunhs.cyou/posts/notes/328/</link>
+        <link>https://www.xunhs.cyou/posts/notes/328/</link>
         <pubDate>Sat, 25 Apr 2020 09:22:21 +0000</pubDate>
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Sat, 25 Apr 2020 09:22:21 +0000</atom:modified>
-        <guid>https://xunhs.cyou/posts/notes/328/</guid>
+        <guid>https://www.xunhs.cyou/posts/notes/328/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;Refer: &lt;a href=&#34;https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html&#34;&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
