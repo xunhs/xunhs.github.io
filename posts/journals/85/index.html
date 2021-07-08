@@ -1385,6 +1385,9 @@
 
 
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" crossorigin="anonymous"></script>
+
 
 
 
@@ -1654,7 +1657,7 @@
 
     
     
-    var lib = JSON.parse("null");
+    var lib = JSON.parse("[\"aplayer\"]");
 
     if (lib && lib.includes('mermaid')) {
       
@@ -2248,6 +2251,34 @@
 <p>2019年，夏末秋初，写给天空<br />
 献给怀抱梦想的我们</p>
 </blockquote>
+
+
+
+
+<div class="aplayer-container"><div id="aplayer_a"></div></div>
+
+
+<script>
+    function loadAPlayer() {
+        const ap = new APlayer({
+            container: document.getElementById("aplayer_a"),
+            loop:  false ,
+            mutex: true,
+            theme: '#e9e9e9',
+            lrcType: 3,
+            audio: [{
+                name: "追梦赤子心 - GALA",
+                artist: "GALA",
+                url: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%BF%BD%E6%A2%A6%E8%B5%A4%E5%AD%90%E5%BF%83%20-%20GALA-4a5db0-Ag.mp3",
+                cover: "https://p1.music.126.net/XDncptlBJ4_LN3hLBx-8aw==/19061133579343591.jpg?param=300x300",
+                lrc: "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%BF%BD%E6%A2%A6%E8%B5%A4%E5%AD%90%E5%BF%83-GALA-f35a3e-Ag.lrc",
+            }]
+    });
+}
+
+    document.addEventListener('DOMContentLoaded', loadAPlayer, !1);
+</script>
+<hr />
 <p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200228223636.JPG" alt="" /><br />
 <img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200228223552.JPG" alt="" /><br />
 <img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200228224841.JPG" alt="" /><br />

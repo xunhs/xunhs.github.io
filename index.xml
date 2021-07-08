@@ -3827,7 +3827,30 @@ ssh -p &lt;span class=&#34;m&#34;&gt;21039&lt;/span&gt; summer@43.249.192.204
         <author>gishusheng@outlook.com (热)</author>
         <atom:modified>Wed, 25 Dec 2019 09:01:00 +0000</atom:modified>
         <guid>/posts/journals/104/</guid>
-        <description>&lt;blockquote&gt;
+        <description>&lt;div class=&#34;aplayer-container&#34;&gt;&lt;div id=&#34;aplayer_a&#34;&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;script&gt;
+    function loadAPlayer() {
+        const ap = new APlayer({
+            container: document.getElementById(&#34;aplayer_a&#34;),
+            loop:  false ,
+            mutex: true,
+            theme: &#39;#e9e9e9&#39;,
+            lrcType: 3,
+            audio: [{
+                name: &#34;钢琴《在法国的十三天》13 jours en France / Piano Solo - MayPiano&#34;,
+                artist: &#34;MayPiano&#34;,
+                url: &#34;https://cdn.jsdelivr.net/gh/xunhs/image_host@master/media/13%20jours%20en%20France%20%20-%20MayPiano.mp3&#34;,
+                cover: &#34;https://p2.music.126.net/nDJjassfWvhd2dXNFHVcxA==/109951163826479895.jpg?param=300x300&#34;,
+                lrc: &#34;https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%BA%AF%E9%9F%B3%E4%B9%90-%E6%97%A0%E6%AD%8C%E8%AF%8D-3ca159-Ag.lrc&#34;,
+            }]
+    });
+}
+
+    document.addEventListener(&#39;DOMContentLoaded&#39;, loadAPlayer, !1);
+&lt;/script&gt;
+&lt;blockquote&gt;
 &lt;p&gt;收集一百句诗词。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
         
