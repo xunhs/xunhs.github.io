@@ -25,7 +25,8 @@ jobs:
       - name: Hugo Encryptor
         run: |
           cd themes/hugo_enc
-          pip3 install .
+          pip install setuptools
+          pip install .
           hugo_enc
 
       - name: Deploy
