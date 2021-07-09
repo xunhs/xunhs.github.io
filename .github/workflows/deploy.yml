@@ -19,15 +19,18 @@ jobs:
           hugo-version: latest
           extended: true
 
-      - name: Build
-        run: hugo
       
       - name: Hugo Encryptor
         run: |
           cd themes/hugo_enc
           pip3 install setuptools
           pip3 install .
+
+      - name: Build
+        run: |
+          hugo
           hugo_enc
+
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
