@@ -1,6 +1,6 @@
 baseURL = "" # The URL of your site.
 title = "热" # Title of your site
-theme = "zzo" # Name of Zzo theme folder in `themes/`.
+theme = ["zzo", "hugo_enc"] 
 
 defaultContentLanguage = "en" # Default language to use (if you setup multilingual)
 defaultContentLanguageInSubdir = true # baseURL/en/, baseURL/kr/ ...

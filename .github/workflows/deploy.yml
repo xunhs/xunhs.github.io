@@ -24,10 +24,9 @@ jobs:
       
       - name: Hugo Encryptor
         run: |
-          git clone https://github.com/Li4n0/hugo_encryptor.git 
-          cd hugo_encryptor
-          pip install -r requirements.txt
-          python hugo_encryptor.py
+          cd themes/hugo_enc
+          pip3 install .
+          hugo_enc
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
