@@ -88,8 +88,8 @@ libraries:
 ------------
 
 {{< dplayer 
-url="/videos/Wakin.Chau.Any.song.reminds.you.or.me.mp4" 
-sub="/videos/Wakin.Chau.Any.song.reminds.you.or.me.vtt" 
+url="http://106.75.233.64:10028/%e6%88%91%e7%9a%84%e8%a7%86%e9%a2%91/%e5%a4%96%e9%93%be/Wakin.Chau.Any.song.reminds.you.or.me.mp4" 
+sub="http://106.75.233.64:10028/%e6%88%91%e7%9a%84%e8%a7%86%e9%a2%91/%e5%a4%96%e9%93%be/Wakin.Chau.Any.song.reminds.you.or.me.vtt" 
 container="dplayer_a" 
 loop=false >}}
     <div id="dplayer_a"></div>
