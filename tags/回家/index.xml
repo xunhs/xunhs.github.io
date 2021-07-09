@@ -1,150 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>回家 on 热</title>
-    <link>/tags/%E5%9B%9E%E5%AE%B6/</link>
-    <description>Recent content in 回家 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 01 Jun 2020 06:42:59 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E5%9B%9E%E5%AE%B6/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>2020-6</title>
-        <link>/posts/journals/2020-06-01-2020-6/</link>
-        <pubDate>Mon, 01 Jun 2020 06:42:59 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Mon, 01 Jun 2020 06:42:59 +0000</atom:modified>
-        <guid>/posts/journals/2020-06-01-2020-6/</guid>
-        <description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>回家 on 热</title>
+<link>/tags/%E5%9B%9E%E5%AE%B6/</link>
+<description>Recent content in 回家 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Mon, 01 Jun 2020 06:42:59 +0000</lastBuildDate>
+<atom:link href="/tags/%E5%9B%9E%E5%AE%B6/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>2020-6</title>
+<link>/posts/journals/2020-06-01-2020-6/</link>
+<pubDate>Mon, 01 Jun 2020 06:42:59 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Mon, 01 Jun 2020 06:42:59 +0000</atom:modified>
+<guid>/posts/journals/2020-06-01-2020-6/</guid>
+<description>&lt;blockquote&gt;
 &lt;p&gt;小猫咪造访遗失记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>热</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>回家</category>
-            
-          
-            
-              <category>开车</category>
-            
-          
-            
-              <category>土地利用分类</category>
-            
-          
-            
-              <category>优博基金</category>
-            
-          
-            
-              <category>吉他</category>
-            
-          
-            
-              <category>猫</category>
-            
-          
-        
-        
-          
-            
-              <category>随笔</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>2020-1</title>
-        <link>/posts/journals/99/</link>
-        <pubDate>Wed, 01 Jan 2020 06:32:46 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Wed, 01 Jan 2020 06:32:46 +0000</atom:modified>
-        <guid>/posts/journals/99/</guid>
-        <description>&lt;blockquote&gt;
+<dc:creator>热</dc:creator>
+<category>回家</category>
+<category>开车</category>
+<category>土地利用分类</category>
+<category>优博基金</category>
+<category>吉他</category>
+<category>猫</category>
+<category>随笔</category>
+</item>
+<item>
+<title>2020-1</title>
+<link>/posts/journals/99/</link>
+<pubDate>Wed, 01 Jan 2020 06:32:46 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Wed, 01 Jan 2020 06:32:46 +0000</atom:modified>
+<guid>/posts/journals/99/</guid>
+<description>&lt;blockquote&gt;
 &lt;p&gt;利维亚的杰洛特。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>新闻主题分类</category>
-            
-          
-            
-              <category>锻炼</category>
-            
-          
-            
-              <category>意义</category>
-            
-          
-            
-              <category>联欢活动</category>
-            
-          
-            
-              <category>代理</category>
-            
-          
-            
-              <category>回家</category>
-            
-          
-            
-              <category>春节</category>
-            
-          
-            
-              <category>巫师3</category>
-            
-          
-            
-              <category>思考</category>
-            
-          
-            
-              <category>新冠肺炎</category>
-            
-          
-            
-              <category>研修计划</category>
-            
-          
-        
-        
-          
-            
-              <category>随笔</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>新闻主题分类</category>
+<category>锻炼</category>
+<category>意义</category>
+<category>联欢活动</category>
+<category>代理</category>
+<category>回家</category>
+<category>春节</category>
+<category>巫师3</category>
+<category>思考</category>
+<category>新冠肺炎</category>
+<category>研修计划</category>
+<category>随笔</category>
+</item>
+</channel>
 </rss>

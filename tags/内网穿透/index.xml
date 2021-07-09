@@ -1,66 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>内网穿透 on 热</title>
-    <link>/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
-    <description>Recent content in 内网穿透 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 15 Jun 2021 03:06:51 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>2021-06-15-SakuraFrp配置札记</title>
-        <link>/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</link>
-        <pubDate>Tue, 15 Jun 2021 03:06:51 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Mon, 05 Jul 2021 09:13:50 +0000</atom:modified>
-        <guid>/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.natfrp.com/&#34;&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>内网穿透 on 热</title>
+<link>/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+<description>Recent content in 内网穿透 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Tue, 15 Jun 2021 03:06:51 +0000</lastBuildDate>
+<atom:link href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>2021-06-15-SakuraFrp配置札记</title>
+<link>/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</link>
+<pubDate>Tue, 15 Jun 2021 03:06:51 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Mon, 05 Jul 2021 09:13:50 +0000</atom:modified>
+<guid>/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</guid>
+<description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="https://www.natfrp.com/"&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>热</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>札记</category>
-            
-          
-            
-              <category>内网穿透</category>
-            
-          
-            
-              <category>frp</category>
-            
-          
-        
-        
-          
-            
-              <category>收藏</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>热</dc:creator>
+<category>札记</category>
+<category>内网穿透</category>
+<category>frp</category>
+<category>收藏</category>
+</item>
+</channel>
 </rss>

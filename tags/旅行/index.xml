@@ -1,102 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>旅行 on 热</title>
-    <link>/tags/%E6%97%85%E8%A1%8C/</link>
-    <description>Recent content in 旅行 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 29 Oct 2018 06:23:54 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E6%97%85%E8%A1%8C/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>宜昌婚礼之行</title>
-        <link>/posts/journals/2018-10-29-%E5%AE%9C%E6%98%8C%E5%A9%9A%E7%A4%BC%E4%B9%8B%E8%A1%8C/</link>
-        <pubDate>Mon, 29 Oct 2018 06:23:54 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Mon, 29 Oct 2018 06:23:54 +0000</atom:modified>
-        <guid>/posts/journals/2018-10-29-%E5%AE%9C%E6%98%8C%E5%A9%9A%E7%A4%BC%E4%B9%8B%E8%A1%8C/</guid>
-        <description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>旅行 on 热</title>
+<link>/tags/%E6%97%85%E8%A1%8C/</link>
+<description>Recent content in 旅行 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Mon, 29 Oct 2018 06:23:54 +0000</lastBuildDate>
+<atom:link href="/tags/%E6%97%85%E8%A1%8C/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>宜昌婚礼之行</title>
+<link>/posts/journals/2018-10-29-%E5%AE%9C%E6%98%8C%E5%A9%9A%E7%A4%BC%E4%B9%8B%E8%A1%8C/</link>
+<pubDate>Mon, 29 Oct 2018 06:23:54 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Mon, 29 Oct 2018 06:23:54 +0000</atom:modified>
+<guid>/posts/journals/2018-10-29-%E5%AE%9C%E6%98%8C%E5%A9%9A%E7%A4%BC%E4%B9%8B%E8%A1%8C/</guid>
+<description>&lt;blockquote&gt;
 &lt;p&gt;这是第二次来宜昌了。也是今年第二次来宜昌。目的是参加春的婚礼~&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>热</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>旅行</category>
-            
-          
-            
-              <category>宜昌</category>
-            
-          
-        
-        
-          
-            
-              <category>随笔</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>广州面签之行</title>
-        <link>/posts/journals/2018-10-17-%E5%B9%BF%E5%B7%9E%E9%9D%A2%E7%AD%BE%E4%B9%8B%E8%A1%8C/</link>
-        <pubDate>Wed, 17 Oct 2018 06:23:02 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Wed, 17 Oct 2018 06:23:02 +0000</atom:modified>
-        <guid>/posts/journals/2018-10-17-%E5%B9%BF%E5%B7%9E%E9%9D%A2%E7%AD%BE%E4%B9%8B%E8%A1%8C/</guid>
-        <description>&lt;blockquote&gt;
+<dc:creator>热</dc:creator>
+<category>旅行</category>
+<category>宜昌</category>
+<category>随笔</category>
+</item>
+<item>
+<title>广州面签之行</title>
+<link>/posts/journals/2018-10-17-%E5%B9%BF%E5%B7%9E%E9%9D%A2%E7%AD%BE%E4%B9%8B%E8%A1%8C/</link>
+<pubDate>Wed, 17 Oct 2018 06:23:02 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Wed, 17 Oct 2018 06:23:02 +0000</atom:modified>
+<guid>/posts/journals/2018-10-17-%E5%B9%BF%E5%B7%9E%E9%9D%A2%E7%AD%BE%E4%B9%8B%E8%A1%8C/</guid>
+<description>&lt;blockquote&gt;
 &lt;p&gt;12月份要去美国华盛顿特区参加AGU Fall Meeting，十一收到邀请函，之后就开始紧张的准备美签材料。在准备一星期之后，申请了10.15的签证面试。想着没去过广州，然后毛毛在那边，就想趁着周末早两天过去浪一圈~&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>热</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>签证</category>
-            
-          
-            
-              <category>旅行</category>
-            
-          
-            
-              <category>广州</category>
-            
-          
-        
-        
-          
-            
-              <category>随笔</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>热</dc:creator>
+<category>签证</category>
+<category>旅行</category>
+<category>广州</category>
+<category>随笔</category>
+</item>
+</channel>
 </rss>

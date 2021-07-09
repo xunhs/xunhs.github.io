@@ -1,66 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>开始 on 热</title>
-    <link>/tags/%E5%BC%80%E5%A7%8B/</link>
-    <description>Recent content in 开始 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 22 Oct 2019 06:27:49 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E5%BC%80%E5%A7%8B/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>2019-10</title>
-        <link>/posts/journals/102/</link>
-        <pubDate>Tue, 22 Oct 2019 06:27:49 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Tue, 22 Oct 2019 06:27:49 +0000</atom:modified>
-        <guid>/posts/journals/102/</guid>
-        <description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>开始 on 热</title>
+<link>/tags/%E5%BC%80%E5%A7%8B/</link>
+<description>Recent content in 开始 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Tue, 22 Oct 2019 06:27:49 +0000</lastBuildDate>
+<atom:link href="/tags/%E5%BC%80%E5%A7%8B/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>2019-10</title>
+<link>/posts/journals/102/</link>
+<pubDate>Tue, 22 Oct 2019 06:27:49 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Tue, 22 Oct 2019 06:27:49 +0000</atom:modified>
+<guid>/posts/journals/102/</guid>
+<description>&lt;blockquote&gt;
 &lt;p&gt;本来无一物，何处惹尘埃。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>开始</category>
-            
-          
-            
-              <category>每日一句</category>
-            
-          
-            
-              <category>改变</category>
-            
-          
-        
-        
-          
-            
-              <category>随笔</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>开始</category>
+<category>每日一句</category>
+<category>改变</category>
+<category>随笔</category>
+</item>
+</channel>
 </rss>

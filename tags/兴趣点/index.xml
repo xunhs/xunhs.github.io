@@ -1,70 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>兴趣点 on 热</title>
-    <link>/tags/%E5%85%B4%E8%B6%A3%E7%82%B9/</link>
-    <description>Recent content in 兴趣点 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 23 Feb 2021 06:37:47 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E5%85%B4%E8%B6%A3%E7%82%B9/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>POI数据Elasticsearch存储及查询操作札记</title>
-        <link>/2021/02/23/368/</link>
-        <pubDate>Tue, 23 Feb 2021 06:37:47 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Tue, 23 Feb 2021 06:37:47 +0000</atom:modified>
-        <guid>/2021/02/23/368/</guid>
-        <description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>兴趣点 on 热</title>
+<link>/tags/%E5%85%B4%E8%B6%A3%E7%82%B9/</link>
+<description>Recent content in 兴趣点 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Tue, 23 Feb 2021 06:37:47 +0000</lastBuildDate>
+<atom:link href="/tags/%E5%85%B4%E8%B6%A3%E7%82%B9/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>POI数据Elasticsearch存储及查询操作札记</title>
+<link>/2021/02/23/368/</link>
+<pubDate>Tue, 23 Feb 2021 06:37:47 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Tue, 23 Feb 2021 06:37:47 +0000</atom:modified>
+<guid>/2021/02/23/368/</guid>
+<description>&lt;blockquote&gt;
 &lt;p&gt;使用ArcGIS Pro栅格切割工具做分块裁剪，并使用切割好的分块做Image Embeddings。记录操作过程及注意事项。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>Elasticsearch</category>
-            
-          
-            
-              <category>POIs</category>
-            
-          
-            
-              <category>Python</category>
-            
-          
-            
-              <category>兴趣点</category>
-            
-          
-        
-        
-          
-            
-              <category>收藏</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>Elasticsearch</category>
+<category>POIs</category>
+<category>Python</category>
+<category>兴趣点</category>
+<category>收藏</category>
+</item>
+</channel>
 </rss>

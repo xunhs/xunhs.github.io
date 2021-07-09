@@ -1,98 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>新闻主题分类 on 热</title>
-    <link>/tags/%E6%96%B0%E9%97%BB%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/</link>
-    <description>Recent content in 新闻主题分类 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 01 Jan 2020 06:32:46 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E6%96%B0%E9%97%BB%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>2020-1</title>
-        <link>/posts/journals/99/</link>
-        <pubDate>Wed, 01 Jan 2020 06:32:46 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Wed, 01 Jan 2020 06:32:46 +0000</atom:modified>
-        <guid>/posts/journals/99/</guid>
-        <description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>新闻主题分类 on 热</title>
+<link>/tags/%E6%96%B0%E9%97%BB%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/</link>
+<description>Recent content in 新闻主题分类 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Wed, 01 Jan 2020 06:32:46 +0000</lastBuildDate>
+<atom:link href="/tags/%E6%96%B0%E9%97%BB%E4%B8%BB%E9%A2%98%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>2020-1</title>
+<link>/posts/journals/99/</link>
+<pubDate>Wed, 01 Jan 2020 06:32:46 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Wed, 01 Jan 2020 06:32:46 +0000</atom:modified>
+<guid>/posts/journals/99/</guid>
+<description>&lt;blockquote&gt;
 &lt;p&gt;利维亚的杰洛特。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>新闻主题分类</category>
-            
-          
-            
-              <category>锻炼</category>
-            
-          
-            
-              <category>意义</category>
-            
-          
-            
-              <category>联欢活动</category>
-            
-          
-            
-              <category>代理</category>
-            
-          
-            
-              <category>回家</category>
-            
-          
-            
-              <category>春节</category>
-            
-          
-            
-              <category>巫师3</category>
-            
-          
-            
-              <category>思考</category>
-            
-          
-            
-              <category>新冠肺炎</category>
-            
-          
-            
-              <category>研修计划</category>
-            
-          
-        
-        
-          
-            
-              <category>随笔</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>新闻主题分类</category>
+<category>锻炼</category>
+<category>意义</category>
+<category>联欢活动</category>
+<category>代理</category>
+<category>回家</category>
+<category>春节</category>
+<category>巫师3</category>
+<category>思考</category>
+<category>新冠肺炎</category>
+<category>研修计划</category>
+<category>随笔</category>
+</item>
+</channel>
 </rss>

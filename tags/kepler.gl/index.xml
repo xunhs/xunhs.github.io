@@ -1,81 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>kepler.gl on 热</title>
-    <link>/tags/kepler.gl/</link>
-    <description>Recent content in kepler.gl on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 01 Feb 2020 06:37:46 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/kepler.gl/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>2020-2</title>
-        <link>/posts/journals/98/</link>
-        <pubDate>Sat, 01 Feb 2020 06:37:46 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Sat, 01 Feb 2020 06:37:46 +0000</atom:modified>
-        <guid>/posts/journals/98/</guid>
-        <description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>kepler.gl on 热</title>
+<link>/tags/kepler.gl/</link>
+<description>Recent content in kepler.gl on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Sat, 01 Feb 2020 06:37:46 +0000</lastBuildDate>
+<atom:link href="/tags/kepler.gl/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>2020-2</title>
+<link>/posts/journals/98/</link>
+<pubDate>Sat, 01 Feb 2020 06:37:46 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Sat, 01 Feb 2020 06:37:46 +0000</atom:modified>
+<guid>/posts/journals/98/</guid>
+<description>&lt;blockquote&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>自定义音乐插件</category>
-            
-          
-            
-              <category>自定义图床</category>
-            
-          
-            
-              <category>博客迁移</category>
-            
-          
-            
-              <category>出租车轨迹探索</category>
-            
-          
-            
-              <category>kepler.gl</category>
-            
-          
-            
-              <category>论文投稿</category>
-            
-          
-            
-              <category>pip设置源</category>
-            
-          
-        
-        
-          
-            
-              <category>随笔</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>自定义音乐插件</category>
+<category>自定义图床</category>
+<category>博客迁移</category>
+<category>出租车轨迹探索</category>
+<category>kepler.gl</category>
+<category>论文投稿</category>
+<category>pip设置源</category>
+<category>随笔</category>
+</item>
+</channel>
 </rss>

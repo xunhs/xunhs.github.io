@@ -1,70 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>图论 on 热</title>
-    <link>/tags/%E5%9B%BE%E8%AE%BA/</link>
-    <description>Recent content in 图论 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 22 Oct 2018 08:53:13 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E5%9B%BE%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>学习笔记-Graph Learning(图论) Tutorial</title>
-        <link>/posts/notes/124/</link>
-        <pubDate>Mon, 22 Oct 2018 08:53:13 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Mon, 22 Oct 2018 08:53:13 +0000</atom:modified>
-        <guid>/posts/notes/124/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;参考了&lt;a href=&#34;https://www.jiqizhixin.com/articles/2019-08-03-3&#34;&gt;这里&lt;/a&gt;，&lt;a href=&#34;https://networkx.github.io/documentation/stable/index.html&#34;&gt;这里&lt;/a&gt;，主要是整理复制的&lt;a href=&#34;https://maelfabien.github.io/machinelearning/graph_3/#&#34;&gt;这里&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>图论 on 热</title>
+<link>/tags/%E5%9B%BE%E8%AE%BA/</link>
+<description>Recent content in 图论 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Mon, 22 Oct 2018 08:53:13 +0000</lastBuildDate>
+<atom:link href="/tags/%E5%9B%BE%E8%AE%BA/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>学习笔记-Graph Learning(图论) Tutorial</title>
+<link>/posts/notes/124/</link>
+<pubDate>Mon, 22 Oct 2018 08:53:13 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Mon, 22 Oct 2018 08:53:13 +0000</atom:modified>
+<guid>/posts/notes/124/</guid>
+<description>&lt;blockquote&gt;
+&lt;p&gt;参考了&lt;a href="https://www.jiqizhixin.com/articles/2019-08-03-3"&gt;这里&lt;/a&gt;，&lt;a href="https://networkx.github.io/documentation/stable/index.html"&gt;这里&lt;/a&gt;，主要是整理复制的&lt;a href="https://maelfabien.github.io/machinelearning/graph_3/#"&gt;这里&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>学习笔记</category>
-            
-          
-            
-              <category>图论</category>
-            
-          
-            
-              <category>graph</category>
-            
-          
-            
-              <category>complex network</category>
-            
-          
-        
-        
-          
-            
-              <category>收藏</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>学习笔记</category>
+<category>图论</category>
+<category>graph</category>
+<category>complex network</category>
+<category>收藏</category>
+</item>
+</channel>
 </rss>

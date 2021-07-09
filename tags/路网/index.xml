@@ -1,70 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>路网 on 热</title>
-    <link>/tags/%E8%B7%AF%E7%BD%91/</link>
-    <description>Recent content in 路网 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 07 Apr 2021 13:49:53 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E8%B7%AF%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>GIS操作——OSM路网化简，提取中心线</title>
-        <link>/2021/04/07/567/</link>
-        <pubDate>Wed, 07 Apr 2021 13:49:53 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Wed, 07 Apr 2021 13:49:53 +0000</atom:modified>
-        <guid>/2021/04/07/567/</guid>
-        <description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>路网 on 热</title>
+<link>/tags/%E8%B7%AF%E7%BD%91/</link>
+<description>Recent content in 路网 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Wed, 07 Apr 2021 13:49:53 +0000</lastBuildDate>
+<atom:link href="/tags/%E8%B7%AF%E7%BD%91/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>GIS操作——OSM路网化简，提取中心线</title>
+<link>/2021/04/07/567/</link>
+<pubDate>Wed, 07 Apr 2021 13:49:53 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Wed, 07 Apr 2021 13:49:53 +0000</atom:modified>
+<guid>/2021/04/07/567/</guid>
+<description>&lt;blockquote&gt;
 &lt;p&gt;GIS操作——OSM路网化简，提取中心线。基本思路就是道路膨胀，然后提取中心线。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>GIS</category>
-            
-          
-            
-              <category>osm</category>
-            
-          
-            
-              <category>中心线</category>
-            
-          
-            
-              <category>路网</category>
-            
-          
-        
-        
-          
-            
-              <category>收藏</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>GIS</category>
+<category>osm</category>
+<category>中心线</category>
+<category>路网</category>
+<category>收藏</category>
+</item>
+</channel>
 </rss>

@@ -1,6 +1,171 @@
-
-
-  
-    
-
-[{"ENTRYTYPE":"article","abstract":"Extracting hidden information from human mobility patterns is one of the long-standing challenges of urban studies. In addition, exploring the relationship between urban functional structure and traffic spatial interaction pattern has long been of interest. Recently, vehicle GPS trajectory data emerged as a popular data source for revealing human mobility patterns and urban functions. However, few studies have fully leveraged traffic interaction information that is hidden in human mobility patterns to identify urban functions at the road segment level. To address this issue, a geo-semantic analysis framework was introduced in this study to model the relationship between traffic interaction and urban functions at the road segment level. First, a Road-Trajectory corpus was built and trained to obtain the semantic embedding representation of road segments. Then, considering topological connections between road segments, we used a graph convolutional neural network model to process the contextual and topological information to classify social functions along streets. A case study in Beijing, China, using a large volume of real-world taxi trajectories data, was conducted. The results show that our proposed methods, with relative less loss and high accuracy, outperform other comparative methods for classifying urban functions at the road segment level. This work contributes to the assessment of urban functional structure, and further aiding urban planners in designing better urbanization strategies with regard to traffic interaction and urban space structure.","authors":["Hu, Sheng "," Gao, Song "," Wu, Liang "," Xu, Yongyang "," Zhang, Ziwei "," Cui, Haifu "," Gong, Xi"],"booktitle":null,"id":0,"publication":"Computers, Environment and Urban Systems","publishDate":"2021-05-01T00:00:00Z","shorttitle":"Urban function classification at road segment level using taxi trajectory data","tags":null,"title":"Urban function classification at road segment level using taxi trajectory data: A graph convolutional neural network approach","uri":"/publication/article/hu_urban_2021/"},{"ENTRYTYPE":"article","abstract":"The best way of sensing places has long been an interest in GIScience and urban studies. Previous studies detect and understand places via traditional human participant-oriented studies, which are laborious, time-consuming, and sometimes subjective. The proliferation of multi-sourced geospatial data brings unprecedented opportunities for researchers to improve assessment and understanding of places in cities. However, it remains insufficient to explore place based on a single or naïve set of geospatial data owing to issues of completeness and bias. Of particular interest is extracting and understanding thematic place using geospatial data. In this paper, we attempt to extract thematic place at a community scale and investigate the potential capability of multi-sourced geospatial data to understand extracted place. First, thematic places were constructed by integrating urban road networks and community detection methods in a complete network field. Then, we implemented quantitative geographical semantic analyses using geo-tagged street view images and point-of-interest data to investigate thematic places at a community scale for urban perception. A case study in a high-density urban environment, Wuhan City, China, was employed to illustrate its application to communities. The approach and the results of our study demonstrate the ability to extract and understand thematic places from a community perspective. The results of our framework can aid urban planners in designing better urbanization strategies.","authors":["Hu, Sheng "," Xu, Yongyang "," Wu, Liang "," Wu, Xincai "," Wang, Run "," Zhang, Ziwei "," Lu, Rujuan "," Mao, Wei"],"booktitle":null,"id":1,"publication":"Cities","publishDate":"2021-02-01T00:00:00Z","shorttitle":null,"tags":null,"title":"A framework to detect and understand thematic places of a city using geospatial data","uri":"/publication/article/hu_framework_2021/"},{"ENTRYTYPE":"article","abstract":"Many studies are in an effort to explore urban spatial structure, and urban functional regions have become the subject of increasing attention among planners, engineers and public officials. Attempts have been made to identify urban functional regions using high spatial resolution (HSR) remote sensing images and extensive geo-data. However, the research scale and throughput have also been limited by the accessibility of HSR remote sensing data. Recently, big geo-data are becoming increasingly popular for urban studies since research is still accessible and objective with regard to the use of these data. This study aims to build a novel framework to provide an alternative solution for sensing urban spatial structure and discovering urban functional regions based on emerging geo-data – points of interest (POIs) data and an embedding learning method in the natural language processing (NLP) field. We started by constructing the intraurban functional corpus using a center-context pairs-based approach. A word embeddings representation model for training that corpus was used to extract multiprototype vectors in the second step, and the last step aggregated the functional parcels based on an introduced spatial clustering method, hierarchical density-based spatial clustering of applications with noise (HDBSCAN). The clustering results suggested that our proposed framework used in this study is capable of discovering the utilization of urban space with a reasonable level of accuracy. The limitation and potential improvement of the proposed framework are also discussed.","authors":["Hu, Sheng "," He, Zhanjun "," Wu, Liang "," Yin, Li "," Xu, Yongyang "," Cui, Haifu"],"booktitle":null,"id":2,"publication":"Computers, Environment and Urban Systems","publishDate":"2020-03-01T00:00:00Z","shorttitle":null,"tags":null,"title":"A framework for extracting urban functional regions based on multiprototype word embeddings using points-of-interest data","uri":"/publication/article/hu_framework_2020/"},{"ENTRYTYPE":"article","abstract":"The rapid evolution of cities has brought new challenges to urban planning and management. The accurate evaluation of urban functional structure and mixed use is critical, especially at a fine scale such as by blocks. The composition and mixing of urban spatial functions calculated by remote sensing and statistics are non-quantitative and undetailed. The text topic models are often applied to process text data, but are rarely used to mine semantic information in quantitative data. Therefore, this paper attempts to carry out research on the recognition of urban functions and mixed use using a text topic generation model based on resident mobile data. First, the area within Wuhan Third Ring Road was divided into 2451 units at a grid size of 500 m \u0026times; 500 m. The histogram-latent Dirichlet allocation (H-LDA) and information entropy were applied to assign different grid units to correct the functional topics and topic information entropy (TIE). Second, the functional categories of different analysis units were calculated using the point of interest (POI), frequency density (FD) and category proportion (CP) indicators, while the functional information entropy (FIE) based on the POI was calculated. Then, the urban functions and mixtures identified by the two kinds of data were compared and analyzed. Finally, referring to the geographic information in streetscape map and applying correlation analysis, the function and mixing results obtained from the experiment were verified. Studies have shown that the H-LDA model can identify bridges, which the POI data have shown is challenging to identify without attributes such as length. The function recognition accuracy of the H-LDA model is 89.3%, which is higher than K-means algorithm and Word2vec models. The correlation coefficient between FIE and TIE is 0.587, indicating that both are highly correlated. These explain the accuracy and rationality of identifying city functions and mixtures based on the H-LDA model. The H-LDA model can be applied to functional computing and fine-scale urban mixed function planning.","authors":["Cui, Haifu "," Wu, Liang "," Hu, Sheng "," Lu, Rujuan "," Wang, Shanlin"],"booktitle":null,"id":3,"publication":"Remote Sensing","publishDate":"2020-01-01T00:00:00Z","shorttitle":"Recognition of Urban Functions and Mixed Use Based on Residents’ Movement and Topic Generation Model","tags":null,"title":"Recognition of Urban Functions and Mixed Use Based on Residents’ Movement and Topic Generation Model: The Case of Wuhan, China","uri":"/publication/article/cui_recognition_2020/"},{"ENTRYTYPE":"article","abstract":"Affinity propagation (AP) is a clustering algorithm for point data used in image recognition that can be used to solve various problems, such as initial class representative point selection, large-scale sparse matrix calculations, and large-scale data with fewer parameter settings. However, the AP clustering algorithm does not consider spatiotemporal information and multiple thematic attributes simultaneously, which leads to poor performance in discovering patterns from massive spatiotemporal points (e.g., trajectory points). To resolve this issue, a multidimensional spatiotemporal affinity propagation (MDST-AP) algorithm is proposed in this study. First, the similarity of spatial and nonspatial attributes is measured in Gaussian kernel space instead of Euclidean space, which helps address the multidimensional linear inseparability problem. Then, the Davies-Bouldin (DB) index is applied to optimize the parameter value of the MDST-AP algorithm, which is applied to analyze road congestion in Beijing via taxi trajectories. Experiments on different datasets and algorithms indicated that the MDST-AP algorithm can process multidimensional spatiotemporal data points faster and more effectively.","authors":["Cui, Haifu "," Wu, Liang "," He, Zhanjun "," Hu, Sheng "," Ma, Kai "," Yin, Li "," Tao, Liufeng"],"booktitle":null,"id":4,"publication":"International Journal of Environmental Research and Public Health","publishDate":"2019-01-01T00:00:00Z","shorttitle":null,"tags":null,"title":"Exploring Multidimensional Spatiotemporal Point Patterns Based on an Improved Affinity Propagation Algorithm","uri":"/publication/article/cui_exploring_2019/"},{"ENTRYTYPE":"article","abstract":"Dementia is a serious public health problem. The more extensive dementia knowledge is, the more conducive it is to early prevention and treatment of dementia. However, no assessment of the general population\u0026rsquo;s dementia awareness has been conducted so far in China. Thus, this study assessed the national public knowledge of dementia based on mobile internet in China. We assessed 10,562 national respondents recruited based on the most popular social networking service in China, WeChat and analyzed the data using quantitative methods. The overall correct rate of total dementia knowledge was 63.14%. Only half of the participants (50.84%) could identify risk factors accurately. The level of dementia knowledge was positively associated with high education, city residency, and experience of exposure to information on dementia. The sandwich generation (aged 20\u0026ndash;60 years) had the highest level of dementia knowledge. Chinese people were found to have a low level of knowledge about dementia, especially those aged over 60 years, with low education and living in rural areas. Further educational programs and campaigns are needed to improve dementia knowledge, with greater focus on the older population as the target audience, emphasis on dementia risk factors as educational content, correcting misconceptions about dementia, and providing more experience of exposure to dementia.","authors":["Liu, Dan "," Cheng, Guirong "," An, Lina "," Gan, Xuguang "," Wu, Yulian "," Zhang, Bo "," Hu, Sheng "," Zeng, Yan "," Wu, Liang"],"booktitle":null,"id":5,"publication":"International Journal of Environmental Research and Public Health","publishDate":"2019-01-01T00:00:00Z","shorttitle":"Public Knowledge about Dementia in China","tags":null,"title":"Public Knowledge about Dementia in China: A National WeChat-Based Survey","uri":"/publication/article/liu_public_2019/"},{"ENTRYTYPE":"article","abstract":"Much of the taxi route-planning literature has focused on driver strategies for finding passengers and determining the hot spot pick-up locations using historical global positioning system (GPS) trajectories of taxis based on driver experience, distance from the passenger drop-off location to the next passenger pick-up location and the waiting times at recommended locations for the next passenger. The present work, however, considers the average taxi travel speed mined from historical taxi GPS trajectory data and the allocation of cruising routes to more than one taxi driver in a small-scale region to neighboring pick-up locations. A spatio-temporal trajectory model with load balancing allocations is presented to not only explore pick-up/drop-off information but also provide taxi drivers with cruising routes to the recommended pick-up locations. In simulation experiments, our study shows that taxi drivers using cruising routes recommended by our spatio-temporal trajectory model can significantly reduce the average waiting time and travel less distance to quickly find their next passengers, and the load balancing strategy significantly alleviates road loads. These objective measures can help us better understand spatio-temporal traffic patterns and guide taxi navigation.","authors":["Wu, Liang "," Hu, Sheng "," Yin, Li "," Wang, Yazhou "," Chen, Zhanlong "," Guo, Mingqiang "," Chen, Hao "," Xie, Zhong"],"booktitle":null,"id":6,"publication":"ISPRS International Journal of Geo-Information","publishDate":"2017-11-01T00:00:00Z","shorttitle":null,"tags":null,"title":"Optimizing Cruising Routes for Taxi Drivers Using a Spatio-Temporal Trajectory Model","uri":"/publication/article/wu_optimizing_2017/"},{"ENTRYTYPE":"article","abstract":"Severe fever with thrombocytopenia syndrome (SFTS) is caused by severe fever with thrombocytopenia syndrome virus (SFTSV), which has had a serious impact on public health in parts of Asia. There is no specific antiviral drug or vaccine for SFTSV and, therefore, it is important to determine the factors that influence the occurrence of SFTSV infections. This study aimed to explore the spatial associations between SFTSV infections and several potential determinants, and to predict the high-risk areas in mainland China. The analysis was carried out at the level of provinces in mainland China. The potential explanatory variables that were investigated consisted of meteorological factors (average temperature, average monthly precipitation and average relative humidity), the average proportion of rural population and the average proportion of primary industries over three years (2010–2012). We constructed a geographically weighted logistic regression (GWLR) model in order to explore the associations between the selected variables and confirmed cases of SFTSV. The study showed that: (1) meteorological factors have a strong influence on the SFTSV cover; (2) a GWLR model is suitable for exploring SFTSV cover in mainland China; (3) our findings can be used for predicting high-risk areas and highlighting when meteorological factors pose a risk in order to aid in the implementation of public health strategies.","authors":["Wu, Liang "," Deng, Fei "," Xie, Zhong "," Hu, Sheng "," Shen, Shu "," Shi, Junming "," Liu, Dan"],"booktitle":null,"id":7,"publication":"International Journal of Environmental Research and Public Health","publishDate":"2016-11-01T00:00:00Z","shorttitle":null,"tags":null,"title":"Spatial Analysis of Severe Fever with Thrombocytopenia Syndrome Virus in China Using a Geographically Weighted Logistic Regression Model","uri":"/publication/article/wu_spatial_2016/"}]
+[
+    {
+        "ENTRYTYPE": "article",
+        "abstract": "Extracting hidden information from human mobility patterns is one of the long-standing challenges of urban studies. In addition, exploring the relationship between urban functional structure and traffic spatial interaction pattern has long been of interest. Recently, vehicle GPS trajectory data emerged as a popular data source for revealing human mobility patterns and urban functions. However, few studies have fully leveraged traffic interaction information that is hidden in human mobility patterns to identify urban functions at the road segment level. To address this issue, a geo-semantic analysis framework was introduced in this study to model the relationship between traffic interaction and urban functions at the road segment level. First, a Road-Trajectory corpus was built and trained to obtain the semantic embedding representation of road segments. Then, considering topological connections between road segments, we used a graph convolutional neural network model to process the contextual and topological information to classify social functions along streets. A case study in Beijing, China, using a large volume of real-world taxi trajectories data, was conducted. The results show that our proposed methods, with relative less loss and high accuracy, outperform other comparative methods for classifying urban functions at the road segment level. This work contributes to the assessment of urban functional structure, and further aiding urban planners in designing better urbanization strategies with regard to traffic interaction and urban space structure.",
+        "authors": [
+            "Hu, Sheng ",
+            " Gao, Song ",
+            " Wu, Liang ",
+            " Xu, Yongyang ",
+            " Zhang, Ziwei ",
+            " Cui, Haifu ",
+            " Gong, Xi"
+        ],
+        "booktitle": null,
+        "id": 0,
+        "publication": "Computers, Environment and Urban Systems",
+        "publishDate": "2021-05-01T00:00:00Z",
+        "shorttitle": "Urban function classification at road segment level using taxi trajectory data",
+        "tags": null,
+        "title": "Urban function classification at road segment level using taxi trajectory data: A graph convolutional neural network approach",
+        "uri": "/publication/article/hu_urban_2021/"
+    },
+    {
+        "ENTRYTYPE": "article",
+        "abstract": "The best way of sensing places has long been an interest in GIScience and urban studies. Previous studies detect and understand places via traditional human participant-oriented studies, which are laborious, time-consuming, and sometimes subjective. The proliferation of multi-sourced geospatial data brings unprecedented opportunities for researchers to improve assessment and understanding of places in cities. However, it remains insufficient to explore place based on a single or na\u00efve set of geospatial data owing to issues of completeness and bias. Of particular interest is extracting and understanding thematic place using geospatial data. In this paper, we attempt to extract thematic place at a community scale and investigate the potential capability of multi-sourced geospatial data to understand extracted place. First, thematic places were constructed by integrating urban road networks and community detection methods in a complete network field. Then, we implemented quantitative geographical semantic analyses using geo-tagged street view images and point-of-interest data to investigate thematic places at a community scale for urban perception. A case study in a high-density urban environment, Wuhan City, China, was employed to illustrate its application to communities. The approach and the results of our study demonstrate the ability to extract and understand thematic places from a community perspective. The results of our framework can aid urban planners in designing better urbanization strategies.",
+        "authors": [
+            "Hu, Sheng ",
+            " Xu, Yongyang ",
+            " Wu, Liang ",
+            " Wu, Xincai ",
+            " Wang, Run ",
+            " Zhang, Ziwei ",
+            " Lu, Rujuan ",
+            " Mao, Wei"
+        ],
+        "booktitle": null,
+        "id": 1,
+        "publication": "Cities",
+        "publishDate": "2021-02-01T00:00:00Z",
+        "shorttitle": null,
+        "tags": null,
+        "title": "A framework to detect and understand thematic places of a city using geospatial data",
+        "uri": "/publication/article/hu_framework_2021/"
+    },
+    {
+        "ENTRYTYPE": "article",
+        "abstract": "Many studies are in an effort to explore urban spatial structure, and urban functional regions have become the subject of increasing attention among planners, engineers and public officials. Attempts have been made to identify urban functional regions using high spatial resolution (HSR) remote sensing images and extensive geo-data. However, the research scale and throughput have also been limited by the accessibility of HSR remote sensing data. Recently, big geo-data are becoming increasingly popular for urban studies since research is still accessible and objective with regard to the use of these data. This study aims to build a novel framework to provide an alternative solution for sensing urban spatial structure and discovering urban functional regions based on emerging geo-data \u2013 points of interest (POIs) data and an embedding learning method in the natural language processing (NLP) field. We started by constructing the intraurban functional corpus using a center-context pairs-based approach. A word embeddings representation model for training that corpus was used to extract multiprototype vectors in the second step, and the last step aggregated the functional parcels based on an introduced spatial clustering method, hierarchical density-based spatial clustering of applications with noise (HDBSCAN). The clustering results suggested that our proposed framework used in this study is capable of discovering the utilization of urban space with a reasonable level of accuracy. The limitation and potential improvement of the proposed framework are also discussed.",
+        "authors": [
+            "Hu, Sheng ",
+            " He, Zhanjun ",
+            " Wu, Liang ",
+            " Yin, Li ",
+            " Xu, Yongyang ",
+            " Cui, Haifu"
+        ],
+        "booktitle": null,
+        "id": 2,
+        "publication": "Computers, Environment and Urban Systems",
+        "publishDate": "2020-03-01T00:00:00Z",
+        "shorttitle": null,
+        "tags": null,
+        "title": "A framework for extracting urban functional regions based on multiprototype word embeddings using points-of-interest data",
+        "uri": "/publication/article/hu_framework_2020/"
+    },
+    {
+        "ENTRYTYPE": "article",
+        "abstract": "The rapid evolution of cities has brought new challenges to urban planning and management. The accurate evaluation of urban functional structure and mixed use is critical, especially at a fine scale such as by blocks. The composition and mixing of urban spatial functions calculated by remote sensing and statistics are non-quantitative and undetailed. The text topic models are often applied to process text data, but are rarely used to mine semantic information in quantitative data. Therefore, this paper attempts to carry out research on the recognition of urban functions and mixed use using a text topic generation model based on resident mobile data. First, the area within Wuhan Third Ring Road was divided into 2451 units at a grid size of 500 m &times; 500 m. The histogram-latent Dirichlet allocation (H-LDA) and information entropy were applied to assign different grid units to correct the functional topics and topic information entropy (TIE). Second, the functional categories of different analysis units were calculated using the point of interest (POI), frequency density (FD) and category proportion (CP) indicators, while the functional information entropy (FIE) based on the POI was calculated. Then, the urban functions and mixtures identified by the two kinds of data were compared and analyzed. Finally, referring to the geographic information in streetscape map and applying correlation analysis, the function and mixing results obtained from the experiment were verified. Studies have shown that the H-LDA model can identify bridges, which the POI data have shown is challenging to identify without attributes such as length. The function recognition accuracy of the H-LDA model is 89.3%, which is higher than K-means algorithm and Word2vec models. The correlation coefficient between FIE and TIE is 0.587, indicating that both are highly correlated. These explain the accuracy and rationality of identifying city functions and mixtures based on the H-LDA model. The H-LDA model can be applied to functional computing and fine-scale urban mixed function planning.",
+        "authors": [
+            "Cui, Haifu ",
+            " Wu, Liang ",
+            " Hu, Sheng ",
+            " Lu, Rujuan ",
+            " Wang, Shanlin"
+        ],
+        "booktitle": null,
+        "id": 3,
+        "publication": "Remote Sensing",
+        "publishDate": "2020-01-01T00:00:00Z",
+        "shorttitle": "Recognition of Urban Functions and Mixed Use Based on Residents\u2019 Movement and Topic Generation Model",
+        "tags": null,
+        "title": "Recognition of Urban Functions and Mixed Use Based on Residents\u2019 Movement and Topic Generation Model: The Case of Wuhan, China",
+        "uri": "/publication/article/cui_recognition_2020/"
+    },
+    {
+        "ENTRYTYPE": "article",
+        "abstract": "Affinity propagation (AP) is a clustering algorithm for point data used in image recognition that can be used to solve various problems, such as initial class representative point selection, large-scale sparse matrix calculations, and large-scale data with fewer parameter settings. However, the AP clustering algorithm does not consider spatiotemporal information and multiple thematic attributes simultaneously, which leads to poor performance in discovering patterns from massive spatiotemporal points (e.g., trajectory points). To resolve this issue, a multidimensional spatiotemporal affinity propagation (MDST-AP) algorithm is proposed in this study. First, the similarity of spatial and nonspatial attributes is measured in Gaussian kernel space instead of Euclidean space, which helps address the multidimensional linear inseparability problem. Then, the Davies-Bouldin (DB) index is applied to optimize the parameter value of the MDST-AP algorithm, which is applied to analyze road congestion in Beijing via taxi trajectories. Experiments on different datasets and algorithms indicated that the MDST-AP algorithm can process multidimensional spatiotemporal data points faster and more effectively.",
+        "authors": [
+            "Cui, Haifu ",
+            " Wu, Liang ",
+            " He, Zhanjun ",
+            " Hu, Sheng ",
+            " Ma, Kai ",
+            " Yin, Li ",
+            " Tao, Liufeng"
+        ],
+        "booktitle": null,
+        "id": 4,
+        "publication": "International Journal of Environmental Research and Public Health",
+        "publishDate": "2019-01-01T00:00:00Z",
+        "shorttitle": null,
+        "tags": null,
+        "title": "Exploring Multidimensional Spatiotemporal Point Patterns Based on an Improved Affinity Propagation Algorithm",
+        "uri": "/publication/article/cui_exploring_2019/"
+    },
+    {
+        "ENTRYTYPE": "article",
+        "abstract": "Dementia is a serious public health problem. The more extensive dementia knowledge is, the more conducive it is to early prevention and treatment of dementia. However, no assessment of the general population&rsquo;s dementia awareness has been conducted so far in China. Thus, this study assessed the national public knowledge of dementia based on mobile internet in China. We assessed 10,562 national respondents recruited based on the most popular social networking service in China, WeChat and analyzed the data using quantitative methods. The overall correct rate of total dementia knowledge was 63.14%. Only half of the participants (50.84%) could identify risk factors accurately. The level of dementia knowledge was positively associated with high education, city residency, and experience of exposure to information on dementia. The sandwich generation (aged 20&ndash;60 years) had the highest level of dementia knowledge. Chinese people were found to have a low level of knowledge about dementia, especially those aged over 60 years, with low education and living in rural areas. Further educational programs and campaigns are needed to improve dementia knowledge, with greater focus on the older population as the target audience, emphasis on dementia risk factors as educational content, correcting misconceptions about dementia, and providing more experience of exposure to dementia.",
+        "authors": [
+            "Liu, Dan ",
+            " Cheng, Guirong ",
+            " An, Lina ",
+            " Gan, Xuguang ",
+            " Wu, Yulian ",
+            " Zhang, Bo ",
+            " Hu, Sheng ",
+            " Zeng, Yan ",
+            " Wu, Liang"
+        ],
+        "booktitle": null,
+        "id": 5,
+        "publication": "International Journal of Environmental Research and Public Health",
+        "publishDate": "2019-01-01T00:00:00Z",
+        "shorttitle": "Public Knowledge about Dementia in China",
+        "tags": null,
+        "title": "Public Knowledge about Dementia in China: A National WeChat-Based Survey",
+        "uri": "/publication/article/liu_public_2019/"
+    },
+    {
+        "ENTRYTYPE": "article",
+        "abstract": "Much of the taxi route-planning literature has focused on driver strategies for finding passengers and determining the hot spot pick-up locations using historical global positioning system (GPS) trajectories of taxis based on driver experience, distance from the passenger drop-off location to the next passenger pick-up location and the waiting times at recommended locations for the next passenger. The present work, however, considers the average taxi travel speed mined from historical taxi GPS trajectory data and the allocation of cruising routes to more than one taxi driver in a small-scale region to neighboring pick-up locations. A spatio-temporal trajectory model with load balancing allocations is presented to not only explore pick-up/drop-off information but also provide taxi drivers with cruising routes to the recommended pick-up locations. In simulation experiments, our study shows that taxi drivers using cruising routes recommended by our spatio-temporal trajectory model can significantly reduce the average waiting time and travel less distance to quickly find their next passengers, and the load balancing strategy significantly alleviates road loads. These objective measures can help us better understand spatio-temporal traffic patterns and guide taxi navigation.",
+        "authors": [
+            "Wu, Liang ",
+            " Hu, Sheng ",
+            " Yin, Li ",
+            " Wang, Yazhou ",
+            " Chen, Zhanlong ",
+            " Guo, Mingqiang ",
+            " Chen, Hao ",
+            " Xie, Zhong"
+        ],
+        "booktitle": null,
+        "id": 6,
+        "publication": "ISPRS International Journal of Geo-Information",
+        "publishDate": "2017-11-01T00:00:00Z",
+        "shorttitle": null,
+        "tags": null,
+        "title": "Optimizing Cruising Routes for Taxi Drivers Using a Spatio-Temporal Trajectory Model",
+        "uri": "/publication/article/wu_optimizing_2017/"
+    },
+    {
+        "ENTRYTYPE": "article",
+        "abstract": "Severe fever with thrombocytopenia syndrome (SFTS) is caused by severe fever with thrombocytopenia syndrome virus (SFTSV), which has had a serious impact on public health in parts of Asia. There is no specific antiviral drug or vaccine for SFTSV and, therefore, it is important to determine the factors that influence the occurrence of SFTSV infections. This study aimed to explore the spatial associations between SFTSV infections and several potential determinants, and to predict the high-risk areas in mainland China. The analysis was carried out at the level of provinces in mainland China. The potential explanatory variables that were investigated consisted of meteorological factors (average temperature, average monthly precipitation and average relative humidity), the average proportion of rural population and the average proportion of primary industries over three years (2010\u20132012). We constructed a geographically weighted logistic regression (GWLR) model in order to explore the associations between the selected variables and confirmed cases of SFTSV. The study showed that: (1) meteorological factors have a strong influence on the SFTSV cover; (2) a GWLR model is suitable for exploring SFTSV cover in mainland China; (3) our findings can be used for predicting high-risk areas and highlighting when meteorological factors pose a risk in order to aid in the implementation of public health strategies.",
+        "authors": [
+            "Wu, Liang ",
+            " Deng, Fei ",
+            " Xie, Zhong ",
+            " Hu, Sheng ",
+            " Shen, Shu ",
+            " Shi, Junming ",
+            " Liu, Dan"
+        ],
+        "booktitle": null,
+        "id": 7,
+        "publication": "International Journal of Environmental Research and Public Health",
+        "publishDate": "2016-11-01T00:00:00Z",
+        "shorttitle": null,
+        "tags": null,
+        "title": "Spatial Analysis of Severe Fever with Thrombocytopenia Syndrome Virus in China Using a Geographically Weighted Logistic Regression Model",
+        "uri": "/publication/article/wu_spatial_2016/"
+    }
+]

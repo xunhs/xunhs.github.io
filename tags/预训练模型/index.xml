@@ -1,74 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>预训练模型 on 热</title>
-    <link>/tags/%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B/</link>
-    <description>Recent content in 预训练模型 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 25 Apr 2020 09:22:21 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>PyTroch学习笔记</title>
-        <link>/posts/notes/328/</link>
-        <pubDate>Sat, 25 Apr 2020 09:22:21 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Sat, 25 Apr 2020 09:22:21 +0000</atom:modified>
-        <guid>/posts/notes/328/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;Refer: &lt;a href=&#34;https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html&#34;&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>预训练模型 on 热</title>
+<link>/tags/%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B/</link>
+<description>Recent content in 预训练模型 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Sat, 25 Apr 2020 09:22:21 +0000</lastBuildDate>
+<atom:link href="/tags/%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>PyTroch学习笔记</title>
+<link>/posts/notes/328/</link>
+<pubDate>Sat, 25 Apr 2020 09:22:21 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Sat, 25 Apr 2020 09:22:21 +0000</atom:modified>
+<guid>/posts/notes/328/</guid>
+<description>&lt;blockquote&gt;
+&lt;p&gt;Refer: &lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>深度学习</category>
-            
-          
-            
-              <category>PyTorch</category>
-            
-          
-            
-              <category>Python</category>
-            
-          
-            
-              <category>神经网络</category>
-            
-          
-            
-              <category>预训练模型</category>
-            
-          
-        
-        
-          
-            
-              <category>收藏</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>深度学习</category>
+<category>PyTorch</category>
+<category>Python</category>
+<category>神经网络</category>
+<category>预训练模型</category>
+<category>收藏</category>
+</item>
+</channel>
 </rss>

@@ -1,160 +1,127 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>unipath on 热</title>
-    <link>/tags/unipath/</link>
-    <description>Recent content in unipath on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 07 Jul 2021 02:45:11 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/unipath/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>Python路径操作:unipath常用方法</title>
-        <link>/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link>
-        <pubDate>Wed, 07 Jul 2021 02:45:11 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Wed, 07 Jul 2021 02:45:11 +0000</atom:modified>
-        <guid>/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-        <description>&lt;!-- content --&gt;
-&lt;a href=&#34;#ZgotmplZ&#34; class=&#34;button&#34; style=&#34;width: 72px; height: 30px;&#34; data-color=&#34;default&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;
-  &lt;span class=&#34;button__text&#34;&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>unipath on 热</title>
+<link>/tags/unipath/</link>
+<description>Recent content in unipath on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Wed, 07 Jul 2021 02:45:11 +0000</lastBuildDate>
+<atom:link href="/tags/unipath/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Python路径操作:unipath常用方法</title>
+<link>/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+<pubDate>Wed, 07 Jul 2021 02:45:11 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Wed, 07 Jul 2021 02:45:11 +0000</atom:modified>
+<guid>/moments/python%E8%B7%AF%E5%BE%84%E6%93%8D%E4%BD%9C-unipath%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+<description>&lt;!-- content --&gt;
+&lt;a href="#ZgotmplZ" class="button" style="width: 72px; height: 30px;" data-color="default" target="_blank" rel="noreferrer"&gt;
+  &lt;span class="button__text"&gt;
     unipath
   &lt;/span&gt;
 &lt;/a&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;span class="lnt"&gt;23
+&lt;/span&gt;&lt;span class="lnt"&gt;24
+&lt;/span&gt;&lt;span class="lnt"&gt;25
+&lt;/span&gt;&lt;span class="lnt"&gt;26
+&lt;/span&gt;&lt;span class="lnt"&gt;27
+&lt;/span&gt;&lt;span class="lnt"&gt;28
+&lt;/span&gt;&lt;span class="lnt"&gt;29
+&lt;/span&gt;&lt;span class="lnt"&gt;30
+&lt;/span&gt;&lt;span class="lnt"&gt;31
+&lt;/span&gt;&lt;span class="lnt"&gt;32
+&lt;/span&gt;&lt;span class="lnt"&gt;33
+&lt;/span&gt;&lt;span class="lnt"&gt;34
+&lt;/span&gt;&lt;span class="lnt"&gt;35
+&lt;/span&gt;&lt;span class="lnt"&gt;36
+&lt;/span&gt;&lt;span class="lnt"&gt;37
+&lt;/span&gt;&lt;span class="lnt"&gt;38
+&lt;/span&gt;&lt;span class="lnt"&gt;39
+&lt;/span&gt;&lt;span class="lnt"&gt;40
+&lt;/span&gt;&lt;span class="lnt"&gt;41
+&lt;/span&gt;&lt;span class="lnt"&gt;42
+&lt;/span&gt;&lt;span class="lnt"&gt;43
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pathlib&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Path&lt;/span&gt;
+&lt;td class="lntd"&gt;
+&lt;pre class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pathlib&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Path&lt;/span&gt;
 
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;../root&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;new_path&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;new_dir&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;file&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 路径拼接&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;../root&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;new_path&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;new_dir&amp;#34;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;file&amp;#34;&lt;/span&gt; &lt;span class="c1"&gt;# 路径拼接&lt;/span&gt;
 
-&lt;span class=&#34;c1&#34;&gt;# 基本属性:&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;suffix&lt;/span&gt;　　　　&lt;span class=&#34;c1&#34;&gt;#文件后缀&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;stem&lt;/span&gt;　　　　　 &lt;span class=&#34;c1&#34;&gt;#文件名不带后缀&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;　　　　　　&lt;span class=&#34;c1&#34;&gt;#带后缀的完整文件名&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;parent&lt;/span&gt;　　　　&lt;span class=&#34;c1&#34;&gt;#路径的上级目录&lt;/span&gt;
+&lt;span class="c1"&gt;# 基本属性:&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;suffix&lt;/span&gt;　　　　&lt;span class="c1"&gt;#文件后缀&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stem&lt;/span&gt;　　　　　 &lt;span class="c1"&gt;#文件名不带后缀&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;　　　　　　&lt;span class="c1"&gt;#带后缀的完整文件名&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parent&lt;/span&gt;　　　　&lt;span class="c1"&gt;#路径的上级目录&lt;/span&gt;
 
-&lt;span class=&#34;c1&#34;&gt;# 基本函数:&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;iterdir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;　　&lt;span class=&#34;c1&#34;&gt;#遍历目录的子目录或者文件&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;glob&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pattern&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;　　&lt;span class=&#34;c1&#34;&gt;#过滤目录(返回生成器)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# -- example --&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;Path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;glob&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;*.py&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 遍历py文件&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# &amp;gt;&amp;gt;&amp;gt; [Path(&amp;#39;pathlib.py&amp;#39;), Path(&amp;#39;setup.py&amp;#39;), Path(&amp;#39;test_pathlib.py&amp;#39;)]&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;Path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;glob&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;*/*.py&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# &amp;gt;&amp;gt;&amp;gt; [Path(&amp;#39;docs/conf.py&amp;#39;)]&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;Path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;glob&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;**/*.py&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 递归遍历py文件&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# &amp;gt;&amp;gt;&amp;gt; [Path(&amp;#39;build/lib/pathlib.py&amp;#39;), Path(&amp;#39;docs/conf.py&amp;#39;), &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# Path(&amp;#39;pathlib.py&amp;#39;), Path(&amp;#39;setup.py&amp;#39;), Path(&amp;#39;test_pathlib.py&amp;#39;)]&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# ---&lt;/span&gt;
+&lt;span class="c1"&gt;# 基本函数:&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iterdir&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;　　&lt;span class="c1"&gt;#遍历目录的子目录或者文件&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;　　&lt;span class="c1"&gt;#过滤目录(返回生成器)&lt;/span&gt;
+&lt;span class="c1"&gt;# -- example --&lt;/span&gt;
+&lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;*.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# 遍历py文件&lt;/span&gt;
+&lt;span class="c1"&gt;# &amp;gt;&amp;gt;&amp;gt; [Path(&amp;#39;pathlib.py&amp;#39;), Path(&amp;#39;setup.py&amp;#39;), Path(&amp;#39;test_pathlib.py&amp;#39;)]&lt;/span&gt;
+&lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;*/*.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# &amp;gt;&amp;gt;&amp;gt; [Path(&amp;#39;docs/conf.py&amp;#39;)]&lt;/span&gt;
+&lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;**/*.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# 递归遍历py文件&lt;/span&gt;
+&lt;span class="c1"&gt;# &amp;gt;&amp;gt;&amp;gt; [Path(&amp;#39;build/lib/pathlib.py&amp;#39;), Path(&amp;#39;docs/conf.py&amp;#39;), &lt;/span&gt;
+&lt;span class="c1"&gt;# Path(&amp;#39;pathlib.py&amp;#39;), Path(&amp;#39;setup.py&amp;#39;), Path(&amp;#39;test_pathlib.py&amp;#39;)]&lt;/span&gt;
+&lt;span class="c1"&gt;# ---&lt;/span&gt;
 
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exists&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;　　&lt;span class=&#34;c1&#34;&gt;#判断路径是否存在&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;is_dir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;　　&lt;span class=&#34;c1&#34;&gt;#判断是否是目录&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;is_file&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;#判断是否是文件&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exists&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;　　&lt;span class="c1"&gt;#判断路径是否存在&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_dir&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;　　&lt;span class="c1"&gt;#判断是否是目录&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_file&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;  &lt;span class="c1"&gt;#判断是否是文件&lt;/span&gt;
 
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mkdir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;parents&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;exist_ok&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;　　&lt;span class=&#34;c1&#34;&gt;#创建目录&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# If parents is true, any missing parents of this path are created as needed&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# If exist_ok is true, FileExistsError exceptions will be ignored&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mkdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;parents&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;exist_ok&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;　　&lt;span class="c1"&gt;#创建目录&lt;/span&gt;
+&lt;span class="c1"&gt;# If parents is true, any missing parents of this path are created as needed&lt;/span&gt;
+&lt;span class="c1"&gt;# If exist_ok is true, FileExistsError exceptions will be ignored&lt;/span&gt;
 
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;unlink&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;　　&lt;span class=&#34;c1&#34;&gt;#删除文件或目录(目录非空触发异常)&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;encoding&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;　　&lt;span class=&#34;c1&#34;&gt;#打开文件(支持with)&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;unlink&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;　　&lt;span class="c1"&gt;#删除文件或目录(目录非空触发异常)&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mode&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;　　&lt;span class="c1"&gt;#打开文件(支持with)&lt;/span&gt;
 
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;with_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;　　&lt;span class=&#34;c1&#34;&gt;#更改完整文件名称&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;with_suffix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;　　&lt;span class=&#34;c1&#34;&gt;#更改后缀&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;with_stem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;    &lt;span class=&#34;c1&#34;&gt;#更改文件名不带后缀&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# -- example --&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;Path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;c:/Downloads/draft.txt&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;with_stem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;final&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# &amp;gt;&amp;gt;&amp;gt; Path(&amp;#39;c:/Downloads/final.txt&amp;#39;)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# ---&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_name&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;　　&lt;span class="c1"&gt;#更改完整文件名称&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_suffix&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;　　&lt;span class="c1"&gt;#更改后缀&lt;/span&gt;
+&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_stem&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;    &lt;span class="c1"&gt;#更改文件名不带后缀&lt;/span&gt;
+&lt;span class="c1"&gt;# -- example --&lt;/span&gt;
+&lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;c:/Downloads/draft.txt&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_stem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;final&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# &amp;gt;&amp;gt;&amp;gt; Path(&amp;#39;c:/Downloads/final.txt&amp;#39;)&lt;/span&gt;
+&lt;span class="c1"&gt;# ---&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-        
-        <dc:creator>热</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>Python</category>
-            
-          
-            
-              <category>unipath</category>
-            
-          
-            
-              <category>路径操作</category>
-            
-          
-            
-              <category>Path</category>
-            
-          
-        
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>热</dc:creator>
+<category>Python</category>
+<category>unipath</category>
+<category>路径操作</category>
+<category>Path</category>
+</item>
+</channel>
 </rss>

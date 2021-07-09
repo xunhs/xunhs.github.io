@@ -1,71 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>Ubuntu on 热</title>
-    <link>/tags/ubuntu/</link>
-    <description>Recent content in Ubuntu on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 14 Feb 2020 09:09:11 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>Linux-基础及常用命令</title>
-        <link>/posts/notes/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-        <pubDate>Fri, 14 Feb 2020 09:09:11 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Fri, 14 Feb 2020 09:09:11 +0000</atom:modified>
-        <guid>/posts/notes/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-        <description>&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>Ubuntu on 热</title>
+<link>/tags/ubuntu/</link>
+<description>Recent content in Ubuntu on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Fri, 14 Feb 2020 09:09:11 +0000</lastBuildDate>
+<atom:link href="/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Linux-基础及常用命令</title>
+<link>/posts/notes/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+<pubDate>Fri, 14 Feb 2020 09:09:11 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Fri, 14 Feb 2020 09:09:11 +0000</atom:modified>
+<guid>/posts/notes/2020-02-17-linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+<description>&lt;hr /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Linux基础及部分常用命令&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>Linux</category>
-            
-          
-            
-              <category>Ubuntu</category>
-            
-          
-            
-              <category>运维</category>
-            
-          
-            
-              <category>代理</category>
-            
-          
-        
-        
-          
-            
-              <category>收藏</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>Linux</category>
+<category>Ubuntu</category>
+<category>运维</category>
+<category>代理</category>
+<category>收藏</category>
+</item>
+</channel>
 </rss>

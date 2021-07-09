@@ -1,70 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>深圳 on 热</title>
-    <link>/tags/%E6%B7%B1%E5%9C%B3/</link>
-    <description>Recent content in 深圳 on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 01 Mar 2021 00:20:57 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/%E6%B7%B1%E5%9C%B3/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>2021-3</title>
-        <link>/posts/journals/2021-03-01-2021-3/</link>
-        <pubDate>Mon, 01 Mar 2021 00:20:57 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Mon, 01 Mar 2021 00:20:57 +0000</atom:modified>
-        <guid>/posts/journals/2021-03-01-2021-3/</guid>
-        <description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>深圳 on 热</title>
+<link>/tags/%E6%B7%B1%E5%9C%B3/</link>
+<description>Recent content in 深圳 on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Mon, 01 Mar 2021 00:20:57 +0000</lastBuildDate>
+<atom:link href="/tags/%E6%B7%B1%E5%9C%B3/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>2021-3</title>
+<link>/posts/journals/2021-03-01-2021-3/</link>
+<pubDate>Mon, 01 Mar 2021 00:20:57 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Mon, 01 Mar 2021 00:20:57 +0000</atom:modified>
+<guid>/posts/journals/2021-03-01-2021-3/</guid>
+<description>&lt;blockquote&gt;
 &lt;p&gt;深圳&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>GNN</category>
-            
-          
-            
-              <category>海</category>
-            
-          
-            
-              <category>深圳</category>
-            
-          
-            
-              <category>疫苗</category>
-            
-          
-        
-        
-          
-            
-              <category>随笔</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>GNN</category>
+<category>海</category>
+<category>深圳</category>
+<category>疫苗</category>
+<category>随笔</category>
+</item>
+</channel>
 </rss>

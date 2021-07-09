@@ -1,62 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>Map Matching on 热</title>
-    <link>/tags/map-matching/</link>
-    <description>Recent content in Map Matching on 热</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>gishusheng@outlook.com (热)</managingEditor>
-    <webMaster>gishusheng@outlook.com (热)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 17 Mar 2020 09:20:26 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/map-matching/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>fmm-Map Matching路网匹配工具环境搭建与使用</title>
-        <link>/posts/notes/148/</link>
-        <pubDate>Tue, 17 Mar 2020 09:20:26 +0000</pubDate>
-        <author>gishusheng@outlook.com (热)</author>
-        <atom:modified>Tue, 17 Mar 2020 09:20:26 +0000</atom:modified>
-        <guid>/posts/notes/148/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cyang-kth/fmm&#34;&gt;fmm&lt;/a&gt; 是在github上找到的比较好用的Map Matching路网匹配工具。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>Map Matching on 热</title>
+<link>/tags/map-matching/</link>
+<description>Recent content in Map Matching on 热</description>
+<generator>Hugo -- gohugo.io</generator>
+<language>en</language>
+<managingEditor>gishusheng@outlook.com (热)</managingEditor>
+<webMaster>gishusheng@outlook.com (热)</webMaster>
+<copyright>©2021, All Rights Reserved</copyright>
+<lastBuildDate>Tue, 17 Mar 2020 09:20:26 +0000</lastBuildDate>
+<atom:link href="/tags/map-matching/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>fmm-Map Matching路网匹配工具环境搭建与使用</title>
+<link>/posts/notes/148/</link>
+<pubDate>Tue, 17 Mar 2020 09:20:26 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<atom:modified>Tue, 17 Mar 2020 09:20:26 +0000</atom:modified>
+<guid>/posts/notes/148/</guid>
+<description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="https://github.com/cyang-kth/fmm"&gt;fmm&lt;/a&gt; 是在github上找到的比较好用的Map Matching路网匹配工具。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-        
-        <dc:creator>Ethan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>Map Matching</category>
-            
-          
-            
-              <category>路网匹配</category>
-            
-          
-        
-        
-          
-            
-              <category>收藏</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
+<dc:creator>Ethan</dc:creator>
+<category>Map Matching</category>
+<category>路网匹配</category>
+<category>收藏</category>
+</item>
+</channel>
 </rss>
