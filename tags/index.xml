@@ -9,8 +9,26 @@
 <managingEditor>gishusheng@outlook.com (热)</managingEditor>
 <webMaster>gishusheng@outlook.com (热)</webMaster>
 <copyright>©2021, All Rights Reserved</copyright>
-<lastBuildDate>Wed, 07 Jul 2021 03:17:08 +0000</lastBuildDate>
+<lastBuildDate>Sun, 11 Jul 2021 01:33:17 +0000</lastBuildDate>
 <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>扫街</title>
+<link>/tags/%E6%89%AB%E8%A1%97/</link>
+<pubDate>Sun, 11 Jul 2021 01:33:17 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<guid>/tags/%E6%89%AB%E8%A1%97/</guid>
+<description/>
+<dc:creator>热</dc:creator>
+</item>
+<item>
+<title>相册</title>
+<link>/tags/%E7%9B%B8%E5%86%8C/</link>
+<pubDate>Sun, 11 Jul 2021 01:33:17 +0000</pubDate>
+<author>gishusheng@outlook.com (热)</author>
+<guid>/tags/%E7%9B%B8%E5%86%8C/</guid>
+<description/>
+<dc:creator>热</dc:creator>
+</item>
 <item>
 <title>匹配</title>
 <link>/tags/%E5%8C%B9%E9%85%8D/</link>
@@ -890,24 +908,6 @@
 <pubDate>Fri, 17 Jul 2020 09:28:41 +0000</pubDate>
 <author>gishusheng@outlook.com (热)</author>
 <guid>/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</guid>
-<description/>
-<dc:creator>热</dc:creator>
-</item>
-<item>
-<title>风格迁移</title>
-<link>/tags/%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB/</link>
-<pubDate>Fri, 17 Jul 2020 09:28:41 +0000</pubDate>
-<author>gishusheng@outlook.com (热)</author>
-<guid>/tags/%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB/</guid>
-<description/>
-<dc:creator>热</dc:creator>
-</item>
-<item>
-<title>元胞自动机</title>
-<link>/tags/%E5%85%83%E8%83%9E%E8%87%AA%E5%8A%A8%E6%9C%BA/</link>
-<pubDate>Fri, 03 Jul 2020 09:27:56 +0000</pubDate>
-<author>gishusheng@outlook.com (热)</author>
-<guid>/tags/%E5%85%83%E8%83%9E%E8%87%AA%E5%8A%A8%E6%9C%BA/</guid>
 <description/>
 <dc:creator>热</dc:creator>
 </item>
