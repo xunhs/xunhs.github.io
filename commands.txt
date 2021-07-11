@@ -1,5 +1,5 @@
 - note
-hugo new --kind note "posts/notes/2021-07-07-正则表达式.md"
+hugo new --kind note "posts/notes/2021-07-10-正则表达式.md"
 
 - journal 
 hugo new --kind journal "posts/journals/2021-7.md" 
