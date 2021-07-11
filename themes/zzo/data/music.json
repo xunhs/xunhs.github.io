@@ -34,6 +34,34 @@
             "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E6%8E%A8%E5%BC%80%E4%B8%96%E7%95%8C%E7%9A%84%E9%97%A8%20-%20%E6%9D%A8%E4%B9%83%E6%96%87-eefcf7.mp3",
             "cover": "http://p3.music.126.net/4ESdAPfVH-tAMl-pRYNE3A==/3399689972238493.jpg?param=300x300",
             "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E6%8E%A8%E5%BC%80%E4%B8%96%E7%95%8C%E7%9A%84%E9%97%A8-%E6%9D%A8%E4%B9%83%E6%96%87-270481-Ag.lrc"
+        },
+        {
+            "name": "慢慢喜欢你 - 莫文蔚",
+            "artist": "莫文蔚",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0%20-%20%E8%8E%AB%E6%96%87%E8%94%9A-9cc1e4-Ag.mp3",
+            "cover": "https://p2.music.126.net/VYZejIv5M-K4RsHKkyXQFQ==/109951165958895028.jpg?param=300x300",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E6%85%A2%E6%85%A2%E5%96%9C%E6%AC%A2%E4%BD%A0-%E8%8E%AB%E6%96%87%E8%94%9A-752aee-Ag.lrc"
+        },
+        {
+            "name": "命硬",
+            "artist": "侧田",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs/image_host@master/media/%5B%E7%B2%B5%5D%5BMP3%5D%20Justin%20%E5%81%B4%E7%94%B0%20-%20%E5%91%BD%E7%A1%AC%20%5B%E6%AD%8C%E8%A9%9E%E5%90%8C%E6%AD%A5%5D-42c3c7.mp3",
+            "cover": "https://p2.music.126.net/nILZy88CcFsE-n93fvScUw==/109951165125397735.jpg?param=300x300",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E5%91%BD%E7%A1%AC-%E4%BE%A7%E7%94%B0-62bdd7-Ag.lrc"
+        },
+        {
+            "name": "错位时空",
+            "artist": "艾辰",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E9%94%99%E4%BD%8D%E6%97%B6%E7%A9%BA-e8e8ac-Ag.mp3",
+            "cover": "https://p2.music.126.net/8C0lwLE88j9ZwLyPQ9a4FA==/109951165595770076.jpg?param=300x300",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E9%94%99%E4%BD%8D%E6%97%B6%E7%A9%BA-%E8%89%BE%E8%BE%B0-abeb9a-Ag.lrc"
+        },
+        {
+            "name": "Late Night Melancholy",
+            "artist": "Rude Boy",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/Late%20Night%20Melancholy-bf9546-Ag.mp3",
+            "cover": "https://p2.music.126.net/FVJFW5FG7B2f-JtHH8BNVQ==/109951165685423491.jpg?param=300x300",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%BA%AF%E9%9F%B3%E4%B9%90-%E6%97%A0%E6%AD%8C%E8%AF%8D-3ca159-Ag.lrc"
         }
     ]
 }
