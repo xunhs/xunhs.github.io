@@ -98,6 +98,18 @@
             "artist": "郭顶",
             "url": "https://cdn.jsdelivr.net/gh/xunhs/image_host@master/media/%E9%83%AD%E9%A1%B6%20-%20%E6%B0%B4%E6%98%9F%E8%AE%B0.mp3",
             "lrc": "https://cdn.jsdelivr.net/gh/xunhs/image_host@master/media/%E9%83%AD%E9%A1%B6%20-%20%E6%B0%B4%E6%98%9F%E8%AE%B0.lrc"
+        },
+        {
+            "name": "紫霞仙子（Bootleg） - 苏冬涛,沐泽",
+            "artist": "苏冬涛,沐泽",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%B4%AB%E9%9C%9E%E4%BB%99%E5%AD%90%EF%BC%88Bootleg%EF%BC%89%20-%20%E8%8B%8F%E5%86%AC%E6%B6%9B%2C%E6%B2%90%E6%B3%BD-7958c3-Ag.mp3",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%B4%AB%E9%9C%9E%E4%BB%99%E5%AD%90%EF%BC%88Bootleg%EF%BC%89-%E8%8B%8F%E5%86%AC%E6%B6%9B%2C%E6%B2%90%E6%B3%BD-2a8ce3-Ag.lrc"
+        },
+        {
+            "name": "春娇与志明 - 街道办GDC",
+            "artist": "街道办GDC",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E6%98%A5%E5%A8%87%E4%B8%8E%E5%BF%97%E6%98%8E%20-%20%E8%A1%97%E9%81%93%E5%8A%9EGDC-0dd010-Ag.mp3",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E6%98%A5%E5%A8%87%E4%B8%8E%E5%BF%97%E6%98%8E-%E8%A1%97%E9%81%93%E5%8A%9EGDC-de9295-Ag.lrc"
         }
     ]
 }
