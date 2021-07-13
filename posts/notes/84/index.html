@@ -2308,7 +2308,9 @@
 <li>ELMO的本质思想是：我事先用语言模型学好一个单词的Word Embedding，此时多义词无法区分，不过这没关系。在我实际使用Word Embedding的时候，单词已经具备了特定的上下文了，这个时候我可以<strong>根据上下文单词的语义去调整单词的Word Embedding表示</strong>，这样经过调整后的Word Embedding更能表达在这个上下文中的具体含义，自然也就解决了多义词的问题了。所以ELMO本身是个根据当前上下文对Word Embedding动态调整的思路。</li>
 <li>每个编码器的深度都是<strong>两层LSTM叠加</strong>。这个网络结构其实在NLP中是很常用的。</li>
 <li>句子中<strong>每个单词都能得到对应的三个Embedding</strong>:最底层是单词的Word Embedding，往上走是第一层双向LSTM中对应单词位置的Embedding，这层编码单词的<strong>句法信息</strong>更多一些；再往上走是第二层LSTM中对应单词位置的Embedding，这层编码单词的<strong>语义信息</strong>更多一些。也就是说，ELMO的预训练过程不仅仅学会单词的Word Embedding，还学会了一个双层双向的LSTM网络结构，而这两者后面都有用。</li>
-<li><img src="https://s2.ax1x.com/2020/02/20/3mlhwt.md.jpg" alt="3mlhwt.jpg" /></li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://s2.ax1x.com/2020/02/20/3mlhwt.md.jpg" alt="3mlhwt.jpg"  />
+  </p></li>
 </ul>
 </li>
 <li>
@@ -2372,7 +2374,9 @@
 <li>
 <p>NLP的四大类任务</p>
 <ul>
-<li><img src="https://s2.ax1x.com/2020/02/20/3mGg4P.md.jpg" alt="3mGg4P.jpg" /></li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://s2.ax1x.com/2020/02/20/3mGg4P.md.jpg" alt="3mGg4P.jpg"  />
+  </p></li>
 <li>序列标注
 <ul>
 <li>中文分词，词性标注，命名实体识别，语义角色标注等</li>
@@ -2428,7 +2432,9 @@
 <li>
 <p>Bert评价及总结</p>
 <ul>
-<li><img src="https://s2.ax1x.com/2020/02/20/3mY1oR.md.jpg" alt="3mlhwt.jpg" /></li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://s2.ax1x.com/2020/02/20/3mY1oR.md.jpg" alt="3mlhwt.jpg"  />
+  </p></li>
 <li>Bert借鉴了ELMO，GPT及CBOW，主要提出了Masked 语言模型及Next Sentence Prediction，但是这里Next Sentence Prediction基本不影响大局，而Masked LM明显借鉴了CBOW的思想。所以说Bert的模型没什么大的创新，更像最近几年NLP重要进展的集大成者</li>
 <li>首先是两阶段模型，第一阶段双向语言模型预训练，这里注意要用双向而不是单向，第二阶段采用具体任务Fine-tuning或者做特征集成；第二是特征抽取要用Transformer作为特征提取器而不是RNN或者CNN；第三，双向语言模型可以采取CBOW的方法去做</li>
 <li>Bert最大的亮点在于效果好及普适性强，几乎所有NLP任务都可以套用Bert这种两阶段解决思路，而且效果应该会有明显提升。可以预见的是，未来一段时间在NLP应用领域，Transformer将占据主导地位，而且这种两阶段预训练方法也会主导各种应用。</li>

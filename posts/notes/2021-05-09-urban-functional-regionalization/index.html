@@ -2353,10 +2353,14 @@
 <li>for independently <u>testing the ecological regions</u> created in this study</li>
 </ul>
 </li>
-<li>Schematic illustrating the procedure for creating ecological regions:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513103705.jpeg;%20charset=UTF-8" alt="" />
+<li>Schematic illustrating the procedure for creating ecological regions:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513103705.jpeg;%20charset=UTF-8" alt=""  />
+  </p>
 <ol>
 <li>
-<p>预处理过程——Data preprocessing:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513111334.png" alt="image-20210513111333997" /></p>
+<p>预处理过程——Data preprocessing:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513111334.png" alt="image-20210513111333997"  />
+  </p></p>
 <ul>
 <li><strong>remove</strong> HU‐12s that included spatially isolated landscape features (e.g., islands and peninsulas)</li>
 <li><strong>fill in missing values</strong> in the geospatial database through interpolation</li>
@@ -2368,19 +2372,29 @@
 <p>two matrixs and joint similarity matrix:</p>
 <ul>
 <li>feature similarity matrix: a landscape feature similarity matrix that <u>measures landscape homogeneity</u> was computed using the <u>Gaussian radial basis function</u></li>
-<li>spatial constraint matrix: a <u>binary‐valued</u> spatial constraint matrix was constructed based on HU‐12 contiguity (i.e., <u>1 if the HU‐12s share a border; 0 if the HU‐12s do not share a border</u>). The spatial constraint matrix is used to <u>guide the clustering process into finding spatially contiguous regions</u>.<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513105443.png" alt="image-20210513105443622" /></li>
-<li>Hadamard product:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513105724.png" alt="image-20210513105724718" /></li>
+<li>spatial constraint matrix: a <u>binary‐valued</u> spatial constraint matrix was constructed based on HU‐12 contiguity (i.e., <u>1 if the HU‐12s share a border; 0 if the HU‐12s do not share a border</u>). The spatial constraint matrix is used to <u>guide the clustering process into finding spatially contiguous regions</u>.<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513105443.png" alt="image-20210513105443622"  />
+  </p></li>
+<li>Hadamard product:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513105724.png" alt="image-20210513105724718"  />
+  </p></li>
 </ul>
 </li>
 <li>
-<p>spectral clustering algorithm:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513110218.png" alt="image-20210513110218622" /></p>
+<p>spectral clustering algorithm:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513110218.png" alt="image-20210513110218622"  />
+  </p></p>
 </li>
 <li>
-<p>two metrics for evaluating a regionalization framework:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513110643.png" alt="image-20210513110643836" /></p>
+<p>two metrics for evaluating a regionalization framework:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513110643.png" alt="image-20210513110643836"  />
+  </p></p>
 <ul>
 <li><strong>within-cluster sum-of-square error</strong> (SSW) to quantify the landscape homogeneity within the regions, A <strong>lower</strong> SSW implies higher homogeneity of landscape features within regions</li>
 <li>percentage of spatial constraints preserved by the clustering algorithm(PctML), a measure of cluster contiguity. This metric ranges from 0 to 1 and the <strong>higher</strong> the metric, the more spatially contiguous were the resulting regions.</li>
-<li>created nine sets of ecological regions:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513115623.png" alt="image-20210513115623061" /></li>
+<li>created nine sets of ecological regions:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513115623.png" alt="image-20210513115623061"  />
+  </p></li>
 </ul>
 </li>
 <li>
@@ -2408,7 +2422,9 @@
 </ul>
 </li>
 <li>
-<p>Determining drivers of ecological regions:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513115952.png" alt="image-20210513115952196" /></p>
+<p>Determining drivers of ecological regions:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513115952.png" alt="image-20210513115952196"  />
+  </p></p>
 <ul>
 <li><strong>evaluated the relative importance</strong> of the 52 geospatial variables for region formation using a random forest algorithm</li>
 <li>The OOB error estimate</li>
@@ -2416,7 +2432,9 @@
 </ul>
 </li>
 <li>
-<p>Testing the ability of ecological regions to capture regional variation:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513120231.png" alt="image-20210513120230984" /></p>
+<p>Testing the ability of ecological regions to capture regional variation:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210513120231.png" alt="image-20210513120230984"  />
+  </p></p>
 <ul>
 <li>examining SSW for the two lake characteristics</li>
 <li>examined the ratio of SSW:SSB in order to compare relative amounts of within‐ and among‐region heterogeneity across response variables and ecological regions</li>
@@ -2657,7 +2675,9 @@
 <li>The Calinski-Harabasz index will be <strong>high</strong> for a region map containing distinct (dissimilar) regions that consist of similar spatial units.</li>
 </ul>
 </li>
-<li>Sum-Squared Errors:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210514110845.png" alt="image-20210514110845211" /></li>
+<li>Sum-Squared Errors:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210514110845.png" alt="image-20210514110845211"  />
+  </p></li>
 </ul>
 </li>
 <li>
@@ -2698,7 +2718,9 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210514153720.png" alt="image-20210514153720812" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210514153720.png" alt="image-20210514153720812"  />
+  </p></p>
 <h3 id="2021-partitioning-urban-road-network-based-on-travel-speed-correlation">2021-Partitioning urban road network based on travel speed correlation</h3>
 <ul>
 <li>International Journal of Transportation Science and Technology: <a href="https://doi.org/10.1016/j.ijtst.2021.01.002">https://doi.org/10.1016/j.ijtst.2021.01.002</a></li>
@@ -2781,11 +2803,15 @@
 <li>balanced size</li>
 </ul>
 </li>
-<li>Framework:<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210517160045.png" alt="image-20210517160045923" /></li>
+<li>Framework:<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210517160045.png" alt="image-20210517160045923"  />
+  </p></li>
 </ul>
 <hr />
 <!-- pic -->
-<p><img src="https://img.maocdn.cn/img/2021/05/09/anh-tr-n-jr6oNjP75Y8-unsplash.jpg" alt="anh-tr-n-jr6oNjP75Y8-unsplash.jpg" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://img.maocdn.cn/img/2021/05/09/anh-tr-n-jr6oNjP75Y8-unsplash.jpg" alt="anh-tr-n-jr6oNjP75Y8-unsplash.jpg"  />
+  </p></p>
     </article>
     
     

@@ -2398,7 +2398,9 @@ Median degree : 3.0
 
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309174203.png" alt="" /></p>
+</div><p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309174203.png" alt=""  />
+  </p></p>
 <h2 id="graph-analysis">Graph Analysis</h2>
 <ul>
 <li>
@@ -2475,7 +2477,9 @@ G(n, p)模型的两个主要假设（连边独立，每条连边可能性相同�
 
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309174335.png" alt="" /></p>
+</div><p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309174335.png" alt=""  />
+  </p></p>
 <h4 id="descriptive-statistics">Descriptive statistics</h4>
 <ul>
 <li>The average degree is given by n×p.</li>
@@ -2604,7 +2608,9 @@ Median degree : 15.0</li>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309174521.png" alt="" /></p>
+</div><p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309174521.png" alt=""  />
+  </p></p>
 <h4 id="descriptive-statistics-1">Descriptive statistics</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2811,7 +2817,9 @@ Median degree : 15.0</li>
 </ul>
 </li>
 </ul>
-<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310162514.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310162514.png" alt=""  />
+  </p></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -2874,8 +2882,12 @@ The process to identify communities is the following:</p>
 </ul>
 </li>
 </ul>
-<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310174402.png" alt="" /><br />
-<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310174450.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310174402.png" alt=""  />
+  </p><br />
+<p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310174450.png" alt=""  />
+  </p></p>
 <h4 id="girvan-newman-algorithm">Girvan Newman algorithm</h4>
 <p>A common algorithm to find communities is the Girvan Newman algorithm. It identifies communities by progressively removing edges within the network. We’ll refer to <strong>betweenness</strong> as the “edge betweenness”. It is <strong>a score proportional to the number of shortest paths between pairs of nodes that go through this edge</strong>.</p>
 <div class="highlight"><div class="chroma">
@@ -2934,7 +2946,9 @@ The process to identify communities is the following:</p>
 
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309174923.png" alt="" /></p>
+</div><p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309174923.png" alt=""  />
+  </p></p>
 <h4 id="louvain-modularity">Louvain Modularity</h4>
 <p>Modularity is a measure of how well groups have been partitioned into clusters. The only thing we’re doing is to group the closest nodes so that we optimize the modularity criteria.</p>
 <div class="highlight"><div class="chroma">
@@ -2963,7 +2977,9 @@ The process to identify communities is the following:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309175013.png" alt="" /></p>
+</div><p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309175013.png" alt=""  />
+  </p></p>
 <h4 id="hierarchical-clustering">Hierarchical Clustering</h4>
 <p>The idea is to analyze community structures at different scales. We build the dendrogram bottom-up. We start with a cluster at each node and merge the two “closest” nodes.</p>
 <ul>
@@ -3038,7 +3054,9 @@ The process to identify communities is the following:</p>
 <span class="c1"># nx.draw(G_karate,  node_color = clustering)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309175100.png" alt="" /></p>
+</div><p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309175100.png" alt=""  />
+  </p></p>
 <h4 id="clustering-coefficient">Clustering Coefficient</h4>
 <p>The clustering coefficient measures how well two nodes tend to cluster together.</p>
 <ul>
@@ -3087,7 +3105,9 @@ PageRank is** usually computed on directed graphs**. However, it will also execu
 <p>你可以很轻易地找到最受欢迎的网页。但是，PageRank的思想认为，指标最好还需要考虑到指向你的那些网页。也就是说，**来自受欢迎的网页的跳转应该重于不太受欢迎的网页的跳转。**这就是PageRank思想的精华，Google就是利用这一思想来给网站排名的。这里的思想依据和特征向量中心性其实是一致的(
 
 <a href="https://zhuanlan.zhihu.com/p/31198752"  target="_blank">参考</a>)。</p>
-<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310193038.jpg" alt="" /><br />
+<p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310193038.jpg" alt=""  />
+  </p><br />
 
 
 <a href="https://maelfabien.github.io/machinelearning/graph_3/#pagerank-algorithm"  target="_blank">参考</a></p>
@@ -3117,7 +3137,9 @@ PageRank is** usually computed on directed graphs**. However, it will also execu
         <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309175156.png" alt="" /></p>
+</div><p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309175156.png" alt=""  />
+  </p></p>
 <h4 id="eigenvector-centrality-特征向量中心度">Eigenvector Centrality (特征向量中心度)</h4>
 <p>特征向量得分较高意味着该节点与许多自身得分较高的节点相连接。</p>
 <p>Eigenvector centrality is a measure of the influence of a node in a network. It assigns relative scores to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. Google&rsquo;s PageRank is a variant of the Eigenvector centrality measure. Another closely related centrality measure is Katz centrality.</p>
@@ -3159,7 +3181,9 @@ PageRank is** usually computed on directed graphs**. However, it will also execu
 <span class="nb">list</span><span class="p">(</span><span class="n">c_betweenness</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310185726.png" alt="" /><br />
+</div><p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310185726.png" alt=""  />
+  </p><br />
 
 
 <a href="https://cloud.tencent.com/developer/article/1436714"  target="_blank">来源</a></p>
@@ -3374,7 +3398,9 @@ Number of edges remaining : 63</li>
 <a href="https://scikit-learn.org/stable/auto_examples/ensemble/plot_feature_transformation.html#sphx-glr-auto-examples-ensemble-plot-feature-transformation-py"  target="_blank">1</a>, 
 
 <a href="https://blog.csdn.net/xyz1584172808/article/details/81839230?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task"  target="_blank">2</a><br />
-<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310212348.png" alt="" /></p>
+<p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310212348.png" alt=""  />
+  </p></p>
 <h3 id="node-labeling">Node Labeling</h3>
 <p>Given a graph where some nodes are not labeled, we want to predict their labels. This is in some sense a semi-supervised learning problem.<br />
 One common way to deal with such problems is to assume that there is a certain smoothness on the graph. The Smoothness assumption states that points connected via a path through high-density regions on the data are likely to have similar labels. This is the main hypothesis behind the Label Propagation Algorithm(LPA). LPA is a fast algorithm for finding communities in a graph using network structure alone as its guide, without any predefined objective function or prior information about the communities.</p>
@@ -3396,7 +3422,9 @@ One common way to deal with such problems is to assume that there is a certain s
 <li>recommender systems</li>
 </ul>
 <h3 id="embedding-process">Embedding process</h3>
-<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310214132.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200310214132.png" alt=""  />
+  </p></p>
 <h3 id="node-embedding">Node Embedding</h3>
 <p>According to the 
 
@@ -3460,7 +3488,9 @@ One common way to deal with such problems is to assume that there is a certain s
 
 <a href="https://github.com/benedekrozemberczki/graph2vec"  target="_blank">Graph2Vec</a> paper and is useful to represent graphs or sub-graphs as vectors, thus allowing graph classification or graph similarity measures for example.</p>
 <hr />
-<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309175413.webp" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200309175413.webp" alt=""  />
+  </p></p>
     </article>
     
     

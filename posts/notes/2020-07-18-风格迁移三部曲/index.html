@@ -2338,18 +2338,34 @@
 </ul>
 <h2 id="内容">内容</h2>
 <p>我们进行风格迁移的时候，必须保证生成的图像与内容图像的内容一致性，不然风格迁移就变成艺术创作了。那么如何衡量两张图片的内容差异呢？很简单，通过 VGG16 输出的特征图来衡量图片的内容差异。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063136.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063136.png" alt=""  />
+  </p></p>
 <p>提示：在本方法中没有 Image Transform Net，为了表述方便，我们使用了第二篇论文中的图。</p>
 <p>这里使用的损失函数是：</p>
-<p><img src="https://latex.codecogs.com/svg.latex?%5CLarge%5Cell%5E%7B%5Cphi,j%7D_%7Bfeat%7D(%5Chat%7By%7D,y)=%5Cfrac%7B1%7D%7BC_jH_jW_j%7D%7C%7C%5Cphi_j(%5Chat%7By%7D)-%5Cphi_j(y)%7C%7C%5E2_2" alt="" /><br />
+<p><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cLarge%5cell%5e%7b%5cphi,j%7d_%7bfeat%7d%28%5chat%7by%7d,y%29=%5cfrac%7b1%7d%7bC_jH_jW_j%7d%7c%7c%5cphi_j%28%5chat%7by%7d%29-%5cphi_j%28y%29%7c%7c%5e2_2" alt=""  />
+  </p><br />
 其中：</p>
 <ul>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Chat%7By%7D" alt="" />是输入图像（也就是生成的图像）</li>
-<li><img src="https://latex.codecogs.com/svg.latex?y" alt="" />是内容图像</li>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Cphi" alt="" /> 代表 VGG16</li>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Cj" alt="" /> 在这里是 relu3_3</li>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Cphi_j(x)" alt="" />指的是 x 图像输入到 VGG 以后的第 j 层的特征图</li>
-<li><img src="https://latex.codecogs.com/svg.latex?C_j%5Ctimes&amp;space;H_j%5Ctimes&amp;space;W_j" alt="" />是第 j 层输出的特征图的尺寸</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5chat%7by%7d" alt=""  />
+  </p>是输入图像（也就是生成的图像）</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?y" alt=""  />
+  </p>是内容图像</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cphi" alt=""  />
+  </p> 代表 VGG16</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cj" alt=""  />
+  </p> 在这里是 relu3_3</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cphi_j%28x%29" alt=""  />
+  </p>指的是 x 图像输入到 VGG 以后的第 j 层的特征图</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?C_j%5ctimes&amp;space;H_j%5ctimes&amp;space;W_j" alt=""  />
+  </p>是第 j 层输出的特征图的尺寸</li>
 </ul>
 <p>根据生成图像和内容图像在  relu3_3输出的特征图的均方误差（Mean Squared Error）来优化生成的图像与内容图像之间的内容一致性。</p>
 <p>那么写成代码就是这样的：</p>
@@ -2365,17 +2381,47 @@
 <h2 id="风格">风格</h2>
 <h3 id="gram-矩阵">Gram 矩阵</h3>
 <p>那么如何衡量输入图像与风格图像之间的内容差异呢？这里就需要提出一个新的公式，Gram 矩阵：</p>
-<p><img src="https://latex.codecogs.com/svg.latex?%5CLarge%7BG%5E%5Cphi_j(x)_%7Bc,c'%7D=%5Cfrac%7B1%7D%7BC_jH_jW_j%7D&amp;space;%5Csum_%7Bh=1%7D%5E%7BH_j%7D&amp;space;%5Csum_%7Bw=1%7D%5E%7BW_j%7D&amp;space;%5Cphi_j(x)_%7Bh,w,c%7D%5Cphi_j(x)_%7Bh,w,c'%7D%7D" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cLarge%7bG%5e%5cphi_j%28x%29_%7bc,c%27%7d=%5cfrac%7b1%7d%7bC_jH_jW_j%7d&amp;space;%5csum_%7bh=1%7d%5e%7bH_j%7d&amp;space;%5csum_%7bw=1%7d%5e%7bW_j%7d&amp;space;%5cphi_j%28x%29_%7bh,w,c%7d%5cphi_j%28x%29_%7bh,w,c%27%7d%7d" alt=""  />
+  </p></p>
 <p>其中：</p>
 <ul>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Chat%7By%7D" alt="" />是输入图像（也就是生成的图像）</li>
-<li><img src="https://latex.codecogs.com/svg.latex?y" alt="" />是风格图像</li>
-<li><img src="https://latex.codecogs.com/svg.latex?C_j%5Ctimes&amp;space;H_j%5Ctimes&amp;space;W_j" alt="" />是第 j 层输出的特征图的尺寸。</li>
-<li><img src="https://latex.codecogs.com/svg.latex?G%5E%5Cphi_j(x)" alt="" />指的是 x 图像的第 j 层特征图对应的 Gram 矩阵，比如 64 个卷积核对应的卷积层输出的特征图的 Gram 矩阵的尺寸是 <img src="https://latex.codecogs.com/svg.latex?(64,64)" alt="" />。</li>
-<li><img src="https://latex.codecogs.com/svg.latex?G%5E%5Cphi_j(x)_%7Bc,c'%7D" alt="" /> 指的是 Gram 矩阵第 <img src="https://latex.codecogs.com/svg.latex?(c,c')" alt="" /> 坐标对应的值。</li>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Cphi_j(x)" alt="" />指的是 x 图像输入到 VGG 以后的第 j 层的特征图，<img src="https://latex.codecogs.com/svg.latex?%5Cphi_j(x)_%7Bh,w,c%7D" alt="" /> 指的是特征图 <img src="https://latex.codecogs.com/svg.latex?(h,w,c)" alt="" />坐标对应的值。</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5chat%7by%7d" alt=""  />
+  </p>是输入图像（也就是生成的图像）</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?y" alt=""  />
+  </p>是风格图像</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?C_j%5ctimes&amp;space;H_j%5ctimes&amp;space;W_j" alt=""  />
+  </p>是第 j 层输出的特征图的尺寸。</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?G%5e%5cphi_j%28x%29" alt=""  />
+  </p>指的是 x 图像的第 j 层特征图对应的 Gram 矩阵，比如 64 个卷积核对应的卷积层输出的特征图的 Gram 矩阵的尺寸是 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%2864,64%29" alt=""  />
+  </p>。</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?G%5e%5cphi_j%28x%29_%7bc,c%27%7d" alt=""  />
+  </p> 指的是 Gram 矩阵第 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%28c,c%27%29" alt=""  />
+  </p> 坐标对应的值。</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cphi_j%28x%29" alt=""  />
+  </p>指的是 x 图像输入到 VGG 以后的第 j 层的特征图，<p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cphi_j%28x%29_%7bh,w,c%7d" alt=""  />
+  </p> 指的是特征图 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%28h,w,c%29" alt=""  />
+  </p>坐标对应的值。</li>
 </ul>
-<p>Gram 矩阵的计算方法其实很简单，Gram 矩阵的 <img src="https://latex.codecogs.com/svg.latex?(c,c')" alt="" /> 坐标对应的值，就是特征图的第 <img src="https://latex.codecogs.com/svg.latex?c" alt="" /> 张和第 <img src="https://latex.codecogs.com/svg.latex?c'" alt="" /> 张图对应元素相乘，然后全部加起来并且除以 <img src="https://latex.codecogs.com/svg.latex?C_j%5Ctimes&amp;space;H_j%5Ctimes&amp;space;W_j" alt="" /> 的结果。根据公式我们可以很容易推断出 Gram 矩阵是对称矩阵。</p>
+<p>Gram 矩阵的计算方法其实很简单，Gram 矩阵的 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%28c,c%27%29" alt=""  />
+  </p> 坐标对应的值，就是特征图的第 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?c" alt=""  />
+  </p> 张和第 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?c%27" alt=""  />
+  </p> 张图对应元素相乘，然后全部加起来并且除以 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?C_j%5ctimes&amp;space;H_j%5ctimes&amp;space;W_j" alt=""  />
+  </p> 的结果。根据公式我们可以很容易推断出 Gram 矩阵是对称矩阵。</p>
 <p>具体到代码，我们可以写出下面的函数：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2408,12 +2454,20 @@
 </ul>
 <h3 id="风格损失">风格损失</h3>
 <p>根据生成图像和风格图像在 relu1_2、relu2_2、relu3_3、relu4_3 输出的特征图的 Gram 矩阵之间的均方误差（MeanSquaredError）来优化生成的图像与风格图像之间的风格差异：</p>
-<p><img src="https://latex.codecogs.com/svg.latex?%5CLarge%5Cell%5E%7B%5Cphi,j%7D_%7Bstyle%7D(%5Chat%7By%7D,y)=%7C%7CG%5E%5Cphi_j(%5Chat%7By%7D)-G%5E%5Cphi_j(y)%7C%7C%5E2_F" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cLarge%5cell%5e%7b%5cphi,j%7d_%7bstyle%7d%28%5chat%7by%7d,y%29=%7c%7cG%5e%5cphi_j%28%5chat%7by%7d%29-G%5e%5cphi_j%28y%29%7c%7c%5e2_F" alt=""  />
+  </p></p>
 <p>其中：</p>
 <ul>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Chat%7By%7D" alt="" />是输入图像（也就是生成的图像）</li>
-<li><img src="https://latex.codecogs.com/svg.latex?y" alt="" />是风格图像</li>
-<li><img src="https://latex.codecogs.com/svg.latex?G%5E%5Cphi_j(x)" alt="" />指的是 x 图像的第 j 层特征图对应的 Gram 矩阵</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5chat%7by%7d" alt=""  />
+  </p>是输入图像（也就是生成的图像）</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?y" alt=""  />
+  </p>是风格图像</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?G%5e%5cphi_j%28x%29" alt=""  />
+  </p>指的是 x 图像的第 j 层特征图对应的 Gram 矩阵</li>
 </ul>
 <p>那么写成代码就是下面这样：</p>
 <div class="highlight"><div class="chroma">
@@ -2504,11 +2558,15 @@
 <a href="https://pytorch.org/tutorials/advanced/neural_style_tutorial.html"  target="_blank">https://pytorch.org/tutorials/advanced/neural_style_tutorial.html</a></p>
 <h2 id="效果">效果</h2>
 <p>最终效果如图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595062870.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595062870.png" alt=""  />
+  </p></p>
 <p>可以看到生成的图像既有风格图像的风格，也有内容图像的内容，很完美。不过生成一幅256x256 的图像在 1080ti 上需要18.6s，这个时间挺长的，谈不上实时性，因此我们可以来看看第二篇论文中的方法。</p>
 <h1 id="固定风格任意内容的快速风格迁移">固定风格任意内容的快速风格迁移</h1>
 <p>有了上面的铺垫，理解固定风格任意内容的快速风格迁移就简单很多了。思路很简单，就是先搭建一个转换网络，然后通过优化转换网络的权值来实现快速风格迁移。由于这个转换网络可以接受任意图像，所以这是任意内容的风格迁移。<br />
-<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595835499.png" alt="" /></p>
+<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595835499.png" alt=""  />
+  </p></p>
 <h2 id="模型">模型</h2>
 <p>模型结构很简单，分为三个部分：</p>
 <ul>
@@ -2597,7 +2655,9 @@
 </div><p>这里写的就不是函数，而是一个类，因为它内部包含许多层，而且并不是简单的自上而下的结构（Sequential），而是有了跨层的连接（<code>self.conv(x) + x</code>），所以我们需要继承 nn.Module，实现 forward 函数，才能实现跨层连接。</p>
 <h3 id="transformnet">TransformNet</h3>
 <p>最后这个模型就很简单了，照着论文里给出的表格搭建即可。我们这里为了实验方便，添加了 base 参数，当 <code>base=8</code> 时，卷积核的个数是按 <code>8, 16, 32</code> 递增的，当 <code>base=32</code> 时，卷积核个数是按 <code>32, 64, 128</code> 递增的。有了这个参数，我们可以按需增加模型规模，base 越大，图像质量越好。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063112.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063112.png" alt=""  />
+  </p></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -2715,7 +2775,11 @@
 </blockquote>
 <p>优化器使用了论文中提到的 Adam 1e-3。</p>
 <blockquote>
-<p>The output images are regularized with total variation regularization with a strength of between <img src="https://latex.codecogs.com/svg.latex?1%5Ctimes10%5E%7B-6%7D" alt="" /> and <img src="https://latex.codecogs.com/svg.latex?1%5Ctimes10%5E%7B-4%7D" alt="" />, chosen via cross-validation per style target.</p>
+<p>The output images are regularized with total variation regularization with a strength of between <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?1%5ctimes10%5e%7b-6%7d" alt=""  />
+  </p> and <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?1%5ctimes10%5e%7b-4%7d" alt=""  />
+  </p>, chosen via cross-validation per style target.</p>
 </blockquote>
 <p><code>tv_weight</code> 感觉没有太大变化，所以按论文中给出的参考设置了 1e-6。</p>
 <blockquote>
@@ -2725,10 +2789,16 @@
 <p>由于我这里使用的图片变多了，所以为了保持和官方的训练 step 一致（40k），训练代数（epoch）设置为了1。</p>
 <h3 id="totalvariation">TotalVariation</h3>
 <blockquote>
-<p>Total Variation Regularization. To encourage spatial smoothness in the output image <img src="https://latex.codecogs.com/svg.latex?%5Chat%7By%7D" alt="" />, we follow prior work on feature inversion [6,20] and super- resolution [48,49] and make use of total variation regularizer <img src="https://latex.codecogs.com/svg.latex?%5Cell_%7BTV%7D(%5Chat%7By%7D)" alt="" />.</p>
+<p>Total Variation Regularization. To encourage spatial smoothness in the output image <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5chat%7by%7d" alt=""  />
+  </p>, we follow prior work on feature inversion [6,20] and super- resolution [48,49] and make use of total variation regularizer <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cell_%7bTV%7d%28%5chat%7by%7d%29" alt=""  />
+  </p>.</p>
 </blockquote>
 <p>论文中提到了一个 TV Loss，这是为了平滑图像。它的计算方法很简单：</p>
-<p><img src="https://latex.codecogs.com/svg.latex?%5CLarge%7BV_%5Ctext%7Baniso%7D(y)=%5Csum_%7Bi,j%7D%7Cy_%7Bi+1,j%7D-y_%7Bi,j%7D%7C+%7Cy_%7Bi,j+1%7D-y_%7Bi,j%7D%7C%7D" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cLarge%7bV_%5ctext%7baniso%7d%28y%29=%5csum_%7bi,j%7d%7cy_%7bi&#43;1,j%7d-y_%7bi,j%7d%7c&#43;%7cy_%7bi,j&#43;1%7d-y_%7bi,j%7d%7c%7d" alt=""  />
+  </p></p>
 <p>将图像水平和垂直平移一个像素，与原图相减，然后计算绝对值的和，就是 TotalVariation。</p>
 <p>参考链接：
 
@@ -2808,48 +2878,104 @@
 </div><p>通过对 loss 的优化，进而约束模型输出与内容图像的内容相似、与风格图像风格相似的图像，从而得到一个可以较快速度输出风格迁移图像的模型。</p>
 <h2 id="效果-1">效果</h2>
 <p>最终效果如图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595062900.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595062900.png" alt=""  />
+  </p></p>
 <p>可以看到对于任意内容图片，转换网络都能转换为固定风格的图像。根据下面这段代码进行的测速，1080ti 可以在4.82秒内完成 1000 张图像的风格迁移，相当于207fps，可以说是具有了实时性：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063091.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063091.png" alt=""  />
+  </p></p>
 <p>但是整个模型的训练时间需要1小时54分钟，如果我们想做任意风格图像的风格迁移，这个时间几乎是不可接受的，因此让我们来看看第三篇论文的思路。</p>
 <h1 id="任意风格任意内容的极速风格迁移">任意风格任意内容的极速风格迁移</h1>
 <p>首先我们先对三种情况进行总结：</p>
 <h2 id="情况1">情况1</h2>
-<p><img src="https://latex.codecogs.com/svg.latex?%5Clarge%7B%5Cmin_I%5Cleft(%5Clambda_c%7C%7C%5Cmathbf%7BCP%7D(I;w_f)-%5Cmathbf%7BCP%7D(I_c;w_f)%7C%7C%5E2_2+%5Clambda_s%7C%7C%5Cmathbf%7BSP%7D(I;w_f)-%5Cmathbf%7BSP%7D(I_s;w_f)%7C%7C%5E2_2%5Cright)%7D" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5clarge%7b%5cmin_I%5cleft%28%5clambda_c%7c%7c%5cmathbf%7bCP%7d%28I;w_f%29-%5cmathbf%7bCP%7d%28I_c;w_f%29%7c%7c%5e2_2&#43;%5clambda_s%7c%7c%5cmathbf%7bSP%7d%28I;w_f%29-%5cmathbf%7bSP%7d%28I_s;w_f%29%7c%7c%5e2_2%5cright%29%7d" alt=""  />
+  </p></p>
 <p>其中：</p>
 <ul>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Cmathbf%7BCP%7D" alt="" /> 是内容损失函数</li>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Cmathbf%7BSP%7D" alt="" /> 是风格损失函数</li>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Clambda_c" alt="" /> 是内容权重</li>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Clambda_s" alt="" /> 是风格权重</li>
-<li><img src="https://latex.codecogs.com/svg.latex?w_f" alt="" /> 是VGG16的固定权值</li>
-<li><img src="https://latex.codecogs.com/svg.latex?I_s" alt="" /> 是风格图像</li>
-<li><img src="https://latex.codecogs.com/svg.latex?I_c" alt="" /> 是内容图像</li>
-<li><img src="https://latex.codecogs.com/svg.latex?I" alt="" /> 是输入图像</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cmathbf%7bCP%7d" alt=""  />
+  </p> 是内容损失函数</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cmathbf%7bSP%7d" alt=""  />
+  </p> 是风格损失函数</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5clambda_c" alt=""  />
+  </p> 是内容权重</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5clambda_s" alt=""  />
+  </p> 是风格权重</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?w_f" alt=""  />
+  </p> 是VGG16的固定权值</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?I_s" alt=""  />
+  </p> 是风格图像</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?I_c" alt=""  />
+  </p> 是内容图像</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?I" alt=""  />
+  </p> 是输入图像</li>
 </ul>
-<p>那么通过<u>对输入图像 <img src="https://latex.codecogs.com/svg.latex?I" alt="" /> 进行训练</u>，我们能够得到固定风格、固定内容的风格迁移图像。</p>
+<p>那么通过<u>对输入图像 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?I" alt=""  />
+  </p> 进行训练</u>，我们能够得到固定风格、固定内容的风格迁移图像。</p>
 <h2 id="情况2">情况2</h2>
-<p><img src="https://latex.codecogs.com/svg.latex?%5Clarge%7B%5Cmin_w%5Csum_%7BI_c%7D%5Cleft(%5Clambda_c%7C%7C%5Cmathbf%7BCP%7D(I_w;w_f)-%5Cmathbf%7BCP%7D(I_c;w_f)%7C%7C%5E2_2+%5Clambda_s%7C%7C%5Cmathbf%7BSP%7D(I_w;w_f)-%5Cmathbf%7BSP%7D(I_s;w_f)%7C%7C%5E2_2%5Cright)%7D" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5clarge%7b%5cmin_w%5csum_%7bI_c%7d%5cleft%28%5clambda_c%7c%7c%5cmathbf%7bCP%7d%28I_w;w_f%29-%5cmathbf%7bCP%7d%28I_c;w_f%29%7c%7c%5e2_2&#43;%5clambda_s%7c%7c%5cmathbf%7bSP%7d%28I_w;w_f%29-%5cmathbf%7bSP%7d%28I_s;w_f%29%7c%7c%5e2_2%5cright%29%7d" alt=""  />
+  </p></p>
 <p>其中：</p>
 <ul>
-<li><img src="https://latex.codecogs.com/svg.latex?I_w" alt="" /> 是生成图像，<img src="https://latex.codecogs.com/svg.latex?I_w=%5Cmathcal%7BN%7D(I_c;w),%5Cmathcal%7BN%7D" alt="" /> 是图像转换网络</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?I_w" alt=""  />
+  </p> 是生成图像，<p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?I_w=%5cmathcal%7bN%7d%28I_c;w%29,%5cmathcal%7bN%7d" alt=""  />
+  </p> 是图像转换网络</li>
 </ul>
 <p>通过<u>对权值的优化</u>，我们可以得到一个<u>快速风格迁移模型</u>，它能够对任何内容图像进行风格转换，输出同一种风格的风格迁移图像。</p>
 <h2 id="情况3">情况3</h2>
-<p><img src="https://latex.codecogs.com/svg.latex?%5Clarge%7B%5Cmin_%5Ctheta%5Csum_%7BI_c,I_s%7D%5Cleft(%5Clambda_c%7C%7C%5Cmathbf%7BCP%7D(I_%7Bw_%5Ctheta%7D;w_f)-%5Cmathbf%7BCP%7D(I_c;w_f)%7C%7C%5E2_2+%5Clambda_s%7C%7C%5Cmathbf%7BSP%7D(I_%7Bw_%5Ctheta%7D;w_f)-%5Cmathbf%7BSP%7D(I_s;w_f)%7C%7C%5E2_2%5Cright)%7D" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5clarge%7b%5cmin_%5ctheta%5csum_%7bI_c,I_s%7d%5cleft%28%5clambda_c%7c%7c%5cmathbf%7bCP%7d%28I_%7bw_%5ctheta%7d;w_f%29-%5cmathbf%7bCP%7d%28I_c;w_f%29%7c%7c%5e2_2&#43;%5clambda_s%7c%7c%5cmathbf%7bSP%7d%28I_%7bw_%5ctheta%7d;w_f%29-%5cmathbf%7bSP%7d%28I_s;w_f%29%7c%7c%5e2_2%5cright%29%7d" alt=""  />
+  </p></p>
 <ul>
-<li><img src="https://latex.codecogs.com/svg.latex?%5Ctheta" alt="" /> 是 <img src="https://latex.codecogs.com/svg.latex?Meta%5Cmathcal%7BN%7D" alt="" /> 的权值</li>
-<li><img src="https://latex.codecogs.com/svg.latex?w_%5Ctheta" alt="" /> 是转换网络的权值，<img src="https://latex.codecogs.com/svg.latex?w_%5Ctheta=Meta%5Cmathcal%7BN%7D(I_s;%5Ctheta)" alt="" />，所以我们可以说转换网络的权值是 MetaNet 通过风格图像生成的。</li>
-<li><img src="https://latex.codecogs.com/svg.latex?I_%7Bw_%5Ctheta%7D" alt="" /> 是转换网络生成的图像，<img src="https://latex.codecogs.com/svg.latex?I_%7Bw_%5Ctheta%7D=%5Cmathcal%7BN%7D(I_c;w_%5Ctheta)" alt="" /></li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5ctheta" alt=""  />
+  </p> 是 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?Meta%5cmathcal%7bN%7d" alt=""  />
+  </p> 的权值</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?w_%5ctheta" alt=""  />
+  </p> 是转换网络的权值，<p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?w_%5ctheta=Meta%5cmathcal%7bN%7d%28I_s;%5ctheta%29" alt=""  />
+  </p>，所以我们可以说转换网络的权值是 MetaNet 通过风格图像生成的。</li>
+<li><p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?I_%7bw_%5ctheta%7d" alt=""  />
+  </p> 是转换网络生成的图像，<p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?I_%7bw_%5ctheta%7d=%5cmathcal%7bN%7d%28I_c;w_%5ctheta%29" alt=""  />
+  </p></li>
 </ul>
-<p>总的来说就是风格图像输入 <img src="https://latex.codecogs.com/svg.latex?Meta%5Cmathcal%7BN%7D" alt="" /> 得到转换网络 <img src="https://latex.codecogs.com/svg.latex?%5Cmathcal%7BN%7D" alt="" />，转换网络可以将任意内容图像进行转换。通过输入大量风格图像和内容图像 <img src="https://latex.codecogs.com/svg.latex?%5Csum_%7BI_c,I_s%7D" alt="" />，可以训练出能够产出期望权值的 <img src="https://latex.codecogs.com/svg.latex?Meta%5Cmathcal%7BN%7D" alt="" />。该模型可以输入任意风格图像，输出情况2中的迁移模型，进而实现任意风格任意内容的风格迁移。</p>
+<p>总的来说就是风格图像输入 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?Meta%5cmathcal%7bN%7d" alt=""  />
+  </p> 得到转换网络 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5cmathcal%7bN%7d" alt=""  />
+  </p>，转换网络可以将任意内容图像进行转换。通过输入大量风格图像和内容图像 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?%5csum_%7bI_c,I_s%7d" alt=""  />
+  </p>，可以训练出能够产出期望权值的 <p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?Meta%5cmathcal%7bN%7d" alt=""  />
+  </p>。该模型可以输入任意风格图像，输出情况2中的迁移模型，进而实现任意风格任意内容的风格迁移。</p>
 <h2 id="转换网络transformnet">转换网络（TransformNet）</h2>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595062959.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595062959.png" alt=""  />
+  </p></p>
 <p>论文中的转换网络很有意思，粉色部分的权重是由 MetaNet 生成的，而灰色部分的权重则与 MetaNet 一起训练。由于这个模型的需求比较个性化，我们的代码需要一些技巧，下面让我们详细展开讨论。</p>
 <h3 id="myconv2d">MyConv2D</h3>
 <p>转换网络的结构还是与之前的一样，但是为了调用方便，我们需要实现一个新的类，这个类和卷积层类似，但是权值和偏置都需要是常量。这是因为权值已经是 MetaNet 的输出，如果赋值为 TransformNet 的权值，那么这个计算图就断了，这不符合我们的预期，我们应该让 MetaNet 的输出继续参与计算图，直到计算出 loss，不然 MetaNet 的权值将不会更新。因此我们事先了一个新的类，MyConv2D。</p>
 <p>为了体现两者的差异，我们使用 TensorBoard 进行了可视化：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063020.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063020.png" alt=""  />
+  </p></p>
 <p>从上图中可以看到，nn.Conv2d 内部有两个参数（ Paramter），这是可以参与训练参数，也就是说在 <code>loss.backward()</code> 的时候会计算对应的梯度。而 MyConv2D 里面的权值和偏置都是常量（Constant），不会计算相应的梯度。</p>
 <p>代码如下：</p>
 <div class="highlight"><div class="chroma">
@@ -2985,7 +3111,9 @@
              'upsampling.2': 73792,
              'upsampling.7': 18464})
 </code></pre><p>通过 TensorBoard，我们可以对模型结构进行可视化：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063058.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063058.png" alt=""  />
+  </p></p>
 <h2 id="metanet">MetaNet</h2>
 <p>那么我们怎么样才能获得 TransformNet 的权值呢？当然是输入风格图像的特征。</p>
 <p>那么我们知道风格图像经过 VGG16 输出的 relu1_2、relu2_2、relu3_3、relu4_3 尺寸是很大的，假设图像的尺寸是 <code>(256, 256)</code>，那么卷积层输出的尺寸分别是 <code>(64, 256, 256)、(128, 128, 128)、(256, 64, 64)、(512, 32, 32)</code>，即使取其 Gram 矩阵，<code>(64, 64)、(128, 128)、(256, 256)、(512, 512)</code> 也是非常大的。我们举个例子，假设使用 <code>512*512</code> 个特征来生成 147584 个权值（residual 层），那么这层全连接层的 w 就是 512x512x147584=38688260096 个，假设 w 的格式是 float32，那么光是一个 w 就有 144GB 这么大，这几乎是不可实现的。那么第三篇论文就提到了一个方法，只计算每一个卷积核输出的内容的均值和标准差。</p>
@@ -2997,7 +3125,9 @@
 <p>The dimension of hidden vector is 1792 without specification. The hidden features are connected with the filters of each conv layer of the network in a group manner to decrease the parameter size, which means a 128 dimensional hidden vector for each conv layer.</p>
 </blockquote>
 <p>意思就是隐藏层全连接层使用14x128=1792个神经元，这个14对应的就是 TransformNet 里面的每一层卷积层（downsampling2层，residual10层，upsampling2层），然后每一层卷积层的权值只连接其中的一小片128，那么整体结构参考下图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063238.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063238.png" alt=""  />
+  </p></p>
 <p>如果看不清可以点击查看原图。</p>
 <p>在经过重重努力之后，模型大小终于限制在 1GB 以内了。当 <code>base=32</code> 时，保存为 pth 文件的模型大小为 870MB。</p>
 <p>下面是代码：</p>
@@ -3212,13 +3342,19 @@
 <li>如果内容图像是纯色的，那么权值会直接 nan，原因不明，为了避免这个问题，需要检查纯色，然后 continue 来避免 nan。</li>
 <li>权值会逐渐增大，目前没有比较好的解决方案。</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063214.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063214.png" alt=""  />
+  </p></p>
 <h2 id="效果-2">效果</h2>
 <p>最终效果如图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595062840.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595062840.png" alt=""  />
+  </p></p>
 <p>可以看到对于任意内容图片，转换网络都能转换为固定风格的图像。</p>
 <p>根据下面这段代码进行的测速，1080ti 可以在8.48秒内对 1000 张风格图像产出风格迁移模型，相当于117fps。而风格迁移模型转换的速度也很快，达到了4.59秒，相当于217fps。假设我们每一帧都用不同的风格，转换1000张图片也只需要13.1秒，相当于76fps，可以说做到了实时任意风格任意内容的极速风格迁移。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063186.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063186.png" alt=""  />
+  </p></p>
 <h1 id="总结">总结</h1>
 <p>我们使用 pytorch 实现了以下三种风格迁移：</p>
 <ul>
@@ -3235,7 +3371,9 @@
 <p><strong>首先第一篇论文打破了以往的思维定式：只有权值可以训练。它通过对图像进行训练实现了风格迁移。然后第二篇论文就比较正常，通过训练一个模型来实现风格迁移。第三篇论文就很神奇了，通过模型来生成权值，进而实现任意风格的风格迁移。不得不感谢这些走在科技前沿的科研工作者，给了我们许多新奇的思路。</strong></p>
 <hr />
 <!-- 插入图片 -->
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063301.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595063301.png" alt=""  />
+  </p></p>
     </article>
     
     

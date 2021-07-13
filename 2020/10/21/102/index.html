@@ -2326,7 +2326,9 @@
 </ul>
 <h4 id="数据和方法">数据和方法</h4>
 <ul>
-<li>Method<img src="https://i.loli.net/2020/10/22/bUwrhaARnf5Xy6F.png" alt="image-20201022101428777" />
+<li>Method<p class="md_image">
+    <img loading='lazy' src="https://i.loli.net/2020/10/22/bUwrhaARnf5Xy6F.png" alt="image-20201022101428777"  />
+  </p>
 <ul>
 <li>两步划分</li>
 <li>[先划分为建成区和非建成区] differentiate the <u>built-up and non-built-up areas</u> based on classified impervious surface(不透水面) areas</li>
@@ -2337,7 +2339,9 @@
 <ul>
 <li><strong>built-up area</strong> as places dominated by <u>artificial buildings and structures</u></li>
 <li><strong>non-built-up area</strong> as places mainly occupied by <u>cultivated land, forests, grassland, water and water conservancy facilities</u></li>
-<li>two-level classes<img src="https://i.loli.net/2020/10/22/UKAI8EDu9FGTca7.png" alt="image-20201022101845180" /></li>
+<li>two-level classes<p class="md_image">
+    <img loading='lazy' src="https://i.loli.net/2020/10/22/UKAI8EDu9FGTca7.png" alt="image-20201022101845180"  />
+  </p></li>
 </ul>
 </li>
 </ul>
@@ -2446,7 +2450,9 @@
 </li>
 <li>
 <p>Method</p>
-<p><img src="https://i.loli.net/2020/10/21/SNCGx4yvmIszbnf.png" alt="image-20201021205454501" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://i.loli.net/2020/10/21/SNCGx4yvmIszbnf.png" alt="image-20201021205454501"  />
+  </p></p>
 <ul>
 <li>K-Means需要手工定义参数；使用low-level的visual features；</li>
 <li>一股脑都当做单词了</li>
@@ -2527,7 +2533,9 @@
 </ul>
 <h4 id="method">Method</h4>
 <ul>
-<li>Ground Feature Map Construction （怎样特征空间对齐的）<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201030162224.png" alt="" />
+<li>Ground Feature Map Construction （怎样特征空间对齐的）<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201030162224.png" alt=""  />
+  </p>
 <ul>
 <li>semantic feature extraction
 <ul>
@@ -2551,7 +2559,9 @@
 </li>
 </ul>
 </li>
-<li>Data Fusion (怎样融合训练的)<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201030163430.png" alt="" />
+<li>Data Fusion (怎样融合训练的)<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201030163430.png" alt=""  />
+  </p>
 <ul>
 <li>two encoders: feature maps stacking</li>
 <li>the output feature map is fed to a Softmax layer to make <strong>pixel-level</strong> predictions</li>
@@ -2601,7 +2611,9 @@
 <p>Data</p>
 <ul>
 <li>we extracted <strong>geolocation</strong> and the attributions of <strong>building</strong> function annotated by volunteers from <strong>OSM</strong>.</li>
-<li>Then, the <u>associated street view images and the overhead remote sensing images</u> of each building instance were retrieved via BingMap API and Google Street View API using its geolocation<img src="https://i.loli.net/2020/10/22/6o5WLpG7riBmRJx.png" alt="" /></li>
+<li>Then, the <u>associated street view images and the overhead remote sensing images</u> of each building instance were retrieved via BingMap API and Google Street View API using its geolocation<p class="md_image">
+    <img loading='lazy' src="https://i.loli.net/2020/10/22/6o5WLpG7riBmRJx.png" alt=""  />
+  </p></li>
 </ul>
 </li>
 <li>
@@ -2614,7 +2626,9 @@
 <p><u>selected the 16 most frequently</u> occurring building tags in our raw dataset and <u>aggregated them into four cluster classes</u></p>
 </li>
 <li>
-<p>follow <u>a very basic but widely accepted</u> classification scheme with four classes: <strong>commercial, industrial, public, and residential</strong><img src="https://i.loli.net/2020/10/22/PbrM5nyXWKYQaNI.png" alt="image-20201022215334882" /></p>
+<p>follow <u>a very basic but widely accepted</u> classification scheme with four classes: <strong>commercial, industrial, public, and residential</strong><p class="md_image">
+    <img loading='lazy' src="https://i.loli.net/2020/10/22/PbrM5nyXWKYQaNI.png" alt="image-20201022215334882"  />
+  </p></p>
 </li>
 <li>
 <p>Data Volume: <strong>56,259 buildings</strong> with four images for each building (区域党？？为什么要分区域划分数据集呢？)</p>
@@ -2630,11 +2644,15 @@
 <p>Method</p>
 <ul>
 <li>existing deep neural networks pre-trained on very large datasets: <strong>Places365</strong> and ImageNet</li>
-<li><strong>two-stream</strong> <strong>end-to-end</strong> fusing networks<img src="https://i.loli.net/2020/10/22/qWG9xK7UTCsoVc3.png" alt="image-20201022215709070" /></li>
+<li><strong>two-stream</strong> <strong>end-to-end</strong> fusing networks<p class="md_image">
+    <img loading='lazy' src="https://i.loli.net/2020/10/22/qWG9xK7UTCsoVc3.png" alt="image-20201022215709070"  />
+  </p></li>
 <li>decision-level fusion
 <ul>
 <li>combines the <u>softmax probabilities or the classification labels</u> directly</li>
-<li>model blending and model stacking<img src="https://i.loli.net/2020/10/22/oBWVbpFgXr3EkeY.png" alt="image-20201022215903182" /></li>
+<li>model blending and model stacking<p class="md_image">
+    <img loading='lazy' src="https://i.loli.net/2020/10/22/oBWVbpFgXr3EkeY.png" alt="image-20201022215903182"  />
+  </p></li>
 </ul>
 </li>
 <li>他的Experiments and Discussion（包含训练参数和训练过程）可以参考下，以后训练的经验</li>
@@ -2724,7 +2742,9 @@
 </ul>
 <h4 id="方法和数据">方法和数据</h4>
 <ul>
-<li>Framework<img src="https://i.loli.net/2020/10/25/jFBIbqpHtLan39C.png" alt="" />
+<li>Framework<p class="md_image">
+    <img loading='lazy' src="https://i.loli.net/2020/10/25/jFBIbqpHtLan39C.png" alt=""  />
+  </p>
 <ul>
 <li>image encoder  =&gt; extract time-dependent features from time-series signature data</li>
 <li>temporal signature (TS) encoder</li>
@@ -2857,7 +2877,9 @@ scale (such as water, forest, built-up areas)</li>
 </li>
 <li>Methodology
 <ul>
-<li>三部分：urban landscape classification, functional semantic feature extraction, and functional zone recognition  <img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227190909.png" alt="" /></li>
+<li>三部分：urban landscape classification, functional semantic feature extraction, and functional zone recognition  <p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227190909.png" alt=""  />
+  </p></li>
 <li>urban landscape classification
 <ul>
 <li>Remote sensing images
@@ -2880,7 +2902,9 @@ scale (such as water, forest, built-up areas)</li>
 <ul>
 <li>land use functional semantics extraction using a vote-based model
 <ul>
-<li>aggregated these POI types into six basic functional categories according to the Standard for Urban Land Classification and Land Use Planning for Construction <strong>(GB50137-2011)</strong>   【这个图蛮好看的，以后可以参考】<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227160101.png" alt="" /></li>
+<li>aggregated these POI types into six basic functional categories according to the Standard for Urban Land Classification and Land Use Planning for Construction <strong>(GB50137-2011)</strong>   【这个图蛮好看的，以后可以参考】<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227160101.png" alt=""  />
+  </p></li>
 <li>vote-based model to POIs
 <ul>
 <li>area-weighted proportion (AWP) of POIs  【POI不是点么，有面积么】</li>
@@ -2911,7 +2935,9 @@ scale (such as water, forest, built-up areas)</li>
 </li>
 </ul>
 </li>
-<li>Functional zone recognition by hierarchical semantic fusion【图参考】<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227194103.png" alt="" /></li>
+<li>Functional zone recognition by hierarchical semantic fusion【图参考】<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227194103.png" alt=""  />
+  </p></li>
 <li>Evaluation of results
 <ul>
 <li>the overall accuracy (OA)</li>
@@ -2922,10 +2948,18 @@ scale (such as water, forest, built-up areas)</li>
 </li>
 </ul>
 <h4 id="results">Results</h4>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227195431.png" alt="" /><br />
-<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227195709.png" alt="" /><br />
-<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227195734.png" alt="" /><br />
-<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227195802.png" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227195431.png" alt=""  />
+  </p><br />
+<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227195709.png" alt=""  />
+  </p><br />
+<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227195734.png" alt=""  />
+  </p><br />
+<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201227195802.png" alt=""  />
+  </p></p>
 <h3 id="2020-mapping-essential-urban-land-use-categories-in-china-euluc-chinapreliminary-results-for-2018">2020-Mapping essential urban land use categories in China (EULUC-China):preliminary results for 2018</h3>
 <ul>
 <li>宫鹏</li>
@@ -2974,12 +3008,16 @@ scale (such as water, forest, built-up areas)</li>
 <li>第三段，本文工作：=&gt; a new urban land use map for entire China
 <ul>
 <li><strong>input features</strong>: 10-m satellite images, OpenStreetMap, nighttime lights, POI and Tencent social big data all in 2018</li>
-<li><strong>A two-level classification system</strong>: Essential Urban Land Use Categories, EULUC<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201229221526.png" alt="" /></li>
+<li><strong>A two-level classification system</strong>: Essential Urban Land Use Categories, EULUC<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201229221526.png" alt=""  />
+  </p></li>
 <li><strong>Training and validation samples</strong> are separately collected through a crowdsourcing approach</li>
 <li>present the <strong>initial results</strong> for producing EULUC of China</li>
 </ul>
 </li>
-<li>第四段，步骤简述，Four major procedures：<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201229221613.png" alt="" />
+<li>第四段，步骤简述，Four major procedures：<p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20201229221613.png" alt=""  />
+  </p>
 <ul>
 <li>parcel generation with OSM road network and impervious boundaries</li>
 <li>feature extraction from multisource geospatial big data</li>
@@ -3165,7 +3203,9 @@ scale (such as water, forest, built-up areas)</li>
 </ul>
 <hr />
 <!-- 插入图片 -->
-<p><img src="https://i.loli.net/2020/10/21/EjPFLbNrZyxVW7C.jpg" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://i.loli.net/2020/10/21/EjPFLbNrZyxVW7C.jpg" alt=""  />
+  </p></p>
     </article>
     
     

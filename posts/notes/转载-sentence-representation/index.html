@@ -2273,7 +2273,9 @@ $$S _ { d } = \prod _ { C \in d } p \left( y _ { C } = 1 \right)$$</p>
 
 <a href="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/3118564766.pdf"  target="_blank">下载</a></p>
 <p>本文提出了Skip-Thought模型用于得到句子向量表示Skip-Thought Vectors。基本思想与word2vec中的skip-gram模型类似：对当前句子进行编码后对其周围的句子进行预测。具体地，skip-thought模型如下图，给定一个连续的句子三元组，对中间的句子进行编码，通过编码的句子向量预测前一个句子和后一个句子。Skip-Thought向量的实验结果表明，可以从相邻句子的内容推断出丰富的句子语义。</p>
-<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200331205755.png" alt="skip-thought" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200331205755.png" alt="skip-thought"  />
+  </p></p>
 <p>模型的基本架构与encoder-decoder模型类似，论文中使用的encoder和decoder都为GRU，使用单向GRU称为uni-skip,双向GRU称为bi-skip，将uni-skip和bi-skip生成的sentence embedding进行concat称为combine-skip。论文通过大量实验对比了上述三种变体的效果，总体上来说是uni-skip &lt; bi-skip &lt; combine-skip。包括如下实验：</p>
 <ol>
 <li>语义相关性：the SemEval 2014 Task 1: semantic relatedness SICK dataset</li>
@@ -2285,7 +2287,9 @@ $$S _ { d } = \prod _ { C \in d } p \left( y _ { C } = 1 \right)$$</p>
 
 <a href="https://github.com/tensorflow/models/tree/master/research/skip_thoughts#expanding-the-vocabulary"  target="_blank">词表扩展</a>：skip-thought模型的词表规模往往是远小于现实中的词表（如用海量数据训练的word2vec）。为了让模型能够对任意句子进行编码，受论文
 
-<a href="https://arxiv.org/abs/1309.4168"  target="_blank"><em>Exploiting similarities among languages for machine translation</em></a>的启发，本文训练一个线性映射模型，将word2vec的词向量映射为skip-thought模型encoder词表空间的词向量。假设训练后的skip-thought模型的词向量矩阵为$X$，大小为[num_words，dim1]，即词表大小为num_words，词向量维度为dim1，这num_words个词在word2vec中对应的词向量矩阵为Y，大小为[num_words, dim2]，即word2vec的词向量维度为dim2。我们的目的是word2vec中的词向量通过线性变换后得到词向量与skip-thought模型encoder空间的词向量无限接近，因此最小化线性回归<img src="https://latex.codecogs.com/svg.latex?loss=&amp;space;%7C%7C&amp;space;X&amp;space;-&amp;space;Y&amp;space;*&amp;space;W&amp;space;%7C%7C%5E2" alt="" />。得到这个线性模型后，假设待编码的句子中的某个词不属于skip-thought词表，则首先在word2vec词表中进行look up得到word2vec对应的词向量，再通过线性模型映射为skip-thought模型encoder空间的词向量。</p>
+<a href="https://arxiv.org/abs/1309.4168"  target="_blank"><em>Exploiting similarities among languages for machine translation</em></a>的启发，本文训练一个线性映射模型，将word2vec的词向量映射为skip-thought模型encoder词表空间的词向量。假设训练后的skip-thought模型的词向量矩阵为$X$，大小为[num_words，dim1]，即词表大小为num_words，词向量维度为dim1，这num_words个词在word2vec中对应的词向量矩阵为Y，大小为[num_words, dim2]，即word2vec的词向量维度为dim2。我们的目的是word2vec中的词向量通过线性变换后得到词向量与skip-thought模型encoder空间的词向量无限接近，因此最小化线性回归<p class="md_image">
+    <img loading='lazy' src="https://latex.codecogs.com/svg.latex?loss=&amp;space;%7c%7c&amp;space;X&amp;space;-&amp;space;Y&amp;space;*&amp;space;W&amp;space;%7c%7c%5e2" alt=""  />
+  </p>。得到这个线性模型后，假设待编码的句子中的某个词不属于skip-thought词表，则首先在word2vec词表中进行look up得到word2vec对应的词向量，再通过线性模型映射为skip-thought模型encoder空间的词向量。</p>
 <h1 id="learning-distributed-representations-of-sentences-from-unlabelled-data">Learning Distributed Representations of Sentences from Unlabelled Data</h1>
 <p>pdf: 
 
@@ -2307,7 +2311,9 @@ $$\sum _ { w \in S _ { i - 1 } \cup S _ { i } \cup S _ { i + 1 } } \phi \left( \
 <a href="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/187467338.pdf"  target="_blank">下载</a></p>
 <p>从论文题目可以看出，本文提出了一种非常简单但是具有一定竞争力的句子向量表示算法。算法包括两步，第一步是对句子中所有的词向量进行加权平均，得到平均向量$v_s$；第二步是移出（减去）$v_s$在所有句子向量组成的矩阵的第一个<strong>主成分</strong>(principal component /  singular vector)上的投影，因此该算法被简记为WR（W:weighting, R: removing）。</p>
 <p>第一步主要是对TFIDF加权平均词向量表示句子的方法进行改进。论文提出了一种<strong>平滑倒词频</strong> (smooth inverse frequency, SIF)方法用于计算每个词的加权系数，具体地，词$w$的权重为$a / (a+p(w))$，其中$a$为平滑参数，$p(w)$为（估计的）词频。直观理解SIF，就是说频率越低的词在当前句子出现了，说明它在句子中的重要性更大，也就是加权系数更大。事实上，如果把一个句子认为是一篇文档并且假设该句中不出现重复的词（TF=1），那么TFIDF将演变成IF，即未平滑的倒词频。但是相较于TFIDF这种经验式公式，论文通过理论证明为SIF提供理论依据。对于第二步，个人的直观理解是移出所有句子的共有信息，因此保留下来的句子向量更能够表示本身并与其它句子向量产生差距。算法描述如下(其中$v_s, u$的shape均为[d, 1]，$uu^T$为[d,d]的矩阵，d为词向量维度)：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/3497971022.png" alt="SIF" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/3497971022.png" alt="SIF"  />
+  </p></p>
 <p>论文实验表明该方法具有不错的竞争力，在大部分数据集上都比完全平均或者使用TFIDF加权平均的效果好，在使用PSL作为词向量时甚至能达到最优结果。当然，由于PSL本身是基于有监督任务（短语对）来训练词向量，因此PSL+WR能在文本蕴含或相似度计算任务上达到甚至打败LSTM的效果也在情理之中。</p>
 <h1 id="unsupervised-learning-of-sentence-embeddings-using-compositional-n-gram-features">Unsupervised Learning of Sentence Embeddings using Compositional n-Gram Features</h1>
 <p>pdf: 
@@ -2325,7 +2331,9 @@ $$\sum _ { w \in S _ { i - 1 } \cup S _ { i } \cup S _ { i + 1 } } \phi \left( \
 <a href="https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#skip-thought-vectors"  target="_blank">skip-thoughts</a>和
 
 <a href="https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#learning-distributed-representations-of-sentences-from-unlabelled-data"  target="_blank">SDAE</a>）不同的是，本文采用一种分类器的方式学习句子表示。具体地，模型的输入为一个句子$s$以及一个候选句子集合$S_{cand}$，其中$S_{cand}$包含一个句子$s_{ctxt}$是$s$的上下文句子（也就是$s$的前一个句子或后一个句子）以及其他不是$s$上下文的句子。模型通过对$s$以及$S_{cand}$中的每个句子进行编码，然后输入到一个分类器中，让分类器选出$S_{cand}$中的哪个句子是$s_{ctxt}$。实验设置候选句子集合大小为3，即$S_{cand}$包含1个上下文句子和两个无关句子。模型结构如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/785166587.png" alt="quick-thought" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/785166587.png" alt="quick-thought"  />
+  </p></p>
 <p>模型有如下两个细节需要注意：</p>
 <ol>
 <li>模型使用的分类器（得分函数）$c$非常简单，是两个向量内积，即$c(u, v)=u^Tv$，计算$s$的embedding与所有$S_{cand}$中的句子向量内积得分后，输入到softmax层进行分类。使用简单分类器是为了引导模型着重训练句子编码器，因为我们的目的是为了得到好的句子向量表示而不是好的分类器。</li>
@@ -2379,7 +2387,9 @@ $$\sum _ { w \in S _ { i - 1 } \cup S _ { i } \cup S _ { i + 1 } } \phi \left( \
 
 <a href="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/2615338795.pdf"  target="_blank">下载</a><br />
 本文提出使用自然语言推理（natural language inference, NLI）数据集来学习通用的句子表示。选择NLI任务是因为NLI是一个high-level理解任务，涉及推理句子间的语义关系。模型整体架构如下：</p>
-<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200331210320.png" alt="nli" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200331210320.png" alt="nli"  />
+  </p></p>
 <p>论文对比了7种不同的句子编码器，包括：</p>
 <ol>
 <li>
@@ -2401,12 +2411,16 @@ $$\sum _ { w \in S _ { i - 1 } \cup S _ { i } \cup S _ { i + 1 } } \phi \left( \
 <p>Self-attentive network: bi-LSTM+inner Attention with multiple views，Inner Attention机制如下：</p>
 <p>$$\overline { h } _ { i } = \tanh \left( W h _ { i } + b _ { w } \right);  \alpha _ { i } = \frac { e ^ { \overline { h } _ { i } ^ { T } u _ { w } } } { \sum _ { i } e ^ { \overline { h } _ { i } ^ { T } u _ { w } } };  u = \sum _ { t } \alpha _ { i } h _ { i }$$</p>
 <p>其中${h_1,&hellip;,h_T}$为BiLSTM的隐状态输出，将它们输入到tanh变换层产生keys集合$( \overline { h } _ { 1 } , \ldots , \overline { h } _ { T } )$，然后与可学习（可训练）的query向量（上下文向量）计算得到${a_i}$，然后进行加权得到句子表示$u$，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/3920713965.png" alt="inner-attn" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/3920713965.png" alt="inner-attn"  />
+  </p></p>
 <p>论文具体是采用4个上下文向量$u _ { w } ^ { 1 } , u _ { w } ^ { 2 } , u _ { w } ^ { 3 } , u _ { w } ^ { 4 }$（multiple views），对应产生4个表示后进行连结作为最终的句子表示。</p>
 </li>
 <li>
 <p>Hierarchical ConvNet，多层卷积（4层），每层卷积的maxpooling输出进行连结得到最终句子表示，模型结构如下图：</p>
-<p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200331210417.png" alt="h_cnn" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200331210417.png" alt="h_cnn"  />
+  </p></p>
 </li>
 </ol>
 <p>论文实验表明：BiLSTM+maxpooling作为编码器，训练数据为
@@ -2419,7 +2433,9 @@ $$\sum _ { w \in S _ { i - 1 } \cup S _ { i } \cup S _ { i + 1 } } \phi \left( \
 <p>本文在前人研究的基础上，综合利用无监督训练数据和有监督训练数据，进行多任务训练，从而学习一个通用的句子编码器。无监督训练数据包括问答(QA)型网页和论坛，Wikipedia, web news，有监督训练数据为
 
 <a href="https://nlp.stanford.edu/projects/snli/"  target="_blank">SNLI</a>。多任务模型设计如下图所示，其中灰色的encoder为共享参数的句子编码器。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/136004996.png" alt="multi-task" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/136004996.png" alt="multi-task"  />
+  </p></p>
 <p>论文对比了
 
 <a href="https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-11/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification/note.md#deep-averaging-networks"  target="_blank">DAN</a>和
@@ -2435,7 +2451,9 @@ $$\sum _ { w \in S _ { i - 1 } \cup S _ { i } \cup S _ { i + 1 } } \phi \left( \
 
 <a href="https://www.jiqizhixin.com/articles/google-advances-in-semantic-textual-similarity"  target="_blank">(中文版)</a>。</p>
 <hr />
-<p><img src="https://s2.ax1x.com/2020/02/22/3Kx9UI.md.jpg" alt="" /></p>
+<p><p class="md_image">
+    <img loading='lazy' src="https://s2.ax1x.com/2020/02/22/3Kx9UI.md.jpg" alt=""  />
+  </p></p>
     </article>
     
     
