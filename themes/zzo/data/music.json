@@ -110,6 +110,30 @@
             "artist": "街道办GDC",
             "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E6%98%A5%E5%A8%87%E4%B8%8E%E5%BF%97%E6%98%8E%20-%20%E8%A1%97%E9%81%93%E5%8A%9EGDC-0dd010-Ag.mp3",
             "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E6%98%A5%E5%A8%87%E4%B8%8E%E5%BF%97%E6%98%8E-%E8%A1%97%E9%81%93%E5%8A%9EGDC-de9295-Ag.lrc"
+        },
+        {
+            "name": "当真",
+            "artist": "蒋家驹（蒋蒋）+曲肖冰",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%92%8B%E5%AE%B6%E9%A9%B9%EF%BC%88%E8%92%8B%E8%92%8B%EF%BC%89%20-%20%E8%92%8B%E5%AE%B6%E9%A9%B9%EF%BC%88%E8%92%8B%E8%92%8B%EF%BC%89%2B%E6%9B%B2%E8%82%96%E5%86%B0%E3%80%8A%E5%BD%93%E7%9C%9F%E3%80%8B-6edae5-Ag.mp3",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%92%8B%E5%AE%B6%E9%A9%B9%EF%BC%88%E8%92%8B%E8%92%8B%EF%BC%89%20-%20%E8%92%8B%E5%AE%B6%E9%A9%B9%EF%BC%88%E8%92%8B%E8%92%8B%EF%BC%89%2B%E6%9B%B2%E8%82%96%E5%86%B0%E3%80%8A%E5%BD%93%E7%9C%9F%E3%80%8B-258546-Ag.lrc"
+        },
+        {
+            "name": "我的名字",
+            "artist": "焦迈奇",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%84%A6%E8%BF%88%E5%A5%87%20-%20%E6%88%91%E7%9A%84%E5%90%8D%E5%AD%97-26f585-Ag.mp3",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%84%A6%E8%BF%88%E5%A5%87%20-%20%E6%88%91%E7%9A%84%E5%90%8D%E5%AD%97-f49190-Ag.lrc"
+        },
+        {
+            "name": "星月神话",
+            "artist": "金莎",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E9%87%91%E8%8E%8E%20-%20%E6%98%9F%E6%9C%88%E7%A5%9E%E8%AF%9D-7a23b3-Ag.mp3",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E9%87%91%E8%8E%8E%20-%20%E6%98%9F%E6%9C%88%E7%A5%9E%E8%AF%9D-f83631-Ag.lrc"
+        },
+        {
+            "name": "孤单心事",
+            "artist": "蓝又时",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%93%9D%E5%8F%88%E6%97%B6%20-%20%E5%AD%A4%E5%8D%95%E5%BF%83%E4%BA%8B-a3fb6a-Ag.mp3",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%93%9D%E5%8F%88%E6%97%B6%20-%20%E5%AD%A4%E5%8D%95%E5%BF%83%E4%BA%8B-5f6468-Ag.lrc"
         }
     ]
 }
