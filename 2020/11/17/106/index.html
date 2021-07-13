@@ -3666,7 +3666,9 @@
 <p>先使用公共数据集进行场景分类，再使用北京的数据进行功能区分类</p>
 <h4 id="第一部分使用公共数据集将本章所提出的空间语义特征与其它场景特征进行对比">第一部分：使用公共数据集，将本章所提出的空间语义特征与其它场景特征进行对比</h4>
 <ul>
-<li>公共数据集：<a href="http://weegee.vision.ucmerced.edu/datasets/landuse.html">UC Merced Land Use Dataset</a>。 包括 21 个土地利用类型，每类有 100幅图像（256× 256 像素）。</li>
+<li>公共数据集：
+
+<a href="http://weegee.vision.ucmerced.edu/datasets/landuse.html"  target="_blank">UC Merced Land Use Dataset</a>。 包括 21 个土地利用类型，每类有 100幅图像（256× 256 像素）。</li>
 <li>主要实验步骤：对象识别和土地利用场景分类<img src="https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/20210201162226.png" alt="" />
 <ul>
 <li>对象识别：首先利用 multiresolution segmentation（MRS; Baatz 和 Schäpe, 2000） 分割方法将每个图像根据颜色分割成不同的对象。然后，提取图像对象特征包括光谱特征、纹理特征和几何特征（表 2.1）。最后，利用支持向量机分类器（Suykens 和Vandewalle, 1999）将这些对象分为阴影、水体、 植被、土壤、建筑物、道路、船舶、车辆、飞机等 9 类。</li>

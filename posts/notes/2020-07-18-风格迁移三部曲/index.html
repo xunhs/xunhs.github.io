@@ -1906,7 +1906,7 @@
     "datePublished": "2020-07-17T09:28:41Z",
     "dateModified": "2020-07-17T09:28:41Z",
     "url" : "/posts/notes/2020-07-18-%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB%E4%B8%89%E9%83%A8%E6%9B%B2/",
-    "description": "\u003cblockquote\u003e \u003cp\u003e拷贝自\u003ca href=\"https://github.com/CortexFoundation/StyleTransferTrilogy\"\u003eGithub-StyleTransferTrilogy\u003c/a\u003e。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记\u003c/p\u003e \u003c/blockquote\u003e",
+    "description": "\u003cblockquote\u003e \u003cp\u003e拷贝自\r \r \u003ca href=\"https://github.com/CortexFoundation/StyleTransferTrilogy\"  target=\"_blank\"\u003eGithub-StyleTransferTrilogy\u003c/a\u003e。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记\u003c/p\u003e \u003c/blockquote\u003e",
     "keywords": ["风格迁移","style transfer","深度学习"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -2240,14 +2240,22 @@
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
       <blockquote>
-<p>拷贝自<a href="https://github.com/CortexFoundation/StyleTransferTrilogy">Github-StyleTransferTrilogy</a>。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记</p>
+<p>拷贝自
+
+<a href="https://github.com/CortexFoundation/StyleTransferTrilogy"  target="_blank">Github-StyleTransferTrilogy</a>。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记</p>
 </blockquote>
 <h1 id="风格迁移三部曲-style-transfer-trilogy">风格迁移三部曲 (Style Transfer Trilogy)</h1>
 <p>风格迁移是一个很有意思的任务，通过风格迁移可以使一张图片保持本身内容大致不变的情况下呈现出另外一张图片的风格。本文会介绍以下三种风格迁移方式以及对应的代码实现：</p>
 <ul>
-<li>固定风格固定内容的普通风格迁移（<a href="https://arxiv.org/abs/1508.06576">A Neural Algorithm of Artistic Style</a>）</li>
-<li>固定风格任意内容的快速风格迁移（<a href="https://arxiv.org/abs/1603.08155">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</a>）</li>
-<li>任意风格任意内容的极速风格迁移（<a href="https://arxiv.org/abs/1709.04111">Meta Networks for Neural Style Transfer</a>）</li>
+<li>固定风格固定内容的普通风格迁移（
+
+<a href="https://arxiv.org/abs/1508.06576"  target="_blank">A Neural Algorithm of Artistic Style</a>）</li>
+<li>固定风格任意内容的快速风格迁移（
+
+<a href="https://arxiv.org/abs/1603.08155"  target="_blank">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</a>）</li>
+<li>任意风格任意内容的极速风格迁移（
+
+<a href="https://arxiv.org/abs/1709.04111"  target="_blank">Meta Networks for Neural Style Transfer</a>）</li>
 </ul>
 <p>本文所使用的环境是 pytorch 0.4.0，如果你使用了其他的版本，稍作修改即可正确运行。</p>
 <h1 id="固定风格固定内容的普通风格迁移">固定风格固定内容的普通风格迁移</h1>
@@ -2388,7 +2396,9 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>参考链接：</p>
-<p><a href="https://github.com/pytorch/examples/blob/0.4/fast_neural_style/neural_style/utils.py#L21-L26">https://github.com/pytorch/examples/blob/0.4/fast_neural_style/neural_style/utils.py#L21-L26</a></p>
+<p>
+
+<a href="https://github.com/pytorch/examples/blob/0.4/fast_neural_style/neural_style/utils.py#L21-L26"  target="_blank">https://github.com/pytorch/examples/blob/0.4/fast_neural_style/neural_style/utils.py#L21-L26</a></p>
 <p>假设我们输入了一个 <code>[1, 3, 512, 512]</code> 的图像，下面就是各个矩阵的尺寸：</p>
 <ul>
 <li>relu1_2 <code>[1, 64, 512, 512]</code>，gram <code>[1, 64, 64]</code></li>
@@ -2489,7 +2499,9 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>此处使用了 LBFGS，所以 loss 需要包装在一个函数里，代码参考了：<br />
-<a href="https://pytorch.org/tutorials/advanced/neural_style_tutorial.html">https://pytorch.org/tutorials/advanced/neural_style_tutorial.html</a></p>
+
+
+<a href="https://pytorch.org/tutorials/advanced/neural_style_tutorial.html"  target="_blank">https://pytorch.org/tutorials/advanced/neural_style_tutorial.html</a></p>
 <h2 id="效果">效果</h2>
 <p>最终效果如图所示：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/7/1595062870.png" alt="" /></p>
@@ -2538,11 +2550,21 @@
 </div>
 </div><p>首先我们实现了一个函数，ConvLayer，它包含：</p>
 <ul>
-<li><a href="https://pytorch.org/docs/stable/nn.html#upsample">nn.Upsample</a>（可选）</li>
-<li><a href="https://pytorch.org/docs/stable/nn.html#reflectionpad2d">nn.ReflectionPad2d</a></li>
-<li><a href="https://pytorch.org/docs/stable/nn.html#conv2d">nn.Conv2d</a></li>
-<li><a href="https://pytorch.org/docs/stable/nn.html#instancenorm2d">nn.InstanceNorm2d</a>（可选）</li>
-<li><a href="https://pytorch.org/docs/stable/nn.html#relu">nn.ReLU</a>（可选）</li>
+<li>
+
+<a href="https://pytorch.org/docs/stable/nn.html#upsample"  target="_blank">nn.Upsample</a>（可选）</li>
+<li>
+
+<a href="https://pytorch.org/docs/stable/nn.html#reflectionpad2d"  target="_blank">nn.ReflectionPad2d</a></li>
+<li>
+
+<a href="https://pytorch.org/docs/stable/nn.html#conv2d"  target="_blank">nn.Conv2d</a></li>
+<li>
+
+<a href="https://pytorch.org/docs/stable/nn.html#instancenorm2d"  target="_blank">nn.InstanceNorm2d</a>（可选）</li>
+<li>
+
+<a href="https://pytorch.org/docs/stable/nn.html#relu"  target="_blank">nn.ReLU</a>（可选）</li>
 </ul>
 <p>因为每个卷积层前后都可能会用到这些层，为了简化代码，我们将它写成一个函数，返回这些层用于搭建模型。</p>
 <h3 id="residualblock">ResidualBlock</h3>
@@ -2668,7 +2690,9 @@
                              Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
                          )
     Target Transforms (if any): None
-</code></pre><p>其中的 <code>tensor_normalizer</code> 是为了使用 pytorch 自带的预训练模型，在官方文档中提到了要进行预处理：<a href="https://pytorch.org/docs/master/torchvision/models.html">https://pytorch.org/docs/master/torchvision/models.html</a></p>
+</code></pre><p>其中的 <code>tensor_normalizer</code> 是为了使用 pytorch 自带的预训练模型，在官方文档中提到了要进行预处理：
+
+<a href="https://pytorch.org/docs/master/torchvision/models.html"  target="_blank">https://pytorch.org/docs/master/torchvision/models.html</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -2683,7 +2707,9 @@
 </div>
 </div><h2 id="训练-1">训练</h2>
 <h3 id="超参数">超参数</h3>
-<p>虽然<a href="https://github.com/jcjohnson/fast-neural-style/blob/master/doc/training.md">官方开源</a>给出的 <code>style_weight</code> 是 5，但是我这里测试得并不理想，可能是不同的预训练权值、不同的预处理方式造成的差异，设置为 1e5 是比较理想的。</p>
+<p>虽然
+
+<a href="https://github.com/jcjohnson/fast-neural-style/blob/master/doc/training.md"  target="_blank">官方开源</a>给出的 <code>style_weight</code> 是 5，但是我这里测试得并不理想，可能是不同的预训练权值、不同的预处理方式造成的差异，设置为 1e5 是比较理想的。</p>
 <blockquote>
 <p>We use Adam [51] with a learning rate of 1 × 10−3.</p>
 </blockquote>
@@ -2704,7 +2730,9 @@
 <p>论文中提到了一个 TV Loss，这是为了平滑图像。它的计算方法很简单：</p>
 <p><img src="https://latex.codecogs.com/svg.latex?%5CLarge%7BV_%5Ctext%7Baniso%7D(y)=%5Csum_%7Bi,j%7D%7Cy_%7Bi+1,j%7D-y_%7Bi,j%7D%7C+%7Cy_%7Bi,j+1%7D-y_%7Bi,j%7D%7C%7D" alt="" /></p>
 <p>将图像水平和垂直平移一个像素，与原图相减，然后计算绝对值的和，就是 TotalVariation。</p>
-<p>参考链接：<a href="https://en.wikipedia.org/wiki/Total_variation_denoising">https://en.wikipedia.org/wiki/Total_variation_denoising</a></p>
+<p>参考链接：
+
+<a href="https://en.wikipedia.org/wiki/Total_variation_denoising"  target="_blank">https://en.wikipedia.org/wiki/Total_variation_denoising</a></p>
 <h3 id="代码">代码</h3>
 <p>由于代码太长，这里只贴一些关键代码：</p>
 <div class="highlight"><div class="chroma">
@@ -3035,7 +3063,9 @@
 <blockquote>
 <p>There are about 120k images in MS- COCO trainval set and about 80k images in the test set of WikiArt.</p>
 </blockquote>
-<p>要想训练这么大的模型，那么就必须要海量的风格图像和内容图像。原论文依旧选择了 COCO 作为内容数据集。而风格数据集选择了 <a href="https://www.kaggle.com/c/painter-by-numbers/data">WikiArt</a>，该数据集包含大量艺术作品，很适合作为风格迁移的风格图片。</p>
+<p>要想训练这么大的模型，那么就必须要海量的风格图像和内容图像。原论文依旧选择了 COCO 作为内容数据集。而风格数据集选择了 
+
+<a href="https://www.kaggle.com/c/painter-by-numbers/data"  target="_blank">WikiArt</a>，该数据集包含大量艺术作品，很适合作为风格迁移的风格图片。</p>
 <blockquote>
 <p>During training, each content image or style image is resized to keep the smallest dimension in the range [256, 480], and randomly cropped regions of size 256 × 256.</p>
 </blockquote>
@@ -3192,9 +3222,15 @@
 <h1 id="总结">总结</h1>
 <p>我们使用 pytorch 实现了以下三种风格迁移：</p>
 <ul>
-<li>固定风格固定内容的普通风格迁移（<a href="https://arxiv.org/abs/1508.06576">A Neural Algorithm of Artistic Style</a>）</li>
-<li>固定风格任意内容的快速风格迁移（<a href="https://arxiv.org/abs/1603.08155">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</a>）</li>
-<li>任意风格任意内容的极速风格迁移（<a href="https://arxiv.org/abs/1709.04111">Meta Networks for Neural Style Transfer</a>）</li>
+<li>固定风格固定内容的普通风格迁移（
+
+<a href="https://arxiv.org/abs/1508.06576"  target="_blank">A Neural Algorithm of Artistic Style</a>）</li>
+<li>固定风格任意内容的快速风格迁移（
+
+<a href="https://arxiv.org/abs/1603.08155"  target="_blank">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</a>）</li>
+<li>任意风格任意内容的极速风格迁移（
+
+<a href="https://arxiv.org/abs/1709.04111"  target="_blank">Meta Networks for Neural Style Transfer</a>）</li>
 </ul>
 <p><strong>首先第一篇论文打破了以往的思维定式：只有权值可以训练。它通过对图像进行训练实现了风格迁移。然后第二篇论文就比较正常，通过训练一个模型来实现风格迁移。第三篇论文就很神奇了，通过模型来生成权值，进而实现任意风格的风格迁移。不得不感谢这些走在科技前沿的科研工作者，给了我们许多新奇的思路。</strong></p>
 <hr />

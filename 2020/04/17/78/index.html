@@ -2248,7 +2248,11 @@
 <h3 id="unblockneteasemusic">UnblockNeteaseMusic</h3>
 <ul>
 <li>通过代理的方式收听网易云音乐灰色无版权歌曲。</li>
-<li>Refer: <a href="https://github.com/nondanee/UnblockNeteaseMusic">sources</a>; <a href="https://blog.kieng.cn/954.html">博客</a>。</li>
+<li>Refer: 
+
+<a href="https://github.com/nondanee/UnblockNeteaseMusic"  target="_blank">sources</a>; 
+
+<a href="https://blog.kieng.cn/954.html"  target="_blank">博客</a>。</li>
 <li>我用的docker的方式部署的，端口可以更改。</li>
 </ul>
 <pre><code class="language-bash">docker run -d --name unblockneteasemusic -p 12315:8080 nondanee/unblockneteasemusic</code></pre>
@@ -2263,10 +2267,16 @@
 <h3 id="ccaaaria2一键部署">CCAA（Aria2一键部署）</h3>
 <ul>
 <li>Linux一键安装Aria2 + AriaNg + FileBrowse实现离线下载、文件管理。</li>
-<li>Refer: <a href="https://github.com/helloxz/ccaa">sources</a>; <a href="https://blog.kieng.cn/694.html">博客</a></li>
+<li>Refer: 
+
+<a href="https://github.com/helloxz/ccaa"  target="_blank">sources</a>; 
+
+<a href="https://blog.kieng.cn/694.html"  target="_blank">博客</a></li>
 </ul>
 <h3 id="oneindexmoedocker一件安装">OneindexMoe(docker一件安装)</h3>
-<p>Refer: <a href="https://github.com/Baiyuetribe/OneindexMoe">sources</a><br />
+<p>Refer: 
+
+<a href="https://github.com/Baiyuetribe/OneindexMoe"  target="_blank">sources</a><br />
 折腾了好久olaindex终于安装上了，晚上刷分享遇到这个docker一件安装成功了。</p>
 <pre><code class="language-bash">docker run -d --name oneindex -p 12316:80 --restart=always baiyuetribe/oneindex</code></pre>
 <ul>
@@ -2277,7 +2287,9 @@
 <li>init<br />
 创建三个文件夹<code>config</code>, <code>data</code>, <code>plugins</code>; 在文件夹<code>config</code>下创建<code>elasticsearch.yml</code>文件，并写入<code>http.host: &amp;#039;0.0.0.0&amp;#039;</code></li>
 <li>部署elasticsearch<br />
-参考<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html">这个</a>查看新版本</p>
+参考
+
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html"  target="_blank">这个</a>查看新版本</p>
 <pre><code class="language-bash">docker run -p 9200:9200 -p 9300:9300 --name elasticsearch \
 </li>
 </ul>
@@ -2288,7 +2300,9 @@
 -d elasticsearch:7.8.0</code></pre></p>
 <ul>
 <li>kibana<br />
-参考<a href="https://www.elastic.co/guide/en/kibana/current/docker.html">这个</a>查看新版本</p>
+参考
+
+<a href="https://www.elastic.co/guide/en/kibana/current/docker.html"  target="_blank">这个</a>查看新版本</p>
 <pre><code class="language-bash">docker run --name kibana -d \
 </li>
 </ul>
@@ -2305,7 +2319,9 @@
 <code>docker exec -it ubuntu_base bash</code></p>
 </li>
 <li>
-<p>换源:<a href="https://mirrors.huaweicloud.com/">huawei mirror</a><br />
+<p>换源:
+
+<a href="https://mirrors.huaweicloud.com/"  target="_blank">huawei mirror</a><br />
 <pre><code class="language-bash">sed -i &ldquo;s@http://.*archive.ubuntu.com@http://repo.huaweicloud.com@g&rdquo; /etc/apt/sources.list &amp;&amp; sed -i &ldquo;s@http://.*security.ubuntu.com@http://repo.huaweicloud.com@g&rdquo; /etc/apt/sources.list &amp;&amp; apt-get update</code></pre></p>
 </li>
 <li>
@@ -2317,7 +2333,9 @@
 </ul>
 </li>
 <li>
-<p>基础包,参考: <a href="https://gist.github.com/monkut/c4c07059444fd06f3f8661e13ccac619">github</a><br />
+<p>基础包,参考: 
+
+<a href="https://gist.github.com/monkut/c4c07059444fd06f3f8661e13ccac619"  target="_blank">github</a><br />
 <pre><code class="language-bash">apt-get install -y software-properties-common<br />
 apt-get install -y build-essential python3.6 python3-pip<br />
 apt-get install -y git nano</code></pre></p>

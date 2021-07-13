@@ -1907,7 +1907,7 @@
     "datePublished": "2020-02-20T09:12:07Z",
     "dateModified": "2020-02-20T09:12:07Z",
     "url" : "/posts/notes/84/",
-    "description": "\u003chr /\u003e \u003c!-- Abstract --\u003e \u003cblockquote\u003e \u003cp\u003e\u003ca href=\"https://zhuanlan.zhihu.com/p/49271699\"\u003e知乎文章\u003c/a\u003e-阅读笔记：从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史\u003c/p\u003e \u003c/blockquote\u003e \u003c!-- Abstract --\u003e",
+    "description": "\u003chr /\u003e \u003c!-- Abstract --\u003e \u003cblockquote\u003e \u003cp\u003e\r \r \u003ca href=\"https://zhuanlan.zhihu.com/p/49271699\"  target=\"_blank\"\u003e知乎文章\u003c/a\u003e-阅读笔记：从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史\u003c/p\u003e \u003c/blockquote\u003e \u003c!-- Abstract --\u003e",
     "keywords": ["Bert","Embedding"],
     "author": {
       "@type": "Person",
@@ -2247,7 +2247,9 @@
       <hr />
 <!-- Abstract -->
 <blockquote>
-<p><a href="https://zhuanlan.zhihu.com/p/49271699">知乎文章</a>-阅读笔记：从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史</p>
+<p>
+
+<a href="https://zhuanlan.zhihu.com/p/49271699"  target="_blank">知乎文章</a>-阅读笔记：从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史</p>
 </blockquote>
 <!-- Abstract -->
 <!-- 正文内容 -->
@@ -2293,7 +2295,9 @@
 <h3 id="从word-embedding到elmo">从Word Embedding到ELMO</h3>
 <ul>
 <li>
-<p>基于上下文的Embedding-ELMO: Embedding from Language Models (<a href="https://arxiv.org/abs/1802.05365">From Deep contextualized word representation</a>)</p>
+<p>基于上下文的Embedding-ELMO: Embedding from Language Models (
+
+<a href="https://arxiv.org/abs/1802.05365"  target="_blank">From Deep contextualized word representation</a>)</p>
 </li>
 <li>
 <p>之前的Word Embedding本质上是个<strong>静态的方式</strong>，所谓静态指的是训练好之后每个单词的表达就固定住了，以后使用的时候，不论新句子上下文单词是什么，这个单词的Word Embedding不会跟着上下文场景的变化而改变，所以对于比如Bank这个词，它事先学好的Word Embedding中混合了几种语义 ，在应用中来了个新句子，即使从上下文中（比如句子包含money等词）明显可以看出它代表的是“银行”的含义，但是对应的Word Embedding内容也不会变，它还是混合了多种语义。</p>
@@ -2335,11 +2339,17 @@
 <li>Transformer
 <ul>
 <li>Transformer是个叠加的“自注意力机制（Self Attention）”构成的深度网络，是目前NLP里最强的特征提取器，注意力这个机制在此被发扬光大，从任务的配角不断抢戏，直到Transformer一跃成为踢开RNN和CNN传统特征提取器，荣升头牌，大红大紫。</li>
-<li><a href="https://zhuanlan.zhihu.com/p/37601161">深度学习中的注意力模型</a> - 补充下相关基础知识</li>
+<li>
+
+<a href="https://zhuanlan.zhihu.com/p/37601161"  target="_blank">深度学习中的注意力模型</a> - 补充下相关基础知识</li>
 <li>Transformer比较好的文章可以参考以下两篇文章
 <ul>
-<li><a href="https://jalammar.github.io/illustrated-transformer/">Jay Alammar</a>可视化地介绍Transformer</li>
-<li>哈佛大学NLP研究组写的<a href="http://nlp.seas.harvard.edu/2018/04/03/attention.html">The Annotated Transformer</a>.</li>
+<li>
+
+<a href="https://jalammar.github.io/illustrated-transformer/"  target="_blank">Jay Alammar</a>可视化地介绍Transformer</li>
+<li>哈佛大学NLP研究组写的
+
+<a href="http://nlp.seas.harvard.edu/2018/04/03/attention.html"  target="_blank">The Annotated Transformer</a>.</li>
 <li>Transformer在未来会逐渐替代掉RNN成为主流的NLP工具，RNN一直受困于其并行计算能力，这是因为它本身结构的序列性依赖导致的，尽管很多人在试图通过修正RNN结构来修正这一点，但是我不看好这种模式，因为<strong>给马车换轮胎不如把它升级到汽车</strong>，这个道理很好懂，更何况目前汽车的雏形已经出现了，干嘛还要执着在换轮胎这个事情呢？是吧？再说CNN，CNN在NLP里一直没有形成主流，CNN的最大优点是易于做并行计算，所以速度快，但是在捕获NLP的序列关系尤其是长距离特征方面天然有缺陷，不是做不到而是做不好，目前也有很多改进模型，但是特别成功的不多。综合各方面情况，很明显<strong>Transformer同时具备并行性好，又适合捕获长距离特征</strong>，没有理由不在赛跑比赛中跑不过RNN和CNN。</li>
 </ul>
 </li>

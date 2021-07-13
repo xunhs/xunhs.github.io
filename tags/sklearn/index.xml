@@ -19,7 +19,11 @@
 <atom:modified>Sat, 11 Apr 2020 09:21:12 +0000</atom:modified>
 <guid>/posts/notes/209/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;Refer to &lt;a href="https://github.com/justmarkham/scikit-learn-tips"&gt;scikit-learn-tips&lt;/a&gt;, &lt;a href="https://cloud.tencent.com/developer/article/1555141"&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
+&lt;p&gt;Refer to 
+
+&lt;a href="https://github.com/justmarkham/scikit-learn-tips"  target="_blank"&gt;scikit-learn-tips&lt;/a&gt;, 
+
+&lt;a href="https://cloud.tencent.com/developer/article/1555141"  target="_blank"&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
 整理一些自己感兴趣，经常用到的&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>

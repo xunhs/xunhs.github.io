@@ -21,7 +21,9 @@
 <description>&lt;hr /&gt;
 &lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;pathlib 是 python3 非常好用的文件/文件夹操作的库，总结常用用法，参考自&lt;a href="https://www.jianshu.com/p/a820038e65c3"&gt;jianshu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pathlib 是 python3 非常好用的文件/文件夹操作的库，总结常用用法，参考自
+
+&lt;a href="https://www.jianshu.com/p/a820038e65c3"  target="_blank"&gt;jianshu&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- Abstract --&gt;</description>
 <dc:creator>Ethan</dc:creator>

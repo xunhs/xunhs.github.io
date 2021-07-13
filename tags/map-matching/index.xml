@@ -19,7 +19,9 @@
 <atom:modified>Tue, 17 Mar 2020 09:20:26 +0000</atom:modified>
 <guid>/posts/notes/148/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://github.com/cyang-kth/fmm"&gt;fmm&lt;/a&gt; 是在github上找到的比较好用的Map Matching路网匹配工具。&lt;/p&gt;
+&lt;p&gt;
+
+&lt;a href="https://github.com/cyang-kth/fmm"  target="_blank"&gt;fmm&lt;/a&gt; 是在github上找到的比较好用的Map Matching路网匹配工具。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>Map Matching</category>

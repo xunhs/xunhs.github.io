@@ -74,7 +74,9 @@
 <atom:modified>Mon, 05 Jul 2021 09:13:50 +0000</atom:modified>
 <guid>/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://www.natfrp.com/"&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
+&lt;p&gt;
+
+&lt;a href="https://www.natfrp.com/"  target="_blank"&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>札记</category>
@@ -146,7 +148,9 @@
 <atom:modified>Mon, 05 Jul 2021 12:19:49 +0000</atom:modified>
 <guid>/posts/notes/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://hugo.aiaide.com/"&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
+&lt;p&gt;
+
+&lt;a href="https://hugo.aiaide.com/"  target="_blank"&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>Hugo</category>
@@ -214,7 +218,9 @@
 <atom:modified>Fri, 02 Apr 2021 14:19:56 +0000</atom:modified>
 <guid>/2021/04/02/551/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;papers about understanding urban physical environment using street view images. From &lt;a href="https://www.researchgate.net/project/Understanding-urban-physical-environment-using-street-view-images"&gt;Fan Zhang&amp;rsquo;s Researchgate project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;papers about understanding urban physical environment using street view images. From 
+
+&lt;a href="https://www.researchgate.net/project/Understanding-urban-physical-environment-using-street-view-images"  target="_blank"&gt;Fan Zhang&amp;rsquo;s Researchgate project&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>street view images</category>
@@ -411,7 +417,9 @@
 <atom:modified>Mon, 30 Nov 2020 09:32:54 +0000</atom:modified>
 <guid>/2020/11/30/108/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;原文来源：&lt;a href="https://zhuanlan.zhihu.com/p/30243263"&gt;相机操作入门指南(索尼篇)&lt;/a&gt;。本文为阅读原文指南札记。&lt;/p&gt;
+&lt;p&gt;原文来源：
+
+&lt;a href="https://zhuanlan.zhihu.com/p/30243263"  target="_blank"&gt;相机操作入门指南(索尼篇)&lt;/a&gt;。本文为阅读原文指南札记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>相机</category>
@@ -521,7 +529,9 @@
 <atom:modified>Mon, 10 Aug 2020 09:29:56 +0000</atom:modified>
 <guid>/posts/notes/2020-08-10-%E8%BD%AC%E8%BD%BD-chinese-nlp/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;转载自&lt;a href="https://chinesenlp.xyz"&gt;Chinese NLP&lt;/a&gt;，根据个人理解做适当札记。&lt;/p&gt;
+&lt;p&gt;转载自
+
+&lt;a href="https://chinesenlp.xyz"  target="_blank"&gt;Chinese NLP&lt;/a&gt;，根据个人理解做适当札记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>转载</category>
@@ -578,7 +588,9 @@
 <atom:modified>Fri, 17 Jul 2020 09:28:41 +0000</atom:modified>
 <guid>/posts/notes/2020-07-18-%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB%E4%B8%89%E9%83%A8%E6%9B%B2/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;拷贝自&lt;a href="https://github.com/CortexFoundation/StyleTransferTrilogy"&gt;Github-StyleTransferTrilogy&lt;/a&gt;。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记&lt;/p&gt;
+&lt;p&gt;拷贝自
+
+&lt;a href="https://github.com/CortexFoundation/StyleTransferTrilogy"  target="_blank"&gt;Github-StyleTransferTrilogy&lt;/a&gt;。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>风格迁移</category>
@@ -594,7 +606,9 @@
 <atom:modified>Fri, 03 Jul 2020 09:27:56 +0000</atom:modified>
 <guid>/posts/notes/2020-07-16-%E5%8D%9A%E5%A3%AB%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%9C%AD%E8%AE%B0-2/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;续&lt;a href="/2020/06/461b3b66/"&gt;博士论文阅读札记-1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;续
+
+&lt;a href="/2020/06/461b3b66/"  &gt;博士论文阅读札记-1&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>论文阅读</category>
@@ -768,7 +782,11 @@
 <atom:modified>Sun, 26 Apr 2020 09:22:59 +0000</atom:modified>
 <guid>/posts/notes/2020-04-29-git-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;git 常用命令以及免密push设置。 参考: &lt;a href="https://my.oschina.net/u/3552749/blog/1678082"&gt;oschina&lt;/a&gt;, &lt;a href="https://todebug.com/Tips/"&gt;todebug&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;git 常用命令以及免密push设置。 参考: 
+
+&lt;a href="https://my.oschina.net/u/3552749/blog/1678082"  target="_blank"&gt;oschina&lt;/a&gt;, 
+
+&lt;a href="https://todebug.com/Tips/"  target="_blank"&gt;todebug&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>git</category>
@@ -787,7 +805,9 @@
 <atom:modified>Sat, 25 Apr 2020 09:22:21 +0000</atom:modified>
 <guid>/posts/notes/328/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;Refer: &lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Refer: 
+
+&lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"  target="_blank"&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>深度学习</category>
@@ -819,7 +839,11 @@
 <atom:modified>Sat, 11 Apr 2020 09:21:12 +0000</atom:modified>
 <guid>/posts/notes/209/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;Refer to &lt;a href="https://github.com/justmarkham/scikit-learn-tips"&gt;scikit-learn-tips&lt;/a&gt;, &lt;a href="https://cloud.tencent.com/developer/article/1555141"&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
+&lt;p&gt;Refer to 
+
+&lt;a href="https://github.com/justmarkham/scikit-learn-tips"  target="_blank"&gt;scikit-learn-tips&lt;/a&gt;, 
+
+&lt;a href="https://cloud.tencent.com/developer/article/1555141"  target="_blank"&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
 整理一些自己感兴趣，经常用到的&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
@@ -863,7 +887,9 @@
 <atom:modified>Tue, 17 Mar 2020 09:20:26 +0000</atom:modified>
 <guid>/posts/notes/148/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://github.com/cyang-kth/fmm"&gt;fmm&lt;/a&gt; 是在github上找到的比较好用的Map Matching路网匹配工具。&lt;/p&gt;
+&lt;p&gt;
+
+&lt;a href="https://github.com/cyang-kth/fmm"  target="_blank"&gt;fmm&lt;/a&gt; 是在github上找到的比较好用的Map Matching路网匹配工具。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>Map Matching</category>
@@ -960,9 +986,13 @@
 <guid>/posts/notes/2020-02-25-kaggle-starter_simple_framework_for_prediction_issues/</guid>
 <description>&lt;blockquote&gt;
 &lt;p&gt;kaggle中处理预测问题通用流程/基本框架，参考&lt;br /&gt;
-&lt;a href="https://www.kaggle.com/neviadomski/how-to-get-to-top-25-with-simple-model-sklearn"&gt;How to get to TOP 25% with Simple Model (sklearn)&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;a href="https://www.kaggle.com/neviadomski/how-to-get-to-top-25-with-simple-model-sklearn"  target="_blank"&gt;How to get to TOP 25% with Simple Model (sklearn)&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;case complete: &lt;a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview"&gt;House Prices: Advanced Regression Techniques&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;case complete: 
+
+&lt;a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview"  target="_blank"&gt;House Prices: Advanced Regression Techniques&lt;/a&gt;&lt;/p&gt;</description>
 <dc:creator>热</dc:creator>
 <category>Kaggle</category>
 <category>预测模型</category>
@@ -1020,7 +1050,9 @@
 <guid>/posts/notes/108/</guid>
 <description>&lt;blockquote&gt;
 &lt;p&gt;英文邮件常用表达。同时很多内容可以用在论文审阅回复reviewer邮件中。&lt;br /&gt;
-参考自：&lt;a href="https://www.zhihu.com/question/34147404" title="哪些句子拯救了你的英文邮件？"&gt;哪些句子拯救了你的英文邮件？&lt;/a&gt;&lt;/p&gt;
+参考自：
+
+&lt;a href="https://www.zhihu.com/question/34147404" title="哪些句子拯救了你的英文邮件？" target="_blank"&gt;哪些句子拯救了你的英文邮件？&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>邮件</category>
@@ -1055,7 +1087,9 @@
 <description>&lt;hr /&gt;
 &lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://zhuanlan.zhihu.com/p/49271699"&gt;知乎文章&lt;/a&gt;-阅读笔记：从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史&lt;/p&gt;
+&lt;p&gt;
+
+&lt;a href="https://zhuanlan.zhihu.com/p/49271699"  target="_blank"&gt;知乎文章&lt;/a&gt;-阅读笔记：从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- Abstract --&gt;</description>
 <dc:creator>Ethan</dc:creator>
@@ -1073,7 +1107,9 @@
 <description>&lt;hr /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Copy from:&lt;br /&gt;
-&lt;a href="https://github.com/llhthinker/NLP-Papers"&gt;NLP papers&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;a href="https://github.com/llhthinker/NLP-Papers"  target="_blank"&gt;NLP papers&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>Sentence Embedding</category>
@@ -1109,7 +1145,9 @@
 <description>&lt;hr /&gt;
 &lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;转载-SCI常用经典词和常用句型：&lt;a href="https://zhuanlan.zhihu.com/p/93112179"&gt;转载地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;转载-SCI常用经典词和常用句型：
+
+&lt;a href="https://zhuanlan.zhihu.com/p/93112179"  target="_blank"&gt;转载地址&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- Abstract --&gt;</description>
 <dc:creator>Ethan</dc:creator>
@@ -1178,7 +1216,9 @@
 <description>&lt;hr /&gt;
 &lt;!-- Abstract --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;pathlib 是 python3 非常好用的文件/文件夹操作的库，总结常用用法，参考自&lt;a href="https://www.jianshu.com/p/a820038e65c3"&gt;jianshu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pathlib 是 python3 非常好用的文件/文件夹操作的库，总结常用用法，参考自
+
+&lt;a href="https://www.jianshu.com/p/a820038e65c3"  target="_blank"&gt;jianshu&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- Abstract --&gt;</description>
 <dc:creator>Ethan</dc:creator>
@@ -1590,7 +1630,13 @@
 <atom:modified>Mon, 22 Oct 2018 08:53:13 +0000</atom:modified>
 <guid>/posts/notes/124/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;参考了&lt;a href="https://www.jiqizhixin.com/articles/2019-08-03-3"&gt;这里&lt;/a&gt;，&lt;a href="https://networkx.github.io/documentation/stable/index.html"&gt;这里&lt;/a&gt;，主要是整理复制的&lt;a href="https://maelfabien.github.io/machinelearning/graph_3/#"&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考了
+
+&lt;a href="https://www.jiqizhixin.com/articles/2019-08-03-3"  target="_blank"&gt;这里&lt;/a&gt;，
+
+&lt;a href="https://networkx.github.io/documentation/stable/index.html"  target="_blank"&gt;这里&lt;/a&gt;，主要是整理复制的
+
+&lt;a href="https://maelfabien.github.io/machinelearning/graph_3/#"  target="_blank"&gt;这里&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>学习笔记</category>

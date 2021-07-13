@@ -20,9 +20,13 @@
 <guid>/posts/notes/2020-02-25-kaggle-starter_simple_framework_for_prediction_issues/</guid>
 <description>&lt;blockquote&gt;
 &lt;p&gt;kaggle中处理预测问题通用流程/基本框架，参考&lt;br /&gt;
-&lt;a href="https://www.kaggle.com/neviadomski/how-to-get-to-top-25-with-simple-model-sklearn"&gt;How to get to TOP 25% with Simple Model (sklearn)&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;a href="https://www.kaggle.com/neviadomski/how-to-get-to-top-25-with-simple-model-sklearn"  target="_blank"&gt;How to get to TOP 25% with Simple Model (sklearn)&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;case complete: &lt;a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview"&gt;House Prices: Advanced Regression Techniques&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;case complete: 
+
+&lt;a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview"  target="_blank"&gt;House Prices: Advanced Regression Techniques&lt;/a&gt;&lt;/p&gt;</description>
 <dc:creator>热</dc:creator>
 <category>Kaggle</category>
 <category>预测模型</category>

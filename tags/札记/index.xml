@@ -39,7 +39,9 @@
 <atom:modified>Mon, 05 Jul 2021 09:13:50 +0000</atom:modified>
 <guid>/posts/notes/2021-06-15-sakurafrp%E9%85%8D%E7%BD%AE%E6%9C%AD%E8%AE%B0/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://www.natfrp.com/"&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
+&lt;p&gt;
+
+&lt;a href="https://www.natfrp.com/"  target="_blank"&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>札记</category>
@@ -86,7 +88,9 @@
 <atom:modified>Mon, 05 Jul 2021 12:19:49 +0000</atom:modified>
 <guid>/posts/notes/2021-05-21-hugo%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://hugo.aiaide.com/"&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
+&lt;p&gt;
+
+&lt;a href="https://hugo.aiaide.com/"  target="_blank"&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>Hugo</category>

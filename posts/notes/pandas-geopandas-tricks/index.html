@@ -2248,11 +2248,17 @@
 </blockquote>
 <h3 id="io">I/O</h3>
 <h4 id="pandas可以直接读取压缩文件同样写可以写入压缩文件">pandas可以直接读取压缩文件，同样写可以写入压缩文件</h4>
-<p><a href="https://twitter.com/justmarkham/status/1146764820697505792">参考</a><br />
+<p>
+
+<a href="https://twitter.com/justmarkham/status/1146764820697505792"  target="_blank">参考</a><br />
 You can read directly from a compressed file, Or write to a compressed file.<br />
 Also supported: .gz, .bz2, .xz</p>
 <h4 id="hdfstore">HDFStore</h4>
-<p>尽可能的避免读取原始csv，使用hdf、feather或h5py格式文件加快文件读取 (<a href="https://zhuanlan.zhihu.com/p/81554435">参考1</a>, <a href="https://www.cnblogs.com/feffery/p/11135082.html">参考2</a>)<br />
+<p>尽可能的避免读取原始csv，使用hdf、feather或h5py格式文件加快文件读取 (
+
+<a href="https://zhuanlan.zhihu.com/p/81554435"  target="_blank">参考1</a>, 
+
+<a href="https://www.cnblogs.com/feffery/p/11135082.html"  target="_blank">参考2</a>)<br />
 HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为理想的存储格式，文件后缀名为h5，存储读取速度非常快，且可在文件内部按照明确的层次存储数据，同一个HDF5可以看做一个高度整合的文件夹，其内部可存放不同类型的数据。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2821,7 +2827,9 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <li>subset : column label or sequence of labels, optional 用来指定特定的列，默认所有列</li>
 <li>keep : {‘first’, ‘last’, False}, default ‘first’ 删除重复项并保留第一次出现的项</li>
 <li>inplace : boolean, default False 是直接在原来数据上修改还是保留一个副本</li>
-<li>参考: <a href="https://blog.csdn.net/u010665216/article/details/78559091">drop_duplicates</a></li>
+<li>参考: 
+
+<a href="https://blog.csdn.net/u010665216/article/details/78559091"  target="_blank">drop_duplicates</a></li>
 </ul>
 </li>
 <li>将<strong>数据排序</strong>,并把排序后的数据赋值给原来的数据：</li>
@@ -2869,7 +2877,9 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <li>查看索引、数据类型和内存信息：<code>df.info()</code></li>
 <li>查看数值型列的汇总统计： <code>df.describe()</code></li>
 <li>查看df所有数据的最小值、25%分位数、中位数、75%分位数、最大值：<code>np.percentile(df, q=[0, 25, 50, 75, 100])</code></li>
-<li><strong>EDA分析</strong>(数据可视化): <a href="https://towardsdatascience.com/sweetviz-automated-eda-in-python-a97e4cabacde">sweetviz</a><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200711175504.png" alt="sweetviz快速EDA示例" />
+<li><strong>EDA分析</strong>(数据可视化): 
+
+<a href="https://towardsdatascience.com/sweetviz-automated-eda-in-python-a97e4cabacde"  target="_blank">sweetviz</a><img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200711175504.png" alt="sweetviz快速EDA示例" />
 <ul>
 <li>Init:</li>
 </ul>
@@ -2902,7 +2912,9 @@ compare_report.show_html('Comparing.html')
 ```
 </code></pre>
 <ul>
-<li><strong>Pandas基本数据类型</strong>dtype<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200312175149.png" alt="" /><a href="https://pbpython.com/pandas_dtypes.html">参考</a></li>
+<li><strong>Pandas基本数据类型</strong>dtype<img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200312175149.png" alt="" />
+
+<a href="https://pbpython.com/pandas_dtypes.html"  target="_blank">参考</a></li>
 </ul>
 <h5 id="缺失值">缺失值</h5>
 <ul>
@@ -2932,7 +2944,9 @@ compare_report.show_html('Comparing.html')
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>关联merge（<a href="https://blog.csdn.net/weixin_38168620/article/details/80663892">数据库风格的合并</a>）（需指定键值，依照键值匹配关系连接）</li>
+<li>关联merge（
+
+<a href="https://blog.csdn.net/weixin_38168620/article/details/80663892"  target="_blank">数据库风格的合并</a>）（需指定键值，依照键值匹配关系连接）</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2945,7 +2959,9 @@ compare_report.show_html('Comparing.html')
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="query">query()</h4>
-<p>参考<a href="https://www.cnblogs.com/feffery/p/13440148.html">基于query()的高效查询</a></p>
+<p>参考
+
+<a href="https://www.cnblogs.com/feffery/p/13440148.html"  target="_blank">基于query()的高效查询</a></p>
 <h5 id="示例">示例</h5>
 <p>找出类型为TV Show且国家不含美国的Kids' TV<br />
 <img src="https://cdn.jsdelivr.net/gh/xunhs/image_host/images/2020/8/1597799020.png" alt="" /></p>
@@ -3092,9 +3108,13 @@ compare_report.show_html('Comparing.html')
 </div><ul>
 <li>zip(*zipped)来解开元组序列;同样在函数传参的过程中，<code>**args</code>也可以解开args字典变换参数形式。</li>
 </ul>
-<h5 id="apply--swifter并行httpsgithubcomjmcarpenter2swifterblobmasterdocsdocumentationmd">apply + <a href="https://github.com/jmcarpenter2/swifter/blob/master/docs/documentation.md">swifter并行</a></h5>
+<h5 id="apply--swifter并行httpsgithubcomjmcarpenter2swifterblobmasterdocsdocumentationmd">apply + 
+
+<a href="https://github.com/jmcarpenter2/swifter/blob/master/docs/documentation.md"  target="_blank">swifter并行</a></h5>
 <blockquote>
-<p>2020.9.5 Note: swifter.apply加速效果很明显；读取大文件可以使用modin.pandas进行读取，apply等操作可以使用swifter进行加速。;另swifter.apply的函数中不可定义<a href="https://github.com/jmcarpenter2/swifter/blob/master/examples/swifter_apply_examples.ipynb">vectorized form</a>（如if函数），否则可能导致加速效果不明显。</p>
+<p>2020.9.5 Note: swifter.apply加速效果很明显；读取大文件可以使用modin.pandas进行读取，apply等操作可以使用swifter进行加速。;另swifter.apply的函数中不可定义
+
+<a href="https://github.com/jmcarpenter2/swifter/blob/master/examples/swifter_apply_examples.ipynb"  target="_blank">vectorized form</a>（如if函数），否则可能导致加速效果不明显。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3134,8 +3154,12 @@ compare_report.show_html('Comparing.html')
 </div>
 </div><h4 id="时间处理">时间处理</h4>
 <p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/summer/20200601153141.png" alt="" /><br />
-参考: <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#">pandas.pydata</a><br />
-另见<a href="https://xunhs.press/2020/04/5cdaf520/#%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86">datetime时间处理</a></p>
+参考: 
+
+<a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#"  target="_blank">pandas.pydata</a><br />
+另见
+
+<a href="https://xunhs.press/2020/04/5cdaf520/#%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86"  target="_blank">datetime时间处理</a></p>
 <h5 id="parse_dates">parse_dates</h5>
 <p>在 <code>read_csv()</code> 方法中，通过 parse_dates 参数直接将某些列转换成 datetime64 类型, index_col设置索引</p>
 <div class="highlight"><div class="chroma">
@@ -3212,13 +3236,17 @@ compare_report.show_html('Comparing.html')
 </div>
 </div><p>参考: <a href="https://stackoverflow.com/questions/54313463/pandas-datetime-to-unix-timestamp-seconds">https://stackoverflow.com/questions/54313463/pandas-datetime-to-unix-timestamp-seconds</a></p>
 <h5 id="date_range">date_range</h5>
-<p>Return a fixed frequency DatetimeIndex. 参考: <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.date_range.html">pandas.date_range</a></p>
+<p>Return a fixed frequency DatetimeIndex. 参考: 
+
+<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.date_range.html"  target="_blank">pandas.date_range</a></p>
 <h6 id="常用参数">常用参数:</h6>
 <ul>
 <li>start: Left bound for generating dates.</li>
 <li>end: Right bound for generating dates.</li>
 <li>periods: Number of periods to generate.</li>
-<li>freq: Frequency strings can have multiples. 参考: <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases">timeseries-offset-aliases</a>
+<li>freq: Frequency strings can have multiples. 参考: 
+
+<a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases"  target="_blank">timeseries-offset-aliases</a>
 <ul>
 <li>D: calendar day frequency</li>
 <li>M: month end frequency</li>

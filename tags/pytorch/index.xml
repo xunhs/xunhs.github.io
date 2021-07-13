@@ -37,7 +37,9 @@
 <atom:modified>Sat, 25 Apr 2020 09:22:21 +0000</atom:modified>
 <guid>/posts/notes/328/</guid>
 <description>&lt;blockquote&gt;
-&lt;p&gt;Refer: &lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Refer: 
+
+&lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"  target="_blank"&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>深度学习</category>

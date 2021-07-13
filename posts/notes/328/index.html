@@ -1907,7 +1907,7 @@
     "datePublished": "2020-04-25T09:22:21Z",
     "dateModified": "2020-04-25T09:22:21Z",
     "url" : "/posts/notes/328/",
-    "description": "\u003cblockquote\u003e \u003cp\u003eRefer: \u003ca href=\"https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html\"\u003edeep_learning_60min_blitz\u003c/a\u003e\u003c/p\u003e \u003c/blockquote\u003e",
+    "description": "\u003cblockquote\u003e \u003cp\u003eRefer: \r \r \u003ca href=\"https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html\"  target=\"_blank\"\u003edeep_learning_60min_blitz\u003c/a\u003e\u003c/p\u003e \u003c/blockquote\u003e",
     "keywords": ["深度学习","PyTorch","Python","神经网络","预训练模型"],
     "author": {
       "@type": "Person",
@@ -2251,7 +2251,9 @@
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
       <blockquote>
-<p>Refer: <a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html">deep_learning_60min_blitz</a></p>
+<p>Refer: 
+
+<a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"  target="_blank">deep_learning_60min_blitz</a></p>
 </blockquote>
 <h3 id="getting-started">Getting Started</h3>
 <div class="highlight"><div class="chroma">
@@ -2263,9 +2265,15 @@
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li><a href="https://pytorch.org/tutorials/beginner/ptcheat.html">PYTORCH CHEAT SHEET</a></li>
-<li><a href="https://pytorch.org/tutorials/index.html">PYTORCH TUTORIALS</a></li>
-<li><a href="https://pytorch.apachecn.org/docs/1.4/">PyTorch 1.4 中文文档</a></li>
+<li>
+
+<a href="https://pytorch.org/tutorials/beginner/ptcheat.html"  target="_blank">PYTORCH CHEAT SHEET</a></li>
+<li>
+
+<a href="https://pytorch.org/tutorials/index.html"  target="_blank">PYTORCH TUTORIALS</a></li>
+<li>
+
+<a href="https://pytorch.apachecn.org/docs/1.4/"  target="_blank">PyTorch 1.4 中文文档</a></li>
 </ul>
 <h4 id="tensors">Tensors</h4>
 <ul>
@@ -2797,7 +2805,9 @@ As you use neural networks, you want to use various different update rules such 
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li><a href="https://pytorch.org/docs/stable/notes/serialization.html">save model</a>:</li>
+<li>
+
+<a href="https://pytorch.org/docs/stable/notes/serialization.html"  target="_blank">save model</a>:</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3202,20 +3212,30 @@ torch.max(input, dim, keepdim=False, out=None) -&gt; (Tensor, LongTensor)<br />
 <h4 id="torchvisionmodels">torchvision.models</h4>
 <p>参考:</p>
 <ul>
-<li><a href="https://ptorch.com/docs/1/models">torchvision.models</a></li>
-<li><a href="https://blog.csdn.net/whut_ldz/article/details/78845947">pytorch中的pre-train函数模型引用及修改</a></li>
-<li><a href="https://blog.csdn.net/Geek_of_CSDN/article/details/84343971">Pytorch：利用预训练好的VGG16网络提取图片特征</a></li>
+<li>
+
+<a href="https://ptorch.com/docs/1/models"  target="_blank">torchvision.models</a></li>
+<li>
+
+<a href="https://blog.csdn.net/whut_ldz/article/details/78845947"  target="_blank">pytorch中的pre-train函数模型引用及修改</a></li>
+<li>
+
+<a href="https://blog.csdn.net/Geek_of_CSDN/article/details/84343971"  target="_blank">Pytorch：利用预训练好的VGG16网络提取图片特征</a></li>
 </ul>
 <h4 id="pretrainedmodels">pretrainedmodels</h4>
 <p>参考:</p>
 <ul>
-<li><a href="https://github.com/Cadene/pretrained-models.pytorch">pretrained-models.pytorch</a></li>
+<li>
+
+<a href="https://github.com/Cadene/pretrained-models.pytorch"  target="_blank">pretrained-models.pytorch</a></li>
 </ul>
 <hr />
 <p><img src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/summer/20200425114411.jpg" alt="" /></p>
 <h3 id="other-tricks">Other tricks</h3>
 <h4 id="清除gpu存储">清除GPU存储</h4>
-<p>参考:<a href="https://www.zhihu.com/collection/334915478">知乎</a><br />
+<p>参考:
+
+<a href="https://www.zhihu.com/collection/334915478"  target="_blank">知乎</a><br />
 有时Control-C中止运行后GPU存储没有及时释放，需要手动清空。在PyTorch内部可以<code>torch.cuda.empty_cache()</code>, 或在命令行可以先使用ps找到程序的PID，再使用kill结束该进程:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3270,17 +3290,23 @@ torch.max(input, dim, keepdim=False, out=None) -&gt; (Tensor, LongTensor)<br />
 <h4 id="hello-world-mnist">hello world-mnist</h4>
 <p>A more complete MNIST Lightning Module Example</p>
 <ol>
-<li><a href="https://pytorch-lightning.readthedocs.io/en/latest/api/pytorch_lightning.core.lightning.html#pytorch_lightning.core.lightning.LightningModule.prepare_data">prepare_data()</a> 💾</li>
+<li>
+
+<a href="https://pytorch-lightning.readthedocs.io/en/latest/api/pytorch_lightning.core.lightning.html#pytorch_lightning.core.lightning.LightningModule.prepare_data"  target="_blank">prepare_data()</a> 💾</li>
 </ol>
 <p>​    - This is where we can download the dataset. We point to our desired dataset and ask torchvision&rsquo;s <code>MNIST</code> dataset class to download if the dataset isn&rsquo;t found there.</p>
 <ol start="2">
-<li><a href="https://pytorch-lightning.readthedocs.io/en/latest/common/lightning-module.html#setup">setup(stage)</a> ⚙️</li>
+<li>
+
+<a href="https://pytorch-lightning.readthedocs.io/en/latest/common/lightning-module.html#setup"  target="_blank">setup(stage)</a> ⚙️</li>
 </ol>
 <p>​    - Loads in data from file and prepares PyTorch tensor datasets for each split (train, val, test).</p>
 <p>​    - Setup expects a &lsquo;stage&rsquo; arg which is used to separate logic for &lsquo;fit&rsquo; and &lsquo;test&rsquo;.</p>
 <p>​    - If you don&rsquo;t mind loading all your datasets at once, you can set up a condition to allow for both &lsquo;fit&rsquo; related setup and &lsquo;test&rsquo; related setup to run whenever <code>None</code> is passed to <code>stage</code> (or ignore it altogether and exclude any conditionals).</p>
 <ol start="3">
-<li><a href="https://pytorch-lightning.readthedocs.io/en/latest/common/lightning-module.html#data-hooks">x_dataloader()</a> ♻️</li>
+<li>
+
+<a href="https://pytorch-lightning.readthedocs.io/en/latest/common/lightning-module.html#data-hooks"  target="_blank">x_dataloader()</a> ♻️</li>
 </ol>
 <p>​    - <code>train_dataloader()</code>, <code>val_dataloader()</code>, and <code>test_dataloader()</code> all return PyTorch <code>DataLoader</code> instances that are created by wrapping their respective datasets that we prepared in <code>setup()</code></p>
 <div class="highlight"><div class="chroma">
