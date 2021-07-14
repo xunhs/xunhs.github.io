@@ -2787,7 +2787,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </div><div class="notices success" data-title="Success">
   <ul>
 <li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_sql.html">df.to_sql</a>;</li>
-<li>create_engine:如果想保存到本地，<code>sqlite://</code>后填入地址即可，如<code>engine = create_engine('sqlite:///C:\\sqlitedbs\\school.db', echo=True)</code></li>
+<li>create_engine:如果想保存到本地，<code>sqlite://</code>后填入地址即可，如Windows路径：<code>engine = create_engine('sqlite:///C:\\sqlitedbs\\pois.db', echo=True)</code>及linux路径：<code>engine = create_engine('sqlite:////workspace/UrbanFunctionalRegionalization/20210702-wh/data/poi/pois.sqlite', echo=True)</code></li>
 <li>此处转换DataFrame为一个SQLite数据库，放在内存中</li>
 <li>if_exists : {&lsquo;fail&rsquo;, &lsquo;replace&rsquo;, &lsquo;append&rsquo;}, default &lsquo;fail&rsquo;
 <ul>
