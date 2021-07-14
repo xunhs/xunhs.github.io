@@ -21,11 +21,11 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;参考了
 
-&lt;a href="https://www.jiqizhixin.com/articles/2019-08-03-3"  target="_blank"&gt;这里&lt;/a&gt;，
+&lt;a href="https://www.jiqizhixin.com/articles/2019-08-03-3" target="_blank" rel="noopener"&gt;这里&lt;/a&gt;，
 
-&lt;a href="https://networkx.github.io/documentation/stable/index.html"  target="_blank"&gt;这里&lt;/a&gt;，主要是整理复制的
+&lt;a href="https://networkx.github.io/documentation/stable/index.html" target="_blank" rel="noopener"&gt;这里&lt;/a&gt;，主要是整理复制的
 
-&lt;a href="https://maelfabien.github.io/machinelearning/graph_3/#"  target="_blank"&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://maelfabien.github.io/machinelearning/graph_3/#" target="_blank" rel="noopener"&gt;这里&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>学习笔记</category>

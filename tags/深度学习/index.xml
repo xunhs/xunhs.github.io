@@ -21,7 +21,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;拷贝自
 
-&lt;a href="https://github.com/CortexFoundation/StyleTransferTrilogy"  target="_blank"&gt;Github-StyleTransferTrilogy&lt;/a&gt;。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记&lt;/p&gt;
+&lt;a href="https://github.com/CortexFoundation/StyleTransferTrilogy" target="_blank" rel="noopener"&gt;Github-StyleTransferTrilogy&lt;/a&gt;。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>风格迁移</category>
@@ -57,7 +57,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;Refer: 
 
-&lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"  target="_blank"&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html" target="_blank" rel="noopener"&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>深度学习</category>

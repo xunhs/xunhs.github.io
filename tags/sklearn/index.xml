@@ -21,9 +21,9 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;Refer to 
 
-&lt;a href="https://github.com/justmarkham/scikit-learn-tips"  target="_blank"&gt;scikit-learn-tips&lt;/a&gt;, 
+&lt;a href="https://github.com/justmarkham/scikit-learn-tips" target="_blank" rel="noopener"&gt;scikit-learn-tips&lt;/a&gt;, 
 
-&lt;a href="https://cloud.tencent.com/developer/article/1555141"  target="_blank"&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
+&lt;a href="https://cloud.tencent.com/developer/article/1555141" target="_blank" rel="noopener"&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
 整理一些自己感兴趣，经常用到的&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>

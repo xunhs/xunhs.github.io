@@ -21,7 +21,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;
 
-&lt;a href="https://hugo.aiaide.com/"  target="_blank"&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
+&lt;a href="https://hugo.aiaide.com/" target="_blank" rel="noopener"&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>Hugo</category>

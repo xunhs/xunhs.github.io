@@ -2250,15 +2250,15 @@
 <h4 id="pandas可以直接读取压缩文件同样写可以写入压缩文件">pandas可以直接读取压缩文件，同样写可以写入压缩文件</h4>
 <p>
 
-<a href="https://twitter.com/justmarkham/status/1146764820697505792"  target="_blank">参考</a><br />
+<a href="https://twitter.com/justmarkham/status/1146764820697505792" target="_blank" rel="noopener">参考</a><br />
 You can read directly from a compressed file, Or write to a compressed file.<br />
 Also supported: .gz, .bz2, .xz</p>
 <h4 id="hdfstore">HDFStore</h4>
 <p>尽可能的避免读取原始csv，使用hdf、feather或h5py格式文件加快文件读取 (
 
-<a href="https://zhuanlan.zhihu.com/p/81554435"  target="_blank">参考1</a>, 
+<a href="https://zhuanlan.zhihu.com/p/81554435" target="_blank" rel="noopener">参考1</a>, 
 
-<a href="https://www.cnblogs.com/feffery/p/11135082.html"  target="_blank">参考2</a>)<br />
+<a href="https://www.cnblogs.com/feffery/p/11135082.html" target="_blank" rel="noopener">参考2</a>)<br />
 HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为理想的存储格式，文件后缀名为h5，存储读取速度非常快，且可在文件内部按照明确的层次存储数据，同一个HDF5可以看做一个高度整合的文件夹，其内部可存放不同类型的数据。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2829,7 +2829,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <li>inplace : boolean, default False 是直接在原来数据上修改还是保留一个副本</li>
 <li>参考: 
 
-<a href="https://blog.csdn.net/u010665216/article/details/78559091"  target="_blank">drop_duplicates</a></li>
+<a href="https://blog.csdn.net/u010665216/article/details/78559091" target="_blank" rel="noopener">drop_duplicates</a></li>
 </ul>
 </li>
 <li>将<strong>数据排序</strong>,并把排序后的数据赋值给原来的数据：</li>
@@ -2879,7 +2879,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <li>查看df所有数据的最小值、25%分位数、中位数、75%分位数、最大值：<code>np.percentile(df, q=[0, 25, 50, 75, 100])</code></li>
 <li><strong>EDA分析</strong>(数据可视化): 
 
-<a href="https://towardsdatascience.com/sweetviz-automated-eda-in-python-a97e4cabacde"  target="_blank">sweetviz</a><p class="md_image">
+<a href="https://towardsdatascience.com/sweetviz-automated-eda-in-python-a97e4cabacde" target="_blank" rel="noopener">sweetviz</a><p class="md_image">
     <img loading='lazy' src="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/uploads/images/2020/S3/20200711175504.png" alt="sweetviz快速EDA示例"  />
   </p>
 <ul>
@@ -2918,7 +2918,7 @@ compare_report.show_html('Comparing.html')
     <img loading='lazy' src="https://gitee.com/xunhs/xunhs/raw/master/pics/2020/spring/20200312175149.png" alt=""  />
   </p>
 
-<a href="https://pbpython.com/pandas_dtypes.html"  target="_blank">参考</a></li>
+<a href="https://pbpython.com/pandas_dtypes.html" target="_blank" rel="noopener">参考</a></li>
 </ul>
 <h5 id="缺失值">缺失值</h5>
 <ul>
@@ -2950,7 +2950,7 @@ compare_report.show_html('Comparing.html')
 </div><ul>
 <li>关联merge（
 
-<a href="https://blog.csdn.net/weixin_38168620/article/details/80663892"  target="_blank">数据库风格的合并</a>）（需指定键值，依照键值匹配关系连接）</li>
+<a href="https://blog.csdn.net/weixin_38168620/article/details/80663892" target="_blank" rel="noopener">数据库风格的合并</a>）（需指定键值，依照键值匹配关系连接）</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2965,7 +2965,7 @@ compare_report.show_html('Comparing.html')
 </div><h4 id="query">query()</h4>
 <p>参考
 
-<a href="https://www.cnblogs.com/feffery/p/13440148.html"  target="_blank">基于query()的高效查询</a></p>
+<a href="https://www.cnblogs.com/feffery/p/13440148.html" target="_blank" rel="noopener">基于query()的高效查询</a></p>
 <h5 id="示例">示例</h5>
 <p>找出类型为TV Show且国家不含美国的Kids' TV<br />
 <p class="md_image">
@@ -3116,11 +3116,11 @@ compare_report.show_html('Comparing.html')
 </ul>
 <h5 id="apply--swifter并行httpsgithubcomjmcarpenter2swifterblobmasterdocsdocumentationmd">apply + 
 
-<a href="https://github.com/jmcarpenter2/swifter/blob/master/docs/documentation.md"  target="_blank">swifter并行</a></h5>
+<a href="https://github.com/jmcarpenter2/swifter/blob/master/docs/documentation.md" target="_blank" rel="noopener">swifter并行</a></h5>
 <blockquote>
 <p>2020.9.5 Note: swifter.apply加速效果很明显；读取大文件可以使用modin.pandas进行读取，apply等操作可以使用swifter进行加速。;另swifter.apply的函数中不可定义
 
-<a href="https://github.com/jmcarpenter2/swifter/blob/master/examples/swifter_apply_examples.ipynb"  target="_blank">vectorized form</a>（如if函数），否则可能导致加速效果不明显。</p>
+<a href="https://github.com/jmcarpenter2/swifter/blob/master/examples/swifter_apply_examples.ipynb" target="_blank" rel="noopener">vectorized form</a>（如if函数），否则可能导致加速效果不明显。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3164,10 +3164,10 @@ compare_report.show_html('Comparing.html')
   </p><br />
 参考: 
 
-<a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#"  target="_blank">pandas.pydata</a><br />
+<a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#" target="_blank" rel="noopener">pandas.pydata</a><br />
 另见
 
-<a href="https://xunhs.press/2020/04/5cdaf520/#%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86"  target="_blank">datetime时间处理</a></p>
+<a href="https://xunhs.press/2020/04/5cdaf520/#%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86" target="_blank" rel="noopener">datetime时间处理</a></p>
 <h5 id="parse_dates">parse_dates</h5>
 <p>在 <code>read_csv()</code> 方法中，通过 parse_dates 参数直接将某些列转换成 datetime64 类型, index_col设置索引</p>
 <div class="highlight"><div class="chroma">
@@ -3246,7 +3246,7 @@ compare_report.show_html('Comparing.html')
 <h5 id="date_range">date_range</h5>
 <p>Return a fixed frequency DatetimeIndex. 参考: 
 
-<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.date_range.html"  target="_blank">pandas.date_range</a></p>
+<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.date_range.html" target="_blank" rel="noopener">pandas.date_range</a></p>
 <h6 id="常用参数">常用参数:</h6>
 <ul>
 <li>start: Left bound for generating dates.</li>
@@ -3254,7 +3254,7 @@ compare_report.show_html('Comparing.html')
 <li>periods: Number of periods to generate.</li>
 <li>freq: Frequency strings can have multiples. 参考: 
 
-<a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases"  target="_blank">timeseries-offset-aliases</a>
+<a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases" target="_blank" rel="noopener">timeseries-offset-aliases</a>
 <ul>
 <li>D: calendar day frequency</li>
 <li>M: month end frequency</li>

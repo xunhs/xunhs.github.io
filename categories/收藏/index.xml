@@ -41,7 +41,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;
 
-&lt;a href="https://www.natfrp.com/"  target="_blank"&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
+&lt;a href="https://www.natfrp.com/" target="_blank" rel="noopener"&gt;SakuraFrp&lt;/a&gt;是一个非常好用的内网穿透工具，本文记录配置过程，包含ssh和http两类配置流程。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>札记</category>
@@ -90,7 +90,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;
 
-&lt;a href="https://hugo.aiaide.com/"  target="_blank"&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
+&lt;a href="https://hugo.aiaide.com/" target="_blank" rel="noopener"&gt;Hugo中文帮助文档&lt;/a&gt;, 记录Hugo学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>Hugo</category>
@@ -141,7 +141,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;papers about understanding urban physical environment using street view images. From 
 
-&lt;a href="https://www.researchgate.net/project/Understanding-urban-physical-environment-using-street-view-images"  target="_blank"&gt;Fan Zhang&amp;rsquo;s Researchgate project&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://www.researchgate.net/project/Understanding-urban-physical-environment-using-street-view-images" target="_blank" rel="noopener"&gt;Fan Zhang&amp;rsquo;s Researchgate project&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>street view images</category>
@@ -268,7 +268,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;原文来源：
 
-&lt;a href="https://zhuanlan.zhihu.com/p/30243263"  target="_blank"&gt;相机操作入门指南(索尼篇)&lt;/a&gt;。本文为阅读原文指南札记。&lt;/p&gt;
+&lt;a href="https://zhuanlan.zhihu.com/p/30243263" target="_blank" rel="noopener"&gt;相机操作入门指南(索尼篇)&lt;/a&gt;。本文为阅读原文指南札记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>相机</category>
@@ -331,7 +331,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;转载自
 
-&lt;a href="https://chinesenlp.xyz"  target="_blank"&gt;Chinese NLP&lt;/a&gt;，根据个人理解做适当札记。&lt;/p&gt;
+&lt;a href="https://chinesenlp.xyz" target="_blank" rel="noopener"&gt;Chinese NLP&lt;/a&gt;，根据个人理解做适当札记。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>转载</category>
@@ -364,7 +364,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;拷贝自
 
-&lt;a href="https://github.com/CortexFoundation/StyleTransferTrilogy"  target="_blank"&gt;Github-StyleTransferTrilogy&lt;/a&gt;。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记&lt;/p&gt;
+&lt;a href="https://github.com/CortexFoundation/StyleTransferTrilogy" target="_blank" rel="noopener"&gt;Github-StyleTransferTrilogy&lt;/a&gt;。Github上刷到比较好玩的风格迁移的代码和讲解，并做部分笔记&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>风格迁移</category>
@@ -382,7 +382,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;续
 
-&lt;a href="/2020/06/461b3b66/"  &gt;博士论文阅读札记-1&lt;/a&gt;&lt;/p&gt;
+&lt;a href="/2020/06/461b3b66/"&gt;博士论文阅读札记-1&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>论文阅读</category>
@@ -470,9 +470,9 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;git 常用命令以及免密push设置。 参考: 
 
-&lt;a href="https://my.oschina.net/u/3552749/blog/1678082"  target="_blank"&gt;oschina&lt;/a&gt;, 
+&lt;a href="https://my.oschina.net/u/3552749/blog/1678082" target="_blank" rel="noopener"&gt;oschina&lt;/a&gt;, 
 
-&lt;a href="https://todebug.com/Tips/"  target="_blank"&gt;todebug&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://todebug.com/Tips/" target="_blank" rel="noopener"&gt;todebug&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>git</category>
@@ -493,7 +493,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;Refer: 
 
-&lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"  target="_blank"&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html" target="_blank" rel="noopener"&gt;deep_learning_60min_blitz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>深度学习</category>
@@ -527,9 +527,9 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;Refer to 
 
-&lt;a href="https://github.com/justmarkham/scikit-learn-tips"  target="_blank"&gt;scikit-learn-tips&lt;/a&gt;, 
+&lt;a href="https://github.com/justmarkham/scikit-learn-tips" target="_blank" rel="noopener"&gt;scikit-learn-tips&lt;/a&gt;, 
 
-&lt;a href="https://cloud.tencent.com/developer/article/1555141"  target="_blank"&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
+&lt;a href="https://cloud.tencent.com/developer/article/1555141" target="_blank" rel="noopener"&gt;Scikit-learn 0.22新版本发布&lt;/a&gt;。&lt;br /&gt;
 整理一些自己感兴趣，经常用到的&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
@@ -547,7 +547,7 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;
 
-&lt;a href="https://github.com/cyang-kth/fmm"  target="_blank"&gt;fmm&lt;/a&gt; 是在github上找到的比较好用的Map Matching路网匹配工具。&lt;/p&gt;
+&lt;a href="https://github.com/cyang-kth/fmm" target="_blank" rel="noopener"&gt;fmm&lt;/a&gt; 是在github上找到的比较好用的Map Matching路网匹配工具。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>Map Matching</category>
@@ -622,11 +622,11 @@
 &lt;p&gt;kaggle中处理预测问题通用流程/基本框架，参考&lt;br /&gt;
 
 
-&lt;a href="https://www.kaggle.com/neviadomski/how-to-get-to-top-25-with-simple-model-sklearn"  target="_blank"&gt;How to get to TOP 25% with Simple Model (sklearn)&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://www.kaggle.com/neviadomski/how-to-get-to-top-25-with-simple-model-sklearn" target="_blank" rel="noopener"&gt;How to get to TOP 25% with Simple Model (sklearn)&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;case complete: 
 
-&lt;a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview"  target="_blank"&gt;House Prices: Advanced Regression Techniques&lt;/a&gt;&lt;/p&gt;</description>
+&lt;a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview" target="_blank" rel="noopener"&gt;House Prices: Advanced Regression Techniques&lt;/a&gt;&lt;/p&gt;</description>
 <dc:creator>热</dc:creator>
 <category>Kaggle</category>
 <category>预测模型</category>
@@ -686,7 +686,7 @@
 &lt;p&gt;英文邮件常用表达。同时很多内容可以用在论文审阅回复reviewer邮件中。&lt;br /&gt;
 参考自：
 
-&lt;a href="https://www.zhihu.com/question/34147404" title="哪些句子拯救了你的英文邮件？" target="_blank"&gt;哪些句子拯救了你的英文邮件？&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://www.zhihu.com/question/34147404" title="哪些句子拯救了你的英文邮件？" target="_blank" rel="noopener"&gt;哪些句子拯救了你的英文邮件？&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>邮件</category>
@@ -723,7 +723,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;
 
-&lt;a href="https://zhuanlan.zhihu.com/p/49271699"  target="_blank"&gt;知乎文章&lt;/a&gt;-阅读笔记：从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史&lt;/p&gt;
+&lt;a href="https://zhuanlan.zhihu.com/p/49271699" target="_blank" rel="noopener"&gt;知乎文章&lt;/a&gt;-阅读笔记：从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- Abstract --&gt;</description>
 <dc:creator>Ethan</dc:creator>
@@ -743,7 +743,7 @@
 &lt;p&gt;Copy from:&lt;br /&gt;
 
 
-&lt;a href="https://github.com/llhthinker/NLP-Papers"  target="_blank"&gt;NLP papers&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://github.com/llhthinker/NLP-Papers" target="_blank" rel="noopener"&gt;NLP papers&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>Sentence Embedding</category>
@@ -781,7 +781,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;转载-SCI常用经典词和常用句型：
 
-&lt;a href="https://zhuanlan.zhihu.com/p/93112179"  target="_blank"&gt;转载地址&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://zhuanlan.zhihu.com/p/93112179" target="_blank" rel="noopener"&gt;转载地址&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- Abstract --&gt;</description>
 <dc:creator>Ethan</dc:creator>
@@ -817,7 +817,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;pathlib 是 python3 非常好用的文件/文件夹操作的库，总结常用用法，参考自
 
-&lt;a href="https://www.jianshu.com/p/a820038e65c3"  target="_blank"&gt;jianshu&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://www.jianshu.com/p/a820038e65c3" target="_blank" rel="noopener"&gt;jianshu&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- Abstract --&gt;</description>
 <dc:creator>Ethan</dc:creator>
@@ -1068,11 +1068,11 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;参考了
 
-&lt;a href="https://www.jiqizhixin.com/articles/2019-08-03-3"  target="_blank"&gt;这里&lt;/a&gt;，
+&lt;a href="https://www.jiqizhixin.com/articles/2019-08-03-3" target="_blank" rel="noopener"&gt;这里&lt;/a&gt;，
 
-&lt;a href="https://networkx.github.io/documentation/stable/index.html"  target="_blank"&gt;这里&lt;/a&gt;，主要是整理复制的
+&lt;a href="https://networkx.github.io/documentation/stable/index.html" target="_blank" rel="noopener"&gt;这里&lt;/a&gt;，主要是整理复制的
 
-&lt;a href="https://maelfabien.github.io/machinelearning/graph_3/#"  target="_blank"&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://maelfabien.github.io/machinelearning/graph_3/#" target="_blank" rel="noopener"&gt;这里&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>Ethan</dc:creator>
 <category>学习笔记</category>

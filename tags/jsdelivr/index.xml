@@ -21,9 +21,9 @@
 <description>&lt;blockquote&gt;
 &lt;p&gt;git 常用命令以及免密push设置。 参考: 
 
-&lt;a href="https://my.oschina.net/u/3552749/blog/1678082"  target="_blank"&gt;oschina&lt;/a&gt;, 
+&lt;a href="https://my.oschina.net/u/3552749/blog/1678082" target="_blank" rel="noopener"&gt;oschina&lt;/a&gt;, 
 
-&lt;a href="https://todebug.com/Tips/"  target="_blank"&gt;todebug&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://todebug.com/Tips/" target="_blank" rel="noopener"&gt;todebug&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
 <dc:creator>热</dc:creator>
 <category>git</category>
