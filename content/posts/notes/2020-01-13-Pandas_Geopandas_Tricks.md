@@ -304,7 +304,7 @@ engine.execute("SELECT e.'from', e.'to'  FROM edges as e where e.'fid'in (1,2,3,
 ```
 {{< notice success >}} 
 - [df.to_sql](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_sql.html); 
-- create_engine:如果想保存到本地，`sqlite://`后填入地址即可，如`engine = create_engine('sqlite:///C:\\sqlitedbs\\school.db', echo=True)`
+- create_engine:如果想保存到本地，`sqlite://`后填入地址即可，如Windows路径：`engine = create_engine('sqlite:///C:\\sqlitedbs\\pois.db', echo=True)`及linux路径：`engine = create_engine('sqlite:////workspace/UrbanFunctionalRegionalization/20210702-wh/data/poi/pois.sqlite', echo=True)`
 - 此处转换DataFrame为一个SQLite数据库，放在内存中
 - if_exists : {'fail', 'replace', 'append'}, default 'fail'
   * fail: Raise a ValueError.
