@@ -1,3 +1,3 @@
-{{ $url := .Destination | safeURL }}
-{{ $text := .Text | safeHTML }}
-<a href="{{ $url }}" {{ with .Title }}title="{{ . }}"{{ end }} {{ if strings.HasPrefix $url "http" }}target="_blank"{{ end }}>{{ $text }}</a>
+<!-- if strings.HasPrefix .Destination "http" 定义站内地址不应用此模板 -->
+<!-- https://gohugo.io/getting-started/configuration-markup/#render-hook-templates -->
+<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
