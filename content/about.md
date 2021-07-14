@@ -1,55 +1,16 @@
 ---
-title: "About Me"
-date: 2021-04-28T10:33:12+08:00
+title: About Me
+date: 2021-04-28T02:33:12.000Z
 type: about
 libraries:
-  - dplayer
-  - meting
+    - dplayer
+    - aplayer
+lastmod: '2021-07-14T08:18:01.717Z'
 ---
 
 > Hi there, I'm Ethan (Sheng Hu, 胡胜).
 
 ![68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f336f726e6b35374b774458663831726a574d2f67697068792e676966](https://cdn.jsdelivr.net/gh/xunhs/image_host@master/PicX/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f336f726e6b35374b774458663831726a574d2f67697068792e676966.6g0wwy3z111c.gif)
-
-
-
-### My Playlists
-
-{{< tabs "Reading and Learning" "Frequently Listening" "Post-rock" >}}
-  {{< tab >}}
-
-<meting-js
-	server="tencent"
-	type="playlist"
-	id="4279590427"
-	preload="metadata">
-</meting-js>
-
-  {{< /tab >}}
-
-  {{< tab >}}
-
-<meting-js
-	server="netease"
-	type="playlist"
-	id="3147191936"
-	preload="none">
-</meting-js>
-
-  {{< /tab >}}
-
-  {{< tab >}}
-
-<meting-js
-	server="netease"
-	type="playlist"
-	id="5478569673"
-	preload="none">
-</meting-js>
-
-  {{< /tab >}}
-
-{{< /tabs >}}
 
 
 
