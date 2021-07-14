@@ -134,6 +134,24 @@
             "artist": "蓝又时",
             "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%93%9D%E5%8F%88%E6%97%B6%20-%20%E5%AD%A4%E5%8D%95%E5%BF%83%E4%BA%8B-a3fb6a-Ag.mp3",
             "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E8%93%9D%E5%8F%88%E6%97%B6%20-%20%E5%AD%A4%E5%8D%95%E5%BF%83%E4%BA%8B-5f6468-Ag.lrc"
-        }
+        },
+        {
+            "name": "心语",
+            "artist": "史小鹏",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E5%8F%B2%E5%B0%8F%E9%B9%8F%20-%20%E5%BF%83%E8%AF%AD-9688ac-Ag.mp3",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%BA%AF%E9%9F%B3%E4%B9%90-%E6%97%A0%E6%AD%8C%E8%AF%8D-3ca159-Ag.lrc"
+        },
+        {
+            "name": "和平之月",
+            "artist": "群星",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%BE%A4%E6%98%9F%20-%20%E5%92%8C%E5%B9%B3%E4%B9%8B%E6%9C%88-2509e9-Ag.mp3",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E7%BA%AF%E9%9F%B3%E4%B9%90-%E6%97%A0%E6%AD%8C%E8%AF%8D-3ca159-Ag.lrc"
+        },
+        {
+            "name": "安河桥",
+            "artist": "宋冬野",
+            "url": "https://cdn.jsdelivr.net/gh/xunhs/image_host@master/media/%E5%AE%89%E5%92%8C%E6%A1%A5%20-%20%E5%AE%8B%E5%86%AC%E9%87%8E.mp3",
+            "lrc": "https://cdn.jsdelivr.net/gh/xunhs-hosts/media@master/%E5%AE%89%E5%92%8C%E6%A1%A5%20-%20%E5%AE%8B%E5%86%AC%E9%87%8E-c16bc5-Ag.lrc"
+        },
     ]
 }
