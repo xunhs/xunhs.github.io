@@ -9,7 +9,7 @@ jobs:
   build-deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1  # v2 does not have submodules option now
+      - uses: actions/checkout@v1 # v2 does not have submodules option now
         with:
           submodules: true
 
@@ -19,7 +19,6 @@ jobs:
           hugo-version: latest
           extended: true
 
-      
       - name: Hugo Encryptor
         run: |
           cd themes/hugo_enc
@@ -30,7 +29,6 @@ jobs:
         run: |
           hugo
           hugo_enc
-
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
