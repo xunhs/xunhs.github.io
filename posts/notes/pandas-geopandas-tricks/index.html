@@ -2761,6 +2761,12 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </span><span class="lnt">17
 </span><span class="lnt">18
 </span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># pip install sqlalchemy</span>
@@ -2781,7 +2787,13 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <span class="n">edges_gdf</span><span class="p">[[</span><span class="s1">&#39;fid&#39;</span><span class="p">,</span> <span class="s1">&#39;from&#39;</span><span class="p">,</span> <span class="s1">&#39;to&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s1">&#39;edges&#39;</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">)</span>
 
 <span class="c1"># 查询edges中fid为1，2的元素，并取值from和to</span>
-<span class="n">engine</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&#34;SELECT e.&#39;from&#39;, e.&#39;to&#39;  FROM edges as e where e.&#39;fid&#39;in (1,2,3, &#39;&#39;)&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&#34;SELECT e.&#39;from&#39;, e.&#39;to&#39;  FROM edges as e where e.&#39;fid&#39;in (1,2,3, &#39;&#39;)&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+<span class="c1"># results examle: </span>
+<span class="c1"># [(267620078, 3488417963), (3488417935, 267620078), (3684965660, 267620078)]</span>
+
+<span class="c1"># list 转 tuple后查询</span>
+<span class="n">_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">engine</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&#34;SELECT e.&#39;from&#39;, e.&#39;to&#39;  FROM edges as e where e.&#39;fid&#39;in </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">_list</span><span class="p">)))</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="notices success" data-title="Success">
