@@ -300,7 +300,13 @@ engine = create_engine('sqlite://', echo=False)
 edges_gdf[['fid', 'from', 'to']].to_sql('edges', con=engine, if_exists='replace')
 
 # 查询edges中fid为1，2的元素，并取值from和to
-engine.execute("SELECT e.'from', e.'to'  FROM edges as e where e.'fid'in (1,2,3, '')").fetchall()
+results = engine.execute("SELECT e.'from', e.'to'  FROM edges as e where e.'fid'in (1,2,3, '')").fetchall()
+# results examle: 
+# [(267620078, 3488417963), (3488417935, 267620078), (3684965660, 267620078)]
+
+# list 转 tuple后查询
+_list = [1,2,3]
+engine.execute("SELECT e.'from', e.'to'  FROM edges as e where e.'fid'in {}".format(tuple(_list))).fetchall()
 ```
 {{< notice success >}} 
 - [df.to_sql](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_sql.html); 
