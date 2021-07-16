@@ -20,6 +20,16 @@
   weight = 5
 
 
+[[main]]
+  identifier = "others"
+  name = "others"
+  weight = 4
+
+[[main]]
+  parent = "others"
+  name = "flappy-bird"
+  url = "posts/others/flappy-bird-with-machine-learning/"
+
 
 [[main]]
   identifier = "about"
