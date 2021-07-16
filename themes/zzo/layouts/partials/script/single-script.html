@@ -19,16 +19,22 @@
 
 
 {{ if in .Params.Libraries "echarts" }}
-  <script defer src="{{ $echarts.echarts.url }}" crossorigin="anonymous"></script>
+  <!-- <script defer src="{{ $echarts.echarts.url }}" crossorigin="anonymous"></script> -->
+  {{ $echarts := resources.Get "js/charts/echarts.min.js" }}
+  <script defer src="{{ $echarts.RelPermalink }}"></script>
 {{ end }}
 
 {{ if in .Params.Libraries "echarts_wordcloud" }}
-  <script defer src="{{ $echarts.echarts_wordcloud.url }}" crossorigin="anonymous"></script>
+  <!-- <script defer src="{{ $echarts.echarts_wordcloud.url }}" crossorigin="anonymous"></script> -->
+  {{ $wordcloud := resources.Get "js/charts/echarts-wordcloud.min.js" }}
+  <script defer src="{{ $wordcloud.RelPermalink }}"></script>
 {{ end }}
 
 
 {{ if in .Params.Libraries "d3" }}
-  <script defer src="{{ $d3.d3.url }}" integrity="{{ $d3.d3.sri }}" crossorigin="anonymous"></script>
+  <!-- <script defer src="{{ $d3.d3.url }}" integrity="{{ $d3.d3.sri }}" crossorigin="anonymous"></script> -->
+  {{ $d3 := resources.Get "js/charts/d3.min.js" }}
+  <script defer src="{{ $d3.RelPermalink }}"></script>
 {{ end }}
 {{ if in .Params.Libraries "d3_hierarchy" }}
   <script defer src="{{ $d3.d3_hierarchy.url }}" integrity="{{ $d3.d3_hierarchy.sri }}" crossorigin="anonymous"></script>
@@ -128,21 +134,34 @@
 {{ end }}
 
 {{ if in .Params.Libraries "dplayer" }}
-  <link rel="stylesheet" href="{{ $css.dplayer.url }}" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="{{ $css.dplayer.url }}" crossorigin="anonymous">
   <script defer src="{{ $js.dplayer.url1 }}" crossorigin="anonymous"></script>
   <script defer src="{{ $js.dplayer.url2 }}" crossorigin="anonymous"></script>
-  <script defer src="{{ $js.dplayer.url3 }}" crossorigin="anonymous"></script>
+  <script defer src="{{ $js.dplayer.url3 }}" crossorigin="anonymous"></script> -->
+  {{ $css := resources.Get "sass/player/DPlayer.min.css" }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ $hls := resources.Get "js/player/hls.min.js" }}
+  <script defer src="{{ $hls.RelPermalink }}"></script>
+  {{ $flv := resources.Get "js/player/flv.min.js" }}
+  <script defer src="{{ $flv.RelPermalink }}"></script>
+  {{ $DPlayer := resources.Get "js/player/flv.min.js" }}
+  <script defer src="{{ $DPlayer.RelPermalink }}"></script>
 {{ end }}
 
 {{ if in .Params.Libraries "aplayer" }}
-  <link rel="stylesheet" href="{{ $css.aplayer.url }}" crossorigin="anonymous">
-  <script defer src="{{ $js.aplayer.url1 }}" crossorigin="anonymous"></script>
+  {{ $css := resources.Get "sass/player/APlayer.min.css" }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ $APlayer := resources.Get "js/player/APlayer.min.js" }}
+  <script defer src="{{ $APlayer.RelPermalink }}"></script>
 {{ end }}
 
 {{ if in .Params.Libraries "meting" }}
-  <link rel="stylesheet" href="{{ $css.aplayer.url }}" crossorigin="anonymous">
-  <script defer src="{{ $js.aplayer.url1 }}" crossorigin="anonymous"></script>
-  <script defer src="{{ $js.meting.url }}" crossorigin="anonymous"></script>
+  {{ $css := resources.Get "sass/player/APlayer.min.css" }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ $APlayer := resources.Get "js/player/APlayer.min.js" }}
+  <script defer src="{{ $APlayer.RelPermalink }}"></script>
+  {{ $Meting := resources.Get "js/player/Meting.min.js" }}
+  <script defer src="{{ $Meting.RelPermalink }}"></script>
 {{ end }}
 
 {{ if in .Params.Libraries "mermaid" }}
