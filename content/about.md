@@ -49,7 +49,7 @@ lastmod: '2021-07-14T08:18:01.717Z'
 ------------
 
 {{< dplayer 
-url="https://upos-sz-mirrorcos.bilivideo.com/upgcxcode/27/33/197943327/197943327-1-208.mp4?e=ig8euxZM2rNcNbKV7WdVhwdl7wdBhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1752602466&gen=playurlv2&os=cosbv&oi=465519761&trid=0643975b92914b4e8f45e3bec8912b1cT&platform=html5&upsig=d1d718e698736d3a2ef90580d6c5dc85&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&orderid=0,1&logo=80000000?t=app.bilibili.com" 
+url="http://106.75.233.64:10028/%e6%88%91%e7%9a%84%e8%a7%86%e9%a2%91/%e5%a4%96%e9%93%be/197943327-1-208.mp4" 
 container="dplayer_a" 
 loop=false >}}
     <div id="dplayer_a"></div>
