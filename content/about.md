@@ -49,7 +49,7 @@ lastmod: '2021-07-14T08:18:01.717Z'
 ------------
 
 {{< dplayer 
-url="http://106.75.233.64:10028/%e6%88%91%e7%9a%84%e8%a7%86%e9%a2%91/%e5%a4%96%e9%93%be/197943327-1-208.mp4" 
+url="https://tianyi.xunhs.cn/%e6%88%91%e7%9a%84%e8%a7%86%e9%a2%91/%e5%a4%96%e9%93%be/197943327-1-208.mp4" 
 container="dplayer_a" 
 loop=false >}}
     <div id="dplayer_a"></div>
