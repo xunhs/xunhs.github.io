@@ -1879,7 +1879,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2335,8 +2335,14 @@ I&rsquo;m always reachable at (212)867-5509</p>
 <h4 id="一个例子">一个例子</h4>
 <p>匹配所有email:</p>
 <blockquote>
-<p><a href="mailto:gaoyaqi411@126.com">gaoyaqi411@126.com</a> <br />
+<p>
+
+<a href="mailto:gaoyaqi411@126.com">gaoyaqi411@126.com</a> <br />
+
+
 <a href="mailto:dyumc@google.net">dyumc@google.net</a><br />
+
+
 <a href="mailto:sam@sjtu.edu">sam@sjtu.edu</a></p>
 </blockquote>
 <p>思路：</p>
@@ -2395,9 +2401,15 @@ replace: $2 $1
 <li>
 <p>匹配markdown中的link标签，并替换为html标签</p>
 <blockquote>
-<p>[google](<a href="http://google.com">http://google.com</a>), [test]<br />
-[itp](<a href="http://itp.nyu.edu">http://itp.nyu.edu</a>)<br />
-[Coding Rainbow](<a href="http://codingrainbow.com">http://codingrainbow.com</a>)</p>
+<p>[google](
+
+<a href="http://google.com" target="_blank" rel="noopener">http://google.com</a>), [test]<br />
+[itp](
+
+<a href="http://itp.nyu.edu" target="_blank" rel="noopener">http://itp.nyu.edu</a>)<br />
+[Coding Rainbow](
+
+<a href="http://codingrainbow.com" target="_blank" rel="noopener">http://codingrainbow.com</a>)</p>
 </blockquote>
 <p>第一个想考虑匹配[google]这个东西，立马想到正则表达式<code>\[.*\]</code>。第一行的内容会全部匹配下来，而不能区分[google]和[test]。 之所以这样，是<strong>因为.是贪婪的，他表示所有，所有能匹配到的</strong>，所以当然也包括了]，一直到这一行的最后一个]，它才停止。所以为了让它能正确匹配，需要<strong>去掉这种贪婪的属性</strong>。这里用到？ 。 <strong>当?放在了quantifiers符号后，表示去掉贪婪属性，匹配到终止条件，即可停下</strong>。即<code>\[.*?\]</code><br />
 <div class="expand">

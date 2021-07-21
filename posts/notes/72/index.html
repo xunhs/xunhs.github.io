@@ -1880,7 +1880,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2300,7 +2300,7 @@
 <h3 id="常用操作">常用操作</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2331,7 +2331,7 @@
 </span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 <span class="n">p</span> <span class="o">=</span> <span class="n">Path</span><span class="p">()</span>
 
 <span class="n">p</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;d:\test\tt.txt.bk&#39;</span><span class="p">)</span>
@@ -2365,14 +2365,14 @@
 </div><h3 id="遍历文件夹">遍历文件夹</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">p</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;d:\test&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">p</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;d:\test&#39;</span><span class="p">)</span>
 <span class="c1"># WindowsPath(&#39;d:/test&#39;)</span>
 <span class="n">p</span><span class="o">.</span><span class="n">iterdir</span><span class="p">()</span> <span class="c1"># 相当于os.listdir</span>
 <span class="n">p</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">)</span> <span class="c1"># 相当于os.listdir, 但是可以添加匹配条件</span>
@@ -2382,14 +2382,14 @@
 </div><h3 id="创建文件夹">创建文件夹</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">p</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;d:\test\tt\dd&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">p</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;d:\test\tt\dd&#39;</span><span class="p">)</span>
 <span class="n">p</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># 创建文件目录(前提是tt目录存在, 否则会报错)</span>
 <span class="c1"># 一般我会使用下面这种创建方法</span>
 <span class="n">p</span><span class="o">.</span><span class="n">mkdir</span><span class="p">((</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># 递归创建文件目录</span>

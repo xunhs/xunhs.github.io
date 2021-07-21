@@ -1880,7 +1880,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2301,10 +2301,14 @@
 <h3 id="keplergl-docker">Kepler.gl docker</h3>
 <p><del>docker run –name kepler.gl -p 10087:80 -e MapboxAccessToken=&ldquo;pk.eyJ1IjoidHJvcGljYWxocyIsImEiOiJjazZrZDJlMHgwMnZhM21wYW9oNWl4eGxoIn0.w_nfPS4RC5ERPpMMutwgLg&rdquo; –restart always -d crazycapivara/kepler.gl</del></p>
 <p>2021.2.19<br />
-为了保持kepler.gl保持最新版本，可使用docker build构建容器，然后拉取。参考：<a href="https://github.com/xunhs/docker-kepler.gl">https://github.com/xunhs/docker-kepler.gl</a>。<br />
+为了保持kepler.gl保持最新版本，可使用docker build构建容器，然后拉取。参考：
+
+<a href="https://github.com/xunhs/docker-kepler.gl" target="_blank" rel="noopener">https://github.com/xunhs/docker-kepler.gl</a>。<br />
 另外，在这个仓库里面：1）添加apk和npm源，加速构建；2）默认将Mapbox的token加入build的环境变量中</p>
 <h3 id="在线音乐搜索播放器">在线音乐搜索/播放器</h3>
-<p>Refer: <a href="https://github.com/oldiy/music-player">https://github.com/oldiy/music-player</a></p>
+<p>Refer: 
+
+<a href="https://github.com/oldiy/music-player" target="_blank" rel="noopener">https://github.com/oldiy/music-player</a></p>
 <pre><code class="language-bash">docker run -d --name online-music-player -p 264:264 -v &lt;本机缓存目录&gt;:/var/www/html/cache oldiy/music-player-docker</code></pre>
 <h3 id="ccaaaria2一键部署">CCAA（Aria2一键部署）</h3>
 <ul>
@@ -2392,7 +2396,9 @@ apt-get install -y git nano</code></pre></p>
 <p>pip换源<br />
 Pip的配置文件为用户根目录下的：~/.pip/pip.conf（Windows路径为：C:\Users&lt;UserName&gt;\pip\pip.ini）, 您可以配置如下内容：</p><br />
 [global]<br />
-index-url = <a href="https://repo.huaweicloud.com/repository/pypi/simple">https://repo.huaweicloud.com/repository/pypi/simple</a><br />
+index-url = 
+
+<a href="https://repo.huaweicloud.com/repository/pypi/simple" target="_blank" rel="noopener">https://repo.huaweicloud.com/repository/pypi/simple</a><br />
 trusted-host = repo.huaweicloud.com<br />
 timeout = 120</p>
 </li>

@@ -1879,7 +1879,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2294,7 +2294,7 @@
 <h4 id="init">Init</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2303,7 +2303,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">osmnx</span> <span class="k">as</span> <span class="nn">ox</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">osmnx</span> <span class="k">as</span> <span class="nn">ox</span>
 <span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 <span class="n">ox</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">log_console</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">use_cache</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -2315,11 +2315,11 @@
 </div><h4 id="query-place">Query place</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">place</span> <span class="o">=</span><span class="s2">&#34;Shenzhen&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">place</span> <span class="o">=</span><span class="s2">&#34;Shenzhen&#34;</span>
 <span class="n">G</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">graph_from_place</span><span class="p">(</span><span class="n">place</span><span class="p">,</span> <span class="n">network_type</span><span class="o">=</span><span class="s1">&#39;drive&#39;</span><span class="p">,</span><span class="n">which_result</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -2346,10 +2346,10 @@
 <h4 id="plot-graph">Plot graph</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">plot_graph</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">edge_linewidth</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">bgcolor</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">plot_graph</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">edge_linewidth</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">bgcolor</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><p><p class="md_image">
@@ -2361,7 +2361,7 @@
 <a href="https://github.com/gboeing/osmnx-examples/blob/master/notebooks/05-save-load-networks.ipynb" target="_blank" rel="noopener">osmnx-examples/05-save-load-networks.ipynb</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2381,7 +2381,7 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># get a network</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># get a network</span>
 <span class="c1"># save graph as a shapefile</span>
 <span class="c1"># save/load graph as a graphml file: this is the best way to save your model</span>
 <span class="c1"># for subsequent work later</span>
@@ -2404,18 +2404,18 @@
 </div><h4 id="calculate-basic-network-indicators">Calculate basic network indicators</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">stats</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">basic_stats</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">stats</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">basic_stats</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 <span class="n">stats</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>out:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2449,7 +2449,7 @@
 </span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="p">{</span><span class="s1">&#39;n&#39;</span><span class="p">:</span> <span class="mi">33121</span><span class="p">,</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="p">{</span><span class="s1">&#39;n&#39;</span><span class="p">:</span> <span class="mi">33121</span><span class="p">,</span>
  <span class="s1">&#39;m&#39;</span><span class="p">:</span> <span class="mi">73564</span><span class="p">,</span>
  <span class="s1">&#39;k_avg&#39;</span><span class="p">:</span> <span class="mf">4.442136408924851</span><span class="p">,</span>
  <span class="s1">&#39;intersection_count&#39;</span><span class="p">:</span> <span class="mi">29210</span><span class="p">,</span>
@@ -2486,7 +2486,7 @@
 </div><h4 id="fast-nearest-nodeedge-search-with-osmnx">Fast nearest node/edge search with OSMnx</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2507,7 +2507,7 @@
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">center_point</span> <span class="o">=</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lng</span> <span class="c1"># 注意坐标格式，纬度在前，经度在后</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">center_point</span> <span class="o">=</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lng</span> <span class="c1"># 注意坐标格式，纬度在前，经度在后</span>
 
 <span class="c1"># find the nearest node to some point</span>
 <span class="n">center_node</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">get_nearest_node</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">center_point</span><span class="p">)</span>
@@ -2536,12 +2536,12 @@
 <h5 id="convert-a-graph-into-node-andor-edge-geodataframes">Convert a graph into node and/or edge GeoDataFrames</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">edges_gdf</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">graph_to_gdfs</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">edges_gdf</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">graph_to_gdfs</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">nodes_gdf</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">graph_to_gdfs</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">edges</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">edges_gdf</span><span class="o">.</span><span class="n">head</span><span class="p">();</span><span class="n">nodes_gdf</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </code></pre></td></tr></table>
@@ -2862,10 +2862,10 @@ edges_gdf </p>
 <h5 id="convert-node-and-edge-geodataframes-into-a-multidigraph">Convert node and edge GeoDataFrames into a MultiDiGraph</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">G</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">graph_from_gdfs</span><span class="p">(</span><span class="n">gdf_edges</span><span class="o">=</span><span class="n">edges_gdf</span><span class="p">,</span> <span class="n">gdf_nodes</span><span class="o">=</span><span class="n">nodes_gdf</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">G</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">graph_from_gdfs</span><span class="p">(</span><span class="n">gdf_edges</span><span class="o">=</span><span class="n">edges_gdf</span><span class="p">,</span> <span class="n">gdf_nodes</span><span class="o">=</span><span class="n">nodes_gdf</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -2881,14 +2881,14 @@ edges_gdf </p>
 <p>Pick two nodes. Then find the shortest path between origin and destination, using weight=&lsquo;length&rsquo; to find the shortest path by minimizing distance traveled (otherwise it treats each edge as weight=1).</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># find the shortest path (by distance) between these nodes then plot it</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># find the shortest path (by distance) between these nodes then plot it</span>
 <span class="n">orig</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">G</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># node id 3377201155</span>
 <span class="n">dest</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">G</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># node id 3377201149</span>
 <span class="n">route</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">shortest_path</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">orig</span><span class="p">,</span> <span class="n">dest</span><span class="p">)</span> <span class="c1"># [3377201155, 3145194682, ...]</span>
@@ -2898,7 +2898,7 @@ edges_gdf </p>
 </div><p>The routing correctly handles one-way streets:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2906,7 +2906,7 @@ edges_gdf </p>
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">orig_pnt</span> <span class="o">=</span> <span class="p">(</span><span class="mf">22.67304</span><span class="p">,</span> <span class="mf">114.0133</span><span class="p">)</span> <span class="c1"># 注意坐标格式，纬度在前，经度在后</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">orig_pnt</span> <span class="o">=</span> <span class="p">(</span><span class="mf">22.67304</span><span class="p">,</span> <span class="mf">114.0133</span><span class="p">)</span> <span class="c1"># 注意坐标格式，纬度在前，经度在后</span>
 <span class="n">dest_pnt</span> <span class="o">=</span> <span class="p">(</span><span class="mf">22.589</span><span class="p">,</span> <span class="mf">114.0973</span><span class="p">)</span>
 <span class="n">origin_node</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">get_nearest_node</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">orig_pnt</span><span class="p">)</span>
 <span class="n">destination_node</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">get_nearest_node</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">dest_pnt</span><span class="p">)</span>
@@ -2933,7 +2933,7 @@ edges_gdf </p>
 <p>add_edge_speeds: The add_edge_speeds function add edge speeds (km per hour) to graph as new speed_kph edge attributes. Imputes free-flow travel speeds for all edges based on mean maxspeed value of edges, per highway type. This mean-imputation can obviously be imprecise, and the caller can override it by passing in hwy_speeds and/or fallback arguments that correspond to local speed limit standards.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2955,7 +2955,7 @@ edges_gdf </p>
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># impute speed on all edges missing data</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># impute speed on all edges missing data</span>
 <span class="n">G</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">add_edge_speeds</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 
 <span class="c1"># calculate travel time (seconds) for all edges</span>
@@ -3023,7 +3023,7 @@ edges_gdf </p>
 <p>Routing by travel speeds and times</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3038,7 +3038,7 @@ edges_gdf </p>
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># calculate two routes by minimizing travel distance vs travel time</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># calculate two routes by minimizing travel distance vs travel time</span>
 <span class="n">orig</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">G</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">dest</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">G</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">route1</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">shortest_path</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">orig</span><span class="p">,</span> <span class="n">dest</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s1">&#39;length&#39;</span><span class="p">)</span>
@@ -3058,7 +3058,7 @@ Route 1 is 28753 meters and takes 1787 seconds.<br />
 Route 2 is 36221 meters and takes 1647 seconds.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3071,7 +3071,7 @@ Route 2 is 36221 meters and takes 1647 seconds.</p>
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># pick route colors</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># pick route colors</span>
 <span class="n">c1</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span> <span class="c1">#length</span>
 <span class="n">c2</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span> <span class="c1">#travel_time</span>
 <span class="n">rc1</span> <span class="o">=</span> <span class="p">[</span><span class="n">c1</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">route1</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>

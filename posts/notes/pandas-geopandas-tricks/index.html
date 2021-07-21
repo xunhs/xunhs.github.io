@@ -1879,7 +1879,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2304,7 +2304,7 @@ Also supported: .gz, .bz2, .xz</p>
 HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为理想的存储格式，文件后缀名为h5，存储读取速度非常快，且可在文件内部按照明确的层次存储数据，同一个HDF5可以看做一个高度整合的文件夹，其内部可存放不同类型的数据。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2336,7 +2336,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="c1"># 创建新的对象、读入已存在的对象</span>
@@ -2372,10 +2372,10 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <h4 id="读取csv">读取csv</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">one_piece_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;gbk&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="n">error_bad_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">one_piece_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;gbk&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="n">error_bad_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -2386,13 +2386,13 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <h4 id="保存为json">保存为json</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># 建议保存方法:</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># 建议保存方法:</span>
 <span class="n">parcels_info_df</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="s1">&#39;ParcelsInfo.json&#39;</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;index’)</span>
 <span class="c1"># 同样读取方法：</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">&#39;ParcelsInfo.json&#39;</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;index’)</span>
@@ -2401,24 +2401,24 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </div><p>其他保存方法：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./name.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./name.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
     <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">result_dict</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="dataframe-and-dict">DataFrame and Dict:</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Dict 2 DataFrame:</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Dict 2 DataFrame:</span>
 <span class="n">kmeans_result_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">kmeans_result_dict</span><span class="p">)</span>
 <span class="c1"># DataFrame 2 Dict:</span>
 <span class="n">kmeans_result_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">kmeans_result_df</span><span class="p">)</span>
@@ -2427,7 +2427,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </div><h4 id="list-of-dict-and-dataframe">List of dict and DataFrame</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2437,7 +2437,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># List of dict to DataFrame</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># List of dict to DataFrame</span>
 <span class="n">data_list</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;points&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;5:00&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">2010</span><span class="p">},</span> 
              <span class="p">{</span><span class="s1">&#39;points&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;6:00&#39;</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="s2">&#34;february&#34;</span><span class="p">},</span> 
              <span class="p">{</span><span class="s1">&#39;points&#39;</span><span class="p">:</span><span class="mi">90</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;9:00&#39;</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="s1">&#39;january&#39;</span><span class="p">},</span> 
@@ -2450,7 +2450,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </div><h4 id="dict2nametuple">dict2nametuple</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2465,7 +2465,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
 <span class="n">args_dict</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;no_cuda&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> 
     <span class="s1">&#39;fastmode&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> 
@@ -2483,7 +2483,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </div><h4 id="dataframe导出markdown">DataFrame导出Markdown</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2495,7 +2495,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">({</span>
     <span class="s2">&#34;weekday&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;monday&#34;</span><span class="p">,</span> <span class="s2">&#34;thursday&#34;</span><span class="p">,</span> <span class="s2">&#34;wednesday&#34;</span><span class="p">],</span>
@@ -2510,7 +2510,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </div><h4 id="joblib">joblib</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2519,7 +2519,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 保存变量</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 保存变量</span>
 <span class="n">metrics_fp</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">gensim_model_dir</span><span class="p">,</span> <span class="s1">&#39;metrics.dat&#39;</span><span class="p">)</span>
 <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">metric_list</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">metrics_fp</span><span class="p">))</span>
 
@@ -2532,7 +2532,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <h4 id="postgresql交互">postgresql交互</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">  1
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -2651,7 +2651,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </span><span class="lnt">117
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 <span class="kn">from</span> <span class="nn">geoalchemy2</span> <span class="kn">import</span> <span class="n">Geometry</span><span class="p">,</span> <span class="n">WKTElement</span>
 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -2774,17 +2774,17 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <p>将 DataFrame 保存至 mongodb</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">mongo</span><span class="o">.</span><span class="n">collection</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">mongo</span><span class="o">.</span><span class="n">collection</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="to_sqlite">to_sqlite</h4>
 <p>有时候大批量的df.query查询太耗时间了，没有<strong>sql查询速度快</strong>。因此想到的一个解决方案是把查询目标的DataFrame存储到sqlite数据库，然后使用sql进行查询</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2811,7 +2811,7 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># pip install sqlalchemy</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># pip install sqlalchemy</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
@@ -2890,11 +2890,11 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;VehicleNum&#39;</span><span class="p">,</span><span class="s1">&#39;Stime&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;VehicleNum&#39;</span><span class="p">,</span><span class="s1">&#39;Stime&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 <span class="c1">#ascending: True 升序,False 降序</span>
 </code></pre></td></tr></table>
 </div>
@@ -2902,11 +2902,11 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 <li><strong>遍历</strong>行: 如果必须要要用iterrows，可以用itertuples来进行替换。<strong>在任何情况下itertuples都比iterrows快很多倍</strong>。
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="s1">&#39;c1&#39;</span><span class="p">),</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="s1">&#39;c2&#39;</span><span class="p">))</span>
 </code></pre></td></tr></table>
 </div>
@@ -2943,13 +2943,13 @@ HDF5（Hierarchical Data Formal）是用于存储大规模数值数据的较为�
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="kn">import</span> <span class="nn">sweetviz</span> <span class="k">as</span> <span class="nn">sz</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">  <span class="kn">import</span> <span class="nn">sweetviz</span> <span class="k">as</span> <span class="nn">sz</span>
   <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
   <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;train_set.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
   <span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;test_set.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -2991,12 +2991,12 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># pd.concat([A, B]) # 有[]</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># pd.concat([A, B]) # 有[]</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># 列之间拼接</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># 行之间拼接</span>
 </code></pre></td></tr></table>
@@ -3008,11 +3008,11 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># pd.merge(A, B, left_on, right_on, how) # 无[]</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># pd.merge(A, B, left_on, right_on, how) # 无[]</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;airport_ref&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -3032,7 +3032,7 @@ compare_report.show_html('Comparing.html')
 <li>链式表达式
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3040,7 +3040,7 @@ compare_report.show_html('Comparing.html')
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">demo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">demo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
     <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="p">})</span>
@@ -3053,11 +3053,11 @@ compare_report.show_html('Comparing.html')
 <li>对外部变量的支持:query()表达式还支持使用外部变量，只需要在外部变量前加上@符号即可
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">2019</span><span class="p">]</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">2019</span><span class="p">]</span>
 <span class="n">netflix</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&#34;release_year in @years&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -3065,7 +3065,7 @@ compare_report.show_html('Comparing.html')
 <li>对常规语句的支持: 可以直接解析Python语句，极大地自由度
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3075,7 +3075,7 @@ compare_report.show_html('Comparing.html')
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">country_count</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">country_count</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="s1">&#39;&#39;&#39;
 </span><span class="s1">    计算涉及国家数量
 </span><span class="s1">    &#39;&#39;&#39;</span>
@@ -3092,25 +3092,25 @@ compare_report.show_html('Comparing.html')
 <h5 id="apply--lambda">apply + lambda</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">data</span><span class="o">.</span><span class="n">gender</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="s1">&#39;女性&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="s1">&#39;F&#39;</span> <span class="k">else</span> <span class="s1">&#39;男性&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">data</span><span class="o">.</span><span class="n">gender</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="s1">&#39;女性&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="s1">&#39;F&#39;</span> <span class="k">else</span> <span class="s1">&#39;男性&#39;</span><span class="p">)</span>
 <span class="c1"># 等同于: data.gender.map({&#39;F&#39;: &#39;女性&#39;, &#39;M&#39;: &#39;男性&#39;})</span>
 </code></pre></td></tr></table>
 </div>
 </div><h5 id="apply输入多参">apply输入多参</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="k">def</span> <span class="nf">_get_coordinates</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">points_df</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="k">def</span> <span class="nf">_get_coordinates</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">points_df</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">points_df</span><span class="p">[</span><span class="n">points_df</span><span class="o">.</span><span class="n">point_id</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">traj_points</span><span class="p">)]</span>
 	<span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">row</span><span class="o">.</span><span class="n">y</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
@@ -3124,7 +3124,7 @@ compare_report.show_html('Comparing.html')
 <h5 id="apply-输入多列数据">apply 输入多列数据</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3136,7 +3136,7 @@ compare_report.show_html('Comparing.html')
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="k">def</span> <span class="nf">generate_descriptive_statement</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">count</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="k">def</span> <span class="nf">generate_descriptive_statement</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">count</span><span class="p">):</span>
     <span class="n">year</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
     <span class="n">gender</span> <span class="o">=</span> <span class="s1">&#39;女性&#39;</span> <span class="k">if</span> <span class="n">gender</span> <span class="ow">is</span> <span class="s1">&#39;F&#39;</span> <span class="k">else</span> <span class="s1">&#39;男性&#39;</span>
     <span class="k">return</span> <span class="s1">&#39;在</span><span class="si">{}</span><span class="s1">年，叫做</span><span class="si">{}</span><span class="s1">性别为</span><span class="si">{}</span><span class="s1">的新生儿有</span><span class="si">{}</span><span class="s1">个。&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
@@ -3155,12 +3155,12 @@ compare_report.show_html('Comparing.html')
 <h5 id="apply-输出多列数据">apply 输出多列数据</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># 提取name列中的首字母和剩余部分字母</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># 提取name列中的首字母和剩余部分字母</span>
 <span class="n">_apply</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="nb">list</span><span class="p">(</span><span class="n">_apply</span><span class="p">))</span>
 </code></pre></td></tr></table>
@@ -3178,7 +3178,7 @@ compare_report.show_html('Comparing.html')
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3195,7 +3195,7 @@ compare_report.show_html('Comparing.html')
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">swifter</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]})</span>
@@ -3226,17 +3226,17 @@ compare_report.show_html('Comparing.html')
 <p>在 <code>read_csv()</code> 方法中，通过 parse_dates 参数直接将某些列转换成 datetime64 类型, index_col设置索引</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;sample-salesv3.csv&#39;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;date&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;sample-salesv3.csv&#39;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;date&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><h5 id="to_datetime">to_datetime</h5>
 <h6 id="timestamp时间点">Timestamp(时间点)</h6>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3247,7 +3247,7 @@ compare_report.show_html('Comparing.html')
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># unix time2datetime</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># unix time2datetime</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="mi">1490195805</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
 <span class="c1"># =&gt; Timestamp(&#39;2017-03-22 15:16:45&#39;)</span>
 
@@ -3269,11 +3269,11 @@ compare_report.show_html('Comparing.html')
 <h6 id="datetimeindex时间序列索引">DatetimeIndex(时间序列索引)</h6>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">([</span><span class="mf">1490195805.433</span><span class="p">,</span> <span class="mf">1490195805.433502912</span><span class="p">],</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">([</span><span class="mf">1490195805.433</span><span class="p">,</span> <span class="mf">1490195805.433502912</span><span class="p">],</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
 <span class="c1">#=&gt;DatetimeIndex([&#39;2017-03-22 15:16:45.433000088&#39;, &#39;2017-03-22 15:16:45.433502913&#39;], dtype=&#39;datetime64[ns]&#39;, freq=None)</span>
 </code></pre></td></tr></table>
 </div>
@@ -3288,15 +3288,17 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">([</span><span class="s1">&#39;2017-03-22 15:16:45.433000088&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-03-22 15:16:45.433502913&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="o">/</span> <span class="mi">10</span><span class="o">**</span><span class="mi">9</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">([</span><span class="s1">&#39;2017-03-22 15:16:45.433000088&#39;</span><span class="p">,</span> <span class="s1">&#39;2017-03-22 15:16:45.433502913&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="o">/</span> <span class="mi">10</span><span class="o">**</span><span class="mi">9</span>
 <span class="c1">#=&gt; Float64Index([1490195805.433, 1490195805.433503], dtype=&#39;float64&#39;)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>参考: <a href="https://stackoverflow.com/questions/54313463/pandas-datetime-to-unix-timestamp-seconds">https://stackoverflow.com/questions/54313463/pandas-datetime-to-unix-timestamp-seconds</a></p>
+</div><p>参考: 
+
+<a href="https://stackoverflow.com/questions/54313463/pandas-datetime-to-unix-timestamp-seconds" target="_blank" rel="noopener">https://stackoverflow.com/questions/54313463/pandas-datetime-to-unix-timestamp-seconds</a></p>
 <h5 id="date_range">date_range</h5>
 <p>Return a fixed frequency DatetimeIndex. 参考: 
 
@@ -3323,7 +3325,7 @@ compare_report.show_html('Comparing.html')
 <h6 id="examples">examples:</h6>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3336,7 +3338,7 @@ compare_report.show_html('Comparing.html')
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="s1">&#39;1/1/2018&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;1/08/2018&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="s1">&#39;1/1/2018&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;1/08/2018&#39;</span><span class="p">)</span>
 <span class="c1">#=&gt; DatetimeIndex([&#39;2018-01-01&#39;, &#39;2018-01-02&#39;, &#39;2018-01-03&#39;, &#39;2018-01-04&#39;,&#39;2018-01-05&#39;, &#39;2018-01-06&#39;, &#39;2018-01-07&#39;, &#39;2018-01-08&#39;],dtype=&#39;datetime64[ns]&#39;, freq=&#39;D&#39;)</span>
 
 <span class="c1"># 开始为2018.1.1, 取8个日期，默认间隔为天</span>
@@ -3352,7 +3354,7 @@ compare_report.show_html('Comparing.html')
 </div><h5 id="日期检索">日期检索</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3368,7 +3370,7 @@ compare_report.show_html('Comparing.html')
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)})</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)})</span>
 <span class="n">test_df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="s1">&#39;2020-1-1&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;2020-6-1&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="n">test_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
 <span class="c1"># 获取2020年的数据</span>
@@ -3389,12 +3391,12 @@ compare_report.show_html('Comparing.html')
 要进行分组运算第一步当然就是分组，在pandas中对数据框进行分组使用到groupby()方法，其主要使用到的参数为by，这个参数用于传入分组依据的变量名称，<strong>当变量为1个时传入名称字符串即可，当为多个时传入这些变量名称列表</strong>，DataFrame对象通过groupby()之后<strong>返回一个生成器</strong>，需要将其列表化才能得到需要的分组后的子集</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">group_df</span> <span class="o">=</span> <span class="n">trajs_with_id_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;car_id&#39;</span><span class="p">])[[</span><span class="s1">&#39;traj_id&#39;</span><span class="p">,</span> <span class="s1">&#39;traj_points&#39;</span><span class="p">]]</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">group_df</span> <span class="o">=</span> <span class="n">trajs_with_id_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;car_id&#39;</span><span class="p">])[[</span><span class="s1">&#39;traj_id&#39;</span><span class="p">,</span> <span class="s1">&#39;traj_points&#39;</span><span class="p">]]</span>
 <span class="n">groups</span> <span class="o">=</span> <span class="p">[</span><span class="n">group</span> <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">group_df</span><span class="p">]</span>
 <span class="n">groups</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></td></tr></table>
@@ -3408,10 +3410,10 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">groups</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;assigned_c&#39;</span><span class="p">,</span> <span class="s1">&#39;osmid&#39;</span><span class="p">])[[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">groups</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;assigned_c&#39;</span><span class="p">,</span> <span class="s1">&#39;osmid&#39;</span><span class="p">])[[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -3422,12 +3424,12 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">agg_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;assigned_c&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;min&#39;</span><span class="p">,</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;std&#39;</span><span class="p">]})</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">agg_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;assigned_c&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;min&#39;</span><span class="p">,</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;std&#39;</span><span class="p">]})</span>
 										<span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 </code></pre></td></tr></table>
@@ -3437,14 +3439,14 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">agg_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;assigned_c&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">mean_x</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">NamedAgg</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">),</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">agg_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;assigned_c&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">mean_x</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">NamedAgg</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">),</span>
                                         <span class="n">max_x</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">NamedAgg</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;max&#39;</span><span class="p">),</span>
                                         <span class="n">min_x</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">NamedAgg</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;min&#39;</span><span class="p">),)</span>
 										<span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -3458,25 +3460,25 @@ compare_report.show_html('Comparing.html')
 <h4 id="忽略warning全局设置">忽略warning全局设置</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">warnings</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="编码错误illegal-multibyte-sequence">编码错误（illegal multibyte sequence）</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="k">def</span> <span class="nf">get_df</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span> 
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="k">def</span> <span class="nf">get_df</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span> 
     <span class="n">poi_df</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;gb2312&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
         <span class="n">poi_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -3491,7 +3493,7 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3499,7 +3501,7 @@ compare_report.show_html('Comparing.html')
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 全局设置</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 全局设置</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.float_format&#39;</span><span class="p">,</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
 <span class="c1"># 或</span>
 <span class="c1"># 单个DataFrame生效</span>
@@ -3513,11 +3515,11 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span> <span class="o">=</span> <span class="kc">None</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="kc">None</span>
 </code></pre></td></tr></table>
 </div>
@@ -3529,7 +3531,7 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3559,7 +3561,7 @@ compare_report.show_html('Comparing.html')
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">fiona</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">fiona</span>
 <span class="n">fiona</span><span class="o">.</span><span class="n">supported_drivers</span> 
 
 <span class="p">{</span><span class="s1">&#39;AeronavFAA&#39;</span><span class="p">:</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span>
@@ -3596,13 +3598,13 @@ compare_report.show_html('Comparing.html')
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">geopandas</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">geopandas</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span>
 <span class="c1"># gdb or gpkg&#39;s layer</span>
 <span class="n">gdb_fp</span> <span class="o">=</span> <span class="s1">&#39;/workspace/UrbanFunctionalRegionalization/map_doc/regionalization.gdb&#39;</span>
 <span class="n">thiessen_gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">geopandas</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">gdb_fp</span><span class="p">,</span> <span class="n">layer</span><span class="o">=</span><span class="s1">&#39;thiessen_cliped&#39;</span><span class="p">)</span>
@@ -3616,10 +3618,10 @@ For a full list of supported formats, type <code>import fiona; fiona.supported_d
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">countries_gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&#34;countries.shp&#34;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">countries_gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&#34;countries.shp&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -3627,10 +3629,10 @@ For a full list of supported formats, type <code>import fiona; fiona.supported_d
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">countries_gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&#34;countries.geojson&#34;</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s1">&#39;GeoJSON&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">countries_gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&#34;countries.geojson&#34;</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s1">&#39;GeoJSON&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -3638,21 +3640,21 @@ For a full list of supported formats, type <code>import fiona; fiona.supported_d
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">countries_gdf</span><span class="o">.</span><span class="n">to_json</span><span class="p">()</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">countries_gdf</span><span class="o">.</span><span class="n">to_json</span><span class="p">()</span>
 </code></pre></td></tr></table>
 </div>
 </div></li>
 <li>Writing to GeoPackage
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">countries_gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&#34;package.gpkg&#34;</span><span class="p">,</span> <span class="n">layer</span><span class="o">=</span><span class="s1">&#39;countries&#39;</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">&#34;GPKG&#34;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">countries_gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&#34;package.gpkg&#34;</span><span class="p">,</span> <span class="n">layer</span><span class="o">=</span><span class="s1">&#39;countries&#39;</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">&#34;GPKG&#34;</span><span class="p">)</span>
 <span class="n">cities_gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&#34;package.gpkg&#34;</span><span class="p">,</span> <span class="n">layer</span><span class="o">=</span><span class="s1">&#39;cities&#39;</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">&#34;GPKG&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -3665,10 +3667,10 @@ For a full list of supported formats, type <code>import fiona; fiona.supported_d
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">trajs_gpd_df</span> <span class="o">=</span> <span class="n">trajs_df</span><span class="o">.</span><span class="n">set_geometry</span><span class="p">(</span><span class="s1">&#39;line_geo&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">trajs_gpd_df</span> <span class="o">=</span> <span class="n">trajs_df</span><span class="o">.</span><span class="n">set_geometry</span><span class="p">(</span><span class="s1">&#39;line_geo&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -3676,12 +3678,12 @@ For a full list of supported formats, type <code>import fiona; fiona.supported_d
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">shapely.geometry</span> <span class="kn">import</span> <span class="n">Point</span><span class="p">,</span> <span class="n">LineString</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">shapely.geometry</span> <span class="kn">import</span> <span class="n">Point</span><span class="p">,</span> <span class="n">LineString</span>
 <span class="n">geometry</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(),</span> <span class="n">Point</span><span class="p">(),</span> <span class="o">...</span><span class="p">]</span> <span class="ow">or</span> <span class="p">[</span><span class="n">LineString</span><span class="p">([</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="o">...</span><span class="p">]),</span> <span class="o">...</span><span class="p">]</span> <span class="ow">or</span> <span class="o">...</span>
 <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="p">[])</span>
 </code></pre></td></tr></table>
@@ -3691,7 +3693,7 @@ For a full list of supported formats, type <code>import fiona; fiona.supported_d
 shaply包的vectorized包含着一些对查询的优化，通过shaply和geopandas一起协作可以达到较好的优化效果。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3700,7 +3702,7 @@ shaply包的vectorized包含着一些对查询的优化，通过shaply和geopand
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">shapely.vectorized</span> <span class="k">as</span> <span class="nn">sv</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">shapely.vectorized</span> <span class="k">as</span> <span class="nn">sv</span>
 <span class="n">point_df</span> <span class="o">=</span> <span class="n">point_df</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;lon&#39;</span><span class="p">,</span> <span class="s1">&#39;lat&#39;</span><span class="p">]]</span>
 
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">ploy_gdf</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>

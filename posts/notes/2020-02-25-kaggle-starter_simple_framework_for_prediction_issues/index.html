@@ -1879,7 +1879,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2296,7 +2296,7 @@
 <p>Adding needed libraries and reading data</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2314,7 +2314,7 @@
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -2336,12 +2336,12 @@
 <p>Checking for missing data</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">NAs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">train</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span> <span class="n">test</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Train&#39;</span><span class="p">,</span> <span class="s1">&#39;Test&#39;</span><span class="p">])</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">NAs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">train</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span> <span class="n">test</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Train&#39;</span><span class="p">,</span> <span class="s1">&#39;Test&#39;</span><span class="p">])</span>
 <span class="n">NAs</span><span class="p">[</span><span class="n">NAs</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
 
 </code></pre></td></tr></table>
@@ -2533,7 +2533,7 @@
 <h3 id="importing-public-functions">Importing public functions</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2552,7 +2552,7 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Prints R2 and RMSE scores</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Prints R2 and RMSE scores</span>
 <span class="k">def</span> <span class="nf">get_score</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">lables</span><span class="p">):</span>    
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;R2: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r2_score</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">lables</span><span class="p">)))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;RMSE: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">lables</span><span class="p">))))</span>
@@ -2574,7 +2574,7 @@
 </div><h3 id="splitting-to-features-and-labels-and-deleting-variables-i-dont-need">Splitting to features and labels and deleting variables I don&rsquo;t need</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2587,7 +2587,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Spliting to features and lables and deleting variable I don&#39;t need</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Spliting to features and lables and deleting variable I don&#39;t need</span>
 <span class="n">train_labels</span> <span class="o">=</span> <span class="n">train</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">)</span>
 
 <span class="n">features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">train</span><span class="p">,</span> <span class="n">test</span><span class="p">],</span> <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">])</span>
@@ -2620,30 +2620,30 @@
 <li>众数（filling with most popular values）
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">features</span><span class="p">[</span><span class="s1">&#39;MSZoning&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="s1">&#39;MSZoning&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">features</span><span class="p">[</span><span class="s1">&#39;MSZoning&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="s1">&#39;MSZoning&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code></code></pre></li>
 <li>0（filling with 0）
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">features</span><span class="p">[</span><span class="s1">&#39;TotalBsmtSF&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">features</span><span class="p">[</span><span class="s1">&#39;TotalBsmtSF&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code></code></pre></li>
 <li>平均值（filling with means）
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">features</span><span class="p">[</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">features</span><span class="p">[</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code></code></pre></li>
@@ -2654,10 +2654,10 @@
 <li>NA用新值代替
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">features</span><span class="p">[</span><span class="s1">&#39;Alley&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;NOACCESS&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">features</span><span class="p">[</span><span class="s1">&#39;Alley&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;NOACCESS&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code>
@@ -2669,7 +2669,7 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2727,7 +2727,7 @@
 </span><span class="lnt">56
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># MSSubClass as str</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># MSSubClass as str</span>
 <span class="n">features</span><span class="p">[</span><span class="s1">&#39;MSSubClass&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;MSSubClass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
 
 <span class="c1"># MSZoning NA in pred. filling with most popular values</span>
@@ -2797,7 +2797,7 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2806,7 +2806,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Our SalesPrice is skewed right (check plot below). I&#39;m logtransforming it. </span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Our SalesPrice is skewed right (check plot below). I&#39;m logtransforming it. </span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">train_labels</span><span class="p">)</span>
 <span class="c1">## Log transformation of labels</span>
 <span class="n">train_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">train_labels</span><span class="p">)</span>
@@ -2836,14 +2836,14 @@ After transform:<br />
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1">## Standardizing numeric features</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1">## Standardizing numeric features</span>
 <span class="n">numeric_features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,[</span><span class="s1">&#39;LotFrontage&#39;</span><span class="p">,</span> <span class="s1">&#39;LotArea&#39;</span><span class="p">,</span> <span class="s1">&#39;GrLivArea&#39;</span><span class="p">,</span> <span class="s1">&#39;TotalSF&#39;</span><span class="p">]]</span>
 <span class="n">numeric_features_standardized</span> <span class="o">=</span> <span class="p">(</span><span class="n">numeric_features</span> <span class="o">-</span> <span class="n">numeric_features</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">/</span><span class="n">numeric_features</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">numeric_features_standardized</span><span class="p">)</span>
@@ -2859,7 +2859,7 @@ After transform:<br />
 <h3 id="converting-categorical-data-to-dummies">Converting categorical data to dummies</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2884,7 +2884,7 @@ After transform:<br />
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Getting Dummies from Condition1 and Condition2</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Getting Dummies from Condition1 and Condition2</span>
 <span class="n">conditions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;Condition1&#39;</span><span class="p">]]</span> <span class="o">+</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;Condition2&#39;</span><span class="p">]])</span>
 <span class="n">dummies</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">index</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">conditions</span><span class="p">))),</span>
                        <span class="n">index</span><span class="o">=</span><span class="n">features</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">conditions</span><span class="p">)</span>
@@ -2915,7 +2915,7 @@ After transform:<br />
 <h3 id="obtaining-standardized-dataset">Obtaining standardized dataset</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2923,7 +2923,7 @@ After transform:<br />
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1">### Copying features</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1">### Copying features</span>
 <span class="n">features_standardized</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
 <span class="c1">### Replacing numeric features by standardized values</span>
@@ -2934,7 +2934,7 @@ After transform:<br />
 </div><h3 id="splitting-train-and-test-features">Splitting train and test features</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2944,7 +2944,7 @@ After transform:<br />
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1">### Splitting features</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1">### Splitting features</span>
 <span class="n">train_features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Id&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">values</span>
 <span class="n">test_features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Id&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">values</span>
 
@@ -2965,7 +2965,7 @@ After transform:<br />
 <h3 id="splitting-to-train-and-validation-sets">Splitting to train and validation sets</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2973,7 +2973,7 @@ After transform:<br />
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1">### Shuffling train sets</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1">### Shuffling train sets</span>
 <span class="n">train_features_st</span><span class="p">,</span> <span class="n">train_features</span><span class="p">,</span> <span class="n">train_labels</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">train_features_st</span><span class="p">,</span> <span class="n">train_features</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
 
 <span class="c1">### Splitting</span>
@@ -2989,14 +2989,14 @@ After transform:<br />
 <p>using ElasticNetCV estimator to choose best alpha and l1_ratio for my Elastic Net model</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">ENSTest</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">ElasticNetCV</span><span class="p">(</span><span class="n">alphas</span><span class="o">=</span><span class="p">[</span><span class="mf">0.0001</span><span class="p">,</span> <span class="mf">0.0005</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> 
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">ENSTest</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">ElasticNetCV</span><span class="p">(</span><span class="n">alphas</span><span class="o">=</span><span class="p">[</span><span class="mf">0.0001</span><span class="p">,</span> <span class="mf">0.0005</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> 
                                     <span class="n">l1_ratio</span><span class="o">=</span><span class="p">[</span><span class="mf">.01</span><span class="p">,</span> <span class="mf">.1</span><span class="p">,</span> <span class="mf">.5</span><span class="p">,</span> <span class="mf">.9</span><span class="p">,</span> <span class="mf">.99</span><span class="p">],</span> 
                                     <span class="n">max_iter</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train_st</span><span class="p">,</span> <span class="n">y_train_st</span><span class="p">)</span>
 <span class="n">train_test</span><span class="p">(</span><span class="n">ENSTest</span><span class="p">,</span> <span class="n">x_train_st</span><span class="p">,</span> <span class="n">x_test_st</span><span class="p">,</span> <span class="n">y_train_st</span><span class="p">,</span> <span class="n">y_test_st</span><span class="p">)</span>
@@ -3008,7 +3008,7 @@ After transform:<br />
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3016,7 +3016,7 @@ After transform:<br />
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">Train</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">Train</span>
 <span class="n">R2</span><span class="p">:</span> <span class="mf">0.9015542514742068</span>
 <span class="n">RMSE</span><span class="p">:</span> <span class="mf">0.11906917427161198</span>
 <span class="n">Test</span>
@@ -3026,13 +3026,13 @@ After transform:<br />
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">
 <span class="c1"># Average R2 score and standart deviation of 5-fold cross-validation</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">ENSTest</span><span class="p">,</span> <span class="n">train_features_st</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Accuracy: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
@@ -3046,7 +3046,7 @@ After transform:<br />
 <p>We use a <strong>lot of features</strong> and have many <strong>outliers</strong>. So I&rsquo;m using <strong><code>max_features='sqrt'</code> to reduce overfitting of my model</strong>. I also use <strong><code>loss='huber'</code> because it more tolerant to outliers</strong>. <strong>All other hyper-parameters was chosen using GridSearchCV</strong>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3057,7 +3057,7 @@ After transform:<br />
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">GBest</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">GradientBoostingRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> 
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">GBest</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">GradientBoostingRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> 
                                            <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> 
                                            <span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> 
                                            <span class="n">max_features</span><span class="o">=</span><span class="s1">&#39;sqrt&#39;</span><span class="p">,</span>
@@ -3070,7 +3070,7 @@ After transform:<br />
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3078,7 +3078,7 @@ After transform:<br />
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">Train</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">Train</span>
 <span class="n">R2</span><span class="p">:</span> <span class="mf">0.9618766649349884</span>
 <span class="n">RMSE</span><span class="p">:</span> <span class="mf">0.07600479015539144</span>
 <span class="n">Test</span>
@@ -3088,13 +3088,13 @@ After transform:<br />
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Average R2 score and standart deviation of 5-fold cross-validation</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Average R2 score and standart deviation of 5-fold cross-validation</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">GBest</span><span class="p">,</span> <span class="n">train_features_st</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Accuracy: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
 
@@ -3105,7 +3105,7 @@ After transform:<br />
 <p>final ensemble model is <strong>an average of Gradient Boosting and Elastic Net predictions</strong>. But before that I retrained my models on all train data.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3114,7 +3114,7 @@ After transform:<br />
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Retraining models</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># Retraining models</span>
 <span class="n">GB_model</span> <span class="o">=</span> <span class="n">GBest</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_features</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">)</span>
 <span class="n">ENST_model</span> <span class="o">=</span> <span class="n">ENSTest</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_features_st</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">)</span>
 
@@ -3129,11 +3129,11 @@ After transform:<br />
 <h3 id="saving-to-csv">Saving to CSV</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Id&#39;</span><span class="p">:</span> <span class="n">test</span><span class="o">.</span><span class="n">Id</span><span class="p">,</span> <span class="s1">&#39;SalePrice&#39;</span><span class="p">:</span> <span class="n">Final_labels</span><span class="p">})</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;2020-02-25.csv&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span><span class="kc">False</span><span class="p">)</span>   
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Id&#39;</span><span class="p">:</span> <span class="n">test</span><span class="o">.</span><span class="n">Id</span><span class="p">,</span> <span class="s1">&#39;SalePrice&#39;</span><span class="p">:</span> <span class="n">Final_labels</span><span class="p">})</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;2020-02-25.csv&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span><span class="kc">False</span><span class="p">)</span>   
 
 </code></pre></td></tr></table>
 </div>

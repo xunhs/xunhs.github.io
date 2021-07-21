@@ -1879,7 +1879,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2308,7 +2308,7 @@
 <p>在进行风格迁移任务时，我们只需要提取其中几个比较重要的层，所以我们对 pytorch 自带的预训练 VGG16 模型稍作了一些修改：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2334,7 +2334,7 @@
 </span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">VGG</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">VGG</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">features</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">VGG</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
@@ -2363,11 +2363,11 @@
 </div><p><u>经过修改的 VGG16 可以输出 relu1_2,relu2_2,relu3_3,relu4_3 这几个特定层的特征图</u>。下面这两句代码就是它的用法：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">features</span> <span class="o">=</span> <span class="n">vgg16</span><span class="p">(</span><span class="n">input_img</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="n">features</span> <span class="o">=</span> <span class="n">vgg16</span><span class="p">(</span><span class="n">input_img</span><span class="p">)</span>
 <span class="n">content_features</span> <span class="o">=</span> <span class="n">vgg16</span><span class="p">(</span><span class="n">content_img</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -2413,10 +2413,10 @@
 <p>那么写成代码就是这样的：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">content_loss</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">mse_loss</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">content_features</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="n">content_weight</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="n">content_loss</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">mse_loss</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">content_features</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="n">content_weight</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>因为我们这里使用的是经过在 ImageNet 预训练过的 VGG16 提取的特征图，所以它能提取出图像的高级特征，通过优化生成图像和内容图像特征图的 mse，可以迫使生成图像的内容与内容图像在 VGG16 的 relu3_3 上输出相似的结果，因此生成图像和内容图像在内容上是一致的。</p>
@@ -2467,7 +2467,7 @@
 <p>具体到代码，我们可以写出下面的函数：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2475,7 +2475,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">gram_matrix</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">gram_matrix</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
     <span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
     <span class="n">features</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">w</span> <span class="o">*</span> <span class="n">h</span><span class="p">)</span>
     <span class="n">features_t</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -2514,7 +2514,7 @@
 <p>那么写成代码就是下面这样：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2522,7 +2522,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">style_grams</span> <span class="o">=</span> <span class="p">[</span><span class="n">gram_matrix</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">style_features</span><span class="p">]</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="n">style_grams</span> <span class="o">=</span> <span class="p">[</span><span class="n">gram_matrix</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">style_features</span><span class="p">]</span>
 
 <span class="n">style_loss</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">grams</span> <span class="o">=</span> <span class="p">[</span><span class="n">gram_matrix</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">features</span><span class="p">]</span>
@@ -2534,7 +2534,7 @@
 <p>那么风格迁移的目标就很简单了，直接将两个 loss 按权值加起来，然后对图片优化 loss，即可优化出既有内容图像的内容，也有风格图像的风格的图片。代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2564,7 +2564,7 @@
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">input_img</span> <span class="o">=</span> <span class="n">content_img</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="n">input_img</span> <span class="o">=</span> <span class="n">content_img</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">LBFGS</span><span class="p">([</span><span class="n">input_img</span><span class="o">.</span><span class="n">requires_grad_</span><span class="p">()])</span>
 <span class="n">style_weight</span> <span class="o">=</span> <span class="mf">1e6</span>
 <span class="n">content_weight</span> <span class="o">=</span> <span class="mi">1</span>
@@ -2620,7 +2620,7 @@
 <h3 id="convlayer">ConvLayer</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2634,7 +2634,7 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">ConvLayer</span><span class="p">(</span><span class="n">in_channels</span><span class="p">,</span> <span class="n">out_channels</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">ConvLayer</span><span class="p">(</span><span class="n">in_channels</span><span class="p">,</span> <span class="n">out_channels</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
     <span class="n">upsample</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">instance_norm</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">relu</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
     <span class="n">layers</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">if</span> <span class="n">upsample</span><span class="p">:</span>
@@ -2670,7 +2670,7 @@
 <h3 id="residualblock">ResidualBlock</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2682,7 +2682,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">ResidualBlock</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">ResidualBlock</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channels</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">ResidualBlock</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">conv</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
@@ -2702,7 +2702,7 @@
   </p></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2724,7 +2724,7 @@
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">TransformNet</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">TransformNet</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="mi">32</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">TransformNet</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">downsampling</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
@@ -2753,7 +2753,7 @@
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2767,7 +2767,7 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">4</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">width</span> <span class="o">=</span> <span class="mi">256</span>
 
 <span class="n">data_transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span>
@@ -2797,12 +2797,12 @@
 <a href="https://pytorch.org/docs/master/torchvision/models.html" target="_blank" rel="noopener">https://pytorch.org/docs/master/torchvision/models.html</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">cnn_normalization_mean</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.485</span><span class="p">,</span> <span class="mf">0.456</span><span class="p">,</span> <span class="mf">0.406</span><span class="p">]</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="n">cnn_normalization_mean</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.485</span><span class="p">,</span> <span class="mf">0.456</span><span class="p">,</span> <span class="mf">0.406</span><span class="p">]</span>
 <span class="n">cnn_normalization_std</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.229</span><span class="p">,</span> <span class="mf">0.224</span><span class="p">,</span> <span class="mf">0.225</span><span class="p">]</span>
 <span class="n">tensor_normalizer</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Normalize</span><span class="p">(</span><span class="n">mean</span><span class="o">=</span><span class="n">cnn_normalization_mean</span><span class="p">,</span> <span class="n">std</span><span class="o">=</span><span class="n">cnn_normalization_std</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -2849,7 +2849,7 @@
 <p>由于代码太长，这里只贴一些关键代码：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2883,7 +2883,7 @@
 </span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">for</span> <span class="n">batch</span><span class="p">,</span> <span class="p">(</span><span class="n">content_images</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="ow">in</span> <span class="n">pbar</span><span class="p">:</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">for</span> <span class="n">batch</span><span class="p">,</span> <span class="p">(</span><span class="n">content_images</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="ow">in</span> <span class="n">pbar</span><span class="p">:</span>
     <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
 
     <span class="c1"># 使用风格模型预测风格迁移图像</span>
@@ -3022,7 +3022,7 @@
 <p>代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3037,7 +3037,7 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">MyConv2D</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">MyConv2D</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">in_channels</span><span class="p">,</span> <span class="n">out_channels</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">MyConv2D</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">weight</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">out_channels</span><span class="p">,</span> <span class="n">in_channels</span><span class="p">,</span> <span class="n">kernel_size</span><span class="p">,</span> <span class="n">kernel_size</span><span class="p">))</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
@@ -3061,7 +3061,7 @@
 <p>我们写出了下面的代码：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3072,7 +3072,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">ConvLayer</span><span class="p">(</span><span class="n">in_channels</span><span class="p">,</span> <span class="n">out_channels</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">ConvLayer</span><span class="p">(</span><span class="n">in_channels</span><span class="p">,</span> <span class="n">out_channels</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
 	<span class="n">upsample</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">instance_norm</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">relu</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">trainable</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="o">......</span>
     <span class="k">if</span> <span class="n">trainable</span><span class="p">:</span>
@@ -3088,7 +3088,7 @@
 <p>下面就直接贴代码了，模型结构按照上面论文中的图去搭就好。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3112,7 +3112,7 @@
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">TransformNet</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">TransformNet</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="mi">8</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">TransformNet</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">base</span> <span class="o">=</span> <span class="n">base</span>
@@ -3175,7 +3175,7 @@
 <p>下面是代码：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3194,7 +3194,7 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">MetaNet</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">class</span> <span class="nc">MetaNet</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">param_dict</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">MetaNet</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">param_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">param_dict</span><span class="p">)</span>
@@ -3245,7 +3245,7 @@
 <p>代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3255,7 +3255,7 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="n">data_transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="n">data_transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span>
     <span class="n">transforms</span><span class="o">.</span><span class="n">RandomResizedCrop</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="p">(</span><span class="mi">256</span><span class="o">/</span><span class="mi">480</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ratio</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)),</span> 
     <span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span> 
     <span class="n">tensor_normalizer</span>
@@ -3287,7 +3287,7 @@
 <p>由于代码太长，这里也只贴一些关键代码：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3333,7 +3333,7 @@
 </span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="k">for</span> <span class="n">batch</span><span class="p">,</span> <span class="p">(</span><span class="n">content_images</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="ow">in</span> <span class="n">pbar</span><span class="p">:</span>    
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">for</span> <span class="n">batch</span><span class="p">,</span> <span class="p">(</span><span class="n">content_images</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="ow">in</span> <span class="n">pbar</span><span class="p">:</span>    
     <span class="c1"># 每 20 个 batch 随机挑选一张新的风格图像，计算其特征</span>
     <span class="k">if</span> <span class="n">batch</span> <span class="o">%</span> <span class="mi">20</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">style_image</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">style_dataset</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>

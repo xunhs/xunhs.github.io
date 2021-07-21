@@ -1880,7 +1880,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2331,7 +2331,7 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2382,7 +2382,7 @@
 </span><span class="lnt">49
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">	<span class="kn">from</span> <span class="nn">osgeo</span> <span class="kn">import</span> <span class="n">gdal</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">	<span class="kn">from</span> <span class="nn">osgeo</span> <span class="kn">import</span> <span class="n">gdal</span>
 	<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span> 
 	<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
 	<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
@@ -2447,7 +2447,7 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2507,7 +2507,7 @@
 </span><span class="lnt">58
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">	<span class="c1"># -*- coding: UTF-8 -*-</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">	<span class="c1"># -*- coding: UTF-8 -*-</span>
 	<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 	<span class="kn">import</span> <span class="nn">os</span>
 	<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
@@ -2572,7 +2572,7 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2580,7 +2580,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">	<span class="c1"># del extra files, only keep jpg</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">	<span class="c1"># del extra files, only keep jpg</span>
 	<span class="n">_del</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.tfw&#39;</span><span class="p">,</span> <span class="s1">&#39;.TIF&#39;</span><span class="p">,</span> <span class="s1">&#39;.TIF.aux.xml&#39;</span><span class="p">,</span> <span class="s1">&#39;.TIF.ovr&#39;</span><span class="p">]</span>
 	<span class="n">all_jpg</span> <span class="o">=</span> <span class="p">[</span><span class="n">_</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">split_raster_dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*.jpg&#39;</span><span class="p">)]</span>
 	<span class="k">for</span> <span class="n">jpg</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">all_jpg</span><span class="p">):</span>
@@ -2589,7 +2589,9 @@
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="image-embeddings">Image Embeddings</h3>
-<p>Image Embedding初衷是使用Embedding的方式对图像进行表示，后续可应用于图片检索等应用。此处参考(<a href="https://github.com/rom1504/image_embeddings">https://github.com/rom1504/image_embeddings</a>)实现该功能。在本机配置环境的过程中，faiss这个包始终报错，且网上并无解决方案。故使用Google Calab在线Jupyter Notebook的平台进行操作。</p>
+<p>Image Embedding初衷是使用Embedding的方式对图像进行表示，后续可应用于图片检索等应用。此处参考(
+
+<a href="https://github.com/rom1504/image_embeddings" target="_blank" rel="noopener">https://github.com/rom1504/image_embeddings</a>)实现该功能。在本机配置环境的过程中，faiss这个包始终报错，且网上并无解决方案。故使用Google Calab在线Jupyter Notebook的平台进行操作。</p>
 <h4 id="数据准备-1">数据准备</h4>
 <ul>
 <li>压缩数据并上传至Google 云端硬盘</li>
@@ -2598,11 +2600,11 @@
 <li>挂在Google云端硬盘
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
 	<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -2611,7 +2613,7 @@
 <li>载入repo及路径：
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2620,7 +2622,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="c1"># Let&#39;s define some paths where to save images, tfrecords and embeddings</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="c1"># Let&#39;s define some paths where to save images, tfrecords and embeddings</span>
 	<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 	<span class="kn">import</span> <span class="nn">image_embeddings</span>
 	<span class="n">home</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&#34;/content/drive/MyDrive/&#34;</span><span class="p">)</span>
@@ -2633,7 +2635,7 @@
 <li>重命名<code>*.JPG</code>(原作者代码中操作的是*.jpeg格式，JPG可以读取，但是在后续图片显示操作中会提示路径错误)
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2641,7 +2643,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="c1"># rename *.JPG with *,jpeg</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="c1"># rename *.JPG with *,jpeg</span>
 	<span class="kn">import</span> <span class="nn">os</span>
 	<span class="n">root_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&#34;/content/drive/MyDrive/DataUploads/ImageEmbeddings/RasterSplitJPG&#34;</span><span class="p">)</span>
 	<span class="k">for</span> <span class="n">fp</span> <span class="ow">in</span> <span class="n">root_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&#34;*.JPG&#34;</span><span class="p">):</span>
@@ -2657,21 +2659,21 @@
 <li>Transform image to tf records：Tf record is an efficient format to store image, it&rsquo;s better to use than raw image file for inference
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">inference</span><span class="o">.</span><span class="n">write_tfrecord</span><span class="p">(</span><span class="n">image_folder</span><span class="o">=</span><span class="n">path_images</span><span class="p">,</span> <span class="n">output_folder</span><span class="o">=</span><span class="n">path_tfrecords</span><span class="p">,</span> <span class="n">num_shards</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">inference</span><span class="o">.</span><span class="n">write_tfrecord</span><span class="p">(</span><span class="n">image_folder</span><span class="o">=</span><span class="n">path_images</span><span class="p">,</span> <span class="n">output_folder</span><span class="o">=</span><span class="n">path_tfrecords</span><span class="p">,</span> <span class="n">num_shards</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><pre><code></code></pre></li>
 <li>Build embeddings：Here, <strong>efficientnet</strong> is used, but the code is particularly simple, and any other model could be used. <u>The input is tfrecords and the output is embeddings</u>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="c1"># 如出现内存溢出错误，可适当降低batch size</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="c1"># 如出现内存溢出错误，可适当降低batch size</span>
 	<span class="n">image_embeddings</span><span class="o">.</span><span class="n">inference</span><span class="o">.</span><span class="n">run_inference</span><span class="p">(</span><span class="n">tfrecords_folder</span><span class="o">=</span><span class="n">path_tfrecords</span><span class="p">,</span> <span class="n">output_folder</span><span class="o">=</span><span class="n">path_embeddings</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -2685,11 +2687,11 @@
 <a href="https://github.com/facebookresearch/faiss" target="_blank" rel="noopener">faiss</a> which makes it possible to search embeddings in log(N) with lot of options to reduce memory footprint
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="p">[</span><span class="n">id_to_name</span><span class="p">,</span> <span class="n">name_to_id</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">]</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">read_embeddings</span><span class="p">(</span><span class="n">path_embeddings</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="p">[</span><span class="n">id_to_name</span><span class="p">,</span> <span class="n">name_to_id</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">]</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">read_embeddings</span><span class="p">(</span><span class="n">path_embeddings</span><span class="p">)</span>
 	<span class="n">index</span> <span class="o">=</span> <span class="n">image_embeddings</span><span class="o">.</span><span class="n">knn</span><span class="o">.</span><span class="n">build_index</span><span class="p">(</span><span class="n">embeddings</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -2699,7 +2701,7 @@
 <li>example 1
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2710,7 +2712,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">name_to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_189&#39;</span><span class="p">]</span> <span class="c1"># 工业区</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">name_to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_189&#39;</span><span class="p">]</span> <span class="c1"># 工业区</span>
 	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
 	<span class="mi">7440</span>
 	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
@@ -2726,7 +2728,7 @@
 <li>example 2
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2737,7 +2739,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">name_to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_636&#39;</span><span class="p">]</span> <span class="c1"># 绿地</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">name_to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_636&#39;</span><span class="p">]</span> <span class="c1"># 绿地</span>
 	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
 	<span class="mi">5553</span>
 	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
@@ -2753,7 +2755,7 @@
 <li>example 3
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2764,7 +2766,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">name_to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_1423&#39;</span><span class="p">]</span> <span class="c1"># 居住区</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">name_to_id</span><span class="p">[</span><span class="s1">&#39;BJ_5R_AI_1423&#39;</span><span class="p">]</span> <span class="c1"># 居住区</span>
 	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
 	<span class="mi">3818</span>
 	<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
@@ -2783,7 +2785,7 @@
 <li>Combination of images：<strong>Any vector in the same space can be used as query</strong> For example I could have 2 image and want to find some example that are closeby to the 2, Let&rsquo;s just <strong>average them</strong> and see that happens !
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2793,7 +2795,7 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">p1</span> <span class="o">=</span> <span class="mi">7440</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">p1</span> <span class="o">=</span> <span class="mi">7440</span>
 	<span class="n">p2</span> <span class="o">=</span> <span class="mi">5553</span>
 	<span class="n">image1</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span>
 	<span class="n">image2</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p2</span><span class="p">]</span>
@@ -2811,7 +2813,7 @@
 <li>Normalize
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2820,7 +2822,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 	<span class="k">def</span> <span class="nf">normalized</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
 	<span class="n">l2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">atleast_1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">order</span><span class="p">,</span> <span class="n">axis</span><span class="p">))</span>
 	<span class="n">l2</span><span class="p">[</span><span class="n">l2</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
@@ -2833,7 +2835,7 @@
 <li>Normalize Index
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2843,7 +2845,7 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">p1</span> <span class="o">=</span> <span class="mi">7440</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="n">p1</span> <span class="o">=</span> <span class="mi">7440</span>
 	<span class="n">p2</span> <span class="o">=</span> <span class="mi">5553</span>
 	<span class="n">image1</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span>
 	<span class="n">image2</span> <span class="o">=</span> <span class="n">id_to_name</span><span class="p">[</span><span class="n">p2</span><span class="p">]</span>
@@ -2861,12 +2863,12 @@
 <li>Exporting the embeddings to numpy
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Python" data-lang="Python">	<span class="kn">from</span> <span class="nn">image_embeddings.knn</span> <span class="kn">import</span> <span class="n">embeddings_to_numpy</span>
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python">	<span class="kn">from</span> <span class="nn">image_embeddings.knn</span> <span class="kn">import</span> <span class="n">embeddings_to_numpy</span>
 	<span class="n">path_embeddings_numpy</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">home</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">dataset</span><span class="si">}</span><span class="s2">/embeddings_numpy&#34;</span>
 	<span class="n">embeddings_to_numpy</span><span class="p">(</span><span class="n">path_embeddings</span><span class="p">,</span> <span class="n">path_embeddings_numpy</span><span class="p">)</span>
 </code></pre></td></tr></table>

@@ -1879,7 +1879,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2299,17 +2299,17 @@
 <h4 id="pip">pip</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pip config <span class="nb">set</span> global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pip config <span class="nb">set</span> global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="conda">conda</h4>
 <p>通过修改用户目录下的 <code>.condarc</code> 文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2325,7 +2325,7 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">channels</span><span class="p">:</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">channels</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="l">defaults</span><span class="w">
 </span><span class="w"></span><span class="nt">show_channel_urls</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w"></span><span class="nt">default_channels</span><span class="p">:</span><span class="w">
@@ -2346,7 +2346,7 @@
 <p>Ubuntu 的软件源配置文件是 <code>/etc/apt/sources.list</code>，下面是20.04LTS版本</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2361,7 +2361,7 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释</span>
 deb https://mirrors.bfsu.edu.cn/ubuntu/ focal main restricted universe multiverse
 <span class="c1"># deb-src https://mirrors.bfsu.edu.cn/ubuntu/ focal main restricted universe multiverse</span>
 deb https://mirrors.bfsu.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
@@ -2388,23 +2388,23 @@ deb https://mirrors.bfsu.edu.cn/ubuntu/ focal-security main restricted universe 
 <h4 id="virtualenvwrapper-安装">Virtualenvwrapper 安装</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pip install virtualenv virtualenvwrapper
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pip install virtualenv virtualenvwrapper
 pip install virtualenvwrapper-win <span class="c1"># windows平台使用这个命令</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>安装之后还需要配置， 在<code>.zshrc</code>中添加下列内容:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 设置虚拟环境的工作目录， 创建的虚拟环境都保存在这个目录下</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 设置虚拟环境的工作目录， 创建的虚拟环境都保存在这个目录下</span>
 <span class="nb">export</span> <span class="nv">WORKON_HOME</span><span class="o">=</span><span class="nv">$HOME</span>/.virtualenvs
 <span class="nb">source</span> /usr/local/bin/virtualenvwrapper.sh 
 </code></pre></td></tr></table>
@@ -2432,17 +2432,19 @@ pip install virtualenvwrapper-win <span class="c1"># windows平台使用这个�
 <h3 id="pyenv-python版本管理">pyenv-python版本管理</h3>
 <h4 id="安装">安装</h4>
 <p>参考：https://zhuanlan.zhihu.com/p/30859003<br />
-pyenv-win: <a href="https://github.com/pyenv-win/pyenv-win">https://github.com/pyenv-win/pyenv-win</a></p>
+pyenv-win: 
+
+<a href="https://github.com/pyenv-win/pyenv-win" target="_blank" rel="noopener">https://github.com/pyenv-win/pyenv-win</a></p>
 <h4 id="常用命令">常用命令</h4>
 <ol>
 <li>
 <p>查看所有已安装Python版本</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pyenv version
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pyenv version
 </code></pre></td></tr></table>
 </div>
 </div></li>
@@ -2450,12 +2452,12 @@ pyenv-win: <a href="https://github.com/pyenv-win/pyenv-win">https://github.com/p
 <p>查询所有可安装Python版本</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pyenv install -l
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pyenv install -l
 <span class="c1"># 查询3.6版本</span>
 python install -l <span class="p">|</span> grep 3.6
 </code></pre></td></tr></table>
@@ -2465,13 +2467,13 @@ python install -l <span class="p">|</span> grep 3.6
 <p>安装指定版本</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pyenv install 3.6.12
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pyenv install 3.6.12
 <span class="c1"># 使用镜像加速</span>
 <span class="c1"># 注意：v 为 Python 版本号，请根据需要自行更改。</span>
 <span class="nv">v</span><span class="o">=</span>3.6.12<span class="p">;</span>wget https://npm.taobao.org/mirrors/python/<span class="nv">$v</span>/Python-<span class="nv">$v</span>.tar.xz -P <span class="k">$(</span>pyenv root<span class="k">)</span>/cache/<span class="p">;</span>pyenv install <span class="nv">$v</span> 
@@ -2482,10 +2484,10 @@ python install -l <span class="p">|</span> grep 3.6
 <p>卸载</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pyenv uninstall 3.6.12
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pyenv uninstall 3.6.12
 </code></pre></td></tr></table>
 </div>
 </div></li>
@@ -2493,12 +2495,12 @@ python install -l <span class="p">|</span> grep 3.6
 <h4 id="设置python版本">设置Python版本</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pyenv shell 2.7.14  <span class="c1"># 设置面向 shell 的 Python 版本，通过设置当前 shell 的 PYENV_VERSION 环境变量的方式。</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pyenv shell 2.7.14  <span class="c1"># 设置面向 shell 的 Python 版本，通过设置当前 shell 的 PYENV_VERSION 环境变量的方式。</span>
 pyenv <span class="nb">local</span> 2.7.14  <span class="c1"># 设置 Python 本地版本，通过将版本号写入当前目录下的 .python-version 文件的方式。通过这种方式设置的 Python 版本优先级较 global 高。</span>
 pyenv global 2.7.14  <span class="c1"># 设置全局的 Python 版本，通过将版本号写入 ~/.pyenv/version 文件的方式。</span>
 </code></pre></td></tr></table>
@@ -2511,11 +2513,11 @@ pyenv global 2.7.14  <span class="c1"># 设置全局的 Python 版本，通过�
 <p>取消 shell 或 local python 版本</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pyenv shell --unset
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pyenv shell --unset
 pyenv <span class="nb">local</span> --unset
 </code></pre></td></tr></table>
 </div>
@@ -2527,10 +2529,10 @@ pyenv <span class="nb">local</span> --unset
 <p>安装</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git <span class="k">$(</span>pyenv root<span class="k">)</span>/plugins/pyenv-virtualenvwrapper
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git <span class="k">$(</span>pyenv root<span class="k">)</span>/plugins/pyenv-virtualenvwrapper
 </code></pre></td></tr></table>
 </div>
 </div></li>
@@ -2538,10 +2540,10 @@ pyenv <span class="nb">local</span> --unset
 <p>激活</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pyenv virtualenvwrapper
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pyenv virtualenvwrapper
 </code></pre></td></tr></table>
 </div>
 </div><p>激活后需重启当前shell</p>
@@ -2550,7 +2552,7 @@ pyenv <span class="nb">local</span> --unset
 <p>使用</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2558,7 +2560,7 @@ pyenv <span class="nb">local</span> --unset
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1. 设置当前 shell的python版本</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1. 设置当前 shell的python版本</span>
 pyenv shell 3.6.12
 <span class="c1"># 2. 第一次使用新的 Python 环境需要安装此包，否则创建的虚拟环境 Python 版本仍为系统默认</span>
 pip install virtualenvwrapper
@@ -2573,14 +2575,14 @@ mkvirtualenv <span class="o">[</span>env_name<span class="o">]</span> -p python3
 <h4 id="创建环境-1">创建环境</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">conda create --name your_env_name
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">conda create --name your_env_name
 
 <span class="c1"># 创建制定python版本的环境</span>
 conda create --name your_env_name <span class="nv">python</span><span class="o">=</span>2.7
@@ -2590,12 +2592,12 @@ conda create --name your_env_name <span class="nv">python</span><span class="o">
 </div><h4 id="列举当前所有环境">列举当前所有环境</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">conda env list
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">conda env list
 <span class="c1"># 或</span>
 conda info --envs
 </code></pre></td></tr></table>
@@ -2603,12 +2605,12 @@ conda info --envs
 </div><h4 id="进入退出某个环境">进入、退出某个环境</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">activate your_env_name
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">activate your_env_name
 
 <span class="o">[</span>conda<span class="o">]</span> deactivate 
 </code></pre></td></tr></table>
@@ -2627,10 +2629,10 @@ conda提供了将虚拟环境导出为<code>yaml</code>文件的功能，使得�
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>python_spatial<span class="o">)</span> C:<span class="se">\U</span>sers<span class="se">\h</span>p&gt;conda env <span class="nb">export</span> &gt; C:<span class="se">\U</span>sers<span class="se">\h</span>p<span class="se">\D</span>esktop<span class="se">\p</span>ython_spatial.yml
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">(</span>python_spatial<span class="o">)</span> C:<span class="se">\U</span>sers<span class="se">\h</span>p&gt;conda env <span class="nb">export</span> &gt; C:<span class="se">\U</span>sers<span class="se">\h</span>p<span class="se">\D</span>esktop<span class="se">\p</span>ython_spatial.yml
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -2638,19 +2640,19 @@ conda提供了将虚拟环境导出为<code>yaml</code>文件的功能，使得�
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">conda env create -n new_python_spatial -f C:<span class="se">\U</span>sers<span class="se">\h</span>p<span class="se">\D</span>esktop<span class="se">\p</span>ython_spatial.yml
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">conda env create -n new_python_spatial -f C:<span class="se">\U</span>sers<span class="se">\h</span>p<span class="se">\D</span>esktop<span class="se">\p</span>ython_spatial.yml
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="移除某个环境">移除某个环境</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">conda remove --name your_env_name --all
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">conda remove --name your_env_name --all
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="conda安装加速">conda安装加速</h4>
@@ -2667,7 +2669,7 @@ conda提供了将虚拟环境导出为<code>yaml</code>文件的功能，使得�
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2676,7 +2678,7 @@ conda提供了将虚拟环境导出为<code>yaml</code>文件的功能，使得�
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">ip</span><span class="o">=</span><span class="s1">&#39;*&#39;</span>  <span class="c1"># 指定 可访问  IP 或者 使用 * 则可以用任意 IP</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">ip</span><span class="o">=</span><span class="s1">&#39;*&#39;</span>  <span class="c1"># 指定 可访问  IP 或者 使用 * 则可以用任意 IP</span>
 <span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">open_browser</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># 关闭自动打开浏览器</span>
 <span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="mi">10086</span> <span class="c1"># 端口随意指定，然后在阿里云开对应端口的防火墙即可</span>
 <span class="c1"># 密码是 123345678</span>

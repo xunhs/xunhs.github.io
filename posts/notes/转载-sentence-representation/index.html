@@ -1883,7 +1883,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2397,7 +2397,9 @@ $$\sum _ { w \in S _ { i - 1 } \cup S _ { i } \cup S _ { i + 1 } } \phi \left( \
 <a href="https://cdn.jsdelivr.net/gh/xunhs/image_host/history/usr/uploads/2020/03/3860325490.pdf" target="_blank" rel="noopener">下载</a></p>
 <p>本文提出使用
 
-<a href="https://www.aclweb.org/anthology/N13-1092" target="_blank" rel="noopener">PPDB(the Paraphrase Database)</a>来学习通用的sentence embeddings。论文模型的基本流程是输入mini-batch的释义对$&lt;x_1, x_2&gt;​$集合$X_b​$，并通过对$X_b​$中的句子进行采样得到$x_1,x_2​$对应的负样本$t_1, t_2​$，将这四个句子通过编码器（编码函数）$g​$得到句子编码，然后使用一种 margin-based loss进行优化，损失函数的基本思想是<strong>希望编码后的释义对$&lt;x_1,x_2&gt;​$能够非常相近而非释义对$&lt;x_1,t_1&gt;​$和$&lt;x_2,t_2&gt;​$能够有不小于$\delta​$的间距</strong>。对于全体训练数据$X​$，目标函数如下，其中$\lambda_c,\lambda_w​$为正则化参数，$W_w​$为word embedding参数，$W_{w_{initial}}​![](<a href="https://latex.codecogs.com/svg.latex?">https://latex.codecogs.com/svg.latex?</a>为word embedding初始化矩阵，$W_c​$是除了$W_w​$后的其他参数。</p>
+<a href="https://www.aclweb.org/anthology/N13-1092" target="_blank" rel="noopener">PPDB(the Paraphrase Database)</a>来学习通用的sentence embeddings。论文模型的基本流程是输入mini-batch的释义对$&lt;x_1, x_2&gt;​$集合$X_b​$，并通过对$X_b​$中的句子进行采样得到$x_1,x_2​$对应的负样本$t_1, t_2​$，将这四个句子通过编码器（编码函数）$g​$得到句子编码，然后使用一种 margin-based loss进行优化，损失函数的基本思想是<strong>希望编码后的释义对$&lt;x_1,x_2&gt;​$能够非常相近而非释义对$&lt;x_1,t_1&gt;​$和$&lt;x_2,t_2&gt;​$能够有不小于$\delta​$的间距</strong>。对于全体训练数据$X​$，目标函数如下，其中$\lambda_c,\lambda_w​$为正则化参数，$W_w​$为word embedding参数，$W_{w_{initial}}​![](
+
+<a href="https://latex.codecogs.com/svg.latex?" target="_blank" rel="noopener">https://latex.codecogs.com/svg.latex?</a>为word embedding初始化矩阵，$W_c​$是除了$W_w​$后的其他参数。</p>
 <p>论文实现了6种类型的编码函数$g$，具体如下：</p>
 <ol>
 <li>词向量平均；</li>

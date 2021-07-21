@@ -1879,7 +1879,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2291,7 +2291,9 @@
 <h3 id="数据准备及初始化">数据准备及初始化</h3>
 <h4 id="样例数据">样例数据</h4>
 <ul>
-<li>来源: <a href="https://www.cs.rutgers.edu/~dz220/data.html">https://www.cs.rutgers.edu/~dz220/data.html</a></li>
+<li>来源: 
+
+<a href="https://www.cs.rutgers.edu/~dz220/data.html" target="_blank" rel="noopener">https://www.cs.rutgers.edu/~dz220/data.html</a></li>
 <li>采集信息: 2013-10-22,深圳市</li>
 <li>字段: Taxi ID, Time, Latitude, Longitude, Occupancy Status, Speed;(Occupancy Status: 1-with passengers &amp; 0-with passengers;)
 <blockquote>
@@ -2302,7 +2304,7 @@
 <h4 id="初始化">初始化</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2316,7 +2318,7 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
 <span class="n">data_fp</span> <span class="o">=</span> <span class="s1">&#39;Taxidata.gz&#39;</span>
 <span class="n">data_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_fp</span><span class="p">,</span> 
             <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;taxi_id&#39;</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="s1">&#39;lat&#39;</span><span class="p">,</span> <span class="s1">&#39;lon&#39;</span><span class="p">,</span> <span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;speed&#39;</span><span class="p">])</span>
@@ -2331,11 +2333,13 @@
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="提取od">提取OD</h3>
-<p>根据状态的变化确定上车点和下车点。主要参考：<a href="https://github.com/ni1o1/pygeo-tutorial/blob/master/1-taxigps_to_od.ipynb">https://github.com/ni1o1/pygeo-tutorial/blob/master/1-taxigps_to_od.ipynb</a></p>
+<p>根据状态的变化确定上车点和下车点。主要参考：
+
+<a href="https://github.com/ni1o1/pygeo-tutorial/blob/master/1-taxigps_to_od.ipynb" target="_blank" rel="noopener">https://github.com/ni1o1/pygeo-tutorial/blob/master/1-taxigps_to_od.ipynb</a></p>
 <h4 id="筛选排除异常">筛选，排除异常</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2347,7 +2351,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#status用到的条件是：</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1">#status用到的条件是：</span>
 <span class="c1">#1.后一位和前一位相等</span>
 <span class="c1">#2.但是后一位与中间一位不等</span>
 <span class="c1">#3.前一条数据，后一条数据的车牌相等</span>
@@ -2365,7 +2369,7 @@
   </p></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2374,7 +2378,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">data_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;status1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;status1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">data_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;taxi_id1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;taxi_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">data_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;lon1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">data_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;lat1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
@@ -2386,7 +2390,7 @@
 </div><h4 id="将上下车状态整理为od">将上下车状态整理为OD</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2399,7 +2403,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">data_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[((</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;StatusChange&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;StatusChange&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[((</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;StatusChange&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;StatusChange&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 <span class="o">&amp;</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;taxi_id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;taxi_id1&#39;</span><span class="p">])]</span>
 <span class="n">data_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[[</span><span class="s1">&#39;taxi_id&#39;</span><span class="p">,</span><span class="s1">&#39;time&#39;</span><span class="p">,</span><span class="s1">&#39;lon&#39;</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;StatusChange&#39;</span><span class="p">]]</span>
 
@@ -2416,7 +2420,7 @@
 <p>pd.to_datetime好用但是太耗时了，直接用字符串解析吧</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2427,7 +2431,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 计算耗时，order_time单位: s</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 计算耗时，order_time单位: s</span>
 <span class="c1"># 过滤掉小于 5min的订单</span>
 <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;order_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;d_time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int&#39;</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="o">+</span>\
                         <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;d_time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int&#39;</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="o">+</span>\
@@ -2441,10 +2445,10 @@
 </div><h4 id="持久化">持久化</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">data_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;trip_od.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;trip_od.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="可视化分析">可视化分析</h3>
@@ -2452,7 +2456,7 @@
 <h4 id="trip上车时间以每小时分组">trip上车时间(以每小时分组)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2463,7 +2467,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tirp_df</span><span class="p">[</span><span class="s1">&#39;o_hour&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tirp_df</span><span class="o">.</span><span class="n">o_time</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">tirp_df</span><span class="p">[</span><span class="s1">&#39;o_hour&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tirp_df</span><span class="o">.</span><span class="n">o_time</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">hour_count_df</span> <span class="o">=</span> <span class="n">tirp_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;o_hour&#39;</span><span class="p">])[</span><span class="s1">&#39;taxi_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>  <span class="c1">#设置画布大小及分辨率</span>
@@ -2480,7 +2484,7 @@
 <h4 id="trip持续时间以每小时分组">trip持续时间(以每小时分组)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2488,7 +2492,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span> 
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span> 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> 
 <span class="n">trip_df</span> <span class="o">=</span> <span class="n">trip_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;o_hour&#39;</span><span class="p">])</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&#34;o_hour&#34;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&#34;order_time&#34;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">trip_df</span><span class="p">)</span>

@@ -1880,7 +1880,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="曾经沧海难为水.">
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.86.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -2325,7 +2325,7 @@
 <p>What does this graph represent? “A social network of a karate club was studied by Wayne W. Zachary for a period of three years from 1970 to 1972. The network captures 34 members of a karate club, documenting links between pairs of members who interacted outside the club. During the study, a conflict arose between the administrator “John A” and instructor “Mr. Hi” (pseudonyms), which led to the split of the club into two. Half of the members formed a new club around Mr. Hi; members from the other part found a new instructor or gave up karate. Based on collected data Zachary correctly assigned all but one member of the club to the groups they joined after the split.”</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2340,7 +2340,7 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
@@ -2361,7 +2361,7 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2382,7 +2382,7 @@
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">degree_sequence</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">G_karate</span><span class="o">.</span><span class="n">degree</span><span class="p">())</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">degree_sequence</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">G_karate</span><span class="o">.</span><span class="n">degree</span><span class="p">())</span>
 <span class="n">nb_nodes</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">G_karate</span><span class="o">.</span><span class="n">nodes</span><span class="p">())</span>
 <span class="n">nb_arr</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">G_karate</span><span class="o">.</span><span class="n">edges</span><span class="p">())</span>
 
@@ -2420,7 +2420,7 @@ Median degree : 3.0
 <p>the histograms of degrees are quite important to determine the kind of graph we are looking at</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2430,7 +2430,7 @@ Median degree : 3.0
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">degree_freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">degree_histogram</span><span class="p">(</span><span class="n">G_karate</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">degree_freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">degree_histogram</span><span class="p">(</span><span class="n">G_karate</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">degree_freq</span><span class="p">)</span>
@@ -2475,7 +2475,7 @@ Median degree : 3.0
 G(n, p)模型的两个主要假设（连边独立，每条连边可能性相同）可能不适合为某些现实生活中的现象建模。尤其是ER图的度分布没有厚尾，而许多实际网络的分布是厚尾的。此外，与许多社交网络不同，ER图集聚系数较低。其他较好的替代模型可见BA网络模型（Barabási–Albert model）和WS小世界网络模型（Watts and Strogatz model）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2485,7 +2485,7 @@ G(n, p)模型的两个主要假设（连边独立，每条连边可能性相同�
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">n</span> <span class="o">=</span> <span class="mi">150</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">n</span> <span class="o">=</span> <span class="mi">150</span>
 <span class="n">p</span> <span class="o">=</span> <span class="mf">0.1</span>
 <span class="n">G_erdos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">erdos_renyi_graph</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">p</span><span class="p">,</span> <span class="n">seed</span> <span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 
@@ -2499,7 +2499,7 @@ G(n, p)模型的两个主要假设（连边独立，每条连边可能性相同�
 <p>Let pk the probability that a randomly selected node has a degree k. Due to the random way the graphs are built, the distribution of the degrees of the graph is binomial. The distribution of the number of degrees per node should be close to the mean. The probability of high nodes decreases exponentially.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2509,7 +2509,7 @@ G(n, p)模型的两个主要假设（连边独立，每条连边可能性相同�
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">degree_freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">degree_histogram</span><span class="p">(</span><span class="n">G_erdos</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">degree_freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">degree_histogram</span><span class="p">(</span><span class="n">G_erdos</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">degree_freq</span><span class="p">)</span>
@@ -2530,7 +2530,7 @@ G(n, p)模型的两个主要假设（连边独立，每条连边可能性相同�
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2555,7 +2555,7 @@ G(n, p)模型的两个主要假设（连边独立，每条连边可能性相同�
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Get the list of the degrees</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Get the list of the degrees</span>
 <span class="n">degree_sequence_erdos</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">G_erdos</span><span class="o">.</span><span class="n">degree</span><span class="p">())</span>
 
 <span class="n">nb_nodes</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">G_erdos</span><span class="o">.</span><span class="n">nodes</span><span class="p">())</span>
@@ -2601,7 +2601,7 @@ Median degree : 15.0</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2613,7 +2613,7 @@ Median degree : 15.0</li>
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Generate the graph</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Generate the graph</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">150</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">G_barabasi</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">barabasi_albert_graph</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">)</span>
@@ -2632,7 +2632,7 @@ Median degree : 15.0</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -2641,7 +2641,7 @@ Median degree : 15.0</li>
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">degree_freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">degree_histogram</span><span class="p">(</span><span class="n">G_barabasi</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">degree_freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">degree_histogram</span><span class="p">(</span><span class="n">G_barabasi</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">degree_freq</span><span class="p">)</span>
@@ -2656,7 +2656,7 @@ Median degree : 15.0</li>
 <h4 id="descriptive-statistics-1">Descriptive statistics</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2743,7 +2743,7 @@ Median degree : 15.0</li>
 </span><span class="lnt">85
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Get the list of the degrees</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Get the list of the degrees</span>
 <span class="n">degree_sequence_erdos</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">G_erdos</span><span class="o">.</span><span class="n">degree</span><span class="p">())</span>
 
 <span class="n">nb_nodes</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">G_erdos</span><span class="o">.</span><span class="n">nodes</span><span class="p">())</span>
@@ -2864,12 +2864,12 @@ Median degree : 15.0</li>
   </p></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">networkx.algorithms</span> <span class="kn">import</span> <span class="n">tree</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">networkx.algorithms</span> <span class="kn">import</span> <span class="n">tree</span>
 <span class="n">mst</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">minimum_spanning_edges</span><span class="p">(</span><span class="n">G_karate</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;prim&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">edgelist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">mst</span><span class="p">);</span><span class="n">edgelist</span>
 </code></pre></td></tr></table>
@@ -2934,7 +2934,7 @@ The process to identify communities is the following:</p>
 <p>A common algorithm to find communities is the Girvan Newman algorithm. It identifies communities by progressively removing edges within the network. We’ll refer to <strong>betweenness</strong> as the “edge betweenness”. It is <strong>a score proportional to the number of shortest paths between pairs of nodes that go through this edge</strong>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2961,7 +2961,7 @@ The process to identify communities is the following:</p>
 </span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
 <span class="kn">from</span> <span class="nn">networkx.algorithms</span> <span class="kn">import</span> <span class="n">community</span> 
 <span class="kn">import</span> <span class="nn">itertools</span>
 
@@ -2995,7 +2995,7 @@ The process to identify communities is the following:</p>
 <p>Modularity is a measure of how well groups have been partitioned into clusters. The only thing we’re doing is to group the closest nodes so that we optimize the modularity criteria.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3007,7 +3007,7 @@ The process to identify communities is the following:</p>
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">
 <span class="kn">import</span> <span class="nn">community</span>
 <span class="n">partition</span> <span class="o">=</span> <span class="n">community</span><span class="o">.</span><span class="n">best_partition</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
 
@@ -3030,7 +3030,7 @@ The process to identify communities is the following:</p>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3063,7 +3063,7 @@ The process to identify communities is the following:</p>
 </span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">G_karate</span><span class="o">.</span><span class="n">nodes</span><span class="p">())</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">G_karate</span><span class="o">.</span><span class="n">nodes</span><span class="p">())</span>
 <span class="n">pcc_longueurs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">all_pairs_shortest_path_length</span><span class="p">(</span><span class="n">G_karate</span><span class="p">))</span>
 <span class="n">distances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
 
@@ -3109,14 +3109,14 @@ the density of triangles (local clusters) in the graph</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># List of local clustering coefficients</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># List of local clustering coefficients</span>
 <span class="nb">list</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">clustering</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 <span class="c1"># Global clustering coefficient</span>
 <span class="n">nx</span><span class="o">.</span><span class="n">average_clustering</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
@@ -3133,11 +3133,11 @@ the density of triangles (local clusters) in the graph</li>
 设想一下，你在微信上有个账号，那么是不是意味着微信好友数量越多，那么你的社交圈子越广？（假设都是真实好友，不考虑微商神马的奇葩情况）比如我有20个好友，那么意味着20个结点与我相连。如果你有50个好友，那么意味着你的点度中心度比我高，<strong>社交圈子比我广</strong>。这个就是点度中心性的概念。当然，刚才这个情况是无向图的情形，如果是有向图，需要考虑的出度和入度的问题。在刚才的基础上拓展一下，假如我们要比较你在微博和微信上的点度中心度，刚才的方法是否适用？如果说使用微信与微博的人数差不多，那么的确可以。但是如果说用户数量不一样呢？那么我们需要考虑到去规模化的问题，这就是<strong>标准化的点度中心性</strong>的理念。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">c_degree</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">degree_centrality</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">c_degree</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">degree_centrality</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
 <span class="n">c_degree</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">c_degree</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </code></pre></td></tr></table>
 </div>
@@ -3155,7 +3155,7 @@ PageRank is** usually computed on directed graphs**. However, it will also execu
 <a href="https://maelfabien.github.io/machinelearning/graph_3/#pagerank-algorithm" target="_blank" rel="noopener">参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3167,7 +3167,7 @@ PageRank is** usually computed on directed graphs**. However, it will also execu
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pr</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G_karate</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">pr</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G_karate</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
 <span class="n">pr</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">pr</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 
 <span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
@@ -3187,11 +3187,11 @@ PageRank is** usually computed on directed graphs**. However, it will also execu
 <p>Eigenvector centrality is a measure of the influence of a node in a network. It assigns relative scores to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. Google&rsquo;s PageRank is a variant of the Eigenvector centrality measure. Another closely related centrality measure is Katz centrality.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">c_eigenvector</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">eigenvector_centrality</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">c_eigenvector</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">eigenvector_centrality</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
 <span class="n">c_eigenvector</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">c_eigenvector</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </code></pre></td></tr></table>
 </div>
@@ -3201,11 +3201,11 @@ PageRank is** usually computed on directed graphs**. However, it will also execu
 对于了解图论的朋友而言，最短路这个概念一定不陌生。我们设想一个实际生活中的场景，比如你要建一个大型的娱乐商场，你可能会<strong>希望周围的顾客到达这个商场的距离都可以尽可能地短</strong>。这个就涉及到接近中心性的概念，接近中心性的值为路径长度的倒数。<strong>接近中心性需要考量每个结点到其它结点的最短路的平均长度</strong>。也就是说，对于一个结点而言，它距离其它结点越近，那么它的中心度越高。一般来说，那种需要让尽可能多的人使用的设施，它的接近中心度一般是比较高的。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">c_closeness</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">closeness_centrality</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">c_closeness</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">closeness_centrality</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
 <span class="nb">list</span><span class="p">(</span><span class="n">c_closeness</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </code></pre></td></tr></table>
 </div>
@@ -3215,11 +3215,11 @@ PageRank is** usually computed on directed graphs**. However, it will also execu
 这个度量很有意思。这个有点像是我们身边那种社交达人，我们<strong>认识的不少朋友可能都是通过他/她认识的</strong>，这个人起到了<strong>中介的作用</strong>。中介中心性指的是<strong>一个结点担任其它两个结点之间最短路的桥梁的次数</strong>。一个结点充当“中介”的次数越高，它的中介中心度就越大。如果要考虑标准化的问题，可以用一个结点承担最短路桥梁的次数除以所有的路径数量。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">c_betweenness</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">betweenness_centrality</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">c_betweenness</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">betweenness_centrality</span><span class="p">(</span><span class="n">G_karate</span><span class="p">)</span>
 <span class="nb">list</span><span class="p">(</span><span class="n">c_betweenness</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </code></pre></td></tr></table>
 </div>
@@ -3248,7 +3248,7 @@ common elements with very large neighborhoods are less significant when predicti
 <p>How do we evaluate the link prediction? We must hide a subset of node pairs, and predict their links based on the rules defined above. We then evaluate the proportion of correct predictions for dense graphs, or use Area under the Curve criteria for Sparse graphs.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3261,7 +3261,7 @@ common elements with very large neighborhoods are less significant when predicti
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">roc_curve</span><span class="p">,</span> <span class="n">roc_auc_score</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">roc_curve</span><span class="p">,</span> <span class="n">roc_auc_score</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 
@@ -3282,7 +3282,7 @@ Number of connected components : 1</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3298,7 +3298,7 @@ Number of connected components : 1</li>
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Remove 20% of the edges</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Remove 20% of the edges</span>
 <span class="n">proportion_edges</span> <span class="o">=</span> <span class="mf">0.2</span>
 <span class="n">edge_subset</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">G_karate</span><span class="o">.</span><span class="n">edges</span><span class="p">(),</span> <span class="nb">int</span><span class="p">(</span><span class="n">proportion_edges</span> <span class="o">*</span> <span class="n">G_karate</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">()))</span>
 
@@ -3321,7 +3321,7 @@ Number of edges remaining : 63</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3378,7 +3378,7 @@ Number of edges remaining : 63</li>
 </span><span class="lnt">55
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Make prediction using Jaccard Coefficient</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Make prediction using Jaccard Coefficient</span>
 <span class="n">pred_jaccard</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">nx</span><span class="o">.</span><span class="n">jaccard_coefficient</span><span class="p">(</span><span class="n">G_karate_train</span><span class="p">))</span>
 <span class="s1">&#39;&#39;&#39;
 </span><span class="s1">pred_jaccard: a first node, a second node and a jaccard score
@@ -3473,7 +3473,7 @@ One common way to deal with such problems is to assume that there is a certain s
 <a href="https://towardsdatascience.com/node2vec-embeddings-for-graph-data-32a866340fef" target="_blank" rel="noopener">authors</a>: “node2vec is an algorithmic framework for representational learning on graphs. Given any graph, it can learn continuous feature representations for the nodes, which can then be used for various downstream machine learning tasks.” How does Node2Vec work? The model learns low-dimensional representations for nodes by optimizing a neighborhood preserving objective, using random walks.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3485,7 +3485,7 @@ One common way to deal with such problems is to assume that there is a certain s
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">node2vec</span> <span class="kn">import</span> <span class="n">Node2Vec</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">node2vec</span> <span class="kn">import</span> <span class="n">Node2Vec</span>
 <span class="n">node2vec</span> <span class="o">=</span> <span class="n">Node2Vec</span><span class="p">(</span><span class="n">G_karate</span><span class="p">,</span> <span class="n">dimensions</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">walk_length</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">num_walks</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">workers</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">node2vec</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">min_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">batch_words</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 
@@ -3500,7 +3500,7 @@ One common way to deal with such problems is to assume that there is a certain s
 </div><h3 id="edge-embedding">Edge Embedding</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3512,7 +3512,7 @@ One common way to deal with such problems is to assume that there is a certain s
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">node2vec.edges</span> <span class="kn">import</span> <span class="n">HadamardEmbedder</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">node2vec.edges</span> <span class="kn">import</span> <span class="n">HadamardEmbedder</span>
 <span class="n">edges_embs</span> <span class="o">=</span> <span class="n">HadamardEmbedder</span><span class="p">(</span><span class="n">keyed_vectors</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="p">)</span>
 
 <span class="c1"># get the vector of an edge</span>
